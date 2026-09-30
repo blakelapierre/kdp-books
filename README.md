@@ -13,6 +13,7 @@ series/
     stars-over-frostwood/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
+marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
 requirements.txt             # Python dependencies for all the build scripts
@@ -37,6 +38,10 @@ A book in a series goes in `series/<series-name>/<book-slug>/`. A book that isn'
 | *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 89 | $9.99 | [standalone/the-advent-clock/](standalone/the-advent-clock/) |
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper.
+
+## Marketing
+
+The marketing kit is in [marketing/](marketing/README.md). It covers the action calendar, Amazon ads, reviews, Author Central, A+ Content, free printable samples, Pinterest and social posts, and the holiday plan.
 
 ## What's in each book folder
 
