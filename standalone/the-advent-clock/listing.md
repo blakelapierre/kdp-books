@@ -108,4 +108,4 @@ These figures are estimates. Confirm them with KDP's Printing Cost & Royalty Cal
 - **Trademarks**: the book and listing say "escape-room-style" only in the keywords, and don't use any brand names.
 
 ## Verification
-See `verification.md`. An independent solver (`src/verify.py`, separate from the generators) re-solved all 24 puzzles from their printed clues. Each has exactly one solution, each answer word re-extracts correctly, and the 24 key letters placed in the Christmas Eve ledger read **THE STAR IS IN THE CLOCK TOWER**.
+See `verification.md`. An independent solver (`src/verify.py`, separate from the generators) re-solved all 24 puzzles from their printed clues. Each has exactly one solution, each answer word re-extracts correctly, and the 24 key letters placed in the Christmas Eve ledger read **THE STAR IS IN THE CLOCK TOWER**. In door order, as the reader copies them into the Door Log, the key letters read NHWHTCSEKAOITREOETTSLRCI, so the log gives nothing away before Christmas Eve.

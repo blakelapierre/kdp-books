@@ -1,20 +1,103 @@
 """Generate all 24 doors -> ../data.json. Deterministic (fixed seeds).
 Every door has an ANSWER word and a KEY letter (answer[key-1]); the 24 key letters, placed into the
-Christmas Eve ledger, spell THE STAR IS IN THE CLOCK TOWER."""
+Christmas Eve ledger, spell THE STAR IS IN THE CLOCK TOWER. In door order (the Door Log) they are
+deliberately scrambled: see choose_keys()."""
 import json, random, sys
 import grids, latin, misc, nonogram
 import tracks_gen
 
 MESSAGE = "THE STAR IS IN THE CLOCK TOWER"
-SPEC = [  # door, type, answer, key position (1-based)
- (1, "wordsearch", "TINSEL", 1), (2, "caesar", "HOLLY", 1), (3, "queens", "WREATH", 3), (4, "wordoku", "SLEIGH", 1),
- (5, "maze", "TOBOGGAN", 1), (6, "nonogram", "CANDLE", 2), (7, "pyramid", "FROST", 2), (8, "pigpen", "ICICLE", 1),
- (9, "logic", "SKATE", 1), (10, "tents", "GINGERBREAD", 2), (11, "tracks", "NOEL", 1), (12, "akari", "TWINKLE", 1),
- (13, "fillin", "HEARTH", 1), (14, "presents", "PRESENTS", 3), (15, "futoshiki", "BAUBLE", 5), (16, "morse", "EGGNOG", 5),
- (17, "fleet", "SNOWFLAKES", 8), (18, "wordsearch", "LANTERN", 4), (19, "skyscrapers", "TOFFEE", 2), (20, "queens", "SNOWBALL", 4),
- (21, "nonogram", "BELL", 2), (22, "calcudoku", "MERRY", 3), (23, "wordoku", "FRUITCAKE", 6), (24, "tracks", "CHRISTMASEVE", 1),
+SPEC = [  # door, type, answer  (the key position in each answer is chosen by choose_keys() below)
+ (1, "wordsearch", "TINSEL"), (2, "caesar", "HOLLY"), (3, "queens", "WREATH"), (4, "wordoku", "SLEIGH"),
+ (5, "maze", "TOBOGGAN"), (6, "nonogram", "CANDLE"), (7, "pyramid", "FROST"), (8, "pigpen", "ICICLE"),
+ (9, "logic", "SKATE"), (10, "tents", "GINGERBREAD"), (11, "tracks", "NOEL"), (12, "akari", "TWINKLE"),
+ (13, "fillin", "HEARTH"), (14, "presents", "PRESENTS"), (15, "futoshiki", "BAUBLE"), (16, "morse", "EGGNOG"),
+ (17, "fleet", "SNOWFLAKES"), (18, "wordsearch", "LANTERN"), (19, "skyscrapers", "TOFFEE"), (20, "queens", "SNOWBALL"),
+ (21, "nonogram", "BELL"), (22, "calcudoku", "MERRY"), (23, "wordoku", "FRUITCAKE"), (24, "tracks", "CHRISTMASEVE"),
 ]
-ANSWERS = {a for _, _, a, _ in SPEC}
+ANSWERS = {a for _, _, a in SPEC}
+
+# ------------------------------------------------------------------ key letters and the Christmas Eve ledger
+# The reader copies the key letters into the Door Log in door order, so that order must NOT give the
+# message away. We pick (key position per door, ledger permutation) as a random perfect matching in the
+# bipartite graph  doors x message-slots  (edge when the slot's letter occurs in the door's answer), then
+# reject anything whose door-order string or ledger looks meaningful. Deterministic: fixed seed, and
+# among the first KEY_CANDIDATES acceptable matchings the lowest-scoring one wins.
+KEY_SEED, KEY_CANDIDATES = 2412, 200
+# common short English words (plus the message words) that must not appear in the door-order key string
+BANNED_WORDS = set("""
+THE STAR CLOCK TOWER TOW OWE OWER STARS TSAR RATS ARTS ART RAT TAR SAT SIT ITS TIS HIS HIT HAT HAS HER HEN THEN THEM
+TEN TIN NIT NIL NET TOE TOT HOT HOE ONE NOT TON TOO COT CAT ACT CAN CAR ARC ARE ERA EAR EAT ATE TEA SEA SEE SET SHE
+HEW NEW NOW OWN WON WHO HOW LOW OWL COW ROW ROT ORE ROE ONE EON NOR OAR OAT TAO SON NOS RIS IRE SIR STIR RITE TIRE
+TIER CORE ROCK LOCK COCK LOCO COOK LOOK TOOK KILT KIT KIN INK SKI SKIT TICK LICK LIE LIT TIL OIL SOIL TOIL ALE ALL
+ILL ELL TELL WELL WILL SILL HILL HELL LET LEST NEST REST TEST WEST WET WIT WIN WINE TWIN TWO TOWN WORE WORST CLOT
+COST HOST MOST POST OAK KOA ASK TASK SOAK TOES TEAS SEAT EAST NEAT HEAT HEAR TEAR RARE CART CARE RACE ACE ICE NICE
+RICE ORCA ROC HOE HOES SHOE SHOT SHOW WHAT THAT THIS THESE THOSE THERE WHERE HERE HERO TORE STORE SNORE SORE ROSE NOSE
+TONE STONE STEN SENT SEEN TEEN KEEN KNEE KNOT KNOW SNOW STOW STEW SEW SAW WAS WAR RAW AWE EWE WEE TEE LEE EEL ELK
+KEEL KALE LAKE TAKE SAKE RAKE ROKE COKE CLOAK CROCK CLICK TRICK TREK TREE TRIO RIOT TORI IRON NOIR LION LOIN COIN
+ICON CION INTO ONTO UNTO NOTE TOTE TOTS LOTS SLOT LOST LIST SILT SLIT KISS MISS HISS LESS LOSS TOSS
+EKE EKES LEEK SEEK REEK WEEK TIC TAC TOC AIL AIR SIC SIS TIT TAT OHO AHA ARK IRK INN ION RIN EEN ENE ERE ERR ORT RET TET HET OHS ETH ITH WEN WREN TREN
+""".split())
+
+def key_problems(keystr, ledger, message):
+    """reasons the door-order key string / ledger give too much away (empty list = acceptable)"""
+    msg = message.replace(" ", ""); bad = []
+    grams = {msg[i:i + 3] for i in range(len(msg) - 2)}
+    for i in range(len(keystr) - 2):
+        if keystr[i:i + 3] in grams: bad.append(f"run {keystr[i:i + 3]} from the message")
+    for n in range(3, 7):
+        for i in range(len(keystr) - n + 1):
+            if keystr[i:i + n] in BANNED_WORDS: bad.append(f"word {keystr[i:i + n]}")
+    if sum(a == b for a, b in zip(keystr, msg)) > 2: bad.append("too many letters in message position")
+    for i in range(len(ledger) - 1):
+        if abs(ledger[i + 1] - ledger[i]) == 1: bad.append(f"ledger run {ledger[i]},{ledger[i + 1]}")
+    if sum(ledger[i] == i + 1 for i in range(len(ledger))) > 1: bad.append("ledger fixed points")
+    return bad
+
+def key_score(keystr, ledger, message):
+    """lower is better: message bigrams kept in order, adjacent ledger steps of 2, doubled letters"""
+    msg = message.replace(" ", ""); bi = {msg[i:i + 2] for i in range(len(msg) - 1)}
+    return (sum(keystr[i:i + 2] in bi for i in range(len(keystr) - 1)) * 3
+            + sum(abs(ledger[i + 1] - ledger[i]) <= 2 for i in range(len(ledger) - 1))
+            + sum(keystr[i] == keystr[i + 1] for i in range(len(keystr) - 1)))
+
+def random_matching(answers, msg, rnd):
+    """random perfect matching door -> message slot, slot letter must occur in the door's answer"""
+    doors = list(answers); rnd.shuffle(doors); slot_of = {}; door_of = {}
+    def augment(d, seen):
+        opts = [p for p in range(len(msg)) if msg[p] in answers[d]]; rnd.shuffle(opts)
+        for p in opts:
+            if p in seen: continue
+            seen.add(p)
+            if p not in door_of or augment(door_of[p], seen):
+                door_of[p] = d; slot_of[d] = p; return True
+        return False
+    for d in doors:
+        if not augment(d, set()): return None
+    return slot_of
+
+def choose_keys(message=MESSAGE, seed=KEY_SEED, candidates=KEY_CANDIDATES):
+    """-> (keys {door: 1-based key position}, ledger [door for each message slot])"""
+    answers = {d: a for d, _, a in SPEC}; msg = message.replace(" ", ""); rnd = random.Random(seed)
+    best = None; found = 0
+    for _ in range(200000):
+        slot_of = random_matching(answers, msg, rnd)
+        if slot_of is None: continue
+        keys = {}
+        for d, p in slot_of.items():
+            keys[d] = rnd.choice([i + 1 for i, ch in enumerate(answers[d]) if ch == msg[p]])
+        ledger = [None] * len(msg)
+        for d, p in slot_of.items(): ledger[p] = d
+        keystr = "".join(answers[d][keys[d] - 1] for d in sorted(answers))
+        if key_problems(keystr, ledger, message): continue
+        sc = key_score(keystr, ledger, message); found += 1
+        if best is None or sc < best[0]: best = (sc, keys, ledger)
+        if found >= candidates: break
+    assert best, "no acceptable key assignment"
+    _, keys, ledger = best
+    assert "".join(answers[d][keys[d] - 1] for d in ledger) == msg and sorted(ledger) == sorted(answers)
+    return keys, ledger
+
 FILL = "ABCDEFGHIKLMNOPRSTUVWY"
 
 def letters_grid(n, cells, word, rnd, avoid=()):
@@ -148,15 +231,15 @@ if __name__ == "__main__":
     try: data = json.load(open("../data.json"))
     except FileNotFoundError: data = {}
     doors = {int(k): v for k, v in data.get("doors", {}).items()}
-    for d, typ, ans, key in SPEC:
+    keys, slots = choose_keys()
+    for d, typ, ans in SPEC:
         if only and d not in only and d in doors: continue
-        doors[d] = door(d, typ, ans, key); print(d, typ, ans, "ok", flush=True)
+        doors[d] = door(d, typ, ans, keys[d]); print(d, typ, ans, "ok", flush=True)
         json.dump(dict(doors={str(k): doors[k] for k in sorted(doors)}), open("../data.json", "w"), default=list)
-    # Christmas Eve ledger: each message slot gets a door whose key letter matches, shuffled
-    msg = MESSAGE.replace(" ", ""); rnd = random.Random(2412)
-    left = list(range(1, 25)); rnd.shuffle(left); slots = []
-    for ch in msg:
-        dd = next(x for x in left if doors[x]["letter"] == ch); left.remove(dd); slots.append(dd)
-    assert not left
+    # key position/letter never affect a puzzle, so refresh them on doors that were not regenerated
+    for d, typ, ans in SPEC: doors[d].update(key=keys[d], letter=ans[keys[d] - 1])
+    # Christmas Eve ledger: slot i of the message is filled by the key letter of door slots[i]
+    assert "".join(doors[x]["letter"] for x in slots) == MESSAGE.replace(" ", "")
     json.dump(dict(message=MESSAGE, ledger=slots, doors={str(k): doors[k] for k in sorted(doors)}), open("../data.json", "w"), default=list)
+    print("keys (door order)", "".join(doors[d]["letter"] for d in sorted(doors)))
     print("ledger", slots)
