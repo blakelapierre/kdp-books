@@ -20,5 +20,8 @@ Cozy winter puzzle books by **Blake La Pierre**, all set in and around the imagi
 |---|-------|-------------|---------|-------|--------|--------|
 | 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book | Elimination (deduction) mystery | 12 cases | 134 | Draft, print-ready. Not published | [the-thief-stayed-the-night/](the-thief-stayed-the-night/) |
 | 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles | Train Tracks | 200 | 192 | Draft, print-ready. Not published | [frostwood-express/](frostwood-express/) |
+| 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles | Star Battle (40 Easy 6×6 and 40 Medium 8×8 one-star; 50 Hard and 50 Expert 10×10 two-star) | 180 | 182 | Draft, print-ready. Not published | [stars-over-frostwood/](stars-over-frostwood/) |
 
-Setting per book: 1 is the Frostwood Lodge (a theft during a snowbound night). 2 is the Frostwood Express railway, climbing from the valley to the lodge.
+Setting per book: 1 is the Frostwood Lodge (a theft during a snowbound night). 2 is the Frostwood Express railway, climbing from the valley to the lodge. 3 is the Frostwood Star Club's night walk from the village green, along the railway and up the mountain path, to the observatory dome on the lodge roof.
+
+Book 3 has an "Also by Blake La Pierre" page listing books 1 and 2. Books 1 and 2 were not updated to list later titles (optional; rebuild them if you want that).
