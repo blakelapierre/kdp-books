@@ -1,2 +1,3 @@
 reportlab
 python-sat
+numpy

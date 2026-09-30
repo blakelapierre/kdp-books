@@ -4,4 +4,8 @@ Books that are **not** part of a series go here, one folder per book, with the s
 
 A book belongs in `series/<name>/` if it shares a setting, a house style and a series line with other books. Otherwise it goes here. A book that is Christmas-specific, for example, doesn't fit the Frostwood series (winter, but not Christmas) even if it borrows the name.
 
-No standalone books have been committed yet.
+## Books
+
+| Title | Pages | Price | Folder |
+|-------|-------|-------|--------|
+| *The Advent Clock*: A Christmas Puzzle Countdown | 89 | $9.99 | [the-advent-clock/](the-advent-clock/) |

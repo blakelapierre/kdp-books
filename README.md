@@ -30,7 +30,9 @@ A book in a series goes in `series/<series-name>/<book-slug>/`. A book that isn'
 
 ### Standalone ([standalone/](standalone/))
 
-None yet.
+| Title | Puzzle type | Status | Pages | Price | Folder |
+|-------|-------------|--------|-------|-------|--------|
+| *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 89 | $9.99 | [standalone/the-advent-clock/](standalone/the-advent-clock/) |
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper.
 
@@ -42,7 +44,7 @@ All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on 
 - `previews/`: PNG renders of the cover and some sample pages
 - `data.json`: the generated puzzle data that the book is built from
 - `build-info.json` / `cover-info.json`: page count, section page numbers and cover dimensions
-- `clue-checks.md` (book 1) / `verification.md` (book 2): the report from the independent verification run
+- `clue-checks.md` (Frostwood book 1) / `verification.md` (the other books): the report from the independent verification run
 - `src/`: scripts for generating, building and verifying the book
 
 ## Rebuilding a book
@@ -66,6 +68,14 @@ python3 master.py     # generate and grade the 200 puzzles -> ../data.json (trac
 python3 build.py      # -> ../interior.pdf and ../build-info.json
 python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
 python3 verify.py     # checks each puzzle has one solution with a SAT solver (verify_sat.py) -> ../verification.md
+cd ../../../..
+
+# Standalone: The Advent Clock
+cd standalone/the-advent-clock/src
+python3 gen.py        # generate all 24 door puzzles -> ../data.json (optional args: door numbers to regenerate only those; ~2 min)
+python3 build.py      # -> ../interior.pdf and ../build-info.json (story, rules and hints text are in stories.py)
+python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 verify.py     # independent re-solve of every door + the Christmas Eve message -> ../verification.md
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

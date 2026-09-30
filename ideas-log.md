@@ -14,6 +14,7 @@ Elimination mystery (book 1) and Train Tracks (book 2). Every new Frostwood book
 |------|------|--------|
 | 2026-09-30 | Elimination mystery puzzle book set during a winter hotel theft | *The Thief Stayed the Night*, 134 pages, [folder](series/frostwood/the-thief-stayed-the-night/) |
 | 2026-09-30 | Train Tracks logic puzzles | *Frostwood Express*, 200 puzzles, 192 pages, [folder](series/frostwood/frostwood-express/) |
+| 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/the-advent-clock/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -28,6 +29,15 @@ Elimination mystery (book 1) and Train Tracks (book 2). Every new Frostwood book
 | 2026-09-30 | Pantry dry-mix cookbook |
 | 2026-09-30 | Winter craft templates / stencils |
 | 2026-09-30 | Cozy LitRPG |
+| 2026-09-30 | Non-violent Murdoku-style grid mystery (too close to *The Thief Stayed the Night*; the genre's bestsellers are murder-themed) |
+| 2026-09-30 | Surgery / knee-surgery recovery activity gift book |
+| 2026-09-30 | Pocket sudoku + ink tracing book |
+| 2026-09-30 | Nonogram mystery book |
+| 2026-09-30 | Wordle-style word puzzle book (trademark risk) |
+| 2026-09-30 | Cozy autumn word search (close variant of the large-print winter word search) |
+
+## Puzzle types used in standalone books
+*The Advent Clock* uses one each of: word search (×2), Caesar cipher, pigpen cipher, Morse code, Star Battle-style "one star per row/column/region" (×2), wordoku (×2), maze, nonogram (×2), number pyramid, logic grid, Tents, Train Tracks (×2), Akari, fill-in, Minesweeper-style "presents", Futoshiki, Battleships-style "sleigh fleet", Skyscrapers and KenKen-style cages. A second Christmas/advent book would be a close variant.
 
 ## How to add entries
 Append a new row with the date whenever an idea is built or evaluated. When a book is built, also add it to the table in README.md. If it is part of a series, add it to that series' README too.
