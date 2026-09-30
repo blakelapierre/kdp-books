@@ -1,13 +1,38 @@
 # KDP Books
 
-Source, print files and listing drafts for Blake La Pierre's Amazon KDP paperback puzzle books. Each book has its own folder.
+Source, print files and listing drafts for Blake La Pierre's Amazon KDP paperback puzzle books. Nothing here has been published or submitted to KDP.
 
-| # | Title | Author | Status | Pages | Price | Folder |
-|---|-------|--------|--------|-------|-------|--------|
-| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book (12 cozy elimination cases) | Blake La Pierre | Draft, print-ready. Not yet published or submitted to KDP | 134 | $9.99 | [the-thief-stayed-the-night/](the-thief-stayed-the-night/) |
-| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Blake La Pierre | Draft, print-ready. Not yet published or submitted to KDP | 192 | $9.99 | [frostwood-express/](frostwood-express/) |
+## Repository layout
 
-Both books are 6 × 9 in paperbacks with black ink on white paper, and they share a "Frostwood" setting. They could be linked on KDP as a series called "A Frostwood Puzzle Book".
+```
+series/
+  frostwood/                 # "A Frostwood Puzzle Book" series (cozy winter, lodge / railway / village / mountain)
+    README.md                # series overview: theme, house style, list of books
+    the-thief-stayed-the-night/
+    frostwood-express/
+standalone/                  # books that are not part of a series (one folder each)
+  README.md
+README.md                    # this file
+ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
+requirements.txt             # Python dependencies for all the build scripts
+```
+
+A book in a series goes in `series/<series-name>/<book-slug>/`. A book that isn't in a series goes in `standalone/<book-slug>/`. Each book folder is self-contained: its scripts only use paths relative to the folder itself, so you can move a folder without breaking anything.
+
+## Books
+
+### Frostwood series ([series/frostwood/](series/frostwood/))
+
+| # | Title | Puzzle type | Status | Pages | Price | Folder |
+|---|-------|-------------|--------|-------|-------|--------|
+| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book (12 cozy elimination cases) | Elimination mystery | Draft, print-ready. Not yet published or submitted to KDP | 134 | $9.99 | [series/frostwood/the-thief-stayed-the-night/](series/frostwood/the-thief-stayed-the-night/) |
+| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Train Tracks | Draft, print-ready. Not yet published or submitted to KDP | 192 | $9.99 | [series/frostwood/frostwood-express/](series/frostwood/frostwood-express/) |
+
+### Standalone ([standalone/](standalone/))
+
+None yet.
+
+All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper.
 
 ## What's in each book folder
 
@@ -22,21 +47,21 @@ Both books are 6 × 9 in paperbacks with black ink on white paper, and they shar
 
 ## Rebuilding a book
 
-Run the scripts from inside the book's `src/` folder. They read and write files in the book folder (`../`) using relative paths.
+Run the scripts from inside the book's `src/` folder. Install the dependencies from the repo root first. They read and write files in the book folder (`../`) using relative paths.
 
 ```bash
 python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
 
 # Book 1: The Thief Stayed the Night
-cd the-thief-stayed-the-night/src
+cd series/frostwood/the-thief-stayed-the-night/src
 python3 gen.py        # regenerate ../data.json from master.py (guest list) and clues.py (cases); optional arg: max seeds
 python3 build.py      # -> ../interior.pdf and ../build-info.json (the story text is in stories.py)
 python3 cover.py      # -> ../cover.pdf and ../cover-info.json (reads the page count)
 python3 verify.py     # independent re-check -> ../clue-checks.md
-cd ../..
+cd ../../../..
 
 # Book 2: Frostwood Express
-cd frostwood-express/src
+cd series/frostwood/frostwood-express/src
 python3 master.py     # generate and grade the 200 puzzles -> ../data.json (tracks.py is the solver, gen.py sets the difficulty bands)
 python3 build.py      # -> ../interior.pdf and ../build-info.json
 python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf

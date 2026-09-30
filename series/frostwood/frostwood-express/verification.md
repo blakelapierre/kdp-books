@@ -1,6 +1,6 @@
 # Verification report
 
-Generated 2026-09-30 08:57 PDT by `src/verify.py` in 6.4 s.
+Generated 2026-09-30 09:42 PDT by `src/verify.py` in 7.2 s.
 
 - Puzzles checked: **200** (+ the worked example: unique)
 - Exactly one solution (independent SAT solver, CaDiCaL via python-sat, stray loops cut lazily), matching stored solution: **200/200**
