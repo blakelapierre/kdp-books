@@ -11,6 +11,7 @@ series/
     the-thief-stayed-the-night/
     frostwood-express/
     stars-over-frostwood/
+    tents-in-frostwood/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
@@ -30,6 +31,7 @@ A book in a series goes in `series/<series-name>/<book-slug>/`. A book that isn'
 | 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book (12 cozy elimination cases) | Elimination mystery | Draft, print-ready. Not yet published or submitted to KDP | 134 | $9.99 | [series/frostwood/the-thief-stayed-the-night/](series/frostwood/the-thief-stayed-the-night/) |
 | 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Train Tracks | Draft, print-ready. Not yet published or submitted to KDP | 192 | $9.99 | [series/frostwood/frostwood-express/](series/frostwood/frostwood-express/) |
 | 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles (Easy to Expert) | Star Battle (1-star and 2-star) | Draft, print-ready. Not yet published or submitted to KDP | 182 | $9.99 | [series/frostwood/stars-over-frostwood/](series/frostwood/stars-over-frostwood/) |
+| 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 182 | $9.99 | [series/frostwood/tents-in-frostwood/](series/frostwood/tents-in-frostwood/) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -84,6 +86,14 @@ python3 master.py     # generate and grade the 180 puzzles -> ../data.json (abou
 python3 build.py      # -> ../interior.pdf and ../build-info.json (worked-example text is in example_text.py)
 python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
 python3 verify.py     # independent SAT check (verify_sat.py) of uniqueness + band fit -> ../verification.md
+cd ../../../..
+
+# Book 4: Tents in Frostwood
+cd series/frostwood/tents-in-frostwood/src
+PYTHONHASHSEED=0 python3 master.py   # generate and grade the 180 puzzles -> ../data.json (tents.py is the logic/SAT solver, gen.py sets the bands)
+python3 build.py      # -> ../interior.pdf and ../build-info.json (worked-example text is in example_text.py)
+python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 verify.py     # independent SAT + backtracking uniqueness check + band fit -> ../verification.md
 cd ../../../..
 
 # Standalone: The Advent Clock

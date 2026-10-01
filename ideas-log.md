@@ -7,7 +7,7 @@ This log lists every KDP book idea that has already been **built** or **evaluate
 - Author name: Blake La Pierre. Default price: $9.99, the lowest price that earns the 60% paperback royalty.
 
 ## Puzzle types already used in the Frostwood series
-Elimination mystery (book 1), Train Tracks (book 2) and Star Battle / Two Not Touch (book 3). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
+Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3) and Tents / Tents and Trees (book 4). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
 
 ## Built
 | Date | Idea | Result |
@@ -16,6 +16,7 @@ Elimination mystery (book 1), Train Tracks (book 2) and Star Battle / Two Not To
 | 2026-09-30 | Train Tracks logic puzzles | *Frostwood Express*, 200 puzzles, 192 pages, [folder](series/frostwood/frostwood-express/) |
 | 2026-09-30 | Star Battle (Two Not Touch / Queens) logic puzzles, Frostwood book 3 | *Stars over Frostwood*, 180 puzzles (40 Easy, 40 Medium, 50 Hard, 50 Expert), 182 pages, [folder](series/frostwood/stars-over-frostwood/) |
 | 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/the-advent-clock/) |
+| 2026-10-01 | Tents (Tents and Trees) logic puzzles, Frostwood book 4 | *Tents in Frostwood*, 180 puzzles (40 Easy 6×6, 40 Medium 8×8, 50 Hard 10×10, 50 Expert 12×12), 182 pages, [folder](series/frostwood/tents-in-frostwood/) |
 | 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/fireside-cryptograms/) |
 
 ## Evaluated, not chosen
@@ -46,6 +47,8 @@ Elimination mystery (book 1), Train Tracks (book 2) and Star Battle / Two Not To
 
 ## Puzzle types used in standalone books
 *Fireside Cryptograms* uses monoalphabetic substitution cryptograms (cryptoquotes) only — 200 puzzles with independent uniqueness verification.
+
+*Tents in Frostwood* (Frostwood book 4) is a full dedicated Tents book; *The Advent Clock* used Tents only once as a single advent door, which is fine.
 
 *The Advent Clock* uses one each of: word search (×2), Caesar cipher, pigpen cipher, Morse code, Star Battle-style "one star per row/column/region" (×2), wordoku (×2), maze, nonogram (×2), number pyramid, logic grid, Tents, Train Tracks (×2), Akari, fill-in, Minesweeper-style "presents", Futoshiki, Battleships-style "sleigh fleet", Skyscrapers and KenKen-style cages. A second Christmas/advent book would be a close variant. (Its two Star Battle-style doors overlap only slightly with Frostwood book 3, a full 180-puzzle Star Battle book.)
 
