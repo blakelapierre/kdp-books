@@ -9,3 +9,4 @@ A book belongs in `series/<name>/` if it shares a setting, a house style and a s
 | Title | Pages | Price | Folder |
 |-------|-------|-------|--------|
 | *The Advent Clock*: A Christmas Puzzle Countdown | 89 | $9.99 | [the-advent-clock/](the-advent-clock/) |
+| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles | 160 | $9.99 | [fireside-cryptograms/](fireside-cryptograms/) |

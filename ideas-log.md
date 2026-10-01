@@ -16,6 +16,7 @@ Elimination mystery (book 1), Train Tracks (book 2) and Star Battle / Two Not To
 | 2026-09-30 | Train Tracks logic puzzles | *Frostwood Express*, 200 puzzles, 192 pages, [folder](series/frostwood/frostwood-express/) |
 | 2026-09-30 | Star Battle (Two Not Touch / Queens) logic puzzles, Frostwood book 3 | *Stars over Frostwood*, 180 puzzles (40 Easy, 40 Medium, 50 Hard, 50 Expert), 182 pages, [folder](series/frostwood/stars-over-frostwood/) |
 | 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/the-advent-clock/) |
+| 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/fireside-cryptograms/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -38,8 +39,14 @@ Elimination mystery (book 1), Train Tracks (book 2) and Star Battle / Two Not To
 | 2026-09-30 | Cozy autumn word search (close variant of the large-print winter word search) |
 | 2026-09-30 | Hashi / Bridges puzzle book for Frostwood book 3 (weaker Amazon demand than Star Battle: top title 28 ratings, BSR ~1.5M seen) |
 | 2026-09-30 | Slitherlink puzzle book for Frostwood book 3 (top dedicated title 23 ratings) |
+| 2026-10-01 | Kakuro puzzle book (Mensa Kakuro 4.6★/494 ratings but newer indie titles mostly 1–23 ratings; weaker absolute demand than cryptograms) |
+| 2026-10-01 | Futoshiki / KenKen / Battleships dedicated puzzle books (very low review counts on dedicated titles vs cryptogram bestsellers) |
+| 2026-10-01 | Another mixed Sudoku/word-search mega book (saturated by Brain Games / Parragon on bestseller lists) |
+| 2026-10-01 | Large-print cryptogram book was chosen instead: strong Amazon demand (*Ultimate Cryptograms* 4.7★/1,096; *Large Print Cryptograms #2* 4.7★/832; 400-puzzle cryptogram book 4.4★/859; *Large Print Cryptograms Vol 1* 4.6★/210; researched 2026-10-01) and a cozy non-violent niche beside murder-puzzle bestsellers (Murdoku 1,031 ratings; Murdle Vol 1 7,702) |
 
 ## Puzzle types used in standalone books
+*Fireside Cryptograms* uses monoalphabetic substitution cryptograms (cryptoquotes) only — 200 puzzles with independent uniqueness verification.
+
 *The Advent Clock* uses one each of: word search (×2), Caesar cipher, pigpen cipher, Morse code, Star Battle-style "one star per row/column/region" (×2), wordoku (×2), maze, nonogram (×2), number pyramid, logic grid, Tents, Train Tracks (×2), Akari, fill-in, Minesweeper-style "presents", Futoshiki, Battleships-style "sleigh fleet", Skyscrapers and KenKen-style cages. A second Christmas/advent book would be a close variant. (Its two Star Battle-style doors overlap only slightly with Frostwood book 3, a full 180-puzzle Star Battle book.)
 
 ## How to add entries

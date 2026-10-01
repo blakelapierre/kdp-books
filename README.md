@@ -36,6 +36,7 @@ A book in a series goes in `series/<series-name>/<book-slug>/`. A book that isn'
 | Title | Puzzle type | Status | Pages | Price | Folder |
 |-------|-------------|--------|-------|-------|--------|
 | *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 89 | $9.99 | [standalone/the-advent-clock/](standalone/the-advent-clock/) |
+| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles for Adults (Easy to Expert) | Cryptograms (cryptoquotes) | Draft, print-ready. Not yet published or submitted to KDP | 160 | $9.99 | [standalone/fireside-cryptograms/](standalone/fireside-cryptograms/) |
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper.
 
@@ -91,6 +92,14 @@ python3 gen.py        # generate all 24 door puzzles -> ../data.json (optional a
 python3 build.py      # -> ../interior.pdf and ../build-info.json (story, rules and hints text are in stories.py)
 python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
 python3 verify.py     # independent re-solve of every door + the Christmas Eve message -> ../verification.md
+cd ../..
+
+# Standalone: Fireside Cryptograms
+cd standalone/fireside-cryptograms/src
+PYTHONHASHSEED=0 python3 master.py   # generate 200 unique cryptograms -> ../data.json
+python3 build.py      # -> ../interior.pdf and ../build-info.json
+python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 verify.py     # independent dictionary solver uniqueness check -> ../verification.md
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

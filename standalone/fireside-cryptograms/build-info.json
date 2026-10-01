@@ -1,0 +1,14 @@
+{
+ "pages": 160,
+ "marks": {
+  "contents": 3,
+  "howto": 5,
+  "Easy": 8,
+  "Medium": 35,
+  "Hard": 62,
+  "Expert": 89,
+  "hints": 116,
+  "solutions": 129,
+  "about": 159
+ }
+}
