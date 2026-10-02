@@ -12,12 +12,12 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 ## Built
 | Date | Idea | Result |
 |------|------|--------|
-| 2026-09-30 | Elimination mystery puzzle book set during a winter hotel theft | *The Thief Stayed the Night*, 134 pages, [folder](series/frostwood/the-thief-stayed-the-night/) |
-| 2026-09-30 | Train Tracks logic puzzles | *Frostwood Express*, 200 puzzles, 192 pages, [folder](series/frostwood/frostwood-express/) |
-| 2026-09-30 | Star Battle (Two Not Touch / Queens) logic puzzles, Frostwood book 3 | *Stars over Frostwood*, 180 puzzles (40 Easy, 40 Medium, 50 Hard, 50 Expert), 182 pages, [folder](series/frostwood/stars-over-frostwood/) |
-| 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/the-advent-clock/) |
-| 2026-10-01 | Tents (Tents and Trees) logic puzzles, Frostwood book 4 | *Tents in Frostwood*, 180 puzzles (40 Easy 6×6, 40 Medium 8×8, 50 Hard 10×10, 50 Expert 12×12), 182 pages, [folder](series/frostwood/tents-in-frostwood/) |
-| 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/fireside-cryptograms/) |
+| 2026-09-30 | Elimination mystery puzzle book set during a winter hotel theft | *The Thief Stayed the Night*, 134 pages, [folder](series/frostwood/01-the-thief-stayed-the-night/) |
+| 2026-09-30 | Train Tracks logic puzzles | *Frostwood Express*, 200 puzzles, 192 pages, [folder](series/frostwood/02-frostwood-express/) |
+| 2026-09-30 | Star Battle (Two Not Touch / Queens) logic puzzles, Frostwood book 3 | *Stars over Frostwood*, 180 puzzles (40 Easy, 40 Medium, 50 Hard, 50 Expert), 182 pages, [folder](series/frostwood/03-stars-over-frostwood/) |
+| 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/01-the-advent-clock/) |
+| 2026-10-01 | Tents (Tents and Trees) logic puzzles, Frostwood book 4 | *Tents in Frostwood*, 180 puzzles (40 Easy 6×6, 40 Medium 8×8, 50 Hard 10×10, 50 Expert 12×12), 182 pages, [folder](series/frostwood/04-tents-in-frostwood/) |
+| 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/02-fireside-cryptograms/) |
 
 ## Evaluated, not chosen
 | Date | Idea |

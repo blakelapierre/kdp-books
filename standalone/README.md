@@ -6,7 +6,9 @@ A book belongs in `series/<name>/` if it shares a setting, a house style and a s
 
 ## Books
 
+Folders are numbered `NN-<book-slug>` in creation order; a new book gets the next number (see the [main README](../README.md#folder-numbering)).
+
 | Title | Pages | Price | Folder |
 |-------|-------|-------|--------|
-| *The Advent Clock*: A Christmas Puzzle Countdown | 89 | $9.99 | [the-advent-clock/](the-advent-clock/) |
-| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles | 160 | $9.99 | [fireside-cryptograms/](fireside-cryptograms/) |
+| *The Advent Clock*: A Christmas Puzzle Countdown | 89 | $9.99 | [01-the-advent-clock/](01-the-advent-clock/) |
+| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles | 160 | $9.99 | [02-fireside-cryptograms/](02-fireside-cryptograms/) |

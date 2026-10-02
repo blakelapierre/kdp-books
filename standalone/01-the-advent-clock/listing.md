@@ -12,7 +12,7 @@
 **Blake La Pierre** (matches the title page, the copyright page, the front cover and the spine).
 
 ## Series
-None. This is a **standalone** book (`standalone/the-advent-clock/`). It is Christmas-specific, and the Frostwood series rules say "winter, but not Christmas-specific", so it is not a Frostwood book. The story is set at the fictional Snowberry Lodge. The only mention of Frostwood is the "Also by Blake La Pierre" list on the last page.
+None. This is a **standalone** book (`standalone/01-the-advent-clock/`). It is Christmas-specific, and the Frostwood series rules say "winter, but not Christmas-specific", so it is not a Frostwood book. The story is set at the fictional Snowberry Lodge. The only mention of Frostwood is the "Also by Blake La Pierre" list on the last page.
 
 ## Description (1,999 characters; KDP's limit is 4,000)
 KDP accepts limited HTML (`<b>`, `<i>`, `<ul>`, `<li>`, `<br>`) in the description box.

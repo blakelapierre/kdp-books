@@ -10,8 +10,8 @@ Back to the [marketing kit](README.md).
 The book is used Dec 1–24, so every week it's live before December counts.
 
 ### Now to Oct 9: set up the title
-- [ ] Final check of `standalone/the-advent-clock/interior.pdf` and `cover.pdf` (89 pages, 6 × 9 in).
-- [ ] On the KDP Bookshelf, create a new **paperback** title. Paste the title, subtitle, description, keywords and categories from `standalone/the-advent-clock/listing.md`.
+- [ ] Final check of `standalone/01-the-advent-clock/interior.pdf` and `cover.pdf` (89 pages, 6 × 9 in).
+- [ ] On the KDP Bookshelf, create a new **paperback** title. Paste the title, subtitle, description, keywords and categories from `standalone/01-the-advent-clock/listing.md`.
 - [ ] Upload the interior and cover. Approve them in the **Print Previewer**, then save as a draft.
 - [ ] Author field: **Blake La Pierre** only. Check the Contributors list, because the live books picked up an extra co-author. See [author-central.md](author-central.md).
 - [ ] Set the price to **$9.99** (royalty about $3.69).

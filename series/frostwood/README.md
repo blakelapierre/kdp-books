@@ -16,12 +16,14 @@ Cozy winter puzzle books by **Blake La Pierre**, all set in and around the imagi
 - **Verification:** every puzzle is checked in code by a solver that is independent of the generator (exactly one solution, and it fits its difficulty band). The results go in `verification.md`, or `clue-checks.md` for book 1.
 
 ## Books
+Folders are numbered `NN-<book-slug>` in series order; a new book gets the next number (see the [main README](../../README.md#folder-numbering)).
+
 | # | Title | Puzzle type | Puzzles | Pages | Status | Folder |
 |---|-------|-------------|---------|-------|--------|--------|
-| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book | Elimination (deduction) mystery | 12 cases | 134 | Draft, print-ready. Not published | [the-thief-stayed-the-night/](the-thief-stayed-the-night/) |
-| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles | Train Tracks | 200 | 192 | Draft, print-ready. Not published | [frostwood-express/](frostwood-express/) |
-| 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles | Star Battle (40 Easy 6×6 and 40 Medium 8×8 one-star; 50 Hard and 50 Expert 10×10 two-star) | 180 | 182 | Draft, print-ready. Not published | [stars-over-frostwood/](stars-over-frostwood/) |
-| 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles | Tents / Tents and Trees (40 Easy 6×6; 40 Medium 8×8; 50 Hard 10×10; 50 Expert 12×12) | 180 | 182 | Draft, print-ready. Not published | [tents-in-frostwood/](tents-in-frostwood/) |
+| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book | Elimination (deduction) mystery | 12 cases | 134 | Live ([B0HLMMS675](https://www.amazon.com/dp/B0HLMMS675)) | [01-the-thief-stayed-the-night/](01-the-thief-stayed-the-night/) |
+| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles | Train Tracks | 200 | 192 | Live ([B0HLMB966Q](https://www.amazon.com/dp/B0HLMB966Q), $11.99) | [02-frostwood-express/](02-frostwood-express/) |
+| 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles | Star Battle (40 Easy 6×6 and 40 Medium 8×8 one-star; 50 Hard and 50 Expert 10×10 two-star) | 180 | 182 | Draft, print-ready. Not published | [03-stars-over-frostwood/](03-stars-over-frostwood/) |
+| 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles | Tents / Tents and Trees (40 Easy 6×6; 40 Medium 8×8; 50 Hard 10×10; 50 Expert 12×12) | 180 | 182 | Draft, print-ready. Not published | [04-tents-in-frostwood/](04-tents-in-frostwood/) |
 
 Setting per book: 1 is the Frostwood Lodge (a theft during a snowbound night). 2 is the Frostwood Express railway, climbing from the valley to the lodge. 3 is the Frostwood Star Club's night walk from the village green, along the railway and up the mountain path, to the observatory dome on the lodge roof. 4 is the pine-grove camp trail from the lodge meadow, along Pine Hollow, through the Upper Grove, to Summit Ridge Camp.
 

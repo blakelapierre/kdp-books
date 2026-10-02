@@ -12,22 +12,22 @@ MKT = os.path.join(REPO, "marketing")
 
 BOOKS = {
     "the-thief-stayed-the-night": dict(
-        dir="series/frostwood/the-thief-stayed-the-night", short="thief",
+        dir="series/frostwood/01-the-thief-stayed-the-night", short="thief",
         title="The Thief Stayed the Night",
         subtitle="A Snowbound Hotel Mystery Puzzle Book",
         asin="B0HLMMS675", series_no=1, kind="12 cozy elimination cases"),
     "frostwood-express": dict(
-        dir="series/frostwood/frostwood-express", short="express",
+        dir="series/frostwood/02-frostwood-express", short="express",
         title="Frostwood Express",
         subtitle="200 Train Tracks Logic Puzzles",
         asin="B0HLMB966Q", series_no=2, kind="200 Train Tracks puzzles"),
     "stars-over-frostwood": dict(
-        dir="series/frostwood/stars-over-frostwood", short="stars",
+        dir="series/frostwood/03-stars-over-frostwood", short="stars",
         title="Stars over Frostwood",
         subtitle="180 Star Battle Logic Puzzles",
         asin=None, series_no=3, kind="180 Star Battle puzzles"),
     "the-advent-clock": dict(
-        dir="standalone/the-advent-clock", short="advent",
+        dir="standalone/01-the-advent-clock", short="advent",
         title="The Advent Clock",
         subtitle="A Christmas Puzzle Countdown",
         asin=None, series_no=None, kind="24 daily puzzles"),
