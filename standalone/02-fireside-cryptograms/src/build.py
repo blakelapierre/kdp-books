@@ -100,10 +100,66 @@ class Kind(Flowable):
             doc.marks[s.mark] = doc.page
 
 
+ILL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "illustrations")
+VIGNETTES = __import__("illustrations").VIGNETTES
+
+
+def ill(name):
+    return os.path.join(ILL, name + ".png")
+
+
+def draw_ill(c, name, x, y, w, h):
+    """Place a 300 DPI ink illustration (made by illustrations.py) inside the box, keeping its aspect ratio."""
+    from reportlab.lib.utils import ImageReader
+    img = ImageReader(ill(name))
+    iw, ih = img.getSize()
+    sc = min(w / iw, h / ih)
+    dw, dh = iw * sc, ih * sc
+    c.drawImage(ill(name), x + (w - dw) / 2, y + (h - dh) / 2, dw, dh)
+
+
+class Art(Flowable):
+    """A line-art illustration from ../illustrations, centred in the text column."""
+
+    def __init__(s, name, w, h):
+        s.name = name
+        s.width = w
+        s.height = h
+
+    def wrap(s, aw, ah):
+        return s.width, s.height
+
+    def draw(s):
+        draw_ill(s.canv, s.name, 0, 0, s.width, s.height)
+
+
+class SpaceArt(Flowable):
+    """Fills whatever is left of the page with a small illustration, but only if at least minh is free.
+    Never pushes anything onto a new page (takes zero height when there is no room)."""
+
+    def __init__(s, name, minh, maxh, pad=12):
+        s.name, s.minh, s.maxh, s.pad = name, minh, maxh, pad
+        s.width = s.height = 0
+
+    def wrap(s, aw, ah):
+        s.width = aw
+        s.height = max(0, ah - 1) if ah - 2 * s.pad >= s.minh else 0
+        return aw, s.height
+
+    def draw(s):
+        if s.height <= 0:
+            return
+        h = min(s.maxh, s.height - 2 * s.pad)
+        draw_ill(s.canv, s.name, 0, (s.height - h) / 2, s.width, h)
+
+
 def page_end(c, doc):
     p = doc.page
     kind = getattr(doc, "pkind", {}).get(p, "normal")
-    if kind in ("blank", "title", "nofolio"):
+    if kind == "blank":
+        draw_ill(c, "v_cabin", (INNER if p % 2 else OUTER) + (TW - 1.9 * inch) / 2, BOT + TH / 2 - 0.42 * inch, 1.9 * inch, 0.85 * inch)
+        return
+    if kind in ("title", "nofolio"):
         return
     c.saveState()
     c.setFont("Crimson", 9)
@@ -396,6 +452,16 @@ def build(recto_fix):
             S.extend([Kind("blank"), PageBreak()])
         S.append(Kind(mark=tag))
 
+    # Half title + frontispiece
+    S += [
+        Kind("title"), Spacer(1, 2.2 * inch),
+        Paragraph("Fireside<br/>Cryptograms", ParagraphStyle("ht", fontName="PlayfairSC-B", fontSize=26, leading=30,
+                                                             alignment=TA_CENTER, textColor=DARK)),
+        Spacer(1, 0.5 * inch), Art("v_candle", TW, 0.85 * inch),
+        PageBreak(), Kind("title"), Spacer(1, 0.05 * inch), Art("frontispiece", TW, 7.0 * inch), Spacer(1, 6),
+        Paragraph("A quiet evening by the fire", ParagraphStyle("fc", parent=small, fontSize=10)),
+        PageBreak(),
+    ]
     # Title
     S += [
         Kind("title"),
@@ -410,9 +476,9 @@ def build(recto_fix):
         Spacer(1, 12),
         Paragraph("200 monoalphabetic quote puzzles<br/>Easy to Expert · Hints &amp; Solutions",
                   ParagraphStyle("t2", parent=small, fontSize=12.5, leading=16)),
-        Spacer(1, 0.35 * inch),
-        FlameArt(TW, 1.4 * inch, seed=3),
-        Spacer(1, 0.35 * inch),
+        Spacer(1, 0.3 * inch),
+        Art("title", TW, 2.2 * inch),
+        Spacer(1, 0.3 * inch),
         Paragraph("Blake La Pierre",
                   ParagraphStyle("t4", parent=small, fontSize=12)),
     ]
@@ -496,13 +562,13 @@ def build(recto_fix):
         part, line, blurb = PARTS[band]
         ps = D[band]
         recto(band)
-        S += [Kind("opener"), Kind(section=f"{part} · {line}"), Spacer(1, 1.4 * inch)] + heading(f"{part} · {band}", line)
+        S += [Kind("opener"), Kind(section=f"{part} · {line}"), Spacer(1, 1.0 * inch)] + heading(f"{part} · {band}", line)
         S += [
             Paragraph(f"Puzzles {ps[0]['num']} to {ps[-1]['num']}", ParagraphStyle("pn", parent=small, fontSize=11)),
             Spacer(1, 12),
             Paragraph(blurb, ParagraphStyle("bl", parent=small, fontSize=11, leading=15)),
             Spacer(1, 0.4 * inch),
-            FlameArt(TW, 1.2 * inch, seed=10 + BANDS.index(band)),
+            Art("opener-" + band.lower(), TW, 2.4 * inch),
         ]
         S.append(PageBreak())
 
@@ -524,6 +590,7 @@ def build(recto_fix):
             else:
                 S.append(PuzzleFlowable(ps[i], TW))
                 i += 1
+            S.append(SpaceArt(VIGNETTES[(i + BANDS.index(band)) % len(VIGNETTES)], 0.75 * inch, 1.0 * inch))
             if i < len(ps):
                 S.append(PageBreak())
 
@@ -574,6 +641,8 @@ def build(recto_fix):
         Spacer(1, 6),
         Paragraph("<i>The Thief Stayed the Night</i> · <i>Frostwood Express</i> · <i>Stars over Frostwood</i> · <i>The Advent Clock</i>",
                   ParagraphStyle("ab2", parent=small, fontSize=9.5, leading=13)),
+        Spacer(1, 0.35 * inch),
+        Art("thanks", TW, 1.5 * inch),
     ]
     S.append(("PAD",))
     return S
@@ -631,7 +700,7 @@ def render(recto_fix, out, toc):
 
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "interior.pdf")
+    out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "standalone-02-fireside-cryptograms-interior.pdf")
     fix = set()
     toc = {}
     care = {"howto", "hints", "solutions", "contents", "about"}

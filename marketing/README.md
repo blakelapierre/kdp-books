@@ -26,10 +26,10 @@ A copy-paste marketing kit for four cozy, non-violent KDP paperbacks. All four a
 - 📱 [social/posts.md](social/posts.md): Reddit (with subreddit rules), Facebook groups, and Instagram
 - 📌 [social/pinterest.md](social/pinterest.md): pin titles, descriptions and links, for the images in [social/pinterest/](social/pinterest/)
 - 🖨️ [social/samples/](social/samples/): free printable sample PDFs (US Letter, with answers)
-  - [Thief](social/samples/the-thief-stayed-the-night-sample.pdf)
-  - [Express](social/samples/frostwood-express-sample.pdf)
-  - [Stars](social/samples/stars-over-frostwood-sample.pdf)
-  - [Advent](social/samples/the-advent-clock-sample.pdf)
+  - [Thief](social/samples/frostwood-01-the-thief-stayed-the-night-sample.pdf)
+  - [Express](social/samples/frostwood-02-frostwood-express-sample.pdf)
+  - [Stars](social/samples/frostwood-03-stars-over-frostwood-sample.pdf)
+  - [Advent](social/samples/standalone-01-the-advent-clock-sample.pdf)
 - 🛠️ [src/](src/): scripts that rebuild every image and PDF from the books' own files
 
 ---

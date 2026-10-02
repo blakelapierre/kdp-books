@@ -1,6 +1,6 @@
 # KDP listing draft: *The Advent Clock*
 
-> Draft only. Nothing has been published or submitted to KDP.
+> Draft only. Nothing has been published or submitted to KDP. Step-by-step publishing checklist: [README.md](README.md).
 
 ## Title
 **The Advent Clock**
@@ -14,7 +14,7 @@
 ## Series
 None. This is a **standalone** book (`standalone/01-the-advent-clock/`). It is Christmas-specific, and the Frostwood series rules say "winter, but not Christmas-specific", so it is not a Frostwood book. The story is set at the fictional Snowberry Lodge. The only mention of Frostwood is the "Also by Blake La Pierre" list on the last page.
 
-## Description (1,999 characters; KDP's limit is 4,000)
+## Description (2,152 characters; KDP limit is 4,000)
 KDP accepts limited HTML (`<b>`, `<i>`, `<ul>`, `<li>`, `<br>`) in the description box.
 
 ```html
@@ -35,6 +35,7 @@ Open one door each day from December 1 to December 24. Behind each door is a sho
 <li>Full solutions, one per page, each with a short explanation</li>
 <li>No phone, app or internet needed, just a pencil</li>
 <li>6 × 9 inch paperback, easy to write in</li>
+<li>Black-and-white ink illustrations: a frontispiece of the lodge lobby and its great Advent clock, and a little numbered door drawn for every day</li>
 </ul>
 
 Nothing scary and no crime to solve, just snow, cocoa, gingerbread and a mystery star. A thoughtful stocking stuffer or December gift for puzzle-loving adults, teens and families, and a calm ten-to-thirty-minute ritual for every day of Advent.
@@ -60,19 +61,19 @@ Pour a cup of cocoa, sharpen a pencil and open the first door.
 
 ## Print specs used
 - Trim 6 × 9 in (regular trim), black ink on **white** paper, no bleed interior, matte or glossy cover
-- Interior: **89 pages**, grayscale (every page was rendered and has zero color), all fonts embedded (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, DejaVu Sans for the ❄ symbol; `pdffonts` shows no unembedded fonts). Mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 24–150 pages is 0.375 in inside and 0.25 in outside. Measured ink on every page is at least 0.73 in from the inside edge, 0.52 in from the outside edge, and 0.33 in from the top and bottom (running head and page number).
+- Interior: **92 pages** (includes the black-and-white ink illustrations: solid black line art on white, 300 DPI, no gray washes), grayscale (every page was rendered and has zero color), all fonts embedded (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, DejaVu Sans for the ❄ symbol; `pdffonts` shows no unembedded fonts). Mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 24–150 pages is 0.375 in inside and 0.25 in outside. Measured ink on every page is at least 0.73 in from the inside edge, 0.52 in from the outside edge, and 0.33 in from the top and bottom (running head and page number).
 - Every door is a two-page spread: the story, rules and answer boxes on the left page and the puzzle on the right page.
-- Spine width: 89 × 0.002252 in = **0.2004 in**. KDP allows spine text only for books with more than 79 pages, so 89 is fine. Because the spine is narrow, the spine text is small (7.5 pt small caps, cap height about 5.3 pt, which leaves 0.0625 in clear on each side).
-- Full-wrap cover: 0.125 + 6 + 0.2004 + 6 + 0.125 = **12.4504 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
+- Spine width: 92 × 0.002252 in = **0.2072 in**. KDP allows spine text only for books with more than 79 pages, so 92 is fine. Because the spine is narrow, the spine text is small (7.5 pt small caps, cap height about 5.3 pt, which leaves 0.0625 in clear on each side).
+- Full-wrap cover: 0.125 + 6 + 0.2072 + 6 + 0.125 = **12.4572 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
 - The copyright page reads "Copyright © 2026 Blake La Pierre. All rights reserved." and has no ISBN line.
 
 ## Suggested price
-**$9.99 USD** (Amazon.com). It's the house default, the same as two direct competitors (ENIGMAPOLIS and Moe Lester, below), and the lowest price that earns the 60% royalty rate. At $9.98 or below the rate drops to 50%. Competitors range from $7.99 to $16.99. $11.99 is a reasonable alternative for the gift season, but this book is shorter (89 pages) than most of them (109–151 pages).
+**$9.99 USD** (Amazon.com). It's the house default, the same as two direct competitors (ENIGMAPOLIS and Moe Lester, below), and the lowest price that earns the 60% royalty rate. At $9.98 or below the rate drops to 50%. Competitors range from $7.99 to $16.99. $11.99 is a reasonable alternative for the gift season, but this book is shorter (92 pages) than most of them (109–151 pages).
 
 ## Estimated royalty per copy (Amazon.com)
 From KDP's published formula for black-ink paperbacks, regular trim, Amazon.com: **24–110 pages have a flat printing cost of $2.30** (the $1.00 + $0.012/page rate only starts at 110 pages).
 
-- Printing cost at 89 pages = **$2.30**
+- Printing cost at 92 pages = **$2.30**
 - Royalty = rate × list price − printing cost
 - At **$9.99**: 0.60 × 9.99 − 2.30 = 5.994 − 2.30 = **$3.69 per copy**
 
@@ -84,7 +85,7 @@ From KDP's published formula for black-ink paperbacks, regular trim, Amazon.com:
 | $12.99 | 60% | $5.49 |
 | $9.99 via Expanded Distribution | 40% | $1.70 |
 
-Minimum list price at 60% = 2.30 / 0.60 = $3.83. Because that is under $9.99, the 50% rate applies to any price below $9.99. Keeping the book at 110 pages or fewer keeps the flat $2.30 cost.
+Minimum list price at 60% = 2.300 / 0.60 = $3.83. Because that is under $9.99, the 50% rate applies to any price below $9.99. Keeping the book at 110 pages or fewer keeps the flat $2.30 cost.
 
 **Sources** (both re-checked 2026-09-30):
 - Printing cost: KDP Help, "Paperback Printing Cost": https://kdp.amazon.com/en_US/help/topic/G201834340 (Amazon.com, black ink, 24–110 pages: 2.30 USD flat; 110–828 pages: 1.00 USD + 0.012 USD per page)
@@ -99,7 +100,13 @@ These figures are estimates. Confirm them with KDP's Printing Cost & Royalty Cal
 - **The gap:** the most common complaint in competitor reviews is broken puzzles (typos, "the Dec 5 puzzle had a mistake", unsolvable puzzles, AI-sounding text, "nothing to do with Christmas"). This book answers that with every puzzle checked by computer (see `verification.md`), three hint levels, and a genuinely festive story. Many competitors are murder mysteries. This one has no crime at all.
 - **Caveat:** these are end-of-September BSRs, which is off-season for a December product. There is no December BSR evidence. The demand signal is the review counts (511 in one season), the current Hot New Releases ranks and the Q4 timing. The book would need to be live by early-to-mid November to catch the season.
 
+## Files to upload
+- Interior: [`standalone-01-the-advent-clock-interior.pdf`](standalone-01-the-advent-clock-interior.pdf) (92 pages)
+- Cover: [`standalone-01-the-advent-clock-cover.pdf`](standalone-01-the-advent-clock-cover.pdf) (full wrap, 12.4572 × 9.25 in; see `cover-info.json`)
+- Illustration sources: [`illustrations/`](illustrations/) (drawn by `src/illustrations.py`)
+
 ## Things to decide or do before publishing
+- **Author field**: **Blake La Pierre** only. Remove "Grok Bot" or any other co-author/contributor if KDP shows one.
 - **AI-content disclosure applies.** KDP asks whether a book contains AI-generated content. The puzzles were generated by AI-written code, the text (story, rules, hints, blurb, description) was AI-written, and the cover and interior art was drawn by AI-written code. Answer "yes" for text, and also for images if that is how you read KDP's guidance.
 - **ISBN**: the plan is KDP's free ISBN. The copyright page has no ISBN line, and KDP prints the barcode in the blank area on the back cover.
 - **Proof copy**: order a printed proof. Check the smallest printed items: the 15×15 nonogram clues (doors 6 and 21), the Morse table (door 16), the logic grid (door 9) and the spine text (7.5 pt on a 0.2 in spine).

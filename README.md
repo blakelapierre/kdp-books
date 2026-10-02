@@ -49,21 +49,23 @@ Current books:
 
 ### Frostwood series ([series/frostwood/](series/frostwood/))
 
-| # | Title | Puzzle type | Status | Pages | Price | Folder |
-|---|-------|-------------|--------|-------|-------|--------|
-| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book (12 cozy elimination cases) | Elimination mystery | Live on Amazon ([B0HLMMS675](https://www.amazon.com/dp/B0HLMMS675)) | 134 | $9.99 | [series/frostwood/01-the-thief-stayed-the-night/](series/frostwood/01-the-thief-stayed-the-night/) |
-| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Train Tracks | Live on Amazon ([B0HLMB966Q](https://www.amazon.com/dp/B0HLMB966Q)) | 192 | $11.99 | [series/frostwood/02-frostwood-express/](series/frostwood/02-frostwood-express/) |
-| 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles (Easy to Expert) | Star Battle (1-star and 2-star) | Draft, print-ready. Not yet published or submitted to KDP | 182 | $9.99 | [series/frostwood/03-stars-over-frostwood/](series/frostwood/03-stars-over-frostwood/) |
-| 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 182 | $9.99 | [series/frostwood/04-tents-in-frostwood/](series/frostwood/04-tents-in-frostwood/) |
+| # | Title | Puzzle type | Status | Pages | Price | Royalty* | Publishing checklist |
+|---|-------|-------------|--------|-------|-------|----------|----------------------|
+| 1 | *The Thief Stayed the Night*: A Snowbound Hotel Mystery Puzzle Book (12 cozy elimination cases) | Elimination mystery | Live on Amazon ([B0HLMMS675](https://www.amazon.com/dp/B0HLMMS675)) | 136 | $9.99 | $3.36 | [01-the-thief-stayed-the-night/README.md](series/frostwood/01-the-thief-stayed-the-night/README.md) |
+| 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Train Tracks | Live on Amazon ([B0HLMB966Q](https://www.amazon.com/dp/B0HLMB966Q)) | 194 | $11.99 | $3.87 | [02-frostwood-express/README.md](series/frostwood/02-frostwood-express/README.md) |
+| 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles (Easy to Expert) | Star Battle (1-star and 2-star) | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [03-stars-over-frostwood/README.md](series/frostwood/03-stars-over-frostwood/README.md) |
+| 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [04-tents-in-frostwood/README.md](series/frostwood/04-tents-in-frostwood/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
-| Title | Puzzle type | Status | Pages | Price | Folder |
-|-------|-------------|--------|-------|-------|--------|
-| *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 89 | $9.99 | [standalone/01-the-advent-clock/](standalone/01-the-advent-clock/) |
-| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles for Adults (Easy to Expert) | Cryptograms (cryptoquotes) | Draft, print-ready. Not yet published or submitted to KDP | 160 | $9.99 | [standalone/02-fireside-cryptograms/](standalone/02-fireside-cryptograms/) |
+| Title | Puzzle type | Status | Pages | Price | Royalty* | Publishing checklist |
+|-------|-------------|--------|-------|-------|----------|----------------------|
+| *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 92 | $9.99 | $3.69 | [01-the-advent-clock/README.md](standalone/01-the-advent-clock/README.md) |
+| *Fireside Cryptograms*: 200 Large-Print Quote Puzzles for Adults (Easy to Expert) | Cryptograms (cryptoquotes) | Draft, print-ready. Not yet published or submitted to KDP | 158 | $9.99 | $3.10 | [02-fireside-cryptograms/README.md](standalone/02-fireside-cryptograms/README.md) |
 
-All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper.
+All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
+
+\*Royalty per copy on Amazon.com at the listed price: 0.60 × price − printing, where printing is $2.30 flat for 24–110 pages, otherwise $1.00 + $0.012 × pages. Each book's README is a phone-friendly KDP publishing checklist with download links for its PDFs.
 
 ## Marketing
 
@@ -71,8 +73,11 @@ The marketing kit is in [marketing/](marketing/README.md). It covers the action 
 
 ## What's in each book folder
 
-- `interior.pdf`: the interior file to upload to KDP
-- `cover.pdf`: the full-wrap cover (back, spine and front)
+- `README.md`: phone-friendly KDP publishing checklist (status, download links, copy-paste listing fields, proof checks)
+- `<prefix>-interior.pdf`: the interior file to upload to KDP
+- `<prefix>-cover.pdf`: the full-wrap cover (back, spine and front)
+- File names are unique across the repo. The prefix is `frostwood-NN-<slug>` for series books and `standalone-NN-<slug>` for standalones, e.g. `frostwood-04-tents-in-frostwood-interior.pdf` and `standalone-02-fireside-cryptograms-cover.pdf`
+- `illustrations/`: the 300 DPI black-and-white ink illustrations (drawn in code by `src/illustrations.py` using `src/inkart.py`)
 - `listing.md`: listing draft with title, subtitle, description, keywords, categories, specs and pricing/royalty math
 - `previews/`: PNG renders of the cover and some sample pages
 - `data.json`: the generated puzzle data that the book is built from
@@ -90,48 +95,54 @@ python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
 # Book 1: The Thief Stayed the Night
 cd series/frostwood/01-the-thief-stayed-the-night/src
 python3 gen.py        # regenerate ../data.json from master.py (guest list) and clues.py (cases); optional arg: max seeds
-python3 build.py      # -> ../interior.pdf and ../build-info.json (the story text is in stories.py)
-python3 cover.py      # -> ../cover.pdf and ../cover-info.json (reads the page count)
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-01-the-thief-stayed-the-night-interior.pdf and ../build-info.json (the story text is in stories.py)
+python3 cover.py      # -> ../frostwood-01-the-thief-stayed-the-night-cover.pdf and ../cover-info.json (reads the page count)
 python3 verify.py     # independent re-check -> ../clue-checks.md
 cd ../../../..
 
 # Book 2: Frostwood Express
 cd series/frostwood/02-frostwood-express/src
 python3 master.py     # generate and grade the 200 puzzles -> ../data.json (tracks.py is the solver, gen.py sets the difficulty bands)
-python3 build.py      # -> ../interior.pdf and ../build-info.json
-python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-02-frostwood-express-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../frostwood-02-frostwood-express-cover.pdf, ../cover-info.json and ../tmp/frostwood-02-frostwood-express-cover-guides.pdf
 python3 verify.py     # checks each puzzle has one solution with a SAT solver (verify_sat.py) -> ../verification.md
 cd ../../../..
 
 # Book 3: Stars over Frostwood
 cd series/frostwood/03-stars-over-frostwood/src
 python3 master.py     # generate and grade the 180 puzzles -> ../data.json (about 20 min on 6 cores; stars.py is the logic solver, gen.py sets the bands)
-python3 build.py      # -> ../interior.pdf and ../build-info.json (worked-example text is in example_text.py)
-python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-03-stars-over-frostwood-interior.pdf and ../build-info.json (worked-example text is in example_text.py)
+python3 cover.py      # -> ../frostwood-03-stars-over-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-03-stars-over-frostwood-cover-guides.pdf
 python3 verify.py     # independent SAT check (verify_sat.py) of uniqueness + band fit -> ../verification.md
 cd ../../../..
 
 # Book 4: Tents in Frostwood
 cd series/frostwood/04-tents-in-frostwood/src
 PYTHONHASHSEED=0 python3 master.py   # generate and grade the 180 puzzles -> ../data.json (tents.py is the logic/SAT solver, gen.py sets the bands)
-python3 build.py      # -> ../interior.pdf and ../build-info.json (worked-example text is in example_text.py)
-python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-04-tents-in-frostwood-interior.pdf and ../build-info.json (worked-example text is in example_text.py)
+python3 cover.py      # -> ../frostwood-04-tents-in-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-04-tents-in-frostwood-cover-guides.pdf
 python3 verify.py     # independent SAT + backtracking uniqueness check + band fit -> ../verification.md
 cd ../../../..
 
 # Standalone: The Advent Clock
 cd standalone/01-the-advent-clock/src
 python3 gen.py        # generate all 24 door puzzles -> ../data.json (optional args: door numbers to regenerate only those; ~2 min). Not repeatable (the Queens doors come out different): don't rerun unless you want new puzzles
-python3 build.py      # -> ../interior.pdf and ../build-info.json (story, rules and hints text are in stories.py)
-python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../standalone-01-the-advent-clock-interior.pdf and ../build-info.json (story, rules and hints text are in stories.py)
+python3 cover.py      # -> ../standalone-01-the-advent-clock-cover.pdf, ../cover-info.json and ../tmp/standalone-01-the-advent-clock-cover-guides.pdf
 python3 verify.py     # independent re-solve of every door + the Christmas Eve message -> ../verification.md
 cd ../..
 
 # Standalone: Fireside Cryptograms
 cd standalone/02-fireside-cryptograms/src
 PYTHONHASHSEED=0 python3 master.py   # generate 200 unique cryptograms -> ../data.json
-python3 build.py      # -> ../interior.pdf and ../build-info.json
-python3 cover.py      # -> ../cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../standalone-02-fireside-cryptograms-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../standalone-02-fireside-cryptograms-cover.pdf, ../cover-info.json and ../tmp/standalone-02-fireside-cryptograms-cover-guides.pdf
 python3 verify.py     # independent dictionary solver uniqueness check -> ../verification.md
 ```
 

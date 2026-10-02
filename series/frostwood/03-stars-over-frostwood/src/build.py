@@ -100,9 +100,30 @@ def star(c, x, y, r, fill=DARK, stroke=None, lw=0.6, pts=5, inner=0.42):
     if stroke is not None: c.setStrokeColor(stroke); c.setLineWidth(lw); c.setLineJoin(1)
     c.drawPath(p, stroke=1 if stroke is not None else 0, fill=1); c.restoreState()
 
+import os
+ILL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "illustrations")
+VIGNETTES = __import__("illustrations").VIGNETTES
+
+def ill(name): return os.path.join(ILL, name + ".png")
+
+def draw_ill(c, name, x, y, w, h):
+    """Place a 300 DPI ink illustration (made by illustrations.py) inside the box, keeping its aspect ratio."""
+    from reportlab.lib.utils import ImageReader
+    img = ImageReader(ill(name)); iw, ih = img.getSize()
+    sc = min(w / iw, h / ih); dw, dh = iw * sc, ih * sc
+    c.drawImage(ill(name), x + (w - dw) / 2, y + (h - dh) / 2, dw, dh)
+
+class Art(Flowable):
+    """A line-art illustration from ../illustrations, centred in the text column."""
+    def __init__(s, name, w, h): s.name = name; s.width = w; s.height = h
+    def wrap(s, aw, ah): return s.width, s.height
+    def draw(s): draw_ill(s.canv, s.name, 0, 0, s.width, s.height)
+
 def page_end(c, doc):
     p = doc.page; kind = getattr(doc, "pkind", {}).get(p, "normal")
-    if kind in ("blank", "title", "nofolio"): return
+    if kind == "blank":
+        draw_ill(c, VIGNETTES[1], (INNER if p % 2 else OUTER) + (TW - 1.9 * inch) / 2, BOT + TH / 2 - 0.42 * inch, 1.9 * inch, 0.85 * inch); return
+    if kind in ("title", "nofolio"): return
     c.saveState()
     c.setFont("Crimson", 9); c.setFillColor(MID)
     c.drawCentredString(W / 2 + ((INNER - OUTER) / 2 if p % 2 else -(INNER - OUTER) / 2), 0.42 * inch, str(p))
@@ -189,6 +210,10 @@ class PuzzleBlock(Flowable):
         x0 = (TW - gw) / 2; y0 = ytop - 0.36 * inch - 0.14 * inch - gw
         draw_grid(c, x0, y0, cs, p)
         if full:
+            free_lo, free_hi = 22 + 8, y0 - 8
+            vh = min(0.85 * inch, free_hi - free_lo)
+            if vh >= 0.55 * inch:
+                draw_ill(c, VIGNETTES[p["num"] % len(VIGNETTES)], 0, free_lo + (free_hi - free_lo - vh) / 2, TW, vh)
             yb = 6; c.setStrokeColor(FROST); c.setLineWidth(0.5); c.line(0, yb + 16, TW, yb + 16)
             c.setFont("PlayfairSC", 8.5); c.setFillColor(MID)
             c.drawString(0, yb, "Started"); c.line(40, yb - 1, 120, yb - 1)
@@ -272,10 +297,16 @@ def build(recto_fix):
         S.append(PageBreak())
         if tag in recto_fix: S.extend([Kind("blank"), PageBreak()])
         S.append(Kind(mark=tag))
+    S += [Kind("title"), Spacer(1, 2.2 * inch),
+          Paragraph("Stars over<br/>Frostwood", ParagraphStyle("ht", fontName="PlayfairSC-B", fontSize=26, leading=30, alignment=TA_CENTER, textColor=DARK)),
+          Spacer(1, 10), Flake(), Spacer(1, 0.5 * inch), Art(VIGNETTES[1], TW, 0.85 * inch),
+          PageBreak(), Kind("title"), Spacer(1, 0.05 * inch), Art("frontispiece", TW, 7.0 * inch), Spacer(1, 6),
+          Paragraph("The Star Club climbs to the lodge observatory", ParagraphStyle("fc", parent=small, fontSize=10)),
+          PageBreak()]
     S += [Kind("title"), Spacer(1, 0.5 * inch), Paragraph("A Winter Night-Sky Puzzle Book", ParagraphStyle("t0", parent=kick, fontSize=11, textColor=MID)),
           Spacer(1, 10), Paragraph("Stars over<br/>Frostwood", ParagraphStyle("tt", fontName="PlayfairSC-B", fontSize=38, leading=42, alignment=TA_CENTER, textColor=DARK)),
           Spacer(1, 14), Paragraph(f"{NP} Star Battle logic puzzles<br/>from the village to the summit", ParagraphStyle("t2", parent=small, fontSize=13, leading=17)),
-          Spacer(1, 0.45 * inch), SkyArt(TW, 2.6 * inch), Spacer(1, 0.45 * inch),
+          Spacer(1, 0.4 * inch), Art("title", TW, 2.6 * inch), Spacer(1, 0.4 * inch),
           Paragraph("A Frostwood Puzzle Book", ParagraphStyle("t3", parent=kick, fontSize=10, textColor=DARK)),
           Paragraph("Blake La Pierre", ParagraphStyle("t4", parent=small, fontSize=11))]
     S += [PageBreak(), Kind("nofolio"), Spacer(1, 3.6 * inch)]
@@ -328,10 +359,10 @@ def build(recto_fix):
     for band in BANDS:
         part, place, k, blurb = PARTS[band]; ps = D[band]; n = ps[0]["n"]; ks = ps[0]["k"]
         recto(band)
-        S += [Kind("opener"), Kind(section=f"{part} · {place}"), Spacer(1, 1.3 * inch)] + heading(f"{part} · {band} · {n}×{n} · {ks} star{'s' if ks > 1 else ''}", place)
+        S += [Kind("opener"), Kind(section=f"{part} · {place}"), Spacer(1, 0.9 * inch)] + heading(f"{part} · {band} · {n}×{n} · {ks} star{'s' if ks > 1 else ''}", place)
         S += [Paragraph(f"Puzzles {ps[0]['num']} to {ps[-1]['num']}", ParagraphStyle("pn", parent=small, fontSize=11)), Spacer(1, 14),
-              Paragraph(blurb, ParagraphStyle("bl", parent=small, fontSize=11, leading=15)), Spacer(1, 0.5 * inch),
-              SkyArt(TW, 1.9 * inch, seed=k + 10, lodge=(band in ("Hard", "Expert")), village=(band == "Easy"), rail=(band == "Medium"))]
+              Paragraph(blurb, ParagraphStyle("bl", parent=small, fontSize=11, leading=15)), Spacer(1, 0.4 * inch),
+              Art("opener-" + band.lower(), TW, 2.4 * inch)]
         S.append(PageBreak())
         if n <= 8:
             cell = 0.46 * inch if n == 6 else 0.36 * inch
@@ -376,6 +407,7 @@ def build(recto_fix):
                  ("Frostwood Express", "200 Train Tracks logic puzzles. Lay the railway that climbs from the valley to the lodge, from the foothills to the summit.")]:
         S += [Paragraph(f"<i>{t}</i>", ParagraphStyle("ab2", parent=body0, alignment=TA_CENTER, fontSize=13)),
               Paragraph(d, ParagraphStyle("ab3", parent=small)), Spacer(1, 10)]
+    S += [Spacer(1, 0.12 * inch), Art("thanks", TW, 1.3 * inch)]
     S.append(("PAD",))
     return S
 
@@ -402,7 +434,7 @@ def render(recto_fix, out, toc):
     return doc.marks, doc.page
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else "../interior.pdf"
+    out = sys.argv[1] if len(sys.argv) > 1 else "../frostwood-03-stars-over-frostwood-interior.pdf"
     fix = set(); toc = {}
     for it in range(40):
         marks, pages = render(fix, out, toc)

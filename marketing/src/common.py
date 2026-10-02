@@ -12,21 +12,25 @@ MKT = os.path.join(REPO, "marketing")
 
 BOOKS = {
     "the-thief-stayed-the-night": dict(
+        pdf="frostwood-01-the-thief-stayed-the-night",  # unique file prefix: <pdf>-interior.pdf, <pdf>-cover.pdf, <pdf>-sample.pdf
         dir="series/frostwood/01-the-thief-stayed-the-night", short="thief",
         title="The Thief Stayed the Night",
         subtitle="A Snowbound Hotel Mystery Puzzle Book",
         asin="B0HLMMS675", series_no=1, kind="12 cozy elimination cases"),
     "frostwood-express": dict(
+        pdf="frostwood-02-frostwood-express",  # unique file prefix: <pdf>-interior.pdf, <pdf>-cover.pdf, <pdf>-sample.pdf
         dir="series/frostwood/02-frostwood-express", short="express",
         title="Frostwood Express",
         subtitle="200 Train Tracks Logic Puzzles",
         asin="B0HLMB966Q", series_no=2, kind="200 Train Tracks puzzles"),
     "stars-over-frostwood": dict(
+        pdf="frostwood-03-stars-over-frostwood",  # unique file prefix: <pdf>-interior.pdf, <pdf>-cover.pdf, <pdf>-sample.pdf
         dir="series/frostwood/03-stars-over-frostwood", short="stars",
         title="Stars over Frostwood",
         subtitle="180 Star Battle Logic Puzzles",
         asin=None, series_no=3, kind="180 Star Battle puzzles"),
     "the-advent-clock": dict(
+        pdf="standalone-01-the-advent-clock",  # unique file prefix: <pdf>-interior.pdf, <pdf>-cover.pdf, <pdf>-sample.pdf
         dir="standalone/01-the-advent-clock", short="advent",
         title="The Advent Clock",
         subtitle="A Christmas Puzzle Countdown",
@@ -55,6 +59,12 @@ def font(name, size):
 def book_path(slug, *parts):
     return os.path.join(REPO, BOOKS[slug]["dir"], *parts)
 
+def interior_pdf(slug):
+    return book_path(slug, BOOKS[slug]["pdf"] + "-interior.pdf")
+
+def cover_pdf(slug):
+    return book_path(slug, BOOKS[slug]["pdf"] + "-cover.pdf")
+
 def render_page(pdf, page, dpi=300):
     with tempfile.TemporaryDirectory() as td:
         out = os.path.join(td, "p")
@@ -64,7 +74,7 @@ def render_page(pdf, page, dpi=300):
 
 def crop_in(slug, page, box, dpi=300, trim=True, pad=0.06):
     """Crop a region (x0, y0, x1, y1 in inches from the top-left of the 6x9 page)."""
-    im = render_page(book_path(slug, "interior.pdf"), page, dpi)
+    im = render_page(interior_pdf(slug), page, dpi)
     x0, y0, x1, y1 = [int(v * dpi) for v in box]
     im = im.crop((x0, y0, x1, y1))
     if trim:
@@ -84,7 +94,7 @@ def front_cover(slug, dpi=300):
         out = os.path.join(td, "c")
         subprocess.run(["pdftoppm", "-r", str(dpi), "-png", "-singlefile", "-x", str(int(round(x0))),
                         "-y", str(int(0.125 * dpi)), "-W", str(6 * dpi), "-H", str(9 * dpi),
-                        os.path.join(d, "cover.pdf"), out], check=True)
+                        cover_pdf(slug), out], check=True)
         return Image.open(out + ".png").convert("RGB")
 
 # ---------- drawing helpers ----------

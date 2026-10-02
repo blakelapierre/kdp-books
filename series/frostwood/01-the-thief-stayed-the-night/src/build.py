@@ -70,7 +70,9 @@ def snowflake(c, x, y, r, col, lw=0.09):
 
 def page_end(c, doc):
     p = doc.page; kind = getattr(doc, "pkind", {}).get(p, "normal")
-    if kind in ("blank", "title", "nofolio"): return
+    if kind == "blank":
+        draw_ill(c, "v_blank", (INNER if p % 2 else OUTER) + (TW - 1.9 * inch) / 2, BOT + (H - TOP - BOT) / 2 - 0.42 * inch, 1.9 * inch, 0.85 * inch); return
+    if kind in ("title", "nofolio"): return
     c.saveState()
     c.setFont("Crimson", 9); c.setFillColor(MID)
     c.drawCentredString(W / 2 + ((INNER - OUTER) / 2 if p % 2 else -(INNER - OUTER) / 2), 0.42 * inch, str(p))
@@ -80,6 +82,36 @@ def page_end(c, doc):
         if p % 2 == 0: c.drawString(OUTER, H - 0.42 * inch, hdr)
         else: c.drawRightString(W - OUTER, H - 0.42 * inch, hdr)
     c.restoreState()
+
+import os
+ILL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "illustrations")
+def ill(name): return os.path.join(ILL, name + ".png")
+
+def draw_ill(c, name, x, y, w, h):
+    """Place a 300 DPI ink illustration (made by illustrations.py) inside the box, keeping its aspect ratio."""
+    from reportlab.lib.utils import ImageReader
+    img = ImageReader(ill(name)); iw, ih = img.getSize()
+    sc = min(w / iw, h / ih); dw, dh = iw * sc, ih * sc
+    c.drawImage(ill(name), x + (w - dw) / 2, y + (h - dh) / 2, dw, dh)
+
+class Art(Flowable):
+    """A line-art illustration from ../illustrations, centred in the text column."""
+    def __init__(s, name, w, h): s.name = name; s.width = w; s.height = h
+    def wrap(s, aw, ah): return s.width, s.height
+    def draw(s): draw_ill(s.canv, s.name, 0, 0, s.width, s.height)
+
+class SpaceArt(Flowable):
+    """Fills whatever is left of the page with a small illustration, but only if at least minh is free.
+    Never pushes anything onto a new page (takes zero height when there is no room)."""
+    def __init__(s, name, minh, maxh, pad=12): s.name, s.minh, s.maxh, s.pad = name, minh, maxh, pad; s.width = s.height = 0
+    def wrap(s, aw, ah):
+        s.width = aw; s.height = max(0, ah - 1) if ah - 2 * s.pad >= s.minh else 0
+        return aw, s.height
+    def split(s, aw, ah): return []
+    def draw(s):
+        if s.height <= 0: return
+        h = min(s.maxh, s.height - 2 * s.pad)
+        draw_ill(s.canv, s.name, 0, (s.height - h) / 2, s.width, h)
 
 class Kind(Flowable):
     """Zero-size marker: sets the page kind (for folio/header) and/or running section title."""
@@ -203,11 +235,18 @@ def build(recto_fix, out):
         S.append(PageBreak())
         if tag in recto_fix: S.extend([Kind("blank"), PageBreak()])
         S.append(Kind(mark=tag))
+    # --- half-title and frontispiece
+    S += [Kind("title"), Spacer(1, 2.2 * inch),
+          Paragraph("The Thief<br/>Stayed the Night", ParagraphStyle("ht", fontName="PlayfairSC-B", fontSize=26, leading=30, alignment=TA_CENTER, textColor=DARK)),
+          Spacer(1, 10), Flake(), Spacer(1, 0.5 * inch), Art("v_blank", TW, 0.85 * inch),
+          PageBreak(), Kind("title"), Spacer(1, 0.05 * inch), Art("frontispiece", TW, 7.0 * inch), Spacer(1, 6),
+          Paragraph("The Frostwood Lodge, snowed in for the week", ParagraphStyle("fc", parent=small, fontSize=10)),
+          PageBreak()]
     # --- title page
     S += [Kind("title"), Spacer(1, 0.55 * inch), Paragraph("A Snowbound Hotel Mystery", ParagraphStyle("t0", parent=kick, fontSize=11, textColor=MID)),
           Spacer(1, 10), Paragraph("The Thief<br/>Stayed the Night", ParagraphStyle("tt", fontName="PlayfairSC-B", fontSize=34, leading=38, alignment=TA_CENTER, textColor=DARK)),
           Spacer(1, 14), Paragraph("Twelve cozy cases. One snowbound week.<br/>Can you find who did it?", ParagraphStyle("t2", parent=small, fontSize=13, leading=17)),
-          Spacer(1, 0.45 * inch), TitleArt(TW, 2.9 * inch), Spacer(1, 0.35 * inch),
+          Spacer(1, 0.45 * inch), Art("title", TW, 2.9 * inch), Spacer(1, 0.35 * inch),
           Paragraph("An Elimination Puzzle Book", ParagraphStyle("t3", parent=kick, fontSize=10, textColor=DARK)),
           Paragraph("Blake La Pierre", ParagraphStyle("t4", parent=small, fontSize=11))]
     # --- copyright
@@ -255,6 +294,7 @@ def build(recto_fix, out):
     S += [Kind("opener"), Kind(section="Prologue"), Spacer(1, 0.3 * inch)] + heading("Sunday", "Prologue")
     S.append(Paragraph(runin(ST.PROLOGUE[0]), drop0))
     for t in ST.PROLOGUE[1:]: S.append(Paragraph(t, body))
+    S.append(SpaceArt("prologue", 0.9 * inch, 1.4 * inch))
     # --- cases
     for case, d in zip(CASES, D):
         n = case["num"]; st = ST.S[n]; reg = d["reg"]; N = len(reg)
@@ -299,6 +339,7 @@ def build(recto_fix, out):
             S += [Paragraph(lab, ParagraphStyle("l", parent=body0, fontName="PlayfairSC", textColor=DARK)), Spacer(1, 16), HRFlowable(width="100%", thickness=0.5, color=FROST), Spacer(1, 12)]
         S.pop()
         for _ in range(3): S += [Spacer(1, 22), HRFlowable(width="100%", thickness=0.5, color=FROST)]
+        S.append(SpaceArt(f"case-{n:02d}", 0.9 * inch, 1.45 * inch, pad=18))
         S += [PageBreak(), Spacer(1, 0.1 * inch)] + heading(f"Case {NUMW[n]}", "Detective’s Notes")
         for _ in range(21): S += [Spacer(1, 18.5), HRFlowable(width="100%", thickness=0.4, color=FROST, dash=(1, 2))]
     # --- hints
@@ -344,8 +385,8 @@ def build(recto_fix, out):
     S += [PageBreak(), Kind("opener"), Kind(section="Epilogue"), Kind(mark="epilogue"), Spacer(1, 0.3 * inch)] + heading("Saturday Night · Sunday Morning", "Epilogue")
     S.append(Paragraph(runin(ST.EPILOGUE[0]), drop0))
     for t in ST.EPILOGUE[1:]: S.append(Paragraph(t, body))
-    S += [Spacer(1, 18), Flake(), Spacer(1, 6), Paragraph("The End", ParagraphStyle("end", parent=kick, fontSize=12, textColor=DARK))]
-    S += [PageBreak(), Kind("nofolio"), Spacer(1, 2.6 * inch)] + heading("Thank You", "A Note from Frostwood")
+    S += [Spacer(1, 18), Flake(), Spacer(1, 6), Paragraph("The End", ParagraphStyle("end", parent=kick, fontSize=12, textColor=DARK)), SpaceArt("epilogue", 0.8 * inch, 1.0 * inch)]
+    S += [PageBreak(), Kind("nofolio"), Spacer(1, 0.4 * inch), Art("thanks", TW, 1.8 * inch), Spacer(1, 0.4 * inch)] + heading("Thank You", "A Note from Frostwood")
     S.append(Paragraph("Thank you for spending a snowbound week at the Frostwood Lodge. If you enjoyed solving these cases, a short review helps other puzzlers find the book, and Mr. Pemberton reads every single one (Gus reads them aloud to him).", ParagraphStyle("ty", parent=body0, alignment=TA_CENTER)))
     return S
 
@@ -368,7 +409,7 @@ def render(recto_fix, out, toc):
     return doc.marks, doc.page
 
 if __name__ == "__main__":
-    out = sys.argv[1] if len(sys.argv) > 1 else "../interior.pdf"
+    out = sys.argv[1] if len(sys.argv) > 1 else "../frostwood-01-the-thief-stayed-the-night-interior.pdf"
     fix = set(); toc = {}
     for it in range(40):
         marks, pages = render(fix, out, toc)
@@ -376,5 +417,6 @@ if __name__ == "__main__":
         if not bad and marks == toc: break
         if bad: fix ^= {bad[0][1]}
         toc = marks
+    assert pages % 2 == 0, pages
     print("pages", pages, "marks", marks)
     json.dump(dict(pages=pages, marks=marks), open("../build-info.json", "w"))

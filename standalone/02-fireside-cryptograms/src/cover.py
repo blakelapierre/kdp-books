@@ -191,7 +191,7 @@ def back(c):
 
 def main(out=None, guides=False):
     if out is None:
-        out = os.path.join(os.path.dirname(__file__), "..", "cover.pdf")
+        out = os.path.join(os.path.dirname(__file__), "..", "standalone-02-fireside-cryptograms-cover.pdf")
     I = inch
     c = canvas.Canvas(out, pagesize=(CW * I, CH * I), initialFontName="Crimson")
     c.setTitle("Fireside Cryptograms — KDP cover")
@@ -238,6 +238,6 @@ def main(out=None, guides=False):
 if __name__ == "__main__":
     root = os.path.join(os.path.dirname(__file__), "..")
     m = main()
-    main(os.path.join(root, "tmp", "cover-guides.pdf"), guides=True)
+    main(os.path.join(root, "tmp", "standalone-02-fireside-cryptograms-cover-guides.pdf"), guides=True)
     print(m)
     json.dump(m, open(os.path.join(root, "cover-info.json"), "w"), indent=1)

@@ -98,7 +98,7 @@ def back(c):
     c.setFillColor(PALE); c.setFont("PlayfairSC", 9); c.drawString((X_BACK + 1.7) * inch, (BLEED + 0.95) * inch, "Frostwood Lodge")
     c.setFont("Crimson-I", 9.5); c.drawString((X_BACK + 1.7) * inch, (BLEED + 0.75) * inch, "Puzzles & Games · Ages 12 and up")
 
-def main(out="../cover.pdf", guides=False):
+def main(out="../frostwood-01-the-thief-stayed-the-night-cover.pdf", guides=False):
     c = canvas.Canvas(out, pagesize=(CW * inch, CH * inch))
     c.setTitle("The Thief Stayed the Night — KDP cover"); c.setAuthor("Blake La Pierre")
     c.setFillColor(NAVY); c.rect(0, 0, CW * inch, CH * inch, stroke=0, fill=1)
@@ -124,5 +124,5 @@ def main(out="../cover.pdf", guides=False):
     return dict(pages=PAGES, spine_in=SPINE, width_in=CW, height_in=CH, barcode_box_in=[bx, by, 2.0, 1.2])
 
 if __name__ == "__main__":
-    m = main(); main("/tmp/cover-guides.pdf", guides=True)
+    m = main(); main("../tmp/frostwood-01-the-thief-stayed-the-night-cover-guides.pdf", guides=True)
     print(m); json.dump(m, open("../cover-info.json", "w"), indent=1)

@@ -1,6 +1,6 @@
 # KDP listing draft: *Stars over Frostwood*
 
-> Draft only. Nothing has been published or submitted to KDP.
+> Draft only. Nothing has been published or submitted to KDP. Step-by-step publishing checklist: [README.md](README.md).
 
 ## Title
 **Stars over Frostwood**
@@ -14,7 +14,7 @@
 ## Series
 Book 3 of **"A Frostwood Puzzle Book"**, after *The Thief Stayed the Night* (book 1) and *Frostwood Express* (book 2). The cover and title page already say "A Frostwood Puzzle Book". If you set up the series on KDP, add this book as number 3.
 
-## Description (about 1,900 characters; KDP limit is 4,000)
+## Description (1,969 characters; KDP limit is 4,000)
 KDP accepts limited HTML (`<b>`, `<i>`, `<ul>`, `<li>`, `<br>`) in the description box.
 
 ```html
@@ -33,6 +33,7 @@ Every puzzle has <b>exactly one solution</b>, checked by computer, and every one
 <li>A how-to-play guide with a fully worked example and the key solving tricks</li>
 <li>Complete solutions at the back</li>
 <li>6 × 9 inch paperback, easy to carry and easy to write in</li>
+<li>Black-and-white ink illustrations: a frontispiece of the lodge observatory, a scene opening each section and small starry-night drawings on the puzzle pages</li>
 </ul>
 
 From the Village Green to the Lodge Observatory, the puzzles grow step by step. First you'll spot tiny regions and full rows. Then you'll learn to squeeze regions into rows and count stars across several regions at once. At the very top, you'll ask "what if a star were here?" and follow the answer until the sky runs out of room.
@@ -60,9 +61,9 @@ Grab a pencil, pour some cocoa, and wait for the sky to clear.
 
 ## Print specs used
 - Trim 6 × 9 in (regular trim), black ink on **white** paper, no bleed interior, matte or glossy cover
-- Interior: **182 pages** (181 content pages plus one blank at the end so the count is even), grayscale only (every rendered pixel has R = G = B), all fonts embedded and subset (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, and DejaVu Sans for the ❄ symbol). Mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 151–300 pages is 0.5 in inside and 0.25 in outside. Measured ink on every page is at least 0.66 in from the inside edge, 0.44 in from the outside edge, 0.34 in from the top and 0.42 in from the bottom.
-- Spine width: 182 × 0.002252 in = **0.4099 in** (spine text is allowed; KDP recommends 79+ pages)
-- Full-wrap cover: 0.125 + 6 + 0.4099 + 6 + 0.125 = **12.6599 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
+- Interior: **184 pages** (includes the black-and-white ink illustrations: solid black line art on white, 300 DPI, no gray washes), grayscale only (every rendered pixel has R = G = B), all fonts embedded and subset (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, and DejaVu Sans for the ❄ symbol). Mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 151–300 pages is 0.5 in inside and 0.25 in outside. Measured ink on every page is at least 0.66 in from the inside edge, 0.44 in from the outside edge, 0.34 in from the top and 0.42 in from the bottom.
+- Spine width: 184 × 0.002252 in = **0.4144 in** (spine text is allowed; KDP recommends 79+ pages)
+- Full-wrap cover: 0.125 + 6 + 0.4144 + 6 + 0.125 = **12.6644 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
 
 ## Suggested price
 **$9.99 USD** (Amazon.com), the lowest price that earns the 60% royalty rate. At $9.98 or below the rate drops to 50%.
@@ -89,19 +90,19 @@ I compared five candidate puzzle types by their Amazon search results. Only numb
 ## Estimated royalty per copy (Amazon.com)
 From KDP's published formula for black-ink paperbacks, regular trim, 110–828 pages, Amazon.com: fixed cost **$1.00** plus **$0.012 per page**.
 
-- Printing cost = $1.00 + 182 × $0.012 = **$3.184 ≈ $3.18**
+- Printing cost = $1.00 + 184 × $0.012 = **$3.208 ≈ $3.21**
 - Royalty = 60% × list price − printing cost
 - At **$9.99**: 0.60 × 9.99 − 3.184 = 5.994 − 3.184 = **$2.81 per copy**
 
 | List price | Royalty rate | Royalty per copy |
 |---|---|---|
-| $8.99 | 50% | $1.31 |
-| **$9.99** | **60%** | **$2.81** |
-| $10.99 | 60% | $3.41 |
-| $11.99 | 60% | $4.01 |
-| $9.99 via Expanded Distribution | 40% | $0.81 |
+| $8.99 | 50% | $1.29 |
+| **$9.99** | **60%** | **$2.79** |
+| $10.99 | 60% | $3.39 |
+| $11.99 | 60% | $3.99 |
+| $9.99 via Expanded Distribution | 40% | $0.79 |
 
-Minimum list price at 60% = 3.184 / 0.60 = $5.31. Because that is under $9.99, the 50% rate applies to any price below $9.99.
+Minimum list price at 60% = 3.208 / 0.60 = $5.35. Because that is under $9.99, the 50% rate applies to any price below $9.99.
 
 **Sources** (fetched 2026-09-30):
 - Printing cost: KDP Help, "Paperback Printing Cost": https://kdp.amazon.com/en_US/help/topic/G201834340 (Amazon.com, black ink, 110–828 pages, regular trim: 1.00 USD per book + 0.012 USD per page)
@@ -109,7 +110,13 @@ Minimum list price at 60% = 3.184 / 0.60 = $5.31. Because that is under $9.99, t
 
 These are estimates. Confirm them with KDP's Printing Cost & Royalty Calculator on the Rights & Pricing page before you set the price.
 
+## Files to upload
+- Interior: [`frostwood-03-stars-over-frostwood-interior.pdf`](frostwood-03-stars-over-frostwood-interior.pdf) (184 pages)
+- Cover: [`frostwood-03-stars-over-frostwood-cover.pdf`](frostwood-03-stars-over-frostwood-cover.pdf) (full wrap, 12.6644 × 9.25 in; see `cover-info.json`)
+- Illustration sources: [`illustrations/`](illustrations/) (drawn by `src/illustrations.py`)
+
 ## Things to decide or do before publishing
+- **Author field**: **Blake La Pierre** only. Remove "Grok Bot" or any other co-author/contributor if KDP shows one.
 - **AI-content disclosure applies.** KDP asks whether a book contains AI-generated content. The puzzles were generated by AI-written code, the text (how-to, worked example, blurb, description) was AI-written, and the cover and interior art was drawn by AI-written code. Answer "yes" for text, and also for images if that is how you read KDP's guidance.
 - **ISBN**: the plan is KDP's free ISBN. The copyright page has no ISBN line, and KDP prints the barcode in the blank area on the back cover.
 - **Proof copy**: order a printed proof. Check the thick region borders against the thin grid lines, and the smallest solution grids (10×10, 0.19 in per square).

@@ -1,4 +1,4 @@
-"""Builds the 6x9 interior PDF (grayscale, no bleed, mirrored margins, embedded fonts) -> ../interior.pdf"""
+"""Builds the 6x9 interior PDF (grayscale, no bleed, mirrored margins, embedded fonts) -> ../standalone-01-the-advent-clock-interior.pdf"""
 import json, sys, math, random
 sys.path.insert(0, ".")
 from reportlab.lib.units import inch
@@ -35,9 +35,41 @@ class Doc(BaseDocTemplate):
         if getattr(fl, "section", None) is not None: self.section = fl.section
         if getattr(fl, "mark", None): self.marks[fl.mark] = self.page
 
+import os
+ILL = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "illustrations")
+
+def ill(name): return os.path.join(ILL, name + ".png")
+
+def draw_ill(c, name, x, y, w, h):
+    """Place a 300 DPI ink illustration (made by illustrations.py) inside the box, keeping its aspect ratio."""
+    from reportlab.lib.utils import ImageReader
+    img = ImageReader(ill(name)); iw, ih = img.getSize()
+    sc = min(w / iw, h / ih); dw, dh = iw * sc, ih * sc
+    c.drawImage(ill(name), x + (w - dw) / 2, y + (h - dh) / 2, dw, dh)
+
+class Art(Flowable):
+    """A line-art illustration from ../illustrations, centred in the text column."""
+    def __init__(s, name, w, h): s.name = name; s.width = w; s.height = h
+    def wrap(s, aw, ah): return s.width, s.height
+    def draw(s): draw_ill(s.canv, s.name, 0, 0, s.width, s.height)
+
+class SpaceArt(Flowable):
+    """Fills whatever is left of the page with an illustration, but only if at least minh is free.
+    Never pushes anything onto a new page (takes zero height when there is no room)."""
+    def __init__(s, name, minh, maxh, pad=10): s.name = name; s.minh = minh; s.maxh = maxh; s.pad = pad; s.width = 0; s.height = 0
+    def wrap(s, aw, ah):
+        s.width = aw; s.height = max(0, ah - 1) if ah - 2 * s.pad >= s.minh else 0
+        return aw, s.height
+    def draw(s):
+        if s.height <= 0: return
+        h = min(s.maxh, s.height - 2 * s.pad)
+        draw_ill(s.canv, s.name, 0, (s.height - h) / 2, s.width, h)
+
 def page_end(c, doc):
     p = doc.page; kind = doc.pkind.get(p, "normal")
-    if kind in ("blank", "title", "nofolio"): return
+    if kind == "blank":
+        draw_ill(c, "v_blank", (INNER if p % 2 else OUTER) + (TW - 1.9 * inch) / 2, BOT + TH / 2 - 0.42 * inch, 1.9 * inch, 0.85 * inch); return
+    if kind in ("title", "nofolio"): return
     c.saveState(); c.setFont("Crimson", 9); c.setFillColor(MID)
     c.drawCentredString(W / 2 + ((INNER - OUTER) / 2 if p % 2 else -(INNER - OUTER) / 2), 0.42 * inch, str(p))
     if kind != "opener":
@@ -217,18 +249,25 @@ def sol_block(v, h):
     return Box(f, TW, h)
 
 # ------------------------------------------------------------------ the book
-def build(fix):
+def build(fix, pad=False):
     S = []
     def page(tag=None, parity=None):
         """new page; parity 'recto'/'verso' inserts a blank page when the fix-list says so"""
         S.append(PageBreak())
         if tag in fix: S.extend([Kind("blank"), PageBreak()])
         if tag: S.append(Kind(mark=tag))
+    # half title + frontispiece
+    S += [Kind("title"), Spacer(1, 2.2 * inch),
+          Paragraph("The Advent<br/>Clock", ParagraphStyle("ht", fontName="PlayfairSC-B", fontSize=26, leading=30, alignment=TA_CENTER, textColor=DARK)),
+          Spacer(1, 10), Flake(), Spacer(1, 0.5 * inch), Art("v_blank", TW, 0.85 * inch),
+          PageBreak(), Kind("title"), Spacer(1, 0.05 * inch), Art("frontispiece", TW, 7.0 * inch), Spacer(1, 6),
+          Paragraph("The lobby of Snowberry Lodge, the first of December", ParagraphStyle("fc", parent=small, fontSize=10)),
+          PageBreak()]
     # title
     S += [Kind("title"), Spacer(1, 0.55 * inch), Paragraph("A Christmas Puzzle Countdown", ParagraphStyle("t0", parent=kick, fontSize=11, textColor=MID)),
           Spacer(1, 10), Paragraph("The Advent<br/>Clock", ParagraphStyle("tt", fontName="PlayfairSC-B", fontSize=40, leading=44, alignment=TA_CENTER, textColor=DARK)),
           Spacer(1, 14), Paragraph("24 doors, 24 puzzles and one hidden star", ParagraphStyle("t2", parent=small, fontSize=13, leading=17)),
-          Spacer(1, 0.35 * inch), Box(clock_art, TW, 3.0 * inch), Spacer(1, 0.4 * inch),
+          Spacer(1, 0.35 * inch), Art("title", TW, 3.0 * inch), Spacer(1, 0.4 * inch),
           Paragraph("Blake La Pierre", ParagraphStyle("t4", parent=small, fontSize=12))]
     S += [PageBreak(), Kind("nofolio"), Spacer(1, 3.8 * inch)]
     cs = ParagraphStyle("cp", parent=body0, fontSize=9, leading=12, alignment=TA_LEFT)
@@ -242,10 +281,12 @@ def build(fix):
     page("prologue")
     S += [Kind(section="The Great Advent Clock"), Spacer(1, 0.1 * inch)] + heading("Snowberry Lodge, December", "The Great Advent Clock")
     S += [Paragraph(t, body if i else body0) for i, t in enumerate(ST.PROLOGUE)]
+    S += [SpaceArt("prologue", 0.9 * inch, 1.6 * inch)]
     page("letter")
     S += [Kind(section="A Letter"), Spacer(1, 0.25 * inch)] + heading("Found in the envelope", "A Letter")
     lt = ParagraphStyle("lt", parent=body0, fontName="Crimson-I", fontSize=12, leading=17, spaceAfter=9)
     S += [Paragraph(t, lt) for t in ST.LETTER]
+    S += [SpaceArt("letter", 0.8 * inch, 1.2 * inch)]
     page("howto")
     S += [Kind(section="How This Book Works"), Spacer(1, 0.1 * inch)] + heading("Before you begin", "How This Book Works")
     S += [("HOWTO",)]
@@ -258,7 +299,8 @@ def build(fix):
               Paragraph(text, story), Spacer(1, 8), Paragraph("How to solve", h2), Paragraph(rules_text(v), rules), Spacer(1, 10),
               Paragraph("Your answer", ParagraphStyle("ya", parent=h2, alignment=TA_CENTER)), answer_boxes(v),
               Paragraph(f"The heavy box is today’s key letter. Copy it into the Door Log (page {{log}}).", ParagraphStyle("kl", parent=small, fontSize=9.5)),
-              Paragraph(f"Hints: pages {{hint1}}, {{hint2}} and {{hint3}} · Solution: page {{sol{d}}}", ParagraphStyle("hl", parent=small, fontSize=9))]
+              Paragraph(f"Hints: pages {{hint1}}, {{hint2}} and {{hint3}} · Solution: page {{sol{d}}}", ParagraphStyle("hl", parent=small, fontSize=9)),
+              SpaceArt(f"door-{d:02d}", 0.7 * inch, 1.2 * inch)]
         page()
         S += logic_page(v) if v["type"] == "logic" else [door_header(v), Spacer(1, 6), Fill(puzzle_fn(v))]
     page("eve")
@@ -268,7 +310,7 @@ def build(fix):
         Paragraph("When you have read the message, turn the page.", small)]
     page("midnight")
     S += [Kind(section="Midnight")] + heading("Christmas Eve", "Midnight") + [Paragraph(t, body if i else body0) for i, t in enumerate(ST.EPILOGUE)]
-    S += [Spacer(1, 0.3 * inch), Box(lambda c, x, y, w, h: Dw.star(c, w / 2, h / 2, 26, DARK), TW, 70)]
+    S += [Spacer(1, 0.1 * inch), SpaceArt("midnight", 1.0 * inch, 2.4 * inch, pad=4)]
     # hints
     for tier, (name, sub, fn) in enumerate([("Hints I: Nudges", "A gentle push in the right direction", lambda v: ST.NUDGE[v["type"]]),
                                             ("Hints II: Footholds", "One solid fact to start from", foothold),
@@ -289,7 +331,9 @@ def build(fix):
           Paragraph("If you think you have found a mistake, please check the solution pages first: every puzzle in this book was re-solved by a separate program and has exactly one answer.", body0), Spacer(1, 16),
           Paragraph("Also by Blake La Pierre", h2),
           Paragraph(FL + "<i>The Thief Stayed the Night</i>: a snowbound hotel mystery puzzle book", bullet),
-          Paragraph(FL + "<i>Frostwood Express</i>: 200 Train Tracks logic puzzles", bullet)]
+          Paragraph(FL + "<i>Frostwood Express</i>: 200 Train Tracks logic puzzles", bullet),
+          SpaceArt("thanks", 0.9 * inch, 1.7 * inch)]
+    if pad: S += [PageBreak(), Kind("blank")]   # keep the page count even
     return S
 
 def clock_art(c, x, y, w, h):
@@ -371,14 +415,14 @@ from reportlab import rl_config
 rl_config.canvas_basefontname = "Crimson"   # avoid an unembedded Helvetica default font resource
 
 def run():
-    fix = set(); marks = {}
-    for it in range(10):
-        doc = Doc("../interior.pdf", pagesize=(W, H), initialFontName="Crimson", leftMargin=INNER, rightMargin=OUTER, topMargin=TOP, bottomMargin=BOT,
+    fix = set(); marks = {}; pad = False
+    for it in range(12):
+        doc = Doc("../standalone-01-the-advent-clock-interior.pdf", pagesize=(W, H), initialFontName="Crimson", leftMargin=INNER, rightMargin=OUTER, topMargin=TOP, bottomMargin=BOT,
                   title="The Advent Clock: A Christmas Puzzle Countdown", author="Blake La Pierre")
         doc.marks = {}; doc.pkind = {}; doc.section = ""
         fr = Frame(INNER, BOT, TW, TH, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         doc.addPageTemplates([PageTemplate(id="p", frames=[fr], onPageEnd=page_end)])
-        doc.build(fill_placeholders(build(fix), marks))
+        doc.build(fill_placeholders(build(fix, pad), marks))
         used = marks; marks = dict(doc.marks); newfix = set(fix)
         for d in range(1, 25):
             if marks[f"door{d}"] % 2 == 1: newfix.add(f"door{d}"); break   # doors open on a left-hand page
@@ -387,7 +431,9 @@ def run():
                 if marks[tg] % 2 == 0: newfix.add(tg); break
             else:
                 if marks["eve"] % 2 == 1: newfix.add("eve")
-        if newfix == fix and used == marks: break
+        if newfix == fix and used == marks:
+            if doc.page % 2 == 1 and not pad: pad = True; continue
+            break
         fix = newfix
     pages = doc.page
     assert used == marks, 'marks did not settle'

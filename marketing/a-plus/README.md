@@ -13,7 +13,7 @@ Each book has:
 - [the-advent-clock/](the-advent-clock/module-text.md)
 - [comparison-chart/](comparison-chart/): cover images for the comparison chart
 
-Images are rebuilt with `marketing/src/build_aplus.py`. They're drawn from each book's own `interior.pdf` and cover, using the house fonts: Playfair Display SC, Crimson Text and IBM Plex Sans Condensed.
+Images are rebuilt with `marketing/src/build_aplus.py`. They're drawn from each book's own uniquely named `<prefix>-interior.pdf` and `<prefix>-cover.pdf` (prefixes are in `marketing/src/common.py`), using the house fonts: Playfair Display SC, Crimson Text and IBM Plex Sans Condensed.
 
 ---
 

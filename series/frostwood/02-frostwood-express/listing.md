@@ -1,6 +1,6 @@
 # KDP listing draft: *Frostwood Express*
 
-> Draft only. Nothing has been published or submitted to KDP.
+> **LIVE on Amazon** (paperback ASIN B0HLMB966Q, $11.99). This file is the source for the listing fields. The illustrated interior and the rebuilt cover below are a revision that still has to be uploaded in KDP; see [README.md](README.md) for the steps.
 
 ## Title
 **Frostwood Express**
@@ -14,7 +14,7 @@
 ## Series (optional)
 If you want the two books linked on Amazon, create a KDP series such as **"A Frostwood Puzzle Book"**. Book 1 would be *The Thief Stayed the Night* and book 2 *Frostwood Express*. The cover and title page already say "A Frostwood Puzzle Book".
 
-## Description (1,718 characters; KDP limit is 4,000)
+## Description (1,896 characters; KDP limit is 4,000)
 KDP accepts limited HTML (`<b>`, `<i>`, `<ul>`, `<li>`, `<br>`) in the description box.
 
 ```html
@@ -32,6 +32,7 @@ Every puzzle has <b>exactly one solution</b>, checked by computer, and every one
 <li>A how-to-play guide with a fully worked example and the key solving tricks</li>
 <li>Complete solutions at the back</li>
 <li>6 × 9 inch paperback, easy to carry and easy to write in</li>
+<li>Black-and-white ink illustrations: a frontispiece of the train crossing the viaduct, a scene for each leg of the journey and little railway drawings on the puzzle pages</li>
 </ul>
 
 From the gentle Foothills Line to the Summit Run, the puzzles grow step by step. First you'll spot full rows and dead ends. Later you'll learn the crossing rule. At the very top, you'll ask "what if this square were track?" and follow the answer to a contradiction.
@@ -59,11 +60,13 @@ Grab a pencil, pour some cocoa, and get the Frostwood Express running again.
 
 ## Print specs used
 - Trim 6 × 9 in (regular trim), black ink on **white** paper, no bleed interior, matte or glossy cover
-- Interior: **192 pages**, grayscale, all fonts embedded (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, DejaVu Sans for the ❄ symbol), mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 151–300 pages is 0.5 in inside and 0.25 in outside. Measured ink on every page is at least 0.65 in from the inside edge and 0.45 in from the outside edge.
-- Spine width: 192 × 0.002252 in = **0.4324 in** (spine text is allowed; KDP recommends 79+ pages)
-- Full-wrap cover: 0.125 + 6 + 0.4324 + 6 + 0.125 = **12.6824 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
+- Interior: **194 pages** (includes the black-and-white ink illustrations: solid black line art on white, 300 DPI, no gray washes), grayscale, all fonts embedded (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed, DejaVu Sans for the ❄ symbol), mirrored margins: inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in. KDP's minimum for 151–300 pages is 0.5 in inside and 0.25 in outside. Measured ink on every page is at least 0.65 in from the inside edge and 0.45 in from the outside edge.
+- Spine width: 194 × 0.002252 in = **0.4369 in** (spine text is allowed; KDP recommends 79+ pages)
+- Full-wrap cover: 0.125 + 6 + 0.4369 + 6 + 0.125 = **12.6869 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
 
 ## Suggested price
+**Live price: $11.99** (set in KDP). Royalty at $11.99 with the 194-page illustrated interior: 0.60 × 11.99 − 3.328 = **$3.87**.
+
 **$9.99 USD** (Amazon.com), the same price as the comparable title below and the lowest price that earns the 60% royalty rate. At $9.98 or below the rate drops to 50%.
 
 Market evidence (from the brief): *300 Train Track Logic Puzzles* by Hazel Woods (self-published Aug 2026, 6×9, $9.99, BSR ~#6,300, 24 ratings).
@@ -71,19 +74,19 @@ Market evidence (from the brief): *300 Train Track Logic Puzzles* by Hazel Woods
 ## Estimated royalty per copy (Amazon.com)
 From KDP's published formula for black-ink paperbacks, regular trim, 110–828 pages, Amazon.com: fixed cost **$1.00** plus **$0.012 per page**.
 
-- Printing cost = $1.00 + 192 × $0.012 = **$3.304 ≈ $3.30**
+- Printing cost = $1.00 + 194 × $0.012 = **$3.328 ≈ $3.33**
 - Royalty = 60% × list price − printing cost
 - At **$9.99**: 0.60 × 9.99 − 3.304 = 5.994 − 3.304 = **$2.69 per copy**
 
 | List price | Royalty rate | Royalty per copy |
 |---|---|---|
-| $8.99 | 50% | $1.19 |
-| **$9.99** | **60%** | **$2.69** |
-| $10.99 | 60% | $3.29 |
-| $11.99 | 60% | $3.89 |
-| $9.99 via Expanded Distribution | 40% | $0.69 |
+| $8.99 | 50% | $1.17 |
+| **$9.99** | **60%** | **$2.67** |
+| $10.99 | 60% | $3.27 |
+| $11.99 | 60% | $3.87 |
+| $9.99 via Expanded Distribution | 40% | $0.67 |
 
-Minimum list price at 60% = 3.304 / 0.60 = $5.51. Because that is under $9.99, the 50% rate applies to any price below $9.99.
+Minimum list price at 60% = 3.328 / 0.60 = $5.55. Because that is under $9.99, the 50% rate applies to any price below $9.99.
 
 **Sources** (fetched 2026-09-30):
 - Printing cost: KDP Help, "Paperback Printing Cost": https://kdp.amazon.com/en_US/help/topic/G201834340 (Amazon.com, black ink, 110–828 pages, regular trim: 1.00 USD per book + 0.012 USD per page)
@@ -91,7 +94,13 @@ Minimum list price at 60% = 3.304 / 0.60 = $5.51. Because that is under $9.99, t
 
 These figures are estimates. Confirm them with KDP's Printing Cost & Royalty Calculator on the Rights & Pricing page before you set the price.
 
+## Files to upload
+- Interior: [`frostwood-02-frostwood-express-interior.pdf`](frostwood-02-frostwood-express-interior.pdf) (194 pages)
+- Cover: [`frostwood-02-frostwood-express-cover.pdf`](frostwood-02-frostwood-express-cover.pdf) (full wrap, 12.6869 × 9.25 in; see `cover-info.json`)
+- Illustration sources: [`illustrations/`](illustrations/) (drawn by `src/illustrations.py`)
+
 ## Things to decide or do before publishing
+- **Author field**: **Blake La Pierre** only. Remove "Grok Bot" or any other co-author/contributor if KDP shows one.
 - **AI-content disclosure applies.** KDP asks whether a book contains AI-generated content. The puzzles were generated by AI-written code, the text (how-to, blurb, description) was AI-written, and the cover and interior art was drawn by AI-written code. Answer "yes" for text, and also for images if that is how you read KDP's guidance.
 - **ISBN**: the plan is KDP's free ISBN. The copyright page has no ISBN line, and KDP prints the barcode in the blank area on the back cover.
 - **Proof copy**: order a printed proof. Check the pre-laid track pieces (drawn as rails and sleepers in two grays) and the smallest solution grids (12×12, about 0.18 in per square).

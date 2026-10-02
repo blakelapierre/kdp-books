@@ -1,6 +1,6 @@
 # KDP listing draft: *The Thief Stayed the Night*
 
-> Draft only. Nothing has been published or submitted to KDP.
+> **LIVE on Amazon** (paperback ASIN B0HLMMS675, $9.99). This file is the source for the listing fields. The illustrated interior and the rebuilt cover below are a revision that still has to be uploaded in KDP; see [README.md](README.md) for the steps.
 
 ## Title
 **The Thief Stayed the Night**
@@ -11,7 +11,7 @@
 ## Author
 **Blake La Pierre** (matches the title page, the copyright page, the front cover and the spine).
 
-## Description (1916 characters, KDP limit 4,000)
+## Description (2,042 characters; KDP limit is 4,000)
 KDP accepts limited HTML (`<b>`, `<i>`, `<ul>`, `<li>`, `<br>`) in the description box.
 
 ```html
@@ -32,6 +32,7 @@ With a developer circling to buy the old lodge and knock it down, the manager ne
 <li>A how-to-solve guide and a floor plan of the lodge</li>
 <li>Verdict and notes pages for every case</li>
 <li>Hints for when you're stuck, and full step-by-step solutions showing how many suspects each clue clears</li>
+<li>Black-and-white ink illustrations: a frontispiece of the snowbound lodge and a drawing of each case's missing treasure</li>
 </ul>
 
 <b>No violence, ever.</b> The worst crimes at Frostwood are pranks, pinched pastries, a sabotaged Bake-Off sponge and one very suspicious painting. That makes it a good fit for teens, adults and families who enjoy puzzling together.
@@ -57,9 +58,9 @@ Grab a pencil, pour some cocoa, and see if you can find who did it before the sn
 
 ## Print specs used
 - Trim 6 × 9 in (regular trim), black ink on **white** paper, no bleed interior, matte or glossy cover
-- Interior: **134 pages**, grayscale, all fonts embedded, mirrored margins (inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in). KDP minimum for 24–150 pages is 0.375 in inside and 0.25 in outside.
-- Spine width: 134 × 0.002252 in = **0.3018 in**
-- Full-wrap cover: 0.125 + 6 + 0.3018 + 6 + 0.125 = **12.5518 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
+- Interior: **136 pages** (includes the black-and-white ink illustrations: solid black line art on white, 300 DPI, no gray washes), grayscale, all fonts embedded, mirrored margins (inside 0.75 in, outside 0.55 in, top 0.70 in, bottom 0.75 in). KDP minimum for 24–150 pages is 0.375 in inside and 0.25 in outside.
+- Spine width: 136 × 0.002252 in = **0.3063 in**
+- Full-wrap cover: 0.125 + 6 + 0.3063 + 6 + 0.125 = **12.5563 in × 9.25 in**. The barcode area (2 × 1.2 in, lower right of the back cover, 0.25 in in from the trim) has no text or art.
 
 ## Suggested price
 **$9.99 USD** (Amazon.com). This is the lowest price that earns KDP's 60% paperback royalty rate on Amazon.com. At $9.98 or below the rate drops to 50%.
@@ -67,20 +68,20 @@ Grab a pencil, pour some cocoa, and see if you can find who did it before the sn
 ## Estimated royalty per copy (Amazon.com, standard distribution)
 From KDP's published formula for black-ink paperbacks, regular trim, 110–828 pages, Amazon.com: fixed cost **$1.00** plus **$0.012 per page**.
 
-- Printing cost = $1.00 + 134 × $0.012 = **$2.608 ≈ $2.61**
+- Printing cost = $1.00 + 136 × $0.012 = **$2.632 ≈ $2.63**
 - Royalty = 60% × list price − printing cost
-- At **$9.99**: 0.60 × 9.99 − 2.608 = **$3.39 per copy**
+- At **$9.99**: 0.60 × 9.99 − 2.632 = **$3.36 per copy**
 
 Other price points for comparison:
 | List price | Royalty rate | Royalty per copy |
 |---|---|---|
-| $8.99 | 50% | $1.89 |
-| $9.99 | 60% | $3.39 |
-| $11.99 | 60% | $4.59 |
-| $12.99 | 60% | $5.19 |
-| $9.99 via Expanded Distribution | 40% | $1.39 |
+| $8.99 | 50% | $1.86 |
+| $9.99 | 60% | $3.36 |
+| $11.99 | 60% | $4.56 |
+| $12.99 | 60% | $5.16 |
+| $9.99 via Expanded Distribution | 40% | $1.36 |
 
-Minimum list price at 60% = 2.608 / 0.60 = $4.35. Since that is under $9.99, the 50% rate applies to any price below $9.99.
+Minimum list price at 60% = 2.632 / 0.60 = $4.39. Since that is under $9.99, the 50% rate applies to any price below $9.99.
 
 **Sources** (fetched 2026-09-30):
 - Printing cost: KDP Help, "Paperback Printing Cost": https://kdp.amazon.com/en_US/help/topic/G201834340 (Amazon.com, black ink, 110–828 pages, regular trim: 1.00 USD per book + 0.012 USD per page. 24–110 pages: flat 2.30 USD.)
@@ -88,7 +89,13 @@ Minimum list price at 60% = 2.608 / 0.60 = $4.35. Since that is under $9.99, the
 
 These figures are estimates. Before you set the price, confirm them with KDP's Printing Cost & Royalty Calculator or on the Rights & Pricing page.
 
+## Files to upload
+- Interior: [`frostwood-01-the-thief-stayed-the-night-interior.pdf`](frostwood-01-the-thief-stayed-the-night-interior.pdf) (136 pages)
+- Cover: [`frostwood-01-the-thief-stayed-the-night-cover.pdf`](frostwood-01-the-thief-stayed-the-night-cover.pdf) (full wrap, 12.5563 × 9.25 in; see `cover-info.json`)
+- Illustration sources: [`illustrations/`](illustrations/) (drawn by `src/illustrations.py`)
+
 ## Things to decide or do before publishing
+- **Author field**: **Blake La Pierre** only. Remove "Grok Bot" or any other co-author/contributor if KDP shows one.
 - **AI-content disclosure**: KDP asks whether a book contains AI-generated content. The text (stories, clues, solutions, description) was AI-generated, and the cover and interior art was drawn by AI-written code. Answer "yes" for text, and also for images if that is how you read KDP's guidance.
 - **ISBN**: plan is KDP's free ISBN. The copyright page has no ISBN line, and KDP prints the barcode in the blank area on the back cover.
 - **Proof copy**: order a printed proof to check the register tables, whose smallest text is 6.8–7.6 pt IBM Plex Sans Condensed. Small cover-colour shifts are normal.

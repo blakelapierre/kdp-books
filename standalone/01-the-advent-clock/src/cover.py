@@ -140,7 +140,7 @@ def back(c):
     c.setFont("Crimson-I", 9); c.setFillColor(PALE); c.drawString(tx, (BLEED + 0.38) * I, "Ages 12 and up")
     assert tx + max(c.stringWidth(t, "Crimson-I", 10.5) for t in LINES) < (X_BACK + TW - 0.25 - 2.0) * I - 6
 
-def main(out="../cover.pdf", guides=False):
+def main(out="../standalone-01-the-advent-clock-cover.pdf", guides=False):
     I = inch
     c = canvas.Canvas(out, pagesize=(CW * I, CH * I), initialFontName="Crimson")
     c.setTitle("The Advent Clock — KDP cover"); c.setAuthor("Blake La Pierre")
@@ -172,5 +172,5 @@ def main(out="../cover.pdf", guides=False):
                 barcode_box_in=[round(bx, 4), by, 2.0, 1.2], spine_text_pt=fs)
 
 if __name__ == "__main__":
-    m = main(); main("../tmp/cover-guides.pdf", guides=True)
+    m = main(); main("../tmp/standalone-01-the-advent-clock-cover-guides.pdf", guides=True)
     print(m); json.dump(m, open("../cover-info.json", "w"), indent=1)

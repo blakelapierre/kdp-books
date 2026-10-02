@@ -3,25 +3,25 @@
 # Crop boxes are (x0, y0, x1, y1) in inches on the 6 x 9 in interior page.
 TILES = {
     "the-thief-stayed-the-night": [
-        (10, (0.4, 0.70, 5.6, 3.47), "register"),
-        (12, (0.4, 0.70, 5.6, 3.30), "clues"),
-        (14, (0.4, 0.88, 5.6, 3.20), "verdict"),
+        (12, (0.4, 0.70, 5.6, 3.47), "register"),
+        (14, (0.4, 0.70, 5.6, 3.30), "clues"),
+        (16, (0.4, 0.88, 5.6, 3.20), "verdict"),
     ],
     "frostwood-express": [
-        (8, (0.4, 0.75, 5.6, 4.40), "no-1-easy"),
-        (34, (0.4, 0.70, 5.6, 4.45), "no-51-medium"),
-        (60, (0.4, 0.70, 5.6, 8.20), "no-101-hard"),
+        (10, (0.4, 0.75, 5.6, 4.40), "no-1-easy"),
+        (36, (0.4, 0.70, 5.6, 4.45), "no-51-medium"),
+        (62, (0.4, 0.70, 5.6, 8.20), "no-101-hard"),
     ],
     "stars-over-frostwood": [
-        (8, (0.4, 0.85, 5.6, 4.30), "no-1-easy"),
-        (30, (0.4, 0.80, 5.6, 4.35), "no-41-medium"),
-        (52, (0.4, 0.80, 5.6, 8.20), "no-81-hard"),
+        (10, (0.4, 0.85, 5.6, 4.30), "no-1-easy"),
+        (32, (0.4, 0.80, 5.6, 4.35), "no-41-medium"),
+        (54, (0.4, 0.80, 5.6, 8.20), "no-81-hard"),
     ],
     "the-advent-clock": [
         # Crops start below the "Door N / December N" running header, because A+ rules forbid holiday references.
-        (11, (0.4, 1.08, 5.6, 8.15), "door-2-shift-code"),
-        (17, (0.4, 1.08, 5.6, 8.15), "door-5-maze"),
-        (23, (0.4, 1.08, 5.6, 5.80), "door-8-pigpen-code"),
+        (13, (0.4, 1.08, 5.6, 8.15), "door-2-shift-code"),
+        (19, (0.4, 1.08, 5.6, 8.15), "door-5-maze"),
+        (25, (0.4, 1.08, 5.6, 5.80), "door-8-pigpen-code"),
     ],
 }
 
@@ -73,7 +73,7 @@ PINS = {
     "the-thief-stayed-the-night": dict(
         p1_kicker="A COZY MYSTERY PUZZLE BOOK", p1_head=["Can You Find", "the Thief?"],
         p2_head="Who Took the Cocoa Tin?", p2_sub="Cross off the suspects, one clue at a time",
-        tile=1, box=(12, (0.4, 0.70, 5.6, 5.80))),
+        tile=1, box=(14, (0.4, 0.70, 5.6, 5.80))),
     "frostwood-express": dict(
         p1_kicker="TRAIN TRACKS LOGIC PUZZLES", p1_head=["Lay One Railway", "from A to B"],
         p2_head="Try This Train Tracks Puzzle", p2_sub="Numbers count the track squares in each row and column",
@@ -85,5 +85,5 @@ PINS = {
     "the-advent-clock": dict(
         p1_kicker="A 24-DAY PUZZLE COUNTDOWN", p1_head=["One Puzzle", "Behind Every Door"],
         p2_head="Door One: Can You Solve It?", p2_sub="Find every word, then read the leftover letters",
-        tile=0, box=(9, (0.4, 0.70, 5.6, 5.70))),
+        tile=0, box=(11, (0.4, 0.70, 5.6, 5.70))),
 }

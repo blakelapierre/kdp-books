@@ -27,7 +27,7 @@ Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinteres
 ### Pin 2: `the-thief-stayed-the-night-pin-2.png`
 - **Title:** Free Printable Mystery Puzzle: Who Took the Cocoa Tin?
 - **Description:** Print Case One of The Thief Stayed the Night for free, with the story, the full guest register, all six clues, and the step-by-step solution. Grab a pencil and a mug of cocoa and see if you can find the thief. #printablepuzzles #mysterygame #logicpuzzle #freeprintable #puzzlesforadults
-- **Link:** [SAMPLE-PDF-LINK: the-thief-stayed-the-night-sample.pdf]
+- **Link:** [SAMPLE-PDF-LINK: frostwood-01-the-thief-stayed-the-night-sample.pdf]
 - **Board:** Printable Logic Puzzles
 
 ---
@@ -43,7 +43,7 @@ Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinteres
 ### Pin 2: `frostwood-express-pin-2.png`
 - **Title:** Free Printable Train Tracks Puzzles (with Answers)
 - **Description:** Try seven Train Tracks puzzles free, from Easy to Hard, plus the how-to-play page and answers. The numbers show how many squares in each row and column hold track. Can you connect A to B? #printablepuzzles #traintracks #logicpuzzle #freeprintable #pencilpuzzles
-- **Link:** [SAMPLE-PDF-LINK: frostwood-express-sample.pdf]
+- **Link:** [SAMPLE-PDF-LINK: frostwood-02-frostwood-express-sample.pdf]
 - **Board:** Printable Logic Puzzles
 
 ---
@@ -59,7 +59,7 @@ Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinteres
 ### Pin 2: `stars-over-frostwood-pin-2.png`
 - **Title:** Free Printable Star Battle Puzzles (with Answers)
 - **Description:** Seven free Star Battle puzzles to print, from Easy to a Hard two-star grid, plus how to play and the answers. One star in every row, column, and region, and no two stars touch. #printablepuzzles #starbattle #logicpuzzle #freeprintable #brainteasers
-- **Link:** [SAMPLE-PDF-LINK: stars-over-frostwood-sample.pdf]
+- **Link:** [SAMPLE-PDF-LINK: frostwood-03-stars-over-frostwood-sample.pdf]
 - **Board:** Printable Logic Puzzles
 
 ---
@@ -75,5 +75,5 @@ Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinteres
 ### Pin 2: `the-advent-clock-pin-2.png`
 - **Title:** Free Printable Christmas Puzzles: Doors One and Two
 - **Description:** Print the first two doors of The Advent Clock free: a winter word search and a secret-code message, with the story, how it works, and both solutions. A cozy way to start the countdown on December 1. #printablechristmas #christmaspuzzles #freeprintable #adventactivities #wordsearch
-- **Link:** [SAMPLE-PDF-LINK: the-advent-clock-sample.pdf]
+- **Link:** [SAMPLE-PDF-LINK: standalone-01-the-advent-clock-sample.pdf]
 - **Board:** Printable Advent Activities

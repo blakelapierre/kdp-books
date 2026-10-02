@@ -136,7 +136,7 @@ def back(c):
     c.setFont("Crimson-I", 9); c.setFillColor(PALE); c.drawString(tx, (BLEED + 0.28) * inch, "Ages 12 and up")
     assert tx + max(c.stringWidth(t, "Crimson-I", 10) for t in LINES) < (X_BACK + TW - 0.25 - 2.0) * inch - 6
 
-def main(out="../cover.pdf", guides=False):
+def main(out="../frostwood-03-stars-over-frostwood-cover.pdf", guides=False):
     c = canvas.Canvas(out, pagesize=(CW * inch, CH * inch))
     c.setTitle("Stars over Frostwood — KDP cover"); c.setAuthor("Blake La Pierre")
     c.setFillColor(NAVY); c.rect(0, 0, CW * inch, CH * inch, stroke=0, fill=1)
@@ -163,5 +163,5 @@ def main(out="../cover.pdf", guides=False):
     return dict(pages=PAGES, spine_in=round(SPINE, 6), width_in=round(CW, 6), height_in=CH, barcode_box_in=[round(bx, 4), by, 2.0, 1.2])
 
 if __name__ == "__main__":
-    m = main(); main("../tmp/cover-guides.pdf", guides=True)
+    m = main(); main("../tmp/frostwood-03-stars-over-frostwood-cover-guides.pdf", guides=True)
     print(m); json.dump(m, open("../cover-info.json", "w"), indent=1)

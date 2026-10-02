@@ -1,4 +1,5 @@
-"""Build one free printable US Letter sample PDF per book, using real pages from interior.pdf.
+"""Build one free printable US Letter sample PDF per book, using real pages from each book's <prefix>-interior.pdf.
+Output: social/samples/<prefix>-sample.pdf (e.g. frostwood-01-the-thief-stayed-the-night-sample.pdf).
 Run with pypdf + reportlab available:  python3 build_samples.py
 """
 import io, os
@@ -7,7 +8,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from common import BOOKS, FONTS, MKT, book_path, front_cover, NAVY, GOLD, SLATE
+from common import BOOKS, FONTS, MKT, book_path, interior_pdf, front_cover, NAVY, GOLD, SLATE
 
 OUT = os.path.join(MKT, "social", "samples")
 LW, LH = 612, 792          # US Letter in points
@@ -18,21 +19,21 @@ rgb = lambda c: tuple(v / 255 for v in c)
 
 SAMPLES = {
     "the-thief-stayed-the-night": dict(
-        pages=[9, 10, 11, 12, 13, 14], answers=[118],
+        pages=[11, 12, 13, 14, 15, 16], answers=[120],
         inside=["Case One: The Cocoa Tin", "The story, the guest register and all the clues",
                 "A verdict page to record your answer", "The full step-by-step solution"]),
     "frostwood-express": dict(
-        pages=[5, 8, 9, 34, 60], answers=[164, 168, 173],
+        pages=[7, 10, 11, 36, 62], answers=[166, 170, 175],
         inside=["How to play Train Tracks", "Four Easy puzzles (No. 1 to 4)",
                 "Two Medium puzzles (No. 51 and 52) and one Hard (No. 101)",
                 "Answer pages (they also show a few puzzles not in this sample)"]),
     "stars-over-frostwood": dict(
-        pages=[5, 8, 9, 30, 52], answers=[156, 159, 163],
+        pages=[7, 10, 11, 32, 54], answers=[158, 161, 165],
         inside=["How to play Star Battle", "Four Easy puzzles (No. 1 to 4)",
                 "Two Medium puzzles (No. 41 and 42) and one Hard two-star puzzle (No. 81)",
                 "Answer pages (they also show a few puzzles not in this sample)"]),
     "the-advent-clock": dict(
-        pages=[4, 6, 8, 9, 10, 11], answers=[65, 66],
+        pages=[6, 8, 10, 11, 12, 13], answers=[67, 68],
         inside=["The story of the Great Advent Clock", "How the countdown works",
                 "Door One (word search) and Door Two (secret code)", "The solutions for both doors"]),
 }
@@ -93,7 +94,7 @@ def footer_page(title):
 
 def build(slug, info):
     b = BOOKS[slug]
-    src = PdfReader(book_path(slug, "interior.pdf"))
+    src = PdfReader(interior_pdf(slug))
     w = PdfWriter()
     w.add_page(intro_page(slug, info))
     for pno in info["pages"] + info["answers"]:
@@ -106,7 +107,7 @@ def build(slug, info):
         page.merge_page(footer_page(b["title"]))
     w.add_metadata({"/Title": f"{b['title']}: Free Printable Sample", "/Author": "Blake La Pierre"})
     os.makedirs(OUT, exist_ok=True)
-    path = os.path.join(OUT, f"{slug}-sample.pdf")
+    path = os.path.join(OUT, f"{b['pdf']}-sample.pdf")
     with open(path, "wb") as f:
         w.write(f)
     w.close()
