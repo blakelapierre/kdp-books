@@ -1,0 +1,22 @@
+{
+  "title": "Tea and Clues at Tidewhistle Cove",
+  "subtitle": "30 Cozy Mini-Mysteries to Solve by Ear: Gentle Seaside Whodunits Where Nobody Gets Hurt, with the Answer After Every Case",
+  "author": "Blake La Pierre",
+  "format": "Kindle ebook (EPUB 3, reflowable, text only) + DOCX for Kindle Create",
+  "audio_first": true,
+  "cases": 30,
+  "words": 15404,
+  "epub_bytes": 250989,
+  "docx_bytes": 64606,
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "delivery_fee_usd_est": 0.04,
+  "royalty_usd_est": 2.75,
+  "royalty_math": "0.70 x 3.99 - 0.04 = 2.75",
+  "files": {
+    "epub": "standalone-03-tea-and-clues-at-tidewhistle-cove.epub",
+    "docx": "standalone-03-tea-and-clues-at-tidewhistle-cove.docx",
+    "cover": "standalone-03-tea-and-clues-at-tidewhistle-cove-cover.jpg"
+  }
+}

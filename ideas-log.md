@@ -19,6 +19,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-01 | Tents (Tents and Trees) logic puzzles, Frostwood book 4 | *Tents in Frostwood*, 180 puzzles (40 Easy 6×6, 40 Medium 8×8, 50 Hard 10×10, 50 Expert 12×12), 182 pages, [folder](series/frostwood/04-tents-in-frostwood/) |
 | 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/02-fireside-cryptograms/) |
 | 2026-10-03 | Cozy Frostwood riddles + text logic Kindle ebook (no write-in grids) | *Riddles by the Frostwood Fire*, 140 puzzles (40 Easy / 40 Medium / 40 Hard / 20 Expert), Kindle ebook, [folder](series/frostwood/05-riddles-by-the-frostwood-fire/) |
+| 2026-10-03 | Audio-first cozy solve-it-yourself mini-mysteries Kindle ebook (seaside tea-room sleuth, no murder; each case ends *Can you solve it?* with the answer right after) | *Tea and Clues at Tidewhistle Cove*, 30 cases (23 clue stories + 7 logic), 15,404 words, Kindle ebook, [folder](standalone/03-tea-and-clues-at-tidewhistle-cove/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -45,8 +46,13 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-01 | Futoshiki / KenKen / Battleships dedicated puzzle books (very low review counts on dedicated titles vs cryptogram bestsellers) |
 | 2026-10-01 | Another mixed Sudoku/word-search mega book (saturated by Brain Games / Parragon on bestseller lists) |
 | 2026-10-01 | Large-print cryptogram book was chosen instead: strong Amazon demand (*Ultimate Cryptograms* 4.7★/1,096; *Large Print Cryptograms #2* 4.7★/832; 400-puzzle cryptogram book 4.4★/859; *Large Print Cryptograms Vol 1* 4.6★/210; researched 2026-10-01) and a cozy non-violent niche beside murder-puzzle bestsellers (Murdoku 1,031 ratings; Murdle Vol 1 7,702) |
+| 2026-10-03 | Lateral-thinking (situation) puzzle ebook: strong print demand (*Lateral Thinking Puzzlers* 4.4★/257) but the classic form relies on yes/no questioning and many classic scenarios involve deaths; weaker fit for solo listening and the no-violence rule |
+| 2026-10-03 | Audio trivia rounds ebook: generic AI-narrated trivia/riddle audio mostly sits unrated; riddles already covered by Frostwood 05 |
+| 2026-10-03 | Audio-first cozy mini-mysteries chosen instead: *Two-Minute Mysteries* 4.5★/639; *Five-Minute Cozy Mini Mysteries* (indie Kindle) 4.1★/56; *Cute and Cozy Crime* (Apr 2026) 4.4★/28; Audible *Minute Mysteries* 4.0 from 2 ratings (thin short solve-it audio); researched 2026-10-03 |
 
 ## Puzzle types used in standalone books
+*Tea and Clues at Tidewhistle Cove* uses prose solve-it mini-mysteries (observation/alibi clues) plus seven text logic cases: only-the-thief-lies, exactly-one-truth, seating order, walking-time alibis, honest/fibber fishermen, queue order, one-truth-one-fib. A second seaside/tea-room mini-mystery book would be a sequel, not a new idea.
+
 *Fireside Cryptograms* uses monoalphabetic substitution cryptograms (cryptoquotes) only — 200 puzzles with independent uniqueness verification.
 
 *Tents in Frostwood* (Frostwood book 4) is a full dedicated Tents book; *The Advent Clock* used Tents only once as a single advent door, which is fine.

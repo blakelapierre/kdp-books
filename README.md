@@ -46,6 +46,7 @@ Current books:
 `standalone/`
 1. `01-the-advent-clock`: built, not published
 2. `02-fireside-cryptograms`: built, not published
+3. `03-tea-and-clues-at-tidewhistle-cove`: built Kindle ebook (audio-first), not published
 
 ## Books
 
@@ -65,6 +66,7 @@ Current books:
 |-------|-------------|--------|-------|-------|----------|----------------------|
 | *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 92 | $9.99 | $3.69 | [01-the-advent-clock/README.md](standalone/01-the-advent-clock/README.md) |
 | *Fireside Cryptograms*: 200 Large-Print Quote Puzzles for Adults (Easy to Expert) | Cryptograms (cryptoquotes) | Draft, print-ready. Not yet published or submitted to KDP | 158 | $9.99 | $3.10 | [02-fireside-cryptograms/README.md](standalone/02-fireside-cryptograms/README.md) |
+| *Tea and Clues at Tidewhistle Cove*: 30 Cozy Mini-Mysteries to Solve by Ear (Kindle, audio-first) | Solve-it-yourself cozy mini-mysteries + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 15,404 words) | $3.99 | $2.75† | [03-tea-and-clues-at-tidewhistle-cove/README.md](standalone/03-tea-and-clues-at-tidewhistle-cove/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -148,6 +150,13 @@ python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.pn
 python3 build.py      # -> ../standalone-02-fireside-cryptograms-interior.pdf and ../build-info.json
 python3 cover.py      # -> ../standalone-02-fireside-cryptograms-cover.pdf, ../cover-info.json and ../tmp/standalone-02-fireside-cryptograms-cover-guides.pdf
 python3 verify.py     # independent dictionary solver uniqueness check -> ../verification.md
+cd ../..
+
+# Standalone: Tea and Clues at Tidewhistle Cove (Kindle ebook, audio-first)
+cd standalone/03-tea-and-clues-at-tidewhistle-cove/src
+python3 verify.py     # brute-force logic cases, fair-play table, read-aloud and content checks -> ../verification.md
+python3 cover.py      # -> ../standalone-03-tea-and-clues-at-tidewhistle-cove-cover.jpg
+python3 build.py      # -> ../standalone-03-tea-and-clues-at-tidewhistle-cove.epub, .docx and ../build-info.json
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

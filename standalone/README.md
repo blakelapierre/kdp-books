@@ -12,3 +12,4 @@ Folders are numbered `NN-<book-slug>` in creation order; a new book gets the nex
 |-------|-------|-------|---------|--------|
 | *The Advent Clock*: A Christmas Puzzle Countdown | 92 | $9.99 | $3.69 | [01-the-advent-clock/](01-the-advent-clock/) · [README](01-the-advent-clock/README.md) |
 | *Fireside Cryptograms*: 200 Large-Print Quote Puzzles | 158 | $9.99 | $3.10 | [02-fireside-cryptograms/](02-fireside-cryptograms/) · [README](02-fireside-cryptograms/README.md) |
+| *Tea and Clues at Tidewhistle Cove*: 30 Cozy Mini-Mysteries to Solve by Ear (Kindle ebook, audio-first) | — (15,404 words) | $3.99 | $2.75 | [03-tea-and-clues-at-tidewhistle-cove/](03-tea-and-clues-at-tidewhistle-cove/) · [README](03-tea-and-clues-at-tidewhistle-cove/README.md) |
