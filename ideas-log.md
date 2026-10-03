@@ -7,7 +7,7 @@ This log lists every KDP book idea that has already been **built** or **evaluate
 - Author name: Blake La Pierre. Default price: $9.99, the lowest price that earns the 60% paperback royalty.
 
 ## Puzzle types already used in the Frostwood series
-Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3) and Tents / Tents and Trees (book 4). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
+Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), and cozy riddles + text logic for Kindle (book 5). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
 
 ## Built
 | Date | Idea | Result |
@@ -18,6 +18,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-09-30 | Christmas advent-calendar puzzle book for adults (24 daily mixed puzzles + hidden-message finale, non-violent alternative to the "escape room advent calendar" murder books) | *The Advent Clock*, standalone (Christmas-specific, so not Frostwood), 24 puzzles, 89 pages, [folder](standalone/01-the-advent-clock/) |
 | 2026-10-01 | Tents (Tents and Trees) logic puzzles, Frostwood book 4 | *Tents in Frostwood*, 180 puzzles (40 Easy 6×6, 40 Medium 8×8, 50 Hard 10×10, 50 Expert 12×12), 182 pages, [folder](series/frostwood/04-tents-in-frostwood/) |
 | 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/02-fireside-cryptograms/) |
+| 2026-10-03 | Cozy Frostwood riddles + text logic Kindle ebook (no write-in grids) | *Riddles by the Frostwood Fire*, 140 puzzles (40 Easy / 40 Medium / 40 Hard / 20 Expert), Kindle ebook, [folder](series/frostwood/05-riddles-by-the-frostwood-fire/) |
 
 ## Evaluated, not chosen
 | Date | Idea |

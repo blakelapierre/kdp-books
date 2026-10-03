@@ -12,6 +12,7 @@ series/
     02-frostwood-express/
     03-stars-over-frostwood/
     04-tents-in-frostwood/
+    05-riddles-by-the-frostwood-fire/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
   01-the-advent-clock/
@@ -40,6 +41,7 @@ Current books:
 2. `02-frostwood-express`: live ([Amazon](https://www.amazon.com/dp/B0HLMB966Q), $11.99)
 3. `03-stars-over-frostwood`: built, not published
 4. `04-tents-in-frostwood`: built, not published
+5. `05-riddles-by-the-frostwood-fire`: built Kindle ebook, not published
 
 `standalone/`
 1. `01-the-advent-clock`: built, not published
@@ -55,6 +57,7 @@ Current books:
 | 2 | *Frostwood Express*: 200 Train Tracks Logic Puzzles (Easy to Expert) | Train Tracks | Live on Amazon ([B0HLMB966Q](https://www.amazon.com/dp/B0HLMB966Q)) | 194 | $11.99 | $3.87 | [02-frostwood-express/README.md](series/frostwood/02-frostwood-express/README.md) |
 | 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles (Easy to Expert) | Star Battle (1-star and 2-star) | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [03-stars-over-frostwood/README.md](series/frostwood/03-stars-over-frostwood/README.md) |
 | 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [04-tents-in-frostwood/README.md](series/frostwood/04-tents-in-frostwood/README.md) |
+| 5 | *Riddles by the Frostwood Fire*: 140 Cozy Winter Riddles & Text Logic Puzzles (Kindle) | Riddles + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [05-riddles-by-the-frostwood-fire/README.md](series/frostwood/05-riddles-by-the-frostwood-fire/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -65,7 +68,7 @@ Current books:
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
-\*Royalty per copy on Amazon.com at the listed price: 0.60 × price − printing, where printing is $2.30 flat for 24–110 pages, otherwise $1.00 + $0.012 × pages. Each book's README is a phone-friendly KDP publishing checklist with download links for its PDFs.
+\*Royalty per copy on Amazon.com at the listed price: 0.60 × price − printing, where printing is $2.30 flat for 24–110 pages, otherwise $1.00 + $0.012 × pages. †Kindle 70% royalty ≈ 0.70 × price − delivery fee ($0.15/MB). Each book's README is a phone-friendly KDP publishing checklist with download links for its files.
 
 ## Marketing
 
@@ -74,8 +77,9 @@ The marketing kit is in [marketing/](marketing/README.md). It covers the action 
 ## What's in each book folder
 
 - `README.md`: phone-friendly KDP publishing checklist (status, download links, copy-paste listing fields, proof checks)
-- `<prefix>-interior.pdf`: the interior file to upload to KDP
-- `<prefix>-cover.pdf`: the full-wrap cover (back, spine and front)
+- `<prefix>-interior.pdf`: the interior file to upload to KDP (print books)
+- `<prefix>-cover.pdf`: the full-wrap cover (back, spine and front) for print
+- `<prefix>.epub` + `<prefix>-cover.jpg`: Kindle ebook manuscript and flat front cover (ebook books)
 - File names are unique across the repo. The prefix is `frostwood-NN-<slug>` for series books and `standalone-NN-<slug>` for standalones, e.g. `frostwood-04-tents-in-frostwood-interior.pdf` and `standalone-02-fireside-cryptograms-cover.pdf`
 - `illustrations/`: the 300 DPI black-and-white ink illustrations (drawn in code by `src/illustrations.py` using `src/inkart.py`)
 - `listing.md`: listing draft with title, subtitle, description, keywords, categories, specs and pricing/royalty math

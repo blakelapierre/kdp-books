@@ -1,0 +1,135 @@
+# Riddles by the Frostwood Fire: KDP ebook publishing checklist
+
+**Status: ebook-ready, not yet published.** Nothing has been submitted to KDP.
+
+| | |
+|---|---|
+| Format | **Kindle ebook** (EPUB 3) |
+| Puzzles | **140** (40 Easy · 40 Medium · 40 Hard · 20 Expert) |
+| Type | Cozy winter riddles + phone-friendly text logic (no write-in grids) |
+| Author | **Blake La Pierre** |
+| Series | **A Frostwood Puzzle Book** · number **5** |
+| Price | **$3.99** USD (70% royalty option) |
+| Delivery fee (est.) | **$0.13** (EPUB ≈ 0.848 MB × $0.15/MB, size rounded up to nearest KB) |
+| Royalty (est.) | 0.70 × 3.99 − 0.13 = **$2.66** per sale on Amazon.com |
+
+## 1. Files (download to your phone)
+
+- **EPUB**: [view](https://github.com/blakelapierre/kdp-books/blob/main/series/frostwood/05-riddles-by-the-frostwood-fire/frostwood-05-riddles-by-the-frostwood-fire.epub) · [download](https://github.com/blakelapierre/kdp-books/blob/main/series/frostwood/05-riddles-by-the-frostwood-fire/frostwood-05-riddles-by-the-frostwood-fire.epub?raw=true)  
+  `frostwood-05-riddles-by-the-frostwood-fire.epub`
+- **Cover JPG** (1600 × 2560, KDP ideal ebook cover): [view](https://github.com/blakelapierre/kdp-books/blob/main/series/frostwood/05-riddles-by-the-frostwood-fire/frostwood-05-riddles-by-the-frostwood-fire-cover.jpg) · [download](https://github.com/blakelapierre/kdp-books/blob/main/series/frostwood/05-riddles-by-the-frostwood-fire/frostwood-05-riddles-by-the-frostwood-fire-cover.jpg?raw=true)  
+  `frostwood-05-riddles-by-the-frostwood-fire-cover.jpg`
+
+The repo is private, so be signed in to GitHub in your phone's browser. Tap *download*, then pick the file from Downloads in the KDP upload box.
+
+## 2. Create the Kindle ebook in KDP
+
+1. **kdp.amazon.com** → **Bookshelf** → **+ Create** → **Kindle eBook**.
+2. Fill in **Kindle eBook Details** with the copy-paste blocks in section 3.
+3. **Kindle eBook Content**:
+   - Manuscript → upload `frostwood-05-riddles-by-the-frostwood-fire.epub`
+   - Cover → **Upload a cover you already have** → upload `frostwood-05-riddles-by-the-frostwood-fire-cover.jpg`
+4. Answer the **AI-generated content** questions (section 4).
+5. **Launch Previewer** (phone + tablet + Kindle) → check every item in section 5 → **Save and Continue**.
+6. **Kindle eBook Pricing**: Territories **All territories**; Primary marketplace **Amazon.com**; royalty plan **70%**; list price **$3.99**. KDP Select is optional (needed for some marketplace 70% rates).
+7. Confirm the on-screen delivery fee is close to **$0.13** (Amazon measures the converted file; small differences are normal).
+8. **Publish Your Kindle eBook**.
+
+## 3. Copy-paste fields
+
+**Language:** English
+
+**Book title**
+```
+Riddles by the Frostwood Fire
+```
+
+**Subtitle**
+```
+140 Cozy Winter Riddles and Text Logic Puzzles for Kindle: Easy to Expert with Tap-to-Jump Answers
+```
+
+**Series name** (number **5**)
+```
+A Frostwood Puzzle Book
+```
+Series number: `5`
+
+**Edition number:** leave blank
+
+**Author** (first name / last name). No co-authors or contributors.
+```
+Blake
+```
+```
+La Pierre
+```
+
+**Description** (KDP accepts this HTML)
+```html
+<b>Snow on the pines. Cocoa by the hearth. A chalkboard of riddles waiting in Frostwood Lodge.</b>
+
+140 cozy winter riddles and short text-logic puzzles, written for your phone. No write-in grids. Tap <b>Show answer</b> to jump to the solution, then tap back to the puzzle.
+
+Every puzzle has <b>exactly one intended answer</b>, checked in code.
+
+<b>Inside you'll find:</b>
+<ul>
+<li>140 puzzles in four bands: 40 Easy, 40 Medium, 40 Hard, 20 Expert</li>
+<li>Classic “what am I?” riddles set at the lodge, railway, village and mountain</li>
+<li>Short guest-and-drink deductions, arrival orders, room items, Caesar ciphers, anagrams and number sequences</li>
+<li>A how-to-play guide with a worked example</li>
+<li>Complete solutions with bidirectional tap links</li>
+<li>Black-and-white ink illustrations throughout</li>
+</ul>
+
+Book five of the Frostwood Puzzle Books, after <i>The Thief Stayed the Night</i>, <i>Frostwood Express</i>, <i>Stars over Frostwood</i> and <i>Tents in Frostwood</i>. A good fit for adults, teens and families who like riddles, brain teasers and cozy winter reads.
+
+Pour some cocoa and begin.
+```
+
+**Keywords** (7 slots)
+1. riddles for adults kindle
+2. winter riddle book
+3. logic puzzles for kindle
+4. brain teasers with answers
+5. cozy puzzle book for adults
+6. text puzzles no grids
+7. frostwood lodge riddles
+
+**Categories** (pick 2–3)
+- Humor & Entertainment › Puzzles & Games › Logic & Brain Teasers
+- Humor & Entertainment › Puzzles & Games › Puzzles
+- Humor & Entertainment › Puzzles & Games › Trivia (optional third)
+
+## 4. AI-generated content answers
+
+KDP asks whether the book includes AI-generated content.
+
+- **Text:** Yes — puzzle wording and framing text were produced with AI assistance, then curated and verified.
+- **Images:** Yes — black-and-white illustrations and the cover art were generated by code (procedural ink line art / programmatic cover), not a generative image model.
+- **Translations:** No.
+
+Be honest in the KDP form; the wording above matches how this book was built.
+
+## 5. Proof / preview checks
+
+In the online Previewer (and on your phone after publish):
+
+- [ ] Cover fills the thumbnail; title and author readable
+- [ ] Front matter: title, copyright © 2026 Blake La Pierre, contents, how to play
+- [ ] Tap **Show answer** on a few Easy / Hard / Expert puzzles → lands on the matching solution
+- [ ] Tap **Back to puzzle** → returns to the same puzzle
+- [ ] Section openers and vignettes display (B&W)
+- [ ] Fonts look cozy (embedded Crimson Text / Playfair SC / IBM Plex Condensed; Kindle may substitute if needed)
+- [ ] “Also by” lists books 1–4
+- [ ] No Christmas-specific content; no violence
+
+## 6. Rebuild
+
+```bash
+cd series/frostwood/05-riddles-by-the-frostwood-fire/src
+PYTHONHASHSEED=0 python3 master.py
+```
+
+Seed `20261003` is recorded in `build-info.json`. Verification results: [verification.md](verification.md). Listing draft: [listing.md](listing.md).

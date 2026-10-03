@@ -1,0 +1,35 @@
+{
+  "title": "Riddles by the Frostwood Fire",
+  "slug": "05-riddles-by-the-frostwood-fire",
+  "format": "Kindle ebook (EPUB 3)",
+  "author": "Blake La Pierre",
+  "series": "A Frostwood Puzzle Book",
+  "series_number": 5,
+  "seed": 20261003,
+  "pythonhashseed": 0,
+  "total_puzzles": 140,
+  "counts": {
+    "Easy": 40,
+    "Medium": 40,
+    "Hard": 40,
+    "Expert": 20
+  },
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "epub_bytes": 888664,
+  "epub_mb_rounded_kb": 0.8477,
+  "delivery_fee_usd": 0.13,
+  "royalty_usd": 2.66,
+  "royalty_math": "0.70 \u00d7 3.99 \u2212 0.13 = 2.66",
+  "cover_px": [
+    1600,
+    2560
+  ],
+  "cover_bytes": 159835,
+  "files": {
+    "epub": "frostwood-05-riddles-by-the-frostwood-fire.epub",
+    "cover": "frostwood-05-riddles-by-the-frostwood-fire-cover.jpg"
+  },
+  "rebuild": "cd src && PYTHONHASHSEED=0 python3 master.py"
+}

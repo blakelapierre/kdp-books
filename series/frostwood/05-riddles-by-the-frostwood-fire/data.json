@@ -1,0 +1,3040 @@
+{
+ "title": "Riddles by the Frostwood Fire",
+ "subtitle": "140 Cozy Winter Riddles and Text Logic Puzzles for Kindle",
+ "series": "A Frostwood Puzzle Book",
+ "series_number": 5,
+ "author": "Blake La Pierre",
+ "seed": 20261003,
+ "counts": {
+  "Easy": 40,
+  "Medium": 40,
+  "Hard": 40,
+  "Expert": 20
+ },
+ "total": 140,
+ "puzzles": [
+  {
+   "id": "E001",
+   "num": 1,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "Guests wipe their boots on me before entering the lodge. What am I?",
+   "answer": "doormat",
+   "accept": [
+    "door mat",
+    "doormat",
+    "mat"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 1
+  },
+  {
+   "id": "E002",
+   "num": 2,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am a peaked green tree wearing a white winter coat. What am I?",
+   "answer": "pine",
+   "accept": [
+    "evergreen",
+    "fir",
+    "pine",
+    "pine tree"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 2
+  },
+  {
+   "id": "E003",
+   "num": 3,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am a warm drink of chocolate sipped by the fire. What am I?",
+   "answer": "cocoa",
+   "accept": [
+    "chocolate",
+    "cocoa",
+    "hot chocolate",
+    "hot cocoa"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 3
+  },
+  {
+   "id": "E004",
+   "num": 4,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am a wooden runner that carries you downhill over the snow. What am I?",
+   "answer": "sled",
+   "accept": [
+    "sled",
+    "sledge",
+    "toboggan"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 4
+  },
+  {
+   "id": "E005",
+   "num": 5,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am punched for a ride up the mountain. What am I?",
+   "answer": "ticket",
+   "accept": [
+    "rail ticket",
+    "ticket",
+    "train ticket"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 5
+  },
+  {
+   "id": "E006",
+   "num": 6,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the basket that carries fresh rolls from the kitchen. What am I?",
+   "answer": "basket",
+   "accept": [
+    "basket",
+    "bread basket"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 6
+  },
+  {
+   "id": "E007",
+   "num": 7,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the book of blank pages on the desk for guest notes. What am I?",
+   "answer": "guestbook",
+   "accept": [
+    "guest book",
+    "guestbook",
+    "register"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 7
+  },
+  {
+   "id": "E008",
+   "num": 8,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the brass piece that opens room seven. What am I?",
+   "answer": "key",
+   "accept": [
+    "key",
+    "room key"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 8
+  },
+  {
+   "id": "E009",
+   "num": 9,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the broom that sweeps snow from the porch. What am I?",
+   "answer": "broom",
+   "accept": [
+    "broom",
+    "brush"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 9
+  },
+  {
+   "id": "E010",
+   "num": 10,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the chair that creaks and rocks by the window. What am I?",
+   "answer": "rocking chair",
+   "accept": [
+    "rocker",
+    "rocking chair"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 10
+  },
+  {
+   "id": "E011",
+   "num": 11,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the icy lace that forms on the windowpane. What am I?",
+   "answer": "frost",
+   "accept": [
+    "frost",
+    "window frost"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 11
+  },
+  {
+   "id": "E012",
+   "num": 12,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the iron basket that holds the burning logs. What am I?",
+   "answer": "grate",
+   "accept": [
+    "fire grate",
+    "fireplace grate",
+    "grate"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 12
+  },
+  {
+   "id": "E013",
+   "num": 13,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the iron rail where mittens hang to dry. What am I?",
+   "answer": "hearth rail",
+   "accept": [
+    "fender",
+    "fireguard",
+    "hearth rail",
+    "rail"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 13
+  },
+  {
+   "id": "E014",
+   "num": 14,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the jar of peppermints on the front desk. What am I?",
+   "answer": "candy jar",
+   "accept": [
+    "candy jar",
+    "jar",
+    "peppermint jar"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 14
+  },
+  {
+   "id": "E015",
+   "num": 15,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the jar of sweetness kept beside the tea tins. What am I?",
+   "answer": "honey",
+   "accept": [
+    "honey",
+    "honey jar"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 15
+  },
+  {
+   "id": "E016",
+   "num": 16,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the long wooden stick used to poke the logs. What am I?",
+   "answer": "poker",
+   "accept": [
+    "fire poker",
+    "poker"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 16
+  },
+  {
+   "id": "E017",
+   "num": 17,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the metal scoop used to clear the front steps. What am I?",
+   "answer": "shovel",
+   "accept": [
+    "shovel",
+    "snow shovel"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 17
+  },
+  {
+   "id": "E018",
+   "num": 18,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the packed-snow walk between the lodge and the barn. What am I?",
+   "answer": "path",
+   "accept": [
+    "path",
+    "trail",
+    "walkway"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 18
+  },
+  {
+   "id": "E019",
+   "num": 19,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the post that points guests up the mountain road. What am I?",
+   "answer": "signpost",
+   "accept": [
+    "sign",
+    "sign post",
+    "signpost"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 19
+  },
+  {
+   "id": "E020",
+   "num": 20,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the smooth surface skaters use on the village pond. What am I?",
+   "answer": "ice",
+   "accept": [
+    "ice",
+    "pond ice",
+    "rink"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 20
+  },
+  {
+   "id": "E021",
+   "num": 21,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the soft white flake with six arms. What am I?",
+   "answer": "snowflake",
+   "accept": [
+    "flake",
+    "snowflake"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 21
+  },
+  {
+   "id": "E022",
+   "num": 22,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the soft white pile against the lodge door. What am I?",
+   "answer": "snowdrift",
+   "accept": [
+    "drift",
+    "snow drift",
+    "snowdrift"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 22
+  },
+  {
+   "id": "E023",
+   "num": 23,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the soft wrap wound twice around a guest's neck. What am I?",
+   "answer": "scarf",
+   "accept": [
+    "muffler",
+    "scarf"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 23
+  },
+  {
+   "id": "E024",
+   "num": 24,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the spare footwear by the mudroom door. What am I?",
+   "answer": "boots",
+   "accept": [
+    "boot",
+    "boots",
+    "winter boots"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 24
+  },
+  {
+   "id": "E025",
+   "num": 25,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the stack that paints a gray ribbon on the sky. What am I?",
+   "answer": "chimney",
+   "accept": [
+    "chimney",
+    "stack"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 25
+  },
+  {
+   "id": "E026",
+   "num": 26,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the stove that warms the kitchen before dawn. What am I?",
+   "answer": "stove",
+   "accept": [
+    "cookstove",
+    "stove",
+    "wood stove",
+    "woodstove"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 26
+  },
+  {
+   "id": "E027",
+   "num": 27,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the thick cup that holds the cocoa. What am I?",
+   "answer": "mug",
+   "accept": [
+    "cocoa mug",
+    "cup",
+    "mug"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 27
+  },
+  {
+   "id": "E028",
+   "num": 28,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the warm glow left under ash when the fire settles. What am I?",
+   "answer": "ember",
+   "accept": [
+    "coal",
+    "coals",
+    "ember",
+    "embers"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 28
+  },
+  {
+   "id": "E029",
+   "num": 29,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the wooden seat that faces the hearth. What am I?",
+   "answer": "bench",
+   "accept": [
+    "bench",
+    "settle"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 29
+  },
+  {
+   "id": "E030",
+   "num": 30,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the wool cover folded at the foot of every bed. What am I?",
+   "answer": "blanket",
+   "accept": [
+    "blanket",
+    "quilt",
+    "throw"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 30
+  },
+  {
+   "id": "E031",
+   "num": 31,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am the wool foot-warmer drying on the hearth rail. What am I?",
+   "answer": "sock",
+   "accept": [
+    "sock",
+    "stocking",
+    "wool sock"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 31
+  },
+  {
+   "id": "E032",
+   "num": 32,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am what the stationmaster blows for the Express. What am I?",
+   "answer": "whistle",
+   "accept": [
+    "train whistle",
+    "whistle"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 32
+  },
+  {
+   "id": "E033",
+   "num": 33,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I am white, soft, and fall from the Frostwood sky. What am I?",
+   "answer": "snow",
+   "accept": [
+    "snow",
+    "snowflake",
+    "snowflakes"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 33
+  },
+  {
+   "id": "E034",
+   "num": 34,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I chime the hour in the lodge lobby. What am I?",
+   "answer": "clock",
+   "accept": [
+    "clock",
+    "lobby clock"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 34
+  },
+  {
+   "id": "E035",
+   "num": 35,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I crackle and glow in the lodge fireplace. What am I?",
+   "answer": "fire",
+   "accept": [
+    "fire",
+    "flame",
+    "flames"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 35
+  },
+  {
+   "id": "E036",
+   "num": 36,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I hang above the hearth and ring when someone wants a room. What am I?",
+   "answer": "bell",
+   "accept": [
+    "bell",
+    "desk bell",
+    "lodge bell"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 36
+  },
+  {
+   "id": "E037",
+   "num": 37,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I hang on a peg and hold a guest's winter coat. What am I?",
+   "answer": "coat rack",
+   "accept": [
+    "coat rack",
+    "coatrack",
+    "hook",
+    "peg"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 37
+  },
+  {
+   "id": "E038",
+   "num": 38,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I keep cold fingers warm beside the fire. What am I?",
+   "answer": "mittens",
+   "accept": [
+    "gloves",
+    "mitten",
+    "mittens"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 38
+  },
+  {
+   "id": "E039",
+   "num": 39,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I light the path with a warm glow when the lamps flicker. What am I?",
+   "answer": "lantern",
+   "accept": [
+    "lamp",
+    "lantern"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 39
+  },
+  {
+   "id": "E040",
+   "num": 40,
+   "band": "Easy",
+   "kind": "riddle",
+   "prompt": "I whistle when the water is ready for tea. What am I?",
+   "answer": "kettle",
+   "accept": [
+    "kettle",
+    "tea kettle",
+    "teakettle"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 40
+  },
+  {
+   "id": "M001",
+   "num": 41,
+   "band": "Medium",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: BERME\n\nUnscramble the Frostwood word.",
+   "answer": "ember",
+   "accept": [
+    "ember"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "BERME",
+    "word": "EMBER"
+   },
+   "band_num": 1
+  },
+  {
+   "id": "M002",
+   "num": 42,
+   "band": "Medium",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: OESTV\n\nUnscramble the Frostwood word.",
+   "answer": "stove",
+   "accept": [
+    "stove"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "OESTV",
+    "word": "STOVE"
+   },
+   "band_num": 2
+  },
+  {
+   "id": "M003",
+   "num": 43,
+   "band": "Medium",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 5).\n\nCiphertext: QFSYJWS\n\nWhat is the original word?",
+   "answer": "lantern",
+   "accept": [
+    "lantern"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "QFSYJWS",
+    "shift": 5,
+    "word": "LANTERN"
+   },
+   "band_num": 3
+  },
+  {
+   "id": "M004",
+   "num": 44,
+   "band": "Medium",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 9).\n\nCiphertext: FQRBCUN\n\nWhat is the original word?",
+   "answer": "whistle",
+   "accept": [
+    "whistle"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "FQRBCUN",
+    "shift": 9,
+    "word": "WHISTLE"
+   },
+   "band_num": 4
+  },
+  {
+   "id": "M005",
+   "num": 45,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "By day I am a still white field; by night skaters carve curves in me. What am I?",
+   "answer": "pond",
+   "accept": [
+    "ice pond",
+    "ice rink",
+    "pond",
+    "rink",
+    "skating pond"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 5
+  },
+  {
+   "id": "M006",
+   "num": 46,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "The cook says: throw away the outside, cook the inside, then eat the outside and throw away the inside. What was prepared?",
+   "answer": "corn",
+   "accept": [
+    "corn",
+    "corn on the cob",
+    "ear of corn",
+    "maize"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 6
+  },
+  {
+   "id": "M007",
+   "num": 47,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "Forward I am heavy; backward I am not. Deep snow feels like me. What am I?",
+   "answer": "ton",
+   "accept": [
+    "ton"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 7
+  },
+  {
+   "id": "M008",
+   "num": 48,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "Guests climb me to reach the upper rooms, yet I never leave the lobby. What am I?",
+   "answer": "stairs",
+   "accept": [
+    "stair",
+    "staircase",
+    "stairs",
+    "steps"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 8
+  },
+  {
+   "id": "M009",
+   "num": 49,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I am a small room with pegs where guests leave coats and scarves. What am I?",
+   "answer": "closet",
+   "accept": [
+    "cloak room",
+    "cloakroom",
+    "closet",
+    "coat closet",
+    "mudroom"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 9
+  },
+  {
+   "id": "M010",
+   "num": 50,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I am a word of five letters. Take away two and one remains—written on the puzzle-night chalkboard. What word am I?",
+   "answer": "stone",
+   "accept": [
+    "stone",
+    "stones"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 10
+  },
+  {
+   "id": "M011",
+   "num": 51,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I am always in front of the guest, yet the guest can never see me. What am I?",
+   "answer": "future",
+   "accept": [
+    "future",
+    "tomorrow"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 11
+  },
+  {
+   "id": "M012",
+   "num": 52,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I am light as a feather, yet no guest can hold me long in mittened hands. What am I?",
+   "answer": "breath",
+   "accept": [
+    "breath",
+    "hot breath",
+    "your breath"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 12
+  },
+  {
+   "id": "M013",
+   "num": 53,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I am tall when I am young in the candle hall and short when I am old. What am I?",
+   "answer": "candle",
+   "accept": [
+    "candle",
+    "taper"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 13
+  },
+  {
+   "id": "M014",
+   "num": 54,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I begin the evening as a log and end it as a quiet glow under ash. What am I?",
+   "answer": "ember",
+   "accept": [
+    "coal",
+    "coals",
+    "ember",
+    "embers"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 14
+  },
+  {
+   "id": "M015",
+   "num": 55,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I can fill every room of the lodge yet take up no space at all. What am I?",
+   "answer": "light",
+   "accept": [
+    "firelight",
+    "lamplight",
+    "light"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 15
+  },
+  {
+   "id": "M016",
+   "num": 56,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I catch smoke for a living and never complain of the heat. What am I?",
+   "answer": "chimney",
+   "accept": [
+    "chimney",
+    "flue"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 16
+  },
+  {
+   "id": "M017",
+   "num": 57,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I go up the mountain with the train and come down with it, yet I never leave my seat. What am I?",
+   "answer": "reflection",
+   "accept": [
+    "reflection",
+    "window reflection",
+    "your reflection"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 17
+  },
+  {
+   "id": "M018",
+   "num": 58,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have a face but never frown, hands that never wave, and I keep the lodge on time. What am I?",
+   "answer": "clock",
+   "accept": [
+    "clock",
+    "lobby clock",
+    "wall clock"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 18
+  },
+  {
+   "id": "M019",
+   "num": 59,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have a neck but no head and wear a warm body by the fire. Guests pull me on before a walk. What am I?",
+   "answer": "sweater",
+   "accept": [
+    "jumper",
+    "pullover",
+    "sweater"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 19
+  },
+  {
+   "id": "M020",
+   "num": 60,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have bark but never bite, needles but never sew, and I wear a white coat all winter. What am I?",
+   "answer": "pine",
+   "accept": [
+    "evergreen",
+    "fir",
+    "fir tree",
+    "pine",
+    "pine tree"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 20
+  },
+  {
+   "id": "M021",
+   "num": 61,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have cities with no houses, forests with no trees, and water with no fish—on the lounge wall. What am I?",
+   "answer": "map",
+   "accept": [
+    "map",
+    "trail map",
+    "wall map"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 21
+  },
+  {
+   "id": "M022",
+   "num": 62,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have keys but open no doors; soft tunes follow supper in the lounge. What am I?",
+   "answer": "piano",
+   "accept": [
+    "piano",
+    "upright piano"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 22
+  },
+  {
+   "id": "M023",
+   "num": 63,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have many teeth but never bite; the cook uses me on carrots for stew. What am I?",
+   "answer": "grater",
+   "accept": [
+    "cheese grater",
+    "grater"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 23
+  },
+  {
+   "id": "M024",
+   "num": 64,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I have no wings but I fly up the flue; I have no lungs but I breathe for the fire. What am I?",
+   "answer": "smoke",
+   "accept": [
+    "smoke",
+    "woodsmoke"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 24
+  },
+  {
+   "id": "M025",
+   "num": 65,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I run but never walk, have a bed of gravel, and the Express follows me. What am I?",
+   "answer": "track",
+   "accept": [
+    "rail",
+    "rails",
+    "railway track",
+    "track",
+    "train track"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 25
+  },
+  {
+   "id": "M026",
+   "num": 66,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I speak without a mouth across the valley when the whistle blows. What am I?",
+   "answer": "echo",
+   "accept": [
+    "echo"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 26
+  },
+  {
+   "id": "M027",
+   "num": 67,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I stand on one leg with my heart in my head in the kitchen garden pot. What am I?",
+   "answer": "cabbage",
+   "accept": [
+    "cabbage"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 27
+  },
+  {
+   "id": "M028",
+   "num": 68,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "I travel up the mountain without walking, carry guests without arms, and whistle without lips. What am I?",
+   "answer": "train",
+   "accept": [
+    "express",
+    "frostwood express",
+    "railway",
+    "train"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 28
+  },
+  {
+   "id": "M029",
+   "num": 69,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "The lodge letter board has me: I am an English word with three consecutive double letters. What am I?",
+   "answer": "bookkeeper",
+   "accept": [
+    "book keeper",
+    "bookkeeper"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 29
+  },
+  {
+   "id": "M030",
+   "num": 70,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "The more logs you take from the woodpile's center, the bigger I become. What am I?",
+   "answer": "hole",
+   "accept": [
+    "gap",
+    "hole"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 30
+  },
+  {
+   "id": "M031",
+   "num": 71,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "The more of me there is in the dining hall, the less you see. What am I?",
+   "answer": "darkness",
+   "accept": [
+    "dark",
+    "darkness",
+    "shadow",
+    "shadows"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 31
+  },
+  {
+   "id": "M032",
+   "num": 72,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "What belongs to the lodgekeeper but is used more by the guests?",
+   "answer": "name",
+   "accept": [
+    "her name",
+    "his name",
+    "name",
+    "their name"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 32
+  },
+  {
+   "id": "M033",
+   "num": 73,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "What has a head, a tail, is brown, and has no legs—left on the hearth after the fire dies?",
+   "answer": "penny",
+   "accept": [
+    "coin",
+    "penny"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 33
+  },
+  {
+   "id": "M034",
+   "num": 74,
+   "band": "Medium",
+   "kind": "riddle",
+   "prompt": "What room can no guest enter in Frostwood Lodge?",
+   "answer": "mushroom",
+   "accept": [
+    "mushroom"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 34
+  },
+  {
+   "id": "M035",
+   "num": 75,
+   "band": "Medium",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Maple, Fir, and Cedar—each hold one guest item: a compass, a sled, and a lantern.\n\n• The Maple Room does not hold the lantern.\n• The Fir Room holds the lantern.\n• The Maple Room does not hold the sled.\n\nWhat is in the Cedar Room?",
+   "answer": "sled",
+   "accept": [
+    "sled"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Maple",
+     "Fir",
+     "Cedar"
+    ],
+    "items": [
+     "compass",
+     "sled",
+     "lantern"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Maple",
+      "lantern"
+     ],
+     [
+      "eq",
+      "Fir",
+      "lantern"
+     ],
+     [
+      "neq",
+      "Maple",
+      "sled"
+     ]
+    ],
+    "ask": "Cedar"
+   },
+   "band_num": 35
+  },
+  {
+   "id": "M036",
+   "num": 76,
+   "band": "Medium",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Spruce, Pine, and Fir—each hold one guest item: a sled, a book, and a lantern.\n\n• The Spruce Room does not hold the sled.\n• The Pine Room holds the sled.\n• The Spruce Room does not hold the lantern.\n\nWhat is in the Fir Room?",
+   "answer": "lantern",
+   "accept": [
+    "lantern"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Spruce",
+     "Pine",
+     "Fir"
+    ],
+    "items": [
+     "sled",
+     "book",
+     "lantern"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Spruce",
+      "sled"
+     ],
+     [
+      "eq",
+      "Pine",
+      "sled"
+     ],
+     [
+      "neq",
+      "Spruce",
+      "lantern"
+     ]
+    ],
+    "ask": "Fir"
+   },
+   "band_num": 36
+  },
+  {
+   "id": "M037",
+   "num": 77,
+   "band": "Medium",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Avery, Finley, and Casey. Between them they have one coffee, one cider, and one mulled juice.\n\n• Avery does not drink cider.\n• Finley drinks cider.\n• Avery does not drink coffee.\n\nWhat does Casey drink?",
+   "answer": "coffee",
+   "accept": [
+    "coffee"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Avery",
+     "Finley",
+     "Casey"
+    ],
+    "drinks": [
+     "coffee",
+     "cider",
+     "mulled juice"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Avery",
+      "cider"
+     ],
+     [
+      "eq",
+      "Finley",
+      "cider"
+     ],
+     [
+      "neq",
+      "Avery",
+      "coffee"
+     ]
+    ],
+    "ask": "Casey"
+   },
+   "band_num": 37
+  },
+  {
+   "id": "M038",
+   "num": 78,
+   "band": "Medium",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Avery, Quinn, and Harper. Between them they have one coffee, one cocoa, and one cider.\n\n• Avery does not drink coffee.\n• Quinn drinks cider.\n• Avery does not drink coffee.\n\nWhat does Harper drink?",
+   "answer": "coffee",
+   "accept": [
+    "coffee"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Avery",
+     "Quinn",
+     "Harper"
+    ],
+    "drinks": [
+     "coffee",
+     "cocoa",
+     "cider"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Avery",
+      "coffee"
+     ],
+     [
+      "eq",
+      "Quinn",
+      "cider"
+     ],
+     [
+      "neq",
+      "Avery",
+      "coffee"
+     ]
+    ],
+    "ask": "Harper"
+   },
+   "band_num": 38
+  },
+  {
+   "id": "M039",
+   "num": 79,
+   "band": "Medium",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Gray, Blake, and Quinn. Between them they have one cider, one mulled juice, and one tea.\n\n• Gray does not drink cider.\n• Blake drinks cider.\n• Gray does not drink mulled juice.\n\nWhat does Quinn drink?",
+   "answer": "mulled juice",
+   "accept": [
+    "mulled juice"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Gray",
+     "Blake",
+     "Quinn"
+    ],
+    "drinks": [
+     "cider",
+     "mulled juice",
+     "tea"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Gray",
+      "cider"
+     ],
+     [
+      "eq",
+      "Blake",
+      "cider"
+     ],
+     [
+      "neq",
+      "Gray",
+      "mulled juice"
+     ]
+    ],
+    "ask": "Quinn"
+   },
+   "band_num": 39
+  },
+  {
+   "id": "M040",
+   "num": 80,
+   "band": "Medium",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Harper, Drew, and Taylor. Between them they have one mulled juice, one cocoa, and one cider.\n\n• Harper does not drink cocoa.\n• Drew drinks mulled juice.\n• Harper does not drink cocoa.\n\nWhat does Taylor drink?",
+   "answer": "cocoa",
+   "accept": [
+    "cocoa"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Harper",
+     "Drew",
+     "Taylor"
+    ],
+    "drinks": [
+     "mulled juice",
+     "cocoa",
+     "cider"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Harper",
+      "cocoa"
+     ],
+     [
+      "eq",
+      "Drew",
+      "mulled juice"
+     ],
+     [
+      "neq",
+      "Harper",
+      "cocoa"
+     ]
+    ],
+    "ask": "Taylor"
+   },
+   "band_num": 40
+  },
+  {
+   "id": "H001",
+   "num": 81,
+   "band": "Hard",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: CYHIENM\n\nUnscramble the Frostwood word.",
+   "answer": "chimney",
+   "accept": [
+    "chimney"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "CYHIENM",
+    "word": "CHIMNEY"
+   },
+   "band_num": 1
+  },
+  {
+   "id": "H002",
+   "num": 82,
+   "band": "Hard",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: EWSITLH\n\nUnscramble the Frostwood word.",
+   "answer": "whistle",
+   "accept": [
+    "whistle"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "EWSITLH",
+    "word": "WHISTLE"
+   },
+   "band_num": 2
+  },
+  {
+   "id": "H003",
+   "num": 83,
+   "band": "Hard",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: YNMIHEC\n\nUnscramble the Frostwood word.",
+   "answer": "chimney",
+   "accept": [
+    "chimney"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "YNMIHEC",
+    "word": "CHIMNEY"
+   },
+   "band_num": 3
+  },
+  {
+   "id": "H004",
+   "num": 84,
+   "band": "Hard",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 11).\n\nCiphertext: QCZDEHZZO\n\nWhat is the original word?",
+   "answer": "frostwood",
+   "accept": [
+    "frostwood"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "QCZDEHZZO",
+    "shift": 11,
+    "word": "FROSTWOOD"
+   },
+   "band_num": 4
+  },
+  {
+   "id": "H005",
+   "num": 85,
+   "band": "Hard",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 2).\n\nCiphertext: JGCTVJ\n\nWhat is the original word?",
+   "answer": "hearth",
+   "accept": [
+    "hearth"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "JGCTVJ",
+    "shift": 2,
+    "word": "HEARTH"
+   },
+   "band_num": 5
+  },
+  {
+   "id": "H006",
+   "num": 86,
+   "band": "Hard",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 7).\n\nCiphertext: YHPSDHF\n\nWhat is the original word?",
+   "answer": "railway",
+   "accept": [
+    "railway"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "YHPSDHF",
+    "shift": 7,
+    "word": "RAILWAY"
+   },
+   "band_num": 6
+  },
+  {
+   "id": "H007",
+   "num": 87,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Blake, Morgan, and Avery. They arrive one after another.\n\n• Avery arrived before Blake.\n• Avery arrived before Morgan.\n• Blake arrived before Morgan.\n\nWho arrived second?",
+   "answer": "Blake",
+   "accept": [
+    "blake"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Blake",
+     "Morgan",
+     "Avery"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Avery",
+      "Blake"
+     ],
+     [
+      "before",
+      "Avery",
+      "Morgan"
+     ],
+     [
+      "before",
+      "Blake",
+      "Morgan"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 7
+  },
+  {
+   "id": "H008",
+   "num": 88,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Finley, Taylor, and Riley. They arrive one after another.\n\n• Finley arrived before Riley.\n• Finley arrived before Taylor.\n• Riley arrived before Taylor.\n\nWho arrived second?",
+   "answer": "Riley",
+   "accept": [
+    "riley"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Finley",
+     "Taylor",
+     "Riley"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Finley",
+      "Riley"
+     ],
+     [
+      "before",
+      "Finley",
+      "Taylor"
+     ],
+     [
+      "before",
+      "Riley",
+      "Taylor"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 8
+  },
+  {
+   "id": "H009",
+   "num": 89,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Morgan, Avery, and Finley. They arrive one after another.\n\n• Avery arrived before Finley.\n• Avery arrived before Morgan.\n• Finley arrived before Morgan.\n\nWho arrived second?",
+   "answer": "Finley",
+   "accept": [
+    "finley"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Morgan",
+     "Avery",
+     "Finley"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Avery",
+      "Finley"
+     ],
+     [
+      "before",
+      "Avery",
+      "Morgan"
+     ],
+     [
+      "before",
+      "Finley",
+      "Morgan"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 9
+  },
+  {
+   "id": "H010",
+   "num": 90,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Morgan, Riley, and Quinn. They arrive one after another.\n\n• Morgan arrived before Quinn.\n• Morgan arrived before Riley.\n• Quinn arrived before Riley.\n\nWho arrived second?",
+   "answer": "Quinn",
+   "accept": [
+    "quinn"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Morgan",
+     "Riley",
+     "Quinn"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Morgan",
+      "Quinn"
+     ],
+     [
+      "before",
+      "Morgan",
+      "Riley"
+     ],
+     [
+      "before",
+      "Quinn",
+      "Riley"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 10
+  },
+  {
+   "id": "H011",
+   "num": 91,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Rowan, Drew, and Avery. They arrive one after another.\n\n• Avery arrived before Drew.\n• Avery arrived before Rowan.\n• Drew arrived before Rowan.\n\nWho arrived second?",
+   "answer": "Drew",
+   "accept": [
+    "drew"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Rowan",
+     "Drew",
+     "Avery"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Avery",
+      "Drew"
+     ],
+     [
+      "before",
+      "Avery",
+      "Rowan"
+     ],
+     [
+      "before",
+      "Drew",
+      "Rowan"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 11
+  },
+  {
+   "id": "H012",
+   "num": 92,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Rowan, Morgan, and Skyler. They arrive one after another.\n\n• Rowan arrived before Skyler.\n• Rowan arrived before Morgan.\n• Skyler arrived before Morgan.\n\nWho arrived second?",
+   "answer": "Skyler",
+   "accept": [
+    "skyler"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Rowan",
+     "Morgan",
+     "Skyler"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Rowan",
+      "Skyler"
+     ],
+     [
+      "before",
+      "Rowan",
+      "Morgan"
+     ],
+     [
+      "before",
+      "Skyler",
+      "Morgan"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 12
+  },
+  {
+   "id": "H013",
+   "num": 93,
+   "band": "Hard",
+   "kind": "order_arrival",
+   "prompt": "Three guests arrive at Frostwood Lodge on the evening Express: Rowan, Taylor, and Harper. They arrive one after another.\n\n• Harper arrived before Taylor.\n• Harper arrived before Rowan.\n• Taylor arrived before Rowan.\n\nWho arrived second?",
+   "answer": "Taylor",
+   "accept": [
+    "taylor"
+   ],
+   "meta": {
+    "type": "order_arrival",
+    "guests": [
+     "Rowan",
+     "Taylor",
+     "Harper"
+    ],
+    "constraints": [
+     [
+      "before",
+      "Harper",
+      "Taylor"
+     ],
+     [
+      "before",
+      "Harper",
+      "Rowan"
+     ],
+     [
+      "before",
+      "Taylor",
+      "Rowan"
+     ]
+    ],
+    "ask_pos": 1
+   },
+   "band_num": 13
+  },
+  {
+   "id": "H014",
+   "num": 94,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "At Frostwood Lodge, a guest said: 'Brothers and sisters have I none, but that guest's father is my father's son.' Who is that other guest to the speaker?",
+   "answer": "son",
+   "accept": [
+    "her son",
+    "his son",
+    "my son",
+    "son",
+    "their son"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 14
+  },
+  {
+   "id": "H015",
+   "num": 95,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "A barrel holds 40 cups when half full of a mix that is 50% cider. How many cups of pure cider must you add to make the mix 75% cider?",
+   "answer": "20",
+   "accept": [
+    "20",
+    "20 cups",
+    "twenty"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 15
+  },
+  {
+   "id": "H016",
+   "num": 96,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Before Mount Frostwood was climbed, what was the highest mountain in the range?",
+   "answer": "mount frostwood",
+   "accept": [
+    "frostwood",
+    "it was still mount frostwood",
+    "mount frostwood",
+    "same"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 16
+  },
+  {
+   "id": "H017",
+   "num": 97,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Five mittens are drying on the hearth rail. How many complete pairs can the lodgekeeper make?",
+   "answer": "2",
+   "accept": [
+    "2",
+    "2 pairs",
+    "two",
+    "two pairs"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 17
+  },
+  {
+   "id": "H018",
+   "num": 98,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "A guest climbs a snowbank 30 feet high. Each day she climbs 3 feet and slides back 2 feet at night. On which day does she reach the top?",
+   "answer": "28",
+   "accept": [
+    "28",
+    "28th",
+    "28th day",
+    "day 28"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 18
+  },
+  {
+   "id": "H019",
+   "num": 99,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "How can you make the number 7 even without addition, subtraction, multiplication, or division? Answer with the resulting word.",
+   "answer": "even",
+   "accept": [
+    "e ven",
+    "even"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 19
+  },
+  {
+   "id": "H020",
+   "num": 100,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "How many months have 28 days?",
+   "answer": "12",
+   "accept": [
+    "12",
+    "all 12",
+    "all of them",
+    "all twelve",
+    "twelve"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 20
+  },
+  {
+   "id": "H021",
+   "num": 101,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "I am a five-letter word eaten in the dining room. Remove my first letter and I am heat; remove two and I am what aging guests do; remove three and I am male sheep. What am I?",
+   "answer": "wheat",
+   "accept": [
+    "wheat"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 21
+  },
+  {
+   "id": "H022",
+   "num": 102,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "I have branches without leaves, a trunk without bark, and arms without hands—guests sit in me by the fire. What am I?",
+   "answer": "armchair",
+   "accept": [
+    "arm chair",
+    "armchair",
+    "chair"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 22
+  },
+  {
+   "id": "H023",
+   "num": 103,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "A lantern, a kettle, and a sled cost $30 together at the village shop. The lantern costs $20 more than the kettle. The sled costs the same as the kettle. How many dollars is the kettle?",
+   "answer": "5",
+   "accept": [
+    "5",
+    "5 dollars",
+    "five",
+    "five dollars"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 23
+  },
+  {
+   "id": "H024",
+   "num": 104,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "The lodge desk has a three-digit code. The second digit is four times the third. The first is three less than the second. The digits sum to 17. What is the code?",
+   "answer": "683",
+   "accept": [
+    "6 8 3",
+    "683"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 24
+  },
+  {
+   "id": "H025",
+   "num": 105,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Room keys labeled 1 to 100 sit in a box at a rival lodge. How many times does the digit 9 appear on those labels?",
+   "answer": "20",
+   "accept": [
+    "20",
+    "twenty"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 25
+  },
+  {
+   "id": "H026",
+   "num": 106,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Take my first letter and I still sound the same; I hang above the desk and call the porter. What three-letter answer fits the classic letter play for a buzzing insect—wait, different: What word becomes shorter when you add two letters to it?",
+   "answer": "short",
+   "accept": [
+    "short",
+    "word short"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 26
+  },
+  {
+   "id": "H027",
+   "num": 107,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "A train leaves the valley for Frostwood Lodge. It travels half the distance at 30 mph and half at 60 mph. What is its average speed in mph?",
+   "answer": "40",
+   "accept": [
+    "40",
+    "40 mph",
+    "forty"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 27
+  },
+  {
+   "id": "H028",
+   "num": 108,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Two mothers and two daughters share three bowls of cocoa by the fire, and each has a bowl. How many people are there?",
+   "answer": "3",
+   "accept": [
+    "3",
+    "3 people",
+    "grandmother mother daughter",
+    "three",
+    "three people"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 28
+  },
+  {
+   "id": "H029",
+   "num": 109,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "Using only addition, add eight 8s to get 1000. Write the expression with plus signs and no spaces.",
+   "answer": "888+88+8+8+8",
+   "accept": [
+    "888 88 8 8 8"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 29
+  },
+  {
+   "id": "H030",
+   "num": 110,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "What English 'word' in the lodge guestbook has the most letters, yet names a single letter?",
+   "answer": "w",
+   "accept": [
+    "double u",
+    "letter w",
+    "w"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 30
+  },
+  {
+   "id": "H031",
+   "num": 111,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "What invents what it hears and is born in the mountains around Frostwood?",
+   "answer": "echo",
+   "accept": [
+    "echo"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 31
+  },
+  {
+   "id": "H032",
+   "num": 112,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "What is so fragile that saying its name breaks it—often broken in the quiet writing room?",
+   "answer": "silence",
+   "accept": [
+    "silence"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 32
+  },
+  {
+   "id": "H033",
+   "num": 113,
+   "band": "Hard",
+   "kind": "riddle",
+   "prompt": "What occurs once in a minute, twice in a moment, yet never in a thousand years?",
+   "answer": "m",
+   "accept": [
+    "letter m",
+    "m"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 33
+  },
+  {
+   "id": "H034",
+   "num": 114,
+   "band": "Hard",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Cedar, Birch, and Fir—each hold one guest item: a lantern, a sled, and a mug.\n\n• The Cedar Room does not hold the sled.\n• The Birch Room holds the lantern.\n• The Cedar Room does not hold the sled.\n\nWhat is in the Fir Room?",
+   "answer": "sled",
+   "accept": [
+    "sled"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Cedar",
+     "Birch",
+     "Fir"
+    ],
+    "items": [
+     "lantern",
+     "sled",
+     "mug"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Cedar",
+      "sled"
+     ],
+     [
+      "eq",
+      "Birch",
+      "lantern"
+     ],
+     [
+      "neq",
+      "Cedar",
+      "sled"
+     ]
+    ],
+    "ask": "Fir"
+   },
+   "band_num": 34
+  },
+  {
+   "id": "H035",
+   "num": 115,
+   "band": "Hard",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Fir, Cedar, and Oak—each hold one guest item: a whistle, a scarf, and a book.\n\n• The Fir Room does not hold the whistle.\n• The Cedar Room holds the whistle.\n• The Fir Room does not hold the scarf.\n\nWhat is in the Oak Room?",
+   "answer": "scarf",
+   "accept": [
+    "scarf"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Fir",
+     "Cedar",
+     "Oak"
+    ],
+    "items": [
+     "whistle",
+     "scarf",
+     "book"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Fir",
+      "whistle"
+     ],
+     [
+      "eq",
+      "Cedar",
+      "whistle"
+     ],
+     [
+      "neq",
+      "Fir",
+      "scarf"
+     ]
+    ],
+    "ask": "Oak"
+   },
+   "band_num": 35
+  },
+  {
+   "id": "H036",
+   "num": 116,
+   "band": "Hard",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Spruce, Birch, and Pine—each hold one guest item: a key, a ticket, and a compass.\n\n• The Spruce Room does not hold the key.\n• The Birch Room holds the key.\n• The Spruce Room does not hold the ticket.\n\nWhat is in the Pine Room?",
+   "answer": "ticket",
+   "accept": [
+    "ticket"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Spruce",
+     "Birch",
+     "Pine"
+    ],
+    "items": [
+     "key",
+     "ticket",
+     "compass"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Spruce",
+      "key"
+     ],
+     [
+      "eq",
+      "Birch",
+      "key"
+     ],
+     [
+      "neq",
+      "Spruce",
+      "ticket"
+     ]
+    ],
+    "ask": "Pine"
+   },
+   "band_num": 36
+  },
+  {
+   "id": "H037",
+   "num": 117,
+   "band": "Hard",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 13, 17, __, 25, 29, 33\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "21",
+   "accept": [
+    "21"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     13,
+     17,
+     21,
+     25,
+     29,
+     33
+    ],
+    "blank": 2,
+    "step": 4
+   },
+   "band_num": 37
+  },
+  {
+   "id": "H038",
+   "num": 118,
+   "band": "Hard",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 6, 13, 20, __, 34, 41\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "27",
+   "accept": [
+    "27"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     6,
+     13,
+     20,
+     27,
+     34,
+     41
+    ],
+    "blank": 3,
+    "step": 7
+   },
+   "band_num": 38
+  },
+  {
+   "id": "H039",
+   "num": 119,
+   "band": "Hard",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 6, 15, __, 33, 42, 51\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "24",
+   "accept": [
+    "24"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     6,
+     15,
+     24,
+     33,
+     42,
+     51
+    ],
+    "blank": 2,
+    "step": 9
+   },
+   "band_num": 39
+  },
+  {
+   "id": "H040",
+   "num": 120,
+   "band": "Hard",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Taylor, Indigo, and Rowan. Between them they have one cocoa, one tea, and one cider.\n\n• Taylor does not drink cider.\n• Indigo drinks cider.\n• Taylor does not drink cocoa.\n\nWhat does Rowan drink?",
+   "answer": "cocoa",
+   "accept": [
+    "cocoa"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Taylor",
+     "Indigo",
+     "Rowan"
+    ],
+    "drinks": [
+     "cocoa",
+     "tea",
+     "cider"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Taylor",
+      "cider"
+     ],
+     [
+      "eq",
+      "Indigo",
+      "cider"
+     ],
+     [
+      "neq",
+      "Taylor",
+      "cocoa"
+     ]
+    ],
+    "ask": "Rowan"
+   },
+   "band_num": 40
+  },
+  {
+   "id": "E001",
+   "num": 121,
+   "band": "Expert",
+   "kind": "anagram",
+   "prompt": "The village stationmaster left an anagram on a luggage tag.\n\nScrambled letters: ODSTWFORO\n\nUnscramble the Frostwood word.",
+   "answer": "frostwood",
+   "accept": [
+    "frostwood"
+   ],
+   "meta": {
+    "type": "anagram",
+    "scrambled": "ODSTWFORO",
+    "word": "FROSTWOOD"
+   },
+   "band_num": 1
+  },
+  {
+   "id": "E002",
+   "num": 122,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 10).\n\nCiphertext: CDKDSYXWKCDOB\n\nWhat is the original word?",
+   "answer": "stationmaster",
+   "accept": [
+    "stationmaster"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "CDKDSYXWKCDOB",
+    "shift": 10,
+    "word": "STATIONMASTER"
+   },
+   "band_num": 2
+  },
+  {
+   "id": "E003",
+   "num": 123,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 11).\n\nCiphertext: ZMDPCGLEZCJ\n\nWhat is the original word?",
+   "answer": "observatory",
+   "accept": [
+    "observatory"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "ZMDPCGLEZCJ",
+    "shift": 11,
+    "word": "OBSERVATORY"
+   },
+   "band_num": 3
+  },
+  {
+   "id": "E004",
+   "num": 124,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 12).\n\nCiphertext: NAAWWQQBQD\n\nWhat is the original word?",
+   "answer": "bookkeeper",
+   "accept": [
+    "bookkeeper"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "NAAWWQQBQD",
+    "shift": 12,
+    "word": "BOOKKEEPER"
+   },
+   "band_num": 4
+  },
+  {
+   "id": "E005",
+   "num": 125,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 2).\n\nCiphertext: UPQYUJQGU\n\nWhat is the original word?",
+   "answer": "snowshoes",
+   "accept": [
+    "snowshoes"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "UPQYUJQGU",
+    "shift": 2,
+    "word": "SNOWSHOES"
+   },
+   "band_num": 5
+  },
+  {
+   "id": "E006",
+   "num": 126,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 3).\n\nCiphertext: VWDWLRQPDVWHU\n\nWhat is the original word?",
+   "answer": "stationmaster",
+   "accept": [
+    "stationmaster"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "VWDWLRQPDVWHU",
+    "shift": 3,
+    "word": "STATIONMASTER"
+   },
+   "band_num": 6
+  },
+  {
+   "id": "E007",
+   "num": 127,
+   "band": "Expert",
+   "kind": "caesar",
+   "prompt": "A chalkboard by the Frostwood fire shows a Caesar cipher (each letter shifted forward by 6).\n\nCiphertext: YZGZOUTSGYZKX\n\nWhat is the original word?",
+   "answer": "stationmaster",
+   "accept": [
+    "stationmaster"
+   ],
+   "meta": {
+    "type": "caesar",
+    "cipher": "YZGZOUTSGYZKX",
+    "shift": 6,
+    "word": "STATIONMASTER"
+   },
+   "band_num": 7
+  },
+  {
+   "id": "E008",
+   "num": 128,
+   "band": "Expert",
+   "kind": "riddle",
+   "prompt": "Four parcels: red, blue, green, gold. Red is heavier than blue. Green is lighter than blue. Gold is heavier than red. Name the lightest color.",
+   "answer": "green",
+   "accept": [
+    "green",
+    "green parcel"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 8
+  },
+  {
+   "id": "E009",
+   "num": 129,
+   "band": "Expert",
+   "kind": "riddle",
+   "prompt": "A Frostwood puzzle night uses a code: each letter is replaced by its position in the alphabet (A=1). The sum for LODGE is 12+15+4+7+5=43. What is the sum for FIRE?",
+   "answer": "38",
+   "accept": [
+    "38",
+    "thirty eight",
+    "thirty-eight"
+   ],
+   "meta": {
+    "type": "riddle"
+   },
+   "band_num": 9
+  },
+  {
+   "id": "E010",
+   "num": 130,
+   "band": "Expert",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Aspen, Spruce, and Fir—each hold one guest item: a key, a lantern, and a ticket.\n\n• The Aspen Room does not hold the key.\n• The Spruce Room holds the lantern.\n• The Aspen Room does not hold the key.\n\nWhat is in the Fir Room?",
+   "answer": "key",
+   "accept": [
+    "key"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Aspen",
+     "Spruce",
+     "Fir"
+    ],
+    "items": [
+     "key",
+     "lantern",
+     "ticket"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Aspen",
+      "key"
+     ],
+     [
+      "eq",
+      "Spruce",
+      "lantern"
+     ],
+     [
+      "neq",
+      "Aspen",
+      "key"
+     ]
+    ],
+    "ask": "Fir"
+   },
+   "band_num": 10
+  },
+  {
+   "id": "E011",
+   "num": 131,
+   "band": "Expert",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Cedar, Pine, and Aspen—each hold one guest item: a key, a sled, and a map.\n\n• The Cedar Room does not hold the map.\n• The Pine Room holds the key.\n• The Cedar Room does not hold the map.\n\nWhat is in the Aspen Room?",
+   "answer": "map",
+   "accept": [
+    "map"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Cedar",
+     "Pine",
+     "Aspen"
+    ],
+    "items": [
+     "key",
+     "sled",
+     "map"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Cedar",
+      "map"
+     ],
+     [
+      "eq",
+      "Pine",
+      "key"
+     ],
+     [
+      "neq",
+      "Cedar",
+      "map"
+     ]
+    ],
+    "ask": "Aspen"
+   },
+   "band_num": 11
+  },
+  {
+   "id": "E012",
+   "num": 132,
+   "band": "Expert",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Oak, Fir, and Aspen—each hold one guest item: a sled, a key, and a ticket.\n\n• The Oak Room does not hold the sled.\n• The Fir Room holds the sled.\n• The Oak Room does not hold the ticket.\n\nWhat is in the Aspen Room?",
+   "answer": "ticket",
+   "accept": [
+    "ticket"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Oak",
+     "Fir",
+     "Aspen"
+    ],
+    "items": [
+     "sled",
+     "key",
+     "ticket"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Oak",
+      "sled"
+     ],
+     [
+      "eq",
+      "Fir",
+      "sled"
+     ],
+     [
+      "neq",
+      "Oak",
+      "ticket"
+     ]
+    ],
+    "ask": "Aspen"
+   },
+   "band_num": 12
+  },
+  {
+   "id": "E013",
+   "num": 133,
+   "band": "Expert",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Oak, Maple, and Pine—each hold one guest item: a ticket, a scarf, and a lantern.\n\n• The Oak Room does not hold the lantern.\n• The Maple Room holds the ticket.\n• The Oak Room does not hold the lantern.\n\nWhat is in the Pine Room?",
+   "answer": "lantern",
+   "accept": [
+    "lantern"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Oak",
+     "Maple",
+     "Pine"
+    ],
+    "items": [
+     "ticket",
+     "scarf",
+     "lantern"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Oak",
+      "lantern"
+     ],
+     [
+      "eq",
+      "Maple",
+      "ticket"
+     ],
+     [
+      "neq",
+      "Oak",
+      "lantern"
+     ]
+    ],
+    "ask": "Pine"
+   },
+   "band_num": 13
+  },
+  {
+   "id": "E014",
+   "num": 134,
+   "band": "Expert",
+   "kind": "room_item",
+   "prompt": "Three lodge rooms—Spruce, Cedar, and Maple—each hold one guest item: a sled, a ticket, and a mug.\n\n• The Spruce Room does not hold the ticket.\n• The Cedar Room holds the sled.\n• The Spruce Room does not hold the ticket.\n\nWhat is in the Maple Room?",
+   "answer": "ticket",
+   "accept": [
+    "ticket"
+   ],
+   "meta": {
+    "type": "room_item",
+    "rooms": [
+     "Spruce",
+     "Cedar",
+     "Maple"
+    ],
+    "items": [
+     "sled",
+     "ticket",
+     "mug"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Spruce",
+      "ticket"
+     ],
+     [
+      "eq",
+      "Cedar",
+      "sled"
+     ],
+     [
+      "neq",
+      "Spruce",
+      "ticket"
+     ]
+    ],
+    "ask": "Maple"
+   },
+   "band_num": 14
+  },
+  {
+   "id": "E015",
+   "num": 135,
+   "band": "Expert",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 15, 24, __, 42, 51, 60, 69\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "33",
+   "accept": [
+    "33"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     15,
+     24,
+     33,
+     42,
+     51,
+     60,
+     69
+    ],
+    "blank": 2,
+    "step": 9
+   },
+   "band_num": 15
+  },
+  {
+   "id": "E016",
+   "num": 136,
+   "band": "Expert",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 19, 30, 41, 52, __, 74, 85\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "63",
+   "accept": [
+    "63"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     19,
+     30,
+     41,
+     52,
+     63,
+     74,
+     85
+    ],
+    "blank": 4,
+    "step": 11
+   },
+   "band_num": 16
+  },
+  {
+   "id": "E017",
+   "num": 137,
+   "band": "Expert",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 19, __, 33, 40, 47, 54, 61\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "26",
+   "accept": [
+    "26"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     19,
+     26,
+     33,
+     40,
+     47,
+     54,
+     61
+    ],
+    "blank": 1,
+    "step": 7
+   },
+   "band_num": 17
+  },
+  {
+   "id": "E018",
+   "num": 138,
+   "band": "Expert",
+   "kind": "sequence",
+   "prompt": "A row of room numbers was partly erased on the Frostwood chalkboard.\n\nSequence: 5, 17, 29, __, 53, 65, 77\n\nThe numbers increase by the same amount each step. What number belongs in the blank?",
+   "answer": "41",
+   "accept": [
+    "41"
+   ],
+   "meta": {
+    "type": "sequence",
+    "seq": [
+     5,
+     17,
+     29,
+     41,
+     53,
+     65,
+     77
+    ],
+    "blank": 3,
+    "step": 12
+   },
+   "band_num": 18
+  },
+  {
+   "id": "E019",
+   "num": 139,
+   "band": "Expert",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Casey, Gray, and Jordan. Between them they have one cocoa, one tea, and one cider.\n\n• Casey does not drink cocoa.\n• Gray drinks cocoa.\n• Casey does not drink tea.\n\nWhat does Jordan drink?",
+   "answer": "tea",
+   "accept": [
+    "tea"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Casey",
+     "Gray",
+     "Jordan"
+    ],
+    "drinks": [
+     "cocoa",
+     "tea",
+     "cider"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Casey",
+      "cocoa"
+     ],
+     [
+      "eq",
+      "Gray",
+      "cocoa"
+     ],
+     [
+      "neq",
+      "Casey",
+      "tea"
+     ]
+    ],
+    "ask": "Jordan"
+   },
+   "band_num": 19
+  },
+  {
+   "id": "E020",
+   "num": 140,
+   "band": "Expert",
+   "kind": "who_drink",
+   "prompt": "Three guests warm their hands by the Frostwood hearth: Gray, Avery, and Drew. Between them they have one cocoa, one cider, and one tea.\n\n• Gray does not drink tea.\n• Avery drinks cider.\n• Gray does not drink tea.\n\nWhat does Drew drink?",
+   "answer": "tea",
+   "accept": [
+    "tea"
+   ],
+   "meta": {
+    "type": "who_drink",
+    "guests": [
+     "Gray",
+     "Avery",
+     "Drew"
+    ],
+    "drinks": [
+     "cocoa",
+     "cider",
+     "tea"
+    ],
+    "constraints": [
+     [
+      "neq",
+      "Gray",
+      "tea"
+     ],
+     [
+      "eq",
+      "Avery",
+      "cider"
+     ],
+     [
+      "neq",
+      "Gray",
+      "tea"
+     ]
+    ],
+    "ask": "Drew"
+   },
+   "band_num": 20
+  }
+ ]
+}
