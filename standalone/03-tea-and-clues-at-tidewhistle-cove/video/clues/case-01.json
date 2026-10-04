@@ -1,0 +1,35 @@
+{
+  "case": "Case 1 \u00b7 The Prize Sponge",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Each item appears when its anchor is spoken: {seg: narration segment index in timing.json, phrase: words in that segment}; the time is the start of the phrase's last word. Every item gets the same pop-in and highlight, so the notebook never hints at the answer. 'solution' marks run only after 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-covers", "section": "facts", "text": "Each cake under a glass dome and a white cloth", "at": {"seg": 3, "phrase": "white cloth"}},
+    {"id": "f-cards",  "section": "facts", "text": "Only a number card on each. No names, no labels.", "at": {"seg": 3, "phrase": "number card"}},
+    {"id": "f-list",   "section": "facts", "text": "Who-baked-what list: folded in Agnes's handbag", "at": {"seg": 3, "phrase": "her handbag"}},
+    {"id": "f-noon",   "section": "facts", "text": "Noon\u20131 pm: Agnes at lunch; 3 helpers in the hall", "at": {"seg": 4, "phrase": "in the hall"}},
+    {"id": "f-gone",   "section": "facts", "text": "1 pm: entry #7 gone. Crumbs left on the plate.", "at": {"seg": 5, "phrase": "was gone"}},
+    {"id": "f-ollie",  "section": "facts", "text": "Ollie: \u201cEntry number seven\u201d has gone missing", "at": {"seg": 7, "phrase": "Entry number seven"}},
+    {"id": "morwenna", "section": "who", "name": "Morwenna Day", "text": "sweet peas at the far end", "at": {"seg": 4, "phrase": "sweet peas"}},
+    {"id": "morwenna-said", "section": "who", "parent": "morwenna", "text": "\u201cWith the flowers all hour. Saw Hedley pass the cakes.\u201d", "at": {"seg": 8, "phrase": "cake table"}},
+    {"id": "hedley", "section": "who", "name": "Hedley Truscott", "text": "stacking chairs", "at": {"seg": 4, "phrase": "stacking chairs"}},
+    {"id": "hedley-said", "section": "who", "parent": "hedley", "text": "\u201cWalked past to the cupboard. Never lifted a cloth.\u201d", "at": {"seg": 9, "phrase": "lifted a cloth"}},
+    {"id": "jago", "section": "who", "name": "Jago Penhallow", "text": "baker. His own sponge is entry #4.", "at": {"seg": 4, "phrase": "number four"}},
+    {"id": "jago-said", "section": "who", "parent": "jago", "text": "\u201cWhy would I want somebody else's lemon drizzle?\u201d", "at": {"seg": 10, "phrase": "lemon drizzle"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "jago", "span": "name", "at": {"seg": 16, "phrase": "took"}},
+    {"do": "strike", "item": ["morwenna", "morwenna-said"], "at": {"seg": 16, "phrase": "the cake"}},
+    {"do": "strike", "item": ["hedley", "hedley-said"], "at": {"seg": 16, "phrase": "cake"}, "delay": 0.5},
+    {"do": "check", "item": "f-ollie", "at": {"seg": 17, "phrase": "only said"}},
+    {"do": "check", "item": "f-covers", "at": {"seg": 17, "phrase": "white cloth"}},
+    {"do": "check", "item": "f-cards", "at": {"seg": 17, "phrase": "smell it"}},
+    {"do": "check", "item": "f-list", "at": {"seg": 17, "phrase": "handbag"}},
+    {"do": "circle", "item": "jago-said", "at": {"seg": 18, "phrase": "lemon drizzle"}},
+    {"do": "note", "text": "Nobody said which cake. Only someone who lifted the cloth could know #7 was a lemon drizzle.", "at": {"seg": 18, "phrase": "lifting the cloth"}, "hold": 7.0}
+  ]
+}
