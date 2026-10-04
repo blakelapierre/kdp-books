@@ -1,4 +1,4 @@
-"""Word-level timing for Case 1: slice the mastered MP3 by the narration script's own segment times
+"""Word-level timing for one case (default case-01; pass e.g. case-02 as the 4th argument): slice the mastered MP3 by the narration script's own segment times
 (narrate.py chapters.json, +0.75 s master head) and run faster-whisper on each slice; map script words to
 ASR words with difflib; interpolate any unmatched words inside the segment."""
 import json, sys, re, difflib
@@ -6,7 +6,8 @@ import numpy as np, soundfile as sf
 from faster_whisper import WhisperModel
 HEAD = 0.75
 meta = json.load(open(sys.argv[1]))
-ch = [c for c in meta if c["slug"].startswith("case-01")][0]
+CASE = sys.argv[4] if len(sys.argv) > 4 else "case-01"
+ch = [c for c in meta if c["slug"].startswith(CASE)][0]
 a, sr = sf.read(sys.argv[2], dtype="float32")
 m = WhisperModel("small.en", device="cpu", compute_type="float32", cpu_threads=8)
 norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower())

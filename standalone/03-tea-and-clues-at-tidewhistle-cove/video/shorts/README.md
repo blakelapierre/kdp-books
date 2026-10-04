@@ -29,3 +29,12 @@ Cuts (v3 time = original narration time + 4.705 s hook shift, + 7 s after the co
 - 164.4 s is inside the silent countdown (narration ends at 157.8, "The Solution." starts at 169.1)
 
 Made by `../src/make_shorts.py` (cuts configured in `SHORTS_CFG` in `../src/render.py`). The v1 Shorts above are untouched.
+
+## Case 2 "The Lemonade on the Lawn" Shorts (cut from the case 2 vertical)
+
+| File | Length | Contents |
+|---|---|---|
+| `standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-short-part1.mp4` | 2:09.5 | 0:00.0 to 2:06.5: the 5.5 s hook ("Who took the silver locket?"), the story, "Can you solve it?" and "Think about it." Then a 3 s card: "Comment your guess! / Captain Quill, Demelza, or Mr Bramble? / ANSWER IN PART 2" |
+| `standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-short-part2.mp4` | 1:21.1 | A 1 s silent "PART 2 · THE ANSWER" card, the question recap with the full notebook (2:00.6 to 2:06.5), the last 4 s of the countdown, then the solution through the end card |
+
+Cuts (video time = narration time + 5.02 s hook shift, + 7 s after the countdown splice): 121.45 s narration time sits between "Think about it." (ends 121.01) and "Take a moment" (121.91); 115.6 s sits between "...the blazing sun." (115.09) and "Can you solve it?" (116.19); the Part 2 countdown cut is inside the silent countdown. YouTube text for both parts: `case-02-youtube.md`.

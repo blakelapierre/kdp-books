@@ -1,0 +1,38 @@
+{
+  "case": "Case 2 \u00b7 The Lemonade on the Lawn",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-hot",     "section": "facts", "text": "Hottest afternoon of the summer", "at": {"seg": 2, "phrase": "hottest afternoon"}},
+    {"id": "f-ice",     "section": "facts", "text": "1:15 pm: ice in every glass, from a big bowl", "at": {"seg": 3, "phrase": "big bowl"}},
+    {"id": "f-melted",  "section": "facts", "text": "2 pm: bowl empty; everyone's ice melted away", "at": {"seg": 3, "phrase": "melted away to nothing"}},
+    {"id": "f-freezer", "section": "facts", "text": "Only ice left: freezer in Loveday's kitchen", "at": {"seg": 3, "phrase": "Loveday's kitchen"}},
+    {"id": "f-locket",  "section": "facts", "text": "Silver locket on the kitchen windowsill", "at": {"seg": 4, "phrase": "silver locket"}},
+    {"id": "f-gone",    "section": "facts", "text": "Seen at 2 pm. Gone by 2:30.", "at": {"seg": 4, "phrase": "it was gone"}},
+    {"id": "quill", "section": "who", "name": "Captain Quill", "text": "harbourmaster", "at": {"seg": 5, "phrase": "the harbourmaster"}},
+    {"id": "quill-where", "section": "who", "parent": "quill", "text": "With Agnes at his harbour office since 1 pm", "at": {"seg": 5, "phrase": "each other's sight"}},
+    {"id": "demelza", "section": "who", "name": "Demelza Rowe", "text": "deckchair by the roses, sunhat on face", "at": {"seg": 7, "phrase": "over her face"}},
+    {"id": "demelza-where", "section": "who", "parent": "demelza", "text": "3 guests: asleep there since before 2", "at": {"seg": 7, "phrase": "snoring gently"}},
+    {"id": "bramble", "section": "who", "name": "Mr Bramble", "text": "holidaymaker next door", "at": {"seg": 8, "phrase": "next door"}},
+    {"id": "bramble-glass", "section": "who", "parent": "bramble", "text": "Bench in the shade. Frosty glass, big sharp ice cubes.", "at": {"seg": 8, "phrase": "sharp at the edges"}},
+    {"id": "bramble-said", "section": "who", "parent": "bramble", "text": "\u201cSat right here for the past hour. Haven't moved.\u201d", "at": {"seg": 9, "phrase": "moved an inch"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "bramble", "span": "name", "at": {"seg": 15, "phrase": "took"}},
+    {"do": "circle", "item": "bramble-said", "at": {"seg": 16, "phrase": "for an hour"}},
+    {"do": "check", "item": "f-hot", "at": {"seg": 16, "phrase": "hottest afternoon"}},
+    {"do": "check", "item": "f-melted", "at": {"seg": 16, "phrase": "melted away completely"}},
+    {"do": "circle", "item": "bramble-glass", "at": {"seg": 16, "phrase": "sharp edged"}},
+    {"do": "check", "item": "f-ice", "at": {"seg": 17, "phrase": "since two o'clock"}},
+    {"do": "check", "item": "f-freezer", "at": {"seg": 17, "phrase": "Loveday's kitchen"}},
+    {"do": "check", "item": "f-locket", "at": {"seg": 17, "phrase": "locket had been"}},
+    {"do": "note", "text": "Ice that fresh can't have sat an hour in this heat. It came from the kitchen freezer, right by the locket.", "at": {"seg": 17, "phrase": "very recently"}, "hold": 6.0},
+    {"do": "strike", "item": ["demelza", "demelza-where"], "at": {"seg": 18, "phrase": "full view"}},
+    {"do": "strike", "item": ["quill", "quill-where"], "at": {"seg": 18, "phrase": "whole afternoon"}}
+  ]
+}

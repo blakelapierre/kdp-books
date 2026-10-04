@@ -27,7 +27,9 @@ def card(base_t, lines, path):
     d.rounded_rectangle([x0 + 14, y0 + 14, x1 - 14, y1 - 14], radius=26, outline=R.ACCENT + (255,), width=2)
     hs = sum(sz * 1.25 for _, _, sz, _ in lines); y = (y0 + y1) / 2 - hs / 2
     for text, font, size, col in lines:
-        f = R.F(font, size); R.ctext(d, im.width / 2, y, text, f, col + (255,)); y += size * 1.25
+        fs = size
+        while fs > 30 and d.textlength(text, font=R.F(font, fs)) > (x1 - x0) - 90: fs -= 2   # shrink long lines to fit
+        f = R.F(font, fs); R.ctext(d, im.width / 2, y + (size - fs) / 2, text, f, col + (255,)); y += size * 1.25
     Image.alpha_composite(im, ov).convert("RGB").save(path)
 
 def run(cmd): subprocess.run(["ffmpeg", "-y", "-v", "error"] + cmd, check=True)

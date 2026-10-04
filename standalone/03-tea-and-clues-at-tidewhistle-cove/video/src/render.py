@@ -1,4 +1,4 @@
-"""Storybook video for Case 1, The Prize Sponge. Local render only: PIL frames piped to ffmpeg (libx264 + AAC).
+"""Storybook video for one Tidewhistle case (default Case 1; --case=2 for Case 2, config in cases/caseNN.py). Local render only: PIL frames piped to ffmpeg (libx264 + AAC).
 
   python3 art.py                       # ink illustrations -> ../work/art/*.png
   python3 render.py vertical           # -> ../standalone-03-tidewhistle-case-01-the-prize-sponge-vertical.mp4
@@ -14,28 +14,35 @@ from concurrent.futures import ProcessPoolExecutor
 from PIL import Image, ImageDraw, ImageFont
 from tracker import Notebook
 
+import importlib
+CASE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--case=")), os.environ.get("CASE", "01"))
+C = importlib.import_module(f"cases.case{int(CASE):02d}")   # per-case config: cases/caseNN.py
+
 HERE = os.path.dirname(os.path.abspath(__file__)); VID = os.path.join(HERE, "..")
-ART = os.path.join(VID, "work", "art"); WORK = os.path.join(VID, "work")
-AUDIO = os.path.join(VID, "..", "audio", "standalone-03-tidewhistle-03-case-01-the-prize-sponge.mp3")
-CLUES = os.path.join(VID, "clues", "case-01.json")
+ART = os.path.join(VID, C.ART); WORK = os.path.join(VID, "work")
+AUDIO = os.path.join(VID, "..", "audio", C.AUDIO)
+CLUES = os.path.join(VID, C.CLUES)
 G = "/usr/share/fonts/truetype/sand-box/google/"
 FPS = 30
 PAPER = (247, 240, 225); ARTPAPER = (251, 247, 236); INK = (38, 33, 30); SOFT = (120, 104, 88); ACCENT = (150, 70, 52)
+PFX = "" if C.NUM == 1 else f"case{C.NUM:02d}-"
+CASE_DOT = f"Case {C.NUM} \u00b7 {C.NAME}"; CASE_COLON = f"Case {C.NUM}: {C.NAME}"
+FULL_TITLE = f"Tea and Clues at Tidewhistle Cove - {CASE_COLON}"
 
 # ----------------------------------------------------------------------------- timing (+ inserted silence)
-# Opening hook (hook_audio.py): a ~5 s spoken teaser over the empty prize plate, then the case narration.
+# Opening hook (hook_audio.py): a ~5 s spoken teaser, then the case narration.
 # The case MP3 is trimmed by TRIM s of its leading silence and starts right after the hook.
-HOOK_WAV = os.path.join(WORK, "hook.wav")
+HOOK_WAV = os.path.join(VID, C.HOOK_WAV)
 HOOK = json.load(open(HOOK_WAV + ".json"))
-HOOK_TEXT = "Who stole the prize cake?"; HOOK_EMOJI = "\U0001F370"
-HOOK_DUR, TRIM = HOOK["duration"], 0.45
+HOOK_EMOJI = C.HOOK_EMOJI
+HOOK_DUR, TRIM = HOOK["duration"], C.TRIM
 P = HOOK_DUR - TRIM                        # every case-narration time moves later by P
-CUT, EXTRA = 153.4, 7.0                    # narration ends 153.08 ("...the solution follows."); "The Solution." was 157.4
+CUT, EXTRA = C.CUT, C.EXTRA                # silence spliced in after the last pre-solution line
 def sh(t): return t + P + (EXTRA if t >= CUT else 0.0)
-TIM = json.load(open(os.path.join(VID, "timing.json")))
+TIM = json.load(open(os.path.join(VID, C.TIMING)))
 for w in TIM["words"]: w["s"], w["e"] = sh(w["s"]), sh(w["e"])
-AUDIO_END = sh(216.45); END = AUDIO_END + 5.0
-CD0 = sh(153.08) + 0.62; CD1 = CD0 + 10.0  # visible 10-second countdown, after all pre-solution narration
+AUDIO_END = sh(C.AUDIO_END); END = AUDIO_END + 5.0
+CD0 = sh(C.NARR_END) + 0.62; CD1 = CD0 + 10.0  # visible 10-second countdown, after all pre-solution narration
 
 def F(name, size):
     p = {"play": "Playfair Display SC/PlayfairDisplaySC-Bold.ttf", "playr": "Playfair Display SC/PlayfairDisplaySC-Regular.ttf",
@@ -46,40 +53,19 @@ def F(name, size):
 def ease(u): u = min(1, max(0, u)); return u * u * (3 - 2 * u)
 
 # ----------------------------------------------------------------------------- scene list (times in ORIGINAL narration time; sh() applied below)
-# "art": (cx, cy, zoom) start -> end, cx/cy in 0..1 of the 4:3 picture. "pan": (t, panel, zoom) keys on the 4-panel lineup.
-SCENES = [
-    dict(k="hook", t0=None, t1=TRIM),
-    dict(k="title", t0=TRIM, t1=4.6),
-    dict(k="art", img="village", t0=4.6, t1=13.5, a=(0.5, 0.5, 1.08), b=(0.62, 0.52, 1.3)),
-    dict(k="art", img="hall", t0=13.5, t1=30.3, a=(0.5, 0.5, 1.08), b=(0.62, 0.52, 1.3)),
-    dict(k="art", img="handbag", t0=30.3, t1=41.0, a=(0.47, 0.5, 1.1), b=(0.44, 0.42, 1.4)),
-    dict(k="art", img="tearoom", t0=41.0, t1=46.0, a=(0.5, 0.5, 1.08), b=(0.53, 0.42, 1.3)),
-    dict(k="pan", t0=46.0, t1=64.8, keys=[(46.0, 1, 1.12), (51.6, 1, 1.2), (52.4, 2, 1.14), (54.0, 2, 1.2), (54.8, 3, 1.14), (64.8, 3, 1.26)]),
-    dict(k="art", img="plate", t0=64.8, t1=77.4, a=(0.5, 0.5, 1.1), b=(0.46, 0.55, 1.4)),
-    dict(k="pan", t0=77.4, t1=134.0, keys=[(77.4, 0, 1.12), (96.8, 0, 1.24), (97.6, 1, 1.14), (107.4, 1, 1.22), (108.2, 2, 1.14), (120.2, 2, 1.22), (121.0, 3, 1.14), (134.0, 3, 1.26)]),
-    dict(k="art", img="handbag", t0=134.0, t1=140.6, a=(0.45, 0.42, 1.35), b=(0.5, 0.5, 1.1)),
-    dict(k="ask", t0=140.6, t1=157.4),
-    dict(k="soltitle", t0=157.4, t1=159.5),
-    dict(k="art", img="clue", t0=159.5, t1=190.8, a=(0.5, 0.52, 1.08), b=(0.5, 0.4, 1.25)),
-    dict(k="art", img="van", t0=190.8, t1=208.4, a=(0.5, 0.5, 1.08), b=(0.66, 0.46, 1.3)),
-    dict(k="art", img="prize", t0=208.4, t1=214.6, a=(0.5, 0.5, 1.08), b=(0.55, 0.48, 1.25)),
-    dict(k="end", t0=214.6, t1=None),
-]
+# "art": (cx, cy, zoom) start -> end, cx/cy in 0..1 of the 4:3 picture. "pan": (t, panel, zoom) keys on the lineup strip.
+SCENES = [dict(sc) for sc in C.SCENES]
 for sc in SCENES:
     sc["t0"] = 0.0 if sc["t0"] is None else sh(sc["t0"]); sc["t1"] = END if sc["t1"] is None else sh(sc["t1"])
     if sc["k"] == "pan": sc["keys"] = [(sh(t), p, z) for t, p, z in sc["keys"]]
 XF = 0.7  # crossfade length
 
-SLUG = "standalone-03-tidewhistle-case-01-the-prize-sponge"
-# Shorts cuts (make_shorts.py), all inside narration pauses of timing.json:
-#   147.4 in the pause after "Think about it." (146.95-147.85); 140.4 in the pause before "Can you solve it?" (139.64-140.74);
-#   cd_cut is inside the silent countdown (narration ends 153.08, "The Solution." starts 157.4).
-SHORTS_CFG = dict(tag="color-", p1_end=sh(147.4), recap=(sh(140.4), sh(147.4)), cd_cut=CD1 - 4.0, card_t=sh(146.0),
-                  suspects="Morwenna, Hedley, or Jago?", title_line="Case 1 \u00b7 The Prize Sponge",
-                  yt_title="Tea and Clues at Tidewhistle Cove - Case 1: The Prize Sponge")
+SLUG = C.SLUG
+SHORTS_CFG = dict(tag=C.SHORTS["tag"], p1_end=sh(C.SHORTS["p1_end"]), recap=tuple(sh(t) for t in C.SHORTS["recap"]), cd_cut=CD1 - 4.0,
+                  card_t=sh(C.SHORTS["card_t"]), suspects=C.SHORTS["suspects"], title_line=CASE_DOT, yt_title=FULL_TITLE)
 
 # ----------------------------------------------------------------------------- captions: phrase-boundary chunks
-NO_CAP = {0, 1, 12, 15}   # case title, question and "The Solution." are shown as cards instead
+NO_CAP = C.NO_CAP
 CONJ = {"and", "but", "because", "although", "with", "so", "which", "who", "when", "then", "or", "under", "by", "that", "he", "she"}
 FUNC = {"a", "an", "in", "at", "to", "of", "past", "from", "for", "had", "was", "been", "on", "into", "without", "apart"}
 NOEND = {"the", "a", "an", "of", "to", "in", "at", "on", "for", "with", "his", "her", "their", "my", "its", "own", "and", "but", "very", "had", "has", "have", "could", "would", "will"}
@@ -161,11 +147,11 @@ class Layout:
         d.rectangle([x0 - 6, y0 - 6, x1 + 5, y1 + 5], outline=INK, width=1)
         if s.fmt == "vertical":
             ctext(d, s.W / 2, 22, "Tea and Clues at Tidewhistle Cove", F("play", 48), INK)
-            ctext(d, s.W / 2, 82, "Case 1 \u00b7 The Prize Sponge", F("crimi", 42), ACCENT)
+            ctext(d, s.W / 2, 82, CASE_DOT, F("crimi", 42), ACCENT)
         else:
             cx = (x0 + x1) / 2
             ctext(d, cx, 6, "Tea and Clues at Tidewhistle Cove", F("play", 38), INK)
-            ctext(d, cx, 52, "Case 1 \u00b7 The Prize Sponge", F("crimi", 32), ACCENT)
+            ctext(d, cx, 52, CASE_DOT, F("crimi", 32), ACCENT)
         s.cache["chrome"] = im; return im
 
 def ctext(d, cx, y, t, f, fill):
@@ -217,7 +203,7 @@ def viewport(L, sc, t):
         H = im.height; bh = H / z; bw = bh * 4 / 3
         box = (cx * im.width - bw / 2, cy * H - bh / 2)
     else:   # pan along the 4-panel lineup strip (each panel is 4:3)
-        im = art("lineup"); keys = sc["keys"]; H = im.height; PWp = im.width / 4
+        im = art("lineup"); keys = sc["keys"]; H = im.height; PWp = im.width / C.LINEUP_PANELS
         k = max(i for i, kk in enumerate(keys) if kk[0] <= t or i == 0); k = min(k, len(keys) - 2)
         (ta, pa, za), (tb, pb, zb) = keys[k], keys[k + 1]; u = ease((t - ta) / (tb - ta))
         p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * 4 / 3
@@ -233,7 +219,7 @@ def ask_panel(t):
     ctext(d, W / 2, 34, "Can you solve it?", F("play", 88), INK)
     d.line([W / 2 - 180, 160, W / 2 + 180, 160], fill=ACCENT, width=3)
     f = F("crimi", 54); y = 182
-    for ln in wrap(d, "Who took entry number seven, and how does Agnes know?", f, W - 160):
+    for ln in wrap(d, C.QUESTION, f, W - 160):
         ctext(d, W / 2, y, ln, f, INK); y += 64
     cx, cy, R = W / 2, 480, 150
     d.ellipse([cx - R, cy - R, cx + R, cy + R], outline=(205, 192, 170), width=20)
@@ -254,7 +240,7 @@ def soltitle_panel(t):
     im = Image.new("RGB", (W, H), ARTPAPER); d = ImageDraw.Draw(im)
     ctext(d, W / 2, H / 2 - 120, "The Solution", F("play", 110), INK)
     d.line([W / 2 - 200, H / 2 + 40, W / 2 + 200, H / 2 + 40], fill=ACCENT, width=3)
-    ctext(d, W / 2, H / 2 + 76, "Case 1 \u00b7 The Prize Sponge", F("crimi", 56), SOFT)
+    ctext(d, W / 2, H / 2 + 76, CASE_DOT, F("crimi", 56), SOFT)
     return im
 
 def vignette_img(size):
@@ -278,7 +264,7 @@ def full_card(L, kind, t):
     ctext(d, cx, y, "at Tidewhistle Cove", F("play", 76 if V else 66), INK)
     if kind == "title":
         y += 130; d.line([cx - 160, y, cx + 160, y], fill=ACCENT, width=3); y += 40
-        ctext(d, cx, y, "Case 1: The Prize Sponge", F("crimi", 74 if V else 64), ACCENT); y += 140
+        ctext(d, cx, y, CASE_COLON, F("crimi", 74 if V else 64), ACCENT); y += 140
         ctext(d, cx, y, "by Blake La Pierre", F("crim", 60 if V else 52), INK)
     else:
         y += 120
@@ -316,7 +302,7 @@ def hook_title(L):
     """Big hook text as an RGBA layer (cached); lines centred, emoji after the last line."""
     key = ("hooktitle",)
     if key in L.cache: return L.cache[key]
-    V = L.fmt == "vertical"; f = F("play", 116 if V else 92); lines = ["Who stole the", "prize cake?"]
+    V = L.fmt == "vertical"; f = F("play", 116 if V else 92); lines = C.HOOK_LINES
     W = L.W if V else 940; lh = int(f.size * 1.18); H = lh * len(lines) + 20
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im); es = int(f.size * 0.9)
     for i, ln in enumerate(lines):
@@ -331,7 +317,7 @@ def hook_frame(L, t):
     # art: the empty plate, slowly pushing in from frame 1
     aw, ah = (1000, 750) if V else (L.vw, L.vh); ax, ay = ((L.W - aw) // 2, 400) if V else L.view[:2]
     src = art("hook"); u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
-    z = 1.3 + 0.35 * u; cx, cy = 0.47 + (0.44 - 0.47) * u, 0.56 + (0.6 - 0.56) * u
+    (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
     bh = src.height / z; bw = bh * 4 / 3; bx = min(max(0, cx * src.width - bw / 2), src.width - bw); by = min(max(0, cy * src.height - bh / 2), src.height - bh)
     im.paste(src.resize((aw, ah), Image.BILINEAR, box=(bx, by, bx + bw, by + bh)), (ax, ay))
     d.rectangle([ax - 12, ay - 12, ax + aw + 11, ay + ah + 11], outline=INK, width=4); d.rectangle([ax - 5, ay - 5, ax + aw + 4, ay + ah + 4], outline=INK, width=1)
@@ -425,7 +411,7 @@ def render_chunk(args):
 
 def retimed_audio():
     """Narration with EXTRA s of silence spliced in at CUT (lossless WAV in ../work)."""
-    out = os.path.join(WORK, "case01-narration-retimed.wav")
+    out = os.path.join(WORK, f"case{C.NUM:02d}-narration-retimed.wav")
     fc = (f"[0:a]atrim={TRIM}:{CUT},asetpts=PTS-STARTPTS[a];[0:a]atrim={CUT},asetpts=PTS-STARTPTS[b];"
           f"aevalsrc=0:d={EXTRA}:s=44100:c=mono[z];[a]aresample=44100,aformat=channel_layouts=mono[a2];"
           f"[b]aresample=44100,aformat=channel_layouts=mono[b2];[1:a]aresample=44100,aformat=channel_layouts=mono[h];"
@@ -438,22 +424,22 @@ def main():
     if "--frames" in sys.argv:
         L = Layout(fmt); os.makedirs(os.path.join(WORK, "frames"), exist_ok=True)
         for ts in sys.argv[sys.argv.index("--frames") + 1].split(","):
-            p = os.path.join(WORK, "frames", f"{fmt}-{float(ts):06.1f}.png"); frame(L, float(ts)).save(p); print(p)
+            p = os.path.join(WORK, "frames", f"{PFX}{fmt}-{float(ts):06.1f}.png"); frame(L, float(ts)).save(p); print(p)
         return
     if "--captions" in sys.argv:
         for c in CAPS: print(f"{c['s']:7.2f} {c['e']:7.2f}  {c['text']}")
         return
     N = int(END * FPS); parts = max(4, os.cpu_count() or 4); step = math.ceil(N / parts)
     os.makedirs(os.path.join(WORK, "parts"), exist_ok=True)
-    jobs = [(fmt, i * step, min(N, (i + 1) * step), os.path.join(WORK, "parts", f"{fmt}-{i:02d}.mp4")) for i in range(parts)]
+    jobs = [(fmt, i * step, min(N, (i + 1) * step), os.path.join(WORK, "parts", f"{PFX}{fmt}-{i:02d}.mp4")) for i in range(parts)]
     with ProcessPoolExecutor(parts) as ex: outs = list(ex.map(render_chunk, jobs))
-    lst = os.path.join(WORK, "parts", f"{fmt}.txt"); open(lst, "w").write("".join(f"file '{o}'\n" for o in outs))
+    lst = os.path.join(WORK, "parts", f"{PFX}{fmt}.txt"); open(lst, "w").write("".join(f"file '{o}'\n" for o in outs))
     final = os.path.join(VID, f"{SLUG}-{fmt}.mp4")
     wav = retimed_audio()
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", f"apad=whole_dur={END}", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
                     "-t", f"{END}", "-movflags", "+faststart",
-                    "-metadata", "title=Tea and Clues at Tidewhistle Cove - Case 1: The Prize Sponge", "-metadata", "artist=Blake La Pierre", final], check=True)
+                    "-metadata", f"title={FULL_TITLE}", "-metadata", "artist=Blake La Pierre", final], check=True)
     print(final)
 
 if __name__ == "__main__":

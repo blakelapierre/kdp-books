@@ -40,12 +40,40 @@ python3 art.py                   # colour illustrations -> ../work/art/ (~2 min;
 python3 render.py vertical       # ~2 min on 8 CPUs
 python3 render.py wide
 python3 make_shorts.py           # Shorts Part 1 / Part 2 from the vertical -> ../shorts/
+# (render.py / make_shorts.py default to case 1; per-case settings live in cases/case01.py)
 python3 render.py vertical --frames 44,131,158,203   # stills for checking -> ../work/frames/
 python3 render.py vertical --captions               # print the caption chunks and times
 # timing (only if the narration changes; needs the TTS venv with faster-whisper):
 /tmp/tts/venv/bin/python align.py /tmp/tts/work/chapters.json <case01 16k wav> ../timing.json
 ```
 Needs Python 3, Pillow, reportlab, poppler-utils (pdftoppm), ffmpeg, and the Kalam, Crimson Text, Playfair Display SC and IBM Plex Sans Condensed fonts.
+
+## Case 2: The Lemonade on the Lawn
+Same pipeline, configured in `src/cases/case02.py`, with art drawn by `src/art_case02.py` (into `work/art-02/`). Narration is the audiobook's Kokoro af_heart chapter; the hook line was made locally with `hook_audio.py`.
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-vertical.mp4` | 1080x1920 | 3:33 |
+| `standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-wide.mp4` | 1920x1080 | 3:33 |
+| `shorts/standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-short-part1.mp4` / `-part2.mp4` | Shorts | 2:10 / 1:21 |
+
+- **Hook (0:00 to 0:05.5):** "Who took the silver locket? 🍋" over Loveday's kitchen windowsill with the empty open jewellery box, pushing in from frame 1, with the three suspects (Captain Quill with his ledger, Demelza with a book, Mr Bramble with a plain glass of lemonade) under it. Narration from 0.2 s: "A silver locket has vanished, and only one clue gives the thief away. Can you spot it?"
+- **Scenes:** the cottage on the hill on a heat-hazy afternoon, Loveday pouring lemonade by the ice bowl, the kitchen (fridge-freezer marked ICE, the locket on the sill, then the empty box), a 3-panel lineup (Captain Quill with Agnes at the harbour office; Demelza asleep in a striped deckchair by the roses, sunhat over her face; Mr Bramble on a bench in the shade with his frosty glass), Agnes and Loveday in the garden under the blazing sun. Solution: the two glasses side by side (melted vs fresh ice), the kitchen again, the alibis, and Mr Bramble, red-faced, handing back the locket. Mr Bramble only blushes after the solution.
+- **New characters** in `figures.py`: Loveday Nance, Captain Quill, Demelza Rowe, Mr Bramble, background guests, and a `seated()` pose (deckchair, bench).
+- **Notebook** (`clues/case-02.json`): the heat, the ice bowl at 1:15, everyone's ice melted by 2, the only ice left in the kitchen freezer, the locket on the windowsill (seen at 2, gone by 2:30), and for each suspect where they were and what was seen or said. Every line gets the same highlight. Solution: Mr Bramble circled, his "past hour" claim and the frosty glass circled, the supporting facts ticked, a note ("Ice that fresh can't have sat an hour in this heat…"), then Demelza and Captain Quill struck through as the narrator clears them.
+- Countdown starts at 2:12.8, after the last pre-solution line.
+
+Rebuild case 2:
+```
+cd src
+python3 art_case02.py
+/tmp/tts/venv/bin/python hook_audio.py "A silver locket has vanished, and only one clue gives the thief away. Can you spot it?" ../work/hook-02.wav
+python3 render.py vertical --case=2 && python3 render.py wide --case=2 && python3 make_shorts.py --case=2
+```
+Previews: `previews/case02-color-*.png`.
+
+## Adding another case
+Write `src/cases/caseNN.py` (copy case02.py: slug, audio, scene list, cuts), `clues/case-NN.json`, an art script, and make `timing-case-NN.json` with `align.py ... case-NN`. Then run the commands above with `--case=NN`.
 
 ## Sharing note
 The repo is private, so download the MP4 and upload it to the platform yourself. If a platform asks, say the narration is AI-generated (a synthetic voice), which matches the audiobook disclosure.

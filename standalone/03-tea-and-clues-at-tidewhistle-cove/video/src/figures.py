@@ -22,11 +22,26 @@ def _flip(k, x, flip):
 def _unflip(k, flip):
     if flip: k.c.restoreState()
 
+_SEATED = [False]   # set by the seated() context: hips on a seat, knees forward, same head size
+
 def _geom(x, y, h):
+    if _SEATED[0]: return dict(r=h * 0.1, hy=y + h * 0.75, sh=y + h * 0.62, hem=y + h * 0.3)
     return dict(r=h * 0.1, hy=y + h * 0.75, sh=y + h * 0.62, hem=y + h * 0.14)
+
+class seated:
+    """with seated(): draw a character sitting (hips at y + 0.3 h on a bench / deckchair, shins down to y)."""
+    def __enter__(s): _SEATED[0] = True
+    def __exit__(s, *a): _SEATED[0] = False
 
 def _legs(k, x, y, h, shoe=K, sock=None):
     g = _geom(x, y, h)
+    if _SEATED[0]:   # 3/4 view: thighs forward to the right (drawn by _body as a lap), shins straight down
+        for j, sx in enumerate((-0.07, 0.07)):
+            kx = x + h * (0.24 + 0.05 * j)
+            k.line([(kx, g["hem"] - h * 0.02), (kx, y + 1)], lw=1.2, amp=0)
+            with k.tint(None, dark=shoe):
+                k.shape(k.arcpts(kx + h * 0.025, y + 1, h * 0.04, h * 0.018, 0, 360, 12), lw=0.6, fill=K, amp=0)
+        return
     for sx in (-0.07, 0.07):
         k.line([(x + sx * h, g["hem"]), (x + sx * h, y + 1)], lw=1.2, amp=0)
         with k.tint(None, dark=shoe):
@@ -36,6 +51,9 @@ def _body(k, x, y, h, fill, dark=None, hatch=None, hatch_kw=None):
     g = _geom(x, y, h)
     body = [(x - h * 0.13, g["sh"]), (x + h * 0.13, g["sh"]), (x + h * 0.21, g["hem"]), (x - h * 0.21, g["hem"])]
     with k.tint(fill, dark=dark, hatch=hatch):
+        if _SEATED[0]:   # lap: the skirt / trousers run forward over the knees
+            lap = [(x - h * 0.05, g["hem"] + h * 0.07), (x + h * 0.33, g["hem"] + h * 0.04), (x + h * 0.33, g["hem"] - h * 0.03), (x - h * 0.05, g["hem"] - h * 0.02)]
+            k.shape(lap, lw=1.0, fill=Wt, amp=0.1)
         k.shape(body, lw=1.0, fill=Wt, amp=0.15)
         if hatch_kw: k.hatch(body, **hatch_kw)
     return body
@@ -212,4 +230,155 @@ def jago(k, x, y, h, expr="neutral", flip=False, basket=True):
         k.rect(x - r * 0.75, hy + r * 0.6, r * 1.5, r * 0.6, lw=0.8)
     _unflip(k, f)
 
-CHARACTERS = dict(agnes=agnes, ollie=ollie, morwenna=morwenna, hedley=hedley, jago=jago)
+# ----------------------------------------------------------------------------- Case 2 cast
+from colorink import C as _C
+LOVEDAY_DRESS = _C(244, 176, 156); DEMELZA_DRESS = _C(238, 150, 132); SUNHAT = _C(244, 214, 150); SUNHAT_BAND = _C(126, 180, 206)
+QUILL_JUMPER = _C(96, 130, 166); QUILL_CAP = _C(48, 60, 92); LEDGER = _C(150, 72, 68); LINEN = _C(220, 200, 156); PANAMA = _C(240, 230, 204)
+BOOK = _C(108, 160, 150); LEMONADE = _C(250, 236, 160); BEARD = _C(232, 230, 226)
+
+def lemonade_glass(k, x, y, s, ice="none", frost=False, full=0.8):
+    """Tumbler of lemonade standing at (x, y); s = height. ice: none | fresh (large sharp cubes) | melted."""
+    w = s * 0.62
+    body = [(x - w / 2, y + s), (x + w / 2, y + s), (x + w * 0.42, y), (x - w * 0.42, y)]
+    k.shape(body, lw=0.8, fill=PAL.glass, amp=0)
+    lv = y + s * full
+    k.shape([(x - w * 0.42 - (w * 0.08) * full, lv), (x + w * 0.42 + (w * 0.08) * full, lv), (x + w * 0.42, y + 1), (x - w * 0.42, y + 1)], lw=0.4, fill=LEMONADE, amp=0)
+    if ice == "fresh":
+        for dx, dy, a in ((-0.2, 0.62, 12), (0.14, 0.66, -8), (-0.02, 0.45, 20)):
+            cx, cy, r = x + dx * w, y + dy * s, w * 0.17
+            import math
+            pts = [(cx + r * math.cos(math.radians(a + 90 * i + 45)), cy + r * math.sin(math.radians(a + 90 * i + 45))) for i in range(4)]
+            k.shape(pts, lw=0.7, fill=PAL.foam, amp=0)
+            k.line([pts[0], (cx, cy)], lw=0.3, amp=0, color=PAL.sea2)
+    elif ice == "melted":
+        k.line([(x - w * 0.3, lv - s * 0.04), (x + w * 0.3, lv - s * 0.04)], lw=0.3, amp=0.2, color=shade(LEMONADE, 0.8))
+    if frost:
+        k.c.setFillColor(PAL.cloud)
+        import random
+        rr = random.Random(int(x * 10))
+        for i in range(26):
+            u = rr.uniform(-0.4, 0.4); v = rr.uniform(0.08, 0.95)
+            k.c.circle(x + u * w * (0.84 + 0.16 * v), y + v * s, s * 0.018, stroke=0, fill=1)
+        for sg in (-1, 1):
+            k.line([(x + sg * w * 0.43, y + s * 0.15), (x + sg * w * 0.47, y + s * 0.85)], lw=0.9, amp=0, color=PAL.cloud)
+    k.shape(body, lw=0.8, fill=None, amp=0)
+
+def jug(k, x, y, s, level=0.75):
+    """Glass jug of lemonade with lemon slices; s = height."""
+    w = s * 0.62
+    body = [(x - w * 0.42, y), (x + w * 0.42, y), (x + w * 0.5, y + s * 0.55), (x + w * 0.4, y + s), (x - w * 0.5, y + s), (x - w * 0.4, y + s * 0.55)]
+    k.shape(body, lw=0.9, fill=PAL.glass, amp=0)
+    lv = y + s * level
+    k.shape([(x - w * 0.42, y + 1), (x + w * 0.42, y + 1), (x + w * 0.5, y + s * 0.55), (x + w * 0.45, lv), (x - w * 0.45, lv), (x - w * 0.4, y + s * 0.55)], lw=0.4, fill=LEMONADE, amp=0)
+    for dx, dy in ((-0.15, 0.3), (0.18, 0.5)):
+        k.circle(x + dx * w, y + dy * s, w * 0.14, lw=0.5, fill=PAL.lemon)
+        k.circle(x + dx * w, y + dy * s, w * 0.09, lw=0.3, fill=PAL.cream)
+    k.c.setStrokeColor(K); k.c.setLineWidth(1.2); k.c.arc(x + w * 0.3, y + s * 0.3, x + w * 0.85, y + s * 0.85, -80, 80)
+    k.shape(body, lw=0.9, fill=None, amp=0)
+
+def ledger(k, x, y, s):
+    with k.tint(LEDGER):
+        k.rect(x - s * 0.07, y - s * 0.02, s * 0.14, s * 0.1, lw=0.7)
+    k.line([(x - s * 0.07, y + s * 0.005), (x + s * 0.07, y + s * 0.005)], lw=0.4, amp=0, color=PAL.brass)
+
+def book(k, x, y, s):
+    with k.tint(BOOK): k.rect(x - s * 0.05, y - s * 0.03, s * 0.1, s * 0.12, lw=0.7)
+    k.line([(x - s * 0.03, y + s * 0.06), (x + s * 0.03, y + s * 0.06)], lw=0.4, amp=0, color=PAL.cloud)
+
+def loveday(k, x, y, h, expr="smile", flip=False, jug_=True):
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h, shoe=PAL.bag)
+    _body(k, x, y, h, LOVEDAY_DRESS, hatch_kw=dict(angle=-40, gap=3.4, lw=0.3))
+    with k.tint(PAL.apron):
+        k.shape([(x - h * 0.09, sh - h * 0.14), (x + h * 0.09, sh - h * 0.14), (x + h * 0.14, hem + h * 0.04), (x - h * 0.14, hem + h * 0.04)], lw=0.7, fill=Wt, amp=0.1)
+    k.c.setFillColor(PAL.lemon)
+    for j in range(3): k.c.circle(x + (j - 1) * h * 0.06, hem + h * 0.12, h * 0.018, stroke=0, fill=1)
+    hx, hyy = _arms(k, x, y, h, hold=jug_)
+    if jug_: jug(k, hx + h * 0.06, hyy - h * 0.1, h * 0.2)
+    _face(k, x, y, h, expr)
+    with k.tint(PAL.hair_ginger):
+        k.shape(k.arcpts(x, hy + r * 0.05, r * 1.08, r * 1.06, 0, 180, 20) + [(x - r * 1.08, hy - r * 0.5), (x - r * 0.8, hy - r * 0.5), (x - r * 0.75, hy + r * 0.5), (x + r * 0.75, hy + r * 0.5), (x + r * 0.8, hy - r * 0.5), (x + r * 1.08, hy - r * 0.5)], lw=0.7, fill=Wt, amp=0)
+    _unflip(k, f)
+
+def quill(k, x, y, h, expr="neutral", flip=False, prop=True):
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h)
+    _body(k, x, y, h, QUILL_JUMPER, hatch_kw=dict(angle=90, gap=2.6, lw=0.35))
+    hx, hyy = _arms(k, x, y, h, hold=prop)
+    if prop: ledger(k, hx + h * 0.04, hyy - h * 0.02, h)
+    with k.tint(BEARD):   # short white beard
+        k.shape(k.arcpts(x, hy - r * 0.15, r * 0.95, r * 1.0, 190, 350, 16) + [(x + r * 0.5, hy - r * 0.35), (x - r * 0.5, hy - r * 0.35)], lw=0.6, fill=Wt, amp=0)
+    _face(k, x, y, h, expr)
+    with k.tint(BEARD):
+        k.shape(k.arcpts(x, hy - r * 0.15, r * 0.95, r * 1.0, 190, 350, 16) + [(x + r * 0.5, hy - r * 0.38), (x - r * 0.5, hy - r * 0.38)], lw=0.6, fill=Wt, amp=0)
+    k.c.setStrokeColor(K); k.c.setLineWidth(0.6); k.c.arc(x - r * 0.3, hy - r * 0.55, x + r * 0.3, hy - r * 0.1, 200, 140)
+    with k.tint(Wt, dark=QUILL_CAP):   # peaked harbourmaster's cap with a brass badge
+        k.shape([(x - r * 1.05, hy + r * 0.6), (x + r * 1.05, hy + r * 0.6), (x + r * 1.15, hy + r * 1.15), (x - r * 1.15, hy + r * 1.15)], lw=0.8, fill=PAL.cloud, amp=0)
+        k.rect(x - r * 1.05, hy + r * 0.45, r * 2.1, r * 0.25, lw=0.6, fill=K)
+        k.shape([(x - r * 1.0, hy + r * 0.47), (x + r * 1.0, hy + r * 0.47), (x + r * 0.7, hy + r * 0.25), (x - r * 0.7, hy + r * 0.25)], lw=0.6, fill=K, amp=0)
+    k.circle(x, hy + r * 0.82, r * 0.16, lw=0.4, fill=PAL.brass)
+    _unflip(k, f)
+
+def demelza(k, x, y, h, expr="neutral", flip=False, asleep=False, prop=True):
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h, shoe=PAL.stripe)
+    _body(k, x, y, h, DEMELZA_DRESS)
+    k.c.setFillColor(PAL.cloud)
+    for i in range(5):
+        for j in range(4):
+            k.c.circle(x + (i - 2) * h * 0.06 + (j % 2) * h * 0.03, hem + h * (0.06 + 0.1 * j), h * 0.01, stroke=0, fill=1)
+    hx, hyy = _arms(k, x, y, h, hold=prop and not asleep)
+    if prop and not asleep: book(k, hx + h * 0.03, hyy - h * 0.03, h)
+    with k.tint(PAL.hair_dark):
+        k.shape([(x - r * 1.0, hy + r * 0.3), (x - r * 1.1, hy - r * 0.9), (x + r * 1.1, hy - r * 0.9), (x + r * 1.0, hy + r * 0.3)], lw=0.7, fill=Wt, amp=0.2)
+    _face(k, x, y, h, expr)
+    if asleep:   # sunhat tipped over the face
+        with k.tint(SUNHAT):
+            k.shape(k.arcpts(x, hy - r * 0.05, r * 1.55, r * 1.25, 0, 360, 30), lw=0.8, fill=Wt, amp=0)
+            k.shape(k.arcpts(x, hy - r * 0.05, r * 0.85, r * 0.7, 0, 360, 24), lw=0.6, fill=Wt, amp=0)
+        k.c.setStrokeColor(SUNHAT_BAND); k.c.setLineWidth(r * 0.18); k.c.ellipse(x - r * 0.85, hy - r * 0.75, x + r * 0.85, hy + r * 0.65)
+        for j, (dx, dy, sz) in enumerate(((1.6, 1.0, 0.5), (2.1, 1.6, 0.65), (2.7, 2.3, 0.8))):
+            k.text(x + r * dx, hy + r * dy, "z", size=r * sz * 1.4, font="Ink-Playfair", color=PAL.sea2)
+    else:
+        with k.tint(SUNHAT):
+            k.shape(k.arcpts(x, hy + r * 0.6, r * 2.1, r * 0.42, 0, 360, 30), lw=0.8, fill=Wt, amp=0)
+            k.shape(k.arcpts(x, hy + r * 0.7, r * 0.92, r * 0.85, 0, 180, 20), lw=0.8, fill=Wt, amp=0)
+        with k.tint(SUNHAT_BAND):
+            k.shape([(x - r * 0.92, hy + r * 0.7), (x + r * 0.92, hy + r * 0.7), (x + r * 0.9, hy + r * 0.95), (x - r * 0.9, hy + r * 0.95)], lw=0.5, fill=Wt, amp=0)
+    _unflip(k, f)
+
+def bramble(k, x, y, h, expr="neutral", flip=False, ice="none", frost=False, prop=True, locket=False):
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h, shoe=PAL.crust)
+    _body(k, x, y, h, LINEN)
+    with k.tint(PAL.glass):   # open-necked shirt between the lapels
+        k.shape([(x - h * 0.05, sh), (x + h * 0.05, sh), (x + h * 0.02, sh - h * 0.2), (x - h * 0.02, sh - h * 0.2)], lw=0.6, fill=Wt, amp=0)
+    k.line([(x - h * 0.05, sh), (x - h * 0.02, sh - h * 0.2), (x - h * 0.03, hem + h * 0.02)], lw=0.5, amp=0)
+    k.line([(x + h * 0.05, sh), (x + h * 0.02, sh - h * 0.2), (x + h * 0.03, hem + h * 0.02)], lw=0.5, amp=0)
+    k.rect(x + h * 0.07, sh - h * 0.3, h * 0.07, h * 0.012, lw=0.5, fill=shade(LINEN, 0.85))   # jacket pocket
+    hx, hyy = _arms(k, x, y, h, hold=prop or locket)
+    if prop: lemonade_glass(k, hx + h * 0.035, hyy - h * 0.04, h * 0.12, ice=ice, frost=frost)
+    if locket:
+        k.c.setStrokeColor(PAL.silver); k.c.setLineWidth(0.7); k.c.arc(hx - h * 0.01, hyy - h * 0.06, hx + h * 0.05, hyy + h * 0.01, 180, 360)
+        k.circle(hx + h * 0.02, hyy - h * 0.06, h * 0.022, lw=0.6, fill=PAL.silver)
+    _face(k, x, y, h, expr)
+    with k.tint(PANAMA):
+        k.shape(k.arcpts(x, hy + r * 0.6, r * 1.6, r * 0.32, 0, 360, 30), lw=0.8, fill=Wt, amp=0)
+        k.shape([(x - r * 0.85, hy + r * 0.62), (x + r * 0.85, hy + r * 0.62), (x + r * 0.75, hy + r * 1.35), (x, hy + r * 1.2), (x - r * 0.75, hy + r * 1.35)], lw=0.8, fill=Wt, amp=0)
+    with k.tint(PAL.slateboard):
+        k.shape([(x - r * 0.85, hy + r * 0.62), (x + r * 0.85, hy + r * 0.62), (x + r * 0.83, hy + r * 0.82), (x - r * 0.83, hy + r * 0.82)], lw=0.5, fill=Wt, amp=0)
+    _unflip(k, f)
+
+def guest(k, x, y, h, dress, hat=None, hair=None):
+    """Background party guest (small, generic, never one of the suspects)."""
+    _legs(k, x, y, h); _body(k, x, y, h, dress); _arms(k, x, y, h, hold=False); _face(k, x, y, h)
+    g = _geom(x, y, h); r, hy = g["r"], g["hy"]
+    if hair: 
+        with k.tint(hair): k.shape(k.arcpts(x, hy + r * 0.05, r * 1.04, r * 1.02, 10, 170, 16), lw=0.6, fill=Wt, amp=0)
+    if hat:
+        with k.tint(hat):
+            k.shape(k.arcpts(x, hy + r * 0.6, r * 1.6, r * 0.3, 0, 360, 24), lw=0.6, fill=Wt, amp=0)
+            k.shape(k.arcpts(x, hy + r * 0.65, r * 0.85, r * 0.7, 0, 180, 16), lw=0.6, fill=Wt, amp=0)
+
+CHARACTERS = dict(agnes=agnes, ollie=ollie, morwenna=morwenna, hedley=hedley, jago=jago,
+                  loveday=loveday, quill=quill, demelza=demelza, bramble=bramble)
