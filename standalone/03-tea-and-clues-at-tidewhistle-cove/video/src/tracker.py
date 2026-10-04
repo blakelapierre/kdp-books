@@ -14,6 +14,14 @@ HAND = G + "Kalam/Kalam-Regular.ttf"; HANDB = G + "Kalam/Kalam-Bold.ttf"
 PAGE = (253, 250, 240); RULE = (178, 202, 226); MARGIN = (222, 140, 130); INKC = (32, 36, 58)
 HEAD = (150, 70, 52); RED = (196, 38, 38); HI = (255, 225, 110); DIM = (150, 146, 140); SHADOW = (196, 182, 160)
 
+LABEL_BG = (255, 236, 160); NOTE_BG = (255, 246, 196); NOTE_EDGE = (150, 120, 80)
+def set_style(style):
+    """'bw': black-and-white notebook (grey rules and highlighter swipe, ink headings); red solution marks stay."""
+    global PAGE, RULE, MARGIN, HEAD, HI, LABEL_BG, INKC, NOTE_BG, NOTE_EDGE, SHADOW
+    if style == "bw":
+        RULE = (196, 196, 196); MARGIN = (150, 150, 150); HEAD = (40, 40, 40); HI = (214, 214, 210); LABEL_BG = (236, 236, 232); INKC = (28, 28, 28)
+        PAGE = (252, 252, 250); NOTE_BG = (252, 252, 250); NOTE_EDGE = (60, 60, 60); SHADOW = (190, 190, 186)
+
 def ease(u): u = min(1.0, max(0.0, u)); return u * u * (3 - 2 * u)
 def norm(w): return re.sub(r"[^a-z0-9]", "", w.lower().replace("\u2019", "'"))
 
@@ -144,7 +152,7 @@ class Notebook:
             lab = s.spec.get("review_label", "Every clue so far"); f = ImageFont.truetype(HAND, int(s.fs * 0.8))
             lw = f.getlength(lab); x = s.W - 30 - lw
             if x > s.title_right:
-                d.rounded_rectangle([x - 14, 38, x + lw + 14, 38 + int(s.fs * 1.15)], radius=10, fill=(255, 236, 160, 255), outline=HEAD + (255,), width=2)
+                d.rounded_rectangle([x - 14, 38, x + lw + 14, 38 + int(s.fs * 1.15)], radius=10, fill=LABEL_BG + (255,), outline=HEAD + (255,), width=2)
                 d.text((x, 38 + int(s.fs * 0.05)), lab, font=f, fill=HEAD + (255,))
         for it in s.spec["items"]:
             dt = t - it["t"]
@@ -210,7 +218,7 @@ class Notebook:
             rows.append(cur); lh = int(fs * 1.25); h = lh * len(rows) + int(fs * 0.9)
             im = Image.new("RGBA", (width, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
             d.rectangle([6, 6, width - 1, h - 1], fill=SHADOW + (255,))
-            d.rectangle([0, 0, width - 7, h - 7], fill=(255, 246, 196, 255), outline=(150, 120, 80, 255), width=2)
+            d.rectangle([0, 0, width - 7, h - 7], fill=NOTE_BG + (255,), outline=NOTE_EDGE + (255,), width=2)
             for k, r in enumerate(rows): d.text((fs, int(fs * 0.3) + k * lh), r, font=f, fill=RED + (255,))
             s.cache[key] = im
         im = s.cache[key].copy(); im.putalpha(im.getchannel("A").point(lambda v: int(v * u)))

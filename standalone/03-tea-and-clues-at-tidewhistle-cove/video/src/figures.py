@@ -382,3 +382,117 @@ def guest(k, x, y, h, dress, hat=None, hair=None):
 
 CHARACTERS = dict(agnes=agnes, ollie=ollie, morwenna=morwenna, hedley=hedley, jago=jago,
                   loveday=loveday, quill=quill, demelza=demelza, bramble=bramble)
+
+# ----------------------------------------------------------------------------- Case 3 cast (drawn for the black-and-white ink style;
+# the colours below only matter if a scene is rendered in colour)
+CARDIGAN = _C(150, 120, 170); TROUSERS = _C(90, 96, 120); JUMPER = _C(214, 120, 96); TRENCH = _C(206, 180, 132); SCARF = _C(200, 90, 110)
+TOTE = _C(226, 214, 186)
+
+def fishing_book(k, x, y, s):
+    """Small book with a fish on the cover, held at (x, y); s = figure height."""
+    k.rect(x - s * 0.05, y - s * 0.035, s * 0.1, s * 0.12, lw=0.7)
+    fx, fy, fw = x, y + s * 0.03, s * 0.035
+    k.shape(k.arcpts(fx, fy, fw, fw * 0.45, 0, 360, 14), lw=0.4, fill=Wt, amp=0)
+    k.shape([(fx + fw * 0.9, fy), (fx + fw * 1.5, fy + fw * 0.45), (fx + fw * 1.5, fy - fw * 0.45)], lw=0.4, fill=Wt, amp=0)
+
+def comic(k, x, y, s):
+    """Rolled-up comic held at (x, y)."""
+    k.rect(x - s * 0.02, y - s * 0.05, s * 0.04, s * 0.14, lw=0.7)
+    for j in range(3): k.line([(x - s * 0.02, y - s * 0.02 + j * s * 0.04), (x + s * 0.02, y - s * 0.01 + j * s * 0.04)], lw=0.35, amp=0)
+
+def tote_bag(k, x, y, s, scarf=False, book=False):
+    """Canvas tote hanging from the hand at (x, y) (straps up to the hand); optional scarf / book peeping out."""
+    w, hh = s * 0.15, s * 0.14
+    top = y - s * 0.05
+    k.c.setStrokeColor(K); k.c.setLineWidth(1.0)
+    k.c.arc(x - w * 0.3, top - hh * 0.1, x + w * 0.3, y + s * 0.03, 20, 160)
+    if book:
+        k.rect(x - w * 0.3, top - s * 0.01, w * 0.4, s * 0.07, lw=0.7, fill=Wt)
+        k.text(x - w * 0.1, top + s * 0.02, "\u2605", size=s * 0.03, font="Ink-Plex")
+    if scarf:
+        with k.tint(SCARF):
+            k.shape([(x - w * 0.1, top - s * 0.005), (x + w * 0.42, top - s * 0.005), (x + w * 0.38, top + s * 0.04), (x + w * 0.05, top + s * 0.05)], lw=0.6, fill=Wt, amp=0.3)
+            k.hatch([(x - w * 0.1, top - s * 0.005), (x + w * 0.42, top - s * 0.005), (x + w * 0.38, top + s * 0.04), (x + w * 0.05, top + s * 0.05)], angle=45, gap=2.0, lw=0.35)
+    with k.tint(TOTE):
+        bag = [(x - w / 2, top), (x + w / 2, top), (x + w * 0.46, top - hh), (x - w * 0.46, top - hh)]
+        k.shape(bag, lw=0.9, fill=Wt, amp=0.1)
+        k.line([(x - w * 0.3, top - hh * 0.35), (x + w * 0.3, top - hh * 0.35)], lw=0.4, amp=0.2)
+
+def drips(k, x, y, h, n=9, seed=3):
+    """Water dripping off a soaked figure standing at (x, y): drops beside the body and a puddle at the feet."""
+    import random
+    rr = random.Random(seed)
+    for i in range(n):
+        dx = rr.uniform(-0.26, 0.26) * h; dy = rr.uniform(0.05, 0.62) * h
+        if abs(dx) < 0.17 * h and dy > 0.15 * h: dx = (0.2 + rr.uniform(0, 0.06)) * h * (1 if dx >= 0 else -1)
+        px, py, r = x + dx, y + dy, h * 0.012
+        k.shape([(px, py + r * 2.6)] + k.arcpts(px, py, r, r, 200, 340, 8)[::-1] + [(px, py + r * 2.6)], lw=0.5, fill=Wt, amp=0)
+    k.shape(k.arcpts(x, y - 1, h * 0.3, h * 0.035, 0, 360, 30), lw=0.7, fill=Wt, amp=0.3)
+    for j in range(3): k.line(k.arcpts(x + (j - 1) * h * 0.09, y - 1, h * 0.04, h * 0.01, 200, 340, 6), lw=0.35, amp=0)
+
+def tamsin(k, x, y, h, expr="smile", flip=False, prop="duster"):
+    """Tamsin Trevelyan, bookseller: bob with a fringe, long cardigan over a plain dress, pencil behind the ear."""
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h)
+    body = _body(k, x, y, h, PAL.cloud)
+    with k.tint(CARDIGAN):   # open cardigan: two front panels, ribbed
+        for sg in (-1, 1):
+            pnl = [(x + sg * h * 0.04, sh), (x + sg * h * 0.13, sh), (x + sg * h * 0.2, hem + h * 0.04), (x + sg * h * 0.07, hem + h * 0.04)]
+            k.shape(pnl, lw=0.8, fill=Wt, amp=0.1); k.hatch(pnl, angle=90, gap=2.2, lw=0.35)
+    hx, hyy = _arms(k, x, y, h, hold=prop is not None)
+    if prop == "duster":
+        k.line([(hx, hyy), (hx + h * 0.03, hyy + h * 0.14)], lw=1.0, amp=0)
+        for j in range(7): k.line([(hx + h * 0.03, hyy + h * 0.14), (hx + h * (0.03 + 0.012 * (j - 3)), hyy + h * 0.22)], lw=0.7, amp=0.2)
+    elif prop == "book":
+        k.rect(hx - h * 0.01, hyy - h * 0.04, h * 0.09, h * 0.11, lw=0.7, fill=Wt)
+    _face(k, x, y, h, expr)
+    with k.tint(PAL.hair_dark, dark=PAL.hair_dark):   # dark bob with a straight fringe
+        k.shape(k.arcpts(x, hy + r * 0.1, r * 1.12, r * 1.05, 0, 180, 20) + [(x - r * 1.12, hy - r * 0.55), (x - r * 0.82, hy - r * 0.55), (x - r * 0.82, hy + r * 0.55), (x + r * 0.82, hy + r * 0.55), (x + r * 0.82, hy - r * 0.55), (x + r * 1.12, hy - r * 0.55)], lw=0.7, fill=K, amp=0)
+    k.line([(x + r * 0.8, hy + r * 0.9), (x + r * 1.5, hy + r * 0.4)], lw=1.4, amp=0)   # pencil behind the ear
+    _unflip(k, f)
+
+def pip(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Pip Carew, cheerful teenager: tousled hair, striped jumper, trousers, holding a rolled-up comic."""
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h)
+    with k.tint(TROUSERS):   # trousers: two short legs below the jumper
+        for sg in (-1, 1): k.shape([(x + sg * h * 0.02, hem + h * 0.12), (x + sg * h * 0.12, hem + h * 0.12), (x + sg * h * 0.11, hem - h * 0.02), (x + sg * h * 0.03, hem - h * 0.02)], lw=0.8, fill=Wt, amp=0)
+    body = [(x - h * 0.13, sh), (x + h * 0.13, sh), (x + h * 0.17, hem + h * 0.12), (x - h * 0.17, hem + h * 0.12)]
+    with k.tint(JUMPER):
+        k.shape(body, lw=1.0, fill=Wt, amp=0.15)
+        k.hatch(body, angle=0, gap=h * 0.04, lw=1.1, jitter=0)
+        k.shape(body, lw=1.0, fill=None, amp=0)
+    hx, hyy = _arms(k, x, y, h, hold=prop)
+    if prop: comic(k, hx + h * 0.01, hyy, h)
+    _face(k, x, y, h, expr)
+    with k.tint(PAL.hair_ginger):   # tousled tufts
+        pts = k.arcpts(x, hy + r * 0.15, r * 1.06, r * 1.0, 10, 170, 20)
+        tuft = []
+        for i, (px, py) in enumerate(pts): tuft.append((px, py + (r * 0.22 if i % 3 == 1 else 0)))
+        k.shape(tuft + [(x - r * 0.8, hy + r * 0.45), (x + r * 0.8, hy + r * 0.45)], lw=0.7, fill=Wt, amp=0)
+        k.hatch(tuft + [(x - r * 0.8, hy + r * 0.45), (x + r * 0.8, hy + r * 0.45)], angle=70, gap=2.0, lw=0.35)
+    _unflip(k, f)
+
+def wenna(k, x, y, h, expr="neutral", flip=False, prop=True, scarf=False, book=False):
+    """Wenna Polglaze, antique dealer: belted knee-length coat with a wide collar, curly hair in a bun, tote bag."""
+    f = _flip(k, x, flip); g = _geom(x, y, h); r, hy, sh, hem = g["r"], g["hy"], g["sh"], g["hem"]
+    _legs(k, x, y, h)
+    body = _body(k, x, y, h, TRENCH, hatch_kw=dict(angle=-35, gap=3.4, lw=0.3))
+    with k.tint(TRENCH):
+        for sg in (-1, 1): k.shape([(x, sh - h * 0.02), (x + sg * h * 0.13, sh), (x + sg * h * 0.1, sh - h * 0.12)], lw=0.7, fill=Wt, amp=0)   # collar
+        k.rect(x - h * 0.175, hem + h * 0.2, h * 0.35, h * 0.035, lw=0.7)   # belt
+        k.rect(x - h * 0.02, hem + h * 0.195, h * 0.04, h * 0.045, lw=0.6, fill=None)
+    for j in range(3):
+        for sg in (-1, 1): k.circle(x + sg * h * 0.04, sh - h * 0.17 - j * h * 0.11, h * 0.009 + 0.3, lw=0.4, fill=K)
+    hx, hyy = _arms(k, x, y, h, hold=prop)
+    if prop: tote_bag(k, hx + h * 0.01, hyy, h, scarf=scarf, book=book)
+    _face(k, x, y, h, expr)
+    with k.tint(PAL.hair_grey):   # curly hair and a bun
+        for i in range(9):
+            a = 15 + i * 18.75; import math as _m
+            k.circle(x + r * 0.92 * _m.cos(_m.radians(a)), hy + r * 0.25 + r * 0.82 * _m.sin(_m.radians(a)), r * 0.3, lw=0.55, fill=Wt)
+        k.circle(x, hy + r * 1.35, r * 0.42, lw=0.6, fill=Wt)
+        k.c.setStrokeColor(K); k.c.setLineWidth(0.4); k.c.arc(x - r * 0.22, hy + r * 1.15, x + r * 0.22, hy + r * 1.55, 200, 220)
+    _unflip(k, f)
+
+CHARACTERS.update(tamsin=tamsin, pip=pip, wenna=wenna)

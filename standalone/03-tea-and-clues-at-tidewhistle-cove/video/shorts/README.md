@@ -38,3 +38,12 @@ Made by `../src/make_shorts.py` (cuts configured in `SHORTS_CFG` in `../src/rend
 | `standalone-03-tidewhistle-case-02-the-lemonade-on-the-lawn-short-part2.mp4` | 1:21.1 | A 1 s silent "PART 2 · THE ANSWER" card, the question recap with the full notebook (2:00.6 to 2:06.5), the last 4 s of the countdown, then the solution through the end card |
 
 Cuts (video time = narration time + 5.02 s hook shift, + 7 s after the countdown splice): 121.45 s narration time sits between "Think about it." (ends 121.01) and "Take a moment" (121.91); 115.6 s sits between "...the blazing sun." (115.09) and "Can you solve it?" (116.19); the Part 2 countdown cut is inside the silent countdown. YouTube text for both parts: `case-02-youtube.md`.
+
+## Case 3 "The Dry Raincoat" Shorts (black and white, cut from the case 3 vertical)
+
+| File | Length | Contents |
+|---|---|---|
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-short-part1.mp4` | 2:18.1 | 0:00.0 to 2:15.1: the 5.1 s hook ("Who took the signed book?"), the story, "Can you solve it?" and "Think about it." Then a 3 s card: "Comment your guess! / Hedley, Pip, or Wenna? / ANSWER IN PART 2" |
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-short-part2.mp4` | 1:27.3 | A 1 s silent "PART 2 · THE ANSWER" card, the question recap with the full notebook (2:08.2 to 2:15.1), the last 4 s of the countdown, then the solution through the end card |
+
+Cuts (video time = narration time + 4.65 s hook shift, + 7 s after the countdown splice): 130.4 s narration time sits between "Think about it." (ends 129.88) and "Take a moment" (130.85); 123.6 s sits between "...So were her shoes." (122.91) and "Can you solve it?" (124.20); the Part 2 countdown cut is inside the silent countdown. YouTube text for both parts: `case-03-youtube.md`.

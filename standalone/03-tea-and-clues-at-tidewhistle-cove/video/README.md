@@ -77,3 +77,34 @@ Write `src/cases/caseNN.py` (copy case02.py: slug, audio, scene list, cuts), `cl
 
 ## Sharing note
 The repo is private, so download the MP4 and upload it to the platform yourself. If a platform asks, say the narration is AI-generated (a synthetic voice), which matches the audiobook disclosure.
+
+## Black-and-white style option
+Blake prefers black-and-white ink art for the Shorts (it stands out in a colour-saturated feed), so the pipeline now has a style switch. Colour stays the default, and cases 1 and 2 are unchanged.
+- **Art:** `colorink.set_style("bw")` (or `TIDE_STYLE=bw`) before drawing. The same scene code then draws pure ink like the v1 video: `k.tint()` keeps white fills white and black fills black, hatching is black ink, `k.wash()` / `k.vgrad()` draw nothing, explicit colours snap to ink (dark fills become solid black, the rest paper white), and `render_color()` rasterises in grey with the `inkart.render()` levels (no paper grain). Tone comes from hatching, as in v1.
+- **Frame and notebook:** set `STYLE = "bw"` in `cases/caseNN.py`. `render.py` then uses neutral paper and ink, a grey hook emoji and a grey countdown ring, and `tracker.set_style("bw")` gives grey ruled lines, a grey highlighter swipe (still the same for every clue) and a white note slip. The solution marks (strikes, circles, ticks, note text) and the small accent line stay red.
+
+## Case 3: The Dry Raincoat (black and white)
+Configured in `src/cases/case03.py` (`STYLE = "bw"`), with art drawn by `src/art_case03.py` (into `work/art-03/`). Narration is the audiobook's Kokoro af_heart chapter; the hook line was made locally with `hook_audio.py`.
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-vertical.mp4` | 1080x1920 | 3:46.7 |
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-wide.mp4` | 1920x1080 | 3:46.7 |
+| `shorts/standalone-03-tidewhistle-case-03-the-dry-raincoat-short-part1.mp4` / `-part2.mp4` | Shorts | 2:18 / 1:27 |
+
+- **Hook (0:00 to 0:05.1):** "Who took the signed book? 📚" over the open, empty glass case at the back of the bookshop, pushing in from frame 1, with the three suspects (Hedley with a fishing book, Pip with a rolled-up comic, Wenna with a tote bag) under it, all at the same size, pose and ink weight. Narration from 0.2 s: "A signed book has vanished, and only one clue gives the thief away. Can you spot it?"
+- **Scenes:** the main street with Tamsin's bookshop (black-and-white striped awning) and the chemist's; Tamsin dusting the case with the puffin book in it while the telephone rings; the downpour (storm sky, rain, the street running like a river); the empty case; Agnes arriving from the chemist's; a 3-panel lineup (Hedley dripping at the counter as the narration says, Pip under the awning outside, Wenna by the POETRY shelves) with a cut to the door bell between Pip and Wenna; Agnes in the shop afterwards. Solution: Hedley soaked beside Wenna dry, the bell, the alibis, the empty case, and Tamsin handing a sheepish Wenna an ordinary copy while the signed one sits back in its case with a padlock.
+- **New characters** in `figures.py`: Tamsin Trevelyan, Pip Carew, Wenna Polglaze, plus `drips()` (water off a soaked figure), `fishing_book()`, `comic()` and `tote_bag()`.
+- **Notebook** (`clues/case-03.json`): the signed copy in the case, 2:55 unlocked, the 3:00 downpour, the street like a river and the 3:20 stop, case open and book gone, the bell rang only once (Hedley), and for each suspect where they were and what was seen or said. Every line gets the same highlight. Solution: Wenna circled, her "run in from the harbour" line and "coat, hair and shoes: dry" circled, the downpour, river and Hedley's soaking ticked, a note ("Dry after running through that downpour? She must have been inside the shop before the rain began."), the bell ticked, then Hedley and Pip struck through as the narrator clears them.
+- Countdown starts at 2:21.2, after the last pre-solution line.
+
+Rebuild case 3:
+```
+cd src
+python3 art_case03.py            # black and white by default (--color for a colour version)
+/tmp/tts/venv/bin/python hook_audio.py "A signed book has vanished, and only one clue gives the thief away. Can you spot it?" ../work/hook-03.wav
+#   check ../work/hook-03.wav.json: faster-whisper heard the first words as "A sign vanished,"; the words were set back to
+#   "A signed book has vanished," (0.00-1.40 s) so the hook caption matches the audio
+python3 render.py vertical --case=3 && python3 render.py wide --case=3 && python3 make_shorts.py --case=3
+```
+Previews: `previews/case03-bw-*.png`.

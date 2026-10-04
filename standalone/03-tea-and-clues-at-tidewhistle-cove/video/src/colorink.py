@@ -10,6 +10,14 @@ How it works
   * k.wash(points, colour) lays a flat colour area with no outline (skies, sea, walls, floors).
   * render_color() rasterises the page in RGB at 300 dpi and adds a gentle paper grain / pigment
     mottle, so flat fills look like a light watercolour wash rather than vector flats.
+Black-and-white option (Blake prefers it for later cases: it stands out in a colour-saturated feed):
+  * set_style("bw") (or env TIDE_STYLE=bw) before drawing. The SAME drawing code then produces pure
+    black-and-white ink art like the v1 video / inkart.render(): k.tint() leaves white fills white and
+    black fills black, hatching is drawn in black ink, k.wash()/k.vgrad() lay nothing, and every explicit
+    colour is snapped to ink: dark fills (luminance < 0.42) become solid black, all other fills paper
+    white; strokes become black unless they are near-white. render_color() then rasterises in grey with
+    the same levels as inkart.render() (paper pure white, ink pure black, no grain).
+    Colour stays the default, so existing colour scenes are unchanged.
 Everything is code-drawn; no image generation service is involved."""
 import math, os, subprocess, tempfile, random
 from contextlib import contextmanager
@@ -17,6 +25,27 @@ from reportlab.pdfgen import canvas as rlcanvas
 from reportlab.lib import colors
 
 K = colors.black; Wt = colors.white
+
+STYLE = [os.environ.get("TIDE_STYLE", "color")]
+def set_style(style):
+    """'color' (default) or 'bw' (pure black-and-white ink). Call before drawing / render_color()."""
+    assert style in ("color", "bw"); STYLE[0] = style
+def is_bw(): return STYLE[0] == "bw"
+
+def _lum(c):
+    if not hasattr(c, "red"): return None
+    return 0.299 * c.red + 0.587 * c.green + 0.114 * c.blue
+
+class _BWCanvas:
+    """Canvas proxy for the black-and-white style: snaps every fill / stroke colour to ink or paper."""
+    def __init__(s, c): s._c = c
+    def __getattr__(s, n): return getattr(s._c, n)
+    def setFillColor(s, col, alpha=None):
+        L = _lum(col); s._c.setFillColor(col if L is None else (K if L < 0.42 else Wt))
+    def setStrokeColor(s, col, alpha=None):
+        L = _lum(col); s._c.setStrokeColor(col if L is None else (Wt if L > 0.93 else K))
+    def setFillColorRGB(s, r, g, b, alpha=None): s.setFillColor(colors.Color(r, g, b))
+    def setStrokeColorRGB(s, r, g, b, alpha=None): s.setStrokeColor(colors.Color(r, g, b))
 
 def C(r, g, b): return colors.Color(r / 255, g / 255, b / 255)
 def shade(c, f=0.72):
@@ -73,6 +102,7 @@ class ColorInk:
     def _top(s): t = s._tints(); return t[-1] if t else None
 
     def _map(s, fill):
+        if is_bw(): return fill      # ink style: white stays paper, black stays ink
         t = s._top()
         if t is None or fill is None: return fill
         if t["light"] is not None and _is(fill, Wt): return t["light"]
@@ -90,7 +120,8 @@ class ColorInk:
 
     def hatch(s, region, angle=-55, gap=2.4, lw=0.45, jitter=0.25, cross=False, color=None):
         t = s._top()
-        if color is None and t is not None:
+        if is_bw(): color = K
+        elif color is None and t is not None:
             color = t["hatch"] or (shade(t["light"], 0.74) if t["light"] is not None else None)
             if t["hatch_lw"]: lw = t["hatch_lw"]
         c = s.c; c.saveState()
@@ -108,7 +139,8 @@ class ColorInk:
         c.restoreState()
 
     def wash(s, pts, color):
-        """Flat colour area, no outline."""
+        """Flat colour area, no outline (nothing in the black-and-white style)."""
+        if is_bw(): return
         s.c.setFillColor(color); s.c.drawPath(s.path(pts, closed=True), stroke=0, fill=1)
 
     def wash_rect(s, x0, y0, x1, y1, color): s.wash([(x0, y0), (x1, y0), (x1, y1), (x0, y1)], color)
@@ -125,10 +157,16 @@ def render_color(path, w_in, h_in, fn, seed=1, dpi=300, grain=True):
     import numpy as np
     tmpd = tempfile.mkdtemp(); pdf = os.path.join(tmpd, "a.pdf")
     c = rlcanvas.Canvas(pdf, pagesize=(w_in * 72, h_in * 72))
-    fn(c, w_in * 72, h_in * 72)
+    fn(_BWCanvas(c) if is_bw() else c, w_in * 72, h_in * 72)
     c.showPage(); c.save()
-    subprocess.run(["pdftoppm", "-r", str(dpi), "-png", "-singlefile", pdf, os.path.join(tmpd, "a")], check=True)
-    im = Image.open(os.path.join(tmpd, "a.png")).convert("RGB")
+    if is_bw():   # same clean levels as inkart.render(): pure paper, pure ink, thin anti-aliased edge
+        subprocess.run(["pdftoppm", "-r", str(dpi), "-gray", "-png", "-singlefile", pdf, os.path.join(tmpd, "a")], check=True)
+        im = Image.open(os.path.join(tmpd, "a.png")).convert("L")
+        im = im.point([255 if v >= 200 else 0 if v <= 70 else int((v - 70) * 255 / 130) for v in range(256)]).convert("RGB")
+        grain = False
+    else:
+        subprocess.run(["pdftoppm", "-r", str(dpi), "-png", "-singlefile", pdf, os.path.join(tmpd, "a")], check=True)
+        im = Image.open(os.path.join(tmpd, "a.png")).convert("RGB")
     if grain:
         W, H = im.size; rng = np.random.default_rng(seed)
         def field(cell, amp):

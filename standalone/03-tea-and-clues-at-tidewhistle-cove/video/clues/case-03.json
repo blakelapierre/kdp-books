@@ -1,0 +1,38 @@
+{
+  "case": "Case 3 \u00b7 The Dry Raincoat",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-book",   "section": "facts", "text": "Signed first copy in a glass case at the back", "at": {"seg": 2, "phrase": "signed first copy"}},
+    {"id": "f-unlock", "section": "facts", "text": "2:55: case unlocked; Tamsin called to the phone", "at": {"seg": 3, "phrase": "by the telephone"}},
+    {"id": "f-rain",   "section": "facts", "text": "3:00: sudden, very heavy downpour", "at": {"seg": 3, "phrase": "downpour began"}},
+    {"id": "f-river",  "section": "facts", "text": "Street ran like a river; stopped at 3:20", "at": {"seg": 3, "phrase": "it had started"}},
+    {"id": "f-gone",   "section": "facts", "text": "3:20: case open, book gone", "at": {"seg": 4, "phrase": "was gone"}},
+    {"id": "f-bell",   "section": "facts", "text": "Door bell rang only once (Hedley coming in)", "at": {"seg": 8, "phrase": "Hedley came in"}},
+    {"id": "hedley", "section": "who", "name": "Hedley Truscott", "text": "at the counter, dripping wet", "at": {"seg": 6, "phrase": "over the floor"}},
+    {"id": "hedley-when", "section": "who", "parent": "hedley", "text": "Came in soaked at 3:10; talked fishing books with Tamsin", "at": {"seg": 6, "phrase": "walked in"}},
+    {"id": "pip", "section": "who", "name": "Pip Carew", "text": "under the striped awning since 2:45", "at": {"seg": 7, "phrase": "quarter to three"}},
+    {"id": "pip-seen", "section": "who", "parent": "pip", "text": "In Tamsin's view through the window; never came in", "at": {"seg": 7, "phrase": "come inside"}},
+    {"id": "wenna", "section": "who", "name": "Wenna Polglaze", "text": "by the poetry shelves near the back", "at": {"seg": 9, "phrase": "near the back"}},
+    {"id": "wenna-said", "section": "who", "parent": "wenna", "text": "\u201cOnly this minute run in from the harbour. Caught in that rain.\u201d", "at": {"seg": 10, "phrase": "my umbrella"}},
+    {"id": "wenna-look", "section": "who", "parent": "wenna", "text": "Coat, hair and shoes: dry", "at": {"seg": 11, "phrase": "her shoes"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "wenna", "span": "name", "at": {"seg": 16, "phrase": "took"}},
+    {"do": "circle", "item": "wenna-said", "at": {"seg": 17, "phrase": "an umbrella"}},
+    {"do": "check", "item": "f-rain", "at": {"seg": 17, "phrase": "so heavy"}},
+    {"do": "check", "item": "hedley", "at": {"seg": 17, "phrase": "drenched"}},
+    {"do": "check", "item": "f-river", "at": {"seg": 17, "phrase": "like a river"}},
+    {"do": "circle", "item": "wenna-look", "at": {"seg": 17, "phrase": "completely dry"}},
+    {"do": "note", "text": "Dry after running through that downpour? She must have been inside the shop before the rain began.", "at": {"seg": 17, "phrase": "so she must"}, "hold": 4.3},
+    {"do": "check", "item": "f-bell", "at": {"seg": 18, "phrase": "for Hedley"}},
+    {"do": "strike", "item": ["hedley", "hedley-when"], "at": {"seg": 18, "phrase": "he arrived"}},
+    {"do": "strike", "item": ["pip", "pip-seen"], "at": {"seg": 18, "phrase": "whole time"}},
+    {"do": "check", "item": "f-gone", "at": {"seg": 18, "phrase": "open case"}}
+  ]
+}

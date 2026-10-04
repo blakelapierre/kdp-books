@@ -12,6 +12,7 @@ The narration MP3 is re-timed here: EXTRA seconds of silence are inserted at CUT
 import json, math, os, re, subprocess, sys
 from concurrent.futures import ProcessPoolExecutor
 from PIL import Image, ImageDraw, ImageFont
+import tracker
 from tracker import Notebook
 
 import importlib
@@ -25,6 +26,12 @@ CLUES = os.path.join(VID, C.CLUES)
 G = "/usr/share/fonts/truetype/sand-box/google/"
 FPS = 30
 PAPER = (247, 240, 225); ARTPAPER = (251, 247, 236); INK = (38, 33, 30); SOFT = (120, 104, 88); ACCENT = (150, 70, 52)
+VIGNETTE = (226, 212, 188); RING = (205, 192, 170); SHADE = (150, 70, 52)
+STYLE = getattr(C, "STYLE", "color")      # "bw": black-and-white ink look (cases/caseNN.py STYLE = "bw"); red marks stay red
+if STYLE == "bw":
+    PAPER = (244, 244, 241); ARTPAPER = (252, 252, 250); INK = (22, 22, 22); SOFT = (104, 104, 104); ACCENT = (168, 34, 34)
+    VIGNETTE = (214, 214, 210); RING = (206, 206, 202); SHADE = (120, 120, 120)
+    tracker.set_style("bw")
 PFX = "" if C.NUM == 1 else f"case{C.NUM:02d}-"
 CASE_DOT = f"Case {C.NUM} \u00b7 {C.NAME}"; CASE_COLON = f"Case {C.NUM}: {C.NAME}"
 FULL_TITLE = f"Tea and Clues at Tidewhistle Cove - {CASE_COLON}"
@@ -135,7 +142,7 @@ class Layout:
     def bg(s):
         if "bg" in s.cache: return s.cache["bg"]
         im = Image.new("RGB", (s.W, s.H), PAPER)
-        v = Image.radial_gradient("L").resize((s.W, s.H)); dark = Image.new("RGB", (s.W, s.H), (226, 212, 188))
+        v = Image.radial_gradient("L").resize((s.W, s.H)); dark = Image.new("RGB", (s.W, s.H), VIGNETTE)
         im = Image.composite(dark, im, v.point(lambda p: int(max(0, p - 120) * 0.55)))
         s.cache["bg"] = im; return im
 
@@ -222,7 +229,7 @@ def ask_panel(t):
     for ln in wrap(d, C.QUESTION, f, W - 160):
         ctext(d, W / 2, y, ln, f, INK); y += 64
     cx, cy, R = W / 2, 480, 150
-    d.ellipse([cx - R, cy - R, cx + R, cy + R], outline=(205, 192, 170), width=20)
+    d.ellipse([cx - R, cy - R, cx + R, cy + R], outline=RING, width=20)
     if t < CD0:
         ctext(d, cx, cy - 104, "?", F("play", 170), INK)
         ctext(d, cx, cy + R + 26, "Check Agnes's notebook\u2026", F("crimi", 46), SOFT)
@@ -295,7 +302,10 @@ def emoji_img(size):
     if size not in _emoji:
         f = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
         im = Image.new("RGBA", (136, 128), (0, 0, 0, 0)); ImageDraw.Draw(im).text((0, 0), HOOK_EMOJI, font=f, embedded_color=True)
-        im = im.crop(im.getbbox()); _emoji[size] = im.resize((int(im.width * size / im.height), size), Image.LANCZOS)
+        im = im.crop(im.getbbox())
+        if STYLE == "bw":   # grey emoji: keep the black-and-white look
+            a = im.getchannel("A"); im = im.convert("L").convert("RGBA"); im.putalpha(a)
+        _emoji[size] = im.resize((int(im.width * size / im.height), size), Image.LANCZOS)
     return _emoji[size]
 
 def hook_title(L):
@@ -307,7 +317,7 @@ def hook_title(L):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im); es = int(f.size * 0.9)
     for i, ln in enumerate(lines):
         tw = d.textlength(ln, font=f) + (es + 24 if i == len(lines) - 1 else 0); x = (W - tw) / 2; y = i * lh
-        d.text((x + 4, y + 5), ln, font=f, fill=(150, 70, 52, 90)); d.text((x, y), ln, font=f, fill=INK + (255,))
+        d.text((x + 4, y + 5), ln, font=f, fill=SHADE + (90,)); d.text((x, y), ln, font=f, fill=INK + (255,))
         if i == len(lines) - 1:
             e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 24), int(y + f.size * 0.22)))
     L.cache[key] = im; return im

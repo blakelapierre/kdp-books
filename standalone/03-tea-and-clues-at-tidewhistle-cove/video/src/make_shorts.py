@@ -21,8 +21,8 @@ def card(base_t, lines, path):
     L = R.Layout("vertical"); im = R.frame(L, base_t).convert("RGBA")
     ov = Image.new("RGBA", im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
     x0, y0, x1, y1 = 60, 560, 1020, 1360
-    d.rectangle([0, 0, im.width, im.height], fill=(247, 240, 225, 120))
-    d.rounded_rectangle([x0 + 10, y0 + 14, x1 + 10, y1 + 14], radius=36, fill=(120, 104, 88, 70))
+    d.rectangle([0, 0, im.width, im.height], fill=R.PAPER + (120,))
+    d.rounded_rectangle([x0 + 10, y0 + 14, x1 + 10, y1 + 14], radius=36, fill=R.SOFT + (70,))
     d.rounded_rectangle([x0, y0, x1, y1], radius=36, fill=R.ARTPAPER + (255,), outline=R.INK + (255,), width=5)
     d.rounded_rectangle([x0 + 14, y0 + 14, x1 - 14, y1 - 14], radius=26, outline=R.ACCENT + (255,), width=2)
     hs = sum(sz * 1.25 for _, _, sz, _ in lines); y = (y0 + y1) / 2 - hs / 2
