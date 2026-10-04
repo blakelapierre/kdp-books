@@ -181,3 +181,7 @@ java -jar epubcheck.jar ../standalone-03-tea-and-clues-at-tidewhistle-cove.epub 
 ```
 
 The story text is in `src/cases_a.py`, `cases_b.py` and `cases_c.py`, and the front and back matter are in `src/book.py`. Verification results: [verification.md](verification.md). Listing draft and demand evidence: [listing.md](listing.md).
+
+## Audio preview
+
+Listen to the full read-aloud preview: [audio/README.md](audio/README.md)
