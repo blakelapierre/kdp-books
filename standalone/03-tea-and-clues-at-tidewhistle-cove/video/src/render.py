@@ -23,12 +23,19 @@ FPS = 30
 PAPER = (247, 240, 225); ARTPAPER = (251, 247, 236); INK = (38, 33, 30); SOFT = (120, 104, 88); ACCENT = (150, 70, 52)
 
 # ----------------------------------------------------------------------------- timing (+ inserted silence)
+# Opening hook (hook_audio.py): a ~5 s spoken teaser over the empty prize plate, then the case narration.
+# The case MP3 is trimmed by TRIM s of its leading silence and starts right after the hook.
+HOOK_WAV = os.path.join(WORK, "hook.wav")
+HOOK = json.load(open(HOOK_WAV + ".json"))
+HOOK_TEXT = "Who stole the prize cake?"; HOOK_EMOJI = "\U0001F370"
+HOOK_DUR, TRIM = HOOK["duration"], 0.45
+P = HOOK_DUR - TRIM                        # every case-narration time moves later by P
 CUT, EXTRA = 153.4, 7.0                    # narration ends 153.08 ("...the solution follows."); "The Solution." was 157.4
-def sh(t): return t + EXTRA if t >= CUT else t
+def sh(t): return t + P + (EXTRA if t >= CUT else 0.0)
 TIM = json.load(open(os.path.join(VID, "timing.json")))
 for w in TIM["words"]: w["s"], w["e"] = sh(w["s"]), sh(w["e"])
 AUDIO_END = sh(216.45); END = AUDIO_END + 5.0
-CD0 = 153.7; CD1 = CD0 + 10.0              # visible 10-second countdown, after all pre-solution narration
+CD0 = sh(153.08) + 0.62; CD1 = CD0 + 10.0  # visible 10-second countdown, after all pre-solution narration
 
 def F(name, size):
     p = {"play": "Playfair Display SC/PlayfairDisplaySC-Bold.ttf", "playr": "Playfair Display SC/PlayfairDisplaySC-Regular.ttf",
@@ -41,7 +48,8 @@ def ease(u): u = min(1, max(0, u)); return u * u * (3 - 2 * u)
 # ----------------------------------------------------------------------------- scene list (times in ORIGINAL narration time; sh() applied below)
 # "art": (cx, cy, zoom) start -> end, cx/cy in 0..1 of the 4:3 picture. "pan": (t, panel, zoom) keys on the 4-panel lineup.
 SCENES = [
-    dict(k="title", t0=0.0, t1=4.6),
+    dict(k="hook", t0=None, t1=TRIM),
+    dict(k="title", t0=TRIM, t1=4.6),
     dict(k="art", img="village", t0=4.6, t1=13.5, a=(0.5, 0.5, 1.08), b=(0.62, 0.52, 1.3)),
     dict(k="art", img="hall", t0=13.5, t1=30.3, a=(0.5, 0.5, 1.08), b=(0.62, 0.52, 1.3)),
     dict(k="art", img="handbag", t0=30.3, t1=41.0, a=(0.47, 0.5, 1.1), b=(0.44, 0.42, 1.4)),
@@ -58,9 +66,17 @@ SCENES = [
     dict(k="end", t0=214.6, t1=None),
 ]
 for sc in SCENES:
-    sc["t0"] = sh(sc["t0"]); sc["t1"] = END if sc["t1"] is None else sh(sc["t1"])
+    sc["t0"] = 0.0 if sc["t0"] is None else sh(sc["t0"]); sc["t1"] = END if sc["t1"] is None else sh(sc["t1"])
     if sc["k"] == "pan": sc["keys"] = [(sh(t), p, z) for t, p, z in sc["keys"]]
 XF = 0.7  # crossfade length
+
+SLUG = "standalone-03-tidewhistle-case-01-the-prize-sponge"
+# Shorts cuts (make_shorts.py), all inside narration pauses of timing.json:
+#   147.4 in the pause after "Think about it." (146.95-147.85); 140.4 in the pause before "Can you solve it?" (139.64-140.74);
+#   cd_cut is inside the silent countdown (narration ends 153.08, "The Solution." starts 157.4).
+SHORTS_CFG = dict(tag="color-", p1_end=sh(147.4), recap=(sh(140.4), sh(147.4)), cd_cut=CD1 - 4.0, card_t=sh(146.0),
+                  suspects="Morwenna, Hedley, or Jago?", title_line="Case 1 \u00b7 The Prize Sponge",
+                  yt_title="Tea and Clues at Tidewhistle Cove - Case 1: The Prize Sponge")
 
 # ----------------------------------------------------------------------------- captions: phrase-boundary chunks
 NO_CAP = {0, 1, 12, 15}   # case title, question and "The Solution." are shown as cards instead
@@ -189,9 +205,9 @@ def balanced(d, text, f, maxw, nlines):
 _art = {}
 def art(name):
     if name not in _art:
-        g = Image.open(os.path.join(ART, name + ".png")).convert("L")
+        g = Image.open(os.path.join(ART, name + ".png")).convert("RGB")   # colour art (art.py); grey also works
         lut = [int(INK[c] + (ARTPAPER[c] - INK[c]) * v / 255) for c in range(3) for v in range(256)]
-        _art[name] = g.convert("RGB").point(lut)
+        _art[name] = g.point(lut)
     return _art[name]
 
 def viewport(L, sc, t):
@@ -205,7 +221,7 @@ def viewport(L, sc, t):
         k = max(i for i, kk in enumerate(keys) if kk[0] <= t or i == 0); k = min(k, len(keys) - 2)
         (ta, pa, za), (tb, pb, zb) = keys[k], keys[k + 1]; u = ease((t - ta) / (tb - ta))
         p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * 4 / 3
-        box = ((p + 0.45) * PWp - bw / 2, H * 0.44 - bh / 2)
+        box = ((p + 0.45) * PWp - bw / 2, H * 0.95 - bh)   # anchored low so the nameplates stay in shot
     m = 0.05 * H   # keep the art's own inner frame lines out of shot
     bx = min(max(m if sc["k"] == "art" else 0, box[0]), im.width - (m if sc["k"] == "art" else 0) - bw)
     by = min(max(m, box[1]), H - m - bh)
@@ -273,9 +289,82 @@ def full_card(L, kind, t):
         ctext(d, cx, y, "COMING SOON TO KINDLE", f, ACCENT)
     L.cache[key] = im; return im
 
+# ----------------------------------------------------------------------------- opening hook
+def hook_caps():
+    ws = [dict(w["w"]) if False else dict(w) for w in HOOK["words"]]
+    ws[0]["s"] = max(ws[0]["s"], 0.0)
+    groups, cur = [], []
+    for w in ws:
+        cur.append(w)
+        if re.search(r"[,.?!]$", w["w"]): groups.append(cur); cur = []
+    if cur: groups.append(cur)
+    caps = [dict(text=_txt(g), s=0.0 if i == 0 else g[0]["s"] - 0.05, e=g[-1]["e"] + 0.3) for i, g in enumerate(groups)]
+    for a, b in zip(caps, caps[1:]): a["e"] = b["s"]
+    caps[-1]["e"] = HOOK_DUR + 1
+    return caps
+HOOK_CAPS = hook_caps()
+
+_emoji = {}
+def emoji_img(size):
+    if size not in _emoji:
+        f = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
+        im = Image.new("RGBA", (136, 128), (0, 0, 0, 0)); ImageDraw.Draw(im).text((0, 0), HOOK_EMOJI, font=f, embedded_color=True)
+        im = im.crop(im.getbbox()); _emoji[size] = im.resize((int(im.width * size / im.height), size), Image.LANCZOS)
+    return _emoji[size]
+
+def hook_title(L):
+    """Big hook text as an RGBA layer (cached); lines centred, emoji after the last line."""
+    key = ("hooktitle",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 116 if V else 92); lines = ["Who stole the", "prize cake?"]
+    W = L.W if V else 940; lh = int(f.size * 1.18); H = lh * len(lines) + 20
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im); es = int(f.size * 0.9)
+    for i, ln in enumerate(lines):
+        tw = d.textlength(ln, font=f) + (es + 24 if i == len(lines) - 1 else 0); x = (W - tw) / 2; y = i * lh
+        d.text((x + 4, y + 5), ln, font=f, fill=(150, 70, 52, 90)); d.text((x, y), ln, font=f, fill=INK + (255,))
+        if i == len(lines) - 1:
+            e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 24), int(y + f.size * 0.22)))
+    L.cache[key] = im; return im
+
+def hook_frame(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    # art: the empty plate, slowly pushing in from frame 1
+    aw, ah = (1000, 750) if V else (L.vw, L.vh); ax, ay = ((L.W - aw) // 2, 400) if V else L.view[:2]
+    src = art("hook"); u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
+    z = 1.3 + 0.35 * u; cx, cy = 0.47 + (0.44 - 0.47) * u, 0.56 + (0.6 - 0.56) * u
+    bh = src.height / z; bw = bh * 4 / 3; bx = min(max(0, cx * src.width - bw / 2), src.width - bw); by = min(max(0, cy * src.height - bh / 2), src.height - bh)
+    im.paste(src.resize((aw, ah), Image.BILINEAR, box=(bx, by, bx + bw, by + bh)), (ax, ay))
+    d.rectangle([ax - 12, ay - 12, ax + aw + 11, ay + ah + 11], outline=INK, width=4); d.rectangle([ax - 5, ay - 5, ax + aw + 4, ay + ah + 4], outline=INK, width=1)
+    # big hook text (visible on frame 1, settles with a small pop)
+    ht = hook_title(L); sc = 0.93 + 0.07 * ease(t / 0.35)
+    hs = ht.resize((int(ht.width * sc), int(ht.height * sc)), Image.LANCZOS)
+    tx, ty = ((L.W - hs.width) // 2, 70 + (ht.height - hs.height) // 2) if V else (958 + (940 - hs.width) // 2, 96 + (ht.height - hs.height) // 2)
+    im.paste(hs, (tx, ty), hs)
+    # three suspects, same size and treatment
+    cs = art("cast"); cw = 920 if V else 880; ch = int(cw * cs.height / cs.width)
+    cxp, cyp = ((L.W - cw) // 2, 1390) if V else (978, 430)
+    cyp += int(36 * (1 - ease(t / 0.6)))          # slides up into place from frame 1
+    key = ("cast", cw)
+    if key not in L.cache: L.cache[key] = cs.resize((cw, ch), Image.LANCZOS)
+    im.paste(L.cache[key], (cxp, cyp))
+    lab = "3 suspects \u00b7 1 clue"; f2 = F("plex", 54 if V else 50)
+    ctext(d, cxp + cw / 2, cyp + ch + 16, lab, f2, ACCENT)
+    # spoken line as a caption
+    f3 = F("crimi", 64 if V else 54); capy = 1196 if V else 822
+    capw = (L.W - 80) if V else (L.vw + 20); capx = 40 if V else L.view[0] - 10
+    for c in HOOK_CAPS:
+        if c["s"] <= t < c["e"]:
+            a = min(1, (t - c["s"]) / 0.12) if c["s"] > 0 else 1
+            lay = Image.new("RGBA", (capw, 220), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+            lines = wrap(dl, curly(c["text"]), f3, capw - 40); y = (200 - len(lines) * 76) // 2
+            for ln in lines: ctext(dl, capw / 2, y, ln, f3, INK + (int(255 * a),)); y += 76
+            im.paste(lay, (capx, capy), lay); break
+    return im
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
+    if sc["k"] == "hook": return hook_frame(L, t)
     if sc["k"] in ("title", "end"): return full_card(L, sc["k"], t)
     im = L.chrome().copy()
     if sc["k"] in ("art", "pan"): v = viewport(L, sc, t)
@@ -312,7 +401,7 @@ def frame(L, t):
     else:
         a, b = act[0], act[1]; u = ease((t - (b["t0"] - XF / 2)) / XF)
         im = Image.blend(scene_frame(L, a, t), scene_frame(L, b, t), u)
-    in_card = any(sc["k"] in ("title", "end") and sc["t0"] <= t < sc["t1"] for sc in SCENES)
+    in_card = any(sc["k"] in ("hook", "title", "end") and sc["t0"] <= t < sc["t1"] for sc in SCENES)
     if not in_card:
         for i, c in enumerate(CAPS):
             if c["s"] <= t < c["e"]:
@@ -337,10 +426,11 @@ def render_chunk(args):
 def retimed_audio():
     """Narration with EXTRA s of silence spliced in at CUT (lossless WAV in ../work)."""
     out = os.path.join(WORK, "case01-narration-retimed.wav")
-    fc = (f"[0:a]atrim=0:{CUT},asetpts=PTS-STARTPTS[a];[0:a]atrim={CUT},asetpts=PTS-STARTPTS[b];"
-          f"aevalsrc=0:d={EXTRA}:s=24000:c=mono[z];[a]aresample=24000,aformat=channel_layouts=mono[a2];"
-          f"[b]aresample=24000,aformat=channel_layouts=mono[b2];[a2][z][b2]concat=n=3:v=0:a=1[o]")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", AUDIO, "-filter_complex", fc, "-map", "[o]", out], check=True)
+    fc = (f"[0:a]atrim={TRIM}:{CUT},asetpts=PTS-STARTPTS[a];[0:a]atrim={CUT},asetpts=PTS-STARTPTS[b];"
+          f"aevalsrc=0:d={EXTRA}:s=44100:c=mono[z];[a]aresample=44100,aformat=channel_layouts=mono[a2];"
+          f"[b]aresample=44100,aformat=channel_layouts=mono[b2];[1:a]aresample=44100,aformat=channel_layouts=mono[h];"
+          f"[h][a2][z][b2]concat=n=4:v=0:a=1[o]")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", AUDIO, "-i", HOOK_WAV, "-filter_complex", fc, "-map", "[o]", out], check=True)
     return out
 
 def main():
@@ -358,7 +448,7 @@ def main():
     jobs = [(fmt, i * step, min(N, (i + 1) * step), os.path.join(WORK, "parts", f"{fmt}-{i:02d}.mp4")) for i in range(parts)]
     with ProcessPoolExecutor(parts) as ex: outs = list(ex.map(render_chunk, jobs))
     lst = os.path.join(WORK, "parts", f"{fmt}.txt"); open(lst, "w").write("".join(f"file '{o}'\n" for o in outs))
-    final = os.path.join(VID, f"standalone-03-tidewhistle-case-01-the-prize-sponge-{fmt}.mp4")
+    final = os.path.join(VID, f"{SLUG}-{fmt}.mp4")
     wav = retimed_audio()
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", f"apad=whole_dur={END}", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",
