@@ -108,3 +108,25 @@ python3 art_case03.py            # black and white by default (--color for a col
 python3 render.py vertical --case=3 && python3 render.py wide --case=3 && python3 make_shorts.py --case=3
 ```
 Previews: `previews/case03-bw-*.png`.
+
+## Case 3: The Dry Raincoat (colour, detailed characters)
+A colour version of case 3 with the **detailed** ink characters (the v2 style from commit `9223a2a`: real faces with ears, eyes, brows, nose and mouth, hair, collars, cuffs, buttons, belts and pockets) and soft colour washes under the ink (the colour style from `315c547`). Configured in `src/cases/case03_color.py` (`--case=3-color`, `STYLE = "color-detailed"`), art by `src/art_case03_color.py` (into `work/art-03-color/`), characters in `src/people3.py`. The narration, hook audio, notebook (`clues/case-03.json`), scene timings, countdown and Shorts cuts are the same as the black-and-white version, whose files are untouched.
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-color-vertical.mp4` | 1080x1920 | 3:46.7 |
+| `standalone-03-tidewhistle-case-03-the-dry-raincoat-color-wide.mp4` | 1920x1080 | 3:46.7 |
+| `shorts/standalone-03-tidewhistle-case-03-the-dry-raincoat-color-short-part1.mp4` / `-part2.mp4` | Shorts | 2:18.1 / 1:27.3 |
+
+- **Style option:** `colorink.set_style("color-detailed")` is the colour style (same washes, tints and paper grain; `is_bw()` is False) with `is_detailed()` True. `people.Fig` is now colour-aware: inside `k.tint(...)` its white fills take the tint, black fills take `dark` and default hatching becomes a deeper shade of the tint. With no tint (case 1 v2, the black-and-white cases) it draws exactly as before; `art_case03.py` output is pixel-identical.
+- **Characters** (`people3.py`, built on the `people.py` parts): Tamsin (dark bob and fringe, long plum cardigan with patch pockets over a sage polka-dot dress, pencil behind the ear, feather duster or book), Hedley (flat cap, grey moustache, tweed waistcoat with brass buttons and watch chain, rolled shirt sleeves, a fishing book; `wet=True` darkens the cloth and adds water streaks, plus `drips()` and a puddle, because the narration says he is "dripping all over the floor"), Pip (tousled ginger hair, freckles, red-and-cream striped jumper with ribbed hem, navy trousers with turn-ups, trainers, a rolled-up comic), Wenna (honey-blonde curls and a bun, belted camel raincoat with wide lapels, double buttons and pocket flaps, ankle boots, a canvas tote with an anchor badge), Agnes (lavender sprig dress, frilled apron, glasses, grey bun, a chemist's paper bag). The three suspects share one stance, one arm pose (left arm down, right forearm across the chest holding a small prop), one head size, the same neutral face and the same detail and colour weight in the hook strip and the lineup. Only after the solution does Wenna look down and blush (returned scene).
+- **Scenes:** the main street on a bright afternoon (pastel cottages with coloured doors, the chemist's with its green cross, Tamsin's butter-yellow shop with a green and gold sign, a lit window of books, a teal door, a hanging sign, a red-and-cream striped awning, a lamppost and flower tubs); the back of the shop (cream walls, panelled wainscot, honey floorboards, pendant lamps, tall bookcases of coloured spines) with the wood-and-glass case, the puffin book on its velvet plinth, Tamsin dusting and the red telephone ringing; the downpour (storm sky, blue-grey light, rain, the street running like a river, overflowing gutters); the empty open case; Agnes and Tamsin on the wet street after the rain; the lineup (Hedley dripping at the counter with Tamsin behind it; Pip under the awning, with rain beyond it; Wenna by the POETRY shelves); the door with its brass bell; Agnes by the shop window. Solution: Hedley soaked in the rain beside Wenna dry in the shop, the bell, the alibis, the empty case, and the signed copy back in its case with a brass padlock.
+- **Fix:** the door-bell shot in the base case 3 config pushes in on `cy=0.72`, which is the floor end (image y runs downward), so the bell over the door never appears on screen. The colour config pushes up towards the bell instead, and holds the compare scene's nameplates in shot.
+
+Rebuild:
+```
+cd src
+python3 art_case03_color.py      # ~20 s on 8 CPUs
+python3 render.py vertical --case=3-color && python3 render.py wide --case=3-color && python3 make_shorts.py --case=3-color
+```
+Previews: `previews/case03-color-*.png`.

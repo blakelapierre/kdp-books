@@ -17,7 +17,8 @@ from tracker import Notebook
 
 import importlib
 CASE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--case=")), os.environ.get("CASE", "01"))
-C = importlib.import_module(f"cases.case{int(CASE):02d}")   # per-case config: cases/caseNN.py
+_num, _, _var = CASE.partition("-")      # --case=3-color -> cases/case03_color.py (a style variant of case 3)
+C = importlib.import_module(f"cases.case{int(_num):02d}" + (f"_{_var}" if _var else ""))   # per-case config: cases/caseNN.py
 
 HERE = os.path.dirname(os.path.abspath(__file__)); VID = os.path.join(HERE, "..")
 ART = os.path.join(VID, C.ART); WORK = os.path.join(VID, "work")
@@ -32,7 +33,8 @@ if STYLE == "bw":
     PAPER = (244, 244, 241); ARTPAPER = (252, 252, 250); INK = (22, 22, 22); SOFT = (104, 104, 104); ACCENT = (168, 34, 34)
     VIGNETTE = (214, 214, 210); RING = (206, 206, 202); SHADE = (120, 120, 120)
     tracker.set_style("bw")
-PFX = "" if C.NUM == 1 else f"case{C.NUM:02d}-"
+VARIANT = getattr(C, "VARIANT", "")      # e.g. "color": keeps work files apart from the base version of the case
+PFX = ("" if C.NUM == 1 and not VARIANT else f"case{C.NUM:02d}-") + (f"{VARIANT}-" if VARIANT else "")
 CASE_DOT = f"Case {C.NUM} \u00b7 {C.NAME}"; CASE_COLON = f"Case {C.NUM}: {C.NAME}"
 FULL_TITLE = f"Tea and Clues at Tidewhistle Cove - {CASE_COLON}"
 
@@ -68,6 +70,7 @@ for sc in SCENES:
 XF = 0.7  # crossfade length
 
 SLUG = C.SLUG
+VIDEO_SLUG = getattr(C, "VIDEO_SLUG", SLUG)   # full-video file name stem (variants add e.g. "-color")
 SHORTS_CFG = dict(tag=C.SHORTS["tag"], p1_end=sh(C.SHORTS["p1_end"]), recap=tuple(sh(t) for t in C.SHORTS["recap"]), cd_cut=CD1 - 4.0,
                   card_t=sh(C.SHORTS["card_t"]), suspects=C.SHORTS["suspects"], title_line=CASE_DOT, yt_title=FULL_TITLE)
 
@@ -421,7 +424,7 @@ def render_chunk(args):
 
 def retimed_audio():
     """Narration with EXTRA s of silence spliced in at CUT (lossless WAV in ../work)."""
-    out = os.path.join(WORK, f"case{C.NUM:02d}-narration-retimed.wav")
+    out = os.path.join(WORK, f"case{C.NUM:02d}-{VARIANT + '-' if VARIANT else ''}narration-retimed.wav")
     fc = (f"[0:a]atrim={TRIM}:{CUT},asetpts=PTS-STARTPTS[a];[0:a]atrim={CUT},asetpts=PTS-STARTPTS[b];"
           f"aevalsrc=0:d={EXTRA}:s=44100:c=mono[z];[a]aresample=44100,aformat=channel_layouts=mono[a2];"
           f"[b]aresample=44100,aformat=channel_layouts=mono[b2];[1:a]aresample=44100,aformat=channel_layouts=mono[h];"
@@ -444,7 +447,7 @@ def main():
     jobs = [(fmt, i * step, min(N, (i + 1) * step), os.path.join(WORK, "parts", f"{PFX}{fmt}-{i:02d}.mp4")) for i in range(parts)]
     with ProcessPoolExecutor(parts) as ex: outs = list(ex.map(render_chunk, jobs))
     lst = os.path.join(WORK, "parts", f"{PFX}{fmt}.txt"); open(lst, "w").write("".join(f"file '{o}'\n" for o in outs))
-    final = os.path.join(VID, f"{SLUG}-{fmt}.mp4")
+    final = os.path.join(VID, f"{VIDEO_SLUG}-{fmt}.mp4")
     wav = retimed_audio()
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", f"apad=whole_dur={END}", "-c:a", "aac", "-b:a", "128k", "-ar", "48000",

@@ -56,8 +56,21 @@ class Fig:
         c.setLineCap(1); c.setLineJoin(1); return s
     def __exit__(s, *a): s.c.restoreState()
     def W(s, lw): return lw / s.sc
+    # colour: inside k.tint(...) (colorink.ColorInk) white fills take the tint colour, black fills take `dark`,
+    # and default (black) hatching becomes a deeper shade of the tint. With no tint active (or a plain
+    # inkart.Ink, or the black-and-white style) every figure draws exactly as before.
+    def _m(s, fill):
+        m = getattr(s.k, "_map", None)
+        return m(fill) if (m and fill is not None) else fill
+    def _hc(s, color):
+        top = getattr(s.k, "_top", None)
+        if color is not K or top is None: return color
+        import colorink
+        t = top()
+        if colorink.is_bw() or t is None or t["light"] is None: return color
+        return t["hatch"] or colorink.shade(t["light"], 0.74)
     def shape(s, pts, lw=1.0, fill=Wt, stroke=True, t=1.0, color=K):
-        c = s.c; p = _crpath(c, pts, True, t); c.setStrokeColor(color); c.setLineWidth(s.W(lw))
+        c = s.c; p = _crpath(c, pts, True, t); c.setStrokeColor(color); c.setLineWidth(s.W(lw)); fill = s._m(fill)
         if fill is not None: c.setFillColor(fill)
         c.drawPath(p, stroke=1 if stroke and lw > 0 else 0, fill=1 if fill is not None else 0)
     def curve(s, pts, lw=0.6, t=1.0, color=K):
@@ -71,7 +84,7 @@ class Fig:
         if box: c.clipPath(_crpath(c, [(box[0], box[1], 0), (box[2], box[1], 0), (box[2], box[3], 0), (box[0], box[3], 0)], True), stroke=0, fill=0)
         xs = [p[0] for p in pts]; ys = [p[1] for p in pts]; cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
         R = math.hypot(max(xs) - min(xs), max(ys) - min(ys)) / 2 + 1; g = gap / s.sc
-        c.setStrokeColor(color); c.setLineWidth(s.W(lw))
+        c.setStrokeColor(s._hc(color)); c.setLineWidth(s.W(lw))
         for ang in ([angle, angle + 90] if cross else [angle]):
             a = math.radians(ang); dx, dy = math.cos(a), math.sin(a); nx, ny = -dy, dx; o = -R
             while o <= R:
@@ -79,11 +92,11 @@ class Fig:
                 c.line(cx + nx * oo - dx * R, cy + ny * oo - dy * R, cx + nx * oo + dx * R, cy + ny * oo + dy * R); o += g
         s.unclip()
     def dot(s, x, y, r, fill=K, lw=0.0):
-        c = s.c; c.setFillColor(fill); c.setStrokeColor(K); c.setLineWidth(s.W(max(lw, 0.01)))
+        c = s.c; c.setFillColor(s._m(fill) if fill is K else fill); c.setStrokeColor(K)   # white dots (eye glints, buttons) stay white; c.setLineWidth(s.W(max(lw, 0.01)))
         c.circle(x, y, r, stroke=1 if lw else 0, fill=1)
     def ring(s, x, y, r, lw=0.5, fill=None):
         c = s.c; c.setStrokeColor(K); c.setLineWidth(s.W(lw))
-        if fill is not None: c.setFillColor(fill)
+        if fill is not None: c.setFillColor(s._m(fill))
         c.circle(x, y, r, stroke=1, fill=0 if fill is None else 1)
 
 # ============================================================================ shared body parts

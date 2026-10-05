@@ -61,3 +61,6 @@ Did you get it right? 📚 Tell us which clue you noticed first. More cases from
 ```
 
 After both are posted, set Part 1's "Related video" to Part 2 in YouTube Studio.
+
+## Colour version (detailed characters)
+`standalone-03-tidewhistle-case-03-the-dry-raincoat-color-short-part1.mp4` (2:18) and `-color-short-part2.mp4` (1:27) have the same story, cuts and timing as the black-and-white Shorts, so the text above works as written. If both versions are on the channel, add "(colour)" to the colour titles so the two are easy to tell apart, for example `Can you solve it? 📚 Who took the signed book? (colour) #shorts`.

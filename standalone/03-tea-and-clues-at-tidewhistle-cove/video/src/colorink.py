@@ -18,6 +18,9 @@ Black-and-white option (Blake prefers it for later cases: it stands out in a col
     white; strokes become black unless they are near-white. render_color() then rasterises in grey with
     the same levels as inkart.render() (paper pure white, ink pure black, no grain).
     Colour stays the default, so existing colour scenes are unchanged.
+"color-detailed" option (case 3 colour version): exactly the colour style above (is_bw() is False, same
+  washes, tints and paper grain); is_detailed() is True so an art script can pick the detailed v2-style ink
+  characters (people.py / people3.py, now colour-aware through k.tint()) instead of the simple figures.py ones.
 Everything is code-drawn; no image generation service is involved."""
 import math, os, subprocess, tempfile, random
 from contextlib import contextmanager
@@ -28,9 +31,11 @@ K = colors.black; Wt = colors.white
 
 STYLE = [os.environ.get("TIDE_STYLE", "color")]
 def set_style(style):
-    """'color' (default) or 'bw' (pure black-and-white ink). Call before drawing / render_color()."""
-    assert style in ("color", "bw"); STYLE[0] = style
+    """'color' (default), 'color-detailed' (colour + detailed characters) or 'bw' (pure black-and-white ink).
+    Call before drawing / render_color()."""
+    assert style in ("color", "color-detailed", "bw"); STYLE[0] = style
 def is_bw(): return STYLE[0] == "bw"
+def is_detailed(): return STYLE[0] == "color-detailed"
 
 def _lum(c):
     if not hasattr(c, "red"): return None

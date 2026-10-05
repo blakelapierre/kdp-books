@@ -1,6 +1,6 @@
 """Cut YouTube Shorts (each <= 2:55) from the rendered vertical video, at narration pauses.
 
-  python3 make_shorts.py            (after render.py vertical)
+  python3 make_shorts.py            (after render.py vertical; --case=N or --case=3-color as for render.py)
 
 Part 1: video 0 -> P1_END (pause after the question), then a 3 s card "Comment your guess! ... ANSWER IN PART 2".
 Part 2: a 1 s silent "PART 2 · THE ANSWER" card, the question recap (RECAP), then the last CD_KEEP s of the
@@ -12,10 +12,10 @@ import render as R
 
 SHORTS = os.path.join(R.VID, "shorts"); os.makedirs(SHORTS, exist_ok=True)
 CFG = R.SHORTS_CFG
-SRC = os.path.join(R.VID, f"{R.SLUG}-vertical.mp4")
+SRC = os.path.join(R.VID, f"{R.VIDEO_SLUG}-vertical.mp4")
 OUT1 = os.path.join(SHORTS, f"{R.SLUG}-{CFG['tag']}short-part1.mp4")
 OUT2 = os.path.join(SHORTS, f"{R.SLUG}-{CFG['tag']}short-part2.mp4")
-TMP = os.path.join(R.WORK, "shorts"); os.makedirs(TMP, exist_ok=True)
+TMP = os.path.join(R.WORK, "shorts", *([R.PFX.rstrip("-")] if R.VARIANT else [])); os.makedirs(TMP, exist_ok=True)
 
 def card(base_t, lines, path):
     L = R.Layout("vertical"); im = R.frame(L, base_t).convert("RGBA")
