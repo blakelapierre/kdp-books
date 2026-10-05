@@ -1,0 +1,14 @@
+{
+ "pages": 194,
+ "spine_in": 0.436888,
+ "width_in": 12.686888,
+ "height_in": 9.25,
+ "bleed_in": 0.125,
+ "barcode_box_in": [
+  3.875,
+  0.375,
+  2.0,
+  1.2
+ ],
+ "spine_text_pt": 8.5
+}

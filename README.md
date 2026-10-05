@@ -17,6 +17,8 @@ standalone/                  # books that are not part of a series (one folder e
   README.md
   01-the-advent-clock/
   02-fireside-cryptograms/
+  03-tea-and-clues-at-tidewhistle-cove/
+  04-logic-on-lantern-lane/
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
@@ -47,6 +49,7 @@ Current books:
 1. `01-the-advent-clock`: built, not published
 2. `02-fireside-cryptograms`: built, not published
 3. `03-tea-and-clues-at-tidewhistle-cove`: built Kindle ebook (audio-first), not published
+4. `04-logic-on-lantern-lane`: built, not published
 
 ## Books
 
@@ -67,6 +70,7 @@ Current books:
 | *The Advent Clock*: A Christmas Puzzle Countdown (24-day advent calendar puzzle book) | 24 mixed daily puzzles (19 kinds) with a hidden-message meta puzzle | Draft, print-ready. Not yet published or submitted to KDP | 92 | $9.99 | $3.69 | [01-the-advent-clock/README.md](standalone/01-the-advent-clock/README.md) |
 | *Fireside Cryptograms*: 200 Large-Print Quote Puzzles for Adults (Easy to Expert) | Cryptograms (cryptoquotes) | Draft, print-ready. Not yet published or submitted to KDP | 158 | $9.99 | $3.10 | [02-fireside-cryptograms/README.md](standalone/02-fireside-cryptograms/README.md) |
 | *Tea and Clues at Tidewhistle Cove*: 30 Cozy Mini-Mysteries to Solve by Ear (Kindle, audio-first) | Solve-it-yourself cozy mini-mysteries + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 15,404 words) | $3.99 | $2.75† | [03-tea-and-clues-at-tidewhistle-cove/README.md](standalone/03-tea-and-clues-at-tidewhistle-cove/README.md) |
+| *Logic on Lantern Lane*: 120 Cozy Logic Grid Puzzles for Adults (Easy to Expert) | Logic grid (Einstein / zebra) puzzles with story clues | Draft, print-ready. Not yet published or submitted to KDP | 194 | $9.99 | $2.67 | [04-logic-on-lantern-lane/README.md](standalone/04-logic-on-lantern-lane/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -157,6 +161,15 @@ cd standalone/03-tea-and-clues-at-tidewhistle-cove/src
 python3 verify.py     # brute-force logic cases, fair-play table, read-aloud and content checks -> ../verification.md
 python3 cover.py      # -> ../standalone-03-tea-and-clues-at-tidewhistle-cove-cover.jpg
 python3 build.py      # -> ../standalone-03-tea-and-clues-at-tidewhistle-cove.epub, .docx and ../build-info.json
+cd ../..
+
+# Standalone: Logic on Lantern Lane
+cd standalone/04-logic-on-lantern-lane/src
+PYTHONHASHSEED=0 python3 master.py   # generate 120 logic grid puzzles + the worked example -> ../data.json (~10 s; logic.py is the no-guessing solver, gen.py makes clues and hints)
+python3 verify.py     # independent SAT uniqueness check + clue-text truth + content scan -> ../verification.md
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../standalone-04-logic-on-lantern-lane-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../standalone-04-logic-on-lantern-lane-cover.pdf, ../cover-info.json and ../tmp/standalone-04-logic-on-lantern-lane-cover-guides.pdf
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

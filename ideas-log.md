@@ -20,6 +20,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-01 | Large-print cryptogram (cryptoquote) puzzle book for adults, cozy/fireside, non-violent, non-Christmas | *Fireside Cryptograms*, 200 puzzles (50 Easy / 50 Medium / 50 Hard / 50 Expert), 160 pages, [folder](standalone/02-fireside-cryptograms/) |
 | 2026-10-03 | Cozy Frostwood riddles + text logic Kindle ebook (no write-in grids) | *Riddles by the Frostwood Fire*, 140 puzzles (40 Easy / 40 Medium / 40 Hard / 20 Expert), Kindle ebook, [folder](series/frostwood/05-riddles-by-the-frostwood-fire/) |
 | 2026-10-03 | Audio-first cozy solve-it-yourself mini-mysteries Kindle ebook (seaside tea-room sleuth, no murder; each case ends *Can you solve it?* with the answer right after) | *Tea and Clues at Tidewhistle Cove*, 30 cases (23 clue stories + 7 logic), 15,404 words, Kindle ebook, [folder](standalone/03-tea-and-clues-at-tidewhistle-cove/) |
+| 2026-10-05 | Cozy logic grid (Einstein / zebra) puzzle book for adults, village scenes, no crime theme | *Logic on Lantern Lane*, 120 puzzles (30 Easy 3×4 / 30 Medium 4×4 / 30 Hard 4×5 / 30 Expert 5×5 on two-page spreads) + worked example, 194 pages, [folder](standalone/04-logic-on-lantern-lane/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -49,9 +50,12 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-03 | Lateral-thinking (situation) puzzle ebook: strong print demand (*Lateral Thinking Puzzlers* 4.4★/257) but the classic form relies on yes/no questioning and many classic scenarios involve deaths; weaker fit for solo listening and the no-violence rule |
 | 2026-10-03 | Audio trivia rounds ebook: generic AI-narrated trivia/riddle audio mostly sits unrated; riddles already covered by Frostwood 05 |
 | 2026-10-03 | Audio-first cozy mini-mysteries chosen instead: *Two-Minute Mysteries* 4.5★/639; *Five-Minute Cozy Mini Mysteries* (indie Kindle) 4.1★/56; *Cute and Cozy Crime* (Apr 2026) 4.4★/28; Audible *Minute Mysteries* 4.0 from 2 ratings (thin short solve-it audio); researched 2026-10-03 |
+| 2026-10-05 | Logic grid puzzle book chosen for the Monday paperback: *The Ultimate Logic Grid Puzzle Book for Adults* 4.6★/423 (180 pp, $16.97); *Logic Puzzle Book for Adults Vol 1* 4.0★/269; *Detective Logic Puzzles for Adults* (Oct 2025, crime-themed) 4.6★/96, BSR ~140k; *Big Logic Grid Puzzle Book 2026* 2.8★/14 (plain themes). Gap: cozy, non-violent, story-led logic grids at $9.99. Researched 2026-10-05 |
 
 ## Puzzle types used in standalone books
 *Tea and Clues at Tidewhistle Cove* uses prose solve-it mini-mysteries (observation/alibi clues) plus seven text logic cases: only-the-thief-lies, exactly-one-truth, seating order, walking-time alibis, honest/fibber fishermen, queue order, one-truth-one-fib. A second seaside/tea-room mini-mystery book would be a sequel, not a new idea.
+
+*Logic on Lantern Lane* is a full dedicated logic grid (Einstein / zebra) book: 40 cozy village scenes, each used in three levels, clue types positive, negative, comparison, exact gap, either-or, neither-nor and "of A and B, one … the other …". *The Advent Clock* used one logic grid door, which is fine. A second logic grid book would be a sequel (e.g. another village), not a new idea.
 
 *Fireside Cryptograms* uses monoalphabetic substitution cryptograms (cryptoquotes) only — 200 puzzles with independent uniqueness verification.
 
