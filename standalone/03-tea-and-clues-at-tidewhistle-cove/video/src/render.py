@@ -49,7 +49,9 @@ P = HOOK_DUR - TRIM                        # every case-narration time moves lat
 CUT, EXTRA = C.CUT, C.EXTRA                # silence spliced in after the last pre-solution line
 def sh(t): return t + P + (EXTRA if t >= CUT else 0.0)
 TIM = json.load(open(os.path.join(VID, C.TIMING)))
+TIM_ORIG_WORDS = [dict(w) for w in TIM["words"]]   # ORIGINAL narration times (for anim.py talk sync)
 for w in TIM["words"]: w["s"], w["e"] = sh(w["s"]), sh(w["e"])
+ANIM = getattr(C, "ANIM", None)   # optional per-scene animation specs (cases/case04.py)
 AUDIO_END = sh(C.AUDIO_END); END = AUDIO_END + 5.0
 CD0 = sh(C.NARR_END) + 0.62; CD1 = CD0 + 10.0  # visible 10-second countdown, after all pre-solution narration
 
@@ -198,29 +200,51 @@ def balanced(d, text, f, maxw, nlines):
     rec(0, nlines, [])
     return best
 
-_art = {}
+_art = {}; _anim = {}; _lut = None
+def lut():
+    global _lut
+    if _lut is None: _lut = [int(INK[c] + (ARTPAPER[c] - INK[c]) * v / 255) for c in range(3) for v in range(256)]
+    return _lut
+
 def art(name):
     if name not in _art:
         g = Image.open(os.path.join(ART, name + ".png")).convert("RGB")   # colour art (art.py); grey also works
-        lut = [int(INK[c] + (ARTPAPER[c] - INK[c]) * v / 255) for c in range(3) for v in range(256)]
-        _art[name] = g.point(lut)
+        _art[name] = g.point(lut())
     return _art[name]
 
-def viewport(L, sc, t):
+def anim_scene(key):
+    """Lazy-load an anim.Scene for ANIM[key] (scale 0.7 keeps memory down; box coords stay full-res)."""
+    if key not in _anim:
+        import anim
+        _anim[key] = anim.Scene(ART, ANIM[key], tmap=sh, words=TIM_ORIG_WORDS, scale=0.7, lut=lut())
+    return _anim[key]
+
+def _view_box(sc, t, W, H):
+    """Compute the crop box (bx, by, bw, bh) in FULL-resolution plate pixels for an art/pan scene."""
     if sc["k"] == "art":
-        im = art(sc["img"]); u = ease((t - sc["t0"]) / (sc["t1"] - sc["t0"]))
+        u = ease((t - sc["t0"]) / max(1e-6, sc["t1"] - sc["t0"]))
         cx, cy, z = [a + (b - a) * u for a, b in zip(sc["a"], sc["b"])]
-        H = im.height; bh = H / z; bw = bh * 4 / 3
-        box = (cx * im.width - bw / 2, cy * H - bh / 2)
-    else:   # pan along the 4-panel lineup strip (each panel is 4:3)
-        im = art("lineup"); keys = sc["keys"]; H = im.height; PWp = im.width / C.LINEUP_PANELS
-        k = max(i for i, kk in enumerate(keys) if kk[0] <= t or i == 0); k = min(k, len(keys) - 2)
-        (ta, pa, za), (tb, pb, zb) = keys[k], keys[k + 1]; u = ease((t - ta) / (tb - ta))
-        p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * 4 / 3
-        box = ((p + 0.45) * PWp - bw / 2, H * 0.95 - bh)   # anchored low so the nameplates stay in shot
-    m = 0.05 * H   # keep the art's own inner frame lines out of shot
-    bx = min(max(m if sc["k"] == "art" else 0, box[0]), im.width - (m if sc["k"] == "art" else 0) - bw)
-    by = min(max(m, box[1]), H - m - bh)
+        bh = H / z; bw = bh * 4 / 3
+        box = (cx * W - bw / 2, cy * H - bh / 2)
+        m = 0.05 * H
+        bx = min(max(m, box[0]), W - m - bw); by = min(max(m, box[1]), H - m - bh)
+        return bx, by, bw, bh
+    keys = sc["keys"]; PWp = W / C.LINEUP_PANELS
+    k = max(i for i, kk in enumerate(keys) if kk[0] <= t or i == 0); k = min(k, len(keys) - 2)
+    (ta, pa, za), (tb, pb, zb) = keys[k], keys[k + 1]; u = ease((t - ta) / max(1e-6, tb - ta))
+    p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * 4 / 3
+    box = ((p + 0.45) * PWp - bw / 2, H * 0.95 - bh)
+    m = 0.05 * H
+    bx = min(max(0, box[0]), W - bw); by = min(max(m, box[1]), H - m - bh)
+    return bx, by, bw, bh
+
+def viewport(L, sc, t):
+    key = sc["img"] if sc["k"] == "art" else "lineup"
+    if ANIM and key in ANIM:
+        scene = anim_scene(key); W, H = scene.man["W"], scene.man["H"]
+        bx, by, bw, bh = _view_box(sc, t, W, H)
+        return scene.frame(t, (bx, by, bw, bh), (L.vw, L.vh))
+    im = art(key); bx, by, bw, bh = _view_box(sc, t, im.width, im.height)
     return im.resize((L.vw, L.vh), Image.BILINEAR, box=(bx, by, bx + bw, by + bh))
 
 def ask_panel(t):
@@ -329,10 +353,17 @@ def hook_frame(L, t):
     V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
     # art: the empty plate, slowly pushing in from frame 1
     aw, ah = (1000, 750) if V else (L.vw, L.vh); ax, ay = ((L.W - aw) // 2, 400) if V else L.view[:2]
-    src = art("hook"); u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
+    u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
     (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
-    bh = src.height / z; bw = bh * 4 / 3; bx = min(max(0, cx * src.width - bw / 2), src.width - bw); by = min(max(0, cy * src.height - bh / 2), src.height - bh)
-    im.paste(src.resize((aw, ah), Image.BILINEAR, box=(bx, by, bx + bw, by + bh)), (ax, ay))
+    if ANIM and "hook" in ANIM:
+        scene = anim_scene("hook"); W, H = scene.man["W"], scene.man["H"]
+        bh = H / z; bw = bh * 4 / 3
+        bx = min(max(0, cx * W - bw / 2), W - bw); by = min(max(0, cy * H - bh / 2), H - bh)
+        im.paste(scene.frame(t, (bx, by, bw, bh), (aw, ah)), (ax, ay))
+    else:
+        src = art("hook"); bh = src.height / z; bw = bh * 4 / 3
+        bx = min(max(0, cx * src.width - bw / 2), src.width - bw); by = min(max(0, cy * src.height - bh / 2), src.height - bh)
+        im.paste(src.resize((aw, ah), Image.BILINEAR, box=(bx, by, bx + bw, by + bh)), (ax, ay))
     d.rectangle([ax - 12, ay - 12, ax + aw + 11, ay + ah + 11], outline=INK, width=4); d.rectangle([ax - 5, ay - 5, ax + aw + 4, ay + ah + 4], outline=INK, width=1)
     # big hook text (visible on frame 1, settles with a small pop)
     ht = hook_title(L); sc = 0.93 + 0.07 * ease(t / 0.35)
@@ -340,12 +371,15 @@ def hook_frame(L, t):
     tx, ty = ((L.W - hs.width) // 2, 70 + (ht.height - hs.height) // 2) if V else (958 + (940 - hs.width) // 2, 96 + (ht.height - hs.height) // 2)
     im.paste(hs, (tx, ty), hs)
     # three suspects, same size and treatment
-    cs = art("cast"); cw = 920 if V else 880; ch = int(cw * cs.height / cs.width)
+    cw = 920 if V else 880
+    if ANIM and "cast" in ANIM:
+        scene = anim_scene("cast"); ch = int(cw * scene.man["H"] / scene.man["W"])
+        cs = scene.frame(t, (0, 0, scene.man["W"], scene.man["H"]), (cw, ch))
+    else:
+        cs = art("cast"); ch = int(cw * cs.height / cs.width); cs = cs.resize((cw, ch), Image.LANCZOS)
     cxp, cyp = ((L.W - cw) // 2, 1390) if V else (978, 430)
     cyp += int(36 * (1 - ease(t / 0.6)))          # slides up into place from frame 1
-    key = ("cast", cw)
-    if key not in L.cache: L.cache[key] = cs.resize((cw, ch), Image.LANCZOS)
-    im.paste(L.cache[key], (cxp, cyp))
+    im.paste(cs, (cxp, cyp))
     lab = "3 suspects \u00b7 1 clue"; f2 = F("plex", 54 if V else 50)
     ctext(d, cxp + cw / 2, cyp + ch + 16, lab, f2, ACCENT)
     # spoken line as a caption

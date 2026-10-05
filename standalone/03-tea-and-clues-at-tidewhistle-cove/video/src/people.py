@@ -16,6 +16,10 @@ import math
 from reportlab.lib import colors
 
 K = colors.black; Wt = colors.white
+# Animation face states (anim.py / art_case04.py): set before drawing a sprite variant, e.g. FACE["eyes"] = "closed"
+# (blink frame) or FACE["mouth"] = "open" (talking frame). Empty = the normal face, so old art is unchanged.
+FACE = {}
+MOUTH_IN = colors.Color(0.42, 0.17, 0.17)
 
 def _crpath(c, pts, closed=True, t=1.0):
     """Catmull-Rom spline through pts as cubic beziers. A point (x, y, 0) is a sharp corner."""
@@ -158,6 +162,9 @@ def head(f, cx, cy, rx=6.0, ry=7.4, jaw=0.62, expr="neutral", glasses=False, bro
         x = cx + sg * ex
         if expr == "sheepish":
             f.curve([(x - 1.0, ey + 0.1), (x, ey - 0.5), (x + 1.0, ey + 0.1)], lw=0.7)     # eyes cast down
+        elif FACE.get("eyes") == "closed":   # blink frame: lid line + lashes
+            f.curve([(x - 1.15, ey + 0.35), (x - 0.4, ey - 0.15), (x + 0.4, ey - 0.15), (x + 1.15, ey + 0.35)], lw=0.6)
+            for u in (-0.6, 0.0, 0.6): f.curve([(x + u, ey - 0.12), (x + u * 1.25, ey - 0.6)], lw=0.25)
         else:
             f.shape(ell(x, ey, 0.62, 0.82, n=14), lw=0.2, fill=K)
             f.dot(x - 0.2, ey + 0.3, 0.2, fill=Wt)
@@ -183,10 +190,15 @@ def head(f, cx, cy, rx=6.0, ry=7.4, jaw=0.62, expr="neutral", glasses=False, bro
     else:
         f.curve([(cx + 0.15, ey - 0.4), (cx + 0.75, ey - 2.3), (cx + 0.1, ey - 2.8), (cx - 0.5, ey - 2.55)], lw=0.5)
     my = cy - 3.7
+    if FACE.get("mouth") == "open":   # talking frame: small open mouth (under any moustache)
+        oy = my - (0.55 if moustache else 0.25)
+        f.shape(ell(cx, oy, 1.15, 0.78, n=16), lw=0.55, fill=MOUTH_IN)
+        f.shape(ell(cx, oy - 0.42, 0.62, 0.22, n=10), lw=0, stroke=False, fill=colors.Color(0.86, 0.5, 0.5))
     if moustache:
         m = [(cx - 3.2, my + 0.5), (cx - 1.7, my + 1.3), (cx, my + 1.35), (cx + 1.7, my + 1.3), (cx + 3.2, my + 0.5), (cx + 1.8, my + 0.35), (cx, my + 0.55), (cx - 1.8, my + 0.35)]
         f.shape(m, lw=0.4, fill=K)
         f.curve([(cx - 1.2, my - 0.7), (cx, my - 0.85), (cx + 1.2, my - 0.7)], lw=0.5)
+    elif FACE.get("mouth") == "open": pass
     elif expr == "smile":
         f.curve([(cx - 2.0, my + 0.35), (cx - 0.9, my - 0.55), (cx + 0.9, my - 0.55), (cx + 2.0, my + 0.35)], lw=0.7)
         for sg in (-1, 1): f.curve([(cx + sg * 2.0, my + 0.6), (cx + sg * 2.35, my + 0.2)], lw=0.35)

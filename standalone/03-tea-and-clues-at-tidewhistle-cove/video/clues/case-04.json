@@ -1,0 +1,35 @@
+{
+  "case": "Case 4 · The Sandbar at High Tide",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-board",   "section": "facts", "text": "Tide board: High water at noon", "at": {"seg": 2, "phrase": "High water at noon"}},
+    {"id": "f-big",     "section": "facts", "text": "Big tide: sea right up over the sandbar", "at": {"seg": 3, "phrase": "over the sandbar"}},
+    {"id": "f-depth",   "section": "facts", "text": "At high tide: sandbar under more than a man's height of sea", "at": {"seg": 4, "phrase": "man's height"}},
+    {"id": "f-compass", "section": "facts", "text": "Brass ship's compass on the office windowsill", "at": {"seg": 5, "phrase": "windowsill"}},
+    {"id": "f-seen",    "section": "facts", "text": "Seen at 11:30. Gone by 12:30.", "at": {"seg": 5, "phrase": "half past twelve"}},
+    {"id": "morwenna", "section": "who", "name": "Morwenna Day", "text": "delivering flowers to the church", "at": {"seg": 7, "phrase": "flowers to the church"}},
+    {"id": "morwenna-alibi", "section": "who", "parent": "morwenna", "text": "With the vicar eleven until one", "at": {"seg": 7, "phrase": "until one"}},
+    {"id": "pip", "section": "who", "name": "Pip Carew", "text": "sweeping out the Kettle and Gull", "at": {"seg": 8, "phrase": "sweeping out"}},
+    {"id": "pip-alibi", "section": "who", "parent": "pip", "text": "Agnes with him all morning", "at": {"seg": 8, "phrase": "all morning"}},
+    {"id": "rundle", "section": "who", "name": "Mr Rundle", "text": "fisherman; sandy bucket at his feet", "at": {"seg": 9, "phrase": "sandy bucket"}},
+    {"id": "rundle-said", "section": "who", "parent": "rundle", "text": "\"Out on the sandbar by Gull Rock, digging for cockles from about eleven until one.\"", "at": {"seg": 10, "phrase": "eleven o'clock"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "rundle", "span": "name", "at": {"seg": 16, "phrase": "took"}},
+    {"do": "circle", "item": "rundle-said", "at": {"seg": 17, "phrase": "eleven until one"}},
+    {"do": "check", "item": "f-board", "at": {"seg": 17, "phrase": "high water at noon"}},
+    {"do": "check", "item": "f-big", "at": {"seg": 17, "phrase": "over the sandbar"}},
+    {"do": "check", "item": "f-depth", "at": {"seg": 17, "phrase": "man's height of sea"}},
+    {"do": "note", "text": "Nobody could have stood digging on the sandbar in the middle of that tide. His story cannot be true.", "at": {"seg": 17, "phrase": "Nobody could"}, "hold": 5.0},
+    {"do": "strike", "item": ["morwenna", "morwenna-alibi"], "at": {"seg": 18, "phrase": "whole time"}},
+    {"do": "strike", "item": ["pip", "pip-alibi"], "at": {"seg": 18, "phrase": "with Agnes"}},
+    {"do": "check", "item": "f-compass", "at": {"seg": 19, "phrase": "turned up"}},
+    {"do": "check", "item": "f-seen", "at": {"seg": 19, "phrase": "coil of rope"}}
+  ]
+}

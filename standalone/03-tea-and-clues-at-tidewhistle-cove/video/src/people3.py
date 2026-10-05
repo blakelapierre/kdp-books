@@ -198,7 +198,7 @@ def pip(k, x, y, h, expr="neutral", flip=False, prop=True):
         sleeve_arm(f, L_ARM, 2.8, JUMPER, cuff=4, hatch=dict(angle=0, gap=2.1, lw=0.7, color=JUMPER2))
         skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
         sleeve_arm(f, R_ARM, 2.8, JUMPER, cuff=4, hatch=dict(angle=0, gap=2.1, lw=0.7, color=JUMPER2))
-        if prop: comic(f)
+        if prop: (prop(f) if callable(prop) else comic(f))   # prop may be a callable(f) (case 4: hand brush)
         skin_hand(f, *R_HAND[:2], R_HAND[2], 1.0)
         with k.tint(SKIN): neck(f, CY, w=2.1)
         face(f, expr, rx=5.9, ry=7.2, jaw=0.62, nose="button", brows="soft")
@@ -350,7 +350,8 @@ def agnes(k, x, y, h, expr="smile", flip=False, bag=False):
         sleeve_arm(f, [(-9.4, 77.2), (-12.6, 70), (-13.4, 62.5), (-13.2, 55.5), (-12.9, 51.2)], 2.7, PAL.agnes_dress, skin_from=4, hatch=hs, cuff=3)
         skin_hand(f, -12.9, 50.2, -92, 1.0)
         sleeve_arm(f, [(9.4, 77.2), (12.6, 70), (13.4, 62.5), (13.2, 55.5), (12.9, 51.2)], 2.7, PAL.agnes_dress, skin_from=4, hatch=hs, cuff=3)
-        if bag:
+        if callable(bag): bag(f)           # e.g. case 4's basket of scones (people4.scone_basket)
+        elif bag:
             pb = [(9.6, 49.0, 0), (16.6, 49.0, 0), (16.0, 37.0, 0), (10.2, 37.0, 0)]
             with k.tint(C(236, 222, 196)): f.shape(pb, lw=0.8)
             for j in range(3): f.curve([(9.8 + j * 0.2, 48.6 - j * 0.9), (16.4 - j * 0.2, 48.6 - j * 0.9)], lw=0.28)

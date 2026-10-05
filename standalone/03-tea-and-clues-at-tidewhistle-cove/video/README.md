@@ -130,3 +130,38 @@ python3 art_case03_color.py      # ~20 s on 8 CPUs
 python3 render.py vertical --case=3-color && python3 render.py wide --case=3-color && python3 make_shorts.py --case=3-color
 ```
 Previews: `previews/case03-color-*.png`.
+
+## Simple animation system (reusable from Case 4)
+
+From Case 4 on, a picture can be drawn as a still **plate** plus moving **parts**, and played by a small local engine. No paid or AI video tools.
+
+1. **`src/layers.py`** — `save_layers(out_dir, jobs, make_ink)` renders each job's plate (`<scene>.png`) and part sprites (`<scene>__<part>__<variant>.png` + a `<scene>.json` manifest). Variants of one part share a crop box so blink / talk / reaction swaps are clean. `face("+blink")` / `face("+talk")` set `people.FACE` while a variant is drawn.
+2. **`src/anim.py`** — cut-out engine. A case config's `ANIM = {key: dict(art=<scene>, layers=[...])}` choreographs each picture. Layer kinds: `sprite` (idle sway/breathe, blink, talk+bob, walk-in, nods, keyframed dx/dy/rot/s/a, wobble, bob, reveal wipe, swaps), `fly` (gulls), `glint` (wave strokes / sparkles), `rise` (steam), `reveal_plate` (rising tide), `clock` (rotating hands). All times are **original narration times**; `render.py` passes `tmap=sh` so the hook shift and countdown splice apply exactly like the scene list. Deterministic (seeded) so any frame can be re-rendered alone.
+3. **`src/colorink.py`** — `render_rgba()` / `grain_rgba()` for transparent sprites; `people.FACE` (in `people.py`) adds closed-eye and open-mouth variants without changing static art.
+4. **`render.py`** — if `cases/caseNN.py` defines `ANIM`, art and pan scenes (and the hook / cast strip) are drawn through `anim.Scene` instead of a flat PNG. Cases 1–3 have no `ANIM` and are unchanged.
+
+Art scripts that use layers (e.g. `art_case04.py`) still work as stills: the plate alone is a valid picture. Cases without `ANIM` keep the old flat-PNG path.
+
+## Case 4: The Sandbar at High Tide (colour-detailed + simple animations)
+Configured in `src/cases/case04.py` (`STYLE = "color-detailed"`, with `ANIM`), art by `src/art_case04.py` → `work/art-04/` (plates + parts), characters in `src/people4.py`. Narration is the audiobook's Kokoro af_heart chapter; the hook line was made locally with `hook_audio.py`.
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-04-the-sandbar-at-high-tide-vertical.mp4` | 1080x1920 | ~3:13 |
+| `standalone-03-tidewhistle-case-04-the-sandbar-at-high-tide-wide.mp4` | 1920x1080 | ~3:13 |
+| `shorts/standalone-03-tidewhistle-case-04-the-sandbar-at-high-tide-short-part1.mp4` / `-part2.mp4` | Shorts | ~2:01 / ~1:09 |
+
+- **Hook (0:00 to 0:05.3):** "Who took the brass compass? 🧭" over the empty office windowsill (dashed ring where the compass sat), clock hands ticking, a boat bobbing beyond the mullions, gulls and wave glints, with the three suspects (Morwenna with flowers, Pip with a pamphlet, Mr Rundle with his pipe) under it, all equal. Narration: "A brass compass has vanished, and only one clue gives the thief away. Can you spot it?"
+- **Animated scenes:** harbour (Quill chalks "High water at noon" with a write-on wipe, talks, Agnes walks in with scones, bunting flaps, boats bob, gulls, waves); sandbar (diggers at low tide, then a rising-tide reveal of the high-water plate); office window (compass + needle, then empty ring after 12:30, clock from 11:30 toward 12:30); quay (Ollie walks in); 3-panel lineup (Morwenna / Pip / Mr Rundle, equal idle+blink+nod; Mr Rundle talks on his line; steam over the tearoom teapot); Agnes at the tide board; solution sandbar (ghost digger, tide-board inset, depth mark); boat (rope lifts to reveal the compass with a sparkle); returned (Mr Rundle sheepish → hands compass to Quill → smile).
+- **Suspects stay equal before the solution.** Same height, stance, idle, blink and nod on introduction. Only after "The Solution." does Mr Rundle look sheepish and hand the compass back.
+- **Notebook** (`clues/case-04.json`): tide board "High water at noon", big tide over the sandbar, man's-height depth, compass on the sill (seen 11:30, gone 12:30), and for each suspect where they were / what they said. Solution: Mr Rundle circled, his sandbar claim circled, the tide facts ticked, a note, then Morwenna and Pip struck through.
+- Countdown starts after "...the solution follows."
+
+Rebuild:
+```
+cd src
+python3 art_case04.py            # plates + part sprites -> ../work/art-04/ (~1–2 min on 8 CPUs)
+/tmp/tts/venv/bin/python hook_audio.py "A brass compass has vanished, and only one clue gives the thief away. Can you spot it?" ../work/hook-04.wav
+python3 render.py vertical --case=4 && python3 render.py wide --case=4 && python3 make_shorts.py --case=4
+```
+Previews: `previews/case04-anim-*.png`, short clip `previews/case04-anim-preview.mp4`. YouTube text: `shorts/case-04-youtube.md`.

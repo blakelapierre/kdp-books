@@ -190,3 +190,42 @@ def render_color(path, w_in, h_in, fn, seed=1, dpi=300, grain=True):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     im.save(path, dpi=(dpi, dpi), optimize=True)
     return path
+
+def render_rgba(path, w_in, h_in, fn, seed=1, dpi=300, grain=True, crop=None):
+    """Like render_color(), but on a TRANSPARENT page (pdftocairo -transp): for animation sprites (anim.py).
+    The same paper grain is applied to the colour (it moves with the sprite). crop=(x0, y0, x1, y1) in pixels
+    crops the result (sprite variants share one box so they swap cleanly). Returns the RGBA image (and saves it
+    if path is given)."""
+    from PIL import Image
+    import numpy as np
+    tmpd = tempfile.mkdtemp(); pdf = os.path.join(tmpd, "a.pdf")
+    c = rlcanvas.Canvas(pdf, pagesize=(w_in * 72, h_in * 72))
+    fn(_BWCanvas(c) if is_bw() else c, w_in * 72, h_in * 72)
+    c.showPage(); c.save()
+    subprocess.run(["pdftocairo", "-r", str(dpi), "-png", "-transp", "-singlefile", pdf, os.path.join(tmpd, "a")], check=True)
+    im = Image.open(os.path.join(tmpd, "a.png")).convert("RGBA")
+    if is_bw():
+        rgb = im.convert("RGB").convert("L").point([255 if v >= 200 else 0 if v <= 70 else int((v - 70) * 255 / 130) for v in range(256)])
+        im = Image.merge("RGBA", (rgb, rgb, rgb, im.getchannel("A"))); grain = False
+    if crop is not None: im = im.crop(crop)
+    if grain: im = grain_rgba(im, seed)
+    for f_ in os.listdir(tmpd): os.remove(os.path.join(tmpd, f_))
+    os.rmdir(tmpd)
+    if path:
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True); im.save(path, optimize=False, compress_level=1)
+    return im
+
+def grain_rgba(im, seed=1):
+    """The render_color() paper grain / pigment mottle, applied to an RGBA sprite's colour."""
+    from PIL import Image
+    import numpy as np
+    W, H = im.size; rng = np.random.default_rng(seed)
+    def field(cell, amp):
+        small = rng.normal(0, 1, (max(2, H // cell), max(2, W // cell))).astype(np.float32)
+        return np.asarray(Image.fromarray(small, mode="F").resize((W, H), Image.BICUBIC)) * amp
+    mottle = field(90, 0.013) + field(28, 0.009) + field(6, 0.006)
+    arr = np.asarray(im.convert("RGBA")).astype(np.float32) / 255.0; a = arr[..., :3]
+    lum = a.mean(axis=2, keepdims=True); k = np.clip((lum - 0.25) / 0.5, 0, 1)
+    white = np.clip((a.min(axis=2, keepdims=True) - 0.84) / 0.1, 0, 1); k = k * (1.0 - 0.8 * white)
+    arr[..., :3] = np.clip(a * (1.0 + mottle[..., None] * k), 0, 1)
+    return Image.fromarray((arr * 255 + 0.5).astype(np.uint8), "RGBA")
