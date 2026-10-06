@@ -1,0 +1,32 @@
+{
+  "case": "Case 6 · The Closed Post Office",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-sunday", "section": "facts", "text": "It is Sunday morning in Tidewhistle Cove", "at": {"seg": 2, "phrase": "Sunday"}},
+    {"id": "f-closed", "section": "facts", "text": "Post office: blind down, CLOSED sign on the door", "at": {"seg": 2, "phrase": "blind down"}},
+    {"id": "f-blanket", "section": "facts", "text": "Wenna's pale blue puffin blanket, wrapped to post Monday", "at": {"seg": 3, "phrase": "puffins"}},
+    {"id": "f-porch", "section": "facts", "text": "Left on the porch bench Saturday evening — gone Sunday morning", "at": {"seg": 4, "phrase": "gone"}},
+    {"id": "f-craft", "section": "facts", "text": "Post office does sell local knitting on its craft counter", "at": {"seg": 9, "phrase": "craft counter"}},
+    {"id": "tamsin", "section": "who", "name": "Tamsin Trevelyan", "text": "at church since ten", "at": {"seg": 5, "phrase": "church"}},
+    {"id": "jago", "section": "who", "name": "Jago Penhallow", "text": "baking since five with two helpers; never left", "at": {"seg": 5, "phrase": "bakery"}},
+    {"id": "garland", "section": "who", "name": "Mr Garland", "text": "visitor at the inn; holding the puffin blanket", "at": {"seg": 6, "phrase": "Mr Garland"}},
+    {"id": "garland-said", "section": "who", "parent": "garland", "text": "\"I bought this at the post office this morning.\"", "at": {"seg": 8, "phrase": "post office this morning"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "garland", "span": "name", "at": {"seg": 15, "phrase": "took"}},
+    {"do": "circle", "item": "garland-said", "at": {"seg": 16, "phrase": "bought"}},
+    {"do": "check", "item": "f-sunday", "at": {"seg": 16, "phrase": "Sunday"}},
+    {"do": "check", "item": "f-closed", "at": {"seg": 16, "phrase": "closed"}},
+    {"do": "strike", "item": ["tamsin"], "at": {"seg": 17, "phrase": "church"}},
+    {"do": "strike", "item": ["jago"], "at": {"seg": 17, "phrase": "bakery"}},
+    {"do": "note", "text": "Nobody could buy anything at a closed post office. His story cannot be true.", "at": {"seg": 16, "phrase": "Nobody"}, "hold": 5.0},
+    {"do": "check", "item": "f-blanket", "at": {"seg": 18, "phrase": "puffins"}},
+    {"do": "check", "item": "f-porch", "at": {"seg": 18, "phrase": "porch"}}
+  ]
+}

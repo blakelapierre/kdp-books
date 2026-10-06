@@ -132,15 +132,19 @@ class Layout:
         s.fmt = fmt
         if fmt == "vertical":
             s.W, s.H = 1080, 1920
-            s.view = (80, 148, 1000, 838)                  # 920 x 690 art (4:3)
-            s.cap = (40, 852, 1040, 1022); s.cap_size = 56
-            s.nb = (30, 1032, 1050, 1902)                  # notebook, lower part of the screen
+            # Art a touch shorter so a mid-screen QUESTION BAR sits between illustration and notebook.
+            s.view = (80, 120, 1000, 760)                  # 920 x 640 art (4:3-ish)
+            s.qbar = (40, 772, 1040, 900)                  # persistent case question (Blake 2026-10-06)
+            s.cap = (40, 908, 1040, 1020); s.cap_size = 48 # spoken captions under the question bar
+            s.nb = (30, 1030, 1050, 1902)                  # notebook, lower part of the screen
         else:
             s.W, s.H = 1920, 1080
-            s.view = (44, 112, 948, 790)                   # 904 x 678 art (4:3)
-            s.cap = (20, 806, 972, 1066); s.cap_size = 54
+            s.view = (44, 90, 948, 720)                    # art
+            s.qbar = (44, 728, 948, 800)                   # question under art
+            s.cap = (20, 808, 972, 1066); s.cap_size = 50
             s.nb = (988, 26, 1898, 1056)                   # notebook, right-hand column
         s.vw, s.vh = s.view[2] - s.view[0], s.view[3] - s.view[1]
+        s.show_qbar = getattr(C, "SHOW_QBAR", False)
         s.cache = {}
         s.notebook = Notebook(CLUES, TIM["words"], s.nb[2] - s.nb[0], s.nb[3] - s.nb[1], max_fs=44, min_fs=28)
 
@@ -246,6 +250,30 @@ def viewport(L, sc, t):
         return scene.frame(t, (bx, by, bw, bh), (L.vw, L.vh))
     im = art(key); bx, by, bw, bh = _view_box(sc, t, im.width, im.height)
     return im.resize((L.vw, L.vh), Image.BILINEAR, box=(bx, by, bx + bw, by + bh))
+
+
+def question_bar(L, t):
+    """Persistent mid-screen case question (between illustration and notebook). High-contrast banner."""
+    if not getattr(L, "show_qbar", False) or not hasattr(L, "qbar"): return None
+    x0, y0, x1, y1 = L.qbar; w, h = x1 - x0, y1 - y0
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    # solid banner with double border so it reads even on a busy feed thumbnail
+    d.rounded_rectangle([4, 4, w - 5, h - 5], radius=18, fill=ARTPAPER + (245,), outline=INK + (255,), width=4)
+    d.rounded_rectangle([12, 12, w - 13, h - 13], radius=12, outline=ACCENT + (255,), width=2)
+    # small label
+    lab = "THE QUESTION"; f0 = F("plex", 28 if L.fmt == "vertical" else 24)
+    tw = d.textlength(lab, font=f0); d.text(((w - tw) / 2, 16), lab, font=f0, fill=ACCENT + (255,))
+    # question text, wrapped
+    f = F("crimb", 40 if L.fmt == "vertical" else 34)
+    lines = wrap(d, C.QUESTION, f, w - 60)
+    # shrink if too many lines
+    while len(lines) > 3 and f.size > 28:
+        f = F("crimb", f.size - 2); lines = wrap(d, C.QUESTION, f, w - 60)
+    lh = int(f.size * 1.15); total = len(lines) * lh
+    y = max(44, (h - total) / 2 + 6)
+    for ln in lines:
+        tw = d.textlength(ln, font=f); d.text(((w - tw) / 2, y), ln, font=f, fill=INK + (255,)); y += lh
+    return im
 
 def ask_panel(t):
     W, H = 1000, 750
@@ -406,6 +434,10 @@ def scene_frame(L, sc, t):
     im.paste(v, L.view[:2])
     nb = L.notebook.render(t, review=(sc["k"] == "ask"))
     im.paste(nb, L.nb[:2], nb)
+    # Mid-screen question bar (between art and notebook) — always on for art/pan/ask when SHOW_QBAR
+    if L.show_qbar and sc["k"] in ("art", "pan", "ask"):
+        qb = question_bar(L, t)
+        if qb is not None: im.paste(qb, L.qbar[:2], qb)
     note = L.notebook.note_image(t, int(L.vw * 0.64), 36 if L.fmt == "vertical" else 34) if sc["k"] in ("art", "pan") else None
     if note is not None: im.paste(note, (L.view[0] + 20, L.view[3] - note.height - 18), note)
     return im

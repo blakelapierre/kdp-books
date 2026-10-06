@@ -194,3 +194,28 @@ python3 art_case05.py
 python3 render.py vertical --case=5 && python3 render.py wide --case=5 && python3 make_shorts.py --case=5
 ```
 Previews: `previews/case05-*.png`. YouTube text: `shorts/case-05-youtube.md`.
+
+## Case 6: The Closed Post Office (colour-detailed + simple animations + mid-screen question)
+Configured in `src/cases/case06.py` (`STYLE = "color-detailed"`, `SHOW_QBAR = True`, with `ANIM`), art by `src/art_case06.py` → `work/art-06/`, characters in `src/people4.py` (new: `garland`, `wenna` wrapper; plus jago / tamsin / agnes). Narration is the audiobook's Kokoro af_heart chapter; the hook line was made locally with `hook_audio.py`. Part sprites use `part_open` (no baked border).
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-06-the-closed-post-office-vertical.mp4` | 1080x1920 | 3:12 |
+| `standalone-03-tidewhistle-case-06-the-closed-post-office-wide.mp4` | 1920x1080 | 3:12 |
+| `shorts/standalone-03-tidewhistle-case-06-the-closed-post-office-short-part1.mp4` / `-part2.mp4` | Shorts | 2:00 / 1:10 |
+
+- **Unique hook:** extreme close-up of the post-office door — striped blind, giant CLOSED / SUNDAY plaque, pale blue puffin blanket draped in the foreground — plus a postage-stamp cast strip. Warm Sunday-gold sky (not allotment green / harbour blue) so the first frames do not look like Cases 1–5.
+- **Mid-screen question bar:** `SHOW_QBAR` in the case config; `render.py` draws a persistent "THE QUESTION" banner between the illustration and Agnes's Notebook for every art/pan/ask frame (Blake 2026-10-06).
+- **Scenes:** Sunday street (church + Kettle & Gull + closed PO); porch with wrapped parcel; empty porch; street meet (Tamsin church / Jago bakery alibis); Garland at the inn with the blanket; Agnes looking down the street at the closed PO; ask + countdown; 3-panel lineup (Garland / Tamsin / Jago); returned Monday (PO open, sheepish Garland, postage).
+- **Part 2 Short** opens with a ~2 s recap of the question (feed discovery).
+- **Notebook** (`clues/case-06.json`): Sunday, blind down + CLOSED, puffin blanket, porch gone, craft counter, each suspect's alibi / claim. Solution: Garland circled, closed-Sunday facts ticked, Tamsin and Jago struck through, note that nobody could buy anything at a closed post office.
+- **Visual checklist:** `shorts/case-06-visual-checklist.md`.
+
+Rebuild:
+```
+cd src
+python3 art_case06.py
+/tmp/tts/venv/bin/python hook_audio.py "A knitted puffin blanket has vanished on a Sunday morning, and only one story cannot be true. Can you spot why?" ../work/hook-06.wav
+python3 render.py vertical --case=6 && python3 render.py wide --case=6 && python3 make_shorts.py --case=6
+```
+Previews: `previews/case06-*.png`. YouTube text: `shorts/case-06-youtube.md`.

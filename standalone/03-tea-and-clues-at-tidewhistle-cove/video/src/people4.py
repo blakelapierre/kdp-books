@@ -381,4 +381,65 @@ def tamsin(k, x, y, h, expr="smile", flip=False, prop="duster"):
     """Tamsin Trevelyan (people3.tamsin): polka-dot dress, cardigan, pencil behind ear."""
     P3.tamsin(k, x, y, h, expr=expr, flip=flip, prop=prop)
 
-CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin)
+
+def puffin_blanket(f, x=6.0, y=58.0, folded=True):
+    """Pale blue knitted blanket with white puffins, draped over the right arm (figure frame)."""
+    k = f.k
+    # folded rectangle hanging from the forearm
+    pts = [(x - 2.0, y + 2.0, 0), (x + 10.5, y + 4.5, 0), (x + 9.0, y - 10.0, 0), (x - 3.2, y - 12.0, 0)]
+    with k.tint(C(176, 210, 230)):
+        f.shape(pts, lw=0.9)
+    f.hatch(pts, angle=18, gap=1.4, lw=0.22, color=C(150, 186, 210))  # knit rows
+    f.shape(pts, lw=0.9, fill=None)
+    # puffin row along the lower edge
+    for i, px in enumerate((x - 0.5, x + 2.2, x + 4.9, x + 7.6)):
+        py = y - 8.5 + (i % 2) * 0.6
+        f.shape(ell(px, py, 1.15, 1.45, n=12), lw=0.35, fill=C(250, 250, 248))  # body
+        f.shape(ell(px + 0.15, py + 0.85, 0.7, 0.7, n=10), lw=0.3, fill=C(40, 44, 52))  # head
+        f.dot(px + 0.35, py + 0.95, 0.18, fill=Wt)
+        f.shape([(px + 0.7, py + 0.85), (px + 1.5, py + 0.7), (px + 0.75, py + 0.55)], lw=0.25, fill=C(240, 140, 70))
+
+def garland(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Mr Garland, a visitor staying at the inn: tweed jacket, cream waistcoat, trilby, holding the puffin blanket."""
+    with Fig(k, x, y, h, flip) as f:
+        trou = [(-8.0, 50, 0), (-7.7, 26), (-7.1, 3.6, 0), (-1.2, 3.6, 0), (-0.8, 38), (0.8, 38), (1.2, 3.6, 0), (7.1, 3.6, 0), (7.7, 26), (8.0, 50, 0)]
+        with k.tint(C(86, 92, 110)):
+            f.shape(trou, lw=1.0); f.hatch(trou, angle=45, gap=1.3, lw=0.28, cross=True); f.shape(trou, lw=1.0, fill=None)
+        with k.tint(None, dark=C(40, 36, 34)):
+            for sg in (-1, 1): shoe(f, sg * 4.0, sg, top=3.6)
+        # cream waistcoat
+        vest = [(-2.6, 81.6), (-9.0, 79.4), (-9.6, 70), (-8.4, 58), (-7.6, 48.5, 0), (7.6, 48.5, 0), (8.4, 58), (9.6, 70), (9.0, 79.4), (2.6, 81.6)]
+        with k.tint(C(236, 226, 200)):
+            f.shape(vest, lw=1.0)
+        for by in (74, 66, 58): f.dot(0, by, 0.55, fill=PAL.brass, lw=0.3)
+        # tweed jacket open over vest
+        jack = [(-2.8, 82.0), (-11.8, 79.6), (-12.8, 72), (-12.2, 60), (-13.0, 44.0, 0.6), (0, 43.2), (13.0, 44.0, 0.6), (12.2, 60), (12.8, 72), (11.8, 79.6), (2.8, 82.0)]
+        with k.tint(C(150, 124, 92), hatch=C(120, 96, 70)):
+            f.shape(jack, lw=1.1); f.hatch(jack, angle=-55, gap=1.5, lw=0.28, box=(7.5, 43, 14, 82)); f.shape(jack, lw=1.1, fill=None)
+        for sg in (-1, 1):
+            f.shape([(sg * 2.4, 81.8, 0), (sg * 8.0, 80.0), (sg * 8.6, 74.0, 0), (sg * 3.8, 70.0, 0), (sg * 0.6, 66.5, 0)], lw=0.7)  # lapels
+        sleeve_arm(f, L_ARM, 2.7, C(150, 124, 92), cuff=2, hatch=dict(angle=-55, gap=1.6, lw=0.25))
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
+        sleeve_arm(f, R_ARM, 2.7, C(150, 124, 92), cuff=2, hatch=dict(angle=-55, gap=1.6, lw=0.25))
+        if prop: puffin_blanket(f)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 1.0)
+        with k.tint(SKIN): neck(f, CY, w=2.4)
+        face(f, expr, rx=6.1, ry=7.3, jaw=0.7, nose="long", brows="thick")
+        # neat moustache
+        with k.tint(C(90, 70, 55)):
+            f.shape([(-3.2, CY - 1.6), (-0.4, CY - 2.4), (0.4, CY - 2.4), (3.2, CY - 1.6), (2.6, CY - 2.8), (0, CY - 3.2), (-2.6, CY - 2.8)], lw=0.5)
+        with k.tint(C(70, 55, 45)):
+            for sg in (-1, 1): f.shape([(sg * 5.8, CY + 3.4, 0), (sg * 6.4, CY + 0.4), (sg * 5.5, CY + 0.2), (sg * 5.3, CY + 3.0, 0)], lw=0.4, fill=K)
+        # trilby
+        with k.tint(C(92, 74, 58)):
+            brim = [(-9.0, CY + 3.4), (-7.5, CY + 4.6), (0, CY + 5.2), (7.5, CY + 4.6), (9.0, CY + 3.4), (7.6, CY + 2.6), (0, CY + 2.8), (-7.6, CY + 2.6)]
+            f.shape(brim, lw=0.9)
+            crown = [(-5.4, CY + 3.6), (-5.8, CY + 8.4), (-3.6, CY + 12.2), (0, CY + 13.0), (3.6, CY + 12.2), (5.8, CY + 8.4), (5.4, CY + 3.6)]
+            f.shape(crown, lw=0.9)
+            f.shape([(-5.6, CY + 5.8, 0), (5.6, CY + 5.8, 0), (5.6, CY + 7.4, 0), (-5.6, CY + 7.4, 0)], lw=0.5, fill=C(70, 110, 130))  # band
+
+def wenna(k, x, y, h, expr="neutral", flip=False, prop=True, scarf=False, book=False):
+    """Wenna Polglaze (people3.wenna): camel coat, curly bun."""
+    P3.wenna(k, x, y, h, expr=expr, flip=flip, prop=prop, scarf=scarf, book=book)
+
+CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin, garland=garland, wenna=wenna)
