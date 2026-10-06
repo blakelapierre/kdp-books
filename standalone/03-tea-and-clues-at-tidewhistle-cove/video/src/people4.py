@@ -321,4 +321,64 @@ def ollie(k, x, y, h, expr="smile", flip=False):
         f.ring(bx, by, R * 0.45, lw=0.4, fill=NAVY); f.dot(bx, by, R * 0.18, fill=PAL.silver)
         f.curve([(-6.4, CY + 3.0), (-5.6, CY - 4.4), (-2.0, CY - 7.0), (2.0, CY - 7.0), (5.6, CY - 4.4), (6.4, CY + 3.0)], lw=0.45)
 
-CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie)
+
+def bread_roll(f):
+    """Small cob loaf in the right hand (figure frame), for Jago in the shared suspect pose."""
+    k = f.k; x, y = 7.2, 60.5
+    with k.tint(C(226, 178, 112)):
+        f.shape(ell(x, y + 4.2, 5.2, 3.4, n=18), lw=0.7)
+    f.curve([(x - 2.4, y + 5.2), (x, y + 6.4), (x + 2.6, y + 5.0)], lw=0.4, color=C(180, 130, 70))
+    f.hatch(ell(x, y + 4.2, 5.2, 3.4, n=18), angle=55, gap=1.2, lw=0.25, box=(x + 1, y, x + 6, y + 8), color=C(180, 130, 70))
+
+def jago(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Jago Penhallow, baker: white shirt, blue-striped apron, baker's toque, flour dust; shared suspect pose with a bread roll."""
+    with Fig(k, x, y, h, flip) as f:
+        trou = [(-8.2, 52, 0), (-7.9, 26), (-7.3, 3.6, 0), (-1.2, 3.6, 0), (-0.8, 40), (0.8, 40), (1.2, 3.6, 0), (7.3, 3.6, 0), (7.9, 26), (8.2, 52, 0)]
+        with k.tint(C(92, 96, 110)):
+            f.shape(trou, lw=1.0); f.hatch(trou, angle=45, gap=1.2, lw=0.28, cross=True); f.shape(trou, lw=1.0, fill=None)
+        with k.tint(None, dark=C(40, 36, 34)):
+            for sg in (-1, 1): shoe(f, sg * 4.2, sg, top=3.6)
+        shirt = [(-2.8, 82.4), (-11.6, 80.0), (-12.2, 72), (-10.4, 60), (-9.2, 50.5, 0), (9.2, 50.5, 0), (10.4, 60), (12.2, 72), (11.6, 80.0), (2.8, 82.4)]
+        with k.tint(C(248, 246, 240)):
+            f.shape(shirt, lw=1.1); f.hatch(shirt, angle=90, gap=2.0, lw=0.28); f.shape(shirt, lw=1.1, fill=None)
+            for sg in (-1, 1): f.shape([(0, 79.0, 0), (sg * 0.8, 83.4, 0), (sg * 3.6, 82.2, 0), (sg * 2.6, 78.4, 0)], lw=0.6)
+        # blue-striped apron bib + skirt
+        apr = [(-6.0, 76.0, 0), (6.0, 76.0, 0), (7.0, 62, 0), (11.0, 58.0, 0), (12.0, 40), (12.4, 20.0, 0), (-12.4, 20.0, 0), (-12.0, 40), (-11.0, 58.0, 0), (-7.0, 62, 0)]
+        with k.tint(C(250, 250, 248)):
+            f.shape(apr, lw=1.0)
+        f.clip(apr)
+        for gy in range(22, 76, 5):
+            f.shape([(-14, gy, 0), (14, gy, 0), (14, gy + 2.2, 0), (-14, gy + 2.2, 0)], lw=0, stroke=False, fill=C(120, 160, 200))
+        f.unclip(); f.shape(apr, lw=1.0, fill=None)
+        f.curve([(-3.6, 75.5), (-5.5, 80.8)], lw=0.9); f.curve([(3.6, 75.5), (5.5, 80.8)], lw=0.9)
+        for i in range(12): f.ring(f.r.uniform(-10, 10), f.r.uniform(24, 68), f.r.uniform(0.25, 0.55), lw=0.22)  # flour
+        sleeve_arm(f, L_ARM, 2.6, C(248, 246, 240), skin_from=3, cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
+        sleeve_arm(f, R_ARM, 2.6, C(248, 246, 240), skin_from=3, cuff=2)
+        if prop: bread_roll(f)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 1.0)
+        with k.tint(SKIN): neck(f, CY, w=2.5)
+        face(f, expr, rx=6.2, ry=7.3, jaw=0.72, nose="button", brows="thick", blush=(expr == "sheepish"))
+        # short beard
+        with k.tint(C(90, 70, 55)):
+            for sg in (-1, 1): f.shape([(sg * 1.2, CY - 3.2), (sg * 4.6, CY - 2.0), (sg * 4.8, CY - 4.6), (sg * 2.0, CY - 5.4), (0, CY - 5.8)], lw=0.5)
+        with k.tint(C(70, 55, 45)):
+            for sg in (-1, 1): f.shape([(sg * 5.8, CY + 3.6, 0), (sg * 6.4, CY + 0.4), (sg * 5.6, CY + 0.2), (sg * 5.4, CY + 3.2, 0)], lw=0.4, fill=K)
+        # baker's toque
+        band = [(-6.6, CY + 3.6, 0), (6.6, CY + 3.6, 0), (6.9, CY + 7.4, 0), (-6.9, CY + 7.4, 0)]
+        puff = [(-6.8, CY + 7.0), (-9.2, CY + 9.6), (-9.0, CY + 13.4), (-6.0, CY + 15.8), (-2.6, CY + 16.4), (0, CY + 17.4), (2.8, CY + 16.4), (6.2, CY + 15.8), (9.0, CY + 13.4), (9.2, CY + 9.6), (6.8, CY + 7.0)]
+        with k.tint(C(250, 250, 246)):
+            f.shape(puff, lw=1.0)
+            for u in (-5.6, -2.8, 0, 2.8, 5.6): f.curve([(u * 0.95, CY + 7.6), (u * 1.2, CY + 11.6), (u * 1.0, CY + 15.6)], lw=0.35)
+            f.shape(band, lw=0.9)
+            for u in range(-6, 7, 2): f.curve([(u, CY + 3.8), (u + 0.1, CY + 7.2)], lw=0.3)
+
+def hedley(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Hedley Truscott (people3.hedley): tweed, brown cap, fishing book."""
+    P3.hedley(k, x, y, h, expr=expr, flip=flip, prop=prop)
+
+def tamsin(k, x, y, h, expr="smile", flip=False, prop="duster"):
+    """Tamsin Trevelyan (people3.tamsin): polka-dot dress, cardigan, pencil behind ear."""
+    P3.tamsin(k, x, y, h, expr=expr, flip=flip, prop=prop)
+
+CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin)

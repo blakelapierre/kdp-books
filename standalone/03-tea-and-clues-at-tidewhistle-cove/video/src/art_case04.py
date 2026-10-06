@@ -184,7 +184,18 @@ class Ink4(A3.ShopC):
                                                     (px + w * 0.09 * math.cos(q) + 1.5, py + w * 0.09 * math.sin(q))], lw=0.4, fill=P4.LILY, amp=0)
 
 # ============================================================================= helpers
-def frame_open(k, w, h): k.frame2(w, h); k.clip_rect(14, 14, w - 14, h - 14)
+def plate_open(k, w, h):
+    """Still plate: decorative double-frame + clip. Use only on plate layers (never animated)."""
+    k.frame2(w, h); k.clip_rect(14, 14, w - 14, h - 14)
+
+def part_open(k, w, h):
+    """Moving PART sprite: clip only — no frame2. Baking the border into a part made it rotate/bob with the sprite (Case 4 artifact)."""
+    k.clip_rect(14, 14, w - 14, h - 14)
+
+def frame_open(k, w, h, border=True):
+    """Compat: plates default to border; pass border=False (or prefer part_open) for animated parts."""
+    if border: k.frame2(w, h)
+    k.clip_rect(14, 14, w - 14, h - 14)
 
 def harbour_backdrop(k, w, h, sea_y0=104, sea_y1=176, office=True):
     k.sky4(w, h, sea_y1)
@@ -195,7 +206,7 @@ def harbour_backdrop(k, w, h, sea_y0=104, sea_y1=176, office=True):
 
 # ----------------------------------------------------------------------------- 1. harbour: Quill chalks the tide board
 def harbour_plate(k, w, h):
-    frame_open(k, w, h); harbour_backdrop(k, w, h)
+    plate_open(k, w, h); harbour_backdrop(k, w, h)
     k.bunting(310, 482, 252, sag=12, n=0)       # the string only: the flags are animated parts
     k.board(116, 92, 130, 128, high=False)
     k.lobster_pot(470, 106, 28); k.bollard(30, 100, 14)
@@ -203,24 +214,24 @@ def harbour_plate(k, w, h):
 
 BUNT = [(310 + (482 - 310) * (i + 0.5) / 9, 252 - 12 * math.sin(math.pi * (i + 0.5) / 9)) for i in range(9)]
 def flag(k, w, h, v, i=0, pts=BUNT, size=8):
-    frame_open(k, w, h); px, py = pts[i]
+    part_open(k, w, h); px, py = pts[i]
     k.shape([(px - size / 2, py), (px + size / 2, py), (px, py - size * 1.2)], lw=0.5, fill=PAL.bunting[i % len(PAL.bunting)], amp=0)
     k.unclip()
 
 def pennant(k, w, h, v, x=482, y=330):
-    frame_open(k, w, h)
+    part_open(k, w, h)
     with k.tint(C(200, 70, 64)): k.shape([(x, y), (x + 26, y - 5), (x, y - 11)], lw=0.6, fill=Wt, amp=0)
     k.unclip()
 
 def chalk_line(k, w, h, v):
-    frame_open(k, w, h); k.board_high(116, 92, 130, 128); k.unclip()
+    part_open(k, w, h); k.board_high(116, 92, 130, 128); k.unclip()
 
-def quill_chalk(k, w, h, v): frame_open(k, w, h); P4.quill(k, 300, 40, 226, flip=True, arm="chalk"); k.unclip()
-def agnes_walk(k, w, h, v): frame_open(k, w, h); P4.agnes(k, 64, 34, 208); k.unclip()
+def quill_chalk(k, w, h, v): part_open(k, w, h); P4.quill(k, 300, 40, 226, flip=True, arm="chalk"); k.unclip()
+def agnes_walk(k, w, h, v): part_open(k, w, h); P4.agnes(k, 64, 34, 208); k.unclip()
 def boat_part(k, w, h, v, x=0, y=0, bw=40, col=BOATRED, sail=True, sailcol=None):
-    frame_open(k, w, h); k.boat4(x, y, bw, col, sail=sail, sailcol=sailcol); k.unclip()
+    part_open(k, w, h); k.boat4(x, y, bw, col, sail=sail, sailcol=sailcol); k.unclip()
 def cloud_part(k, w, h, v, x=0, y=0, s_=1.0):
-    frame_open(k, w, h)
+    part_open(k, w, h)
     for (dx, dy, r) in ((0, 0, 16), (16, 4, 13), (-15, 2, 11), (6, 10, 11), (28, -1, 9)):
         k.circle(x + dx * s_, y + dy * s_, r * s_, lw=0, fill=PAL.cloud, stroke=False)
     k.unclip()
@@ -246,7 +257,7 @@ def steam_fx(k, w, h, v):
 # ----------------------------------------------------------------------------- 2. sandbar at low / high tide
 SAND_PTS = [(60, 116), (110, 128), (170, 136), (240, 140), (300, 136), (350, 126), (392, 116)]
 def sandbar_plate(k, w, h, high=False):
-    frame_open(k, w, h)
+    plate_open(k, w, h)
     k.sky4(w, h, 236)
     for (cx, cy, s_) in ((w * 0.2, h * 0.84, 1.0), (w * 0.62, h * 0.9, 0.7)): pass
     k.headland(14, 150, 235, 24, col=PAL.headland); k.headland(330, w - 14, 235, 18, col=shade(PAL.headland, 0.95))
@@ -281,7 +292,7 @@ def sandbar_plate(k, w, h, high=False):
     k.unclip()
 
 def diggers(k, w, h, v):
-    frame_open(k, w, h)
+    part_open(k, w, h)
     for (x, col, hat) in ((176, PAL.walls[1], PAL.straw), (226, PAL.walls[2], None), (300, PAL.walls[0], None)):
         F.guest(k, x, 132, 30, col, hat=hat, hair=PAL.hair_dark if hat is None else None)
         k.shape([(x + 6, 132), (x + 10, 132), (x + 10.6, 137), (x + 5.4, 137)], lw=0.45, fill=C(110, 150, 200), amp=0)
@@ -289,7 +300,7 @@ def diggers(k, w, h, v):
 
 def ghost(k, w, h, v):
     """Solution: a dashed outline of a digger standing on the sandbar, labelled with Mr Rundle's claim."""
-    frame_open(k, w, h)
+    part_open(k, w, h)
     k.c.saveState(); k.c.setDash(3, 2); k.c.setStrokeColor(C(150, 50, 40)); k.c.setLineWidth(1.0)
     x, y, hh = 236, 140, 54
     k.c.circle(x, y + hh * 0.86, hh * 0.1, stroke=1, fill=0)
@@ -303,11 +314,11 @@ def ghost(k, w, h, v):
     k.unclip()
 
 def tideboard_inset(k, w, h, v):
-    frame_open(k, w, h); k.board(30, 252, 120, 86, high=True, legs=False, scale=1.0); k.unclip()
+    part_open(k, w, h); k.board(30, 252, 120, 86, high=True, legs=False, scale=1.0); k.unclip()
 
 def depth(k, w, h, v):
     """Solution: the depth of water over the sandbar at noon, against a man's height."""
-    frame_open(k, w, h)
+    part_open(k, w, h)
     x = 318; ytop, ybot = 228, 138
     col = C(150, 50, 40)
     k.line([(x, ybot + 2), (x, ytop - 2)], lw=1.4, amp=0, color=col)
@@ -327,7 +338,7 @@ def depth(k, w, h, v):
 # ----------------------------------------------------------------------------- 3. inside the office: the windowsill
 WIN = (112, 150, 228, 186)   # window x, y, w, h
 def window_plate(k, w, h, hook=False):
-    frame_open(k, w, h)
+    plate_open(k, w, h)
     k.wash_rect(14, 14, w - 14, h - 14, WALLW)
     k.wash_rect(14, 14, w - 14, 104, PANEL)   # panelled dado
     for i in range(int((w - 28) / 46) + 1):
@@ -370,7 +381,7 @@ def window_plate(k, w, h, hook=False):
     k.unclip()
 
 def mullions(k, w, h, v):
-    frame_open(k, w, h); x, y, ww, hh = WIN
+    part_open(k, w, h); x, y, ww, hh = WIN
     k.c.setStrokeColor(K); k.c.setLineWidth(1.2); k.c.rect(x, y, ww, hh, stroke=1, fill=0)
     for (x0, y0, x1, y1) in ((x + ww / 2, y, x + ww / 2, y + hh), (x, y + hh * 0.55, x + ww, y + hh * 0.55)):
         k.rect(min(x0, x1) - 2.5 if x0 == x1 else x0, min(y0, y1) - 2.5 if y0 == y1 else y0, 5 if x0 == x1 else x1 - x0, 5 if y0 == y1 else y1 - y0, lw=0.7, fill=PAL.cloud)
@@ -384,31 +395,31 @@ def mullions(k, w, h, v):
 
 CMP = (226, 150, 66)   # compass base centre x, y and width on the sill
 def compass_part(k, w, h, v):
-    frame_open(k, w, h); k.compass4(*CMP, needle=False); k.unclip()
+    part_open(k, w, h); k.compass4(*CMP, needle=False); k.unclip()
 def needle_part(k, w, h, v):
-    frame_open(k, w, h); x, y, cw = CMP; k.needle(x, y + cw * 0.64, cw); k.unclip()
+    part_open(k, w, h); x, y, cw = CMP; k.needle(x, y + cw * 0.64, cw); k.unclip()
 def ring_part(k, w, h, v):
-    frame_open(k, w, h); x, y, cw = CMP
+    part_open(k, w, h); x, y, cw = CMP
     k.c.saveState(); k.c.setDash(2, 2); k.c.setStrokeColor(shade(PAL.cloud, 0.6)); k.c.setLineWidth(0.8)
     k.c.rect(x - cw * 0.55, y + 0.6, cw * 1.1, 2.2, stroke=1, fill=0); k.c.restoreState()
     k.unclip()
 def hand_part(k, w, h, v, L=0.5, wd=2.2):
-    frame_open(k, w, h); ccx, ccy, cr = 428, 318, 30
+    part_open(k, w, h); ccx, ccy, cr = 428, 318, 30
     k.shape([(ccx - wd, ccy), (ccx, ccy + cr * L), (ccx + wd, ccy), (ccx, ccy - 4)], lw=0.5, fill=C(40, 40, 46), amp=0)
     k.circle(ccx, ccy, 2.2, lw=0.4, fill=PAL.brass)
     k.unclip()
 def win_boat(k, w, h, v):
-    frame_open(k, w, h); x, y, ww, hh = WIN; k.boat4(x + ww * 0.3, y + hh * 0.3, 30, BOATRED, sailcol=PAL.cloud); k.unclip()
+    part_open(k, w, h); x, y, ww, hh = WIN; k.boat4(x + ww * 0.3, y + hh * 0.3, 30, BOATRED, sailcol=PAL.cloud); k.unclip()
 
 # ----------------------------------------------------------------------------- 4. Ollie on the quay
 def quay_plate(k, w, h):
-    frame_open(k, w, h); harbour_backdrop(k, w, h, office=False)
+    plate_open(k, w, h); harbour_backdrop(k, w, h, office=False)
     k.office(330, 106, 170, 200, win_compass=False)
     for (x, y, s_) in ((60, 110, 30), (92, 110, 26), (74, 136, 24)): k.lobster_pot(x, y, s_)
     k.bollard(150, 100, 16); k.rope_coil(196, 92, 40)
     k.flower_tub(306, 108, 18)
     k.unclip()
-def ollie_part(k, w, h, v): frame_open(k, w, h); P4.ollie(k, 240, 38, 228); k.unclip()
+def ollie_part(k, w, h, v): part_open(k, w, h); P4.ollie(k, 240, 38, 228); k.unclip()
 
 # ----------------------------------------------------------------------------- 5. lineup: Morwenna | Pip | Mr Rundle
 PW = 512
@@ -493,15 +504,15 @@ def lineup_agnes(k, w, h, v): k.c.saveState(); k.c.translate(PW, 0); k.clip_rect
 
 # ----------------------------------------------------------------------------- 6. Agnes at the blackboard
 def thinking_plate(k, w, h):
-    frame_open(k, w, h)
+    plate_open(k, w, h)
     k.sky4(w, h, 170); k.sea4(14, w - 14, 110, 172); k.headland(300, w - 14, 171, 20); k.quay(w, 114)
     k.board(196, 70, 270, 236, high=True)
     k.unclip()
-def agnes_think(k, w, h, v): frame_open(k, w, h); P4.agnes(k, 110, 30, 236); k.unclip()
+def agnes_think(k, w, h, v): part_open(k, w, h); P4.agnes(k, 110, 30, 236); k.unclip()
 
 # ----------------------------------------------------------------------------- 7. the boat (solution)
 def boat_plate(k, w, h):
-    frame_open(k, w, h)
+    plate_open(k, w, h)
     k.vgrad(14, 14, w - 14, h - 14, SEA, SEA2, steps=14)
     rr = random.Random(3)
     for j in range(10):
@@ -524,25 +535,25 @@ def boat_plate(k, w, h):
     k.circle(410, 180, 14, lw=0.9, fill=BUOY); k.line([(410, 194), (430, 214)], lw=0.8, amp=0.2)
     k.line([(330, 90), (470, 300)], lw=4, amp=0, color=PAL.wood); k.line([(330, 90), (470, 300)], lw=0.6, amp=0)   # an oar
     k.unclip()
-def boat_compass(k, w, h, v): frame_open(k, w, h); k.compass4(286, 146, 58); k.unclip()
-def boat_rope(k, w, h, v): frame_open(k, w, h); k.rope_coil(286, 150, 120); k.unclip()
+def boat_compass(k, w, h, v): part_open(k, w, h); k.compass4(286, 146, 58); k.unclip()
+def boat_rope(k, w, h, v): part_open(k, w, h); k.rope_coil(286, 150, 120); k.unclip()
 def sparkle_part(k, w, h, v):
-    frame_open(k, w, h); x, y, r = 300, 196, 12
+    part_open(k, w, h); x, y, r = 300, 196, 12
     k.shape([(x - r, y), (x - r * 0.16, y + r * 0.16), (x, y + r), (x + r * 0.16, y + r * 0.16), (x + r, y), (x + r * 0.16, y - r * 0.16), (x, y - r), (x - r * 0.16, y - r * 0.16)], lw=0, stroke=False, fill=C(255, 250, 220), amp=0)
     k.unclip()
 
 # ----------------------------------------------------------------------------- 8. returned: the compass goes home
 def returned_plate(k, w, h):
-    frame_open(k, w, h)
+    plate_open(k, w, h)
     k.sky4(w, h, 120); k.sea4(14, w - 14, 100, 122, rows=3); k.quay(w, 104)
     k.office(110, 102, 300, 300, win_compass=False)
     k.bunting(30, 110, 300, sag=8, n=0)
     k.unclip()
 RET_BUNT = [(30 + 80 * (i + 0.5) / 4, 300 - 8 * math.sin(math.pi * (i + 0.5) / 4)) for i in range(4)]
 def quill_ret(k, w, h, v):
-    frame_open(k, w, h); P4.quill(k, 170, 44, 236, arm="compass" if v.startswith("compass") else "down"); k.unclip()
+    part_open(k, w, h); P4.quill(k, 170, 44, 236, arm="compass" if v.startswith("compass") else "down"); k.unclip()
 def rundle_ret(k, w, h, v):
-    frame_open(k, w, h)
+    part_open(k, w, h)
     if v.startswith("base"): P4.rundle(k, 346, 44, 236, expr="sheepish", compass=True)
     elif v.startswith("given"): P4.rundle(k, 346, 44, 236, expr="sheepish", prop=False)
     else: P4.rundle(k, 346, 44, 236, expr="kind", prop=False)

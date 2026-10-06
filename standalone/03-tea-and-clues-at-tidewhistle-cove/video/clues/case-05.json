@@ -1,0 +1,37 @@
+{
+  "case": "Case 5 · The Marrow Mix-up",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-marrow", "section": "facts", "text": "Prize marrow on straw in Hedley's shed", "at": {"seg": 2, "phrase": "bed of straw"}},
+    {"id": "f-empty", "section": "facts", "text": "Thursday morning: the straw was empty", "at": {"seg": 3, "phrase": "straw was empty"}},
+    {"id": "f-four", "section": "facts", "text": "Four people at the allotments the evening before", "at": {"seg": 4, "phrase": "allotments"}},
+    {"id": "f-rule", "section": "facts", "text": "Rule: the thief will fib; everyone else tells the truth", "at": {"seg": 6, "phrase": "tell me a fib"}},
+    {"id": "jago", "section": "who", "name": "Jago Penhallow", "text": "baker", "at": {"seg": 4, "phrase": "Jago Penhallow"}},
+    {"id": "jago-said", "section": "who", "parent": "jago", "text": "\"It wasn't Hedley.\"", "at": {"seg": 7, "phrase": "wasn't Hedley"}},
+    {"id": "tamsin", "section": "who", "name": "Tamsin Trevelyan", "text": "at the allotments", "at": {"seg": 4, "phrase": "Tamsin Trevelyan"}},
+    {"id": "tamsin-said", "section": "who", "parent": "tamsin", "text": "\"It was either Jago or Morwenna.\"", "at": {"seg": 8, "phrase": "Jago or Morwenna"}},
+    {"id": "hedley", "section": "who", "name": "Hedley Truscott", "text": "grower; locked up last", "at": {"seg": 4, "phrase": "Hedley himself"}},
+    {"id": "hedley-said", "section": "who", "parent": "hedley", "text": "\"Tamsin is telling the truth.\"", "at": {"seg": 9, "phrase": "telling the truth"}},
+    {"id": "morwenna", "section": "who", "name": "Morwenna Day", "text": "florist", "at": {"seg": 4, "phrase": "Morwenna Day"}},
+    {"id": "morwenna-said", "section": "who", "parent": "morwenna", "text": "\"It wasn't me. And it wasn't Tamsin.\"", "at": {"seg": 10, "phrase": "wasn't me"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "morwenna", "span": "name", "at": {"seg": 17, "phrase": "took"}},
+    {"do": "circle", "item": "morwenna-said", "at": {"seg": 21, "phrase": "one lie"}},
+    {"do": "strike", "item": ["jago", "jago-said"], "at": {"seg": 18, "phrase": "doesn't work"}},
+    {"do": "strike", "item": ["tamsin", "tamsin-said"], "at": {"seg": 19, "phrase": "doesn't work"}},
+    {"do": "strike", "item": ["hedley", "hedley-said"], "at": {"seg": 20, "phrase": "doesn't work"}},
+    {"do": "check", "item": "jago-said", "at": {"seg": 21, "phrase": "wasn't Hedley"}},
+    {"do": "check", "item": "tamsin-said", "at": {"seg": 21, "phrase": "Jago or Morwenna"}},
+    {"do": "check", "item": "hedley-said", "at": {"seg": 21, "phrase": "telling the truth"}},
+    {"do": "check", "item": "f-rule", "at": {"seg": 21, "phrase": "one lie"}},
+    {"do": "note", "text": "Only Morwenna's statement is the lie. Everyone else's lines fit.", "at": {"seg": 21, "phrase": "everything fits"}, "hold": 5.0},
+    {"do": "check", "item": "f-marrow", "at": {"seg": 22, "phrase": "won first prize"}}
+  ]
+}

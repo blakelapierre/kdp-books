@@ -380,7 +380,7 @@ def hook_frame(L, t):
     cxp, cyp = ((L.W - cw) // 2, 1390) if V else (978, 430)
     cyp += int(36 * (1 - ease(t / 0.6)))          # slides up into place from frame 1
     im.paste(cs, (cxp, cyp))
-    lab = "3 suspects \u00b7 1 clue"; f2 = F("plex", 54 if V else 50)
+    n_sus = getattr(C, "LINEUP_PANELS", 3); lab = f"{n_sus} suspects \u00b7 1 clue"; f2 = F("plex", 54 if V else 50)
     ctext(d, cxp + cw / 2, cyp + ch + 16, lab, f2, ACCENT)
     # spoken line as a caption
     f3 = F("crimi", 64 if V else 54); capy = 1196 if V else 822

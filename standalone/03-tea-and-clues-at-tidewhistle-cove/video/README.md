@@ -165,3 +165,32 @@ python3 art_case04.py            # plates + part sprites -> ../work/art-04/ (~1�
 python3 render.py vertical --case=4 && python3 render.py wide --case=4 && python3 make_shorts.py --case=4
 ```
 Previews: `previews/case04-anim-*.png`, short clip `previews/case04-anim-preview.mp4`. YouTube text: `shorts/case-04-youtube.md`.
+
+## Animation border fix (Case 5 onward)
+
+In Case 4, every animated PART sprite called `frame_open`, which drew `frame2` (the decorative double black rectangle) onto the transparent sprite before clipping. When `anim.py` rotated, bobbed, or walked that sprite, the border spun with it — the “weird line artifacts / border that gets rotated around” on Case 4 Part 1 especially.
+
+**Fix:** plates use `plate_open` (`frame2` + clip). Parts use `part_open` (clip only — no `frame2`). Applied in `art_case04.py` (for any future re-render) and `art_case05.py`. Case 4 videos already published are left as-is.
+
+## Case 5: The Marrow Mix-up (colour-detailed + simple animations)
+Configured in `src/cases/case05.py` (`STYLE = "color-detailed"`, with `ANIM`), art by `src/art_case05.py` → `work/art-05/`, characters in `src/people4.py` (jago / tamsin / hedley / morwenna). Narration is the audiobook's Kokoro af_heart chapter; the hook line was made locally with `hook_audio.py`. Part sprites use `part_open` (no baked border).
+
+| File | Format | Length |
+|---|---|---|
+| `standalone-03-tidewhistle-case-05-the-marrow-mix-up-vertical.mp4` | 1080x1920 | 3:23 |
+| `standalone-03-tidewhistle-case-05-the-marrow-mix-up-wide.mp4` | 1920x1080 | 3:23 |
+| `shorts/standalone-03-tidewhistle-case-05-the-marrow-mix-up-short-part1.mp4` / `-part2.mp4` | Shorts | 1:53 / 1:27 |
+
+- **Hook:** "Who took the prize marrow?" over the empty straw bed (dashed outline), with the four suspects equal underneath. Narration: "A prize marrow has vanished from Hedley's shed, and only one person is lying. Can you spot who?"
+- **Scenes:** shed with the prize marrow on straw; empty straw; allotments + shed; Agnes on the bench with tea; 4-panel lineup (Jago / Tamsin / Hedley / Morwenna) with talk+nod on each statement; Agnes thinking; solution lineup eliminations; returned marrow on the harvest flower display, Morwenna sheepish.
+- **Part 2 Short** opens with a ~2 s recap of the question (feed discovery).
+- **Notebook** (`clues/case-05.json`): marrow on straw, empty Thursday, four at the allotments, "thief fibs / others truth", each suspect's statement. Solution: Morwenna circled, others struck through as each hypothesis fails, note that only her line is the lie.
+
+Rebuild:
+```
+cd src
+python3 art_case05.py
+/tmp/tts/venv/bin/python hook_audio.py "A prize marrow has vanished from Hedley's shed, and only one person is lying. Can you spot who?" ../work/hook-05.wav
+python3 render.py vertical --case=5 && python3 render.py wide --case=5 && python3 make_shorts.py --case=5
+```
+Previews: `previews/case05-*.png`. YouTube text: `shorts/case-05-youtube.md`.
