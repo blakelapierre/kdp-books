@@ -1,0 +1,31 @@
+{
+  "case": "Case 7 · The Dog That Stayed Quiet",
+  "title": "Agnes's Notebook",
+  "review_label": "Every clue so far",
+  "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+  "sections": [
+    {"id": "facts", "heading": "Key facts"},
+    {"id": "who", "heading": "Who's who"}
+  ],
+  "items": [
+    {"id": "f-gnome", "section": "facts", "text": "Sir Reginald: red hat, white beard, fishing rod — finest gnome in the Cove", "at": {"seg": 2, "phrase": "Sir Reginald"}},
+    {"id": "f-gone", "section": "facts", "text": "Tuesday morning: Sir Reginald was gone", "at": {"seg": 3, "phrase": "gone"}},
+    {"id": "f-hedge", "section": "facts", "text": "High thick hedge; only way in is the little wooden gate", "at": {"seg": 4, "phrase": "wooden gate"}},
+    {"id": "f-pickle", "section": "facts", "text": "Pickle sleeps in the porch facing the gate and barks at everyone", "at": {"seg": 4, "phrase": "barks at everyone"}},
+    {"id": "f-never", "section": "facts", "text": "Pickle never barks at Loveday or her grandson Pip", "at": {"seg": 4, "phrase": "never barks"}},
+    {"id": "f-night", "section": "facts", "text": "Mr Hocking awake until two — night still, Pickle did not bark once", "at": {"seg": 5, "phrase": "not barked"}},
+    {"id": "ashby", "section": "who", "name": "Mrs Ashby", "text": "holidaymaker; would give anything for a gnome like him", "at": {"seg": 7, "phrase": "Mrs Ashby"}},
+    {"id": "fenwick", "section": "who", "name": "Mr Fenwick", "text": "grocer; his own gnome has lost to Sir Reginald three years running", "at": {"seg": 7, "phrase": "Mr Fenwick"}},
+    {"id": "pip", "section": "who", "name": "Pip Carew", "text": "Loveday's grandson; was round yesterday — \"but he's a good boy\"", "at": {"seg": 7, "phrase": "Pip was round"}}
+  ],
+  "solution": [
+    {"do": "circle", "item": "pip", "span": "name", "at": {"seg": 13, "phrase": "Pip Carew"}},
+    {"do": "check", "item": "f-hedge", "at": {"seg": 14, "phrase": "gate"}},
+    {"do": "check", "item": "f-pickle", "at": {"seg": 14, "phrase": "barks"}},
+    {"do": "check", "item": "f-night", "at": {"seg": 14, "phrase": "bark"}},
+    {"do": "check", "item": "f-never", "at": {"seg": 15, "phrase": "Pip"}},
+    {"do": "strike", "item": ["ashby", "fenwick"], "at": {"seg": 15, "phrase": "Mrs Ashby"}},
+    {"do": "note", "text": "Only Loveday and Pip never set Pickle off. Loveday was in bed — so it was Pip.", "at": {"seg": 15, "phrase": "only two"}, "hold": 5.0},
+    {"do": "check", "item": "f-gnome", "at": {"seg": 16, "phrase": "red hat"}}
+  ]
+}

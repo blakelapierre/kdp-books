@@ -33,6 +33,9 @@ if STYLE == "bw":
     PAPER = (244, 244, 241); ARTPAPER = (252, 252, 250); INK = (22, 22, 22); SOFT = (104, 104, 104); ACCENT = (168, 34, 34)
     VIGNETTE = (214, 214, 210); RING = (206, 206, 202); SHADE = (120, 120, 120)
     tracker.set_style("bw")
+# Optional per-case accent (e.g. garden green for Case 7) — chrome / qbar / hook labels
+if getattr(C, "ACCENT", None):
+    ACCENT = tuple(C.ACCENT); SHADE = tuple(getattr(C, "SHADE", C.ACCENT))
 VARIANT = getattr(C, "VARIANT", "")      # e.g. "color": keeps work files apart from the base version of the case
 PFX = ("" if C.NUM == 1 and not VARIANT else f"case{C.NUM:02d}-") + (f"{VARIANT}-" if VARIANT else "")
 CASE_DOT = f"Case {C.NUM} \u00b7 {C.NAME}"; CASE_COLON = f"Case {C.NUM}: {C.NAME}"
@@ -132,16 +135,17 @@ class Layout:
         s.fmt = fmt
         if fmt == "vertical":
             s.W, s.H = 1080, 1920
-            # Art a touch shorter so a mid-screen QUESTION BAR sits between illustration and notebook.
-            s.view = (80, 120, 1000, 760)                  # 920 x 640 art (4:3-ish)
-            s.qbar = (40, 772, 1040, 900)                  # persistent case question (Blake 2026-10-06)
-            s.cap = (40, 908, 1040, 1020); s.cap_size = 48 # spoken captions under the question bar
-            s.nb = (30, 1030, 1050, 1902)                  # notebook, lower part of the screen
+            # Titles live ABOVE the art frame with clear air (Blake 2026-10-06 screenshot fix).
+            # Art shorter; taller question bar; gap before captions/notebook.
+            s.view = (80, 140, 1000, 700)                  # 920 x 560 art — room for titles + qbar
+            s.qbar = (40, 714, 1040, 910)                  # taller qbar so label border never strikes text
+            s.cap = (40, 926, 1040, 1040); s.cap_size = 46 # captions under qbar with air
+            s.nb = (30, 1050, 1050, 1902)                  # notebook, lower part of the screen
         else:
             s.W, s.H = 1920, 1080
-            s.view = (44, 90, 948, 720)                    # art
-            s.qbar = (44, 728, 948, 800)                   # question under art
-            s.cap = (20, 808, 972, 1066); s.cap_size = 50
+            s.view = (44, 96, 948, 690)                    # art, titles clear of frame
+            s.qbar = (44, 702, 948, 820)                   # taller question under art
+            s.cap = (20, 836, 972, 1066); s.cap_size = 48
             s.nb = (988, 26, 1898, 1056)                   # notebook, right-hand column
         s.vw, s.vh = s.view[2] - s.view[0], s.view[3] - s.view[1]
         s.show_qbar = getattr(C, "SHOW_QBAR", False)
@@ -162,12 +166,13 @@ class Layout:
         d.rectangle([x0 - 14, y0 - 14, x1 + 13, y1 + 13], outline=INK, width=4)
         d.rectangle([x0 - 6, y0 - 6, x1 + 5, y1 + 5], outline=INK, width=1)
         if s.fmt == "vertical":
-            ctext(d, s.W / 2, 22, "Tea and Clues at Tidewhistle Cove", F("play", 48), INK)
-            ctext(d, s.W / 2, 82, CASE_DOT, F("crimi", 42), ACCENT)
+            # Series title, then case subtitle ABOVE the frame (frame top = view.y0 - 14 = 126).
+            ctext(d, s.W / 2, 14, "Tea and Clues at Tidewhistle Cove", F("play", 40), INK)
+            ctext(d, s.W / 2, 58, CASE_DOT, F("crimi", 34), ACCENT)  # ends ~92; frame at 126 → clear gap
         else:
             cx = (x0 + x1) / 2
-            ctext(d, cx, 6, "Tea and Clues at Tidewhistle Cove", F("play", 38), INK)
-            ctext(d, cx, 52, CASE_DOT, F("crimi", 32), ACCENT)
+            ctext(d, cx, 4, "Tea and Clues at Tidewhistle Cove", F("play", 34), INK)
+            ctext(d, cx, 42, CASE_DOT, F("crimi", 28), ACCENT)
         s.cache["chrome"] = im; return im
 
 def ctext(d, cx, y, t, f, fill):
@@ -253,27 +258,45 @@ def viewport(L, sc, t):
 
 
 def question_bar(L, t):
-    """Persistent mid-screen case question (between illustration and notebook). High-contrast banner."""
+    """Persistent mid-screen case question (between illustration and notebook). High-contrast banner.
+    Layout (Blake 2026-10-06): label in its own top band; question BELOW that band; no border line
+    ever crosses the question glyphs (inner accent is LEFT/RIGHT/BOTTOM only)."""
     if not getattr(L, "show_qbar", False) or not hasattr(L, "qbar"): return None
     x0, y0, x1, y1 = L.qbar; w, h = x1 - x0, y1 - y0
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    # solid banner with double border so it reads even on a busy feed thumbnail
+    V = L.fmt == "vertical"
+    # outer card
     d.rounded_rectangle([4, 4, w - 5, h - 5], radius=18, fill=ARTPAPER + (245,), outline=INK + (255,), width=4)
-    d.rounded_rectangle([12, 12, w - 13, h - 13], radius=12, outline=ACCENT + (255,), width=2)
-    # small label
-    lab = "THE QUESTION"; f0 = F("plex", 28 if L.fmt == "vertical" else 24)
-    tw = d.textlength(lab, font=f0); d.text(((w - tw) / 2, 16), lab, font=f0, fill=ACCENT + (255,))
-    # question text, wrapped
-    f = F("crimb", 40 if L.fmt == "vertical" else 34)
-    lines = wrap(d, C.QUESTION, f, w - 60)
-    # shrink if too many lines
-    while len(lines) > 3 and f.size > 28:
-        f = F("crimb", f.size - 2); lines = wrap(d, C.QUESTION, f, w - 60)
-    lh = int(f.size * 1.15); total = len(lines) * lh
-    y = max(44, (h - total) / 2 + 6)
+    # label band height (exclusive zone for "THE QUESTION")
+    band = 56 if V else 48
+    # accent rule under the label band only (NOT a full inner rounded rect that can clip text)
+    d.line([18, band, w - 18, band], fill=ACCENT + (255,), width=2)
+    d.line([18, band + 3, w - 18, band + 3], fill=INK + (90,), width=1)
+    # side + bottom accent ticks (no top stroke through the question)
+    d.line([12, band + 8, 12, h - 14], fill=ACCENT + (255,), width=2)
+    d.line([w - 13, band + 8, w - 13, h - 14], fill=ACCENT + (255,), width=2)
+    d.line([14, h - 14, w - 14, h - 14], fill=ACCENT + (255,), width=2)
+    # label centred in the band
+    lab = "THE QUESTION"; f0 = F("plex", 26 if V else 22)
+    tw = d.textlength(lab, font=f0)
+    bb = d.textbbox((0, 0), lab, font=f0); th = bb[3] - bb[1]
+    d.text(((w - tw) / 2, (band - th) / 2 - 2), lab, font=f0, fill=ACCENT + (255,))
+    # question text entirely below the band, with padding from side/bottom accents
+    text_top = band + 14
+    text_bot = h - 22
+    avail = max(36, text_bot - text_top)
+    f = F("crimb", 40 if V else 34)
+    lines = wrap(d, C.QUESTION, f, w - 80)
+    while (len(lines) * int(f.size * 1.25) > avail or len(lines) > 3) and f.size > 26:
+        f = F("crimb", f.size - 2); lines = wrap(d, C.QUESTION, f, w - 80)
+    lh = int(f.size * 1.25); total = len(lines) * lh
+    y = text_top + max(0, (avail - total) / 2)
     for ln in lines:
-        tw = d.textlength(ln, font=f); d.text(((w - tw) / 2, y), ln, font=f, fill=INK + (255,)); y += lh
+        tw = d.textlength(ln, font=f)
+        bb = d.textbbox((0, 0), ln, font=f)
+        d.text(((w - tw) / 2, y - bb[1]), ln, font=f, fill=INK + (255,)); y += lh
     return im
+
 
 def ask_panel(t):
     W, H = 1000, 750
@@ -379,8 +402,12 @@ def hook_title(L):
 
 def hook_frame(L, t):
     V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
-    # art: the empty plate, slowly pushing in from frame 1
-    aw, ah = (1000, 750) if V else (L.vw, L.vh); ax, ay = ((L.W - aw) // 2, 400) if V else L.view[:2]
+    # art: slowly pushing in from frame 1 (cases may enlarge / raise it via HOOK_ART_*)
+    if V:
+        aw, ah = getattr(C, "HOOK_ART_SIZE", (1000, 750))
+        ax, ay = (L.W - aw) // 2, getattr(C, "HOOK_ART_Y", 400)
+    else:
+        aw, ah = L.vw, L.vh; ax, ay = L.view[:2]
     u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
     (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
     if ANIM and "hook" in ANIM:
@@ -392,11 +419,31 @@ def hook_frame(L, t):
         src = art("hook"); bh = src.height / z; bw = bh * 4 / 3
         bx = min(max(0, cx * src.width - bw / 2), src.width - bw); by = min(max(0, cy * src.height - bh / 2), src.height - bh)
         im.paste(src.resize((aw, ah), Image.BILINEAR, box=(bx, by, bx + bw, by + bh)), (ax, ay))
-    d.rectangle([ax - 12, ay - 12, ax + aw + 11, ay + ah + 11], outline=INK, width=4); d.rectangle([ax - 5, ay - 5, ax + aw + 4, ay + ah + 4], outline=INK, width=1)
+    # Border: classic double frame, or soft vignette / bleed (HOOK_BORDER=False) for a less-templatey open
+    if getattr(C, "HOOK_BORDER", True):
+        d.rectangle([ax - 12, ay - 12, ax + aw + 11, ay + ah + 11], outline=INK, width=4)
+        d.rectangle([ax - 5, ay - 5, ax + aw + 4, ay + ah + 4], outline=INK, width=1)
+    else:
+        # soft dark vignette ring so the art breaks the usual 4:3 double-border look
+        vig = Image.new("RGBA", (aw + 40, ah + 40), (0, 0, 0, 0))
+        gv = Image.radial_gradient("L").resize((aw + 40, ah + 40))
+        mask = gv.point(lambda p: int(max(0, (200 - p) * 0.55)))
+        dark = Image.new("RGBA", (aw + 40, ah + 40), INK + (0,))
+        dark.putalpha(mask)
+        im.paste(dark, (ax - 20, ay - 20), dark)
     # big hook text (visible on frame 1, settles with a small pop)
     ht = hook_title(L); sc = 0.93 + 0.07 * ease(t / 0.35)
     hs = ht.resize((int(ht.width * sc), int(ht.height * sc)), Image.LANCZOS)
-    tx, ty = ((L.W - hs.width) // 2, 70 + (ht.height - hs.height) // 2) if V else (958 + (940 - hs.width) // 2, 96 + (ht.height - hs.height) // 2)
+    title_y = getattr(C, "HOOK_TITLE_Y", 70 if V else 96)
+    if getattr(C, "HOOK_TITLE_STYLE", "classic") == "banner" and V:
+        # garden / chalk banner behind the title (Case 7+)
+        pad_x, pad_y = 36, 18
+        bx0 = (L.W - hs.width) // 2 - pad_x; by0 = title_y - pad_y
+        bx1 = bx0 + hs.width + 2 * pad_x; by1 = by0 + hs.height + 2 * pad_y
+        d.rounded_rectangle([bx0, by0, bx1, by1], radius=22, fill=ARTPAPER, outline=ACCENT, width=5)
+        d.rounded_rectangle([bx0 + 8, by0 + 8, bx1 - 8, by1 - 8], radius=16, outline=INK, width=1)
+    tx = ((L.W - hs.width) // 2) if V else (958 + (940 - hs.width) // 2)
+    ty = title_y + (ht.height - hs.height) // 2
     im.paste(hs, (tx, ty), hs)
     # three suspects, same size and treatment
     cw = 920 if V else 880

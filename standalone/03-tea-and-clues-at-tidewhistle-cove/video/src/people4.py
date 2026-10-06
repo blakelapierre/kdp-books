@@ -442,4 +442,80 @@ def wenna(k, x, y, h, expr="neutral", flip=False, prop=True, scarf=False, book=F
     """Wenna Polglaze (people3.wenna): camel coat, curly bun."""
     P3.wenna(k, x, y, h, expr=expr, flip=flip, prop=prop, scarf=scarf, book=book)
 
-CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin, garland=garland, wenna=wenna)
+
+def fenwick(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Mr Fenwick the grocer: green apron, grey shirt, balding, holds a small rival gnome (or nothing)."""
+    with Fig(k, x, y, h, flip) as f:
+        trou = [(-8.0, 50, 0), (-7.7, 26), (-7.0, 3.6, 0), (-1.2, 3.6, 0), (-0.8, 38), (0.8, 38), (1.2, 3.6, 0), (7.0, 3.6, 0), (7.7, 26), (8.0, 50, 0)]
+        with k.tint(C(70, 78, 96)):
+            f.shape(trou, lw=1.0); f.hatch(trou, angle=80, gap=1.6, lw=0.25); f.shape(trou, lw=1.0, fill=None)
+        with k.tint(None, dark=C(50, 44, 40)):
+            for sg in (-1, 1): shoe(f, sg * 4.0, sg, top=3.6)
+        # grey shirt
+        shirt = [(-2.8, 82.0), (-11.4, 79.6), (-12.0, 72), (-10.8, 58), (-10.0, 48.5, 0), (10.0, 48.5, 0), (10.8, 58), (12.0, 72), (11.4, 79.6), (2.8, 82.0)]
+        with k.tint(C(200, 206, 214)):
+            f.shape(shirt, lw=1.0)
+        # green grocer apron
+        apron = [(-9.0, 76.0, 0), (-10.4, 48.0, 0), (-9.6, 30.0, 0), (9.6, 30.0, 0), (10.4, 48.0, 0), (9.0, 76.0, 0), (0, 78.0, 0)]
+        with k.tint(C(86, 140, 92), hatch=C(60, 110, 70)):
+            f.shape(apron, lw=1.0); f.hatch(apron, angle=12, gap=2.2, lw=0.3); f.shape(apron, lw=1.0, fill=None)
+        f.curve([(-9.2, 74), (-11.6, 78), (-8.0, 80)], lw=0.6)  # strap
+        f.curve([(9.2, 74), (11.6, 78), (8.0, 80)], lw=0.6)
+        sleeve_arm(f, L_ARM, 2.6, C(200, 206, 214), cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
+        sleeve_arm(f, R_ARM, 2.6, C(200, 206, 214), cuff=2)
+        if prop:
+            # tiny rival gnome in hand (plain, no red hat glory)
+            gx, gy = 6.5, 62.0
+            with k.tint(C(210, 190, 160)):
+                f.shape(ell(gx, gy, 2.2, 2.8, n=12), lw=0.5)  # body
+            with k.tint(C(120, 140, 160)):
+                f.shape([(gx - 2.4, gy + 2.6), (gx, gy + 5.4), (gx + 2.4, gy + 2.6)], lw=0.5)  # dull hat
+            f.dot(gx - 0.6, gy + 0.4, 0.25, fill=K); f.dot(gx + 0.6, gy + 0.4, 0.25, fill=K)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 1.0)
+        with k.tint(SKIN): neck(f, CY, w=2.4)
+        face(f, expr, rx=6.2, ry=7.4, jaw=0.72, nose="long", brows="thick")
+        # balding grey fringe
+        with k.tint(C(160, 160, 168)):
+            for sg in (-1, 1):
+                f.shape([(sg * 5.6, CY + 2.8, 0), (sg * 6.4, CY - 0.4), (sg * 5.2, CY - 0.6), (sg * 5.0, CY + 2.4, 0)], lw=0.4, fill=K)
+            f.shape([(-5.4, CY + 4.2), (-3.0, CY + 6.0), (0, CY + 5.2), (3.0, CY + 6.0), (5.4, CY + 4.2), (4.0, CY + 3.6), (0, CY + 3.8), (-4.0, CY + 3.6)], lw=0.6)
+
+def ashby(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Mrs Ashby, holidaymaker: sunhat, floral dress, camera strap — wants a gnome like Sir Reginald."""
+    with Fig(k, x, y, h, flip) as f:
+        with k.tint(C(230, 210, 200)):
+            legs(f, x=3.2, top=34, w0=1.9, w1=1.5, ankle=6)
+        with k.tint(None, dark=C(180, 140, 110)):
+            for sg in (-1, 1): shoe(f, sg * 3.5, sg, top=2.8)
+        dress = [(-2.6, 81.4), (-11.0, 79.0), (-12.2, 70), (-13.6, 48), (-14.4, 28.0, 0.6), (0, 26.5), (14.4, 28.0, 0.6), (13.6, 48), (12.2, 70), (11.0, 79.0), (2.6, 81.4)]
+        with k.tint(C(236, 170, 150), hatch=C(210, 120, 110)):
+            f.shape(dress, lw=1.1); f.hatch(dress, angle=-40, gap=2.0, lw=0.28, box=(7, 27, 15, 82)); f.shape(dress, lw=1.1, fill=None)
+        # little flower dots
+        for (fx, fy) in ((-6, 55), (5, 48), (-2, 40), (7, 60), (-8, 36)):
+            f.dot(fx, fy, 0.7, fill=C(240, 220, 100)); f.dot(fx, fy, 0.25, fill=C(220, 80, 90))
+        sleeve_arm(f, L_ARM, 2.5, C(236, 170, 150), cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 0.95)
+        sleeve_arm(f, R_ARM, 2.5, C(236, 170, 150), cuff=2)
+        if prop:
+            # compact camera
+            with k.tint(C(50, 52, 58)):
+                f.shape([(3.0, 60.0, 0), (10.0, 60.5, 0), (10.2, 66.5, 0), (3.2, 66.0, 0)], lw=0.6)
+            f.shape(ell(6.6, 63.2, 1.6, 1.6, n=12), lw=0.4, fill=C(70, 90, 110))
+            f.curve([(4.0, 68.0), (2.0, 78.0), (0.5, 82.0)], lw=0.55, color=C(40, 40, 44))  # strap
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 0.95)
+        with k.tint(SKIN): neck(f, CY, w=2.1)
+        face(f, expr, rx=5.8, ry=7.0, jaw=0.62, nose="button", brows="soft")
+        # bobbed brown hair + big sunhat
+        with k.tint(C(110, 78, 58)):
+            for sg in (-1, 1):
+                f.shape([(sg * 5.4, CY + 3.0), (sg * 6.6, CY + 1.0), (sg * 6.2, CY - 2.0), (sg * 5.0, CY + 0.5)], lw=0.5)
+            f.shape([(-5.2, CY + 3.5), (-2, CY + 5.5), (0, CY + 4.8), (2, CY + 5.5), (5.2, CY + 3.5), (3, CY + 2.8), (-3, CY + 2.8)], lw=0.6)
+        with k.tint(C(244, 214, 150)):
+            brim = [(-10.5, CY + 3.0), (-8, CY + 5.2), (0, CY + 6.0), (8, CY + 5.2), (10.5, CY + 3.0), (8, CY + 1.8), (0, CY + 2.0), (-8, CY + 1.8)]
+            f.shape(brim, lw=0.9)
+            crown = [(-5.0, CY + 3.2), (-5.4, CY + 8.0), (-2.5, CY + 11.0), (0, CY + 11.6), (2.5, CY + 11.0), (5.4, CY + 8.0), (5.0, CY + 3.2)]
+            f.shape(crown, lw=0.9)
+            f.shape([(-5.2, CY + 5.4, 0), (5.2, CY + 5.4, 0), (5.2, CY + 6.8, 0), (-5.2, CY + 6.8, 0)], lw=0.4, fill=C(196, 84, 104))
+
+CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin, garland=garland, wenna=wenna, fenwick=fenwick, ashby=ashby)

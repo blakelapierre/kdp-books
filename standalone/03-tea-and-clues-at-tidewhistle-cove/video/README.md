@@ -219,3 +219,21 @@ python3 art_case06.py
 python3 render.py vertical --case=6 && python3 render.py wide --case=6 && python3 make_shorts.py --case=6
 ```
 Previews: `previews/case06-*.png`. YouTube text: `shorts/case-06-youtube.md`.
+
+## Case 7: The Dog That Stayed Quiet
+Colour-detailed art (`src/art_case07.py` → `work/art-07/`), mid-screen question bar, borderless hero-gnome hook (garden-green accent + banner title). Layout fix in shared `render.py`: case subtitle clear of the art frame; question text never sits under qbar borders.
+
+| File | Format |
+|---|---|
+| `standalone-03-tidewhistle-case-07-the-dog-that-stayed-quiet-vertical.mp4` | 1080x1920 Shorts source |
+| `standalone-03-tidewhistle-case-07-the-dog-that-stayed-quiet-wide.mp4` | 1920x1080 main channel |
+| `shorts/...-short-part1.mp4` / `-part2.mp4` | Shorts split |
+
+Rebuild:
+```
+cd src
+python3 art_case07.py
+/tmp/tts/venv/bin/python hook_audio.py "A prize garden gnome has vanished in the night, and the little dog who barks at everyone stayed perfectly quiet. Can you tell who took him?" ../work/hook-07.wav
+python3 render.py vertical --case=7 && python3 render.py wide --case=7 && python3 make_shorts.py --case=7
+```
+YouTube text: `shorts/case-07-youtube.md`. Visual checklist: `shorts/case-07-visual-checklist.md`.
