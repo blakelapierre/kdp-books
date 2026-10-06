@@ -21,6 +21,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-03 | Cozy Frostwood riddles + text logic Kindle ebook (no write-in grids) | *Riddles by the Frostwood Fire*, 140 puzzles (40 Easy / 40 Medium / 40 Hard / 20 Expert), Kindle ebook, [folder](series/frostwood/05-riddles-by-the-frostwood-fire/) |
 | 2026-10-03 | Audio-first cozy solve-it-yourself mini-mysteries Kindle ebook (seaside tea-room sleuth, no murder; each case ends *Can you solve it?* with the answer right after) | *Tea and Clues at Tidewhistle Cove*, 30 cases (23 clue stories + 7 logic), 15,404 words, Kindle ebook, [folder](standalone/03-tea-and-clues-at-tidewhistle-cove/) |
 | 2026-10-05 | Cozy logic grid (Einstein / zebra) puzzle book for adults, village scenes, no crime theme | *Logic on Lantern Lane*, 120 puzzles (30 Easy 3×4 / 30 Medium 4×4 / 30 Hard 4×5 / 30 Expert 5×5 on two-page spreads) + worked example, 194 pages, [folder](standalone/04-logic-on-lantern-lane/) |
+| 2026-10-06 | Nonogram (hanjie / paint-by-number) picture logic puzzle book, Frostwood book 6, **paperback** format slot | *The Frostwood Sketchbook*, 140 puzzles (30 Easy 15×15 / 40 Medium 20×20 / 40 Hard 25×25 / 30 Expert 25×25), 156 pages, paperback, [folder](series/frostwood/06-the-frostwood-sketchbook/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -51,6 +52,8 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-03 | Audio trivia rounds ebook: generic AI-narrated trivia/riddle audio mostly sits unrated; riddles already covered by Frostwood 05 |
 | 2026-10-03 | Audio-first cozy mini-mysteries chosen instead: *Two-Minute Mysteries* 4.5★/639; *Five-Minute Cozy Mini Mysteries* (indie Kindle) 4.1★/56; *Cute and Cozy Crime* (Apr 2026) 4.4★/28; Audible *Minute Mysteries* 4.0 from 2 ratings (thin short solve-it audio); researched 2026-10-03 |
 | 2026-10-05 | Logic grid puzzle book chosen for the Monday paperback: *The Ultimate Logic Grid Puzzle Book for Adults* 4.6★/423 (180 pp, $16.97); *Logic Puzzle Book for Adults Vol 1* 4.0★/269; *Detective Logic Puzzles for Adults* (Oct 2025, crime-themed) 4.6★/96, BSR ~140k; *Big Logic Grid Puzzle Book 2026* 2.8★/14 (plain themes). Gap: cozy, non-violent, story-led logic grids at $9.99. Researched 2026-10-05 |
+| 2026-10-06 | Light Up (Akari) puzzle book for Frostwood book 6 (lantern theme fits, but dedicated Akari books on Amazon have 1–2 reviews each, e.g. *Brainy's Hard Akari #1* 4★/1, *Akari Puzzles 200 Hard 20x20* 5★/2) |
+| 2026-10-06 | Nonogram picture puzzle book chosen instead for the Tuesday paperback: *The Big Book of Picross Hanjie Griddlers Nonograms* 4.5★/77; *Nonogram Puzzle Book: From Beginner to Master* (Nov 2025) 4.5★/45 at $19.99; cheaper titles draw complaints about errors and guessing (3.8★/19, 3.8★/21). Gap: cozy themed, verified unique, no-guessing nonograms at $9.99. Different from the rejected 2026-09-30 *nonogram mystery* idea (this is a straight picture book). Researched 2026-10-06 |
 
 ## Puzzle types used in standalone books
 *Tea and Clues at Tidewhistle Cove* uses prose solve-it mini-mysteries (observation/alibi clues) plus seven text logic cases: only-the-thief-lies, exactly-one-truth, seating order, walking-time alibis, honest/fibber fishermen, queue order, one-truth-one-fib. A second seaside/tea-room mini-mystery book would be a sequel, not a new idea.
@@ -62,6 +65,8 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 *Tents in Frostwood* (Frostwood book 4) is a full dedicated Tents book; *The Advent Clock* used Tents only once as a single advent door, which is fine.
 
 *The Advent Clock* uses one each of: word search (×2), Caesar cipher, pigpen cipher, Morse code, Star Battle-style "one star per row/column/region" (×2), wordoku (×2), maze, nonogram (×2), number pyramid, logic grid, Tents, Train Tracks (×2), Akari, fill-in, Minesweeper-style "presents", Futoshiki, Battleships-style "sleigh fleet", Skyscrapers and KenKen-style cages. A second Christmas/advent book would be a close variant. (Its two Star Battle-style doors overlap only slightly with Frostwood book 3, a full 180-puzzle Star Battle book.)
+
+*The Frostwood Sketchbook* (Frostwood book 6) is a full dedicated nonogram book (pictures from the Noto Emoji typeface, one subject per puzzle). *The Advent Clock* used two nonogram doors, which is fine. Another nonogram book would be a sequel (e.g. a different theme or larger 8.5 × 11 grids).
 
 ## How to add entries
 Append a new row with the date whenever an idea is built or evaluated. When a book is built, also add it to the table in README.md. If it is part of a series, add it to that series' README too.

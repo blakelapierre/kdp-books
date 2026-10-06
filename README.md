@@ -13,6 +13,7 @@ series/
     03-stars-over-frostwood/
     04-tents-in-frostwood/
     05-riddles-by-the-frostwood-fire/
+    06-the-frostwood-sketchbook/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
   01-the-advent-clock/
@@ -44,6 +45,7 @@ Current books:
 3. `03-stars-over-frostwood`: built, not published
 4. `04-tents-in-frostwood`: built, not published
 5. `05-riddles-by-the-frostwood-fire`: built Kindle ebook, not published
+6. `06-the-frostwood-sketchbook`: built paperback, not published
 
 `standalone/`
 1. `01-the-advent-clock`: built, not published
@@ -62,6 +64,7 @@ Current books:
 | 3 | *Stars over Frostwood*: 180 Star Battle Logic Puzzles (Easy to Expert) | Star Battle (1-star and 2-star) | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [03-stars-over-frostwood/README.md](series/frostwood/03-stars-over-frostwood/README.md) |
 | 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [04-tents-in-frostwood/README.md](series/frostwood/04-tents-in-frostwood/README.md) |
 | 5 | *Riddles by the Frostwood Fire*: 140 Cozy Winter Riddles & Text Logic Puzzles (Kindle) | Riddles + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [05-riddles-by-the-frostwood-fire/README.md](series/frostwood/05-riddles-by-the-frostwood-fire/README.md) |
+| 6 | *The Frostwood Sketchbook*: 140 Nonogram Picture Logic Puzzles (Easy to Expert) | Nonograms (hanjie picture logic) | Draft, print-ready paperback. Not yet published or submitted to KDP | 156 | $9.99 | $3.12 | [06-the-frostwood-sketchbook/README.md](series/frostwood/06-the-frostwood-sketchbook/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -136,6 +139,16 @@ python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.pn
 python3 build.py      # -> ../frostwood-04-tents-in-frostwood-interior.pdf and ../build-info.json (worked-example text is in example_text.py)
 python3 cover.py      # -> ../frostwood-04-tents-in-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-04-tents-in-frostwood-cover-guides.pdf
 python3 verify.py     # independent SAT + backtracking uniqueness check + band fit -> ../verification.md
+cd ../../../..
+
+# Book 6: The Frostwood Sketchbook (paperback)
+cd series/frostwood/06-the-frostwood-sketchbook/src
+PYTHONHASHSEED=0 python3 master.py   # rasterise every candidate picture (Noto Emoji glyphs, src/fonts/) and make it line-solvable -> ../tmp/candidates.json (~20 s)
+python3 choose.py     # pick the 140 puzzles into their bands -> ../data.json (deterministic: same file every run)
+python3 verify.py     # independent SAT uniqueness check + line-solve + band fit + worked-example statements -> ../verification.md
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-06-the-frostwood-sketchbook-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../frostwood-06-the-frostwood-sketchbook-cover.pdf, ../cover-info.json and ../tmp/frostwood-06-the-frostwood-sketchbook-cover-guides.pdf
 cd ../../../..
 
 # Standalone: The Advent Clock
