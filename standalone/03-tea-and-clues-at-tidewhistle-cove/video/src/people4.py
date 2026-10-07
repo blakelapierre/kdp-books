@@ -464,7 +464,9 @@ def fenwick(k, x, y, h, expr="neutral", flip=False, prop=True):
         sleeve_arm(f, L_ARM, 2.6, C(200, 206, 214), cuff=2)
         skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
         sleeve_arm(f, R_ARM, 2.6, C(200, 206, 214), cuff=2)
-        if prop:
+        if prop == "apple":
+            apple(f)
+        elif prop:
             # tiny rival gnome in hand (plain, no red hat glory)
             gx, gy = 6.5, 62.0
             with k.tint(C(210, 190, 160)):
@@ -519,3 +521,148 @@ def ashby(k, x, y, h, expr="neutral", flip=False, prop=True):
             f.shape([(-5.2, CY + 5.4, 0), (5.2, CY + 5.4, 0), (5.2, CY + 6.8, 0), (-5.2, CY + 6.8, 0)], lw=0.4, fill=C(196, 84, 104))
 
 CHARACTERS = dict(quill=quill, rundle=rundle, morwenna=morwenna, pip=pip, agnes=agnes, vicar=vicar, ollie=ollie, jago=jago, hedley=hedley, tamsin=tamsin, garland=garland, wenna=wenna, fenwick=fenwick, ashby=ashby)
+
+# ----------------------------------------------------------------------------- Case 8 props + suspects
+def apple(f):
+    """Small red apple in the shared prop hand (R_HAND)."""
+    k = f.k; ax, ay = 6.6, 63.0
+    with k.tint(C(204, 64, 58), hatch=C(160, 40, 40)):
+        f.shape(ell(ax, ay, 2.6, 2.4, n=16), lw=0.6)
+    f.curve([(ax, ay + 2.2), (ax + 0.3, ay + 3.6)], lw=0.5, color=C(90, 60, 40))
+    with k.tint(STEM): f.shape([(ax + 0.3, ay + 3.0), (ax + 2.2, ay + 3.9), (ax + 1.2, ay + 2.8)], lw=0.3)
+    f.dot(ax - 1.0, ay + 0.8, 0.5, fill=C(240, 160, 150))
+
+def small_book(f, col=C(84, 120, 150)):
+    """A slim library book in the shared prop hand."""
+    k = f.k; nb = [(2.2, 60.6, 0), (9.2, 61.4, 0), (8.6, 70.4, 0), (1.6, 69.6, 0)]
+    with k.tint(col): f.shape(nb, lw=0.7)
+    f.curve([(3.0, 61.0), (2.4, 69.8)], lw=0.4, color=shade(col, 0.6))
+    f.shape([(4.4, 66.4, 0), (7.6, 66.8, 0), (7.5, 67.8, 0), (4.3, 67.4, 0)], lw=0, stroke=False, fill=C(240, 230, 200))
+
+def posy(f):
+    """A little posy of sea pinks in the shared prop hand."""
+    k = f.k; px, py = 6.4, 64.0
+    for dx in (-0.8, 0.4, 1.4):
+        f.curve([(px + dx * 0.4, py - 1.0), (px + dx, py + 3.2)], lw=0.35, color=STEM)
+    for (dx, dy) in ((-1.4, 3.6), (0.4, 4.4), (2.0, 3.4), (-0.4, 2.6), (1.2, 2.4)):
+        with k.tint(C(236, 150, 180)): f.shape(ell(px + dx, py + dy, 1.0, 1.0, n=10), lw=0.3)
+        f.dot(px + dx, py + dy, 0.25, fill=C(250, 230, 120))
+    with k.tint(C(250, 246, 236)):
+        f.shape([(px - 2.0, py + 1.2, 0), (px + 2.8, py + 1.2, 0), (px + 1.0, py - 2.4, 0)], lw=0.4)   # paper cone
+
+DRESS_D = C(92, 152, 160); DRESS_D2 = C(64, 120, 130); HAIR_D = C(54, 40, 36)
+CARDI_K = C(222, 176, 72); SKIRT_K = C(60, 72, 110); HAIR_K = C(178, 84, 44)
+
+def demelza(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Demelza Rowe (detailed, Case 8): dark bob with a fringe, teal polka-dot dress, a library book.
+    Shares the suspect stance / arm pose / head size with pip, fenwick, kerensa."""
+    with Fig(k, x, y, h, flip) as f:
+        with k.tint(C(230, 210, 196)):
+            legs(f, x=3.2, top=34, w0=1.9, w1=1.5, ankle=6)
+        with k.tint(None, dark=C(60, 70, 90)):
+            for sg in (-1, 1): shoe(f, sg * 3.5, sg, top=2.8)
+        dress = [(-2.6, 81.4), (-11.0, 79.0), (-12.2, 70), (-13.2, 48), (-14.0, 28.0, 0.6), (0, 26.5), (14.0, 28.0, 0.6), (13.2, 48), (12.2, 70), (11.0, 79.0), (2.6, 81.4)]
+        with k.tint(DRESS_D, hatch=DRESS_D2):
+            f.shape(dress, lw=1.1); f.hatch(dress, angle=-40, gap=2.0, lw=0.28, box=(7, 27, 15, 82)); f.shape(dress, lw=1.1, fill=None)
+        for (fx, fy) in ((-7, 34), (-2, 40), (4, 34), (8, 44), (-6, 50), (1, 52), (6, 58), (-4, 62), (-9, 42), (3, 46)):
+            f.dot(fx, fy, 0.75, fill=C(250, 246, 236))
+        f.curve([(-9.6, 56.0), (0, 55.2), (9.6, 56.0)], lw=0.7)   # waist seam
+        sleeve_arm(f, L_ARM, 2.5, DRESS_D, cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 0.95)
+        sleeve_arm(f, R_ARM, 2.5, DRESS_D, cuff=2)
+        if prop: small_book(f)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 0.95)
+        with k.tint(SKIN): neck(f, CY, w=2.1)
+        face(f, expr, rx=5.8, ry=7.0, jaw=0.62, nose="button", brows="soft")
+        with k.tint(HAIR_D):
+            for sg in (-1, 1):   # straight bob to the jaw
+                f.shape([(sg * 5.0, CY + 4.6), (sg * 6.8, CY + 2.0), (sg * 7.0, CY - 4.6), (sg * 5.2, CY - 4.4), (sg * 5.4, CY + 1.0)], lw=0.6)
+            f.shape([(-6.2, CY + 3.0), (-5.6, CY + 6.6), (-2.6, CY + 8.4), (0, CY + 8.8), (2.6, CY + 8.4), (5.6, CY + 6.6), (6.2, CY + 3.0),
+                     (4.0, CY + 3.6), (2.0, CY + 2.8), (0, CY + 3.4), (-2.0, CY + 2.8), (-4.0, CY + 3.6)], lw=0.7)   # crown + fringe
+        with k.tint(C(236, 120, 110)): f.shape(ell(4.2, CY + 5.6, 1.1, 0.8, n=10), lw=0.3)   # hair clip
+
+def kerensa(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Kerensa Hale (new, Case 8): copper hair in a side plait, mustard cardigan over a cream blouse, navy skirt, sea pinks.
+    Shares the suspect stance / arm pose / head size with pip, fenwick, demelza."""
+    with Fig(k, x, y, h, flip) as f:
+        with k.tint(C(80, 80, 96)):
+            legs(f, x=3.2, top=34, w0=1.9, w1=1.5, ankle=6)
+        with k.tint(None, dark=C(120, 70, 50)):
+            for sg in (-1, 1): shoe(f, sg * 3.5, sg, top=2.8)
+        skirt = [(-10.0, 52.0, 0), (-13.6, 28.0, 0.6), (0, 26.6), (13.6, 28.0, 0.6), (10.0, 52.0, 0)]
+        with k.tint(SKIRT_K, hatch=shade(SKIRT_K, 0.7)):
+            f.shape(skirt, lw=1.1); f.hatch(skirt, angle=80, gap=1.8, lw=0.26, box=(6, 27, 14, 52)); f.shape(skirt, lw=1.1, fill=None)
+        top = [(-2.6, 81.4), (-11.0, 79.0), (-12.0, 70), (-11.0, 56), (-10.4, 50.0, 0), (10.4, 50.0, 0), (11.0, 56), (12.0, 70), (11.0, 79.0), (2.6, 81.4)]
+        with k.tint(CARDI_K, hatch=shade(CARDI_K, 0.75)):
+            f.shape(top, lw=1.1); f.hatch(top, angle=10, gap=1.6, lw=0.24, box=(-12, 50, 12, 54)); f.shape(top, lw=1.1, fill=None)
+        with k.tint(C(250, 244, 230)):
+            f.shape([(-2.4, 81.0, 0), (2.4, 81.0, 0), (1.4, 66.0, 0), (-1.4, 66.0, 0)], lw=0.6)   # blouse between the fronts
+        for by_ in (62, 57, 52.5): f.dot(2.2, by_, 0.55, fill=C(150, 100, 50))
+        sleeve_arm(f, L_ARM, 2.5, CARDI_K, cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 0.95)
+        sleeve_arm(f, R_ARM, 2.5, CARDI_K, cuff=2)
+        if prop: posy(f)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 0.95)
+        with k.tint(SKIN): neck(f, CY, w=2.1)
+        face(f, expr, rx=5.8, ry=7.0, jaw=0.62, nose="small", brows="soft")
+        with k.tint(HAIR_K, hatch=shade(HAIR_K, 0.75)):
+            f.shape([(-6.2, CY + 2.0), (-5.8, CY + 6.4), (-2.8, CY + 8.6), (0, CY + 9.0), (2.8, CY + 8.6), (5.8, CY + 6.4), (6.2, CY + 2.0),
+                     (4.6, CY + 4.4), (0.6, CY + 5.2), (-3.6, CY + 4.2)], lw=0.7)   # swept side parting
+            for sg in (-1, 1): f.shape([(sg * 5.6, CY + 3.0), (sg * 6.6, CY + 0.6), (sg * 6.0, CY - 1.6), (sg * 5.0, CY + 0.8)], lw=0.5)
+            for j in range(5):   # side plait over the left shoulder
+                yy = CY - 3.0 - j * 3.0
+                f.shape(ell(-6.4 + j * 0.25, yy, 1.5, 1.7, n=12), lw=0.45)
+        with k.tint(C(90, 140, 120)): f.shape(ell(-5.2, CY - 18.4, 1.0, 0.6, n=10), lw=0.3)   # plait tie
+
+CHARACTERS.update(demelza=demelza, kerensa=kerensa)
+
+# ----------------------------------------------------------------------------- Case 9: visiting painter
+PAINT_SMOCK = C(236, 228, 210); PAINT_SMOCK2 = C(210, 200, 176); BERET = C(52, 64, 96); HAIR_A = C(120, 96, 78)
+
+def sketchbook(f):
+    """Open sketchbook with a little watercolour wash, held at the shared prop hand."""
+    k = f.k
+    nb = [(1.8, 60.4, 0), (10.4, 61.2, 0), (9.8, 72.8, 0), (1.2, 72.0, 0)]
+    with k.tint(C(250, 246, 236)): f.shape(nb, lw=0.7)
+    f.shape([(1.2, 72.0, 0), (1.8, 60.4, 0), (2.8, 60.5, 0), (2.2, 72.1, 0)], lw=0.4, fill=C(180, 140, 100))
+    # pale wash of sea + a sun disc (no spoiler: could be dawn or dusk)
+    with k.tint(C(160, 200, 220)): f.shape([(3.2, 64.0, 0), (9.0, 64.4, 0), (8.8, 70.6, 0), (3.0, 70.2, 0)], lw=0)
+    f.dot(7.4, 67.8, 1.1, fill=C(246, 190, 90))
+    f.curve([(3.4, 68.6), (6.0, 69.4), (8.6, 68.8)], lw=0.35, color=C(90, 140, 160))
+
+def ashdown(k, x, y, h, expr="neutral", flip=False, prop=True):
+    """Mr Ashdown (Case 9): visiting painter — slate beret, paint-stained cream smock, charcoal trousers, sketchbook.
+    Shares the suspect stance / arm pose / head size with tamsin and hedley until the confession (sheepish)."""
+    with Fig(k, x, y, h, flip) as f:
+        trou = [(-8.0, 52, 0), (-7.8, 26), (-7.2, 3.6, 0), (-1.2, 3.6, 0), (-0.8, 40), (0.8, 40), (1.2, 3.6, 0), (7.2, 3.6, 0), (7.8, 26), (8.0, 52, 0)]
+        with k.tint(C(70, 72, 84)):
+            f.shape(trou, lw=1.0); f.hatch(trou, angle=70, gap=1.5, lw=0.26); f.shape(trou, lw=1.0, fill=None)
+        with k.tint(None, dark=C(40, 36, 34)):
+            for sg in (-1, 1): shoe(f, sg * 4.0, sg, top=3.4)
+        smock = [(-2.8, 82.0), (-11.4, 79.6), (-12.4, 70), (-11.6, 52), (-12.2, 28.0, 0.5), (0, 26.6), (12.2, 28.0, 0.5), (11.6, 52), (12.4, 70), (11.4, 79.6), (2.8, 82.0)]
+        with k.tint(PAINT_SMOCK, hatch=PAINT_SMOCK2):
+            f.shape(smock, lw=1.1); f.hatch(smock, angle=-35, gap=2.0, lw=0.24, box=(6, 28, 14, 82)); f.shape(smock, lw=1.1, fill=None)
+        # paint stains (tiny, no direction)
+        for (px, py, col) in ((-6.0, 44, C(120, 160, 200)), (5.5, 38, C(220, 140, 90)), (-3.0, 56, C(160, 110, 180)), (7.0, 50, C(90, 150, 120)), (0.5, 34, C(220, 100, 90))):
+            f.dot(px, py, 1.1, fill=col)
+        f.curve([(-10.0, 58.0), (0, 57.2), (10.0, 58.0)], lw=0.6)  # tie belt
+        sleeve_arm(f, L_ARM, 2.6, PAINT_SMOCK, cuff=2)
+        skin_hand(f, *L_HAND[:2], L_HAND[2], 1.0)
+        sleeve_arm(f, R_ARM, 2.6, PAINT_SMOCK, cuff=2)
+        if prop: sketchbook(f)
+        skin_hand(f, *R_HAND[:2], R_HAND[2], 1.0)
+        with k.tint(SKIN): neck(f, CY, w=2.3)
+        face(f, expr, rx=6.0, ry=7.2, jaw=0.7, nose="long", brows="thick", lines=1, blush=(expr == "sheepish"))
+        with k.tint(HAIR_A):
+            for sg in (-1, 1):
+                f.shape([(sg * 5.6, CY + 3.4), (sg * 6.6, CY + 1.0), (sg * 6.4, CY - 2.2), (sg * 5.2, CY - 1.0), (sg * 5.2, CY + 2.0)], lw=0.55)
+            f.shape([(-6.0, CY + 2.6), (-5.0, CY + 6.2), (-2.0, CY + 7.8), (0, CY + 8.0), (2.0, CY + 7.8), (5.0, CY + 6.2), (6.0, CY + 2.6),
+                     (4.0, CY + 3.6), (0, CY + 4.4), (-4.0, CY + 3.6)], lw=0.7)
+        # slate beret
+        with k.tint(BERET, dark=shade(BERET, 0.7)):
+            cap = [(-7.2, CY + 3.8, 0), (-8.4, CY + 6.6), (-6.0, CY + 10.0), (-2.0, CY + 11.6), (2.4, CY + 11.2), (6.4, CY + 9.0), (8.0, CY + 5.8), (6.8, CY + 3.6, 0)]
+            f.shape(cap, lw=1.0)
+            f.shape([(-7.0, CY + 3.8), (0, CY + 4.4), (6.8, CY + 3.6), (6.4, CY + 2.4), (0, CY + 2.6), (-6.6, CY + 2.6)], lw=0.8, fill=K)
+            f.dot(-2.4, CY + 10.6, 0.7, fill=C(200, 70, 70))  # little pom accent
+
+CHARACTERS.update(ashdown=ashdown)

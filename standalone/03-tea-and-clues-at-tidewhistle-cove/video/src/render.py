@@ -22,10 +22,14 @@ C = importlib.import_module(f"cases.case{int(_num):02d}" + (f"_{_var}" if _var e
 
 HERE = os.path.dirname(os.path.abspath(__file__)); VID = os.path.join(HERE, "..")
 ART = os.path.join(VID, C.ART); WORK = os.path.join(VID, "work")
-AUDIO = os.path.join(VID, "..", "audio", C.AUDIO)
+_AUDIO_DIR = os.environ.get("TIDEWHISTLE_AUDIO_DIR") or os.path.join(VID, "..", "audio")
+AUDIO = os.path.join(_AUDIO_DIR, C.AUDIO)
 CLUES = os.path.join(VID, C.CLUES)
-G = "/usr/share/fonts/truetype/sand-box/google/"
+G = os.environ.get("TIDEWHISTLE_FONTS", "/usr/share/fonts/truetype/sand-box/google/").rstrip("/") + "/"
 FPS = 30
+# Resource caps for shared servers (unset = old behaviour: one worker per CPU, x264 auto threads)
+WORKERS = int(os.environ["TIDEWHISTLE_WORKERS"]) if os.environ.get("TIDEWHISTLE_WORKERS") else None
+X264_THREADS = ["-threads", os.environ["TIDEWHISTLE_X264_THREADS"]] if os.environ.get("TIDEWHISTLE_X264_THREADS") else []
 PAPER = (247, 240, 225); ARTPAPER = (251, 247, 236); INK = (38, 33, 30); SOFT = (120, 104, 88); ACCENT = (150, 70, 52)
 VIGNETTE = (226, 212, 188); RING = (205, 192, 170); SHADE = (150, 70, 52)
 STYLE = getattr(C, "STYLE", "color")      # "bw": black-and-white ink look (cases/caseNN.py STYLE = "bw"); red marks stay red
@@ -228,20 +232,28 @@ def anim_scene(key):
         _anim[key] = anim.Scene(ART, ANIM[key], tmap=sh, words=TIM_ORIG_WORDS, scale=0.7, lut=lut())
     return _anim[key]
 
-def _view_box(sc, t, W, H):
-    """Compute the crop box (bx, by, bw, bh) in FULL-resolution plate pixels for an art/pan scene."""
+KEEP_ASPECT = getattr(C, "KEEP_ASPECT", False)   # Case 8+: crop at the view's own aspect (older cases: 4:3 crop, kept for re-renders)
+
+def _view_box(sc, t, W, H, asp=None):
+    """Compute the crop box (bx, by, bw, bh) in FULL-resolution plate pixels for an art/pan scene.
+    asp: output aspect (KEEP_ASPECT) so nothing is stretched; default 4:3 as in cases 1-7."""
+    asp = asp if (asp and KEEP_ASPECT) else 4 / 3
     if sc["k"] == "art":
         u = ease((t - sc["t0"]) / max(1e-6, sc["t1"] - sc["t0"]))
         cx, cy, z = [a + (b - a) * u for a, b in zip(sc["a"], sc["b"])]
-        bh = H / z; bw = bh * 4 / 3
+        bh = H / z; bw = bh * asp
+        if bw > W: bw = W; bh = bw / asp
         box = (cx * W - bw / 2, cy * H - bh / 2)
         m = 0.05 * H
+        if KEEP_ASPECT:   # wide crops can be nearly full-width: shrink the margin instead of going negative
+            mx = max(0.0, min(m, (W - bw) / 2)); my = max(0.0, min(m, (H - bh) / 2))
+            return min(max(mx, box[0]), W - mx - bw), min(max(my, box[1]), H - my - bh), bw, bh
         bx = min(max(m, box[0]), W - m - bw); by = min(max(m, box[1]), H - m - bh)
         return bx, by, bw, bh
     keys = sc["keys"]; PWp = W / C.LINEUP_PANELS
     k = max(i for i, kk in enumerate(keys) if kk[0] <= t or i == 0); k = min(k, len(keys) - 2)
     (ta, pa, za), (tb, pb, zb) = keys[k], keys[k + 1]; u = ease((t - ta) / max(1e-6, tb - ta))
-    p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * 4 / 3
+    p = pa + (pb - pa) * u; z = za + (zb - za) * u; bh = H / z; bw = bh * asp
     box = ((p + 0.45) * PWp - bw / 2, H * 0.95 - bh)
     m = 0.05 * H
     bx = min(max(0, box[0]), W - bw); by = min(max(m, box[1]), H - m - bh)
@@ -251,9 +263,9 @@ def viewport(L, sc, t):
     key = sc["img"] if sc["k"] == "art" else "lineup"
     if ANIM and key in ANIM:
         scene = anim_scene(key); W, H = scene.man["W"], scene.man["H"]
-        bx, by, bw, bh = _view_box(sc, t, W, H)
+        bx, by, bw, bh = _view_box(sc, t, W, H, L.vw / L.vh)
         return scene.frame(t, (bx, by, bw, bh), (L.vw, L.vh))
-    im = art(key); bx, by, bw, bh = _view_box(sc, t, im.width, im.height)
+    im = art(key); bx, by, bw, bh = _view_box(sc, t, im.width, im.height, L.vw / L.vh)
     return im.resize((L.vw, L.vh), Image.BILINEAR, box=(bx, by, bx + bw, by + bh))
 
 
@@ -376,9 +388,11 @@ def hook_caps():
 HOOK_CAPS = hook_caps()
 
 _emoji = {}
+# Bitmap (CBDT) Noto Color Emoji, as shipped by Debian. Fedora's COLRv1 build is not equivalent.
+EMOJI_FONT = os.environ.get("TIDEWHISTLE_EMOJI_FONT", "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf")
 def emoji_img(size):
     if size not in _emoji:
-        f = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
+        f = ImageFont.truetype(EMOJI_FONT, 109)   # CBDT bitmap font: 109 px is its only strike
         im = Image.new("RGBA", (136, 128), (0, 0, 0, 0)); ImageDraw.Draw(im).text((0, 0), HOOK_EMOJI, font=f, embedded_color=True)
         im = im.crop(im.getbbox())
         if STYLE == "bw":   # grey emoji: keep the black-and-white look
@@ -400,7 +414,260 @@ def hook_title(L):
             e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 24), int(y + f.size * 0.22)))
     L.cache[key] = im; return im
 
+# ----------------------------------------------------------------------------- "statements" open (Case 8+)
+# A different shape from the case 6/7 open (banner title / framed art / cast strip): chalkboard title slab,
+# borderless full-bleed hero art with feathered edges, then a 2x2 suspect grid whose speech bubbles pop in on
+# "four statements" and an "ONLY 1 IS TRUE" stamp landing on "one". No suspect is singled out.
+CHALK_SLATE = (44, 56, 58); CHALK_INK = (244, 240, 228); CHALK_DUST = (90, 104, 104)
+
+def _word_t(word, nth=0):
+    hits = [w for w in HOOK["words"] if re.sub(r"[^a-z0-9]", "", w["w"].lower()) == word]
+    return hits[min(nth, len(hits) - 1)]["s"] if hits else None
+
+def chalk_title(L):
+    key = ("chalktitle",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 90 if V else 72); lines = C.HOOK_LINES
+    W = (L.W - 80) if V else (L.vw + 0); lh = int(f.size * 1.2); H = lh * len(lines) + 70
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([0, 0, W - 1, H - 1], radius=26, fill=CHALK_SLATE + (255,), outline=(120, 86, 60, 255), width=10)
+    d.rounded_rectangle([18, 18, W - 19, H - 19], radius=16, outline=CHALK_INK + (110,), width=2)
+    import random as _r
+    rr = _r.Random(8)
+    for _ in range(260):   # chalk dust
+        x, y = rr.uniform(20, W - 20), rr.uniform(20, H - 20); d.line([x, y, x + rr.uniform(3, 18), y + rr.uniform(-1, 1)], fill=CHALK_DUST + (90,), width=1)
+    es = int(f.size * 0.85)
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1
+        tw = d.textlength(ln, font=f) + (es + 22 if last else 0); x = (W - tw) / 2; y = 34 + i * lh
+        d.text((x, y), ln, font=f, fill=CHALK_INK + (255,))
+        if last: e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 22), int(y + f.size * 0.25)))
+    L.cache[key] = im; return im
+
+def _feather(w, h, edge):
+    key = ("feather", w, h, edge)
+    if key not in _art:
+        m = Image.new("L", (w, h), 255); d = ImageDraw.Draw(m)
+        for i in range(edge):
+            v = int(255 * ease(i / edge)); d.line([0, i, w, i], fill=v); d.line([0, h - 1 - i, w, h - 1 - i], fill=v)
+        _art[key] = m
+    return _art[key]
+
+def _bubble(size, a, flip=False):
+    key = ("bubble", size, flip)
+    if key not in _art:
+        w, h = size; im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.rounded_rectangle([4, 4, w - 5, h - 34], radius=28, fill=(255, 253, 246, 255), outline=INK + (255,), width=5)
+        X = (lambda x: w - x) if flip else (lambda x: x)   # tail on the left (default) or right; the "?" never mirrors
+        tail = [(X(w * 0.18), h - 37), (X(w * 0.08), h - 4), (X(w * 0.38), h - 37)]
+        d.polygon(tail, fill=(255, 253, 246, 255))
+        d.line([(tail[0][0], h - 36), tail[1], tail[2]], fill=INK + (255,), width=5, joint="curve")
+        f = F("play", int((h - 34) * 0.72)); bb = d.textbbox((0, 0), "?", font=f)
+        d.text(((w - (bb[0] + bb[2])) / 2, (h - 34 - (bb[1] + bb[3])) / 2), "?", font=f, fill=ACCENT + (255,))
+        _art[key] = im
+    im = _art[key]
+    if a >= 0.999: return im
+    im = im.copy(); im.putalpha(im.getchannel("A").point(lambda v: int(v * a))); return im
+
+def _stamp(L):
+    key = ("stamp",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("plex", 60 if V else 42); txt = getattr(C, "HOOK_STAMP", "ONLY 1 IS TRUE")
+    d0 = ImageDraw.Draw(Image.new("RGBA", (10, 10))); tw = d0.textlength(txt, font=f)
+    w, h = int(tw + 90), int(f.size * 1.75)
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im); col = (176, 40, 34)
+    d.rounded_rectangle([4, 4, w - 5, h - 5], radius=16, fill=(255, 250, 240, 228), outline=col + (255,), width=9)
+    d.rounded_rectangle([18, 18, w - 19, h - 19], radius=10, outline=col + (255,), width=3)
+    bb = d.textbbox((0, 0), txt, font=f); d.text(((w - (bb[0] + bb[2])) / 2, (h - (bb[1] + bb[3])) / 2), txt, font=f, fill=col + (255,))
+    im = im.rotate(7, resample=Image.BICUBIC, expand=True)
+    L.cache[key] = im; return im
+
+def hook_frame_statements(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    # 1. hero art, full bleed (vertical) / borderless (wide), feathered top+bottom, slow push-in
+    if V: aw, ah, ax, ay = L.W, 590, 0, 336
+    else: aw, ah, ax, ay = 924, 520, 34, 300
+    u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
+    (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
+    scene = anim_scene("hook"); W, H = scene.man["W"], scene.man["H"]
+    bw = W / z; bh = bw * ah / aw
+    if bh > H: bh = H; bw = bh * aw / ah
+    bx = min(max(0, cx * W - bw / 2), W - bw); by = min(max(0, cy * H - bh / 2), H - bh)
+    hero = scene.frame(t, (bx, by, bw, bh), (aw, ah))
+    if V: im.paste(hero, (ax, ay), _feather(aw, ah, 46))
+    else:
+        m = _feather(aw, ah, 40).copy(); md = ImageDraw.Draw(m)
+        for i in range(40):
+            v = int(255 * ease(i / 40)); md.line([i, 0, i, ah], fill=v); md.line([aw - 1 - i, 0, aw - 1 - i, ah], fill=v)
+        im.paste(hero, (ax, ay), m)
+    # 2. chalkboard title slab (drops in a touch from frame 1 — still readable on frame 1)
+    ct = chalk_title(L); dy = int(-14 * (1 - ease(t / 0.3)))
+    tx, ty = (40, 26) if V else (34 + (924 - ct.width) // 2, 40)
+    im.paste(ct, (tx, ty + dy), ct)
+    # 3. spoken line
+    f3 = F("crimi", 60 if V else 50); capy = 936 if V else 830; capw = (L.W - 80) if V else 924; capx = 40 if V else 34
+    for c in HOOK_CAPS:
+        if c["s"] <= t < c["e"]:
+            a = min(1, (t - c["s"]) / 0.12) if c["s"] > 0 else 1
+            lay = Image.new("RGBA", (capw, 170), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+            lines = wrap(dl, curly(c["text"]), f3, capw - 40); y = (160 - len(lines) * 70) // 2
+            for ln in lines: ctext(dl, capw / 2, y, ln, f3, INK + (int(255 * a),)); y += 70
+            im.paste(lay, (capx, capy), lay); break
+    # 4. 2x2 suspect grid (equal cards, idle + blink only)
+    gs = anim_scene("grid"); GWp, GHp = gs.man["W"], gs.man["H"]
+    gw = 900 if V else 880; gh = int(gw * GHp / GWp)
+    gx, gy = ((L.W - gw) // 2, 1110) if V else (1000, 170)
+    gy += int(40 * (1 - ease(t / 0.5)))
+    im.paste(gs.frame(t, (0, 0, GWp, GHp), (gw, gh)), (gx, gy))
+    d.rectangle([gx - 6, gy - 6, gx + gw + 5, gy + gh + 5], outline=INK, width=3)
+    # 5. "?" bubbles pop in, one per suspect, on "four statements"
+    t_st = _word_t("statements") or 3.6; t_four = (_word_t("four", 1) or t_st - 0.1)
+    bw_, bh_ = int(gw * 0.19), int(gw * 0.19 * 0.9)
+    for i in range(4):
+        tb = t_four + i * 0.16
+        if t < tb: continue
+        p = ease((t - tb) / 0.22); sc_ = 0.6 + 0.4 * p + 0.08 * math.sin(min(1, (t - tb) / 0.35) * math.pi)
+        b = _bubble((bw_, bh_), p, flip=bool(i % 2))
+        bob = int(4 * math.sin(2 * math.pi * (t - tb) / 1.6 + i))
+        b = b.resize((max(1, int(bw_ * sc_)), max(1, int(bh_ * sc_))), Image.LANCZOS)
+        col, row = i % 2, i // 2
+        bx_ = gx + int(gw * (0.255 if col == 0 else 0.555)); by_ = gy + int(gh * (0.5 * row + 0.06)) + bob
+        im.paste(b, (bx_ + (bw_ - b.width) // 2, by_ + (bh_ - b.height)), b)
+    # 6. ONLY 1 IS TRUE stamp lands on "one"
+    t_one = _word_t("one") or 4.76
+    if t >= t_one - 0.05:
+        st = _stamp(L); p = ease((t - t_one + 0.05) / 0.2); s_ = 1.0 + 0.6 * (1 - p)
+        s2 = st.resize((int(st.width * s_), int(st.height * s_)), Image.LANCZOS)
+        if p < 1: s2.putalpha(s2.getchannel("A").point(lambda v: int(v * p)))
+        im.paste(s2, (gx + (gw - s2.width) // 2, gy + (gh - s2.height) // 2), s2)
+    # 7. preview label
+    n_sus = getattr(C, "LINEUP_PANELS", 4)
+    lab = getattr(C, "HOOK_LABEL", f"{n_sus} suspects \u00b7 {n_sus} statements \u00b7 1 truth"); f2 = F("plex", 50 if V else 44)
+    ctext(d, gx + gw / 2, gy + gh + 22, lab, f2, ACCENT)
+    return im
+
+
+# ----------------------------------------------------------------------------- "compass" open (Case 9+)
+# Unlike case 6 closed-door, case 7 gnome-banner, and case 8 chalkboard-statements: a compass-rose title ring,
+# borderless empty-easel hero, three equal suspect cards, a spinning compass that lands pointing EAST, and a
+# "ONE STORY FAILS" stamp. Geography tease without naming the culprit.
+COMPASS_INK = (46, 58, 72); COMPASS_GOLD = (220, 170, 80)
+
+def compass_title(L):
+    key = ("compasstitle",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 88 if V else 70); lines = C.HOOK_LINES
+    W = (L.W - 100) if V else 900; lh = int(f.size * 1.18); H = lh * len(lines) + 56
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    # rounded navy plate with a thin gold compass tick border
+    d.rounded_rectangle([0, 0, W - 1, H - 1], radius=30, fill=(36, 48, 68, 255), outline=COMPASS_GOLD + (255,), width=8)
+    d.rounded_rectangle([14, 14, W - 15, H - 15], radius=20, outline=(244, 240, 228, 140), width=2)
+    # tiny N/E/S/W ticks on the rim
+    for lab, (tx, ty) in (("N", (W / 2, 8)), ("E", (W - 22, H / 2 - 10)), ("S", (W / 2, H - 28)), ("W", (10, H / 2 - 10))):
+        d.text((tx - 6, ty), lab, font=F("plex", 22), fill=COMPASS_GOLD + (255,))
+    es = int(f.size * 0.85)
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1
+        tw = d.textlength(ln, font=f) + (es + 20 if last else 0); x = (W - tw) / 2; y = 28 + i * lh
+        d.text((x, y), ln, font=f, fill=(250, 246, 236, 255))
+        if last:
+            e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 20), int(y + f.size * 0.22)))
+    L.cache[key] = im; return im
+
+def _compass_dial(size, angle_deg, a=1.0):
+    """Brass compass dial with needle at angle_deg (0=N, 90=E)."""
+    key = ("compassdial", size, int(angle_deg) % 360)
+    if key not in _art:
+        s = size; im = Image.new("RGBA", (s, s), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        m = s // 2; r = s // 2 - 6
+        d.ellipse([6, 6, s - 7, s - 7], fill=(250, 246, 232, 255), outline=(160, 120, 50, 255), width=6)
+        d.ellipse([18, 18, s - 19, s - 19], outline=(46, 58, 72, 200), width=2)
+        f = F("plex", max(18, s // 10))
+        for lab, ang in (("N", 270), ("E", 0), ("S", 90), ("W", 180)):
+            rad = math.radians(ang); Fx = m + int((r - 22) * math.cos(rad)); Fy = m + int((r - 22) * math.sin(rad))
+            bb = d.textbbox((0, 0), lab, font=f)
+            d.text((Fx - (bb[2] - bb[0]) / 2, Fy - (bb[3] - bb[1]) / 2), lab, font=f,
+                   fill=((196, 84, 64, 255) if lab == "E" else (46, 58, 72, 255)))
+        # needle (drawn pointing up / N, then we rotate the whole dial layer separately in the frame)
+        d.polygon([(m - 7, m + 8), (m, m - r + 28), (m + 7, m + 8)], fill=(196, 84, 64, 255))
+        d.polygon([(m - 5, m - 4), (m, m + r - 32), (m + 5, m - 4)], fill=(46, 58, 72, 220))
+        d.ellipse([m - 8, m - 8, m + 8, m + 8], fill=(180, 140, 60, 255))
+        _art[key] = im
+    im = _art[key]
+    # Rotate so 0° on dial (= drawn N-up) becomes the requested bearing (90° = East)
+    # Pillow rotate is counter-clockwise; needle was drawn pointing up (screen-north).
+    # Want needle to point to `angle_deg` clockwise from north → rotate by -angle_deg.
+    rot = im.rotate(-angle_deg, resample=Image.BICUBIC, expand=False)
+    if a >= 0.999: return rot
+    rot = rot.copy(); rot.putalpha(rot.getchannel("A").point(lambda v: int(v * a))); return rot
+
+def hook_frame_compass(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    # 1. hero: empty easel, full-bleed feathered
+    if V: aw, ah, ax, ay = L.W, 560, 0, 310
+    else: aw, ah, ax, ay = 924, 500, 34, 280
+    u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
+    (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
+    scene = anim_scene("hook"); W, H = scene.man["W"], scene.man["H"]
+    bw = W / z; bh = bw * ah / aw
+    if bh > H: bh = H; bw = bh * aw / ah
+    bx = min(max(0, cx * W - bw / 2), W - bw); by = min(max(0, cy * H - bh / 2), H - bh)
+    hero = scene.frame(t, (bx, by, bw, bh), (aw, ah))
+    if V: im.paste(hero, (ax, ay), _feather(aw, ah, 46))
+    else:
+        m = _feather(aw, ah, 40).copy(); md = ImageDraw.Draw(m)
+        for i in range(40):
+            v = int(255 * ease(i / 40)); md.line([i, 0, i, ah], fill=v); md.line([aw - 1 - i, 0, aw - 1 - i, ah], fill=v)
+        im.paste(hero, (ax, ay), m)
+    # 2. compass-rose title
+    ct = compass_title(L); dy = int(-12 * (1 - ease(t / 0.3)))
+    tx, ty = (50, 22) if V else (34 + (924 - ct.width) // 2, 36)
+    im.paste(ct, (tx, ty + dy), ct)
+    # 3. spoken line
+    f3 = F("crimi", 58 if V else 48); capy = 900 if V else 800; capw = (L.W - 80) if V else 924; capx = 40 if V else 34
+    for c in HOOK_CAPS:
+        if c["s"] <= t < c["e"]:
+            a = min(1, (t - c["s"]) / 0.12) if c["s"] > 0 else 1
+            lay = Image.new("RGBA", (capw, 170), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+            lines = wrap(dl, curly(c["text"]), f3, capw - 40); y = (160 - len(lines) * 68) // 2
+            for ln in lines: ctext(dl, capw / 2, y, ln, f3, INK + (int(255 * a),)); y += 68
+            im.paste(lay, (capx, capy), lay); break
+    # 4. three equal suspect cards
+    gs = anim_scene("cast"); GWp, GHp = gs.man["W"], gs.man["H"]
+    gw = 960 if V else 900; gh = int(gw * GHp / GWp)
+    gx, gy = ((L.W - gw) // 2, 1160) if V else (1000, 180)
+    gy += int(36 * (1 - ease(t / 0.5)))
+    im.paste(gs.frame(t, (0, 0, GWp, GHp), (gw, gh)), (gx, gy))
+    d.rectangle([gx - 5, gy - 5, gx + gw + 4, gy + gh + 4], outline=INK, width=3)
+    # 5. spinning compass lands on EAST when "fit" / "story" is spoken
+    t_spin = _word_t("story") or _word_t("fit") or 3.2
+    dial_s = int(gw * 0.28) if V else int(gw * 0.26)
+    if t >= t_spin - 1.2:
+        # spin then settle on East (90°)
+        age = t - (t_spin - 1.2)
+        if age < 1.0:
+            ang = (age * 720) % 360   # two full spins
+            aa = min(1.0, age / 0.2)
+        else:
+            ang = 90.0; aa = 1.0
+        dial = _compass_dial(dial_s, ang, aa)
+        dx = gx + (gw - dial.width) // 2; dy = gy + (gh - dial.height) // 2 - (10 if V else 0)
+        im.paste(dial, (dx, dy), dial)
+    # 6. stamp on "lie" / "spot"
+    t_stamp = _word_t("lie") or _word_t("spot") or (HOOK_DUR - 1.2)
+    if t >= t_stamp - 0.05:
+        st = _stamp(L); p = ease((t - t_stamp + 0.05) / 0.2); s_ = 1.0 + 0.55 * (1 - p)
+        s2 = st.resize((int(st.width * s_), int(st.height * s_)), Image.LANCZOS)
+        if p < 1: s2.putalpha(s2.getchannel("A").point(lambda v: int(v * p)))
+        im.paste(s2, (gx + (gw - s2.width) // 2, gy + gh - s2.height - 8), s2)
+    # 7. label
+    lab = getattr(C, "HOOK_LABEL", "3 people · 1 painting · 1 wrong story"); f2 = F("plex", 48 if V else 42)
+    ctext(d, gx + gw / 2, gy + gh + 20, lab, f2, ACCENT)
+    return im
+
 def hook_frame(L, t):
+    if getattr(C, "HOOK_STYLE", "") == "statements": return hook_frame_statements(L, t)
+    if getattr(C, "HOOK_STYLE", "") == "compass": return hook_frame_compass(L, t)
     V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
     # art: slowly pushing in from frame 1 (cases may enlarge / raise it via HOOK_ART_*)
     if V:
@@ -529,7 +796,7 @@ def render_chunk(args):
     L = Layout(fmt)
     cmd = ["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{L.W}x{L.H}", "-r", str(FPS), "-i", "-",
            "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-maxrate", "3200k", "-bufsize", "6400k", "-tune", "animation",
-           "-pix_fmt", "yuv420p", "-g", "60", out]
+           "-pix_fmt", "yuv420p", "-g", "60", *X264_THREADS, out]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for n in range(f0, f1): p.stdin.write(frame(L, n / FPS).tobytes())
     p.stdin.close(); p.wait(); assert p.returncode == 0
@@ -558,7 +825,7 @@ def main():
     N = int(END * FPS); parts = max(4, os.cpu_count() or 4); step = math.ceil(N / parts)
     os.makedirs(os.path.join(WORK, "parts"), exist_ok=True)
     jobs = [(fmt, i * step, min(N, (i + 1) * step), os.path.join(WORK, "parts", f"{PFX}{fmt}-{i:02d}.mp4")) for i in range(parts)]
-    with ProcessPoolExecutor(parts) as ex: outs = list(ex.map(render_chunk, jobs))
+    with ProcessPoolExecutor(WORKERS or parts) as ex: outs = list(ex.map(render_chunk, jobs))
     lst = os.path.join(WORK, "parts", f"{PFX}{fmt}.txt"); open(lst, "w").write("".join(f"file '{o}'\n" for o in outs))
     final = os.path.join(VID, f"{VIDEO_SLUG}-{fmt}.mp4")
     wav = retimed_audio()

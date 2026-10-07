@@ -1,3 +1,5 @@
+> **Runner repo:** the extractable render CLI now lives in [`blakelapierre/tidewhistle-video`](https://github.com/blakelapierre/tidewhistle-video) (private). This folder remains the working tree inside kdp-books.
+
 # Case 1 video: The Prize Sponge
 
 A storybook-style video of Case 1 from *Tea and Clues at Tidewhistle Cove*, by Blake La Pierre. It uses the same Kokoro narration as the audiobook (voice af_heart), plus a short spoken hook made locally with the same voice. Every frame is drawn locally by code (Python + Pillow + reportlab + ffmpeg), with no paid or AI image/video services.
@@ -237,3 +239,41 @@ python3 art_case07.py
 python3 render.py vertical --case=7 && python3 render.py wide --case=7 && python3 make_shorts.py --case=7
 ```
 YouTube text: `shorts/case-07-youtube.md`. Visual checklist: `shorts/case-07-visual-checklist.md`.
+
+## Case 8: The Four Bakers
+Colour-detailed art (`src/art_case08.py` → `work/art-08/`), mid-screen question bar, four suspects drawn identically until the solution (only the confession shows Mr Fenwick sheepish). New open `HOOK_STYLE="statements"` in shared `render.py`: chalkboard title slab, borderless full-bleed empty tray, 2x2 suspect grid with "?" bubbles on "four statements" and an ONLY 1 IS TRUE stamp on "one" (cinnamon accent). New opt-in `KEEP_ASPECT=True` crops art at the view's own aspect instead of stretching a 4:3 crop (Cases 1-7 unchanged). Solution marks are chalked on the same statement board. Rendered on streambox inside the capped `tidewhistle.slice` (tidewhistle-video repo).
+
+| File | Format |
+|---|---|
+| `standalone-03-tidewhistle-case-08-the-four-bakers-vertical.mp4` | 1080x1920 Shorts source |
+| `standalone-03-tidewhistle-case-08-the-four-bakers-wide.mp4` | 1920x1080 main channel |
+| `shorts/...-short-part1.mp4` / `-part2.mp4` | Shorts split |
+
+Rebuild:
+```
+cd src
+python3 art_case08.py
+/tmp/tts/venv/bin/python hook_audio.py "Twelve cinnamon buns have vanished. Four suspects, four statements, and only one of them is true. Can you find the thief?" ../work/hook-08.wav
+python3 render.py vertical --case=8 && python3 render.py wide --case=8 && python3 make_shorts.py --case=8
+```
+(hook_audio's whisper pass returned no words for this line, so `work/hook-08.wav.json` word times were set by hand from head/tail passes.)
+Previews: `previews/case08-*.png`. YouTube text: `shorts/case-08-youtube.md`. Visual checklist: `shorts/case-08-visual-checklist.md`.
+
+## Case 9: The Sunset over the Sea
+Colour-detailed art (`src/art_case09.py` → `work/art-09/`), mid-screen question bar, three suspects drawn identically until the solution (only the confession shows Mr Ashdown sheepish). New open `HOOK_STYLE="compass"` in shared `render.py`: navy compass-rose title ring, borderless full-bleed empty easel, three equal suspect cards, spinning compass landing EAST, ONE STORY FAILS stamp (sunset-coral accent). `KEEP_ASPECT=True`. Rendered on streambox inside the capped `tidewhistle.slice` (tidewhistle-video repo).
+
+| File | Role |
+|---|---|
+| `standalone-03-tidewhistle-case-09-the-sunset-over-the-sea-vertical.mp4` | 1080x1920 Shorts source |
+| `standalone-03-tidewhistle-case-09-the-sunset-over-the-sea-wide.mp4` | 1920x1080 main channel |
+| `shorts/standalone-03-tidewhistle-case-09-the-sunset-over-the-sea-short-part1.mp4` | Shorts Part 1 |
+| `shorts/standalone-03-tidewhistle-case-09-the-sunset-over-the-sea-short-part2.mp4` | Shorts Part 2 |
+
+```bash
+python3 art_case09.py
+CASE=9 python3 render.py vertical
+CASE=9 python3 render.py wide
+CASE=9 python3 make_shorts.py
+```
+
+Previews: `previews/case09-*.png`. YouTube text: `shorts/case-09-youtube.md`. Visual checklist: `shorts/case-09-visual-checklist.md`.

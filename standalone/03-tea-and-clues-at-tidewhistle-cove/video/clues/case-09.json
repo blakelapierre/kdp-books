@@ -1,0 +1,146 @@
+{
+ "case": "Case 9 \u00b7 The Sunset over the Sea",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who was where"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-east",
+   "section": "facts",
+   "text": "Tidewhistle Cove faces east \u2014 sun rises out of the sea",
+   "at": {
+    "seg": 2,
+    "phrase": "faces east"
+   }
+  },
+  {
+   "id": "f-evening",
+   "section": "facts",
+   "text": "In the evening the sun sets behind the hills at the back",
+   "at": {
+    "seg": 2,
+    "phrase": "behind the hills"
+   }
+  },
+  {
+   "id": "f-painting",
+   "section": "facts",
+   "text": "Demelza's lighthouse-at-dawn watercolour on its easel at seven",
+   "at": {
+    "seg": 3,
+    "phrase": "on its easel"
+   }
+  },
+  {
+   "id": "f-gone",
+   "section": "facts",
+   "text": "By nine the painting was gone",
+   "at": {
+    "seg": 3,
+    "phrase": "it was gone"
+   }
+  },
+  {
+   "id": "tamsin",
+   "section": "who",
+   "name": "Tamsin Trevelyan",
+   "text": "book club in her shop, seven until nine (eight witnesses)",
+   "at": {
+    "seg": 5,
+    "phrase": "Tamsin Trevelyan"
+   }
+  },
+  {
+   "id": "hedley",
+   "section": "who",
+   "name": "Hedley Truscott",
+   "text": "darts at the inn all evening (whole team vouched)",
+   "at": {
+    "seg": 6,
+    "phrase": "Hedley Truscott"
+   }
+  },
+  {
+   "id": "ashdown",
+   "section": "who",
+   "name": "Mr Ashdown",
+   "text": "visiting painter who had admired Demelza's work",
+   "at": {
+    "seg": 7,
+    "phrase": "Mr Ashdown"
+   }
+  },
+  {
+   "id": "ashdown-said",
+   "section": "who",
+   "parent": "ashdown",
+   "text": "\"I painted the sun setting into the sea from the clifftop.\"",
+   "at": {
+    "seg": 8,
+    "phrase": "setting into the sea"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "ashdown",
+   "span": "name",
+   "at": {
+    "seg": 14,
+    "phrase": "Ashdown took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-east",
+   "at": {
+    "seg": 15,
+    "phrase": "faces east"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "ashdown-said",
+   "at": {
+    "seg": 15,
+    "phrase": "wrong side"
+   }
+  },
+  {
+   "do": "note",
+   "text": "Nobody in Tidewhistle Cove could watch the sun set into the sea \u2014 the sea is on the sunrise side.",
+   "at": {
+    "seg": 15,
+    "phrase": "wrong side"
+   },
+   "hold": 6.0
+  },
+  {
+   "do": "check",
+   "item": "tamsin",
+   "at": {
+    "seg": 16,
+    "phrase": "book club"
+   }
+  },
+  {
+   "do": "check",
+   "item": "hedley",
+   "at": {
+    "seg": 16,
+    "phrase": "darts team"
+   }
+  }
+ ]
+}

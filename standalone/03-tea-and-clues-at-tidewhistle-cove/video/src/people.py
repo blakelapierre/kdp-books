@@ -139,7 +139,7 @@ def face_shape(cx, cy, rx, ry, jaw=0.62):
 
 def head(f, cx, cy, rx=6.0, ry=7.4, jaw=0.62, expr="neutral", glasses=False, brows="soft", nose="small",
          lines=0, moustache=False, beard=False, blush=False, ears=True, shade=True):
-    """Face with ears, eyes, brows, nose, mouth. expr: smile | kind | neutral | sheepish."""
+    """Face with ears, eyes, brows, nose, mouth. expr: smile | kind | neutral | sheepish | cross | eyebrow."""
     if ears:
         for sg in (-1, 1):
             e = ell(cx + sg * rx * 0.96, cy - 0.3, 1.25, 1.9, n=16)
@@ -177,6 +177,8 @@ def head(f, cx, cy, rx=6.0, ry=7.4, jaw=0.62, expr="neutral", glasses=False, bro
         else:
             if expr == "sheepish": pts = [(x - 1.3 * sg, by + 0.5), (x, by + 0.15), (x + 1.3 * sg, by - 0.4)]
             elif expr in ("smile", "kind"): pts = [(x - 1.4, by - 0.2), (x, by + 0.55), (x + 1.4, by - 0.1)]
+            elif expr == "cross": pts = [(x - 1.4 * sg, by + 0.55), (x, by + 0.2), (x + 1.4 * sg, by - 0.45)]   # knitted, low at the nose
+            elif expr == "eyebrow": pts = [(x - 1.4, by + (0.5 if sg > 0 else 0)), (x, by + (1.35 if sg > 0 else 0.3)), (x + 1.4, by + (0.7 if sg > 0 else 0.05))]   # one brow up (Agnes, Case 8)
             else: pts = [(x - 1.4, by), (x, by + 0.3), (x + 1.4, by + 0.05)]
             f.curve(pts, lw=0.8 if brows == "thick" else 0.6)
     if glasses:
@@ -202,10 +204,14 @@ def head(f, cx, cy, rx=6.0, ry=7.4, jaw=0.62, expr="neutral", glasses=False, bro
     elif expr == "smile":
         f.curve([(cx - 2.0, my + 0.35), (cx - 0.9, my - 0.55), (cx + 0.9, my - 0.55), (cx + 2.0, my + 0.35)], lw=0.7)
         for sg in (-1, 1): f.curve([(cx + sg * 2.0, my + 0.6), (cx + sg * 2.35, my + 0.2)], lw=0.35)
+    elif expr == "eyebrow":   # knowing half-smile
+        f.curve([(cx - 1.5, my - 0.05), (cx - 0.2, my - 0.3), (cx + 1.0, my - 0.25), (cx + 1.8, my + 0.3)], lw=0.65)
     elif expr == "kind":
         f.curve([(cx - 1.7, my + 0.2), (cx - 0.6, my - 0.4), (cx + 0.6, my - 0.4), (cx + 1.7, my + 0.2)], lw=0.65)
     elif expr == "sheepish":
         f.curve([(cx - 1.3, my - 0.1), (cx - 0.4, my + 0.15), (cx + 0.4, my - 0.15), (cx + 1.3, my + 0.05)], lw=0.65)
+    elif expr == "cross":   # grumpy turned-down mouth (Jago, Case 8)
+        f.curve([(cx - 1.8, my - 0.55), (cx - 0.7, my + 0.05), (cx + 0.7, my + 0.05), (cx + 1.8, my - 0.55)], lw=0.7)
     else:   # neutral, identical for every suspect
         f.curve([(cx - 1.35, my - 0.05), (cx, my - 0.2), (cx + 1.35, my - 0.05)], lw=0.65)
     if not beard and not moustache: f.curve([(cx - 0.6, my - 1.15), (cx + 0.6, my - 1.15)], lw=0.3)

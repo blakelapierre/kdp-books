@@ -1,0 +1,232 @@
+{
+ "case": "Case 8 · The Four Bakers",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who said what"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-buns",
+   "section": "facts",
+   "text": "Jago bakes a tray of twelve cinnamon buns every Saturday",
+   "at": {
+    "seg": 2,
+    "phrase": "tray of twelve"
+   }
+  },
+  {
+   "id": "f-rack",
+   "section": "facts",
+   "text": "Tray cools on the rack by the bakery's back door",
+   "at": {
+    "seg": 2,
+    "phrase": "back door"
+   }
+  },
+  {
+   "id": "f-gone",
+   "section": "facts",
+   "text": "Jago serving at the front — the whole tray disappeared",
+   "at": {
+    "seg": 3,
+    "phrase": "disappeared"
+   }
+  },
+  {
+   "id": "f-four",
+   "section": "facts",
+   "text": "Four people passed the back door in those ten minutes",
+   "at": {
+    "seg": 4,
+    "phrase": "ten minutes"
+   }
+  },
+  {
+   "id": "f-rule",
+   "section": "facts",
+   "text": "Jago: just ONE of the four is telling the truth; the other three are fibbing",
+   "at": {
+    "seg": 10,
+    "phrase": "all fibbing"
+   }
+  },
+  {
+   "id": "f-one",
+   "section": "facts",
+   "text": "One person took the buns",
+   "at": {
+    "seg": 12,
+    "phrase": "One person took the buns"
+   }
+  },
+  {
+   "id": "pip",
+   "section": "who",
+   "name": "Pip Carew",
+   "text": "passed the back door",
+   "at": {
+    "seg": 4,
+    "phrase": "Pip Carew"
+   }
+  },
+  {
+   "id": "pip-said",
+   "section": "who",
+   "parent": "pip",
+   "text": "\"Demelza took them.\"",
+   "at": {
+    "seg": 6,
+    "phrase": "Demelza took them"
+   }
+  },
+  {
+   "id": "demelza",
+   "section": "who",
+   "name": "Demelza Rowe",
+   "text": "passed the back door",
+   "at": {
+    "seg": 4,
+    "phrase": "Demelza Rowe"
+   }
+  },
+  {
+   "id": "demelza-said",
+   "section": "who",
+   "parent": "demelza",
+   "text": "\"Kerensa took them.\"",
+   "at": {
+    "seg": 7,
+    "phrase": "Kerensa took them"
+   }
+  },
+  {
+   "id": "fenwick",
+   "section": "who",
+   "name": "Mr Fenwick",
+   "text": "passed the back door (grocer)",
+   "at": {
+    "seg": 4,
+    "phrase": "the grocer"
+   }
+  },
+  {
+   "id": "fenwick-said",
+   "section": "who",
+   "parent": "fenwick",
+   "text": "\"I didn't take them.\"",
+   "at": {
+    "seg": 8,
+    "phrase": "didn't take them"
+   }
+  },
+  {
+   "id": "kerensa",
+   "section": "who",
+   "name": "Kerensa Hale",
+   "text": "passed the back door",
+   "at": {
+    "seg": 4,
+    "phrase": "Kerensa Hale"
+   }
+  },
+  {
+   "id": "kerensa-said",
+   "section": "who",
+   "parent": "kerensa",
+   "text": "\"Demelza is lying.\"",
+   "at": {
+    "seg": 9,
+    "phrase": "Demelza is lying"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "fenwick",
+   "span": "name",
+   "at": {
+    "seg": 17,
+    "phrase": "Fenwick took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-rule",
+   "at": {
+    "seg": 19,
+    "phrase": "telling the truth"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "pip-said",
+   "at": {
+    "seg": 19,
+    "phrase": "both Pip"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "fenwick-said",
+   "at": {
+    "seg": 19,
+    "phrase": "must be fibbing"
+   }
+  },
+  {
+   "do": "note",
+   "text": "The one truth is Demelza's or Kerensa's, so Pip and Mr Fenwick are both fibbing. \"I didn't take them\" is a fib: Mr Fenwick did.",
+   "at": {
+    "seg": 20,
+    "phrase": "did take them"
+   },
+   "hold": 6.5
+  },
+  {
+   "do": "circle",
+   "item": "fenwick-said",
+   "at": {
+    "seg": 20,
+    "phrase": "If that is a fib"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "demelza-said",
+   "at": {
+    "seg": 20,
+    "phrase": "is false"
+   }
+  },
+  {
+   "do": "check",
+   "item": "kerensa-said",
+   "at": {
+    "seg": 20,
+    "phrase": "Kerensa turns out"
+   }
+  },
+  {
+   "do": "strike",
+   "item": [
+    "pip",
+    "demelza",
+    "kerensa"
+   ],
+   "at": {
+    "seg": 20,
+    "phrase": "single truthful one"
+   }
+  }
+ ]
+}
