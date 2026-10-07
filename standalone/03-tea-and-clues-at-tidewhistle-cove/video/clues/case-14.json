@@ -1,0 +1,155 @@
+{
+ "case": "Case 14 \u00b7 The Blue Ribbon Key",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who was where"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-key",
+   "section": "facts",
+   "text": "Spare key under the terracotta pot by the hall door",
+   "at": {
+    "seg": 2,
+    "phrase": "plant pot"
+   }
+  },
+  {
+   "id": "f-ribbon",
+   "section": "facts",
+   "text": "It hangs on a short blue ribbon",
+   "at": {
+    "seg": 2,
+    "phrase": "blue ribbon"
+   }
+  },
+  {
+   "id": "f-committee",
+   "section": "facts",
+   "text": "Only the hall committee knows about it",
+   "at": {
+    "seg": 2,
+    "phrase": "hall committee"
+   }
+  },
+  {
+   "id": "f-hamper",
+   "section": "facts",
+   "text": "Raffle hamper gone from the LOCKED hall; no break-in: a key was used",
+   "at": {
+    "seg": 3,
+    "phrase": "with a key"
+   }
+  },
+  {
+   "id": "f-ollie",
+   "section": "facts",
+   "text": "Ollie looked under the pot; said only: the spare key is still there",
+   "at": {
+    "seg": 4,
+    "phrase": "still there"
+   }
+  },
+  {
+   "id": "demelza",
+   "section": "who",
+   "name": "Demelza Rowe",
+   "text": "left at 5, supper at her sister's (sister confirms)",
+   "at": {
+    "seg": 6,
+    "phrase": "sister confirmed"
+   }
+  },
+  {
+   "id": "pip",
+   "section": "who",
+   "name": "Pip Carew",
+   "text": "home at 6; had no idea there was a spare key",
+   "at": {
+    "seg": 7,
+    "phrase": "spare key at all"
+   }
+  },
+  {
+   "id": "spargo",
+   "section": "who",
+   "name": "Mr Spargo",
+   "text": "built the tombola stall",
+   "at": {
+    "seg": 8,
+    "phrase": "tombola stall"
+   }
+  },
+  {
+   "id": "spargo-said",
+   "section": "who",
+   "parent": "spargo",
+   "text": "\u201cI never knew it existed\u2026 I'd remember a key on a blue ribbon like that.\u201d",
+   "at": {
+    "seg": 9,
+    "phrase": "never knew"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "spargo",
+   "span": "name",
+   "at": {
+    "seg": 15,
+    "phrase": "Spargo took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "spargo-said",
+   "at": {
+    "seg": 16,
+    "phrase": "blue ribbon"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-ollie",
+   "at": {
+    "seg": 16,
+    "phrase": "still there"
+   }
+  },
+  {
+   "do": "note",
+   "text": "Nobody had mentioned the ribbon. Only the committee, or whoever had lifted that pot, could know it.",
+   "at": {
+    "seg": 16,
+    "phrase": "Nobody had mentioned"
+   },
+   "hold": 6.0
+  },
+  {
+   "do": "check",
+   "item": "pip",
+   "at": {
+    "seg": 17,
+    "phrase": "key at all"
+   }
+  },
+  {
+   "do": "check",
+   "item": "demelza",
+   "at": {
+    "seg": 17,
+    "phrase": "her sister's"
+   }
+  }
+ ]
+}

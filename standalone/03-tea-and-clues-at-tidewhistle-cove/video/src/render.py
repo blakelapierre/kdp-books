@@ -1101,6 +1101,60 @@ def hook_frame_redpen(L, t):
 
 HOOK_STYLES["redpen"] = hook_frame_redpen
 
+# ----------------------------------------------------------------------------- "keyhole" open (Case 14)
+# The title on a long key-fob tag with a key on its ring; the hero (the hall door and the plant pot) is first seen
+# through a keyhole that opens out to the full picture; three equal luggage-tag suspect cards; ONE SLIP OF THE TONGUE
+# stamp on "slip". Unlike Case 12 (calendar) and Case 13 (red pen notepaper).
+def _key_fob(L):
+    key = ("keyfob",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 88 if V else 68); lines = C.HOOK_LINES
+    W = (L.W - 120) if V else 880; lh = int(f.size * 1.15); H = lh * len(lines) + 56; hole = int(H * 0.5)
+    im = Image.new("RGBA", (W + 24, H + 24), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([12, 14, W + 12, H + 12], radius=H // 2, fill=VIGNETTE + (255,))
+    d.rounded_rectangle([0, 0, W, H], radius=H // 2, fill=(255, 255, 252, 255), outline=INK + (255,), width=7)
+    d.rounded_rectangle([14, 14, W - 14, H - 14], radius=H // 2 - 14, outline=INK + (255,), width=2)
+    cx, cy = H // 2, H // 2
+    d.ellipse([cx - 26, cy - 26, cx + 26, cy + 26], fill=L.bg().getpixel((5, 5)) + (255,), outline=INK + (255,), width=5)
+    # split key ring through the hole, crossing the fob's edge
+    d.arc([cx - 70, cy - 46, cx + 2, cy + 46], 60, 330, fill=INK + (255,), width=6)
+    d.arc([cx - 64, cy - 40, cx - 4, cy + 40], 70, 320, fill=INK + (255,), width=2)
+    es = int(f.size * 0.8); x_text0 = H; y = 26
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = d.textlength(ln, font=f) + (es + 16 if last else 0)
+        x = x_text0 + (W - x_text0 - 30 - tw) / 2; d.text((x, y), ln, font=f, fill=INK + (255,))
+        if last: im.alpha_composite(emoji_img(es), (int(x + d.textlength(ln, font=f) + 16), int(y + f.size * 0.22)))
+        y += lh
+    L.cache[key] = im; return im
+
+def _keyhole_mask(w, h, scale):
+    from PIL import ImageFilter
+    m = Image.new("L", (w, h), 0); d = ImageDraw.Draw(m)
+    r = h * 0.28 * scale; cx, cy = w / 2, h * 0.42
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=255)
+    d.polygon([(cx - r * 0.45, cy + r * 0.5), (cx + r * 0.45, cy + r * 0.5), (cx + r * 0.9, cy + r * 2.4), (cx - r * 0.9, cy + r * 2.4)], fill=255)
+    return m.filter(ImageFilter.GaussianBlur(6))
+
+def hook_frame_keyhole(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 330, L.W, 600) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    u = ease(t / 1.3)
+    if u < 1:
+        km = _keyhole_mask(rect[2], rect[3], 1.25 + 4.5 * u * u)
+        m = ImageChops_darker(m, km)
+    im.paste(hero, rect[:2], m)
+    fob = _key_fob(L); sw = 4.0 * math.exp(-2.0 * t) * math.sin(2 * math.pi * t / 0.9)
+    fr = fob.rotate(sw, resample=Image.BICUBIC, center=(fob.height // 2, fob.height // 2))
+    im.paste(fr, ((L.W - fob.width) // 2 if V else 34 + (924 - fob.width) // 2, 24 if V else 20), fr)
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("slip", "tongue"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["keyhole"] = hook_frame_keyhole
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

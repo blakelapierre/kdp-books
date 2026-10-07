@@ -331,3 +331,6 @@ Previews: `previews/case12-*.png`. YouTube text: `shorts/case-12-youtube.md`. Vi
 
 ## Case 13: The Misspelled Note
 B&W ink (`src/art_case13.py` → `work/art-13/`): Hedley's NO PARKING ON THE PEIR sign, the captain's ship in a bottle swapped for a friendly note, and three suspects drawn identically until the solution (only the confession shows Hedley sheepish). New open `HOOK_STYLE="redpen"`: the title handwritten on torn notepaper, a red pen underline and margin "?", the empty-shelf hero, and a ONE WORD GIVES IT AWAY stamp. Next card → Case 14 "The Blue Ribbon Key". Outputs, rebuild and docs follow the Case 12 pattern (`--case=13`, `shorts/case-13-*.md`, `previews/case13-*.png`).
+
+## Case 14: The Blue Ribbon Key
+B&W ink (`src/art_case14.py` → `work/art-14/`): the hall's spare key on its ribbon under the terracotta pot (the pot lifts to show it), the raffle hamper gone from the locked hall, and three suspects drawn identically until the solution (only the confession shows Mr Spargo sheepish). New open `HOOK_STYLE="keyhole"`: the title on a swinging key-fob tag, the hero first seen through an opening keyhole, and a ONE SLIP OF THE TONGUE stamp. Next card → Case 15 "The Warm Bonnet". Outputs, rebuild and docs follow the Case 12 pattern (`--case=14`).
