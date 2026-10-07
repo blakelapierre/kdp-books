@@ -59,7 +59,12 @@ TIM = json.load(open(os.path.join(VID, C.TIMING)))
 TIM_ORIG_WORDS = [dict(w) for w in TIM["words"]]   # ORIGINAL narration times (for anim.py talk sync)
 for w in TIM["words"]: w["s"], w["e"] = sh(w["s"]), sh(w["e"])
 ANIM = getattr(C, "ANIM", None)   # optional per-scene animation specs (cases/case04.py)
-AUDIO_END = sh(C.AUDIO_END); END = AUDIO_END + 5.0
+AUDIO_END = sh(C.AUDIO_END)
+# Case 10+: a "next case" teaser card after the book end card (Blake 2026-10-07). NEXT_CARD = True in the case config.
+from cases import teasers as TZ
+NEXT_ON = getattr(C, "NEXT_CARD", False)
+END_HOLD = 4.0 if NEXT_ON else 5.0; NEXT_DUR = 5.0 if NEXT_ON else 0.0
+END = AUDIO_END + END_HOLD + NEXT_DUR
 CD0 = sh(C.NARR_END) + 0.62; CD1 = CD0 + 10.0  # visible 10-second countdown, after all pre-solution narration
 
 def F(name, size):
@@ -76,6 +81,10 @@ SCENES = [dict(sc) for sc in C.SCENES]
 for sc in SCENES:
     sc["t0"] = 0.0 if sc["t0"] is None else sh(sc["t0"]); sc["t1"] = END if sc["t1"] is None else sh(sc["t1"])
     if sc["k"] == "pan": sc["keys"] = [(sh(t), p, z) for t, p, z in sc["keys"]]
+if NEXT_ON:
+    for sc in SCENES:
+        if sc["k"] == "end": sc["t1"] = AUDIO_END + END_HOLD
+    SCENES.append(dict(k="next", t0=AUDIO_END + END_HOLD, t1=END))
 XF = 0.7  # crossfade length
 
 SLUG = C.SLUG
@@ -668,6 +677,7 @@ def hook_frame_compass(L, t):
 def hook_frame(L, t):
     if getattr(C, "HOOK_STYLE", "") == "statements": return hook_frame_statements(L, t)
     if getattr(C, "HOOK_STYLE", "") == "compass": return hook_frame_compass(L, t)
+    if getattr(C, "HOOK_STYLE", "") in HOOK_STYLES: return HOOK_STYLES[C.HOOK_STYLE](L, t)
     V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
     # art: slowly pushing in from frame 1 (cases may enlarge / raise it via HOOK_ART_*)
     if V:
@@ -736,11 +746,188 @@ def hook_frame(L, t):
             im.paste(lay, (capx, capy), lay); break
     return im
 
+
+# ----------------------------------------------------------------------------- "next case" end card (Case 10+)
+BOOK_STATUS = os.environ.get("TIDEWHISTLE_BOOK_STATUS", "COMING SOON TO KINDLE")   # same wording as the end card
+
+def _bell(d, cx, cy, s, col):
+    """Tiny notification bell (subscribe hint), drawn with PIL."""
+    d.chord([cx - s * 0.5, cy - s * 0.55, cx + s * 0.5, cy + s * 0.45], 180, 360, fill=col)
+    d.polygon([(cx - s * 0.5, cy - s * 0.06), (cx + s * 0.5, cy - s * 0.06), (cx + s * 0.62, cy + s * 0.32), (cx - s * 0.62, cy + s * 0.32)], fill=col)
+    d.ellipse([cx - s * 0.13, cy + s * 0.3, cx + s * 0.13, cy + s * 0.52], fill=col)
+    d.ellipse([cx - s * 0.08, cy - s * 0.68, cx + s * 0.08, cy - s * 0.52], fill=col)
+
+def next_card_static(L):
+    key = ("nextcard",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; W, H = L.W, L.H
+    im = L.bg().copy(); d = ImageDraw.Draw(im)
+    m = 46 if V else 40
+    d.rectangle([m, m, W - m, H - m], outline=INK, width=4); d.rectangle([m + 10, m + 10, W - m - 10, H - m - 10], outline=INK, width=1)
+    last = C.NUM >= TZ.LAST_CASE
+    cx = W / 2; maxw = W - 2 * m - (110 if V else 260)
+    if not last:
+        n = C.NUM + 1; title = TZ.TITLES[n]; teaser = TZ.TEASERS[n]
+        y = 500 if V else 120
+        lab = "N E X T   C A S E"; ctext(d, cx, y, lab, F("plex", 52 if V else 42), ACCENT); y += 110 if V else 80
+        ctext(d, cx, y, f"Case {n}", F("play", 150 if V else 120), INK); y += 190 if V else 150
+        f = F("crimi", 84 if V else 70)
+        for ln in wrap(d, title, f, maxw): ctext(d, cx, y, ln, f, INK); y += int(f.size * 1.15)
+        y += 30; d.line([cx - 170, y, cx + 170, y], fill=ACCENT, width=3); y += 50
+        f = F("crim", 60 if V else 50); lines = wrap(d, teaser, f, maxw - (0 if V else 120))
+        for ln in lines: ctext(d, cx, y, ln, f, INK); y += int(f.size * 1.25)
+        # subscribe box
+        bw_ = (W - 2 * m - 120) if V else 1180; bh_ = 250 if V else 190
+        by0 = min(y + (110 if V else 50), (H - m - 120 - bh_) if V else (H - m - 70 - bh_))
+        bx0 = cx - bw_ / 2
+        d.rounded_rectangle([bx0 + 8, by0 + 10, bx0 + bw_ + 8, by0 + bh_ + 10], radius=30, fill=VIGNETTE)
+        d.rounded_rectangle([bx0, by0, bx0 + bw_, by0 + bh_], radius=30, fill=ARTPAPER, outline=INK, width=4)
+        f1 = F("play", 66 if V else 58); f2 = F("crimi", 54 if V else 46)
+        t1 = "New case every 6 hours"; bs = 64 if V else 56
+        while d.textlength(t1, font=f1) + bs + 24 > bw_ - 70: f1 = F("play", f1.size - 2)
+        tw = d.textlength(t1, font=f1)
+        x1 = cx - (tw + bs + 24) / 2
+        _bell(d, x1 + bs / 2, by0 + (70 if V else 56), bs, ACCENT)
+        d.text((x1 + bs + 24, by0 + (34 if V else 24)), t1, font=f1, fill=INK)
+        ctext(d, cx, by0 + (140 if V else 110), "subscribe so you don't miss it", f2, ACCENT)
+    else:
+        y = 300 if V else 120
+        ctext(d, cx, y, "T H E   L A S T   C A S E", F("plex", 52 if V else 42), ACCENT); y += 110 if V else 80
+        f = F("crimi", 70 if V else 58)
+        for ln in wrap(d, "That was the last case in the book.", f, maxw): ctext(d, cx, y, ln, f, INK); y += int(f.size * 1.2)
+        y += 40; d.line([cx - 170, y, cx + 170, y], fill=ACCENT, width=3); y += 60
+        f = F("crim", 58 if V else 48)
+        for ln in wrap(d, "All 30 cozy mini-mysteries, with every solution, are waiting in the book:", f, maxw):
+            ctext(d, cx, y, ln, f, INK); y += int(f.size * 1.25)
+        y += 40
+        ctext(d, cx, y, "Tea and Clues", F("play", 96 if V else 80), INK); y += 115 if V else 95
+        ctext(d, cx, y, "at Tidewhistle Cove", F("play", 76 if V else 64), INK); y += 120 if V else 100
+        ctext(d, cx, y, "by Blake La Pierre", F("crim", 60 if V else 52), INK); y += 130 if V else 100
+        f = F("plex", 56 if V else 50); tw = d.textlength(BOOK_STATUS, font=f)
+        d.rounded_rectangle([cx - tw / 2 - 40, y - 22, cx + tw / 2 + 40, y + 86], radius=18, outline=ACCENT, width=4)
+        ctext(d, cx, y, BOOK_STATUS, f, ACCENT); y += 170 if V else 130
+        ctext(d, cx, y, "Thank you for solving along with Agnes.", F("crimi", 52 if V else 44), SOFT)
+    L.cache[key] = im; return im
+
+def next_card(L, u):
+    """u = seconds since the card started: a soft settle (scale 0.97 -> 1) for the first 0.4 s, then static."""
+    im = next_card_static(L)
+    if u >= 0.4: return im
+    sc = 0.97 + 0.03 * ease(u / 0.4); W, H = im.size
+    sm = im.resize((int(W * sc), int(H * sc)), Image.BILINEAR); out = L.bg().copy()
+    out.paste(sm, ((W - sm.width) // 2, (H - sm.height) // 2)); return out
+
+# ----------------------------------------------------------------------------- shared hook helpers (Case 10+ B&W opens)
+def _hook_hero(L, t, rect, feather=46, side_feather=None):
+    """Paste the borderless hook hero (anim 'hook') into rect=(x, y, w, h), pushing along HOOK_FOCUS."""
+    ax, ay, aw, ah = rect
+    u = ease(t / HOOK_DUR) * 0.6 + 0.4 * (t / HOOK_DUR)
+    (ca, cya, za), (cb, cyb, zb) = C.HOOK_FOCUS; cx, cy, z = ca + (cb - ca) * u, cya + (cyb - cya) * u, za + (zb - za) * u
+    scene = anim_scene("hook"); W, H = scene.man["W"], scene.man["H"]
+    bw = W / z; bh = bw * ah / aw
+    if bh > H: bh = H; bw = bh * aw / ah
+    bx = min(max(0, cx * W - bw / 2), W - bw); by = min(max(0, cy * H - bh / 2), H - bh)
+    hero = scene.frame(t, (bx, by, bw, bh), (aw, ah))
+    m = _feather(aw, ah, feather).copy()
+    if side_feather:
+        md = ImageDraw.Draw(m)
+        for i in range(side_feather):
+            v = int(255 * ease(i / side_feather)); md.line([i, 0, i, ah], fill=v); md.line([aw - 1 - i, 0, aw - 1 - i, ah], fill=v)
+        # keep the corner minimum of both ramps
+        m = ImageChops_darker(m, _feather(aw, ah, feather))
+    return hero, m
+
+def ImageChops_darker(a, b):
+    from PIL import ImageChops
+    return ImageChops.darker(a, b)
+
+def _hook_caption(L, im, t, rect, size, lh):
+    x, y, w, h = rect; f3 = F("crimi", size)
+    for c in HOOK_CAPS:
+        if c["s"] <= t < c["e"]:
+            a = min(1, (t - c["s"]) / 0.12) if c["s"] > 0 else 1
+            lay = Image.new("RGBA", (w, h), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+            lines = wrap(dl, curly(c["text"]), f3, w - 40); yy = (h - len(lines) * lh) // 2
+            for ln in lines: ctext(dl, w / 2, yy, ln, f3, INK + (int(255 * a),)); yy += lh
+            im.paste(lay, (x, y), lay); break
+
+def _hook_cast(L, im, t, x, y, w, rise=36, border=True):
+    gs = anim_scene("cast"); GWp, GHp = gs.man["W"], gs.man["H"]; h = int(w * GHp / GWp)
+    y += int(rise * (1 - ease(t / 0.5)))
+    im.paste(gs.frame(t, (0, 0, GWp, GHp), (w, h)), (x, y))
+    if border: ImageDraw.Draw(im).rectangle([x - 5, y - 5, x + w + 4, y + h + 4], outline=INK, width=3)
+    return x, y, w, h
+
+def _hook_stamp(L, im, t, t_hit, cx, cy):
+    if t < t_hit - 0.05: return
+    st = _stamp(L); p = ease((t - t_hit + 0.05) / 0.2); s_ = 1.0 + 0.55 * (1 - p)
+    s2 = st.resize((int(st.width * s_), int(st.height * s_)), Image.LANCZOS)
+    if p < 1: s2.putalpha(s2.getchannel("A").point(lambda v: int(v * p)))
+    im.paste(s2, (int(cx - s2.width / 2), int(cy - s2.height / 2)), s2)
+
+def _hook_t(*words, default=None):
+    for w in words:
+        v = _word_t(w)
+        if v is not None: return v
+    return default if default is not None else HOOK_DUR - 1.2
+
+# ----------------------------------------------------------------------------- "wetpaint" open (Case 10)
+# A hand-painted hanging sign (title) that swings in on its chains and settles, with wet paint slowly dripping
+# off the lettering; a borderless harbour hero (fresh-painted bench, the empty lifeboat-station step); three equal
+# luggage-tag suspect cards; ONE ALIBI CRACKS stamp on "cracks". Unlike Case 8 (chalk slab) and Case 9 (compass).
+def _sign_board(L):
+    key = ("signboard",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 96 if V else 72); lines = C.HOOK_LINES
+    W = (L.W - 120) if V else 880; lh = int(f.size * 1.16); bh = lh * len(lines) + 60; chain = 70 if V else 44; drip = 90
+    im = Image.new("RGBA", (W + 40, chain + bh + drip), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    bx0, by0 = 20, chain
+    for cxp in (bx0 + W * 0.18, bx0 + W * 0.82):          # chains
+        for j in range(0, chain, 14): d.ellipse([cxp - 5, j, cxp + 5, j + 16], outline=INK + (255,), width=3)
+    d.rounded_rectangle([bx0, by0, bx0 + W, by0 + bh], radius=14, fill=(255, 255, 253, 255), outline=INK + (255,), width=8)
+    d.rounded_rectangle([bx0 + 14, by0 + 14, bx0 + W - 14, by0 + bh - 14], radius=8, outline=INK + (255,), width=2)
+    es = int(f.size * 0.82)
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1
+        tw = d.textlength(ln, font=f) + (es + 20 if last else 0); x = bx0 + (W - tw) / 2; y = by0 + 26 + i * lh
+        d.text((x, y), ln, font=f, fill=INK + (255,))
+        if last: e = emoji_img(es); im.alpha_composite(e, (int(x + d.textlength(ln, font=f) + 20), int(y + f.size * 0.22)))
+    L.cache[key] = (im, bx0, by0, W, bh); return L.cache[key]
+
+def hook_frame_wetpaint(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 350, L.W, 600) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    # swinging sign with growing paint drips (drips drawn under the board's bottom edge)
+    base, bx0, by0, W, bh = _sign_board(L)
+    sg = base.copy(); sd = ImageDraw.Draw(sg)
+    rr = __import__("random").Random(10)
+    for k in range(9):
+        x = bx0 + 40 + rr.uniform(0, W - 80); t0 = 0.3 + rr.uniform(0, 1.6); L_ = 28 + rr.uniform(0, 56)
+        grow = ease((t - t0) / 2.4) * L_
+        if grow > 1:
+            wdt = 6 + rr.uniform(0, 5); y0 = by0 + bh - 3
+            sd.rounded_rectangle([x - wdt / 2, y0, x + wdt / 2, y0 + grow], radius=int(wdt / 2), fill=INK + (255,))
+            sd.ellipse([x - wdt * 0.8, y0 + grow - wdt * 0.6, x + wdt * 0.8, y0 + grow + wdt], fill=INK + (255,))
+    ang = 7.0 * math.exp(-1.5 * t) * math.cos(2 * math.pi * t / 1.25)
+    sg = sg.rotate(ang, resample=Image.BICUBIC, center=(sg.width / 2, 0))
+    sx = (L.W - sg.width) // 2 if V else 34 + (924 - sg.width) // 2
+    im.paste(sg, (sx, 0 if V else 6), sg)
+    _hook_caption(L, im, t, (40, 960, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880)
+    _hook_stamp(L, im, t, _hook_t("cracks", "spot"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES = {"wetpaint": hook_frame_wetpaint}
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
     if sc["k"] == "hook": return hook_frame(L, t)
     if sc["k"] in ("title", "end"): return full_card(L, sc["k"], t)
+    if sc["k"] == "next": return next_card(L, t - sc["t0"])
     im = L.chrome().copy()
     if sc["k"] in ("art", "pan"): v = viewport(L, sc, t)
     elif sc["k"] == "ask": v = fit(L, ask_panel(t))
@@ -780,7 +967,7 @@ def frame(L, t):
     else:
         a, b = act[0], act[1]; u = ease((t - (b["t0"] - XF / 2)) / XF)
         im = Image.blend(scene_frame(L, a, t), scene_frame(L, b, t), u)
-    in_card = any(sc["k"] in ("hook", "title", "end") and sc["t0"] <= t < sc["t1"] for sc in SCENES)
+    in_card = any(sc["k"] in ("hook", "title", "end", "next") and sc["t0"] <= t < sc["t1"] for sc in SCENES)
     if not in_card:
         for i, c in enumerate(CAPS):
             if c["s"] <= t < c["e"]:

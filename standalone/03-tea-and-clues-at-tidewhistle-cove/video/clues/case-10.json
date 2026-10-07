@@ -1,0 +1,174 @@
+{
+ "case": "Case 10 \u00b7 The Wet Paint Bench",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who was where"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-paint",
+   "section": "facts",
+   "text": "2:30: Hedley painted the harbour benches green",
+   "at": {
+    "seg": 2,
+    "phrase": "cheerful green"
+   }
+  },
+  {
+   "id": "f-tacky",
+   "section": "facts",
+   "text": "WET PAINT: tacky until at least 8 o'clock",
+   "at": {
+    "seg": 2,
+    "phrase": "tacky until"
+   }
+  },
+  {
+   "id": "f-box",
+   "section": "facts",
+   "text": "Lifeboat collection box on the station steps",
+   "at": {
+    "seg": 4,
+    "phrase": "collection box"
+   }
+  },
+  {
+   "id": "f-gone",
+   "section": "facts",
+   "text": "There at 3 (coxswain saw it); gone by 4",
+   "at": {
+    "seg": 4,
+    "phrase": "it was gone"
+   }
+  },
+  {
+   "id": "hedley",
+   "section": "who",
+   "name": "Hedley Truscott",
+   "text": "green paint on hands and knees",
+   "at": {
+    "seg": 6,
+    "phrase": "green paint"
+   }
+  },
+  {
+   "id": "hedley-alibi",
+   "section": "who",
+   "parent": "hedley",
+   "text": "carrying crates up the slipway with Ollie, 2:30 to after 4",
+   "at": {
+    "seg": 6,
+    "phrase": "carry crates"
+   }
+  },
+  {
+   "id": "wenna",
+   "section": "who",
+   "name": "Wenna Polglaze",
+   "text": "window table at the Kettle and Gull, 3 to 4 (Agnes serving)",
+   "at": {
+    "seg": 7,
+    "phrase": "window table"
+   }
+  },
+  {
+   "id": "kemp",
+   "section": "who",
+   "name": "Mr Kemp",
+   "text": "visitor in a smart cream linen suit",
+   "at": {
+    "seg": 8,
+    "phrase": "cream linen suit"
+   }
+  },
+  {
+   "id": "kemp-said",
+   "section": "who",
+   "parent": "kemp",
+   "text": "\"Sat on the green bench nearest the lifeboat station, 3 till 4.\"",
+   "at": {
+    "seg": 9,
+    "phrase": "three o'clock till four"
+   }
+  },
+  {
+   "id": "kemp-trousers",
+   "section": "who",
+   "parent": "kemp",
+   "text": "cream trousers: spotless",
+   "at": {
+    "seg": 10,
+    "phrase": "They were spotless"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "kemp",
+   "span": "name",
+   "at": {
+    "seg": 15,
+    "phrase": "Kemp took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-tacky",
+   "at": {
+    "seg": 16,
+    "phrase": "tacky until eight"
+   }
+  },
+  {
+   "do": "check",
+   "item": "kemp-trousers",
+   "at": {
+    "seg": 16,
+    "phrase": "a single mark"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "kemp-said",
+   "at": {
+    "seg": 16,
+    "phrase": "never sat"
+   }
+  },
+  {
+   "do": "note",
+   "text": "An hour on a wet bench means green stripes on cream trousers. Not one mark: he never sat there.",
+   "at": {
+    "seg": 16,
+    "phrase": "never sat"
+   },
+   "hold": 6.0
+  },
+  {
+   "do": "check",
+   "item": "hedley-alibi",
+   "at": {
+    "seg": 17,
+    "phrase": "whole afternoon"
+   }
+  },
+  {
+   "do": "check",
+   "item": "wenna",
+   "at": {
+    "seg": 17,
+    "phrase": "tea room"
+   }
+  }
+ ]
+}

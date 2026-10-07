@@ -13,6 +13,7 @@ body and line arms and legs, exactly the v1 construction; colour comes from k.ti
 The three suspects share one face, one stance, one height, one prop-in-hand pose and the same colour
 weight, so nothing singles anyone out before the solution. expr="sheepish" is for post-solution scenes."""
 from colorink import PAL, K, Wt, shade
+from people import FACE as _FACE   # blink / talk states set by layers.face() (Case 10+ simple-figure animation)
 
 def _flip(k, x, flip):
     if flip:
@@ -88,8 +89,14 @@ def _face(k, x, y, h, expr="smile", skin=None):
             for j in range(3):
                 bx = x + sx * r * (0.42 + 0.12 * j); k.line([(bx, hy - r * 0.2), (bx - sx * r * 0.06, hy - r * 0.36)], lw=0.35, amp=0, color=shade(PAL.blush, 0.8))
     else:
-        for sx in (-0.35, 0.35): k.circle(x + sx * r, hy + r * 0.05, r * 0.08 + 0.2, lw=0, fill=K, stroke=False)
-        k.c.setStrokeColor(K); k.c.setLineWidth(0.6); k.c.arc(x - r * 0.3, hy - r * 0.55, x + r * 0.3, hy - r * 0.1, 200, 140)
+        if _FACE.get("eyes") == "closed":   # blink frame (anim.py): short lid lines instead of dot eyes
+            for sx in (-0.35, 0.35): k.line([(x + sx * r - r * 0.12, hy + r * 0.04), (x + sx * r + r * 0.12, hy + r * 0.04)], lw=0.6, amp=0)
+        else:
+            for sx in (-0.35, 0.35): k.circle(x + sx * r, hy + r * 0.05, r * 0.08 + 0.2, lw=0, fill=K, stroke=False)
+        if _FACE.get("mouth") == "open":    # talking frame: small open mouth
+            k.shape(k.arcpts(x, hy - r * 0.38, r * 0.17, r * 0.13, 0, 360, 14), lw=0.5, fill=K, amp=0)
+        else:
+            k.c.setStrokeColor(K); k.c.setLineWidth(0.6); k.c.arc(x - r * 0.3, hy - r * 0.55, x + r * 0.3, hy - r * 0.1, 200, 140)
 
 # ----------------------------------------------------------------------------- props
 def teapot_prop(k, x, y, w):

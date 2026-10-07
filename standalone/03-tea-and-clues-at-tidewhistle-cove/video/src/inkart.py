@@ -3,7 +3,8 @@
 Everything is drawn with pure black and white vector strokes and fills (no gray washes),
 then rasterised at 300 DPI to a clean grayscale PNG (see render()). The same file is copied
 into each book's src/ folder so every book folder stays self-contained."""
-import math, random, os, subprocess, tempfile
+import os
+import math, random, subprocess, tempfile
 from reportlab.pdfgen import canvas as rlcanvas
 from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
@@ -11,7 +12,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 K = colors.black
 Wt = colors.white
-_GF = "/usr/share/fonts/truetype/sand-box/google/"
+_GF = os.environ.get("TIDEWHISTLE_FONTS", "/usr/share/fonts/truetype/sand-box/google/").rstrip("/") + "/"
 for _n, _p in [("Ink-Playfair", "Playfair Display SC/PlayfairDisplaySC-Bold.ttf"),
                ("Ink-PlayfairR", "Playfair Display SC/PlayfairDisplaySC-Regular.ttf"),
                ("Ink-Crimson", "Crimson Text/CrimsonText-Regular.ttf"),

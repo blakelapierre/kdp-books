@@ -6,9 +6,32 @@ Writes a 44.1 kHz mono WAV with LEAD s of silence first, plus <out>.json with th
 import json, os, subprocess, sys
 import numpy as np, soundfile as sf
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "..", "audio", "tools"))
+_tools = os.environ.get("TIDEWHISTLE_AUDIO_TOOLS") or os.path.join(HERE, "..", "..", "audio", "tools")
+# Also accept a sibling kdp-books checkout layout via TIDEWHISTLE_KDP_BOOKS
+if not os.path.isdir(_tools) and os.environ.get("TIDEWHISTLE_KDP_BOOKS"):
+    _tools = os.path.join(os.environ["TIDEWHISTLE_KDP_BOOKS"], "standalone/03-tea-and-clues-at-tidewhistle-cove/audio/tools")
+sys.path.insert(0, _tools)
 import narrate   # noqa: E402  (VOICE, SPEED, LANG, to_phonemes)
 LEAD = 0.2
+
+def to_script(text, hyp, dur):
+    """Put the SCRIPT's words (exact spelling / punctuation for the captions) on the ASR word times (difflib),
+    interpolating any unmatched words by character count."""
+    import difflib, re
+    norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower())
+    ref = text.split(); rn = [norm(w) for w in ref]; hn = [norm(h["w"]) for h in hyp]
+    times = [None] * len(ref)
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, rn, hn, autojunk=False).get_opcodes():
+        if tag == "equal" or (tag == "replace" and i2 - i1 == j2 - j1):
+            for k in range(i2 - i1): times[i1 + k] = (hyp[j1 + k]["s"], hyp[j1 + k]["e"])
+    anchors = [(-1, LEAD, LEAD)] + [(i, t[0], t[1]) for i, t in enumerate(times) if t] + [(len(ref), dur - 0.05, dur - 0.05)]
+    for (ia, _, ea), (ib, sb, _) in zip(anchors, anchors[1:]):
+        gap = list(range(ia + 1, ib))
+        if not gap: continue
+        L = sum(len(ref[k]) + 1 for k in gap); t = ea
+        for k in gap:
+            d = (sb - ea) * (len(ref[k]) + 1) / L; times[k] = (t, t + d); t += d
+    return [dict(w=w, s=round(a, 3), e=round(b, 3)) for w, (a, b) in zip(ref, times)]
 
 def main(text, out):
     from kokoro_onnx import Kokoro
@@ -33,6 +56,10 @@ def main(text, out):
     pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", out, "-ar", "16000", "-ac", "1", "-f", "f32le", "-"], capture_output=True, check=True).stdout
     segs, _ = m.transcribe(np.frombuffer(pcm, np.float32), word_timestamps=True, initial_prompt=text)
     words = [dict(w=w.word.strip(), s=round(w.start, 3), e=round(w.end, 3)) for sg in segs for w in sg.words]
+    if not words:   # whisper sometimes returns nothing with the prompt (cases 8, 10): retry plain
+        segs, _ = m.transcribe(np.frombuffer(pcm, np.float32), word_timestamps=True, condition_on_previous_text=False)
+        words = [dict(w=w.word.strip(), s=round(w.start, 3), e=round(w.end, 3)) for sg in segs for w in sg.words]
+    words = to_script(text, words, len(z) / 44100)
     json.dump(dict(text=text, duration=round(len(z) / 44100, 3), words=words), open(out + ".json", "w"), indent=1)
     print(len(z) / 44100, words)
 

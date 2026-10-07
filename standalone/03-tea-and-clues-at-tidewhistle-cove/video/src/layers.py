@@ -63,6 +63,7 @@ def save_layers(out_dir, jobs, make_ink, procs=8):
         for pn, ps in j.get("parts", {}).items():
             tasks_s.append((out_dir, j["name"], j["w"], j["h"], pn, ps, make_ink, j.get("seed", 31) + 101 + sum(map(ord, pn))))
     res = {j["name"]: {} for j in jobs}
+    procs = int(os.environ.get("TIDEWHISTLE_WORKERS") or procs)
     with ProcessPoolExecutor(procs) as ex:
         futs_p = [ex.submit(_plate, a) for a in tasks_p]
         futs_s = [(a[1], ex.submit(_part, a)) for a in tasks_s]

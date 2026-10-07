@@ -35,7 +35,7 @@ def card(base_t, lines, path):
 def run(cmd): subprocess.run(["ffmpeg", "-y", "-v", "error"] + cmd, check=True)
 
 ENC = ["-c:v", "libx264", "-preset", "slow", "-crf", "21", "-tune", "animation", "-pix_fmt", "yuv420p", "-r", "30",
-       "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "1", "-movflags", "+faststart"]
+       "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "1", "-movflags", "+faststart"] + R.X264_THREADS
 
 def still(png, dur, out):
     run(["-loop", "1", "-t", f"{dur}", "-i", png, "-f", "lavfi", "-t", f"{dur}", "-i", "anullsrc=r=48000:cl=mono",

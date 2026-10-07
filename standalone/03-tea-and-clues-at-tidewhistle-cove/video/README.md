@@ -277,3 +277,30 @@ CASE=9 python3 make_shorts.py
 ```
 
 Previews: `previews/case09-*.png`. YouTube text: `shorts/case-09-youtube.md`. Visual checklist: `shorts/case-09-visual-checklist.md`.
+
+## Cases 10–30: black-and-white kit + next-case end card
+From Case 10 on, every case uses `STYLE="bw"` black-and-white ink with the simple v1 peg-doll characters (`src/figures.py`, which now blink and talk under `anim.py`), plus the shared scenery and character kit `src/bwkit.py` (harbour, tea room, inn, lifeboat station, case board, visitor/lady/overalls figures, picklable lineup/cast builders). The Case 7+ layout (mid-screen question bar, `KEEP_ASPECT=True`) and the clue notebook are unchanged. Each case gets its own `HOOK_STYLE`, and no style repeats back-to-back.
+
+`NEXT_CARD=True` adds a 5 s B&W end card after the closing hold of both full videos, so it also lands at the end of Part 2. The card reads "NEXT CASE / Case N+1 / <title>", then the no-spoiler teaser from `src/cases/teasers.py`, then a bell box with "New case every 6 hours / subscribe so you don't miss it" (no clock time). Case 30 instead says it is the last case and points to the book (`TIDEWHISTLE_BOOK_STATUS`, default "COMING SOON TO KINDLE"). Each `shorts/case-NN-youtube.md` has a "Next case teaser" field.
+
+Word timing for Cases 10+ comes from `src/align_whole.py` (one faster-whisper pass over the whole case MP3, script words mapped onto ASR words), because the per-segment `align.py` drifted.
+
+On streambox the cases render one at a time through `/root/tw-queue.sh`, a sequential queue that only calls the capped `/usr/local/sbin/tw-render`. The queue file is `~tidewhistle/tw-queue.txt` and status goes to `~tidewhistle/logs/queue-status.log`, with per-case logs in `~tidewhistle/logs/cNN.log`.
+
+## Case 10: The Wet Paint Bench
+B&W ink (`src/art_case10.py` → `work/art-10/`), three suspects drawn identically until the solution (only the confession shows Mr Kemp sheepish). New open `HOOK_STYLE="wetpaint"`: a hand-lettered WET PAINT board swings in on two strings with growing ink drips, a feathered harbour-bench hero, three tag cards, and a ONE ALIBI CRACKS stamp on "cracks". Next card → Case 11 "The Window Table".
+
+| File | Role |
+|---|---|
+| `standalone-03-tidewhistle-case-10-the-wet-paint-bench-vertical.mp4` | 1080x1920 Shorts source |
+| `standalone-03-tidewhistle-case-10-the-wet-paint-bench-wide.mp4` | 1920x1080 main channel |
+| `shorts/standalone-03-tidewhistle-case-10-the-wet-paint-bench-short-part1.mp4` | Shorts Part 1 |
+| `shorts/standalone-03-tidewhistle-case-10-the-wet-paint-bench-short-part2.mp4` | Shorts Part 2 (recap + reveal + next card) |
+
+```bash
+python3 art_case10.py
+/tmp/tts/venv/bin/python hook_audio.py "A lifeboat collection box has vanished on a freshly painted afternoon. Three alibis, and only one of them cracks. Can you spot it?" ../assets/hooks/hook-10.wav
+python3 render.py vertical --case=10 && python3 render.py wide --case=10 && python3 make_shorts.py --case=10
+```
+
+Previews: `previews/case10-*.png`. YouTube text: `shorts/case-10-youtube.md`. Visual checklist: `shorts/case-10-visual-checklist.md`.
