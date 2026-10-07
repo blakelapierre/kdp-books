@@ -1369,6 +1369,52 @@ def hook_frame_starfield(L, t):
 
 HOOK_STYLES["starfield"] = hook_frame_starfield
 
+# ----------------------------------------------------------------------------- "ruler" open (Case 19)
+# A tall measuring rule grows down the left side with foot marks 7 → 0 while a small bell swings from a hook at its top;
+# the title beside it; borderless hero; three equal tag suspect cards; LOOK UP stamp on "look". Unlike Case 18
+# (starfield) and Case 17 (speech bubble).
+def hook_frame_ruler(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    rx, ry0, rw = (50, 30, 92) if V else (40, 20, 80); ry1 = (ry0 + 300) if V else (ry0 + 270)
+    u = ease(t / 0.9); yb = ry0 + (ry1 - ry0) * (0.25 + 0.75 * u)
+    d.rectangle([rx, ry0, rx + rw, yb], fill=(255, 255, 252), outline=INK, width=5)
+    fsm = F("plex", 26 if V else 22)
+    for i in range(29):
+        y = ry0 + 40 + i * (ry1 - ry0 - 48) / 28
+        if y > yb - 6: break
+        ln = 0.55 if i % 4 == 0 else 0.3; d.line([(rx + rw - rw * ln, y), (rx + rw - 4, y)], fill=INK, width=3 if i % 4 == 0 else 1)
+        if i % 4 == 0: d.text((rx + 8, y - fsm.size // 2), str(7 - i // 4), font=fsm, fill=INK)
+    # hook + swinging bell at the top of the rule
+    hx, hy = rx + rw + 30, ry0 + 8
+    d.line([(rx + rw, hy), (hx + 6, hy)], fill=INK, width=6); d.arc([hx - 10, hy - 2, hx + 10, hy + 22], 0, 180, fill=INK, width=5)
+    sw = 14 * math.exp(-1.4 * t) * math.sin(2 * math.pi * t / 0.8) if t < 4 else 0
+    bell = Image.new("RGBA", (120, 130), (0, 0, 0, 0)); bd = ImageDraw.Draw(bell)
+    bd.rectangle([50, 10, 70, 26], fill=(255, 255, 252, 255), outline=INK + (255,), width=4)
+    bd.polygon([(36, 26), (84, 26), (94, 86), (110, 100), (10, 100), (26, 86)], fill=(255, 255, 252, 255), outline=INK + (255,))
+    for k in range(30, 96, 9): bd.line([(k, 30), (k - 4, 98)], fill=INK + (160,), width=2)
+    bd.line([(36, 26), (84, 26), (94, 86), (110, 100), (10, 100), (26, 86), (36, 26)], fill=INK + (255,), width=5)
+    bd.ellipse([52, 102, 68, 118], fill=INK + (255,))
+    br = bell.rotate(sw, resample=Image.BICUBIC, center=(60, 10)); im.paste(br, (hx - 60, hy + 12), br)
+    x0 = hx + 70; x1 = (L.W - 40) if V else 924; lines = C.HOOK_LINES
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(d.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= x1 - x0: break
+    y = ry0 + ((ry1 - ry0) - lh * len(lines)) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: e = emoji_img(es); im.paste(e, (int(x0 + d.textlength(ln, font=f) + 18), int(y + size * 0.22)), e)
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("look", "work"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["ruler"] = hook_frame_ruler
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

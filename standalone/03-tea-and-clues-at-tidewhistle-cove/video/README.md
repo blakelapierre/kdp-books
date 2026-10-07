@@ -346,3 +346,6 @@ B&W ink (`src/art_case17.py` → `work/art-17/`): Admiral the hatched grey parro
 
 ## Case 18: The Moonlit Walk
 B&W ink (`src/art_case18.py` → `work/art-18/`): the Gazette's back-page notice popping line by line, a cross-hatched starry (moonless) clifftop with the club tent and antique star chart, clock 11 → midnight, equal lineup tags, and Miss Clemo's "full and bright" moon shown only inside her own speech bubble. New open `HOOK_STYLE="starfield"`: a night band where the white title brightens as stars twinkle on and a shooting star streaks through, CHECK THE SKY stamp. Next card → Case 19 "The Ship's Bell". Outputs, rebuild and docs follow the Case 12 pattern (`--case=18`).
+
+## Case 19: The Ship's Bell
+B&W ink (`src/art_case19.py` → `work/art-19/`): the bell swaying on its very high hook, Tobias ducking through a doorway, the locked ladder cupboard, Agnes's key ring and the broken stool, equal-size suspects with identical height/statement tags, and a post-solution height chart. New open `HOOK_STYLE="ruler"`: a measuring rule grows beside the title while a bell swings from a hook, LOOK UP stamp. Also: `bwkit.visitor`'s moustache is now a flat brush (the old one read as a grin), which applies to Mr Fenwick/Prowse etc. in Cases 11–17 too. Next card → Case 20 "The Scent of Lavender". Outputs, rebuild and docs follow the Case 12 pattern (`--case=19`).

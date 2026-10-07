@@ -1,0 +1,129 @@
+{
+ "case": "Case 19 \u00b7 The Ship's Bell",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "At quiz night"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-hook",
+   "section": "facts",
+   "text": "Bell hook so high the tallest person must stretch on tiptoe",
+   "at": {
+    "seg": 2,
+    "phrase": "tiptoe"
+   }
+  },
+  {
+   "id": "f-tall",
+   "section": "facts",
+   "text": "Tallest in the village: Tobias Ferris, 6\u00bd ft",
+   "at": {
+    "seg": 3,
+    "phrase": "six and a half"
+   }
+  },
+  {
+   "id": "f-ladder",
+   "section": "facts",
+   "text": "Stepladder locked in the cupboard; Agnes has the only key",
+   "at": {
+    "seg": 4,
+    "phrase": "only key"
+   }
+  },
+  {
+   "id": "f-stool",
+   "section": "facts",
+   "text": "Nothing else to stand on; the stool has been broken for months",
+   "at": {
+    "seg": 4,
+    "phrase": "broken for months"
+   }
+  },
+  {
+   "id": "loveday",
+   "section": "who",
+   "name": "Loveday",
+   "text": "just over 5 ft; at the quiz table all evening",
+   "at": {
+    "seg": 7,
+    "phrase": "quiz table"
+   }
+  },
+  {
+   "id": "fenwick",
+   "section": "who",
+   "name": "Mr Fenwick",
+   "text": "not much taller; left early with a headache",
+   "at": {
+    "seg": 8,
+    "phrase": "headache"
+   }
+  },
+  {
+   "id": "tobias",
+   "section": "who",
+   "name": "Tobias",
+   "text": "at the quiz, home at ten",
+   "at": {
+    "seg": 9,
+    "phrase": "home at ten"
+   }
+  },
+  {
+   "id": "tobias-said",
+   "section": "who",
+   "parent": "tobias",
+   "text": "\u201cI didn't touch the bell. I hardly ever even notice it.\u201d",
+   "at": {
+    "seg": 10,
+    "phrase": "didn't touch"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "tobias",
+   "span": "name",
+   "at": {
+    "seg": 16,
+    "phrase": "Tobias Ferris took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-hook",
+   "at": {
+    "seg": 17,
+    "phrase": "tiptoe"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-ladder",
+   "at": {
+    "seg": 17,
+    "phrase": "locked in the cupboard"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-stool",
+   "at": {
+    "seg": 17,
+    "phrase": "stool was broken"
+   }
+  }
+ ]
+}

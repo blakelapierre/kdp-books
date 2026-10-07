@@ -311,7 +311,8 @@ def visitor(k, x, y, h, expr="neutral", flip=False, suit="plain", hat="panama", 
     hx, hyy = F._arms(k, x, y, h, hold=prop is not None)
     if prop: prop(k, hx, hyy, h)
     F._face(k, x, y, h, expr)
-    if moustache: k.shape(k.arcpts(x, hy - r * 0.25, r * 0.38, r * 0.14, 180, 360, 10) + [(x + r * 0.38, hy - r * 0.2), (x - r * 0.38, hy - r * 0.2)], lw=0.4, fill=K, amp=0)
+    if moustache:   # a flat brush with drooping tips (the old lower-arc version read as a grin)
+        k.shape([(x - r * 0.42, hy - r * 0.34), (x - r * 0.3, hy - r * 0.2), (x, hy - r * 0.16), (x + r * 0.3, hy - r * 0.2), (x + r * 0.42, hy - r * 0.34), (x + r * 0.2, hy - r * 0.27), (x, hy - r * 0.27), (x - r * 0.2, hy - r * 0.27)], lw=0.4, fill=K, amp=0)
     if hat == "panama":
         k.shape(k.arcpts(x, hy + r * 0.6, r * 1.6, r * 0.32, 0, 360, 30), lw=0.8, fill=Wt, amp=0)
         k.shape([(x - r * 0.85, hy + r * 0.62), (x + r * 0.85, hy + r * 0.62), (x + r * 0.75, hy + r * 1.35), (x, hy + r * 1.2), (x - r * 0.75, hy + r * 1.35)], lw=0.8, fill=Wt, amp=0)
