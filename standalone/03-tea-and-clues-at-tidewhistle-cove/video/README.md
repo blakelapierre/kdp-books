@@ -337,3 +337,6 @@ B&W ink (`src/art_case14.py` → `work/art-14/`): the hall's spare key on its ri
 
 ## Case 15: The Warm Bonnet
 B&W ink (`src/art_case15.py` → `work/art-15/`): Biscuit the ginger cat (a striped loaf) on warm bonnets, warm wisps rising (`rise` layers), the Polwhele trophy cabinet, a small blue car driving off at 7:15, and three owners drawn identically with the same hatched car (up on bricks / dewy windscreen / outside Mr Treloar's). New open `HOOK_STYLE="wiper"`: the title on a frosted windscreen that a wiper sweeps clear, and a THE CAT KNOWS stamp. Next card → Case 16 "The Lighthouse Path". Outputs, rebuild and docs follow the Case 12 pattern (`--case=15`).
+
+## Case 16: The Lighthouse Path
+B&W ink (`src/art_case16.py` → `work/art-16/`): the lighthouse museum, the lamp room (clock 2:00 → 2:15, Hedley out on the gallery behind the glass, the telescope replaced by a dashed outline), equal sighting tags for all three suspects, a path map with 15/20/10-minute tags, a plain recap table, and a solution timeline (arrive / leave-by per suspect, the 2:00–2:15 band hatched). New open `HOOK_STYLE="stopwatch"`: a stopwatch sweeping a fifteen-minute wedge beside the title, DO THE MATHS stamp. Next card → Case 17 "The Talking Parrot". Outputs, rebuild and docs follow the Case 12 pattern (`--case=16`).

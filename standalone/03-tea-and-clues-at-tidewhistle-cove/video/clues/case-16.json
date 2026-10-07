@@ -1,0 +1,26 @@
+{
+ "case": "Case 16 \u00b7 The Lighthouse Path",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Each seen twice"}
+ ],
+ "items": [
+  {"id": "f-window", "section": "facts", "text": "Telescope vanished between 2:00 and 2:15 (Hedley on the gallery)", "at": {"seg": 3, "phrase": "disappeared"}},
+  {"id": "wenna", "section": "who", "name": "Wenna", "text": "Kettle and Gull at 2:00 and again at 2:20", "at": {"seg": 5, "phrase": "twenty past two"}},
+  {"id": "opie", "section": "who", "name": "Mr Opie", "text": "harbour at 1:45 and again at 2:30", "at": {"seg": 6, "phrase": "half past two"}},
+  {"id": "pip", "section": "who", "name": "Pip", "text": "bookshop at 1:55 and again at 2:10", "at": {"seg": 7, "phrase": "ten past two"}},
+  {"id": "f-tea", "section": "facts", "text": "Kettle and Gull to lighthouse: 15 min", "at": {"seg": 8, "phrase": "lighthouse is fifteen"}},
+  {"id": "f-harb", "section": "facts", "text": "Harbour to lighthouse: 20 min", "at": {"seg": 8, "phrase": "lighthouse is twenty"}},
+  {"id": "f-book", "section": "facts", "text": "Bookshop to lighthouse: 10 min", "at": {"seg": 8, "phrase": "lighthouse is ten"}},
+  {"id": "f-same", "section": "facts", "text": "Same time up as down; nobody can go faster", "at": {"seg": 8, "phrase": "going back down"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "opie", "span": "name", "at": {"seg": 15, "phrase": "Mr Opie took"}},
+  {"do": "check", "item": "wenna", "at": {"seg": 16, "phrase": "it wasn't Wenna"}},
+  {"do": "check", "item": "pip", "at": {"seg": 17, "phrase": "it wasn't Pip"}},
+  {"do": "note", "text": "Mr Opie: arrive by 2:05, leave by 2:10. Five minutes in the lamp room.", "at": {"seg": 18, "phrase": "only one"}, "hold": 4.5}
+ ]
+}

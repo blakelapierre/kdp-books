@@ -1220,6 +1220,61 @@ def hook_frame_wiper(L, t):
 
 HOOK_STYLES["wiper"] = hook_frame_wiper
 
+# ----------------------------------------------------------------------------- "stopwatch" open (Case 16)
+# A big stopwatch beside the title: its hand sweeps from 12 round to the quarter (a hatched fifteen-minute wedge fills
+# behind it) and a "15 MIN" readout ticks up; borderless hero below; three equal framed suspect cards; DO THE MATHS stamp
+# on "make" (or "time"). Unlike Case 15 (wiper) and Case 14 (keyhole).
+def _stopwatch(L, t, R):
+    im = Image.new("RGBA", (2 * R + 20, 2 * R + 70), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    cx, cy = R + 10, R + 60
+    d.rectangle([cx - 22, 10, cx + 22, 46], fill=(255, 255, 252, 255), outline=INK + (255,), width=6)
+    d.line([(cx + R * 0.62, cy - R * 0.9), (cx + R * 0.82, cy - R * 1.08)], fill=INK + (255,), width=12)
+    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=(255, 255, 252, 255), outline=INK + (255,), width=9)
+    d.ellipse([cx - R + 18, cy - R + 18, cx + R - 18, cy + R - 18], outline=INK + (255,), width=2)
+    u = ease((t - 0.2) / 1.2); ang = 90 * u
+    if ang > 0.5:
+        wedge = Image.new("L", im.size, 0); ImageDraw.Draw(wedge).pieslice([cx - R + 22, cy - R + 22, cx + R - 22, cy + R - 22], -90, -90 + ang, fill=255)
+        hatch = Image.new("L", im.size, 0); hd = ImageDraw.Draw(hatch)
+        for k in range(-im.height, im.width, 16): hd.line([(k, im.height), (k + im.height, 0)], fill=255, width=3)
+        from PIL import ImageChops
+        im.paste(Image.new("RGBA", im.size, ACCENT + (255,)), (0, 0), ImageChops.multiply(wedge, hatch))
+    for i in range(60):
+        a = math.radians(i * 6 - 90); r0 = R - 30 if i % 5 == 0 else R - 24
+        d.line([(cx + r0 * math.cos(a), cy + r0 * math.sin(a)), (cx + (R - 18) * math.cos(a), cy + (R - 18) * math.sin(a))], fill=INK + (255,), width=5 if i % 5 == 0 else 2)
+    a = math.radians(-90 + ang)
+    d.line([(cx, cy), (cx + (R - 34) * math.cos(a), cy + (R - 34) * math.sin(a))], fill=INK + (255,), width=8)
+    d.ellipse([cx - 12, cy - 12, cx + 12, cy + 12], fill=INK + (255,))
+    f = F("plex", int(R * 0.26)); txt = f"{int(round(15 * u)):02d} MIN"
+    tw = d.textlength(txt, font=f); d.text((cx - tw / 2, cy + R * 0.3), txt, font=f, fill=INK + (255,))
+    return im
+
+def hook_frame_stopwatch(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 340, L.W, 590) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    R = 130 if V else 110
+    sw = _stopwatch(L, t, R); sx, sy = (40, 6) if V else (40, 12)
+    im.paste(sw, (sx, sy), sw)
+    x0 = sx + sw.width + 20; x1 = (L.W - 40) if V else 924; y0 = sy + 70; hgt = sw.height - 80
+    lines = C.HOOK_LINES; es_gap = 20
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        wmax = max(d.textlength(ln, font=f) + (es + es_gap if i == len(lines) - 1 else 0) for i, ln in enumerate(lines))
+        if wmax <= x1 - x0 and lh * len(lines) <= hgt: break
+    y = y0 + (hgt - lh * len(lines)) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: im.paste(emoji_img(es), (int(x0 + d.textlength(ln, font=f) + es_gap), int(y + size * 0.22)), emoji_img(es))
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("make", "time"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["stopwatch"] = hook_frame_stopwatch
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
