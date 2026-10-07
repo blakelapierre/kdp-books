@@ -1,0 +1,26 @@
+{
+ "case": "Case 20 \u00b7 The Scent of Lavender",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Looked in the drawer"}
+ ],
+ "items": [
+  {"id": "f-pen", "section": "facts", "text": "Silver fountain pen in the velvet-lined drawer; 3 customers each held it open and looked in", "at": {"seg": 3, "phrase": "held the drawer open"}},
+  {"id": "f-gone", "section": "facts", "text": "After the last one left, the pen was gone", "at": {"seg": 3, "phrase": "pen was gone"}},
+  {"id": "f-lav", "section": "facts", "text": "The velvet smells strongly of lavender water", "at": {"seg": 5, "phrase": "lavender water"}},
+  {"id": "quill", "section": "who", "name": "Captain Quill", "text": "on the quay; smells of fish and seaweed", "at": {"seg": 7, "phrase": "fish and seaweed"}},
+  {"id": "hedley", "section": "who", "name": "Hedley", "text": "in the boatyard; engine oil, nothing else", "at": {"seg": 8, "phrase": "engine oil"}},
+  {"id": "vosper", "section": "who", "name": "Mrs Vosper", "text": "at the tea room; lavender sprig, lavender water on her wrists", "at": {"seg": 9, "phrase": "wrists"}},
+  {"id": "vosper-said", "section": "who", "parent": "vosper", "text": "\u201cI barely glanced into that drawer. I never touched anything inside it.\u201d", "at": {"seg": 10, "phrase": "never touched"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "vosper", "span": "name", "at": {"seg": 15, "phrase": "Vosper took"}},
+  {"do": "check", "item": "f-lav", "at": {"seg": 16, "phrase": "only Mrs Vosper"}},
+  {"do": "check", "item": "quill", "at": {"seg": 16, "phrase": "fish and seaweed"}},
+  {"do": "check", "item": "hedley", "at": {"seg": 16, "phrase": "engine oil"}},
+  {"do": "check", "item": "vosper-said", "at": {"seg": 16, "phrase": "soaked into"}}
+ ]
+}

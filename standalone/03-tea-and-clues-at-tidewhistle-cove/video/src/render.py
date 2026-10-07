@@ -1415,6 +1415,57 @@ def hook_frame_ruler(L, t):
 
 HOOK_STYLES["ruler"] = hook_frame_ruler
 
+# ----------------------------------------------------------------------------- "scent" open (Case 20)
+# The title ripples (sine row displacement, settling still by ~1.3 s) as three curling scent trails rise through it from a
+# little bottle at the left; borderless hero; three equal framed suspect cards; FOLLOW YOUR NOSE stamp on "nose".
+# Unlike Case 19 (ruler) and Case 18 (starfield).
+def hook_frame_scent(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    bx0, by0, bx1, by1 = (30, 20, L.W - 30, 330) if V else (34, 16, 924, 300)
+    W, H = bx1 - bx0, by1 - by0; lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+    # bottle
+    bx, byy = 70, H - 30
+    ld.rounded_rectangle([bx - 34, byy - 90, bx + 34, byy], radius=14, fill=(255, 255, 252, 255), outline=INK + (255,), width=6)
+    ld.rectangle([bx - 14, byy - 118, bx + 14, byy - 90], fill=(255, 255, 252, 255), outline=INK + (255,), width=5)
+    ld.ellipse([bx - 22, byy - 140, bx + 22, byy - 112], fill=INK + (255,))
+    for k in range(6): ld.line([(bx - 22, byy - 76 + k * 12), (bx + 22, byy - 76 + k * 12)], fill=INK + (90,), width=2)
+    # title, rippling
+    lines = C.HOOK_LINES; x0 = 140
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(ld.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= W - x0 - 30: break
+    txt = Image.new("RGBA", (W, H), (0, 0, 0, 0)); td = ImageDraw.Draw(txt); y = (H - lh * len(lines)) / 2
+    for i, ln in enumerate(lines):
+        tw = td.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0); x = x0 + (W - x0 - tw) / 2
+        td.text((x, y), ln, font=f, fill=INK + (255,))
+        if i == len(lines) - 1: txt.alpha_composite(emoji_img(es), (int(x + td.textlength(ln, font=f) + 18), int(y + size * 0.22)))
+        y += lh
+    amp = 9 * math.exp(-2.6 * t)
+    if amp > 0.4:
+        rip = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        for yy in range(0, H, 3):
+            dx = int(amp * math.sin(yy / 18 + t * 9)); rip.paste(txt.crop((0, yy, W, min(H, yy + 3))), (dx, yy))
+        txt = rip
+    lay.alpha_composite(txt)
+    # scent trails
+    for j in range(3):
+        ph = j * 2.1; pts = []
+        for q in range(40):
+            u = q / 39; yy = (byy - 140) - u * (byy - 150) * min(1.0, 0.35 + t / 1.4)
+            pts.append((bx + 10 + u * (W - 260) * (0.45 + 0.25 * j) + 22 * math.sin(u * 9 + t * 3 + ph), yy))
+        for q in range(0, 39, 2): ld.line([pts[q], pts[q + 1]], fill=INK + (int(200 * (1 - q / 45)),), width=4)
+    im.paste(lay, (bx0, by0), lay)
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("nose", "follow"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["scent"] = hook_frame_scent
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
