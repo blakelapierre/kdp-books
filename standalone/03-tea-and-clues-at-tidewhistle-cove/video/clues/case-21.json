@@ -1,0 +1,27 @@
+{
+ "case": "Case 21 \u00b7 The Spanish Coin",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Jenna's three customers"}
+ ],
+ "items": [
+  {"id": "f-coins", "section": "facts", "text": "Wednesday night: velvet bag of 6 Spanish coins (crown on one side) taken from the museum", "at": {"seg": 3, "phrase": "six of them"}},
+  {"id": "f-till", "section": "facts", "text": "Jenna empties her till every night", "at": {"seg": 4, "phrase": "takes the money home"}},
+  {"id": "f-float", "section": "facts", "text": "Every morning: a sealed bag of NEW coins from the bank", "at": {"seg": 4, "phrase": "give change"}},
+  {"id": "f-found", "section": "facts", "text": "11:00 a Spanish coin on top of the coins in her till", "at": {"seg": 6, "phrase": "on top of"}},
+  {"id": "demelza", "section": "who", "name": "Demelza", "text": "lemon sorbet; tapped her card", "at": {"seg": 8, "phrase": "tapping her card"}},
+  {"id": "pip", "section": "who", "name": "Pip", "text": "double mint; banknote, change from the till", "at": {"seg": 8, "phrase": "out of the till"}},
+  {"id": "nankervis", "section": "who", "name": "Mr Nankervis", "text": "vanilla cone; counted out coins from his pocket", "at": {"seg": 8, "phrase": "handful of coins"}},
+  {"id": "f-straight", "section": "facts", "text": "His coins went straight into the till, unchecked", "at": {"seg": 10, "phrase": "Without looking"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "nankervis", "span": "name", "at": {"seg": 15, "phrase": "Nankervis took"}},
+  {"do": "check", "item": "f-float", "at": {"seg": 16, "phrase": "brand new coins"}},
+  {"do": "check", "item": "demelza", "at": {"seg": 17, "phrase": "no money"}},
+  {"do": "check", "item": "pip", "at": {"seg": 17, "phrase": "the other way"}},
+  {"do": "check", "item": "f-straight", "at": {"seg": 17, "phrase": "without Jenna"}}
+ ]
+}

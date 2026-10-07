@@ -352,3 +352,6 @@ B&W ink (`src/art_case19.py` → `work/art-19/`): the bell swaying on its very h
 
 ## Case 20: The Scent of Lavender
 B&W ink (`src/art_case20.py` → `work/art-20/`): smells drawn as rising whiff lines (`rise` layers) with matching smell tags for every suspect, Tamsin's velvet-lined drawer and the silver fountain pen, Mrs Vosper's lavender sprig appearing only when narrated, and a "what does the drawer smell of?" board. New open `HOOK_STYLE="scent"`: a rippling title with scent trails rising from a perfume bottle, FOLLOW YOUR NOSE stamp. Next card → Case 21 "The Spanish Coin". Outputs, rebuild and docs follow the Case 12 pattern (`--case=20`).
+
+## Case 21: The Spanish Coin
+B&W ink (`src/art_case21.py` → `work/art-21/`): the museum's glass case of beach coins with the crowned Spanish coins and the vanished velvet bag, Jenna's ice cream van with its nightly-emptied till and sealed float of new coins, an identical "how they paid" tag for each of the three customers, and a "what went into the till?" board. New open `HOOK_STYLE="coinflip"`: a silver coin spins beside the title and lands crown up, FOLLOW THE MONEY stamp. Next card → Case 22 "The Honest Fishermen". Outputs, rebuild and docs follow the Case 12 pattern (`--case=21`).

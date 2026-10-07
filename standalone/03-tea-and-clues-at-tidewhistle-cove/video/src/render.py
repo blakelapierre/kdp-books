@@ -1466,6 +1466,57 @@ def hook_frame_scent(L, t):
 
 HOOK_STYLES["scent"] = hook_frame_scent
 
+# ----------------------------------------------------------------------------- "coinflip" open (Case 21)
+# A big silver coin spins beside the title (edge-on squash, alternating crown face and plain back, slowing down) and lands
+# crown up with a little bounce; borderless hero; three equal suspect cards; FOLLOW THE MONEY stamp on "money".
+# Unlike Case 20 (scent) and Case 19 (ruler).
+def _coin_face(R, crown):
+    im = Image.new("RGBA", (2 * R + 8, 2 * R + 8), (0, 0, 0, 0)); d = ImageDraw.Draw(im); c = R + 4
+    d.ellipse([c - R, c - R, c + R, c + R], fill=(250, 250, 246, 255), outline=INK + (255,), width=8)
+    d.ellipse([c - R * 0.8, c - R * 0.8, c + R * 0.8, c + R * 0.8], outline=INK + (255,), width=3)
+    if crown:
+        pts = [(c - R * 0.45, c + R * 0.25), (c + R * 0.45, c + R * 0.25), (c + R * 0.5, c - R * 0.3), (c + R * 0.25, c - R * 0.05),
+               (c, c - R * 0.42), (c - R * 0.25, c - R * 0.05), (c - R * 0.5, c - R * 0.3)]
+        d.polygon(pts, fill=(255, 255, 252, 255)); d.line(pts + [pts[0]], fill=INK + (255,), width=5)
+        for k in range(-4, 5): d.line([(c + k * R * 0.1, c + R * 0.22), (c + k * R * 0.1 + R * 0.08, c - R * 0.02)], fill=INK + (170,), width=2)
+    else:
+        for k in range(-2, 3): d.line([(c - R * 0.4, c + k * R * 0.14), (c + R * 0.4, c + k * R * 0.14)], fill=INK + (200,), width=3)
+    return im
+
+def hook_frame_coinflip(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    R = 120 if V else 100; cx, cy = (40 + R + 4, 30 + R + 4 + 30) if V else (40 + R + 4, 20 + R + 4 + 20)
+    T = 1.3
+    if t < T:
+        ang = 7 * math.pi * (1 - (1 - t / T) ** 2)       # decelerating spin; ends at 7*pi -> crown (odd half-turns flip)
+        sx = abs(math.cos(ang)); crown = math.cos(ang) <= 0 if False else (int(ang / math.pi + 0.5) % 2 == 1)
+        lift = -60 * math.sin(math.pi * t / T)
+    else:
+        sx, crown, lift = 1.0, True, -10 * math.exp(-6 * (t - T)) * abs(math.sin(10 * (t - T)))
+    face = _coin_face(R, crown); fw = max(6, int(face.width * sx))
+    fc = face.resize((fw, face.height), Image.LANCZOS)
+    if sx < 0.25: ImageDraw.Draw(fc).rectangle([0, R * 0.2, fw - 1, face.height - R * 0.2], fill=(220, 220, 214, 255), outline=INK + (255,), width=3)
+    im.paste(fc, (int(cx - fw / 2), int(cy - face.height / 2 + lift)), fc)
+    x0 = cx + R + 40; x1 = (L.W - 40) if V else 924; lines = C.HOOK_LINES
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(d.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= x1 - x0: break
+    y = cy - lh * len(lines) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: e = emoji_img(es); im.paste(e, (int(x0 + d.textlength(ln, font=f) + 18), int(y + size * 0.22)), e)
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("money", "follow"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["coinflip"] = hook_frame_coinflip
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
