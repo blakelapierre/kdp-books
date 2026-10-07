@@ -355,3 +355,6 @@ B&W ink (`src/art_case20.py` → `work/art-20/`): smells drawn as rising whiff l
 
 ## Case 21: The Spanish Coin
 B&W ink (`src/art_case21.py` → `work/art-21/`): the museum's glass case of beach coins with the crowned Spanish coins and the vanished velvet bag, Jenna's ice cream van with its nightly-emptied till and sealed float of new coins, an identical "how they paid" tag for each of the three customers, and a "what went into the till?" board. New open `HOOK_STYLE="coinflip"`: a silver coin spins beside the title and lands crown up, FOLLOW THE MONEY stamp. Next card → Case 22 "The Honest Fishermen". Outputs, rebuild and docs follow the Case 12 pattern (`--case=21`).
+
+## Case 22: The Honest Fishermen
+B&W ink (`src/art_case22.py` → `work/art-22/`): HONEST / FIBBER quay signs, Captain Quill's vanished net, three fishermen with identical speech cards, and a "honest or fibber?" statement board whose test card, X and HONEST/FIBBER tags appear only after "The Solution". New open `HOOK_STYLE="toggle"`: a TRUE | FIB switch flicks back and forth and settles on "?", HONEST OR FIBBER? stamp. Next card → Case 23 "The Odd Glove". Outputs, rebuild and docs follow the Case 12 pattern (`--case=22`).

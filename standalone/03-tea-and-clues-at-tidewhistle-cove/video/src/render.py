@@ -1517,6 +1517,42 @@ def hook_frame_coinflip(L, t):
 
 HOOK_STYLES["coinflip"] = hook_frame_coinflip
 
+# ----------------------------------------------------------------------------- "toggle" open (Case 22)
+# A big two-way switch (TRUE | FIB) beside the title: the knob flicks back and forth, slowing, and settles in the middle
+# showing "?"; borderless hero; three equal suspect cards; HONEST OR FIBBER? stamp on "fibbing".
+# Unlike Case 21 (coinflip) and Case 20 (scent).
+def hook_frame_toggle(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    tw, th = (300, 120) if V else (250, 100); x0s, y0s = 40, (90 if V else 60)
+    fl = F("plex", 34 if V else 28)
+    d.rounded_rectangle([x0s, y0s, x0s + tw, y0s + th], radius=th // 2, fill=(250, 250, 246), outline=INK, width=6)
+    ctext(d, x0s + tw * 0.25, y0s - (44 if V else 38), "TRUE", fl, INK); ctext(d, x0s + tw * 0.75, y0s - (44 if V else 38), "FIB", fl, INK)
+    T = 1.6
+    if t < T: pos = math.cos(2 * math.pi * 2.5 * (t / T) ** 0.7) * (1 - t / T) ** 1.2   # -1..1, decaying flicks
+    else: pos = 0.0
+    kr = th // 2 - 10; kx = x0s + tw / 2 + pos * (tw / 2 - kr - 12); ky = y0s + th / 2
+    d.ellipse([kx - kr, ky - kr, kx + kr, ky + kr], fill=INK)
+    if t >= T - 0.15: ctext(d, kx, ky - (34 if V else 28), "?", F("play", 60 if V else 50), (250, 250, 246))
+    x0 = x0s + tw + 40; x1 = (L.W - 40) if V else 924; lines = C.HOOK_LINES
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(d.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= x1 - x0: break
+    y = y0s + th / 2 - lh * len(lines) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: e = emoji_img(es); im.paste(e, (int(x0 + d.textlength(ln, font=f) + 18), int(y + size * 0.22)), e)
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("fibbing", "fibber"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["toggle"] = hook_frame_toggle
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

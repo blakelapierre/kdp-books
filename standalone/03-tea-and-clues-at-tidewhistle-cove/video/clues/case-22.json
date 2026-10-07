@@ -1,0 +1,24 @@
+{
+ "case": "Case 22 \u00b7 The Honest Fishermen",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "rules", "heading": "The rules"},
+  {"id": "said", "heading": "What they said"}
+ ],
+ "items": [
+  {"id": "r-honest", "section": "rules", "text": "Honest: everything he says is true", "at": {"seg": 2, "phrase": "honest ones"}},
+  {"id": "r-fib", "section": "rules", "text": "Fibber: everything he says is false", "at": {"seg": 2, "phrase": "not even about"}},
+  {"id": "r-one", "section": "rules", "text": "Quill's new net is gone: exactly ONE of Ned, Bran, Col took it", "at": {"seg": 3, "phrase": "Exactly one"}},
+  {"id": "r-any", "section": "rules", "text": "Any number of them could be fibbers", "at": {"seg": 4, "phrase": "none at all"}},
+  {"id": "ned", "section": "said", "name": "Ned", "text": "\u201cI didn't take the net. Bran is a fibber.\u201d", "at": {"seg": 5, "phrase": "Bran is a fibber"}},
+  {"id": "bran", "section": "said", "name": "Bran", "text": "\u201cCol took the net.\u201d", "at": {"seg": 6, "phrase": "Col took"}},
+  {"id": "col", "section": "said", "name": "Col", "text": "\u201cNed is an honest man. I didn't take the net.\u201d", "at": {"seg": 7, "phrase": "didn't take"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "col", "at": {"seg": 15, "phrase": "Col is honest"}},
+  {"do": "check", "item": "ned", "at": {"seg": 16, "phrase": "Since Ned is honest"}},
+  {"do": "circle", "item": "bran", "span": "name", "at": {"seg": 17, "phrase": "Bran himself"}}
+ ]
+}
