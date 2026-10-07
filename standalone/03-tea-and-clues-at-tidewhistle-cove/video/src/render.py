@@ -1048,6 +1048,59 @@ def hook_frame_calendar(L, t):
 
 HOOK_STYLES["calendar"] = hook_frame_calendar
 
+# ----------------------------------------------------------------------------- "redpen" open (Case 13)
+# The title handwritten on a torn sheet of ruled notepaper; a red pen nib then draws a wavy correction underline
+# under it and ticks a "?" in the margin; borderless hero of the harbour office's empty shelf with the folded note;
+# three equal framed suspect cards; ONE WORD GIVES IT AWAY stamp on "word". Unlike Case 11/12 (tent card, calendar).
+def _note_title(L):
+    key = ("notetitle",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("crimi", 112 if V else 84); lines = C.HOOK_LINES
+    W = (L.W - 120) if V else 860; lh = int(f.size * 1.05); H = lh * len(lines) + (90 if V else 70)
+    im = Image.new("RGBA", (W + 30, H + 40), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    rr = __import__("random").Random(13); edge = [(W, H)]
+    x = W
+    while x > 0: x -= rr.uniform(18, 34); edge.append((max(0, x), H + rr.uniform(-10, 10)))
+    poly = [(0, 0), (W, 0)] + edge + [(0, H)]
+    d.polygon([(px + 12, py + 14) for px, py in poly], fill=VIGNETTE + (255,))
+    d.polygon(poly, fill=(255, 255, 252, 255), outline=INK + (255,))
+    for yy in range(46, H - 10, 44 if V else 36): d.line([16, yy, W - 16, yy], fill=(150, 170, 190, 255), width=2)
+    d.line([90, 6, 90, H - 12], fill=ACCENT + (255,), width=3)
+    es = int(f.size * 0.7); y = 24; spans = []
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = d.textlength(ln, font=f) + (es + 16 if last else 0); x0 = 90 + (W - 90 - tw) / 2
+        d.text((x0, y), ln, font=f, fill=INK + (255,))
+        if last: im.alpha_composite(emoji_img(es), (int(x0 + d.textlength(ln, font=f) + 16), int(y + f.size * 0.3)))
+        spans.append((x0, x0 + d.textlength(ln, font=f), y + int(f.size * 1.08))); y += lh
+    L.cache[key] = (im, spans); return L.cache[key]
+
+def hook_frame_redpen(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    base, spans = _note_title(L); pg = base.copy(); pd = ImageDraw.Draw(pg)
+    x0, x1, yb = spans[-1]; u = ease((t - 0.35) / 1.1)
+    if u > 0:
+        n = 60; pts = [(x0 + (x1 - x0) * u * i / n, yb + 7 * math.sin(i / n * u * (x1 - x0) / 26)) for i in range(n + 1)]
+        pd.line(pts, fill=ACCENT + (255,), width=7, joint="curve")
+        if u < 1:   # pen nib at the tip
+            px, py = pts[-1]
+            pd.polygon([(px, py), (px + 16, py - 34), (px + 34, py - 26)], fill=INK + (255,))
+            pd.polygon([(px + 16, py - 34), (px + 34, py - 26), (px + 96, py - 118), (px + 78, py - 126)], fill=ACCENT + (255,))
+    if t > 1.6:
+        q = ease((t - 1.6) / 0.25); fq = F("play", int((70 if V else 56) * (0.6 + 0.4 * q)))
+        pd.text((26, 24), "?", font=fq, fill=ACCENT + (int(255 * q),))
+    pg = pg.rotate(1.5, resample=Image.BICUBIC, expand=True)
+    im.paste(pg, ((L.W - pg.width) // 2 if V else 34 + (924 - pg.width) // 2, 14 if V else 4), pg)
+    _hook_caption(L, im, t, (40, 960, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("word", "away"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["redpen"] = hook_frame_redpen
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

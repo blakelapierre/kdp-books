@@ -328,3 +328,6 @@ B&W ink (`src/art_case12.py` → `work/art-12/`): the Kettle and Gull's old wall
 
 Outputs follow the usual pattern: `standalone-03-tidewhistle-case-12-the-stopped-clock-{vertical,wide}.mp4`, with `shorts/...-short-part1.mp4` / `-part2.mp4`. Rebuild: `python3 art_case12.py`, then hook_audio with `HOOK_SAY` from `src/cases/case12.py` → `../assets/hooks/hook-12.wav`, then `render.py vertical/wide --case=12` and `make_shorts.py --case=12`.
 Previews: `previews/case12-*.png`. YouTube text: `shorts/case-12-youtube.md`. Visual checklist: `shorts/case-12-visual-checklist.md`.
+
+## Case 13: The Misspelled Note
+B&W ink (`src/art_case13.py` → `work/art-13/`): Hedley's NO PARKING ON THE PEIR sign, the captain's ship in a bottle swapped for a friendly note, and three suspects drawn identically until the solution (only the confession shows Hedley sheepish). New open `HOOK_STYLE="redpen"`: the title handwritten on torn notepaper, a red pen underline and margin "?", the empty-shelf hero, and a ONE WORD GIVES IT AWAY stamp. Next card → Case 14 "The Blue Ribbon Key". Outputs, rebuild and docs follow the Case 12 pattern (`--case=13`, `shorts/case-13-*.md`, `previews/case13-*.png`).

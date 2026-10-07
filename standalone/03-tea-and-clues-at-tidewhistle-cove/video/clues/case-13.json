@@ -1,0 +1,156 @@
+{
+ "case": "Case 13 \u00b7 The Misspelled Note",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who was where"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-sign",
+   "section": "facts",
+   "text": "Hedley's painted sign: NO PARKING ON THE PEIR (p-e-i-r)",
+   "at": {
+    "seg": 2,
+    "phrase": "spelled pier"
+   }
+  },
+  {
+   "id": "f-told",
+   "section": "facts",
+   "text": "Agnes has corrected him 4 times; \u201cLooks right to me\u201d",
+   "at": {
+    "seg": 4,
+    "phrase": "Looks right"
+   }
+  },
+  {
+   "id": "f-ship",
+   "section": "facts",
+   "text": "Captain Quill's ship in a bottle gone from the office shelf",
+   "at": {
+    "seg": 5,
+    "phrase": "shelf was empty"
+   }
+  },
+  {
+   "id": "f-note",
+   "section": "facts",
+   "text": "Note: \u201cback by the peir at sunset\u201d (p-e-i-r)",
+   "at": {
+    "seg": 6,
+    "phrase": "was spelled"
+   }
+  },
+  {
+   "id": "tamsin",
+   "section": "who",
+   "name": "Tamsin Trevelyan",
+   "text": "dropped off a book about knots",
+   "at": {
+    "seg": 8,
+    "phrase": "about knots"
+   }
+  },
+  {
+   "id": "jago",
+   "section": "who",
+   "name": "Jago Penhallow",
+   "text": "delivered a pasty",
+   "at": {
+    "seg": 8,
+    "phrase": "a pasty"
+   }
+  },
+  {
+   "id": "hedley",
+   "section": "who",
+   "name": "Hedley Truscott",
+   "text": "fixed a loose board in the office floor",
+   "at": {
+    "seg": 8,
+    "phrase": "loose board"
+   }
+  },
+  {
+   "id": "tamsin-sp",
+   "section": "who",
+   "parent": "tamsin",
+   "text": "poster: STORY TIME ON THE PIER (spelled right)",
+   "at": {
+    "seg": 9,
+    "phrase": "spelled perfectly"
+   }
+  },
+  {
+   "id": "jago-sp",
+   "section": "who",
+   "parent": "jago",
+   "text": "chalkboard: TWO DOORS FROM THE PIER (spelled right)",
+   "at": {
+    "seg": 9,
+    "phrase": "perfectly too"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "hedley",
+   "span": "name",
+   "at": {
+    "seg": 14,
+    "phrase": "Hedley Truscott borrowed"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-note",
+   "at": {
+    "seg": 15,
+    "phrase": "spelled pier"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-sign",
+   "at": {
+    "seg": 15,
+    "phrase": "exactly the mistake"
+   }
+  },
+  {
+   "do": "note",
+   "text": "The note makes Hedley's own mistake: p-e-i-r, just like his sign. Tamsin and Jago spelled it right that day.",
+   "at": {
+    "seg": 15,
+    "phrase": "looks right"
+   },
+   "hold": 6.0
+  },
+  {
+   "do": "check",
+   "item": "tamsin-sp",
+   "at": {
+    "seg": 15,
+    "phrase": "poster"
+   }
+  },
+  {
+   "do": "check",
+   "item": "jago-sp",
+   "at": {
+    "seg": 15,
+    "phrase": "chalkboard"
+   }
+  }
+ ]
+}
