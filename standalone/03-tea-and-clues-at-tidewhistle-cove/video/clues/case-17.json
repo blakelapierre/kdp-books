@@ -1,0 +1,27 @@
+{
+ "case": "Case 17 \u00b7 The Talking Parrot",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Three keyholders"}
+ ],
+ "items": [
+  {"id": "f-phrase", "section": "facts", "text": "Mr Pascoe always says \u201cMind how you go, my lovely\u201d (said it this morning); nobody else does", "at": {"seg": 4, "phrase": "Nobody else"}},
+  {"id": "f-admiral", "section": "facts", "text": "Admiral learns a phrase only after hearing it a few times in a row", "at": {"seg": 5, "phrase": "few times"}},
+  {"id": "f-knows", "section": "facts", "text": "He knew: Good morning \u00b7 Pieces of eight \u00b7 Put the kettle on", "at": {"seg": 5, "phrase": "Put the kettle on"}},
+  {"id": "f-locked", "section": "facts", "text": "Thursday: shop locked for half an hour, Admiral on his perch", "at": {"seg": 6, "phrase": "Admiral on his perch"}},
+  {"id": "tamsin", "section": "who", "name": "Tamsin", "text": "has a key; \u201cin my own shop all afternoon\u201d", "at": {"seg": 6, "phrase": "Tamsin Trevelyan"}},
+  {"id": "fenwick", "section": "who", "name": "Mr Fenwick", "text": "has a key; \u201cat the grocer's\u201d", "at": {"seg": 6, "phrase": "Mr Fenwick"}},
+  {"id": "pascoe", "section": "who", "name": "Mr Pascoe", "text": "has a key (cleans the inside windows monthly)", "at": {"seg": 6, "phrase": "once a month"}},
+  {"id": "f-gone", "section": "facts", "text": "Silver thimble gone; Admiral now says \u201cMind how you go, my lovely!\u201d", "at": {"seg": 8, "phrase": "squawked"}},
+  {"id": "f-none", "section": "facts", "text": "All three: not in Wenna's shop that day", "at": {"seg": 10, "phrase": "All three"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "pascoe", "span": "name", "at": {"seg": 15, "phrase": "Pascoe took"}},
+  {"do": "check", "item": "f-gone", "at": {"seg": 16, "phrase": "over and over"}},
+  {"do": "check", "item": "f-phrase", "at": {"seg": 17, "phrase": "every customer for"}},
+  {"do": "note", "text": "Someone in the shop kept saying it. Only Mr Pascoe says that.", "at": {"seg": 16, "phrase": "couldn't stop"}, "hold": 5.0}
+ ]
+}

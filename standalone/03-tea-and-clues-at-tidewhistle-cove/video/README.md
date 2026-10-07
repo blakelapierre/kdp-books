@@ -340,3 +340,6 @@ B&W ink (`src/art_case15.py` → `work/art-15/`): Biscuit the ginger cat (a stri
 
 ## Case 16: The Lighthouse Path
 B&W ink (`src/art_case16.py` → `work/art-16/`): the lighthouse museum, the lamp room (clock 2:00 → 2:15, Hedley out on the gallery behind the glass, the telescope replaced by a dashed outline), equal sighting tags for all three suspects, a path map with 15/20/10-minute tags, a plain recap table, and a solution timeline (arrive / leave-by per suspect, the 2:00–2:15 band hatched). New open `HOOK_STYLE="stopwatch"`: a stopwatch sweeping a fifteen-minute wedge beside the title, DO THE MATHS stamp. Next card → Case 17 "The Talking Parrot". Outputs, rebuild and docs follow the Case 12 pattern (`--case=16`).
+
+## Case 17: The Talking Parrot
+B&W ink (`src/art_case17.py` → `work/art-17/`): Admiral the hatched grey parrot with a speech bubble for every phrase he says, Mr Pascoe's ladder outside the Kettle and Gull, the thimble replaced by a dashed outline, equal key tags for the three keyholders, and a before/after board of Admiral's phrases. New open `HOOK_STYLE="bubble"`: the title in a springy comic speech bubble pointing at the parrot, LISTEN CLOSELY stamp. Next card → Case 18 "The Moonlit Walk". Outputs, rebuild and docs follow the Case 12 pattern (`--case=17`).

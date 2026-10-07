@@ -1275,6 +1275,53 @@ def hook_frame_stopwatch(L, t):
 
 HOOK_STYLES["stopwatch"] = hook_frame_stopwatch
 
+# ----------------------------------------------------------------------------- "bubble" open (Case 17)
+# The title inside a big comic speech bubble that inflates with a springy wobble, its tail pointing down into the hero
+# (where the parrot sits); a small echo bubble "...?" pops beside it; three equal tag suspect cards; LISTEN CLOSELY stamp
+# on "listen". Unlike Case 16 (stopwatch) and Case 15 (wiper).
+def _speech_bubble(L, tail_x):
+    key = ("speechbubble", tail_x)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 92 if V else 72); lines = C.HOOK_LINES
+    W = (L.W - 140) if V else 820; lh = int(f.size * 1.15); H = lh * len(lines) + 70; T = 70
+    im = Image.new("RGBA", (W + 20, H + T + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    tail = [(tail_x - 40, H - 6), (tail_x + 30, H - 6), (tail_x - 10, H + T)]
+    d.rounded_rectangle([10, 12, W + 10, H + 10], radius=H // 2, fill=VIGNETTE + (255,))
+    d.polygon(tail, fill=(255, 255, 252, 255), outline=INK + (255,), width=7)
+    d.rounded_rectangle([0, 0, W, H], radius=H // 2, fill=(255, 255, 252, 255), outline=INK + (255,), width=7)
+    d.polygon([(tail_x - 33, H - 12), (tail_x + 23, H - 12), (tail_x - 10, H + T - 14)], fill=(255, 255, 252, 255))
+    es = int(f.size * 0.8); y = 34
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = d.textlength(ln, font=f) + (es + 16 if last else 0)
+        x = (W - tw) / 2; d.text((x, y), ln, font=f, fill=INK + (255,))
+        if last: im.alpha_composite(emoji_img(es), (int(x + d.textlength(ln, font=f) + 16), int(y + f.size * 0.22)))
+        y += lh
+    L.cache[key] = im; return im
+
+def hook_frame_bubble(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    bub = _speech_bubble(L, int((L.W - 140) * 0.3) if V else 250)
+    k = 1.0 if t > 0.9 else 1.0 + 0.12 * math.exp(-4 * t) * math.cos(2 * math.pi * t / 0.45) - 0.1 * math.exp(-8 * t)
+    sb = bub.resize((max(1, int(bub.width * k)), max(1, int(bub.height * k))), Image.LANCZOS)
+    bx = (70 if V else 34 + (924 - bub.width) // 2) + (bub.width - sb.width) // 2; by = 14 + (bub.height - sb.height) // 2
+    im.paste(sb, (bx, by), sb)
+    if t > 0.7:   # echo bubble
+        a = ease((t - 0.7) / 0.25); f = F("play", 54 if V else 44); ex, ey = (L.W - 210, bub.height - 40) if V else (34 + 924 - 150, 230)
+        lay = Image.new("RGBA", (180, 110), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+        ld.ellipse([4, 4, 170, 90], fill=(255, 255, 252, 255), outline=INK + (255,), width=5)
+        ld.polygon([(30, 74), (12, 106), (60, 84)], fill=(255, 255, 252, 255), outline=INK + (255,)); ld.text((48, 14), "\u2026?", font=f, fill=INK + (255,))
+        lay.putalpha(lay.getchannel("A").point(lambda v: int(v * a))); im.paste(lay, (ex, ey), lay)
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("listen", "phrase"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["bubble"] = hook_frame_bubble
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
