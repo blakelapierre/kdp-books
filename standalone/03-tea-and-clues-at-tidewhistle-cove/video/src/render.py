@@ -1155,6 +1155,71 @@ def hook_frame_keyhole(L, t):
 
 HOOK_STYLES["keyhole"] = hook_frame_keyhole
 
+# ----------------------------------------------------------------------------- "wiper" open (Case 15)
+# The title on a frosted car windscreen (readable faintly from frame 1); a wiper blade sweeps across and clears the frost,
+# then swings back to rest; borderless hero below; three equal suspect cards; THE CAT KNOWS stamp on "cat".
+# Unlike Case 14 (keyhole) and Case 13 (red pen notepaper).
+def _windscreen(L):
+    from PIL import ImageChops
+    key = ("windscreen",)
+    if key in L.cache: return L.cache[key]
+    import random as _r
+    V = L.fmt == "vertical"; f = F("play", 86 if V else 66); lines = C.HOOK_LINES
+    W = (L.W - 120) if V else 880; lh = int(f.size * 1.15); H = lh * len(lines) + 90; inset = int(W * 0.06)
+    poly = [(inset, 6), (W - inset, 6), (W - 6, H - 6), (6, H - 6)]
+    base = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(base)
+    d.polygon(poly, fill=(255, 255, 252, 255))
+    es = int(f.size * 0.8); y = 40
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = d.textlength(ln, font=f) + (es + 16 if last else 0)
+        x = (W - tw) / 2; d.text((x, y), ln, font=f, fill=INK + (255,))
+        if last: base.alpha_composite(emoji_img(es), (int(x + d.textlength(ln, font=f) + 16), int(y + f.size * 0.22)))
+        y += lh
+    scr = Image.new("L", (W, H), 0); ImageDraw.Draw(scr).polygon(poly, fill=255)
+    frost = Image.new("RGBA", (W, H), (236, 236, 232, 0)); fd = ImageDraw.Draw(frost); rr = _r.Random(15)
+    fd.polygon(poly, fill=(236, 236, 232, 190))
+    for _ in range(int(W * H / 900)):
+        cx, cy, r = rr.uniform(0, W), rr.uniform(0, H), rr.uniform(4, 14)
+        for k in range(3):
+            a = rr.uniform(0, math.pi) + k * math.pi / 3
+            fd.line([(cx - r * math.cos(a), cy - r * math.sin(a)), (cx + r * math.cos(a), cy + r * math.sin(a))], fill=(255, 255, 255, 230), width=2)
+    frost.putalpha(ImageChops.multiply(frost.getchannel("A"), scr))
+    out = (base, frost, poly, W, H); L.cache[key] = out; return out
+
+def _wiper_angle(t):
+    """degrees, PIL convention (0 = 3 o'clock, clockwise): rest at 186 (lying left), up through 270, across to 354."""
+    if t < 0.25: return 186.0, 186.0
+    if t < 1.15: a = 186 + 168 * ease((t - 0.25) / 0.9); return a, a
+    return 354 - 168 * ease((t - 1.25) / 0.6) if t > 1.25 else 354.0, 354.0
+
+def hook_frame_wiper(L, t):
+    from PIL import ImageChops
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 330, L.W, 600) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    base, frost, poly, W, H = _windscreen(L)
+    blade, swept = _wiper_angle(t)
+    cx, cy, rx, ry = W / 2, H - 4, W * 0.56, H * 1.02
+    clear = Image.new("L", (W, H), 0)
+    if swept > 186.5: ImageDraw.Draw(clear).pieslice([cx - rx, cy - ry, cx + rx, cy + ry], 186, swept, fill=255)
+    fa = ImageChops.subtract(frost.getchannel("A"), clear); fr = frost.copy(); fr.putalpha(fa)
+    panel = base.copy(); panel.alpha_composite(fr); pd = ImageDraw.Draw(panel)
+    pd.line(poly + [poly[0]], fill=INK + (255,), width=7, joint="curve")
+    a = math.radians(blade); ex, ey = cx + rx * 0.97 * math.cos(a), cy + ry * 0.97 * math.sin(a)
+    pd.line([(cx, cy), (ex, ey)], fill=INK + (255,), width=9)
+    pd.line([(cx, cy), (cx + (ex - cx) * 0.55 + 6 * math.sin(a), cy + (ey - cy) * 0.55 - 6 * math.cos(a))], fill=INK + (255,), width=4)
+    pd.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=INK + (255,))
+    px = (L.W - W) // 2 if V else 34 + (924 - W) // 2
+    im.paste(panel, (px, 24 if V else 20), panel)
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("cat", "ginger"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["wiper"] = hook_frame_wiper
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

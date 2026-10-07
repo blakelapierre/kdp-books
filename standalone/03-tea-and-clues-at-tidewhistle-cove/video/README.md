@@ -334,3 +334,6 @@ B&W ink (`src/art_case13.py` → `work/art-13/`): Hedley's NO PARKING ON THE PEI
 
 ## Case 14: The Blue Ribbon Key
 B&W ink (`src/art_case14.py` → `work/art-14/`): the hall's spare key on its ribbon under the terracotta pot (the pot lifts to show it), the raffle hamper gone from the locked hall, and three suspects drawn identically until the solution (only the confession shows Mr Spargo sheepish). New open `HOOK_STYLE="keyhole"`: the title on a swinging key-fob tag, the hero first seen through an opening keyhole, and a ONE SLIP OF THE TONGUE stamp. Next card → Case 15 "The Warm Bonnet". Outputs, rebuild and docs follow the Case 12 pattern (`--case=14`).
+
+## Case 15: The Warm Bonnet
+B&W ink (`src/art_case15.py` → `work/art-15/`): Biscuit the ginger cat (a striped loaf) on warm bonnets, warm wisps rising (`rise` layers), the Polwhele trophy cabinet, a small blue car driving off at 7:15, and three owners drawn identically with the same hatched car (up on bricks / dewy windscreen / outside Mr Treloar's). New open `HOOK_STYLE="wiper"`: the title on a frosted windscreen that a wiper sweeps clear, and a THE CAT KNOWS stamp. Next card → Case 16 "The Lighthouse Path". Outputs, rebuild and docs follow the Case 12 pattern (`--case=15`).

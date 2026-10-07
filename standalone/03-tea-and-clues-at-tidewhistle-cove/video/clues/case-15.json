@@ -1,0 +1,28 @@
+{
+ "case": "Case 15 \u00b7 The Warm Bonnet",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Three small blue cars"}
+ ],
+ "items": [
+  {"id": "f-biscuit", "section": "facts", "text": "Biscuit sleeps on any car whose engine has been running (warm bonnet)", "at": {"seg": 2, "phrase": "climbs onto"}},
+  {"id": "f-chilly", "section": "facts", "text": "Chilly, grey morning; sharp wind off the sea", "at": {"seg": 3, "phrase": "sharp wind"}},
+  {"id": "f-trophy", "section": "facts", "text": "7:00 trophy taken at Polwhele (10 min drive)", "at": {"seg": 4, "phrase": "silver sailing trophy"}},
+  {"id": "f-car", "section": "facts", "text": "7:15 small blue car seen heading for Tidewhistle", "at": {"seg": 4, "phrase": "small blue car"}},
+  {"id": "fenwick", "section": "who", "name": "Mr Fenwick", "text": "flat tyre, up on bricks for a week", "at": {"seg": 6, "phrase": "on bricks"}},
+  {"id": "kerensa", "section": "who", "name": "Kerensa Hale", "text": "thick overnight dew on the windscreen, untouched", "at": {"seg": 6, "phrase": "untouched"}},
+  {"id": "treloar", "section": "who", "name": "Mr Treloar", "text": "7:30 Biscuit asleep on his car's bonnet", "at": {"seg": 7, "phrase": "eyes shut tight"}},
+  {"id": "treloar-said", "section": "who", "parent": "treloar", "text": "\u201cIt hasn't moved since last night\u2026 haven't been out at all.\u201d", "at": {"seg": 9, "phrase": "hasn't moved"}},
+  {"id": "f-warm", "section": "facts", "text": "Agnes touched the bonnet: warm", "at": {"seg": 10, "phrase": "It was warm"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "treloar", "span": "name", "at": {"seg": 15, "phrase": "Treloar took"}},
+  {"do": "check", "item": "f-warm", "at": {"seg": 16, "phrase": "It was warm"}},
+  {"do": "note", "text": "A car standing all night in that sea wind would be cold. His had just been driven.", "at": {"seg": 16, "phrase": "as cold as"}, "hold": 5.5},
+  {"do": "check", "item": "fenwick", "at": {"seg": 17, "phrase": "on bricks"}},
+  {"do": "check", "item": "kerensa", "at": {"seg": 17, "phrase": "overnight dew"}}
+ ]
+}
