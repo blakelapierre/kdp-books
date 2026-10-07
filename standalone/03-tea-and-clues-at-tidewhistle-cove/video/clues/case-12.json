@@ -1,0 +1,157 @@
+{
+ "case": "Case 12 \u00b7 The Stopped Clock",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "who",
+   "heading": "Who was where"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-clock",
+   "section": "facts",
+   "text": "Wall clock stopped Monday at TEN TO NINE; clockmaker not until Friday",
+   "at": {
+    "seg": 2,
+    "phrase": "ten to nine"
+   }
+  },
+  {
+   "id": "f-caddy",
+   "section": "facts",
+   "text": "Silver acorn tea caddy on the shelf behind the counter",
+   "at": {
+    "seg": 4,
+    "phrase": "shaped like an acorn"
+   }
+  },
+  {
+   "id": "f-time",
+   "section": "facts",
+   "text": "Thursday: there at 3:30 (dusted), gone by 4:30",
+   "at": {
+    "seg": 4,
+    "phrase": "half past four"
+   }
+  },
+  {
+   "id": "demelza",
+   "section": "who",
+   "name": "Demelza Rowe",
+   "text": "dropped paintings at 3:15, left at once",
+   "at": {
+    "seg": 6,
+    "phrase": "Demelza Rowe"
+   }
+  },
+  {
+   "id": "demelza-alibi",
+   "section": "who",
+   "parent": "demelza",
+   "text": "sea front with Captain Quill from 3:30, all afternoon",
+   "at": {
+    "seg": 6,
+    "phrase": "all afternoon"
+   }
+  },
+  {
+   "id": "hedley",
+   "section": "who",
+   "name": "Hedley Truscott",
+   "text": "fixed a door hinge at 3, went home",
+   "at": {
+    "seg": 7,
+    "phrase": "Hedley Truscott"
+   }
+  },
+  {
+   "id": "hedley-alibi",
+   "section": "who",
+   "parent": "hedley",
+   "text": "asleep in his armchair 3:20 till supper (his wife)",
+   "at": {
+    "seg": 7,
+    "phrase": "armchair"
+   }
+  },
+  {
+   "id": "prowse",
+   "section": "who",
+   "name": "Mr Prowse",
+   "text": "milkman, brought the afternoon crate",
+   "at": {
+    "seg": 8,
+    "phrase": "afternoon crate"
+   }
+  },
+  {
+   "id": "prowse-said",
+   "section": "who",
+   "parent": "prowse",
+   "text": "\u201cYour clock said a quarter past three; gone minutes later.\u201d",
+   "at": {
+    "seg": 9,
+    "phrase": "quarter past three"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "prowse",
+   "span": "name",
+   "at": {
+    "seg": 15,
+    "phrase": "Prowse took"
+   }
+  },
+  {
+   "do": "check",
+   "item": "f-clock",
+   "at": {
+    "seg": 16,
+    "phrase": "since Monday"
+   }
+  },
+  {
+   "do": "strike",
+   "item": "prowse-said",
+   "at": {
+    "seg": 16,
+    "phrase": "could not have said"
+   }
+  },
+  {
+   "do": "note",
+   "text": "The clock has said ten to nine all week. It could never have shown him a quarter past three.",
+   "at": {
+    "seg": 17,
+    "phrase": "Only Mr Prowse"
+   },
+   "hold": 4.5
+  },
+  {
+   "do": "check",
+   "item": "demelza-alibi",
+   "at": {
+    "seg": 17,
+    "phrase": "Captain Quill"
+   }
+  },
+  {
+   "do": "check",
+   "item": "hedley-alibi",
+   "at": {
+    "seg": 17,
+    "phrase": "asleep at home"
+   }
+  }
+ ]
+}

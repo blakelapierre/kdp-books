@@ -322,3 +322,9 @@ python3 render.py vertical --case=11 && python3 render.py wide --case=11 && pyth
 ```
 
 Previews: `previews/case11-*.png`. YouTube text: `shorts/case-11-youtube.md`. Visual checklist: `shorts/case-11-visual-checklist.md`.
+
+## Case 12: The Stopped Clock
+B&W ink (`src/art_case12.py` → `work/art-12/`): the Kettle and Gull's old wall clock stuck at ten to nine all week, the silver acorn caddy, and three suspects drawn identically until the solution (only the confession shows Mr Prowse sheepish). New open `HOOK_STYLE="calendar"`: a tear-off desk calendar beside the title (MON, TUE and WED tear away to THU), a borderless hero of the stopped clock over the caddy shelf, and a ONE TIME IS WRONG stamp. Next card → Case 13 "The Misspelled Note".
+
+Outputs follow the usual pattern: `standalone-03-tidewhistle-case-12-the-stopped-clock-{vertical,wide}.mp4`, with `shorts/...-short-part1.mp4` / `-part2.mp4`. Rebuild: `python3 art_case12.py`, then hook_audio with `HOOK_SAY` from `src/cases/case12.py` → `../assets/hooks/hook-12.wav`, then `render.py vertical/wide --case=12` and `make_shorts.py --case=12`.
+Previews: `previews/case12-*.png`. YouTube text: `shorts/case-12-youtube.md`. Visual checklist: `shorts/case-12-visual-checklist.md`.

@@ -984,6 +984,70 @@ def hook_frame_placecard(L, t):
 
 HOOK_STYLES["placecard"] = hook_frame_placecard
 
+# ----------------------------------------------------------------------------- "calendar" open (Case 12)
+# A tear-off desk calendar beside the title: MON, TUE and WED pages tear away and fall, leaving THU (the day of the
+# theft); a borderless hero of the stopped wall clock over the caddy shelf with its empty spot; three equal suspect
+# cards; ONE TIME IS WRONG stamp on "he". Unlike Case 10 (swinging sign) and Case 11 (tent card + seat chips).
+def _cal_page(L, S, day):
+    key = ("calpage", S, day)
+    if key in L.cache: return L.cache[key]
+    im = Image.new("RGBA", (S, int(S * 0.8)), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, S - 1, im.height - 1], fill=(255, 255, 253, 255), outline=INK + (255,), width=4)
+    ctext(d, S / 2, int(S * 0.12), day, F("play", int(S * 0.36)), INK)
+    d.line([S * 0.2, im.height - S * 0.14, S * 0.8, im.height - S * 0.14], fill=ACCENT, width=3)
+    L.cache[key] = im; return im
+
+def _calendar(L, t, S):
+    """Desk calendar (binding band + pages) at time t; returns RGBA (S + margin)."""
+    W = S + 120; H = int(S * 1.25) + 140
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    x0, y0 = 20, 30; band = int(S * 0.22); ph = int(S * 0.8)
+    d.rectangle([x0 + 10, y0 + band + 12, x0 + S + 10, y0 + band + ph + 12], fill=VIGNETTE + (255,))       # shadow
+    for j in range(4, 0, -1):                                                                             # page stack edges
+        d.rectangle([x0 + j * 2, y0 + band + j * 3, x0 + S + j * 2, y0 + band + ph + j * 3], fill=(250, 249, 244, 255), outline=INK + (255,), width=2)
+    d.rectangle([x0, y0, x0 + S, y0 + band], fill=INK + (255,))
+    ctext(d, x0 + S / 2, y0 + band * 0.26, "THE KETTLE AND GULL", F("plex", int(band * 0.34)), ARTPAPER)
+    for cx in (x0 + S * 0.25, x0 + S * 0.75): d.ellipse([cx - 9, y0 - 22, cx + 9, y0 + 14], outline=INK + (255,), width=5)
+    days = ["MON", "TUE", "WED", "THU"]; tears = [0.55, 1.15, 1.75]
+    n = sum(1 for tt in tears if t >= tt + 0.7)          # pages fully gone
+    im.alpha_composite(_cal_page(L, S, days[min(3, n + (1 if any(tt <= t < tt + 0.7 for tt in tears) else 0))]), (x0, y0 + band))
+    for i, tt in enumerate(tears):
+        if tt <= t < tt + 0.7:
+            u = (t - tt) / 0.7; pg = _cal_page(L, S, days[i]).copy()
+            if u > 0.5: pg.putalpha(pg.getchannel("A").point(lambda v: int(v * (1 - (u - 0.5) * 2))))
+            rot = pg.rotate(-50 * ease(u), resample=Image.BICUBIC, expand=True)
+            im.alpha_composite(rot, (int(x0 + 30 * u), int(y0 + band + 120 * u * u)))
+    return im
+
+def hook_frame_calendar(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    S = 270 if V else 220
+    cal = _calendar(L, t, S); im.paste(cal, (30 if V else 30, 20 if V else 10), cal)
+    # title lines to the right of the calendar
+    f = F("play", 84 if V else 66); tx0 = (S + 110) if V else (S + 100); tw_max = (L.W - tx0 - 40) if V else (958 - tx0)
+    lines = C.HOOK_LINES
+    while max(d.textlength(ln, font=f) + (int(f.size * 0.8) + 16 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) > tw_max - 10:
+        f = F("play", f.size - 2)
+    lh = int(f.size * 1.18); es = int(f.size * 0.8); y = (150 - lh * len(lines) // 2 + 20) if V else 60
+    sc = 0.94 + 0.06 * ease(t / 0.35)
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; wln = d.textlength(ln, font=f) + (es + 16 if last else 0)
+        x = tx0 + (tw_max - wln) / 2; d.text((x, y), ln, font=f, fill=INK)
+        if last:
+            e = emoji_img(es); im.paste(e, (int(x + d.textlength(ln, font=f) + 16), int(y + f.size * 0.22)), e)
+        y += lh
+    d.line([tx0 + 40, y + 14, tx0 + tw_max - 40, y + 14], fill=ACCENT, width=4)
+    _hook_caption(L, im, t, (40, 960, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880)
+    _hook_stamp(L, im, t, _hook_t("times", "sure"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["calendar"] = hook_frame_calendar
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
