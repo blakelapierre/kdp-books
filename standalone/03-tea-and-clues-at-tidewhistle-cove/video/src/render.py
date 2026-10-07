@@ -922,6 +922,68 @@ def hook_frame_wetpaint(L, t):
 
 HOOK_STYLES = {"wetpaint": hook_frame_wetpaint}
 
+# ----------------------------------------------------------------------------- "placecard" open (Case 11)
+# A folded RESERVED tent card (title) that flips up from the table; a borderless hero of the four numbered tables
+# and the empty windowsill; four numbered seat chips with a "?" ring that hops seat to seat and never settles (no
+# spoiler); four equal framed suspect cards; ONE SEAT HIDES IT stamp. Unlike Case 9 (compass) / Case 10 (sign).
+def _tent_card(L):
+    key = ("tentcard",)
+    if key in L.cache: return L.cache[key]
+    V = L.fmt == "vertical"; f = F("play", 84 if V else 70); lines = C.HOOK_LINES
+    W = (L.W - 160) if V else 860; lh = int(f.size * 1.12); flap = 24 if V else 20; top = 58 if V else 50
+    H = flap + top + lh * len(lines) + 34
+    im = Image.new("RGBA", (W + 20, H + 14), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([12, 14, W + 12, H + 12], radius=10, fill=VIGNETTE + (255,))                  # shadow
+    d.polygon([(0, flap), (W, flap), (W - 18, 0), (18, 0)], fill=(236, 234, 228, 255), outline=INK + (255,))   # folded top
+    for x in range(22, W - 20, 9): d.line([x, 3, x - 6, flap - 3], fill=INK + (90,), width=1)
+    d.rectangle([0, flap, W, H], fill=(255, 255, 253, 255), outline=INK + (255,), width=6)
+    d.rectangle([12, flap + 12, W - 12, H - 12], outline=INK + (255,), width=2)
+    ctext(d, W / 2, flap + 16, "R E S E R V E D", F("plex", 40 if V else 32), ACCENT)
+    es = int(f.size * 0.8)
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = d.textlength(ln, font=f) + (es + 18 if last else 0)
+        x = (W - tw) / 2; y = flap + top + i * lh; d.text((x, y), ln, font=f, fill=INK + (255,))
+        if last: im.alpha_composite(emoji_img(es), (int(x + d.textlength(ln, font=f) + 18), int(y + f.size * 0.2)))
+    L.cache[key] = im; return im
+
+def _ease_back(u):
+    u = max(0.0, min(1.0, u)); c = 1.9
+    return 1 + (c + 1) * (u - 1) ** 3 + c * (u - 1) ** 2
+
+def hook_frame_placecard(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 330, L.W, 620) if V else (34, 300, 924, 500)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    # tent card flipping up from its bottom fold
+    tc = _tent_card(L); sy = 0.5 + 0.5 * _ease_back(t / 0.6); th = max(2, int(tc.height * sy))
+    tcs = tc.resize((tc.width, th), Image.BICUBIC); base = 322 if V else 292
+    im.paste(tcs, ((L.W - tc.width) // 2 if V else 34 + (924 - tc.width) // 2, base - th), tcs)
+    # seat chips 1-4 with a hopping "?" ring (never stops on a seat)
+    r = 44 if V else 38; gap = 170 if V else 140
+    cx0 = L.W / 2 if V else 1440; cy = 1000 if V else 760
+    xs = [cx0 + (i - 1.5) * gap for i in range(4)]
+    t_hit = _hook_t("who", "window")
+    for i, x in enumerate(xs):
+        p = ease((t - 0.15 - 0.2 * i) / 0.25)
+        if p <= 0: continue
+        rr = r * (0.6 + 0.4 * p)
+        d.ellipse([x - rr, cy - rr, x + rr, cy + rr], fill=ARTPAPER, outline=INK, width=4)
+        ctext(d, x, cy - rr * 0.72, str(i + 1), F("play", int(rr * 1.2)), INK)
+    if 1.0 < t < t_hit:
+        ph = (t - 1.0) * 1.6; i0 = int(ph) % 4; i1 = (i0 + 1) % 4; u = ease(ph - int(ph))
+        x = xs[i0] + (xs[i1] - xs[i0]) * u if i1 else xs[i0] + (xs[0] - xs[i0]) * u
+        hop = 26 * math.sin(math.pi * u)
+        d.ellipse([x - r - 12, cy - r - 12 - hop, x + r + 12, cy + r + 12 - hop], outline=ACCENT, width=6)
+        ctext(d, x, cy - r - 86 - hop, "?", F("play", 64 if V else 52), ACCENT)
+    _hook_caption(L, im, t, (40, 1052, L.W - 80, 140) if V else (34, 812, 924, 170), 56 if V else 48, 66)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1196 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, t_hit, gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["placecard"] = hook_frame_placecard
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

@@ -1,0 +1,146 @@
+{
+ "case": "Case 11 \u00b7 The Window Table",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {
+   "id": "facts",
+   "heading": "Key facts"
+  },
+  {
+   "id": "clues",
+   "heading": "Pip remembers"
+  }
+ ],
+ "items": [
+  {
+   "id": "f-row",
+   "section": "facts",
+   "text": "4 tables in a row: table 1 by the door, table 4 by the bay window",
+   "at": {
+    "seg": 2,
+    "phrase": "four little tables"
+   }
+  },
+  {
+   "id": "f-brooch",
+   "section": "facts",
+   "text": "Kerensa's silver seagull brooch left on the windowsill",
+   "at": {
+    "seg": 3,
+    "phrase": "on the windowsill"
+   }
+  },
+  {
+   "id": "f-reach",
+   "section": "facts",
+   "text": "Sill reachable ONLY from the window table",
+   "at": {
+    "seg": 3,
+    "phrase": "can only be reached"
+   }
+  },
+  {
+   "id": "f-guests",
+   "section": "facts",
+   "text": "4 guests, one per table; nobody left their seat. Brooch gone by 2",
+   "at": {
+    "seg": 4,
+    "phrase": "one at each table"
+   }
+  },
+  {
+   "id": "c-qw",
+   "section": "clues",
+   "name": "Captain Quill",
+   "text": "sat right next to Wenna",
+   "at": {
+    "seg": 6,
+    "phrase": "right next to"
+   }
+  },
+  {
+   "id": "c-love",
+   "section": "clues",
+   "name": "Loveday",
+   "text": "not at either end of the row",
+   "at": {
+    "seg": 6,
+    "phrase": "either end"
+   }
+  },
+  {
+   "id": "c-sp",
+   "section": "clues",
+   "name": "Mr Spargo",
+   "text": "sat closer to the door than Captain Quill",
+   "at": {
+    "seg": 6,
+    "phrase": "closer to the door"
+   }
+  },
+  {
+   "id": "c-wen",
+   "section": "clues",
+   "name": "Wenna",
+   "text": "not at the window table (\u201ccouldn't see the boats\u201d)",
+   "at": {
+    "seg": 6,
+    "phrase": "see the boats"
+   }
+  }
+ ],
+ "solution": [
+  {
+   "do": "circle",
+   "item": "c-qw",
+   "span": "name",
+   "at": {
+    "seg": 13,
+    "phrase": "Captain Quill sat at the window"
+   }
+  },
+  {
+   "do": "check",
+   "item": "c-love",
+   "at": {
+    "seg": 14,
+    "phrase": "second or third"
+   }
+  },
+  {
+   "do": "check",
+   "item": "c-sp",
+   "at": {
+    "seg": 15,
+    "phrase": "breaks a clue"
+   }
+  },
+  {
+   "do": "check",
+   "item": "c-wen",
+   "at": {
+    "seg": 16,
+    "phrase": "can't be at the window"
+   }
+  },
+  {
+   "do": "check",
+   "item": "c-qw",
+   "at": {
+    "seg": 16,
+    "phrase": "beside her at the window"
+   }
+  },
+  {
+   "do": "note",
+   "text": "Door to window: Mr Spargo, Loveday, Wenna, Captain Quill. Only the window table reaches the sill.",
+   "at": {
+    "seg": 16,
+    "phrase": "beside her at the window"
+   },
+   "hold": 4.4
+  }
+ ]
+}

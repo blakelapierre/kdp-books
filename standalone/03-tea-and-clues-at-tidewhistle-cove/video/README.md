@@ -304,3 +304,21 @@ python3 render.py vertical --case=10 && python3 render.py wide --case=10 && pyth
 ```
 
 Previews: `previews/case10-*.png`. YouTube text: `shorts/case-10-youtube.md`. Visual checklist: `shorts/case-10-visual-checklist.md`.
+
+## Case 11: The Window Table
+B&W ink (`src/art_case11.py` → `work/art-11/`), a seating-logic case: four tables in a row from the door to the bay window, four suspects drawn identically until the solution (only the confession shows Captain Quill sheepish). The solution is worked on Agnes's notebook page: two crossed-out trial rows, then the final row with a ring on the window table. New open `HOOK_STYLE="placecard"`: a RESERVED tent card flips up, a borderless hero of the four tables and the empty sill, four numbered seat chips with a hopping "?" ring that never settles, and a ONE SEAT HIDES IT stamp. Next card → Case 12 "The Stopped Clock". Segment 6 word times were re-spread by `src/timing_sanity.py` (ASR lost that stretch).
+
+| File | Role |
+|---|---|
+| `standalone-03-tidewhistle-case-11-the-window-table-vertical.mp4` | 1080x1920 Shorts source |
+| `standalone-03-tidewhistle-case-11-the-window-table-wide.mp4` | 1920x1080 main channel |
+| `shorts/standalone-03-tidewhistle-case-11-the-window-table-short-part1.mp4` | Shorts Part 1 |
+| `shorts/standalone-03-tidewhistle-case-11-the-window-table-short-part2.mp4` | Shorts Part 2 (recap + reveal + next card) |
+
+```bash
+python3 art_case11.py
+/tmp/tts/venv/bin/python hook_audio.py "A silver brooch has vanished from a tea-room windowsill. Four guests, four tables, and only a few muddled clues. Who sat by the window?" ../assets/hooks/hook-11.wav
+python3 render.py vertical --case=11 && python3 render.py wide --case=11 && python3 make_shorts.py --case=11
+```
+
+Previews: `previews/case11-*.png`. YouTube text: `shorts/case-11-youtube.md`. Visual checklist: `shorts/case-11-visual-checklist.md`.
