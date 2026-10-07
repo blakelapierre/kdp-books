@@ -343,3 +343,6 @@ B&W ink (`src/art_case16.py` → `work/art-16/`): the lighthouse museum, the lam
 
 ## Case 17: The Talking Parrot
 B&W ink (`src/art_case17.py` → `work/art-17/`): Admiral the hatched grey parrot with a speech bubble for every phrase he says, Mr Pascoe's ladder outside the Kettle and Gull, the thimble replaced by a dashed outline, equal key tags for the three keyholders, and a before/after board of Admiral's phrases. New open `HOOK_STYLE="bubble"`: the title in a springy comic speech bubble pointing at the parrot, LISTEN CLOSELY stamp. Next card → Case 18 "The Moonlit Walk". Outputs, rebuild and docs follow the Case 12 pattern (`--case=17`).
+
+## Case 18: The Moonlit Walk
+B&W ink (`src/art_case18.py` → `work/art-18/`): the Gazette's back-page notice popping line by line, a cross-hatched starry (moonless) clifftop with the club tent and antique star chart, clock 11 → midnight, equal lineup tags, and Miss Clemo's "full and bright" moon shown only inside her own speech bubble. New open `HOOK_STYLE="starfield"`: a night band where the white title brightens as stars twinkle on and a shooting star streaks through, CHECK THE SKY stamp. Next card → Case 19 "The Ship's Bell". Outputs, rebuild and docs follow the Case 12 pattern (`--case=18`).

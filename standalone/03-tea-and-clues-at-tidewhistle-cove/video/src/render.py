@@ -1322,6 +1322,53 @@ def hook_frame_bubble(L, t):
 
 HOOK_STYLES["bubble"] = hook_frame_bubble
 
+# ----------------------------------------------------------------------------- "starfield" open (Case 18)
+# A dark night band across the top: the title in white letters brightening from faint as stars twinkle on around it and
+# a shooting star streaks through; borderless clifftop-tent hero below; three equal suspect cards; CHECK THE SKY stamp on
+# "lovely" (or "sky"). Unlike Case 17 (speech bubble) and Case 16 (stopwatch).
+def hook_frame_starfield(L, t):
+    import random as _r
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    bx0, by0, bx1, by1 = (30, 20, L.W - 30, 330) if V else (34, 16, 924, 300)
+    band = Image.new("RGBA", (bx1 - bx0, by1 - by0), (0, 0, 0, 0)); bd = ImageDraw.Draw(band)
+    bd.rounded_rectangle([0, 0, band.width - 1, band.height - 1], radius=26, fill=(28, 28, 30, 255), outline=INK + (255,), width=6)
+    rr = _r.Random(18)
+    for i in range(70):
+        x, y = rr.uniform(16, band.width - 16), rr.uniform(14, band.height - 14); r = rr.uniform(2, 6)
+        on = rr.uniform(0, 1.0); ph = rr.uniform(0, 6.28)
+        a = ease((t - on) / 0.3) * (0.65 + 0.35 * math.sin(t * 5 + ph))
+        if a <= 0.02: continue
+        c = (255, 255, 250, int(255 * a))
+        bd.line([(x - r, y), (x + r, y)], fill=c, width=2); bd.line([(x, y - r), (x, y + r)], fill=c, width=2)
+        bd.ellipse([x - r * 0.35, y - r * 0.35, x + r * 0.35, y + r * 0.35], fill=c)
+    if 0.5 < t < 1.5:   # shooting star
+        u = (t - 0.5) / 1.0; sx, sy = band.width * (0.15 + 0.7 * u), band.height * (0.12 + 0.25 * u)
+        for k in range(12):
+            q = k / 12; bd.line([(sx - 26 * k, sy - 8 * k), (sx - 26 * (k + 1), sy - 8 * (k + 1))], fill=(255, 255, 250, int(230 * (1 - q) * (1 - u * 0.6))), width=max(1, 5 - k // 3))
+    f = F("play", 92 if V else 74); lines = C.HOOK_LINES; lh = int(f.size * 1.15); es = int(f.size * 0.8)
+    for size in range(f.size, 40, -2):
+        f = F("play", size); lh = int(size * 1.15); es = int(size * 0.8)
+        if max(bd.textlength(ln, font=f) + (es + 16 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= band.width - 60: break
+    txt = Image.new("RGBA", band.size, (0, 0, 0, 0)); td = ImageDraw.Draw(txt); y = (band.height - lh * len(lines)) / 2
+    for i, ln in enumerate(lines):
+        last = i == len(lines) - 1; tw = td.textlength(ln, font=f) + (es + 16 if last else 0); x = (band.width - tw) / 2
+        td.text((x, y), ln, font=f, fill=(255, 255, 250, 255))
+        if last:
+            txt.alpha_composite(emoji_img(es), (int(x + td.textlength(ln, font=f) + 16), int(y + f.size * 0.22)))
+        y += lh
+    txt.putalpha(txt.getchannel("A").point(lambda v: int(v * (0.4 + 0.6 * ease(t / 1.0)))))
+    band.alpha_composite(txt); im.paste(band, (bx0, by0), band)
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("lovely", "sky"), gx + gw / 2, gy + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["starfield"] = hook_frame_starfield
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

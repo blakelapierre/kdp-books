@@ -1,0 +1,26 @@
+{
+ "case": "Case 18 \u00b7 The Moonlit Walk",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "Key facts"},
+  {"id": "who", "heading": "Left the clifftop early"}
+ ],
+ "items": [
+  {"id": "f-moon", "section": "facts", "text": "Gazette: new moon this Saturday, the darkest night of the month", "at": {"seg": 3, "phrase": "darkest night"}},
+  {"id": "f-chart", "section": "facts", "text": "Antique star chart on the table in the club tent", "at": {"seg": 4, "phrase": "little table"}},
+  {"id": "f-time", "section": "facts", "text": "Everyone outside at 11; chart gone by midnight", "at": {"seg": 5, "phrase": "was gone"}},
+  {"id": "demelza", "section": "who", "name": "Demelza", "text": "left at 10:30", "at": {"seg": 7, "phrase": "half past ten"}},
+  {"id": "quill", "section": "who", "name": "Captain Quill", "text": "walked Demelza home; both there before 11", "at": {"seg": 7, "phrase": "before eleven"}},
+  {"id": "clemo", "section": "who", "name": "Miss Clemo", "text": "left about 11:15, \u201ctired\u201d", "at": {"seg": 8, "phrase": "tired"}},
+  {"id": "clemo-said", "section": "who", "parent": "clemo", "text": "\u201cThe moon was full and bright\u2026 I could see every pebble.\u201d", "at": {"seg": 9, "phrase": "every pebble"}}
+ ],
+ "solution": [
+  {"do": "circle", "item": "clemo", "span": "name", "at": {"seg": 15, "phrase": "Clemo took"}},
+  {"do": "check", "item": "f-moon", "at": {"seg": 16, "phrase": "no moonlight"}},
+  {"do": "check", "item": "clemo-said", "at": {"seg": 16, "phrase": "could not have been"}},
+  {"do": "check", "item": "quill", "at": {"seg": 17, "phrase": "before eleven"}},
+  {"do": "note", "text": "New moon: no moonlight at all. Her bright, full moon never shone that night.", "at": {"seg": 16, "phrase": "made up"}, "hold": 4.5}
+ ]
+}
