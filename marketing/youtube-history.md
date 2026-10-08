@@ -96,4 +96,4 @@ Wide videos C4-C7 (10A3rbVc1o8, 572N46J-FQA, PGRpPIK52dQ, JR8bOE0_KbU): 0 views 
 
 Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C8 3/33 = 9%. Smaller cases are too few views to mean anything.
 
-Notes: total Tidewhistle Short views went from 300 to 331 (+31), and 23 of those were Case 8 Part 1. Cases 1-3 have stopped moving. The six-hourly go-public run has not made Case 8's wide video or Case 9 public yet (its 12:49 PM run failed).
+Notes: total Tidewhistle Short views went from 304 to 335 (+31), and 23 of those were Case 8 Part 1. Cases 1-3 have stopped moving. The six-hourly go-public run has not made Case 8's wide video or Case 9 public yet (its 12:49 PM run failed).
