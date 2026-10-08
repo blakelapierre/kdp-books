@@ -64,3 +64,36 @@ Not shown: likes (no likes column in content list; not on analytics tabs), avera
 Part 2 / Part 1 (list views): C1 original 61/82 = 74%; C1 colour 1/4; C2 4/45 = 9%; C3 colour 71/4; C3 B&W 3/3; C4 4/2; C5 6/2; C8 2/10 = 20%. Part 2s are again mostly served by the Shorts feed directly, so these aren't pure Part 1 click-through.
 
 Notes: almost no movement on cases 1-3 in the last day (the feed has stopped pushing them). Feed-served Part 2s (C1 original, C3 colour) hold only 11-13% stayed, so Part 2 openings that stand alone for cold viewers may help. C2 Part 1 remains the best feed-served hold at 28.1%.
+
+## 2026-10-07, ~6:55 PM PT (public stats only)
+
+YouTube Studio wouldn't render in the box browser (blank page with spinner, no sign-in prompt; another Studio session was open at the same time), so this run used public numbers from yt-dlp. Stayed/swiped, view duration, traffic sources, likes and comments were not readable. Channel: 29 subscribers (no change).
+
+| Short | ID | Public views (change) |
+|---|---|---|
+| C1 original P1 | QWxklwPFnZ4 | 82 (0) |
+| C1 original P2 | HQ2L3e8GbbQ | 61 (0) |
+| C1 colour hook P1 | DUNfvE7Zipg | 4 (0) |
+| C1 colour P2 | wIpgU5xI1mg | 1 (0) |
+| C2 P1 | 6K6CEsxISc0 | 45 (0) |
+| C2 P2 | st_ReMOQIII | 4 (0) |
+| C3 colour P1 | EwiaRrvmCL0 | 4 (0) |
+| C3 colour P2 | tj9uhfQU-S0 | 72 (+1) |
+| C3 B&W P1 | wNL8OlpAFFs | 3 (0) |
+| C3 B&W P2 | 4TjYI9ExL_Y | 3 (0) |
+| C4 P1 | 0Kb7UGUHprg | 3 (+1) |
+| C4 P2 | Ac8j-2hRtxs | 4 (0) |
+| C5 P1 | 5zHVdIagzU4 | 5 (+3) |
+| C5 P2 | 49zUT21OQ98 | 6 (0) |
+| C6 P1 | SEDoTk2qjcw | 0 (0) |
+| C6 P2 | xlILuwuq5oY | 1 (+1) |
+| C7 P1 | -E-YL5j-424 | 0 (0) |
+| C7 P2 | 3ZB_lLqt52s | 1 (+1) |
+| C8 P1 | l_ey2zmsF1U | 33 (+23) |
+| C8 P2 | Jj77n8Mx0Ks | 3 (+1) |
+
+Wide videos C4-C7 (10A3rbVc1o8, 572N46J-FQA, PGRpPIK52dQ, JR8bOE0_KbU): 0 views each. C8 wide gHZ5FaFz53g still Private. No Case 9 Short or video is public on the channel yet.
+
+Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C8 3/33 = 9%. Smaller cases are too few views to mean anything.
+
+Notes: total Tidewhistle Short views went from 300 to 331 (+31), and 23 of those were Case 8 Part 1. Cases 1-3 have stopped moving. The six-hourly go-public run has not made Case 8's wide video or Case 9 public yet (its 12:49 PM run failed).
