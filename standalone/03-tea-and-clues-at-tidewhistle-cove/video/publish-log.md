@@ -11,8 +11,9 @@
 - Case 14: Public 2026-10-12 ~6:10 AM PT (P1 bsBB1Y2A5Wc, P2 hQAQVdPmxHg, wide ie5UT4iW3Bg). P1 Related = P2. Case 13 P2 + wide now say "Next case is live:" Case 14 wide. P2 + wide now say "Next case is live:" Case 15 wide IzLVGBap1C8.
 - Case 15: Public 2026-10-12 ~7:19 AM PT (P1 CN5zab5E45o, P2 0z1vHstDNXs, wide IzLVGBap1C8). P1 Related = P2. Case 14 P2 + wide now say "Next case is live:" Case 15 wide. P2 + wide carry Case 16 teaser (Mon 7:39 AM PT catch-up).
 - Case 16: Public 2026-10-12 ~8:25 AM PT (P1 Vja8T3-8JJQ, P2 O_I_3_ngaZE, wide kOI4xvk6Xm0). P1 Related = P2. Case 15 P2 + wide now say "Next case is live:" Case 16 wide. P2 + wide carry Case 17 teaser (Mon 8:39 AM PT catch-up).
-- Case 17: Public 2026-10-12 ~9:20 AM PT (P1 kS6yl9nDOv0, P2 WBvUKGILi3Q, wide RrRofGnXQpk). P1 Related = P2. Case 16 P2 + wide now say "Next case is live:" Case 17 wide. P2 + wide carry Case 18 teaser (Mon 9:39 AM PT catch-up).
-- Streambox has finished renders for Cases 10–22 including Case 19 (as of 2026-10-12 ~2:43 AM PT). Catch-up continues through Case 18.
+- Case 17: Public 2026-10-12 ~9:20 AM PT (P1 kS6yl9nDOv0, P2 WBvUKGILi3Q, wide RrRofGnXQpk). P1 Related = P2. Case 16 P2 + wide now say "Next case is live:" Case 17 wide. P2 + wide now say "Next case is live:" Case 18 wide 8o5TorPv2Ng.
+- Case 18: Public 2026-10-12 ~10:15 AM PT (P1 oeebtkfrFf4, P2 SGAA-aAbx4M, wide 8o5TorPv2Ng). P1 Related = P2. Case 17 P2 + wide now say "Next case is live:" Case 18 wide. P2 + wide carry Case 19 teaser (Mon 10:39 AM PT catch-up).
+- Streambox has finished renders for Cases 10–22 including Case 19 (as of 2026-10-12 ~2:43 AM PT). Catch-up target Case 18 is now Public; catch-up mode ends after this run (normal cadence resumes).
 
 ## TikTok (@shortmysterycases)
 - Case 1 (colour hook version) posted 2026-10-07 01:40 PT, AI label on:
@@ -46,7 +47,10 @@
 - Case 17 posted 2026-10-12 ~9:24 AM PT, AI label on, comments on:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7695818006508719390 (Everyone after review)
   - P2 https://www.tiktok.com/@shortmysterycases/video/7695818219432463646 (Only me / under review at post time)
-- Next TikTok case: 18 (follow YouTube catch-up).
+- Case 18 posted 2026-10-12 ~10:20 AM PT, AI label on, comments on:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7695832105619705118 (Only me / under review at post time)
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7695832299480354079 (Only me / under review at post time)
+- Next TikTok case: 19 (follow YouTube; catch-up ended after Case 18).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
 Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
@@ -70,4 +74,7 @@ Public: P1 CN5zab5E45o (Related→P2), P2 0z1vHstDNXs, wide IzLVGBap1C8. AI Yes,
 Public: P1 Vja8T3-8JJQ (Related→P2), P2 O_I_3_ngaZE, wide kOI4xvk6Xm0. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 15 P2/wide desc link to Case 16. P2 + wide carry Case 17 teaser (live Mon 8:39 AM PT catch-up slot).
 
 ## Case 17 YouTube (2026-10-12 ~9:20 AM PT)
-Public: P1 kS6yl9nDOv0 (Related→P2), P2 WBvUKGILi3Q, wide RrRofGnXQpk. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 16 P2/wide desc link to Case 17 (stale duplicate Case 17 line removed from Case 16 wide). P2 + wide carry Case 18 teaser (live Mon 9:39 AM PT catch-up slot).
+Public: P1 kS6yl9nDOv0 (Related→P2), P2 WBvUKGILi3Q, wide RrRofGnXQpk. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 16 P2/wide desc link to Case 17 (stale duplicate Case 17 line removed from Case 16 wide). P2 + wide desc updated ~10:15 AM PT to "Next case is live: Case 18 The Moonlit Walk — https://www.youtube.com/watch?v=8o5TorPv2Ng".
+
+## Case 18 YouTube (2026-10-12 ~10:15 AM PT)
+Public: P1 oeebtkfrFf4 (Related→P2 SGAA-aAbx4M), P2 SGAA-aAbx4M, wide 8o5TorPv2Ng. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 17 P2 (WBvUKGILi3Q) + wide (RrRofGnXQpk) desc updated to "Next case is live: Case 18 The Moonlit Walk — https://www.youtube.com/watch?v=8o5TorPv2Ng". P2 + wide carry Case 19 teaser (live Mon 10:39 AM PT catch-up slot; catch-up ends after Case 18 so normal cadence resumes after this run).
