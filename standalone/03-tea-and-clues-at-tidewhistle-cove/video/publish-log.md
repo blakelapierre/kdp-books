@@ -17,3 +17,6 @@
   - P2 https://www.tiktok.com/@shortmysterycases/video/7695688429962595615 (was under review at last check)
 - Next TikTok case: 3 (use B&W shorts; colour version also exists). Note: Case 4-7 short-part MP4s are missing on the box and streambox after the restore; regenerate with make_shorts.py from the local verticals before posting them.
 - 2026-10-12 ~01:45 PT: TikTok Cases 3–9 (P1+P2) posted, all Everyone, AI label on. Next TikTok case: 10 (follow YouTube).
+
+## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
+Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc now link to Case 10. TikTok Case 10: pending.
