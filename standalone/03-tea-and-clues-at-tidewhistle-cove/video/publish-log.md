@@ -8,7 +8,8 @@
 - Case 11: Public 2026-10-12 ~2:58 AM PT (P1 4D1AYtOymL0, P2 S-avVUkGUdQ, wide iCVyoft9yfc). P2 + wide now say "Next case is live:" Case 12 wide FCddxILBAgA.
 - Case 12: Public 2026-10-12 ~4:00 AM PT (P1 rbYMNsiKvc8, P2 ow8kRZE6uUc, wide FCddxILBAgA). P1 Related = P2. Case 12 P2 + wide now say "Next case is live:" Case 13 wide EUKfvNe2yc4.
 - Case 13: Public 2026-10-12 ~5:08 AM PT (P1 akstLV-kkks, P2 iEH9g6QA3aE, wide EUKfvNe2yc4). P1 Related = P2. Case 12 P2 + wide now say "Next case is live:" Case 13 wide. P2 + wide carry Case 14 teaser (Mon 5:39 AM PT catch-up).
-- Case 14: Public 2026-10-12 ~6:10 AM PT (P1 bsBB1Y2A5Wc, P2 hQAQVdPmxHg, wide ie5UT4iW3Bg). P1 Related = P2. Case 13 P2 + wide now say "Next case is live:" Case 14 wide. P2 + wide carry Case 15 teaser (Mon 6:39 AM PT catch-up).
+- Case 14: Public 2026-10-12 ~6:10 AM PT (P1 bsBB1Y2A5Wc, P2 hQAQVdPmxHg, wide ie5UT4iW3Bg). P1 Related = P2. Case 13 P2 + wide now say "Next case is live:" Case 14 wide. P2 + wide now say "Next case is live:" Case 15 wide IzLVGBap1C8.
+- Case 15: Public 2026-10-12 ~7:19 AM PT (P1 CN5zab5E45o, P2 0z1vHstDNXs, wide IzLVGBap1C8). P1 Related = P2. Case 14 P2 + wide now say "Next case is live:" Case 15 wide. P2 + wide carry Case 16 teaser (Mon 7:39 AM PT catch-up).
 - Streambox has finished renders for Cases 10–22 including Case 19 (as of 2026-10-12 ~2:43 AM PT). Catch-up continues through Case 18.
 
 ## TikTok (@shortmysterycases)
@@ -34,7 +35,10 @@
 - Case 14 posted 2026-10-12 ~6:13 AM PT, AI label on, comments on, Everyone:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7695768850196892959
   - P2 https://www.tiktok.com/@shortmysterycases/video/7695769199360101662
-- Next TikTok case: 15 (follow YouTube catch-up).
+- Case 15 posted 2026-10-12 ~7:22 AM PT, AI label on, comments on, Everyone:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7695785968128806174
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7695786293287996702
+- Next TikTok case: 16 (follow YouTube catch-up).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
 Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
@@ -50,3 +54,6 @@ Public: P1 akstLV-kkks (Related→P2), P2 iEH9g6QA3aE, wide EUKfvNe2yc4. AI Yes,
 
 ## Case 14 YouTube (2026-10-12 ~6:10 AM PT)
 Public: P1 bsBB1Y2A5Wc (Related→P2), P2 hQAQVdPmxHg, wide ie5UT4iW3Bg. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 13 P2/wide desc link to Case 14. P2 + wide carry Case 15 teaser (live Mon 6:39 AM PT catch-up slot).
+
+## Case 15 YouTube (2026-10-12 ~7:19 AM PT)
+Public: P1 CN5zab5E45o (Related→P2), P2 0z1vHstDNXs, wide IzLVGBap1C8. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 14 P2/wide desc link to Case 15. P2 + wide carry Case 16 teaser (live Mon 7:39 AM PT catch-up slot).
