@@ -23,3 +23,18 @@ Notes:
 - Series page shows "A Frostwood Puzzle Book, 2 books".
 - Searched Amazon for "Blake La Pierre", "Frostwood Puzzle Book", Stars over Frostwood, The Advent Clock, Fireside Cryptograms, Tents in Frostwood and Tea and Clues at Tidewhistle Cove: no other books by Blake La Pierre are live yet.
 - Week-over-week: no previous snapshot (this is the baseline).
+
+## 2026-10-12
+
+| Book | Price | Overall BSR | Category ranks | Ratings | Stars | Reviews | Grok Bot co-author? |
+|---|---|---|---|---|---|---|---|
+| The Thief Stayed the Night | $9.99 | — (not shown) | — (not shown) | 0 | — | 0 | Yes, listed as "Grok Bot (Author)" |
+| Frostwood Express | $11.99 | — (not shown) | — (not shown) | 0 | — | 0 | Yes, listed as "Grok Bot (Author)" |
+
+Notes:
+- Both pages load and show In Stock, sold by Amazon.com. Prices unchanged ($9.99 / $11.99). Still Book 1 of 2 and Book 2 of 2 in "A Frostwood Puzzle Book".
+- No Best Sellers Rank on either page (Product details section had no BSR / category ranks in the public page fetch). Still consistent with no sales yet.
+- Customer review widgets show all star-bucket percentages at 0%; no star average and no review titles/snippets visible.
+- Grok Bot still appears as co-author on both ("by Blake La Pierre (Author), Grok Bot (Author)").
+- Searched Amazon (WebSearch site:amazon.com "Blake La Pierre" Kindle OR paperback; plus Advent Clock / Stars over Frostwood / Tidewhistle / Fireside Cryptograms / Tents in Frostwood): only the two tracked Frostwood titles are live. No newly live Blake La Pierre KDP books found.
+- Week-over-week vs 2026-10-05: price unchanged; BSR still not shown; ratings/reviews still 0; Grok Bot co-author still Yes. No deltas.
