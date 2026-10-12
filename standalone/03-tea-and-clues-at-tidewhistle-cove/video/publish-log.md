@@ -3,20 +3,29 @@
 ## YouTube
 - Cases 1–7: Public. Case 7 P2 3ZB_lLqt52s, wide JR8bOE0_KbU (descriptions now say "Next case is live:" Case 8 wide).
 - Case 8: Public (P1 l_ey2zmsF1U, P2 Jj77n8Mx0Ks, wide gHZ5FaFz53g). Shorts went Public in an earlier run; wide made Public 2026-10-07 ~6:57 PM PT. P1 Related = P2. P2 + wide carry Case 9 teaser (live Thu 12:39 AM PT).
-- Case 9: Public 2026-10-12 ~12:55 AM PT (P1 bh_ER-hsVjI, P2 VIYaiul5XwA, wide 7vq9piSj-ew). P1 Related = P2. P2 + wide carry Case 10 teaser (live Mon 6:39 AM PT). Case 8 P2 + wide now say "Next case is live:" Case 9 wide. (Runs Oct 8-11 failed after a box restore; verified in Studio 2026-10-12.)
-- Case 10: MP4s + shorts copied from streambox 2026-10-12 (sha256 match), visual check passed. Not uploaded yet; next run uploads + publishes.
-- Streambox has finished renders for Cases 10-18 and 20-22 (Case 19 missing as of 2026-10-12).
+- Case 9: Public 2026-10-12 ~12:55 AM PT (P1 bh_ER-hsVjI, P2 VIYaiul5XwA, wide 7vq9piSj-ew). P1 Related = P2. Case 8 P2 + wide now say "Next case is live:" Case 9 wide. (Runs Oct 8-11 failed after a box restore; verified in Studio 2026-10-12.)
+- Case 10: Public 2026-10-12 ~1:55 AM PT (P1 -i46lR20EXE, P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk). P2 + wide now "Next case is live:" Case 11 wide iCVyoft9yfc.
+- Case 11: Public 2026-10-12 ~2:58 AM PT (P1 4D1AYtOymL0, P2 S-avVUkGUdQ, wide iCVyoft9yfc). P2 + wide carry Case 12 teaser (Mon 3:39 AM PT catch-up).
+- Streambox has finished renders for Cases 10–22 including Case 19 (as of 2026-10-12 ~2:43 AM PT). Catch-up continues through Case 18.
 
 ## TikTok (@shortmysterycases)
 - Case 1 (colour hook version) posted 2026-10-07 01:40 PT, AI label on:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7693842926996163870
   - P2 https://www.tiktok.com/@shortmysterycases/video/7693843071456398623
-  - Showed "Only me / Content under review" right after posting; confirm they switch to Everyone.
 - Case 2 posted 2026-10-12 ~1:01 AM PT, AI label on, Everyone, comments on:
-  - P1 https://www.tiktok.com/@shortmysterycases/video/7695688107861052703 (Everyone)
-  - P2 https://www.tiktok.com/@shortmysterycases/video/7695688429962595615 (was under review at last check)
-- Next TikTok case: 3 (use B&W shorts; colour version also exists). Note: Case 4-7 short-part MP4s are missing on the box and streambox after the restore; regenerate with make_shorts.py from the local verticals before posting them.
-- 2026-10-12 ~01:45 PT: TikTok Cases 3–9 (P1+P2) posted, all Everyone, AI label on. Next TikTok case: 10 (follow YouTube).
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7695688107861052703
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7695688429962595615
+- Cases 3–9 (P1+P2) posted 2026-10-12 ~01:45 PT, Everyone, AI label on.
+- Case 10 posted 2026-10-12 ~3:00 AM PT, AI label on, comments on:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7695718622064282911 (Everyone after review)
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7695719045026401567 (Only me / under review at post time)
+- Case 11 posted 2026-10-12 ~3:00 AM PT, AI label on, comments on:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7695719235036728607 (Only me / under review at post time)
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7695719550054124831 (Only me / under review at post time)
+- Next TikTok case: 12 (follow YouTube catch-up).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
-Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc now link to Case 10. TikTok Case 10: pending.
+Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
+
+## Case 11 YouTube (2026-10-12 ~2:58 AM PT)
+Public: P1 4D1AYtOymL0 (Related→P2), P2 S-avVUkGUdQ, wide iCVyoft9yfc. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. P2 + wide carry Case 12 teaser (live Mon 3:39 AM PT catch-up slot).
