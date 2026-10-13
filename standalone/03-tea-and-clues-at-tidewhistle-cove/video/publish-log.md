@@ -15,6 +15,7 @@
 - Case 18: Public 2026-10-12 ~10:15 AM PT (P1 oeebtkfrFf4, P2 SGAA-aAbx4M, wide 8o5TorPv2Ng). P1 Related = P2. Case 17 P2 + wide now say "Next case is live:" Case 18 wide. P2 + wide carry Case 19 teaser (Mon 10:39 AM PT catch-up).
 - Case 19: Public 2026-10-12 ~1:00 PM PT (P1 xzMwNiFgrMA, P2 TrteDGGDlvE, wide J1rJ4HZZ0aw). P1 Related = P2. Case 18 P2 + wide now say "Next case is live:" Case 19 wide. P2 + wide now say "Next case is live:" Case 20 wide HfkXscb2rFM.
 - Case 20: Public 2026-10-12 ~6:50 PM PT (P1 WaCenh2KSDs, P2 xm-fwRzABA4, wide HfkXscb2rFM). P1 Related = P2. Case 19 P2 + wide now say "Next case is live:" Case 20 wide. P2 + wide carry Case 21 teaser (Tue 12:39 AM PT).
+- Case 21: Public 2026-10-13 ~12:55 AM PT (P1 tyaWON7zG98 [tight-opening A/B version], P2 kANb06o0iuA, wide LkwPFVdpRhI). P1 Related = P2. Case 20 P2 + wide now say "Next case is live:" Case 21 wide. P2 + wide carry Case 22 teaser (Tue 6:39 AM PT).
 - Streambox has finished renders for Cases 10–22 including Case 19 (as of 2026-10-12 ~2:43 AM PT). Catch-up target Case 18 is now Public; catch-up mode ends after this run (normal cadence resumes).
 
 ## TikTok (@shortmysterycases)
@@ -58,7 +59,10 @@
 - Case 20 posted 2026-10-12 ~6:55 PM PT, AI label on, comments on, Everyone:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7695964825054235935
   - P2 https://www.tiktok.com/@shortmysterycases/video/7695965555391466783
-- Next TikTok case: 21 (follow YouTube).
+- Case 21 posted 2026-10-13 ~1:00 AM PT, AI label on, comments on, Everyone:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7696059150723321118
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7696059208042646815 (under review / Only me at post time)
+- Next TikTok case: 22 (follow YouTube).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
 Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
@@ -92,6 +96,9 @@ Public: P1 xzMwNiFgrMA (Related→P2 TrteDGGDlvE), P2 TrteDGGDlvE, wide J1rJ4HZZ
 
 ## Case 20 YouTube (2026-10-12 ~6:50 PM PT)
 Public: P1 WaCenh2KSDs (Related→P2 xm-fwRzABA4), P2 xm-fwRzABA4, wide HfkXscb2rFM. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 19 P2 (TrteDGGDlvE) + wide (J1rJ4HZZ0aw) desc updated to "Next case is live: Case 20 The Scent of Lavender — https://www.youtube.com/watch?v=HfkXscb2rFM". P2 + wide end with "Next case: Case 21, The Spanish Coin, goes live Tuesday at 12:39 AM PT".
+
+## Case 21 YouTube (2026-10-13 ~12:55 AM PT)
+Public: P1 tyaWON7zG98 (Related→P2 kANb06o0iuA), P2 kANb06o0iuA, wide LkwPFVdpRhI. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 20 P2 (xm-fwRzABA4) + wide (HfkXscb2rFM) desc updated to "Next case is live: Case 21 The Spanish Coin — https://www.youtube.com/watch?v=LkwPFVdpRhI". P2 + wide end with "Next case: Case 22, The Honest Fishermen, goes live Tuesday at 6:39 AM PT". Case 22 MP4s prefetched locally.
 
 ## A/B test
 - Case 21 Part 1 = tight-opening test; compare retention vs Cases 19-20 Part 1 at 48h. (Tight version: question on screen at frame 0, 3 suspects flash at 1.75 s, Kokoro line "Six Spanish coins vanished. Who took them?" from frame 1, "Pause when you spot the clue" at 3.3 s, title card and cove scene-setting removed; 105.2 s vs 123.0 s original. Original kept as *-short-part1-orig.mp4. Part 2 and wide unchanged.)
