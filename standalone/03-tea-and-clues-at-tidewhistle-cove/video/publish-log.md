@@ -92,3 +92,6 @@ Public: P1 xzMwNiFgrMA (Related→P2 TrteDGGDlvE), P2 TrteDGGDlvE, wide J1rJ4HZZ
 
 ## Case 20 YouTube (2026-10-12 ~6:50 PM PT)
 Public: P1 WaCenh2KSDs (Related→P2 xm-fwRzABA4), P2 xm-fwRzABA4, wide HfkXscb2rFM. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 19 P2 (TrteDGGDlvE) + wide (J1rJ4HZZ0aw) desc updated to "Next case is live: Case 20 The Scent of Lavender — https://www.youtube.com/watch?v=HfkXscb2rFM". P2 + wide end with "Next case: Case 21, The Spanish Coin, goes live Tuesday at 12:39 AM PT".
+
+## A/B test
+- Case 21 Part 1 = tight-opening test; compare retention vs Cases 19-20 Part 1 at 48h. (Tight version: question on screen at frame 0, 3 suspects flash at 1.75 s, Kokoro line "Six Spanish coins vanished. Who took them?" from frame 1, "Pause when you spot the clue" at 3.3 s, title card and cove scene-setting removed; 105.2 s vs 123.0 s original. Original kept as *-short-part1-orig.mp4. Part 2 and wide unchanged.)
