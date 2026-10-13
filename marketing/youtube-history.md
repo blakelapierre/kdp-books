@@ -97,3 +97,51 @@ Wide videos C4-C7 (10A3rbVc1o8, 572N46J-FQA, PGRpPIK52dQ, JR8bOE0_KbU): 0 views 
 Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C8 3/33 = 9%. Smaller cases are too few views to mean anything.
 
 Notes: total Tidewhistle Short views went from 304 to 335 (+31), and 23 of those were Case 8 Part 1. Cases 1-3 have stopped moving. The six-hourly go-public run has not made Case 8's wide video or Case 9 public yet (its 12:49 PM run failed).
+
+## 2026-10-12, ~6:50 PM PT (public stats only)
+
+The routine didn't run Oct 8-11 (routine runs were blocked by a billing issue), so changes below are against Oct 7. Studio was signed in but the box desktop was busy with the six-hourly go-public run, so this check used public numbers from the channel's Shorts list (yt-dlp; per-video pages hit YouTube's bot check). Stayed/swiped, view duration, traffic sources, likes and comments were not readable. Channel: 30 subscribers (+1).
+
+| Short | ID | Public views (change since Oct 7) |
+|---|---|---|
+| C1 original P1 | QWxklwPFnZ4 | 82 (0) |
+| C1 original P2 | HQ2L3e8GbbQ | 61 (0) |
+| C1 colour hook P1 | DUNfvE7Zipg | 4 (0) |
+| C1 colour P2 | wIpgU5xI1mg | 1 (0) |
+| C2 P1 | 6K6CEsxISc0 | 45 (0) |
+| C2 P2 | st_ReMOQIII | 4 (0) |
+| C3 colour P1 | EwiaRrvmCL0 | 4 (0) |
+| C3 colour P2 | tj9uhfQU-S0 | 72 (0) |
+| C3 B&W P1 | wNL8OlpAFFs | 4 (+1) |
+| C3 B&W P2 | 4TjYI9ExL_Y | 3 (0) |
+| C4 P1 | 0Kb7UGUHprg | 2 (was 3) |
+| C4 P2 | Ac8j-2hRtxs | 4 (0) |
+| C5 P1 | 5zHVdIagzU4 | 32 (+27) |
+| C5 P2 | 49zUT21OQ98 | 6 (0) |
+| C6 P1 | SEDoTk2qjcw | not shown (0 before) |
+| C6 P2 | xlILuwuq5oY | 2 (+1) |
+| C7 P1 | -E-YL5j-424 | not shown (0 before) |
+| C7 P2 | 3ZB_lLqt52s | 1 (0) |
+| C8 P1 | l_ey2zmsF1U | 34 (+1) |
+| C8 P2 | Jj77n8Mx0Ks | 73 (+70) |
+| C9 P1 | bh_ER-hsVjI | 82 (new) |
+| C9 P2 | VIYaiul5XwA | 20 (new) |
+| C10 P1 | -i46lR20EXE | not shown (new) |
+| C10 P2 | SNAQ_HOcVgY | 16 (new) |
+| C11 P1 / P2 | 4D1AYtOymL0 / S-avVUkGUdQ | not shown / not shown (new) |
+| C12 P1 / P2 | rbYMNsiKvc8 / ow8kRZE6uUc | not shown / not shown (new) |
+| C13 P1 / P2 | akstLV-kkks / iEH9g6QA3aE | 1 / not shown (new) |
+| C14 P1 / P2 | bsBB1Y2A5Wc / hQAQVdPmxHg | not shown / not shown (new) |
+| C15 P1 / P2 | CN5zab5E45o / 0z1vHstDNXs | not shown / 1 (new) |
+| C16 P1 / P2 | Vja8T3-8JJQ / O_I_3_ngaZE | not shown / not shown (new) |
+| C17 P1 / P2 | kS6yl9nDOv0 / WBvUKGILi3Q | not shown / not shown (new) |
+| C18 P1 / P2 | oeebtkfrFf4 / SGAA-aAbx4M | not shown / not shown (new) |
+| C19 P1 / P2 | xzMwNiFgrMA / TrteDGGDlvE | not shown / not shown (new) |
+
+"Not shown" means the Shorts list gave no count (usually 0 views). Cases 10-19 went public Oct 12.
+
+Wide videos (channel Videos list): C4 10A3rbVc1o8 0, C5 572N46J-FQA 2, C6 PGRpPIK52dQ 1, C7 JR8bOE0_KbU 6, C8 gHZ5FaFz53g 6 (now public), C9 7vq9piSj-ew 0, C10 1CkmU2fGsWk 0, C11 iCVyoft9yfc 1, C12-C19 (FCddxILBAgA, EUKfvNe2yc4, ie5UT4iW3Bg, IzLVGBap1C8, kOI4xvk6Xm0, RrRofGnXQpk, 8o5TorPv2Ng, J1rJ4HZZ0aw) 0 each. Studio's content list showed 0 comments on the C10-C19 wide videos.
+
+Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/32 = 19%; C9 20/82 = 24%. C8 Part 2 (73) now beats its Part 1 (34), so the feed is serving it directly.
+
+Notes: Cases 1-8 went from 335 to 434 Short views (+99), mostly Case 8 Part 2 (+70) and Case 5 Part 1 (+27). Case 9 picked up 102 across both parts. Total across all Tidewhistle Shorts: 554. Cases 10-19 have almost nothing yet after going public in one day.
