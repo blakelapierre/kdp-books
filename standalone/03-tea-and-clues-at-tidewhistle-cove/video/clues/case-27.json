@@ -1,0 +1,32 @@
+{
+ "case": "Case 27 \u00b7 The Silent Foghorn",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The facts"},
+  {"id": "who", "heading": "Where they were"}
+ ],
+ "items": [
+  {"id": "f-horn", "section": "facts", "text": "Foghorn booms by itself whenever there's fog, every half minute", "at": {"seg": 2, "phrase": "fog clears"}},
+  {"id": "f-hear", "section": "facts", "text": "Heard from every house in the village", "at": {"seg": 2, "phrase": "in the village"}},
+  {"id": "f-agnes", "section": "facts", "text": "Tue night: Agnes awake, window open, 10 p.m. \u2013 3 a.m.", "at": {"seg": 3, "phrase": "in the morning"}},
+  {"id": "f-clear", "section": "facts", "text": "Clear, starry night; foghorn never sounded once", "at": {"seg": 3, "phrase": "sounded once"}},
+  {"id": "f-baro", "section": "facts", "text": "Wed: yacht's brass barometer gone; someone rowed out by dinghy in the night", "at": {"seg": 4, "phrase": "in a dinghy"}},
+  {"id": "quill", "section": "who", "name": "Captain Quill", "text": "night watch at the harbour office with 2 crew, 10 till dawn", "at": {"seg": 5, "phrase": "until dawn"}},
+  {"id": "tam", "section": "who", "name": "Tamsin", "text": "at her sister's in town; first bus back", "at": {"seg": 5, "phrase": "in the morning"}},
+  {"id": "keast", "section": "who", "name": "Mr Keast", "text": "visitor; admired the yacht's brass all week", "at": {"seg": 6, "phrase": "all week"}},
+  {"id": "keast-q", "section": "who", "parent": "keast", "text": "\u201cHome all night. Thick fog. Foghorn kept me awake, booming.\u201d", "at": {"seg": 7, "phrase": "booming away"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "f-horn", "at": {"seg": 13, "phrase": "fog in the bay"}},
+  {"do": "check", "item": "f-hear", "at": {"seg": 13, "phrase": "house in the village"}},
+  {"do": "check", "item": "f-agnes", "at": {"seg": 13, "phrase": "ten until three"}},
+  {"do": "check", "item": "f-clear", "at": {"seg": 13, "phrase": "sounded once"}},
+  {"do": "circle", "item": "keast-q", "at": {"seg": 13, "phrase": "no booming"}},
+  {"do": "strike", "item": "quill", "at": {"seg": 14, "phrase": "all night"}},
+  {"do": "strike", "item": "tam", "at": {"seg": 14, "phrase": "in town"}},
+  {"do": "circle", "item": "keast", "span": "name", "at": {"seg": 14, "phrase": "fit the night"}},
+  {"do": "note", "text": "No fog, no booming: Agnes heard silence all night. Keast invented the fog.", "at": {"seg": 14, "phrase": "fit the night"}, "hold": 1.2}
+ ]
+}
