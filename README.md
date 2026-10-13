@@ -14,6 +14,7 @@ series/
     04-tents-in-frostwood/
     05-riddles-by-the-frostwood-fire/
     06-the-frostwood-sketchbook/
+    07-bridges-of-frostwood/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
   01-the-advent-clock/
@@ -46,6 +47,7 @@ Current books:
 4. `04-tents-in-frostwood`: built, not published
 5. `05-riddles-by-the-frostwood-fire`: built Kindle ebook, not published
 6. `06-the-frostwood-sketchbook`: built paperback, not published
+7. `07-bridges-of-frostwood`: built paperback, not published
 
 `standalone/`
 1. `01-the-advent-clock`: built, not published
@@ -65,6 +67,7 @@ Current books:
 | 4 | *Tents in Frostwood*: 180 Tents and Trees Logic Puzzles (Easy to Expert) | Tents / Tents and Trees | Draft, print-ready. Not yet published or submitted to KDP | 184 | $9.99 | $2.79 | [04-tents-in-frostwood/README.md](series/frostwood/04-tents-in-frostwood/README.md) |
 | 5 | *Riddles by the Frostwood Fire*: 140 Cozy Winter Riddles & Text Logic Puzzles (Kindle) | Riddles + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [05-riddles-by-the-frostwood-fire/README.md](series/frostwood/05-riddles-by-the-frostwood-fire/README.md) |
 | 6 | *The Frostwood Sketchbook*: 140 Nonogram Picture Logic Puzzles (Easy to Expert) | Nonograms (hanjie picture logic) | Draft, print-ready paperback. Not yet published or submitted to KDP | 156 | $9.99 | $3.12 | [06-the-frostwood-sketchbook/README.md](series/frostwood/06-the-frostwood-sketchbook/README.md) |
+| 7 | *Bridges of Frostwood*: 180 Hashi Bridges Logic Puzzles (Easy to Expert) | Hashi / Bridges (Hashiwokakero) | Draft, print-ready paperback. Not yet published or submitted to KDP | 188 | $9.99 | $2.74 | [07-bridges-of-frostwood/README.md](series/frostwood/07-bridges-of-frostwood/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -149,6 +152,15 @@ python3 verify.py     # independent SAT uniqueness check + line-solve + band fit
 python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
 python3 build.py      # -> ../frostwood-06-the-frostwood-sketchbook-interior.pdf and ../build-info.json
 python3 cover.py      # -> ../frostwood-06-the-frostwood-sketchbook-cover.pdf, ../cover-info.json and ../tmp/frostwood-06-the-frostwood-sketchbook-cover-guides.pdf
+cd ../../../..
+
+# Book 7: Bridges of Frostwood (paperback)
+cd series/frostwood/07-bridges-of-frostwood/src
+PYTHONHASHSEED=0 python3 master.py   # generate and grade the 180 Hashi puzzles -> ../data.json (~2 min on 8 cores; hashi.py is the SAT counter + logic solver, gen.py sets the bands)
+python3 verify.py     # independent SAT + backtracking (hashi_bt.py) uniqueness check + band fit -> ../verification.md
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-07-bridges-of-frostwood-interior.pdf and ../build-info.json (worked-example text is in build.py)
+python3 cover.py      # -> ../frostwood-07-bridges-of-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-07-bridges-of-frostwood-cover-guides.pdf
 cd ../../../..
 
 # Standalone: The Advent Clock

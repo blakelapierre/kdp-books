@@ -7,7 +7,7 @@ This log lists every KDP book idea that has already been **built** or **evaluate
 - Author name: Blake La Pierre. Default price: $9.99, the lowest price that earns the 60% paperback royalty.
 
 ## Puzzle types already used in the Frostwood series
-Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), and cozy riddles + text logic for Kindle (book 5). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
+Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), cozy riddles + text logic for Kindle (book 5), nonograms / hanjie (book 6) and Hashi / Bridges (book 7). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
 
 ## Built
 | Date | Idea | Result |
@@ -22,6 +22,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-03 | Audio-first cozy solve-it-yourself mini-mysteries Kindle ebook (seaside tea-room sleuth, no murder; each case ends *Can you solve it?* with the answer right after) | *Tea and Clues at Tidewhistle Cove*, 30 cases (23 clue stories + 7 logic), 15,404 words, Kindle ebook, [folder](standalone/03-tea-and-clues-at-tidewhistle-cove/) |
 | 2026-10-05 | Cozy logic grid (Einstein / zebra) puzzle book for adults, village scenes, no crime theme | *Logic on Lantern Lane*, 120 puzzles (30 Easy 3×4 / 30 Medium 4×4 / 30 Hard 4×5 / 30 Expert 5×5 on two-page spreads) + worked example, 194 pages, [folder](standalone/04-logic-on-lantern-lane/) |
 | 2026-10-06 | Nonogram (hanjie / paint-by-number) picture logic puzzle book, Frostwood book 6, **paperback** format slot | *The Frostwood Sketchbook*, 140 puzzles (30 Easy 15×15 / 40 Medium 20×20 / 40 Hard 25×25 / 30 Expert 25×25), 156 pages, paperback, [folder](series/frostwood/06-the-frostwood-sketchbook/) |
+| 2026-10-13 | Hashi / Bridges (Hashiwokakero) logic puzzles, Frostwood book 7, **paperback** format slot (chosen for its Frostwood fit: footbridges across frozen ponds; dedicated Hashi books have few reviews) | *Bridges of Frostwood*, 180 puzzles (40 Easy 7×7 / 40 Medium 9×9 / 50 Hard 11×11 / 50 Expert 13×15), 188 pages, paperback, [folder](series/frostwood/07-bridges-of-frostwood/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -43,6 +44,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-09-30 | Wordle-style word puzzle book (trademark risk) |
 | 2026-09-30 | Cozy autumn word search (close variant of the large-print winter word search) |
 | 2026-09-30 | Hashi / Bridges puzzle book for Frostwood book 3 (weaker Amazon demand than Star Battle: top title 28 ratings, BSR ~1.5M seen) |
+| 2026-10-13 | Hashi / Bridges re-checked and **chosen** for Frostwood book 7 (built, see above). Public Amazon listings seen 2026-10-13: *Hard Core Hashiwokakero 200 Puzzles* (B09LWGXY4F) 4.8★/14, $9.99, 8.5×11; *Hashi Bridges Puzzle Book: 200 Hashiwokakero Puzzles* (B0C7F3GZFL) 5.0★/2, BSR #1,503,101, $9.99, 6×9; *Hashi bridges travel book: 160 puzzles* (B099BYDLXC) 4.5★/5, $9.99, 6×9; Cactus *Hashi 108 Puzzles Hard* (B08H4Q4PBD) 1 review. None themed or illustrated. Gap: cozy Frostwood-themed, illustrated, verified unique no-guess Hashi at $9.99 |
 | 2026-09-30 | Slitherlink puzzle book for Frostwood book 3 (top dedicated title 23 ratings) |
 | 2026-10-01 | Kakuro puzzle book (Mensa Kakuro 4.6★/494 ratings but newer indie titles mostly 1–23 ratings; weaker absolute demand than cryptograms) |
 | 2026-10-01 | Futoshiki / KenKen / Battleships dedicated puzzle books (very low review counts on dedicated titles vs cryptogram bestsellers) |
@@ -67,6 +69,8 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 *The Advent Clock* uses one each of: word search (×2), Caesar cipher, pigpen cipher, Morse code, Star Battle-style "one star per row/column/region" (×2), wordoku (×2), maze, nonogram (×2), number pyramid, logic grid, Tents, Train Tracks (×2), Akari, fill-in, Minesweeper-style "presents", Futoshiki, Battleships-style "sleigh fleet", Skyscrapers and KenKen-style cages. A second Christmas/advent book would be a close variant. (Its two Star Battle-style doors overlap only slightly with Frostwood book 3, a full 180-puzzle Star Battle book.)
 
 *The Frostwood Sketchbook* (Frostwood book 6) is a full dedicated nonogram book (pictures from the Noto Emoji typeface, one subject per puzzle). *The Advent Clock* used two nonogram doors, which is fine. Another nonogram book would be a sequel (e.g. a different theme or larger 8.5 × 11 grids).
+
+*Bridges of Frostwood* (Frostwood book 7) is a full dedicated Hashi / Bridges (Hashiwokakero) book: 180 puzzles from 7×7 to 13×15, verified unique by SAT plus an independent backtracker. Another Hashi book would be a sequel (e.g. larger 8.5 × 11 maps), not a new idea.
 
 ## How to add entries
 Append a new row with the date whenever an idea is built or evaluated. When a book is built, also add it to the table in README.md. If it is part of a series, add it to that series' README too.
