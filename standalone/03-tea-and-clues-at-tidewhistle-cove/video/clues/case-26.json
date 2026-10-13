@@ -1,0 +1,28 @@
+{
+ "case": "Case 26 \u00b7 The Winning Ticket",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The facts"},
+  {"id": "queue", "heading": "What Agnes remembers"}
+ ],
+ "items": [
+  {"id": "f-five", "section": "facts", "text": "5 people in a single queue at the tea stall", "at": {"seg": 3, "phrase": "behind the other"}},
+  {"id": "f-behind", "section": "facts", "text": "Ticket blew out of Loveday's basket; picked up by the person DIRECTLY behind her", "at": {"seg": 3, "phrase": "directly behind her"}},
+  {"id": "f-claim", "section": "facts", "text": "Loveday's number won, but someone else claimed it", "at": {"seg": 4, "phrase": "somebody else"}},
+  {"id": "f-who", "section": "facts", "text": "Queue: Mr Fenwick, Loveday, Pip, Demelza, Hedley", "at": {"seg": 5, "phrase": "Hedley Truscott"}},
+  {"id": "c-fen", "section": "queue", "text": "Mr Fenwick: at the very front", "at": {"seg": 6, "phrase": "very front"}},
+  {"id": "c-hed", "section": "queue", "text": "Hedley: somewhere behind Pip", "at": {"seg": 6, "phrase": "behind Pip"}},
+  {"id": "c-lov", "section": "queue", "text": "Loveday: exactly in the middle", "at": {"seg": 6, "phrase": "of the queue"}},
+  {"id": "c-dem", "section": "queue", "text": "Demelza: not last, not next to Mr Fenwick", "at": {"seg": 6, "phrase": "to Mr Fenwick"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "c-fen", "at": {"seg": 13, "phrase": "was first"}},
+  {"do": "check", "item": "c-lov", "at": {"seg": 13, "phrase": "Loveday was third"}},
+  {"do": "check", "item": "c-dem", "at": {"seg": 14, "phrase": "wasn't second"}},
+  {"do": "circle", "item": "c-dem", "at": {"seg": 14, "phrase": "behind Loveday"}},
+  {"do": "check", "item": "c-hed", "at": {"seg": 15, "phrase": "Hedley was fifth"}},
+  {"do": "note", "text": "1 Fenwick, 2 Pip, 3 Loveday, 4 Demelza, 5 Hedley: Demelza stood directly behind Loveday.", "at": {"seg": 15, "phrase": "Hedley was fifth"}, "hold": 1.2}
+ ]
+}
