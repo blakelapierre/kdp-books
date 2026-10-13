@@ -10,7 +10,7 @@ as identical text tags; only the confession shows Tobias sheepish. KEEP_ASPECT."
 NUM, NAME = 19, "The Ship's Bell"
 STYLE = "bw"
 SLUG = "standalone-03-tidewhistle-case-19-the-ships-bell"
-AUDIO = "standalone-03-tidewhistle-21-case-19-the-ships-bell.mp3"
+AUDIO = "standalone-03-tidewhistle-21-case-19-the-ship-s-bell.mp3"
 TIMING = "timing-case-19.json"; CLUES = "clues/case-19.json"; ART = "work/art-19"; HOOK_WAV = "assets/hooks/hook-19.wav"
 QUESTION = "Who took the ship's bell?"
 HOOK_LINES = ["Who could", "reach it?"]; HOOK_EMOJI = "\U0001F514"   # bell (greyed in B&W)

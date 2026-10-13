@@ -1553,6 +1553,218 @@ def hook_frame_toggle(L, t):
 
 HOOK_STYLES["toggle"] = hook_frame_toggle
 
+# ----------------------------------------------------------------------------- "glovepair" open (Case 23)
+# A navy LEFT glove (dense hatching, white anchor cuff) swings in beside the title; next to it a dashed, empty RIGHT-glove
+# outline pulses with a "?" (the pair is never completed in the open); borderless lane hero; three equal suspect cards;
+# WHOSE GLOVE? stamp on "Whose". Unlike Case 22 (toggle) and Case 21 (coinflip).
+def _glove_img(s, right, filled=True):
+    W, H = int(s * 0.9), int(s * 1.05); im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    w = s * 0.5; x0 = (W - w) / 2 + (s * 0.08 if right else -s * 0.08); cuff = s * 0.22; yb = H - 4
+    sg = -1 if right else 1; fill = (40, 40, 48, 255) if filled else None; ol = INK + (255,); lw = 6 if filled else 0
+    parts = [[(x0, yb - cuff), (x0 + w, yb - cuff), (x0 + w, yb - s * 0.62), (x0, yb - s * 0.62)]]
+    fl = (0.3, 0.38, 0.36, 0.26) if right else (0.26, 0.36, 0.38, 0.3)
+    for i, f in enumerate(fl):
+        a = x0 + i * w / 4 + 2; b = x0 + (i + 1) * w / 4 - 2
+        parts.append([(a, yb - s * 0.6), (b, yb - s * 0.6), (b, yb - s * (0.62 + f)), (a, yb - s * (0.62 + f))])
+    tx = x0 + (0 if sg < 0 else w)
+    parts.append([(tx, yb - cuff - s * 0.05), (tx + sg * s * 0.16, yb - s * 0.42), (tx + sg * s * 0.1, yb - s * 0.5), (tx, yb - s * 0.36)])
+    for pp in parts:
+        if filled: d.polygon(pp, fill=fill); d.line(pp + [pp[0]], fill=ol, width=lw, joint="curve")
+        else:
+            for (ax, ay), (bx, by) in zip(pp, pp[1:] + [pp[0]]):
+                n = max(1, int(math.hypot(bx - ax, by - ay) / 14))
+                for k in range(0, n, 2): d.line([(ax + (bx - ax) * k / n, ay + (by - ay) * k / n), (ax + (bx - ax) * (k + 1) / n, ay + (by - ay) * (k + 1) / n)], fill=ol, width=5)
+    d.rectangle([x0, yb - cuff, x0 + w, yb], fill=(250, 250, 246, 255) if filled else None, outline=ol, width=5 if filled else 0)
+    if filled:
+        for j in range(3):
+            cx = x0 + w * (0.2 + j * 0.3); cy = yb - cuff / 2; r = cuff * 0.28
+            d.line([(cx, cy - r), (cx, cy + r)], fill=ol, width=3); d.line([(cx - r * 0.6, cy - r * 0.4), (cx + r * 0.6, cy - r * 0.4)], fill=ol, width=3)
+            d.arc([cx - r * 0.7, cy - r * 0.2, cx + r * 0.7, cy + r * 1.1], 0, 180, fill=ol, width=3)
+    else:
+        f = F("play", int(s * 0.38)); ctext(d, x0 + w / 2, yb - s * 0.62, "?", f, INK + (255,))
+    return im
+
+def hook_frame_glovepair(L, t):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    s = 200 if V else 160; gy = 40 if V else 30
+    T = 0.9; u = ease(min(1, t / T)); ang = 25 * (1 - u) * math.cos(6 * u)
+    lg = _glove_img(s, right=False).rotate(ang, resample=Image.BICUBIC, expand=True)
+    lx = int(30 - (1 - u) * 260); im.paste(lg, (lx, int(gy + (s * 1.05 - lg.height) // 2 + 10)), lg)
+    pulse = 1.0 + (0.06 * math.sin(2 * math.pi * 1.4 * max(0, t - 0.6)) if t > 0.6 else 0)
+    rg = _glove_img(s, right=True, filled=False)
+    if t < 0.6: rg.putalpha(rg.getchannel("A").point(lambda v: int(v * max(0, t / 0.6))))
+    rg = rg.resize((int(rg.width * pulse), int(rg.height * pulse)), Image.LANCZOS)
+    rx = 30 + int(s * 1.0); im.paste(rg, (int(rx - (rg.width - int(s * 0.9)) // 2), int(gy + 10 - (rg.height - int(s * 1.05)) // 2)), rg)
+    x0 = rx + int(s * 0.9) + 20; x1 = (L.W - 40) if V else 924; lines = C.HOOK_LINES
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(d.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= x1 - x0: break
+    y = gy + 10 + s * 0.52 - lh * len(lines) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: e = emoji_img(es); im.paste(e, (int(x0 + d.textlength(ln, font=f) + 18), int(y + size * 0.22)), e)
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy2, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t("Whose", "hand"), gx + gw / 2, gy2 + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy2 + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+HOOK_STYLES["glovepair"] = hook_frame_glovepair
+
+# ----------------------------------------------------------------------------- shared layout for the Case 24+ opens
+# Same frame as glovepair / toggle: an animated ICON box top-left (icon_fn draws into it), the title beside it,
+# borderless hero, hook caption, three equal suspect cards and the stamp. Each case supplies its own icon animation.
+def _hook_iconbox(L, t, icon_fn, stamp_words, iw=None):
+    V = L.fmt == "vertical"; im = L.bg().copy(); d = ImageDraw.Draw(im)
+    rect = (0, 360, L.W, 580) if V else (34, 330, 924, 470)
+    hero, m = _hook_hero(L, t, rect, feather=46, side_feather=None if V else 40)
+    im.paste(hero, rect[:2], m)
+    s = 200 if V else 160; gy = 40 if V else 30; bw = int(iw * s) if iw else int(s * 1.5)
+    icon_fn(im, d, t, (30, gy, bw, int(s * 1.1)))
+    x0 = 30 + bw + 30; x1 = (L.W - 40) if V else 924; lines = C.HOOK_LINES
+    for size in range(96 if V else 80, 40, -2):
+        f = F("play", size); es = int(size * 0.8); lh = int(size * 1.15)
+        if max(d.textlength(ln, font=f) + (es + 18 if i == len(lines) - 1 else 0) for i, ln in enumerate(lines)) <= x1 - x0: break
+    y = gy + s * 0.55 - lh * len(lines) / 2
+    for i, ln in enumerate(lines):
+        d.text((x0, y), ln, font=f, fill=INK)
+        if i == len(lines) - 1: e = emoji_img(es); im.paste(e, (int(x0 + d.textlength(ln, font=f) + 18), int(y + size * 0.22)), e)
+        y += lh
+    _hook_caption(L, im, t, (40, 950, L.W - 80, 170) if V else (34, 812, 924, 170), 58 if V else 48, 68)
+    gx, gy2, gw, gh = _hook_cast(L, im, t, (L.W - 960) // 2 if V else 1000, 1150 if V else 170, 960 if V else 880, border=False)
+    _hook_stamp(L, im, t, _hook_t(*stamp_words), gx + gw / 2, gy2 + gh * 0.55)
+    lab = getattr(C, "HOOK_LABEL", ""); ctext(d, gx + gw / 2, gy2 + gh + 20, lab, F("plex", 48 if V else 42), ACCENT)
+    return im
+
+PAPER = (250, 250, 246)
+
+# "weathervane" (Case 24): an arrow on a post spins, overshoots and settles pointing RIGHT (sea -> land); SEA / LAND under it.
+def _icon_vane(im, d, t, box):
+    x, y, w, h = box; cx, cy = x + w / 2, y + h * 0.45; R = w * 0.42
+    T = 1.4; ang = (5 * 2 * math.pi) * (1 - (1 - min(1, t / T)) ** 2) if t < T else 0.0
+    ang += 0.25 * math.exp(-4 * max(0, t - T)) * math.sin(9 * max(0, t - T)) if t >= T else 0
+    ca, sa = math.cos(ang), math.sin(ang)
+    P = lambda u, v: (cx + u * ca - v * sa, cy + u * sa + v * ca)
+    d.line([(cx, cy), (cx, y + h)], fill=INK, width=6)
+    d.line([P(-R, 0), P(R, 0)], fill=INK, width=8)
+    d.polygon([P(R + 26, 0), P(R - 14, -22), P(R - 14, 22)], fill=INK)
+    d.polygon([P(-R, 0), P(-R - 26, -26), P(-R + 10, -26), P(-R + 30, 0), P(-R + 10, 26), P(-R - 26, 26)], fill=PAPER, outline=INK)
+    d.ellipse([cx - 9, cy - 9, cx + 9, cy + 9], fill=INK)
+    f = F("plex", int(h * 0.15)); ctext(d, x + w * 0.12, y + h - h * 0.2, "SEA", f, INK); ctext(d, x + w * 0.88, y + h - h * 0.2, "LAND", f, INK)
+
+HOOK_STYLES["weathervane"] = lambda L, t: _hook_iconbox(L, t, _icon_vane, ("wind", "story"))
+
+# "spooncount" (Case 25): three silver teaspoons drop onto a tray one by one, then vanish one at a time (MON / TUE / WED tags
+# take their place), leaving an empty tray and a "?".
+def _icon_spoons(im, d, t, box):
+    x, y, w, h = box; ty = y + h * 0.72
+    d.rounded_rectangle([x, ty, x + w, ty + h * 0.12], radius=8, fill=PAPER, outline=INK, width=5)
+    f = F("plex", int(h * 0.11))
+    for i in range(3):
+        cx = x + w * (0.18 + 0.32 * i); t_in = 0.12 * i; t_out = 0.9 + 0.35 * i
+        if t < t_in: continue
+        if t < t_out:
+            drop = max(0, 1 - (t - t_in) / 0.18); yy = ty - 10 - drop * 60
+            d.line([(cx, yy), (cx, yy - h * 0.38)], fill=INK, width=7)
+            d.ellipse([cx - h * 0.09, yy - h * 0.6, cx + h * 0.09, yy - h * 0.36], fill=PAPER, outline=INK, width=6)
+            d.line([(cx + h * 0.03, yy - h * 0.55), (cx + h * 0.05, yy - h * 0.47)], fill=INK, width=3)
+        else:
+            a = min(1, (t - t_out) / 0.15)
+            lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+            ctext(dl, cx, ty - h * 0.3, ("MON", "TUE", "WED")[i], f, INK + (int(255 * a),))
+            ctext(dl, cx, ty - h * 0.16, "\u22121", f, ACCENT + (int(255 * a),)); im.alpha_composite(lay) if im.mode == "RGBA" else im.paste(lay, (0, 0), lay)
+    if t > 2.1: ctext(d, x + w / 2, y - 6, "?", F("play", int(h * 0.3)), INK)
+
+HOOK_STYLES["spooncount"] = lambda L, t: _hook_iconbox(L, t, _icon_spoons, ("thief", "touched"))
+
+# "queueslots" (Case 26): five numbered places 1-5 (FRONT on the left); a raffle ticket flutters in on a sine path, tumbling,
+# and drops between places 3 and 4, where a "?" appears. Nobody is placed.
+def _icon_queue(im, d, t, box):
+    x, y, w, h = box; sw = w / 5.4; f = F("plex", int(h * 0.16)); by = y + h * 0.55
+    for i in range(5):
+        sx = x + i * (sw + w * 0.02)
+        d.rounded_rectangle([sx, by, sx + sw, by + sw], radius=8, fill=PAPER, outline=INK, width=4)
+        ctext(d, sx + sw / 2, by + sw * 0.18, str(i + 1), f, INK)
+    ctext(d, x + sw / 2, by + sw + 6, "FRONT", F("plex", int(h * 0.1)), INK)
+    T = 1.5; u = min(1, t / T)
+    tx = x + w * (1.05 - 0.57 * u) + (1 - u) * 40 * math.sin(7 * u); ty = y + h * (0.05 + 0.4 * u ** 1.5) + 18 * math.sin(9 * u) * (1 - u)
+    ang = (1 - u) * 300 * math.sin(4 * u) + 12 * u
+    tk = Image.new("RGBA", (int(sw * 1.1), int(sw * 0.55)), (0, 0, 0, 0)); dt = ImageDraw.Draw(tk)
+    dt.rectangle([2, 2, tk.width - 3, tk.height - 3], fill=PAPER, outline=INK, width=4); dt.line([(tk.width * 0.72, 4), (tk.width * 0.72, tk.height - 4)], fill=INK, width=2)
+    ctext(dt, tk.width * 0.36, tk.height * 0.18, "47", F("plex", int(tk.height * 0.5)), INK)
+    tk = tk.rotate(ang, resample=Image.BICUBIC, expand=True)
+    im.paste(tk, (int(tx - tk.width / 2), int(ty - tk.height / 2)), tk)
+    if t > T: ctext(d, x + 3.5 * (sw + w * 0.02) - w * 0.01, by - h * 0.32, "?", F("play", int(h * 0.26)), ACCENT)
+
+HOOK_STYLES["queueslots"] = lambda L, t: _hook_iconbox(L, t, _icon_queue, ("picked", "behind"), iw=2.4)
+
+# "foghorn" (Case 27): a foghorn blasts two rings of sound ("BOOM") that then stop dead: the last ring is crossed out and
+# a row of dots "..." takes its place under a little star: a silent, clear night.
+def _icon_foghorn(im, d, t, box):
+    x, y, w, h = box; cx, cy = x + w * 0.22, y + h * 0.5
+    d.rectangle([cx - w * 0.12, cy + h * 0.12, cx + w * 0.06, cy + h * 0.45], fill=PAPER, outline=INK, width=5)
+    d.polygon([(cx - w * 0.1, cy - h * 0.08), (cx + w * 0.22, cy - h * 0.25), (cx + w * 0.22, cy + h * 0.25), (cx - w * 0.1, cy + h * 0.1)], fill=PAPER, outline=INK)
+    d.line([(cx - w * 0.1, cy - h * 0.08), (cx + w * 0.22, cy - h * 0.25), (cx + w * 0.22, cy + h * 0.25), (cx - w * 0.1, cy + h * 0.1), (cx - w * 0.1, cy - h * 0.08)], fill=INK, width=6)
+    d.ellipse([cx + w * 0.18, cy - h * 0.25, cx + w * 0.26, cy + h * 0.25], fill=INK)
+    for i in range(3):
+        t0 = 0.15 + 0.35 * i
+        if t < t0: continue
+        r = h * (0.32 + 0.16 * i); a = 255 if t < 1.35 else max(60, int(255 - 600 * (t - 1.35)))
+        lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+        dl.arc([cx + w * 0.24 - r, cy - r, cx + w * 0.24 + r, cy + r], -45, 45, fill=INK + (a,), width=6)
+        im.paste(lay, (0, 0), lay)
+    if 0.5 < t < 1.35: ctext(d, x + w * 0.78, y + h * 0.02, "BOOM", F("plex", int(h * 0.18)), INK)
+    if t >= 1.35:
+        p = min(1, (t - 1.35) / 0.3)
+        d.line([(x + w * 0.55, y + h * 0.15), (x + w * 0.55 + p * w * 0.35, y + h * 0.15 + p * h * 0.22)], fill=ACCENT, width=7)
+        ctext(d, x + w * 0.78, y + h * 0.42, "\u2026", F("play", int(h * 0.3)), INK)
+
+HOOK_STYLES["foghorn"] = lambda L, t: _hook_iconbox(L, t, _icon_foghorn, ("story", "foggy"), iw=1.7)
+
+# "cardflip" (Case 28): two playing-card-style tiles spin on their vertical axes, alternating TRUE / FIB faces, and land
+# one TRUE and one FIB, with "1 + 1" under them: exactly one truth and one fib.
+def _icon_cards(im, d, t, box):
+    x, y, w, h = box; cw, ch = int(w * 0.4), int(h * 0.82); f = F("plex", int(h * 0.17))
+    for i in range(2):
+        T = 1.0 + 0.35 * i; u = min(1, t / T); ang = (6 + i) * math.pi * (1 - (1 - u) ** 2)
+        sx = abs(math.cos(ang)); face = (int(ang / math.pi + 0.5) + i) % 2 == 0
+        if t >= T: sx, face = 1.0, (i == 0)
+        card = Image.new("RGBA", (cw, ch), (0, 0, 0, 0)); dc = ImageDraw.Draw(card)
+        dc.rounded_rectangle([3, 3, cw - 4, ch - 4], radius=14, fill=PAPER + (255,), outline=INK + (255,), width=6)
+        ctext(dc, cw / 2, ch * 0.36, "TRUE" if face else "FIB", f, (INK if face else ACCENT) + (255,))
+        cw2 = max(6, int(cw * sx)); card = card.resize((cw2, ch), Image.LANCZOS)
+        cx = x + w * (0.25 + 0.5 * i); im.paste(card, (int(cx - cw2 / 2), int(y)), card)
+    if t > 1.4: ctext(d, x + w / 2, y + ch + 4, "1 truth + 1 fib", F("plex", int(h * 0.12)), INK)
+
+HOOK_STYLES["cardflip"] = lambda L, t: _hook_iconbox(L, t, _icon_cards, ("fib", "truth"), iw=1.6)
+
+# "sugarlumps" (Case 29): a sugar bowl with "12" lumps stacked in a pyramid; three lumps hop out one at a time (12 -> 11 ->
+# 10 -> 9 counter beside it) and a dark cup with no milk slides in: "black + ?".
+def _icon_sugar(im, d, t, box):
+    x, y, w, h = box; s = h * 0.13; bx, by = x + w * 0.06, y + h * 0.82
+    d.chord([bx, by - h * 0.32, bx + w * 0.5, by + h * 0.18], 0, 180, fill=PAPER, outline=INK, width=6)
+    pos = [(i % 4, i // 4) for i in range(12)]; gone = sum(1 for i in range(3) if t > 0.5 + 0.35 * i)
+    for j, (c, r) in enumerate(pos):
+        k = 11 - j
+        if k < 3 and t > 0.5 + 0.35 * (2 - k):
+            u = min(1, (t - 0.5 - 0.35 * (2 - k)) / 0.3); px = bx + w * 0.07 + c * s * 1.15 + u * w * 0.55; py = by - s * (r + 1) * 1.05 - math.sin(math.pi * u) * h * 0.25
+            if u >= 1: continue
+        else:
+            px = bx + w * 0.07 + c * s * 1.15; py = by - s * (r + 1) * 1.05
+        d.rectangle([px, py, px + s, py + s], fill=PAPER, outline=INK, width=3)
+    ctext(d, x + w * 0.27, y + h * 0.02, str(12 - gone), F("plex", int(h * 0.22)), ACCENT if gone else INK)
+    if t > 1.6:
+        u = min(1, (t - 1.6) / 0.3); cx = x + w * (1.1 - 0.3 * u)
+        d.rectangle([cx - w * 0.12, by - h * 0.36, cx + w * 0.12, by], fill=PAPER, outline=INK, width=6)
+        d.rectangle([cx - w * 0.1, by - h * 0.3, cx + w * 0.1, by - h * 0.04], fill=INK)
+        ctext(d, cx, y + h * 0.05, "black?", F("plex", int(h * 0.14)), INK)
+
+HOOK_STYLES["sugarlumps"] = lambda L, t: _hook_iconbox(L, t, _icon_sugar, ("tea", "sugar"), iw=1.7)
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):
