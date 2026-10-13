@@ -1,0 +1,32 @@
+{
+ "case": "Case 23 \u00b7 The Odd Glove",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The facts"},
+  {"id": "who", "heading": "Who was nearby"}
+ ],
+ "items": [
+  {"id": "f-cold", "section": "facts", "text": "Bitter, windy evening: hands deep in pockets", "at": {"seg": 2, "phrase": "deep in their pockets"}},
+  {"id": "f-orchid", "section": "facts", "text": "Rare white orchid on the back sill, first bloom", "at": {"seg": 3, "phrase": "very first time"}},
+  {"id": "f-gone", "section": "facts", "text": "At closing: window open, orchid gone, pot and all", "at": {"seg": 3, "phrase": "was gone"}},
+  {"id": "f-glove", "section": "facts", "text": "Under the window: ONE knitted glove", "at": {"seg": 4, "phrase": "single knitted glove"}},
+  {"id": "f-glove2", "section": "facts", "text": "Navy, RIGHT hand, white anchors at the wrist", "at": {"seg": 4, "phrase": "around the wrist"}},
+  {"id": "ker", "section": "who", "name": "Kerensa", "text": "bus stop; navy gloves, plain, one on each hand", "at": {"seg": 6, "phrase": "on each hand"}},
+  {"id": "fen", "section": "who", "name": "Mr Fenwick", "text": "grocer's; no gloves, fingers red with cold", "at": {"seg": 7, "phrase": "red with the cold"}},
+  {"id": "fen-q", "section": "who", "parent": "fen", "text": "\u201cNever wear them. Can't count change in gloves.\u201d", "at": {"seg": 7, "phrase": "change in gloves"}},
+  {"id": "lan", "section": "who", "name": "Mr Lanyon", "text": "visitor; navy LEFT glove, white anchors", "at": {"seg": 8, "phrase": "around the wrist"}},
+  {"id": "lan-p", "section": "who", "parent": "lan", "text": "right hand deep in his coat pocket", "at": {"seg": 8, "phrase": "coat pocket"}},
+  {"id": "lan-q", "section": "who", "parent": "lan", "text": "\u201cLost the other glove weeks ago.\u201d", "at": {"seg": 9, "phrase": "seen it since"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "f-glove2", "at": {"seg": 15, "phrase": "white anchors"}},
+  {"do": "check", "item": "lan", "at": {"seg": 15, "phrase": "anchor pattern"}},
+  {"do": "check", "item": "lan-p", "at": {"seg": 15, "phrase": "in his pocket"}},
+  {"do": "strike", "item": "ker", "at": {"seg": 16, "phrase": "no pattern"}},
+  {"do": "strike", "item": "fen", "at": {"seg": 16, "phrase": "gloves at all"}},
+  {"do": "circle", "item": "lan", "span": "name", "at": {"seg": 17, "phrase": "lost the glove weeks ago"}},
+  {"do": "note", "text": "His left glove's partner was under the window: he dropped it lifting the orchid.", "at": {"seg": 17, "phrase": "through the window"}}
+ ]
+}
