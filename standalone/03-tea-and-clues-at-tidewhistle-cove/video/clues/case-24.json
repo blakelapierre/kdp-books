@@ -1,0 +1,32 @@
+{
+ "case": "Case 24 \u00b7 The Kite Festival",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The facts"},
+  {"id": "who", "heading": "Who was where"}
+ ],
+ "items": [
+  {"id": "f-wind", "section": "facts", "text": "Steady breeze all day: from the sea toward the land", "at": {"seg": 2, "phrase": "toward the land"}},
+  {"id": "f-flags", "section": "facts", "text": "Flags point inland; kites lean over the dunes", "at": {"seg": 2, "phrase": "over the dunes"}},
+  {"id": "f-balloon", "section": "facts", "text": "Rosie's balloon sailed away toward the hills", "at": {"seg": 2, "phrase": "village toward the hills"}},
+  {"id": "f-puffin", "section": "facts", "text": "Wooden puffin prize: judges' tent at the water's edge", "at": {"seg": 3, "phrase": "water's edge"}},
+  {"id": "f-gone", "section": "facts", "text": "4 o'clock: judges out on the sand; puffin gone", "at": {"seg": 4, "phrase": "puffin disappeared"}},
+  {"id": "pip", "section": "who", "name": "Pip", "text": "kite at the top of the beach by the dunes; class: never moved", "at": {"seg": 6, "phrase": "from that spot"}},
+  {"id": "tam", "section": "who", "name": "Tamsin", "text": "book stall by the car park, endless queue", "at": {"seg": 7, "phrase": "any shorter"}},
+  {"id": "pen", "section": "who", "name": "Mr Penberthy", "text": "seen hurrying from the water's edge near the tent, ~4", "at": {"seg": 8, "phrase": "about four o'clock"}},
+  {"id": "pen-q", "section": "who", "parent": "pen", "text": "\u201cString snapped; kite flew out over the sea; I ran after it.\u201d", "at": {"seg": 9, "phrase": "after it"}},
+  {"id": "f-still", "section": "facts", "text": "Flags still pointing toward the hills", "at": {"seg": 10, "phrase": "toward the hills"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "f-wind", "at": {"seg": 16, "phrase": "toward the land"}},
+  {"do": "check", "item": "f-flags", "at": {"seg": 16, "phrase": "over the dunes"}},
+  {"do": "check", "item": "f-balloon", "at": {"seg": 16, "phrase": "toward the hills"}},
+  {"do": "circle", "item": "pen-q", "at": {"seg": 16, "phrase": "not out to sea"}},
+  {"do": "note", "text": "A snapped kite blows inland, not out to sea. His only reason to be at the water's edge: the tent.", "at": {"seg": 16, "phrase": "judges' tent"}, "hold": 1.6},
+  {"do": "strike", "item": "pip", "at": {"seg": 17, "phrase": "whole class"}},
+  {"do": "strike", "item": "tam", "at": {"seg": 17, "phrase": "car park"}},
+  {"do": "circle", "item": "pen", "span": "name", "at": {"seg": 17, "phrase": "proved untrue"}}
+ ]
+}
