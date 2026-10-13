@@ -1,0 +1,32 @@
+{
+ "case": "Case 25 \u00b7 The Teaspoon Thief",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The facts"},
+  {"id": "who", "heading": "The early helpers"}
+ ],
+ "items": [
+  {"id": "f-locked", "section": "facts", "text": "Both doors locked; the only keys in Agnes's apron", "at": {"seg": 3, "phrase": "apron pocket"}},
+  {"id": "f-gap", "section": "facts", "text": "Back window open a hand's width at the top: too small for anyone", "at": {"seg": 3, "phrase": "small child"}},
+  {"id": "f-gone", "section": "facts", "text": "Mon, Tue, Wed: one silver teaspoon each; Wed also silver foil", "at": {"seg": 4, "phrase": "on the sideboard"}},
+  {"id": "f-left", "section": "facts", "text": "Never touched: coin jar, wooden spoons, pewter spoon, sugar, shortbread", "at": {"seg": 5, "phrase": "under a cloth"}},
+  {"id": "f-shiny", "section": "facts", "text": "Only the shiny things went", "at": {"seg": 5, "phrase": "shiny things went"}},
+  {"id": "pip", "section": "who", "name": "Pip", "text": "can't stand teaspoons; only uses a big spoon", "at": {"seg": 6, "phrase": "big spoon"}},
+  {"id": "fen", "section": "who", "name": "Mr Fenwick", "text": "at the grocer's from 5 a.m.; driver confirms", "at": {"seg": 6, "phrase": "driver confirmed"}},
+  {"id": "lov", "section": "who", "name": "Loveday", "text": "home in bed, with Pickle; neither had keys", "at": {"seg": 6, "phrase": "had keys"}},
+  {"id": "f-feather", "section": "facts", "text": "On the sill under the gap: long glossy black feather, white patch", "at": {"seg": 7, "phrase": "near the end"}}
+ ],
+ "solution": [
+  {"do": "strike", "item": "pip", "at": {"seg": 12, "phrase": "took the spoons"}},
+  {"do": "strike", "item": "fen", "at": {"seg": 12, "phrase": "took the spoons"}},
+  {"do": "strike", "item": "lov", "at": {"seg": 12, "phrase": "took the spoons"}},
+  {"do": "check", "item": "f-locked", "at": {"seg": 13, "phrase": "only keys"}},
+  {"do": "check", "item": "f-gap", "at": {"seg": 13, "phrase": "for a bird"}},
+  {"do": "check", "item": "f-shiny", "at": {"seg": 14, "phrase": "silver foil"}},
+  {"do": "check", "item": "f-left", "at": {"seg": 14, "phrase": "even the shortbread"}},
+  {"do": "circle", "item": "f-feather", "at": {"seg": 14, "phrase": "magpie feather looks like"}},
+  {"do": "note", "text": "Locked doors, a bird-sized gap, only shiny things taken, a black-and-white feather: a magpie.", "at": {"seg": 14, "phrase": "magpie feather looks like"}, "hold": 1.2}
+ ]
+}
