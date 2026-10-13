@@ -1,0 +1,32 @@
+{
+ "case": "Case 29 \u00b7 The Sugar Bowl",
+ "title": "Agnes's Notebook",
+ "review_label": "Every clue so far",
+ "_how": "Same format as case-01.json. Every item gets the same pop-in and highlight; nothing is marked differently before 'The Solution.'",
+ "sections": [
+  {"id": "facts", "heading": "The tea tray"},
+  {"id": "who", "heading": "How they take it"}
+ ],
+ "items": [
+  {"id": "f-book", "section": "facts", "text": "Vicar's study: tiny shanty book, 200+ years old", "at": {"seg": 3, "phrase": "years old"}},
+  {"id": "f-tray", "section": "facts", "text": "2 o'clock tray: pot, milk jug, cup, sugar bowl", "at": {"seg": 4, "phrase": "sugar bowl"}},
+  {"id": "f-12", "section": "facts", "text": "Sugar bowl always filled with exactly 12 lumps", "at": {"seg": 4, "phrase": "twelve lumps"}},
+  {"id": "f-cup", "section": "facts", "text": "3 o'clock: book gone; cup of dark tea, no milk; jug still full", "at": {"seg": 5, "phrase": "still full"}},
+  {"id": "f-9", "section": "facts", "text": "Only 9 lumps left", "at": {"seg": 5, "phrase": "were left"}},
+  {"id": "vic", "section": "who", "name": "Vicar", "text": "milk, no sugar; in the garden all afternoon", "at": {"seg": 6, "phrase": "all afternoon"}},
+  {"id": "hk", "section": "who", "name": "Housekeeper", "text": "never drinks tea, only cocoa", "at": {"seg": 6, "phrase": "only cocoa"}},
+  {"id": "qu", "section": "who", "name": "Captain Quill", "text": "strong, plenty of milk, no sugar", "at": {"seg": 8, "phrase": "no sugar"}},
+  {"id": "lov", "section": "who", "name": "Loveday", "text": "milk and one sugar", "at": {"seg": 8, "phrase": "one sugar"}},
+  {"id": "bol", "section": "who", "name": "Mr Bolitho", "text": "black, three sugars (staying at the inn)", "at": {"seg": 8, "phrase": "three sugars"}}
+ ],
+ "solution": [
+  {"do": "check", "item": "f-cup", "at": {"seg": 14, "phrase": "untouched"}},
+  {"do": "check", "item": "f-9", "at": {"seg": 14, "phrase": "had gone"}},
+  {"do": "strike", "item": "qu", "at": {"seg": 15, "phrase": "no sugar"}},
+  {"do": "strike", "item": "lov", "at": {"seg": 15, "phrase": "one sugar"}},
+  {"do": "strike", "item": "vic", "at": {"seg": 15, "phrase": "vicar takes milk"}},
+  {"do": "strike", "item": "hk", "at": {"seg": 15, "phrase": "tea at all"}},
+  {"do": "circle", "item": "bol", "span": "name", "at": {"seg": 15, "phrase": "three sugars"}},
+  {"do": "note", "text": "No milk + 3 lumps gone = black with three sugars: only Mr Bolitho takes it that way.", "at": {"seg": 15, "phrase": "three sugars"}, "hold": 1.2}
+ ]
+}
