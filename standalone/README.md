@@ -15,3 +15,4 @@ Folders are numbered `NN-<book-slug>` in creation order; a new book gets the nex
 | *Tea and Clues at Tidewhistle Cove*: 30 Cozy Mini-Mysteries to Solve by Ear (Kindle ebook, audio-first) | — (15,404 words) | $3.99 | $2.75 | [03-tea-and-clues-at-tidewhistle-cove/](03-tea-and-clues-at-tidewhistle-cove/) · [README](03-tea-and-clues-at-tidewhistle-cove/README.md) |
 | *Logic on Lantern Lane*: 120 Cozy Logic Grid Puzzles for Adults | 194 | $9.99 | $2.67 | [04-logic-on-lantern-lane/](04-logic-on-lantern-lane/) · [README](04-logic-on-lantern-lane/README.md) |
 | *Porch Swing Crosswords*: 80 Cozy Themed Crossword Puzzles for Adults (paperback) | 196 | $9.99 | $2.64 | [05-porch-swing-crosswords/](05-porch-swing-crosswords/) · [README](05-porch-swing-crosswords/README.md) |
+| *Stories We Keep*: A Guided Memory Keepsake (hardcover) | 102 | $17.99 | $3.99 | [06-stories-we-keep/](06-stories-we-keep/) · [README](06-stories-we-keep/README.md) |

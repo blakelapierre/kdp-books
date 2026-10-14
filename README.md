@@ -22,6 +22,7 @@ standalone/                  # books that are not part of a series (one folder e
   03-tea-and-clues-at-tidewhistle-cove/
   04-logic-on-lantern-lane/
   05-porch-swing-crosswords/
+  06-stories-we-keep/
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
@@ -56,6 +57,7 @@ Current books:
 3. `03-tea-and-clues-at-tidewhistle-cove`: built Kindle ebook (audio-first), not published
 4. `04-logic-on-lantern-lane`: built, not published
 5. `05-porch-swing-crosswords`: built paperback, not published
+6. `06-stories-we-keep`: built hardcover, not published
 
 ## Books
 
@@ -80,10 +82,11 @@ Current books:
 | *Tea and Clues at Tidewhistle Cove*: 30 Cozy Mini-Mysteries to Solve by Ear (Kindle, audio-first) | Solve-it-yourself cozy mini-mysteries + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 15,404 words) | $3.99 | $2.75† | [03-tea-and-clues-at-tidewhistle-cove/README.md](standalone/03-tea-and-clues-at-tidewhistle-cove/README.md) |
 | *Logic on Lantern Lane*: 120 Cozy Logic Grid Puzzles for Adults (Easy to Expert) | Logic grid (Einstein / zebra) puzzles with story clues | Draft, print-ready. Not yet published or submitted to KDP | 194 | $9.99 | $2.67 | [04-logic-on-lantern-lane/README.md](standalone/04-logic-on-lantern-lane/README.md) |
 | *Porch Swing Crosswords*: 80 Cozy Themed Crossword Puzzles for Adults (Easy to Medium) | Freeform themed crosswords with plain clues and word banks | Draft, print-ready paperback. Not yet published or submitted to KDP | 196 | $9.99 | $2.64 | [05-porch-swing-crosswords/README.md](standalone/05-porch-swing-crosswords/README.md) |
+| *Stories We Keep*: A Guided Memory Keepsake for the Ones We Love (hardcover) | Guided life-story prompts + family tree, timeline, letters | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 102 | $17.99 | $3.99 | [06-stories-we-keep/README.md](standalone/06-stories-we-keep/README.md) |
 
-All books are by Blake La Pierre and are 6 × 9 in paperbacks with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
+All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
-\*Royalty per copy on Amazon.com at the listed price: 0.60 × price − printing, where printing is $2.30 flat for 24–110 pages, otherwise $1.00 + $0.012 × pages. †Kindle 70% royalty ≈ 0.70 × price − delivery fee ($0.15/MB). Each book's README is a phone-friendly KDP publishing checklist with download links for its files.
+\*Royalty per copy on Amazon.com at the listed price: 0.60 × price − printing, where paperback printing is $2.30 flat for 24–110 pages, otherwise $1.00 + $0.012 × pages; hardcover black-ink regular trim is $6.80 flat for 75–108 pages, otherwise $5.65 + $0.012 × pages (see KDP Hardcover Printing Cost). †Kindle 70% royalty ≈ 0.70 × price − delivery fee ($0.15/MB). Each book's README is a phone-friendly KDP publishing checklist with download links for its files.
 
 ## Marketing
 
@@ -208,6 +211,14 @@ python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.pn
 python3 build.py      # -> ../standalone-05-porch-swing-crosswords-interior.pdf and ../build-info.json
 python3 cover.py      # -> ../standalone-05-porch-swing-crosswords-cover.pdf, ../cover-info.json and ../tmp/standalone-05-porch-swing-crosswords-cover-guides.pdf
 cp ../standalone-05-porch-swing-crosswords-interior.pdf ../interior-standalone-05-porch-swing-crosswords.pdf; cp ../standalone-05-porch-swing-crosswords-cover.pdf ../cover-standalone-05-porch-swing-crosswords.pdf   # phone-friendly copies
+
+# Standalone: Stories We Keep (hardcover)
+cd standalone/06-stories-we-keep/src
+python3 illustrations.py   # draw ink illustrations -> ../illustrations/*.png
+python3 build.py           # -> ../standalone-06-stories-we-keep-interior.pdf and ../build-info.json
+python3 cover.py           # hardcover wrap -> ../standalone-06-stories-we-keep-cover.pdf and ../cover-info.json
+cp ../standalone-06-stories-we-keep-interior.pdf ../interior-standalone-06-stories-we-keep.pdf
+cp ../standalone-06-stories-we-keep-cover.pdf ../cover-standalone-06-stories-we-keep.pdf
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.
