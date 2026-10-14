@@ -149,3 +149,6 @@ Public: P1 v0WwIe3-TyU (Related→P2 FxOGkwy4t7c), P2 FxOGkwy4t7c, wide fc417s2e
 - Case 22 P2 https://www.tiktok.com/@shortmysterycases/video/7696483505609411870 (under review / Only me at post time)
 ### Colour swap Case 27 (2026-10-14 ~4:16 AM PT)
 Case 27 detailed colour render copied from streambox (md5 verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour at its Wed 12:39 PM PT slot.
+
+### Colour swap Cases 28–29 (2026-10-14 ~6:13 AM PT)
+Cases 28 and 29 detailed colour renders copied from streambox (md5 verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour for Case 28 (Wed 6:39 PM PT) and Case 29 (Thu 12:39 AM PT).
