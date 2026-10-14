@@ -8,7 +8,7 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 13 9:54 PM PT. ETAs assume ~58 min per case, sequential.
+Updated Oct 13 10:01 PM PT. ETAs assume ~58 min per case, sequential.
 
 | Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
 |---|---|---|---|---|---|---|
@@ -19,12 +19,12 @@ Updated Oct 13 9:54 PM PT. ETAs assume ~58 min per case, sequential.
 | 22 | yes | yes | no | no | no | 2:33 AM |
 | 23 | yes | yes | no | no | no | 3:31 AM |
 | 24 | yes | yes | no | no | no | 4:29 AM |
-| 10 | no | no | no | no | no |  |
-| 11 | no | no | no | no | no |  |
-| 12 | no | no | no | no | no |  |
-| 13 | no | no | no | no | no |  |
-| 14 | no | no | no | no | no |  |
-| 15 | no | no | no | no | no |  |
+| 10 | yes | yes | no | no | no | 5:27 AM |
+| 11 | yes | yes | no | no | no | 6:25 AM |
+| 12 | yes | yes | no | no | no | 7:23 AM |
+| 13 | yes | yes | no | no | no | 8:21 AM |
+| 14 | yes | yes | no | no | no | 9:19 AM |
+| 15 | yes | yes | no | no | no | 10:17 AM |
 | 16 | no | no | no | no | no |  |
 | 17 | no | no | no | no | no |  |
 | 18 | no | no | no | no | no |  |

@@ -182,9 +182,11 @@ def lady(k, x, y, h, expr="neutral", flip=False, dress="dots", hair="bun", hat=N
 def overalls(k, x, y, h, expr="neutral", flip=False, paint=False, cap=True, prop=None):
     townsman(k, x, y, h, expr=expr, flip=flip, jacket=C(92, 120, 160), trousers=C(80, 104, 140), apron=C(110, 140, 176),
              hat="cap" if cap else None, hat_col=C(140, 120, 96), prop=prop)
-    if paint:
-        for sx in (-0.05, 0.05):
-            k.circle(x + sx * h, y + h * 0.12, h * 0.02, lw=0, fill=C(250, 250, 246), stroke=False)
+    if paint:   # bench-green paint on both knees and both hands (the Case 10 clue)
+        G = C(70, 160, 96)
+        for sx in (-0.045, 0.045): k.circle(x + sx * h, y + h * 0.13, h * 0.022, lw=0, fill=G, stroke=False)
+        for hx, hy in (_hand_world(x, y, h, flip), (x + (-1 if flip else 1) * L_HAND[0] * h / 100, y + L_HAND[1] * h / 100)):
+            k.circle(hx, hy, h * 0.014, lw=0, fill=G, stroke=False)
 B.visitor, B.lady, B.overalls = visitor, lady, overalls
 
 # ============================================================================= ink: colour scenery + every bwkit helper
@@ -200,12 +202,15 @@ class InkD(A4.Ink4, B.InkBW):
         if fill is None or s._top() is not None or not colorink._is(fill, Wt) or area < 260: return fill
         if area > 60000: return C(246, 234, 210)
         if round_ and area > 2500: return C(132, 176, 112)
-        s._ai = getattr(s, "_ai", 0) + 1
-        return _PROPS[(s._ai * 3 + s._auto_seed) % len(_PROPS)]
+        # colour keyed on the shape's own size, so the same prop (a clock, a cabinet) is the same colour in every plate
+        d = getattr(s, "_dims", (0, 0, 0)); key = (d[0] * 7 + d[1] * 13 + d[2] * 3) if not round_ else int(area)
+        return _PROPS[key % len(_PROPS)]
     def shape(s, pts, lw=0.8, fill=Wt, stroke=True, amp=0.3):
         xs = [p[0] for p in pts] or [0]; ys = [p[1] for p in pts] or [0]
+        s._dims = (round(max(xs) - min(xs)), round(max(ys) - min(ys)), len(pts))
         return super().shape(pts, lw=lw, fill=s._plain(fill, (max(xs) - min(xs)) * (max(ys) - min(ys))), stroke=stroke, amp=amp)
     def circle(s, x, y, r, lw=0.8, fill=Wt, stroke=True):
+        s._dims = (round(2 * r), round(2 * r), 1)
         return super().circle(x, y, r, lw=lw, fill=s._plain(fill, 3.14 * r * r, True), stroke=stroke)
     def sea(s, x0, x1, y0, y1, *a, **kw):
         s.vgrad(x0, y0, x1, y1, A4.SEA, A4.SEA2, steps=8)
