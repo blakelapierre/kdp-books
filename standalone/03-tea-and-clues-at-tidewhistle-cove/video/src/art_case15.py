@@ -13,7 +13,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-15")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-15" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def fenwick(k, x, y, h, **kw): B.visitor(k, x, y, h, suit="dark", hat="cap", tie=False, moustache=True, **kw)
 def kerensa(k, x, y, h, **kw): B.lady(k, x, y, h, dress="stripe", hair="curls", hat="sun", **kw)

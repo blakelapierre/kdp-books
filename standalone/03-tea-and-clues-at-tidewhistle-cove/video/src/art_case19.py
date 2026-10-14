@@ -13,7 +13,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-19")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-19" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def loveday(k, x, y, h, **kw): kw.setdefault("jug_", False); F.loveday(k, x, y, h, **kw)
 def fenwick(k, x, y, h, **kw): B.visitor(k, x, y, h, suit="dark", hat="cap", tie=False, moustache=True, **kw)

@@ -1765,6 +1765,23 @@ def _icon_sugar(im, d, t, box):
 
 HOOK_STYLES["sugarlumps"] = lambda L, t: _hook_iconbox(L, t, _icon_sugar, ("tea", "sugar"), iw=1.7)
 
+# "emptybracket" (Case 30): an iron bracket swings with no sign; a little paper bag drops in labelled "Back soon" and the
+# label's ink flashes ACCENT ("green ink" note under it).
+def _icon_bracket(im, d, t, box):
+    x, y, w, h = box; bx, by = x + w * 0.1, y + h * 0.18
+    d.line([bx, by, bx + w * 0.6, by], fill=INK, width=8); d.line([bx + w * 0.05, by, bx, by + h * 0.18], fill=INK, width=6)
+    sw = math.sin(t * 5) * w * 0.03
+    for ex in (0.2, 0.5):
+        d.line([bx + w * ex, by, bx + w * ex + sw, by + h * 0.12], fill=INK, width=3)
+    d.rectangle([bx + w * 0.15 + sw, by + h * 0.12, bx + w * 0.55 + sw, by + h * 0.48], outline=INK, width=4)
+    ctext(d, bx + w * 0.35 + sw, by + h * 0.22, "?", F("play", int(h * 0.2)), ACCENT)
+    if t > 0.9:
+        u = min(1, (t - 0.9) / 0.35); gy = y + h * (0.55 + 0.2 * u) - h * 0.2 * (1 - u)
+        d.rectangle([x + w * 0.62, gy, x + w * 0.98, gy + h * 0.22], fill=PAPER, outline=INK, width=4)
+        ctext(d, x + w * 0.8, gy + h * 0.04, "Back soon", F("plex", int(h * 0.07)), ACCENT if t > 1.5 else INK)
+
+HOOK_STYLES["emptybracket"] = lambda L, t: _hook_iconbox(L, t, _icon_bracket, ("sign", "gone"), iw=1.7)
+
 def fit(L, im): return im if im.size == (L.vw, L.vh) else im.resize((L.vw, L.vh), Image.LANCZOS)
 
 def scene_frame(L, sc, t):

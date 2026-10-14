@@ -11,9 +11,13 @@ Conventions (same as the colour cases 4-9):
 """
 import math, os, random
 import colorink
-colorink.set_style("bw")
+# TW_KIT_STYLE=color-detailed (Blake, Oct 13): the same case art drawn in colour (washes + tinted fills).
+KIT_STYLE = os.environ.get("TW_KIT_STYLE", "bw")
+colorink.set_style(KIT_STYLE)
 import art_case03 as A3
-colorink.set_style("bw")
+if KIT_STYLE != "bw":
+    import art_case03_color as A3C      # colour versions of the shared Shop methods (same names / signatures)
+colorink.set_style(KIT_STYLE)
 from inkart import lerp, K, Wt
 from colorink import PAL, C, shade
 from reportlab.pdfbase import pdfmetrics
@@ -29,7 +33,7 @@ AW, AH = 512, 384
 PW = 512
 V3 = ["base", "base+blink", "base+talk"]; V2 = ["base", "base+blink"]
 
-class InkBW(A3.Shop):
+class InkBW(A3C.ShopC if KIT_STYLE != "bw" else A3.Shop):
     # ------------------------------------------------------------------ sky / sea
     def sun(s, x, y, r=18, rays=12):
         s.circle(x, y, r, lw=0.9, fill=Wt)
@@ -255,15 +259,20 @@ class InkBW(A3.Shop):
         s.circle(x, y, r * 0.06, lw=0, fill=K, stroke=False)
 
 # ============================================================================= helpers
+def _bg(k, w, h):
+    """Colour style: soft sky-to-sand paper wash under the whole plate (nothing in B&W)."""
+    if KIT_STYLE == "bw": return
+    k.vgrad(0, 0, w, h, PAL.sky, PAL.sand)
+
 def plate_open(k, w, h):
     """Still plate: decorative double frame + clip. Plates never move."""
-    k.frame2(w, h); k.clip_rect(14, 14, w - 14, h - 14)
+    k.frame2(w, h); k.clip_rect(14, 14, w - 14, h - 14); _bg(k, w, h)
 
 def part_open(k, w, h):
     """Animated PART: clip only, no frame2 (a border baked into a sprite rotates with it — the Case 4 artifact)."""
     k.clip_rect(14, 14, w - 14, h - 14)
 
-def full_open(k, w, h): k.clip_rect(0, 0, w, h)
+def full_open(k, w, h): k.clip_rect(0, 0, w, h); _bg(k, w, h)
 
 def part(fn):
     """Decorator: wrap a figure-drawing fn(k, w, h, v) in part_open/unclip."""
@@ -463,4 +472,47 @@ def _vignette(k, w, h, inside=None):
 
 def vignette_fn(draw_inside): return _partial(_vignette, inside=draw_inside)
 
-def make_ink(c, seed): return InkBW(c, seed=seed)
+# ------------------------------------------------------------------ colour style: tint the shared scenery
+_TINTS = dict(sun=("sun",), cloud=("cloud",), headland=("headland",), stones=("rock",), floorboards=("floor",),
+              window_view=("glass",), tearoom=("hall_wall",), table_cloth=("cloth_tbl",), inn=("walls", 1), bar=("wood",),
+              lifeboat_station=("walls", 2), collection_box=("bag",), wet_bench=("teal",), crate=("wood",), slipway=("rock",),
+              car=("doors", 0), coins=("brass",), banknote=("sage",), case_board=("wood",), pin_card=("note_yellow",),
+              clock_face=("cream",), dashed_outline=("sand",))
+def _wrap(name, key):
+    orig = getattr(InkBW, name)
+    col = getattr(PAL, key[0]); col = col[key[1]] if len(key) > 1 else col
+    def f(s, *a, **kw):
+        with s.tint(col): return orig(s, *a, **kw)
+    f.__name__ = name; setattr(InkBW, name, f)
+if KIT_STYLE != "bw":
+    for _n, _k in _TINTS.items():
+        if hasattr(InkBW, _n): _wrap(_n, _k)
+    _sea0 = InkBW.sea
+    def _sea(s, x0, x1, y0, y1, *a, **kw):
+        s.vgrad(x0, y0, x1, y1, PAL.sea, PAL.sea2); return _sea0(s, x0, x1, y0, y1, *a, **kw)
+    InkBW.sea = _sea
+
+_AUTO = [C(222, 186, 140), C(200, 220, 234), C(244, 208, 202), C(206, 230, 208), C(247, 228, 168), C(236, 214, 230), C(196, 150, 104)]
+def _auto_fill(s, fill, area, round_=False):
+    """Colour style: a plain white fill drawn outside any tint (case-specific props, furniture, walls) gets a soft
+    house colour by size, so the B&W case art reads as a colour picture: tiny = stays paper (eyes, labels' insides),
+    page-sized = warm wall, round = foliage / soft green, other = a seeded pick from the cozy palette."""
+    if KIT_STYLE == "bw" or fill is None or s._top() is not None or not colorink._is(fill, Wt): return fill
+    if area < 260: return fill
+    if area > 60000: return PAL.hall_wall
+    if round_ and area > 2500: return PAL.leaf
+    s._auto_i = getattr(s, "_auto_i", 0) + 1
+    return _AUTO[(s._auto_i * 3 + s._auto_seed) % len(_AUTO)]
+
+class InkColor(InkBW):
+    def shape(s, pts, lw=0.8, fill=Wt, stroke=True, amp=0.3):
+        xs = [p[0] for p in pts] or [0]; ys = [p[1] for p in pts] or [0]
+        area = (max(xs) - min(xs)) * (max(ys) - min(ys))
+        return super().shape(pts, lw=lw, fill=_auto_fill(s, fill, area), stroke=stroke, amp=amp)
+    def circle(s, x, y, r, lw=0.8, fill=Wt, stroke=True):
+        return super().circle(x, y, r, lw=lw, fill=_auto_fill(s, fill, 3.14 * r * r, True), stroke=stroke)
+
+def make_ink(c, seed):
+    if KIT_STYLE == "bw": return InkBW(c, seed=seed)
+    k = InkColor(c, seed=seed); k._auto_seed = seed % 7
+    return k

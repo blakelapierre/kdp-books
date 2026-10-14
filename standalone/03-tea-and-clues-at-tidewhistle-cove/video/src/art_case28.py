@@ -15,7 +15,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-28")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-28" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def hedley(k, x, y, h, **kw): kw.setdefault("chair", False); F.hedley(k, x, y, h, **kw)
 def kerensa(k, x, y, h, **kw): B.lady(k, x, y, h, dress="stripe", hair="curls", hat="sun", **kw)

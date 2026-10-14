@@ -13,7 +13,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-11")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-11" + os.environ.get("TW_ART_SUFFIX", ""))
 
 # ----------------------------------------------------------------------------- characters
 def spargo(k, x, y, h, **kw): B.visitor(k, x, y, h, suit="check", hat="bowler", tie=True, moustache=True, **kw)

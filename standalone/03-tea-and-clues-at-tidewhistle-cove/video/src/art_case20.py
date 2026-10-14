@@ -14,7 +14,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-20")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-20" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def quill(k, x, y, h, **kw): kw.setdefault("prop", False); F.quill(k, x, y, h, **kw)
 def hedley(k, x, y, h, **kw): B.overalls(k, x, y, h, paint=False, **kw)

@@ -16,7 +16,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-26")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-26" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def fenwick(k, x, y, h, **kw): B.visitor(k, x, y, h, suit="dark", hat="cap", tie=False, moustache=True, **kw)
 def pip(k, x, y, h, **kw): kw.setdefault("prop", False); F.pip(k, x, y, h, **kw)

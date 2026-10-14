@@ -13,7 +13,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-10")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-10" + os.environ.get("TW_ART_SUFFIX", ""))
 
 # ----------------------------------------------------------------------------- characters (same pose for suspects)
 def hedley(k, x, y, h, **kw): B.overalls(k, x, y, h, paint=True, **kw)

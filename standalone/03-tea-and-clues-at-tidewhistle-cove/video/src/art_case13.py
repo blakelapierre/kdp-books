@@ -12,7 +12,7 @@ import figures as F
 from inkart import K, Wt
 from layers import save_layers
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-13")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "art-13" + os.environ.get("TW_ART_SUFFIX", ""))
 
 def tamsin(k, x, y, h, **kw): kw.setdefault("prop", None); F.tamsin(k, x, y, h, **kw)
 def jago(k, x, y, h, **kw): kw.setdefault("basket", False); F.jago(k, x, y, h, **kw)
