@@ -173,3 +173,18 @@ Public: P1 b5Z33OGpaKM (Related→P2 oPhkRhzLQWA), P2 oPhkRhzLQWA, wide LctGeluf
 - Case 23 P2 https://www.tiktok.com/@shortmysterycases/video/7696640823609281823
 - Case 24 P1 https://www.tiktok.com/@shortmysterycases/video/7696640878802193694
 - Case 24 P2 https://www.tiktok.com/@shortmysterycases/video/7696640922754354462
+
+### Colour copy Cases 14–15 (2026-10-14 ~4:20 PM PT)
+Cases 14 (The Blue Ribbon Key) and 15 (The Warm Bonnet) detailed colour renders copied from streambox (md5 match, Part 1 frames OK). Case 16 rendering (~60 min/case). Cases 25–30 still swapped for go-public.
+
+### Case 10 (Colour) YouTube (2026-10-14 ~4:27 PM PT)
+Public: P1 EABoS8W4ddE (Related→P2 eBBpN-kFdMU), P2 eBBpN-kFdMU, wide 1v1ftsj2mho. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (-i46lR20EXE / SNAQ_HOcVgY / 1CkmU2fGsWk).
+
+### Case 11 (Colour) YouTube (2026-10-14 ~4:37 PM PT)
+Public: P1 qjMVA44o0Dw (Related→P2 rsm-UrSkQ7o), P2 rsm-UrSkQ7o, wide ksYSBQo6A40. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (4D1AYtOymL0 / S-avVUkGUdQ / iCVyoft9yfc).
+
+### Cases 10–11 (Colour) TikTok (2026-10-14 ~4:39 PM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + description:
+- Case 10 P1 https://www.tiktok.com/@shortmysterycases/video/7696672130783530270
+- Case 10 P2 https://www.tiktok.com/@shortmysterycases/video/7696672260781853982
+- Case 11 P1 https://www.tiktok.com/@shortmysterycases/video/7696672323977432350
+- Case 11 P2 https://www.tiktok.com/@shortmysterycases/video/7696672484594175263 (under review / Only me at post time)
