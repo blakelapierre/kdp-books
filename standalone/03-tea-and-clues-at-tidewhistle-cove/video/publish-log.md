@@ -70,7 +70,10 @@
 - Case 23 posted 2026-10-13 ~1:15–1:21 PM PT, AI label on, comments on, Everyone:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7696248557367463199
   - P2 https://www.tiktok.com/@shortmysterycases/video/7696250109247393055
-- Next TikTok case: 24 (follow YouTube).
+- Case 24 posted 2026-10-13 ~6:50 PM PT, AI label on, comments on, Everyone:
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7696334973355281694
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7696335202213285151 (under review / Only me at post time)
+- Next TikTok case: 25 (follow YouTube).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
 Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
@@ -114,5 +117,8 @@ Public: P1 71KtE2mZmp8 (Related→P2 hwQ8Q_2xIQI), P2 hwQ8Q_2xIQI, wide gpiAa-eK
 ## Case 23 YouTube (2026-10-13 ~1:05 PM PT)
 Public: P1 9uSsF4kz1Vs (Related→P2 MQVfBu970QI), P2 MQVfBu970QI, wide Qz1rHvFZ9Dk. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 22 P2 (hwQ8Q_2xIQI) + wide (gpiAa-eKtKg) desc updated to "Next case is live: Case 23 The Odd Glove — https://www.youtube.com/watch?v=Qz1rHvFZ9Dk". P2 + wide end with "Next case: Case 24, The Kite Festival, goes live Tuesday at 6:39 PM PT". Case 24 MP4s already local.
 
+
+## Case 24 YouTube (2026-10-13 ~6:48 PM PT)
+Public: P1 EOy1h6LwwiM (Related→P2 dejOGXMfMJ8), P2 dejOGXMfMJ8, wide AmLJbBufSgA. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 23 P2 (MQVfBu970QI) + wide (Qz1rHvFZ9Dk) desc updated to "Next case is live: Case 24 The Kite Festival — https://www.youtube.com/watch?v=AmLJbBufSgA". P2 + wide end with "Next case: Case 25, The Teaspoon Thief, goes live Wednesday at 12:39 AM PT". Case 25 MP4s already local.
 ## A/B test
 - Case 21 Part 1 = tight-opening test; compare retention vs Cases 19-20 Part 1 at 48h. (Tight version: question on screen at frame 0, 3 suspects flash at 1.75 s, Kokoro line "Six Spanish coins vanished. Who took them?" from frame 1, "Pause when you spot the clue" at 3.3 s, title card and cove scene-setting removed; 105.2 s vs 123.0 s original. Original kept as *-short-part1-orig.mp4. Part 2 and wide unchanged.)
