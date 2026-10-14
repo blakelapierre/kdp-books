@@ -8,3 +8,9 @@ ART = _bw.ART + "-color"
 VARIANT = "color"
 VIDEO_SLUG = _bw.SLUG + "-color"
 SHORTS = dict(getattr(_bw, "SHORTS", {}), tag="color-")
+
+# Colour version fix: "still pointing toward the hills" (98.32 s) landed on top of the breeze card; retire that card first.
+import copy as _copy
+ANIM = _copy.deepcopy(_bw.ANIM)
+for _l in ANIM["beach"]["layers"]:
+    if _l.get("part") == "wind": _l["show"] = (_l["show"][0], 98.2)
