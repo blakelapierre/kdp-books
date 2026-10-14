@@ -142,3 +142,10 @@ Public: P1 fwFwjG50pNU (Related→P2 5BeGitjjtD0), P2 5BeGitjjtD0, wide TFvZhbSh
 - Case 20 P2 https://www.tiktok.com/@shortmysterycases/video/7696456245569424671
 - Case 21 P1 https://www.tiktok.com/@shortmysterycases/video/7696456379535576351 (under review / Only me at post time)
 - Case 21 P2 https://www.tiktok.com/@shortmysterycases/video/7696456448301223198 (under review / Only me at post time)
+### Case 22 (Colour) YouTube (2026-10-14 ~4:24 AM PT)
+Public: P1 v0WwIe3-TyU (Related→P2 FxOGkwy4t7c), P2 FxOGkwy4t7c, wide fc417s2eMUw. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. B&W originals left up (71KtE2mZmp8 / hwQ8Q_2xIQI / gpiAa-eKtKg).
+### Case 22 (Colour) TikTok (2026-10-14 ~4:26 AM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + YouTube description:
+- Case 22 P1 https://www.tiktok.com/@shortmysterycases/video/7696483351124774174
+- Case 22 P2 https://www.tiktok.com/@shortmysterycases/video/7696483505609411870 (under review / Only me at post time)
+### Colour swap Case 27 (2026-10-14 ~4:16 AM PT)
+Case 27 detailed colour render copied from streambox (md5 verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour at its Wed 12:39 PM PT slot.
