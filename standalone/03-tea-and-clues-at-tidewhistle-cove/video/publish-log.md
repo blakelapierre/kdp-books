@@ -122,3 +122,6 @@ Public: P1 9uSsF4kz1Vs (Related→P2 MQVfBu970QI), P2 MQVfBu970QI, wide Qz1rHvFZ
 Public: P1 EOy1h6LwwiM (Related→P2 dejOGXMfMJ8), P2 dejOGXMfMJ8, wide AmLJbBufSgA. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Case 23 P2 (MQVfBu970QI) + wide (Qz1rHvFZ9Dk) desc updated to "Next case is live: Case 24 The Kite Festival — https://www.youtube.com/watch?v=AmLJbBufSgA". P2 + wide end with "Next case: Case 25, The Teaspoon Thief, goes live Wednesday at 12:39 AM PT". Case 25 MP4s already local.
 ## A/B test
 - Case 21 Part 1 = tight-opening test; compare retention vs Cases 19-20 Part 1 at 48h. (Tight version: question on screen at frame 0, 3 suspects flash at 1.75 s, Kokoro line "Six Spanish coins vanished. Who took them?" from frame 1, "Pause when you spot the clue" at 3.3 s, title card and cove scene-setting removed; 105.2 s vs 123.0 s original. Original kept as *-short-part1-orig.mp4. Part 2 and wide unchanged.)
+
+## Colour swap (2026-10-14 ~12:15 AM PT)
+Cases 25 and 26 detailed colour renders copied from streambox (md5 verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour for Case 25 (Wed 12:39 AM PT slot) and Case 26.
