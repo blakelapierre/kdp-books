@@ -188,7 +188,7 @@ def overalls(k, x, y, h, expr="neutral", flip=False, paint=False, cap=True, prop
 B.visitor, B.lady, B.overalls = visitor, lady, overalls
 
 # ============================================================================= ink: colour scenery + every bwkit helper
-_HOUSE = dict(sun=PAL.sun, cloud=PAL.cloud, headland=PAL.headland, stones=PAL.rock, floorboards=PAL.floor,
+_HOUSE = dict(sun=PAL.sun, cloud=PAL.cloud, headland=PAL.headland, floorboards=PAL.floor,
               window_view=PAL.glass, table_cloth=PAL.cloth_tbl, bar=PAL.wood, collection_box=PAL.bag,
               wet_bench=PAL.teal, crate=PAL.wood, slipway=PAL.rock, car=PAL.doors[0], coins=PAL.brass, banknote=PAL.sage,
               pin_card=PAL.note_yellow, clock_face=PAL.cream, dashed_outline=PAL.sand, lifeboat_station=PAL.walls[2], inn=PAL.walls[1])
@@ -210,6 +210,14 @@ class InkD(A4.Ink4, B.InkBW):
     def sea(s, x0, x1, y0, y1, *a, **kw):
         s.vgrad(x0, y0, x1, y1, A4.SEA, A4.SEA2, steps=8)
         with s.tint(A4.SEA, hatch=shade(A4.SEA2, 0.8)): return B.InkBW.sea(s, x0, x1, y0, y1, *a, **kw)
+    def harbour(s, w, h, sea_y0=110, sea_y1=180, lighthouse=True, boats=True, wall_top=110):
+        s.vgrad(14, sea_y1 - 2, w - 14, h - 14, C(190, 222, 242), C(246, 236, 214), steps=10)   # sky
+        s.circle(w - 80, h - 70, 16, lw=0, fill=C(252, 226, 150), stroke=False)
+        with s.tint(C(250, 246, 236)): r = B.InkBW.harbour(s, w, h, sea_y0=sea_y0, sea_y1=sea_y1, lighthouse=lighthouse, boats=boats, wall_top=wall_top)
+        return r
+    def stones(s, x0, x1, y0, y1, rows=4, seed=1):
+        s.wash_rect(x0, y0, x1, y1, C(196, 186, 168))
+        with s.tint(C(206, 196, 178), hatch=C(160, 150, 134)): return B.InkBW.stones(s, x0, x1, y0, y1, rows=rows, seed=seed)
     def floorboards(s, w, y=96, n=9):
         s.vgrad(14, 14, w - 14, y, PAL.floor, PAL.floor2, steps=8)
         with s.tint(PAL.floor, hatch=shade(PAL.floor2, 0.8)): return B.InkBW.floorboards(s, w, y=y, n=n)
