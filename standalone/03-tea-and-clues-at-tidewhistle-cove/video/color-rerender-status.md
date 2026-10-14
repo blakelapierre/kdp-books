@@ -1,36 +1,37 @@
-# Colour re-render status (Blake, Oct 13 2026: detailed animated colour for every B&W case)
+# Colour re-render status: DETAILED colour redraw (Blake, Oct 13 2026)
 
-Style: TW_KIT_STYLE=color-detailed over the existing case art (bwkit colour mode: washes, tinted scenery, auto-coloured props,
-colour chrome/notebook). Configs: src/cases/caseNN_color.py. Art: work/art-NN-color. Outputs keep B&W originals:
-`<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4`.
+The quick tinted mode was rejected and its queue stopped (9:40 PM PT). Each case is now redrawn in the Cases 4-9 style:
+detailed people3/people4 characters (dkit.py swaps every peg-doll, same suspect pose/size), hand-painted plates in
+`src/art_caseNN_color.py`, part sprites clip-only (no borders), same question bar / unique opening / narration / timings.
+Build: `python3 src/art_color.py NN` on the box -> stills at 1/3/20/45/80 s checked -> art shipped to streambox ->
+case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` encodes one case at a time via capped
+`/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
+Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Queue: streambox systemd unit `tw-color-queue` -> deploy/color-queue.sh -> /usr/local/sbin/tw-render (capped), one case at a time.
-Log: streambox:/home/tidewhistle/color-queue.log (START/DONE/FAIL per case), per-case log color-queue-NN.log. Started 9:12 PM PT Oct 13.
-Preview check (Case 25 colour, frames 1/3/20/45/80 s): no sprite borders, no text overlaps. ETAs PT, ~65 min per case.
+Updated Oct 13 9:46 PM PT. ETAs assume ~58 min per case, sequential.
 
-| Order | Case | Built | Queued | Rendered | Copied | Uploaded | ETA (PT) |
-|---|---|---|---|---|---|---|---|
-| 1 | 25 | yes | yes | rendering | no | no | 10:15 PM Oct 13 |
-| 2 | 26 | yes | yes | no | no | no | 11:20 PM Oct 13 |
-| 3 | 20 | yes | yes | no | no | no | 12:25 AM Oct 14 |
-| 4 | 21 | yes | yes | no | no | no | 1:30 AM |
-| 5 | 22 | yes | yes | no | no | no | 2:35 AM |
-| 6 | 23 | yes | yes | no | no | no | 3:40 AM |
-| 7 | 24 | yes | yes | no | no | no | 4:45 AM |
-| 8 | 10 | yes | yes | no | no | no | 5:50 AM |
-| 9 | 11 | yes | yes | no | no | no | 6:55 AM |
-| 10 | 12 | yes | yes | no | no | no | 8:00 AM |
-| 11 | 13 | yes | yes | no | no | no | 9:05 AM |
-| 12 | 14 | yes | yes | no | no | no | 10:10 AM |
-| 13 | 15 | yes | yes | no | no | no | 11:15 AM |
-| 14 | 16 | yes | yes | no | no | no | 12:20 PM |
-| 15 | 17 | yes | yes | no | no | no | 1:25 PM |
-| 16 | 18 | yes | yes | no | no | no | 2:30 PM |
-| 17 | 19 | yes | yes | no | no | no | 3:35 PM |
-| 18 | 27 | yes | yes | no | no | no | 4:40 PM |
-| 19 | 28 | yes | yes | no | no | no | 5:45 PM |
-| 20 | 29 | yes | yes | no | no | no | 6:50 PM |
-| 21 | 30 | yes | yes | no | no | no | 7:55 PM Oct 14 |
-| - | 3 (B&W copy) | skipped: Case 3 already has a colour version (case03_color) | | | | | |
+| Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
+|---|---|---|---|---|---|---|
+| 25 | yes | yes | rendering | no | no | 10:41 PM |
+| 26 | yes | yes | no | no | no | 11:39 PM |
+| 20 | no | no | no | no | no |  |
+| 21 | no | no | no | no | no |  |
+| 22 | no | no | no | no | no |  |
+| 23 | no | no | no | no | no |  |
+| 24 | no | no | no | no | no |  |
+| 10 | no | no | no | no | no |  |
+| 11 | no | no | no | no | no |  |
+| 12 | no | no | no | no | no |  |
+| 13 | no | no | no | no | no |  |
+| 14 | no | no | no | no | no |  |
+| 15 | no | no | no | no | no |  |
+| 16 | no | no | no | no | no |  |
+| 17 | no | no | no | no | no |  |
+| 18 | no | no | no | no | no |  |
+| 19 | no | no | no | no | no |  |
+| 27 | no | no | no | no | no |  |
+| 28 | no | no | no | no | no |  |
+| 29 | no | no | no | no | no |  |
+| 30 | no | no | no | no | no |  |
 
-Known gap: characters are still the simple peg-doll figures (now in colour), not the detailed people4 characters of Cases 4-9.
+Case 3 B&W copy: skipped (Case 3 already has a colour version).

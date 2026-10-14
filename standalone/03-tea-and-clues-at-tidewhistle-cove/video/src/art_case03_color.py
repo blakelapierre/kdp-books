@@ -489,5 +489,5 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     want = [a for a in sys.argv[1:] if not a.startswith("--")] or list(SCENES)
     idx = {n: i for i, n in enumerate(SCENES)}
-    with ProcessPoolExecutor(min(8, len(want))) as ex:
+    with ProcessPoolExecutor(int(os.environ.get("TIDEWHISTLE_WORKERS") or min(8, len(want)))) as ex:
         for n in ex.map(_one, [(idx[n], n) for n in want]): print(n, flush=True)
