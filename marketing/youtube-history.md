@@ -145,3 +145,53 @@ Wide videos (channel Videos list): C4 10A3rbVc1o8 0, C5 572N46J-FQA 2, C6 PGRpPI
 Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/32 = 19%; C9 20/82 = 24%. C8 Part 2 (73) now beats its Part 1 (34), so the feed is serving it directly.
 
 Notes: Cases 1-8 went from 335 to 434 Short views (+99), mostly Case 8 Part 2 (+70) and Case 5 Part 1 (+27). Case 9 picked up 102 across both parts. Total across all Tidewhistle Shorts: 554. Cases 10-19 have almost nothing yet after going public in one day.
+
+## 2026-10-13, ~6:45 PM PT (public stats only)
+
+The box desktop was busy with the six-hourly go-public run (uploading Case 24), so this check used public numbers from the channel's Shorts and Videos lists (yt-dlp). Stayed/swiped, view duration, traffic sources, likes and comments were not readable. Channel: 30 subscribers (no change).
+
+| Short | ID | Public views (change since Oct 12) |
+|---|---|---|
+| C1 original P1 | QWxklwPFnZ4 | 82 (0) |
+| C1 original P2 | HQ2L3e8GbbQ | 61 (0) |
+| C1 colour hook P1 | DUNfvE7Zipg | 4 (0) |
+| C1 colour P2 | wIpgU5xI1mg | 1 (0) |
+| C2 P1 | 6K6CEsxISc0 | 45 (0) |
+| C2 P2 | st_ReMOQIII | 4 (0) |
+| C3 colour P1 | EwiaRrvmCL0 | 4 (0) |
+| C3 colour P2 | tj9uhfQU-S0 | 72 (0) |
+| C3 B&W P1 | wNL8OlpAFFs | 4 (0) |
+| C3 B&W P2 | 4TjYI9ExL_Y | 3 (0) |
+| C4 P1 | 0Kb7UGUHprg | 2 (0) |
+| C4 P2 | Ac8j-2hRtxs | 4 (0) |
+| C5 P1 | 5zHVdIagzU4 | 32 (0) |
+| C5 P2 | 49zUT21OQ98 | 6 (0) |
+| C6 P1 / P2 | SEDoTk2qjcw / xlILuwuq5oY | not shown / 2 (0) |
+| C7 P1 / P2 | -E-YL5j-424 / 3ZB_lLqt52s | not shown / 1 (0) |
+| C8 P1 | l_ey2zmsF1U | 34 (0) |
+| C8 P2 | Jj77n8Mx0Ks | 73 (0) |
+| C9 P1 | bh_ER-hsVjI | 84 (+2) |
+| C9 P2 | VIYaiul5XwA | 23 (+3) |
+| C10 P1 / P2 | -i46lR20EXE / SNAQ_HOcVgY | not shown / 15 (was 16) |
+| C11 P1 / P2 | 4D1AYtOymL0 / S-avVUkGUdQ | not shown / not shown |
+| C12 P1 / P2 | rbYMNsiKvc8 / ow8kRZE6uUc | not shown / 5 (+5) |
+| C13 P1 / P2 | akstLV-kkks / iEH9g6QA3aE | 1 (0) / not shown |
+| C14 P1 / P2 | bsBB1Y2A5Wc / hQAQVdPmxHg | not shown / 1 (+1) |
+| C15 P1 / P2 | CN5zab5E45o / 0z1vHstDNXs | not shown / 1 (0) |
+| C16 P1 / P2 | Vja8T3-8JJQ / O_I_3_ngaZE | not shown / 2 (+2) |
+| C17 P1 / P2 | kS6yl9nDOv0 / WBvUKGILi3Q | not shown / 3 (+3) |
+| C18 P1 / P2 | oeebtkfrFf4 / SGAA-aAbx4M | not shown / not shown |
+| C19 P1 / P2 | xzMwNiFgrMA / TrteDGGDlvE | not shown / not shown |
+| C20 P1 | WaCenh2KSDs | 13 (new) |
+| C20 P2 | xm-fwRzABA4 | 17 (new) |
+| C21 P1 / P2 | tyaWON7zG98 / kANb06o0iuA | not shown / 4 (new) |
+| C22 P1 / P2 | 71KtE2mZmp8 / hwQ8Q_2xIQI | not shown / not shown (new) |
+| C23 P1 / P2 | 9uSsF4kz1Vs / MQVfBu970QI | not shown / not shown (new) |
+
+"Not shown" means the Shorts list gave no count (usually 0 views). Case 24 was mid-upload (Private) during this check.
+
+Wide videos: C20 HfkXscb2rFM 4 (new), C21 LkwPFVdpRhI 2 (new), C22 gpiAa-eKtKg 0 (new), C23 Qz1rHvFZ9Dk 0 (new); C4-C19 unchanged (C5 2, C6 1, C7 6, C8 6, C11 1, rest 0).
+
+Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/32 = 19%; C9 23/84 = 27%; C20 17/13 (Part 2 ahead, so the feed is serving it directly).
+
+Notes: total across all Tidewhistle Shorts went from 554 to 603 (+49). Case 20 (The Scent of Lavender) brought in 30 of those on its first day, the best launch since Case 9; Cases 10-19 and 21-23 are still near zero. Cases 1-8 didn't move at all.
