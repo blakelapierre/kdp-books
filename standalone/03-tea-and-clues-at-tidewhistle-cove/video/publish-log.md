@@ -158,3 +158,18 @@ Case 27 detailed colour render copied from streambox (md5 verified, Part 1 frame
 
 ### Colour swap Cases 28–29 (2026-10-14 ~6:13 AM PT)
 Cases 28 and 29 detailed colour renders copied from streambox (md5 verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour for Case 28 (Wed 6:39 PM PT) and Case 29 (Thu 12:39 AM PT).
+
+### Colour swap Case 30 (2026-10-14 ~2:21 PM PT)
+Case 30 detailed colour render copied from streambox (size verified, Part 1 frames checked). B&W originals backed up as *-bw.mp4; colour copied over the original filenames (vertical, wide, short part1/part2) so the go-public routine posts colour at its Thu 6:39 AM PT slot. Also copied colour -color files for live Cases 23, 24, 10–13 (not yet all reposted).
+
+### Case 23 (Colour) YouTube (2026-10-14 ~2:28 PM PT)
+Public: P1 S1j-Ii2bHug (Related→P2 fD1kWZTGrsE), P2 fD1kWZTGrsE, wide RoGK44y3pOg. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (9uSsF4kz1Vs / MQVfBu970QI / Qz1rHvFZ9Dk).
+
+### Case 24 (Colour) YouTube (2026-10-14 ~2:35 PM PT)
+Public: P1 b5Z33OGpaKM (Related→P2 oPhkRhzLQWA), P2 oPhkRhzLQWA, wide LctGelufh0o. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (EOy1h6LwwiM / dejOGXMfMJ8 / AmLJbBufSgA).
+
+### Cases 23–24 (Colour) TikTok (2026-10-14 ~2:38 PM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + description (TikTok Studio showed under review / Only me at post time):
+- Case 23 P1 https://www.tiktok.com/@shortmysterycases/video/7696640672295652638
+- Case 23 P2 https://www.tiktok.com/@shortmysterycases/video/7696640823609281823
+- Case 24 P1 https://www.tiktok.com/@shortmysterycases/video/7696640878802193694
+- Case 24 P2 https://www.tiktok.com/@shortmysterycases/video/7696640922754354462

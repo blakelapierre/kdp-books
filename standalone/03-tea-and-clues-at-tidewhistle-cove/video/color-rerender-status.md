@@ -8,8 +8,8 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 14 6:13 AM PT. ETAs assume ~72 min per case, sequential (Case 30 started ~5:55 AM PT / 13:55 BST; Cases 28–29 done and swapped).
-Queue reordered Oct 14 2:30 AM PT so upcoming Cases 27-30 render before their go-public slots (27 Wed 12:39 PM, 28 Wed 6:39 PM, 29 Thu 12:39 AM, 30 Thu 6:39 AM); live Cases 23, 24, 10-19 follow for reposts. Old order backed up as color-queue.txt.bak-20261014.
+Updated Oct 14 2:38 PM PT. Case 14 still rendering on streambox (~72 min/case). Cases 15–19 queued after 14.
+Queue order: 25–26, 20–22, 27–30, 23–24, 10–19. Next live reposts: Cases 10–13 (copied, awaiting upload; max 2/run).
 
 | Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
 |---|---|---|---|---|---|---|
@@ -21,18 +21,18 @@ Queue reordered Oct 14 2:30 AM PT so upcoming Cases 27-30 render before their go
 | 27 | yes | yes | yes | yes (swapped over B&W names, B&W kept as -bw) | n/a (upcoming; posts colour at its slot) | done |
 | 28 | yes | yes | yes | yes (swapped over B&W names, B&W kept as -bw) | n/a (upcoming; posts colour at its slot) | done |
 | 29 | yes | yes | yes | yes (swapped over B&W names, B&W kept as -bw) | n/a (upcoming; posts colour at its slot) | done |
-| 30 | yes | yes | rendering | no | no | 7:10 AM |
-| 23 | yes | yes | no | no | no | 8:20 AM |
-| 24 | yes | yes | no | no | no | 9:30 AM |
-| 10 | yes | yes | no | no | no | 10:40 AM |
-| 11 | yes | yes | no | no | no | 11:50 AM |
-| 12 | yes | yes | no | no | no | 1:00 PM |
-| 13 | yes | yes | no | no | no | 2:10 PM |
-| 14 | yes | yes | no | no | no | 3:20 PM |
-| 15 | yes | yes | no | no | no | 4:30 PM |
-| 16 | yes | yes | no | no | no | 5:40 PM |
-| 17 | yes | yes | no | no | no | 6:50 PM |
-| 18 | yes | yes | no | no | no | 8:00 PM |
-| 19 | yes | yes | no | no | no | 9:10 PM |
+| 30 | yes | yes | yes | yes (swapped over B&W names, B&W kept as -bw; Part 1 frames OK) | n/a (upcoming; posts colour at its slot) | done |
+| 23 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~2:28–2:38 PM PT (YT S1j-Ii2bHug/fD1kWZTGrsE/RoGK44y3pOg + TikTok) | done |
+| 24 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~2:35–2:38 PM PT (YT b5Z33OGpaKM/oPhkRhzLQWA/LctGelufh0o + TikTok) | done |
+| 10 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
+| 11 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
+| 12 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
+| 13 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
+| 14 | yes | yes | rendering | no | no | ~3:00 PM |
+| 15 | yes | yes | no | no | no | ~4:10 PM |
+| 16 | yes | yes | no | no | no | ~5:20 PM |
+| 17 | yes | yes | no | no | no | ~6:30 PM |
+| 18 | yes | yes | no | no | no | ~7:40 PM |
+| 19 | yes | yes | no | no | no | ~8:50 PM |
 
 Case 3 B&W copy: skipped (Case 3 already has a colour version).
