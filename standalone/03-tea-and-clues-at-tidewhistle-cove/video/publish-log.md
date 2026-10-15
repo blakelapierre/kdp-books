@@ -269,3 +269,11 @@ Public: P1 ps2FBD_XYMA (Related→P2 P8iwV94oDR0), P2 P8iwV94oDR0, wide eV6rC4S0
 
 ### Colour next-case link fix Cases 10–24 (2026-10-15 ~4:50 AM PT)
 YouTube colour P2 + wide for Cases 10–24: replaced next-case lines with "Next case is live:" pointing at the next case's colour wide (Case 24 → Case 25 colour 1ydkDFFKhEk). All 30 edits verified. B&W originals untouched. Colour swap and reposts routine complete; deleted.
+
+## Case 29 YouTube (2026-10-15 ~6:50 AM PT, colour render)
+Public: P1 vQt0FWlVtZ4 (Related→P2 uXW8iJn5B3M), P2 uXW8iJn5B3M, wide mqj84FktFsA. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. Case 28 P2 (b60uQR9xgTY) + wide (Ae5pNnYEagU) desc updated to "Next case is live: Case 29 The Sugar Bowl — https://www.youtube.com/watch?v=mqj84FktFsA". P2 + wide end with "Next case: Case 30, The Missing Sign, goes live Thursday at 12:39 PM PT". Case 30 colour MP4s already local.
+
+## Case 29 TikTok (2026-10-15 ~6:55 AM PT)
+AI label on, comments on, Disclose off, Everyone:
+- P1 https://www.tiktok.com/@shortmysterycases/video/7696892834900659487 (Everyone)
+- P2 https://www.tiktok.com/@shortmysterycases/video/7696893109476609310 (under review / Only me at post time)
