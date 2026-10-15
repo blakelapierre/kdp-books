@@ -8,7 +8,7 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 14 ~10:45 PM PT. Colour queue finished through 19; all colour cases copied. Cases 14–15 colour reposted on YouTube + TikTok. Next live reposts: Cases 16–19 (copied, awaiting upload; max 2/run). Cases 25–30 remain swapped for go-public.
+Updated Oct 15 ~2:30 AM PT. Colour queue finished through 19 (idle). All colour cases copied. Cases 16–17 colour reposted on YouTube + TikTok. Next live reposts: Cases 18–19 (copied, awaiting upload; max 2/run). Cases 25–30 remain swapped for go-public.
 
 | Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
 |---|---|---|---|---|---|---|
@@ -29,8 +29,8 @@ Updated Oct 14 ~10:45 PM PT. Colour queue finished through 19; all colour cases 
 | 13 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~8:30–8:34 PM PT (YT jj8YSq97bCU/dklADA7h1Jo/ldJRYcHfXS0 + TikTok) | done |
 | 14 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 14 ~10:25 PM PT (YT UA5h4OHXwr0/-s3fyXDcNCI/WUlGa5xEHHw + TikTok) | done |
 | 15 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 14 ~10:30 PM PT (YT nmYsUPuWU-k/gGWqd5trLOo/XrApPXOole4 + TikTok) | done |
-| 16 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
-| 17 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
+| 16 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~2:30 AM PT (YT OI1zMmTZ9_Y/90zpFDk3jFE/LR2fk0blt6w + TikTok) | done |
+| 17 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~2:30 AM PT (YT -EbcZ0Qilf4/Vzlt3LfcW7w/hsTfW-Q20cQ + TikTok) | done |
 | 18 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 | 19 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 
