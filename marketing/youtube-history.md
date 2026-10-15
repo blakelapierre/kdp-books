@@ -195,3 +195,118 @@ Wide videos: C20 HfkXscb2rFM 4 (new), C21 LkwPFVdpRhI 2 (new), C22 gpiAa-eKtKg 0
 Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/32 = 19%; C9 23/84 = 27%; C20 17/13 (Part 2 ahead, so the feed is serving it directly).
 
 Notes: total across all Tidewhistle Shorts went from 554 to 603 (+49). Case 20 (The Scent of Lavender) brought in 30 of those on its first day, the best launch since Case 9; Cases 10-19 and 21-23 are still near zero. Cases 1-8 didn't move at all.
+
+## 2026-10-14, ~6:45 PM PT (public stats only)
+
+The box desktop was busy with the six-hourly go-public run (Case 28 slot), so this check used public numbers from the channel's Shorts and Videos lists (yt-dlp). Stayed/swiped, view duration, traffic sources, likes and comments were not readable. Channel: 30 subscribers (no change).
+
+| Short | ID | Public views (change since Oct 13) |
+|---|---|---|
+| C1 original P1 | QWxklwPFnZ4 | 82 (0) |
+| C1 original P2 | HQ2L3e8GbbQ | 61 (0) |
+| C1 colour hook P1 | DUNfvE7Zipg | 4 (0) |
+| C1 colour P2 | wIpgU5xI1mg | 1 (0) |
+| C2 P1 | 6K6CEsxISc0 | 45 (0) |
+| C2 P2 | st_ReMOQIII | 4 (0) |
+| C3 colour P1 | EwiaRrvmCL0 | 4 (0) |
+| C3 colour P2 | tj9uhfQU-S0 | 72 (0) |
+| C3 B&W P1 | wNL8OlpAFFs | 6 (+2) |
+| C3 B&W P2 | 4TjYI9ExL_Y | 3 (0) |
+| C4 P1 | 0Kb7UGUHprg | 2 (0) |
+| C4 P2 | Ac8j-2hRtxs | 4 (0) |
+| C5 P1 | 5zHVdIagzU4 | 32 (0) |
+| C5 P2 | 49zUT21OQ98 | 6 (0) |
+| C6 P1 / P2 | SEDoTk2qjcw / xlILuwuq5oY | not shown / 2 (0) |
+| C7 P1 / P2 | -E-YL5j-424 / 3ZB_lLqt52s | not shown / 1 (0) |
+| C8 P1 | l_ey2zmsF1U | 34 (0) |
+| C8 P2 | Jj77n8Mx0Ks | 73 (0) |
+| C9 P1 | bh_ER-hsVjI | 87 (+3) |
+| C9 P2 | VIYaiul5XwA | 23 (0) |
+| C10 P1 / P2 | -i46lR20EXE / SNAQ_HOcVgY | not shown / 15 (0) |
+| C11 P1 / P2 | 4D1AYtOymL0 / S-avVUkGUdQ | not shown / 1 (+1) |
+| C12 P1 / P2 | rbYMNsiKvc8 / ow8kRZE6uUc | 1 (+1) / 5 (0) |
+| C13 P1 / P2 | akstLV-kkks / iEH9g6QA3aE | 1 (0) / not shown |
+| C14 P1 / P2 | bsBB1Y2A5Wc / hQAQVdPmxHg | not shown / 3 (+2) |
+| C15 P1 / P2 | CN5zab5E45o / 0z1vHstDNXs | not shown / 1 (0) |
+| C16 P1 / P2 | Vja8T3-8JJQ / O_I_3_ngaZE | not shown / 2 (0) |
+| C17 P1 / P2 | kS6yl9nDOv0 / WBvUKGILi3Q | not shown / 3 (0) |
+| C18 P1 / P2 | oeebtkfrFf4 / SGAA-aAbx4M | not shown / not shown |
+| C19 P1 / P2 | xzMwNiFgrMA / TrteDGGDlvE | not shown / not shown |
+| C20 P1 | WaCenh2KSDs | 13 (0) |
+| C20 P2 | xm-fwRzABA4 | 20 (+3) |
+| C21 P1 / P2 | tyaWON7zG98 / kANb06o0iuA | not shown / 6 (+2) |
+| C22 P1 / P2 | 71KtE2mZmp8 / hwQ8Q_2xIQI | not shown / not shown |
+| C23 P1 / P2 | 9uSsF4kz1Vs / MQVfBu970QI | not shown / not shown |
+| C24 P1 | EOy1h6LwwiM | 15 (new) |
+| C24 P2 | dejOGXMfMJ8 | 18 (new) |
+| C25 P1 (colour) | g483plcavio | 4 (new) |
+| C25 P2 (colour) | oyoGJFzz8rg | 32 (new) |
+| C26 P1 / P2 (colour) | ebd9l8-luGM / zTs28hoBsfE | not shown / not shown (new) |
+| C10 (Colour) P1 / P2 | EABoS8W4ddE / eBBpN-kFdMU | not shown / not shown (new) |
+| C11 (Colour) P1 / P2 | qjMVA44o0Dw / rsm-UrSkQ7o | not shown / not shown (new) |
+| C20 (Colour) P1 / P2 | 2HzQbhzdJ9w / Sn3a6eijSms | not shown / not shown (new) |
+| C21 (Colour) P1 / P2 | fwFwjG50pNU / 5BeGitjjtD0 | not shown / not shown (new) |
+| C22 (Colour) P1 / P2 | v0WwIe3-TyU / FxOGkwy4t7c | not shown / not shown (new) |
+| C23 (Colour) P1 / P2 | S1j-Ii2bHug / fD1kWZTGrsE | not shown / not shown (new) |
+| C24 (Colour) P1 / P2 | b5Z33OGpaKM / oPhkRhzLQWA | 4 / 1 (new) |
+| C27 P1 / P2 | M0G8Ze1nBkA / GskdJJNXISU | not shown / 1 (new) |
+
+"Not shown" means the Shorts list gave no count (usually 0 views). Case 24 went public Oct 13 ~6:48 PM PT (just after last night's check), Case 25 Oct 14 ~12:45 AM and Case 26 ~7:00 AM (both colour renders). The (Colour) reposts of live Cases 10, 11 and 20-24 went up Oct 14 between ~2:30 AM and ~4:37 PM; the B&W originals stay up. Case 27 Shorts appeared mid-check (P2 GskdJJNXISU 1 view; P1 M0G8Ze1nBkA not shown). Case 28 was still mid go-public upload (Private).
+
+Wide videos: C24 AmLJbBufSgA 1 (new), C25 1ydkDFFKhEk 2 (new), C26 pRSOaagKzQQ 0 (new); colour wides C10 1v1ftsj2mho, C11 ksYSBQo6A40, C20 NNJSMdN8zP8, C21 TFvZhbShSEc, C22 fc417s2eMUw, C23 RoGK44y3pOg, C24 LctGelufh0o 0 each (new); C4-C23 unchanged (C5 2, C6 1, C7 6, C8 6, C11 1, C20 4, C21 2, rest 0).
+
+Part 2 / Part 1 (public views): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/32 = 19%; C9 23/87 = 26%; C20 20/13, C24 18/15 and C25 32/4 (Part 2 ahead in all three, so the feed is serving Part 2 directly).
+
+Notes: total across all Tidewhistle Shorts went from 603 to 692 (+89). New cases brought in 75 of that (incl. Case 27 P2): Case 25 (The Teaspoon Thief, first colour launch) 36, nearly all on Part 2; Case 24 (The Kite Festival) 33 on its first day, the strongest even P1/P2 launch since Case 9; Case 24's colour repost 5. Older cases added 14 (Case 9 P1 +3, Case 20 P2 +3, Case 3 B&W P1, Case 14 P2 and Case 21 P2 +2 each, Case 11 P2 and Case 12 P1 +1 each). Case 26 and the colour reposts of Cases 10, 11 and 20-23 have nothing yet. Cases 1-8 still didn't move.
+
+### TikTok (@shortmysterycases) — first logged baseline
+
+Studio analytics unavailable (box desktop busy with the YouTube go-public upload). Public profile + per-post counts via yt-dlp. Day-over-day change N/A (first TikTok section). Profile: 1 follower, 4 likes (hearts), 68 videos. Last-7-day Studio metrics (profile views, likes, comments, shares) not readable this run.
+
+Public view total across all 68 posts: **1130**. Posts with any views: 20. Standouts are early Cases 1–4; most Cases 5–26 and colour reposts are still at 0–few views.
+
+| Post | ID | Public views |
+|---|---|---|
+| C1 colour P1 | 7693842926996163870 | 112 |
+| C1 colour P2 | 7693843071456398623 | 116 |
+| Early test A | 7693892503820422430 | 131 |
+| Early test B | 7693892659894635806 | 168 |
+| C2 P1 | 7695688107861052703 | 105 |
+| C2 P2 | 7695688429962595615 | 98 |
+| C3 P1 | 7695697376438127902 | 103 |
+| C3 P2 | 7695698068401900830 | 79 |
+| C4 P1 | 7695698066954898718 | 100 |
+| C4 P2 | 7695698379589913887 | 90 |
+| C5 P1 / P2 | 7695698491078626591 / 7695698562847411487 | 1 / 0 |
+| C6 P1 / P2 | 7695698626382777631 / 7695698739620580639 | 0 / 0 |
+| C7 P1 / P2 | 7695698803927616799 / 7695698888526712095 | 0 / 0 |
+| C8 P1 / P2 | 7695698896739175711 / 7695698982277827870 | 0 / 0 |
+| C9 P1 / P2 | 7695699056923807006 / 7695699126700313887 | 0 / 0 |
+| C10 P1 / P2 | 7695718622064282911 / 7695719045026401567 | 0 / 1 |
+| C11 P1 / P2 | 7695719235036728607 / 7695719550054124831 | 0 / 0 |
+| C12 P1 / P2 | 7695735805389638943 / 7695735959446457630 | 1 / 0 |
+| C13–C16 (all parts) | see publish-log | 0 each |
+| C17 P1 / P2 | 7695818006508719390 / 7695818219432463646 | 5 / 0 |
+| C18 P1 / P2 | 7695832105619705118 / 7695832299480354079 | 0 / 0 |
+| C19 P1 / P2 | 7695874862719536414 / 7695875318216772895 | 0 / 9 |
+| C20 P1 / P2 | 7695964825054235935 / 7695965555391466783 | 0 / 1 |
+| C21 P1 / P2 | 7696059150723321118 / 7696059208042646815 | 0 / 0 |
+| C22 P1 / P2 | 7696153887304158495 / 7696153959337053470 | 0 / 0 |
+| C23 P1 / P2 | 7696248557367463199 / 7696250109247393055 | 0 / 0 |
+| C24 P1 / P2 | 7696334973355281694 / 7696335202213285151 | 0 / 0 |
+| C25 P1 / P2 (colour) | 7696427486833413407 / 7696427807047421215 | 0 / 0 |
+| C26 P1 / P2 (colour) | 7696523991451798814 / 7696524218678136095 | 0 / 1 |
+| C20 (Colour) P1 / P2 | 7696455904371182878 / 7696456245569424671 | 0 / 0 |
+| C21 (Colour) P1 / P2 | 7696456379535576351 / 7696456448301223198 | 0 / 6 |
+| C22 (Colour) P1 / P2 | 7696483351124774174 / 7696483505609411870 | 0 / 1 |
+| C23 (Colour) P1 / P2 | 7696640672295652638 / 7696640823609281823 | 0 / 0 |
+| C24 (Colour) P1 / P2 | 7696640878802193694 / 7696640922754354462 | 0 / 2 |
+| C10 (Colour) P1 / P2 | 7696672130783530270 / 7696672260781853982 | 0 / 0 |
+| C11 (Colour) P1 / P2 | 7696672323977432350 / 7696672484594175263 | 0 / 0 |
+
+Review / Only me: Studio content list not opened this run. Publish-log still flags several Part 2s as under review / Only me at post time (incl. recent colour C11 P2, C21–C22 P2, C24 P2, C26 P2). Public yt-dlp returned counts for some of those (e.g. C21 colour P2 6, C22 colour P2 1, C24 colour P2 2, C26 P2 1), so at least those are now publicly reachable; zero-view posts could be private or simply undistributed — confirm in Studio next run.
+
+Part 2 / Part 1 (public views, meaningful P1): C1 116/112 = 104%; C2 98/105 = 93%; C3 79/103 = 77%; C4 90/100 = 90%. Carry-through on early TikTok cases is strong vs YouTube.
+
+Notes: nearly all TikTok views sit in Cases 1–4 plus two early “mystery case” test posts (~1003 of 1130). Cases 5+ barely moved. Tomorrow’s check can start day-over-day deltas from this baseline.
+
