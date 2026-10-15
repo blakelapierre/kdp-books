@@ -254,3 +254,18 @@ Public: P1 -EbcZ0Qilf4 (Related→P2 Vzlt3LfcW7w), P2 Vzlt3LfcW7w, wide hsTfW-Q2
 - Case 16 P2 https://www.tiktok.com/@shortmysterycases/video/7696823927678504223
 - Case 17 P1 https://www.tiktok.com/@shortmysterycases/video/7696824281434426654 (under review / Only me at post time)
 - Case 17 P2 https://www.tiktok.com/@shortmysterycases/video/7696824199834258718 (under review / Only me at post time)
+
+### Case 18 (Colour) YouTube (2026-10-15 ~4:25 AM PT)
+Public: P1 mkAZj3vS_Bg (Related→P2 npl8dk_E9HI), P2 npl8dk_E9HI, wide 5pC7pX5p_G0. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, same tags. B&W originals left up (oeebtkfrFf4 / SGAA-aAbx4M / 8o5TorPv2Ng).
+
+### Case 19 (Colour) YouTube (2026-10-15 ~4:38 AM PT)
+Public: P1 ps2FBD_XYMA (Related→P2 P8iwV94oDR0), P2 P8iwV94oDR0, wide eV6rC4S0-3g. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, same tags. B&W originals left up (xzMwNiFgrMA / TrteDGGDlvE / J1rJ4HZZ0aw).
+
+### Cases 18–19 (Colour) TikTok (2026-10-15 ~4:42 AM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + short description:
+- Case 18 P1 https://www.tiktok.com/@shortmysterycases/video/7696857953432898847 (Everyone)
+- Case 18 P2 https://www.tiktok.com/@shortmysterycases/video/7696858155959012639 (Everyone)
+- Case 19 P1 https://www.tiktok.com/@shortmysterycases/video/7696858320174386462 (under review / Only me at post time)
+- Case 19 P2 https://www.tiktok.com/@shortmysterycases/video/7696858407831080223 (under review / Only me at post time)
+
+### Colour next-case link fix Cases 10–24 (2026-10-15 ~4:50 AM PT)
+YouTube colour P2 + wide for Cases 10–24: replaced next-case lines with "Next case is live:" pointing at the next case's colour wide (Case 24 → Case 25 colour 1ydkDFFKhEk). All 30 edits verified. B&W originals untouched. Colour swap and reposts routine complete; deleted.

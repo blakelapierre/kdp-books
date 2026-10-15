@@ -8,7 +8,7 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 15 ~2:30 AM PT. Colour queue finished through 19 (idle). All colour cases copied. Cases 16–17 colour reposted on YouTube + TikTok. Next live reposts: Cases 18–19 (copied, awaiting upload; max 2/run). Cases 25–30 remain swapped for go-public.
+Updated Oct 15 ~4:50 AM PT. Colour swap COMPLETE. All live Cases 10–24 colour-reposted on YouTube + TikTok; Cases 25–30 already post colour at go-public. Colour P2+wide descriptions for Cases 10–24 now link next-case to the next colour wide. B&W originals left up. Routine deleted.
 
 | Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
 |---|---|---|---|---|---|---|
@@ -31,7 +31,9 @@ Updated Oct 15 ~2:30 AM PT. Colour queue finished through 19 (idle). All colour 
 | 15 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 14 ~10:30 PM PT (YT nmYsUPuWU-k/gGWqd5trLOo/XrApPXOole4 + TikTok) | done |
 | 16 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~2:30 AM PT (YT OI1zMmTZ9_Y/90zpFDk3jFE/LR2fk0blt6w + TikTok) | done |
 | 17 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~2:30 AM PT (YT -EbcZ0Qilf4/Vzlt3LfcW7w/hsTfW-Q20cQ + TikTok) | done |
-| 18 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
-| 19 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
+| 18 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~4:25–4:42 AM PT (YT mkAZj3vS_Bg/npl8dk_E9HI/5pC7pX5p_G0 + TikTok); next-case links fixed | done |
+| 19 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | reposted Oct 15 ~4:25–4:42 AM PT (YT ps2FBD_XYMA/P8iwV94oDR0/eV6rC4S0-3g + TikTok); next-case links fixed | done |
 
 Case 3 B&W copy: skipped (Case 3 already has a colour version).
+
+Finished Oct 15 ~4:50 AM PT: Cases 10–24 colour next-case links updated on YouTube P2 + wide (all 30 verified).
