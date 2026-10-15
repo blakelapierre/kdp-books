@@ -18,7 +18,11 @@
 - Case 21: Public 2026-10-13 ~12:55 AM PT (P1 tyaWON7zG98 [tight-opening A/B version], P2 kANb06o0iuA, wide LkwPFVdpRhI). P1 Related = P2. Case 20 P2 + wide now say "Next case is live:" Case 21 wide. P2 + wide now say "Next case is live:" Case 22 wide gpiAa-eKtKg.
 - Case 22: Public 2026-10-13 ~7:05 AM PT (P1 71KtE2mZmp8, P2 hwQ8Q_2xIQI, wide gpiAa-eKtKg). P1 Related = P2. Case 21 P2 + wide now say "Next case is live:" Case 22 wide. P2 + wide now say "Next case is live:" Case 23 wide Qz1rHvFZ9Dk.
 - Case 23: Public 2026-10-13 ~1:05 PM PT (P1 9uSsF4kz1Vs, P2 MQVfBu970QI, wide Qz1rHvFZ9Dk). P1 Related = P2. Case 22 P2 + wide now say "Next case is live:" Case 23 wide. P2 + wide carry Case 24 teaser (Tue 6:39 PM PT).
-- Local renders available through Case 28; next unpublished YouTube/TikTok case is 24.
+- Case 24: Public 2026-10-13 ~6:48 PM PT (P1 EOy1h6LwwiM, P2 dejOGXMfMJ8, wide AmLJbBufSgA). Colour repost also live.
+- Case 25: Public 2026-10-14 ~12:45 AM PT colour (P1 g483plcavio, P2 oyoGJFzz8rg, wide 1ydkDFFKhEk).
+- Case 26: Public 2026-10-14 ~7:00 AM PT colour (P1 ebd9l8-luGM, P2 zTs28hoBsfE, wide pRSOaagKzQQ). P2 + wide now say "Next case is live:" Case 27 wide zun1qAwCLT8.
+- Case 27: Public 2026-10-14 ~6:55 PM PT colour (P1 M0G8Ze1nBkA, P2 GskdJJNXISU, wide zun1qAwCLT8). P1 Related = P2. Case 26 P2 + wide now say "Next case is live:" Case 27 wide. P2 + wide carry Case 28 teaser (Thu 12:39 AM PT).
+- Local colour renders ready through Case 30; next unpublished YouTube/TikTok case is 28.
 
 ## TikTok (@shortmysterycases)
 - Case 1 (colour hook version) posted 2026-10-07 01:40 PT, AI label on:
@@ -79,7 +83,10 @@
 - Case 26 (colour) posted 2026-10-14 ~7:04 AM PT, AI label on, comments on, Everyone:
   - P1 https://www.tiktok.com/@shortmysterycases/video/7696523991451798814
   - P2 https://www.tiktok.com/@shortmysterycases/video/7696524218678136095 (under review / Only me at post time)
-- Next TikTok case: 27 (follow YouTube).
+- Case 27 (colour) posted 2026-10-14 ~7:00 PM PT, AI label on, comments on (posted as Everyone; both showed Only me / under review at post time):
+  - P1 https://www.tiktok.com/@shortmysterycases/video/7696708441225628958
+  - P2 https://www.tiktok.com/@shortmysterycases/video/7696708984538926366
+- Next TikTok case: 28 (follow YouTube).
 
 ## Case 10 YouTube (2026-10-12 ~1:55 AM PT)
 Public: P1 -i46lR20EXE (Related→P2), P2 SNAQ_HOcVgY, wide 1CkmU2fGsWk. AI Yes, playlist. Case 9 P2/wide desc link to Case 10. P2 + wide desc updated ~2:58 AM PT to "Next case is live:" Case 11 wide iCVyoft9yfc.
@@ -131,6 +138,15 @@ Public: P1 g483plcavio (Related→P2 oyoGJFzz8rg), P2 oyoGJFzz8rg, wide 1ydkDFFK
 
 ## Case 26 YouTube (2026-10-14 ~7:00 AM PT, colour render)
 Public: P1 ebd9l8-luGM (Related→P2 zTs28hoBsfE), P2 zTs28hoBsfE, wide pRSOaagKzQQ. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. Case 25 P2 (oyoGJFzz8rg) + wide (1ydkDFFKhEk) desc updated to "Next case is live: Case 26 The Winning Ticket — https://www.youtube.com/watch?v=pRSOaagKzQQ". P2 + wide end with "Next case: Case 27, The Silent Foghorn, goes live Wednesday at 12:39 PM PT". Case 27 colour MP4s already local.
+
+
+## Case 27 YouTube (2026-10-14 ~6:55 PM PT, colour render; noon 12:39 slot missed/failed, published in 6:39 PM slot)
+Public: P1 M0G8Ze1nBkA (Related→P2 GskdJJNXISU), P2 GskdJJNXISU, wide zun1qAwCLT8. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. Case 26 P2 (zTs28hoBsfE) + wide (pRSOaagKzQQ) desc updated to "Next case is live: Case 27 The Silent Foghorn — https://www.youtube.com/watch?v=zun1qAwCLT8". P2 + wide end with "Next case: Case 28, Truth and Fib Night, goes live Thursday at 12:39 AM PT". Case 28 colour MP4s already local.
+
+## Case 27 TikTok (2026-10-14 ~7:00–7:02 PM PT)
+AI label on, comments on, Everyone selected (both showed Only me / under review at post time):
+- P1 https://www.tiktok.com/@shortmysterycases/video/7696708441225628958
+- P2 https://www.tiktok.com/@shortmysterycases/video/7696708984538926366
 
 ## A/B test
 - Case 21 Part 1 = tight-opening test; compare retention vs Cases 19-20 Part 1 at 48h. (Tight version: question on screen at frame 0, 3 suspects flash at 1.75 s, Kokoro line "Six Spanish coins vanished. Who took them?" from frame 1, "Pause when you spot the clue" at 3.3 s, title card and cove scene-setting removed; 105.2 s vs 123.0 s original. Original kept as *-short-part1-orig.mp4. Part 2 and wide unchanged.)
