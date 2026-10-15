@@ -7,7 +7,7 @@ This log lists every KDP book idea that has already been **built** or **evaluate
 - Author name: Blake La Pierre. Default price: $9.99, the lowest price that earns the 60% paperback royalty.
 
 ## Puzzle types already used in the Frostwood series
-Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), cozy riddles + text logic for Kindle (book 5), nonograms / hanjie (book 6) and Hashi / Bridges (book 7). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
+Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), cozy riddles + text logic for Kindle (book 5), nonograms / hanjie (book 6), Hashi / Bridges (book 7) and Slitherlink / Loop the Loop / Fences (book 8, hardcover). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
 
 ## Built
 | Date | Idea | Result |
@@ -25,6 +25,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-12 | Cozy themed crossword puzzle book (freeform themed crosswords through the seasons, plain clues, word banks), **paperback** format slot | *Porch Swing Crosswords*, 80 puzzles (40 Easy / 40 Medium), 196 pages, paperback, [folder](standalone/05-porch-swing-crosswords/) |
 | 2026-10-14 | Illustrated guided family memory keepsake journal (gender-neutral parent/grandparent gift), **hardcover** format slot (Format: hardcover) | *Stories We Keep*, 102 pages, Format: hardcover, [folder](standalone/06-stories-we-keep/) |
 | 2026-10-13 | Hashi / Bridges (Hashiwokakero) logic puzzles, Frostwood book 7, **paperback** format slot (chosen for its Frostwood fit: footbridges across frozen ponds; dedicated Hashi books have few reviews) | *Bridges of Frostwood*, 180 puzzles (40 Easy 7×7 / 40 Medium 9×9 / 50 Hard 11×11 / 50 Expert 13×15), 188 pages, paperback, [folder](series/frostwood/07-bridges-of-frostwood/) |
+| 2026-10-15 | Slitherlink (Loop the Loop / Fences) logic puzzles, Frostwood book 8, **hardcover** format slot (Format: hardcover; chosen for its Frostwood fit: lot fences buried by snow with only the numbered posts showing; previously evaluated 2026-09-30 for book 3 and passed over, no dedicated Slitherlink book on Amazon is themed, illustrated or hardcover) | *Fences of Frostwood*, 100 puzzles (20 Easy 6×6 / 30 Medium 7×7 / 30 Hard 8×8 / 20 Expert 10×10), 88 pages, Format: hardcover, $17.99, [folder](series/frostwood/08-fences-of-frostwood/) |
 
 ## Evaluated, not chosen
 | Date | Idea |

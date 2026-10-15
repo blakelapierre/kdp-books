@@ -1,0 +1,21 @@
+{
+ "pages": 88,
+ "spine_in": 0.387176,
+ "width_in": 13.963176,
+ "height_in": 10.418,
+ "bleed_in": 0.591,
+ "barcode_box_in": [
+  4.144,
+  1.351,
+  2.0,
+  1.2
+ ],
+ "spine_text_pt": 12.5,
+ "wrap_in": 0.591,
+ "hinge_in": 0.394,
+ "board_in": [
+  6.197,
+  9.236
+ ],
+ "kind": "hardcover case laminate"
+}
