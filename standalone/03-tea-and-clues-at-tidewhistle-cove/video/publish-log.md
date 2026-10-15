@@ -188,3 +188,6 @@ Public: P1 qjMVA44o0Dw (Related→P2 rsm-UrSkQ7o), P2 rsm-UrSkQ7o, wide ksYSBQo6
 - Case 10 P2 https://www.tiktok.com/@shortmysterycases/video/7696672260781853982
 - Case 11 P1 https://www.tiktok.com/@shortmysterycases/video/7696672323977432350
 - Case 11 P2 https://www.tiktok.com/@shortmysterycases/video/7696672484594175263 (under review / Only me at post time)
+
+### Colour copy Cases 16–17 (2026-10-14 ~6:16 PM PT)
+Cases 16 (The Lighthouse Path) and 17 (The Talking Parrot) detailed colour renders copied from streambox (md5 match, Part 1 frames OK: hook opening, colour characters, question bar). Case 18 rendering; 19 queued. Browser reposts skipped this run (within 15 min of 6:39 PM go-public). Next live colour reposts still Cases 12–15.

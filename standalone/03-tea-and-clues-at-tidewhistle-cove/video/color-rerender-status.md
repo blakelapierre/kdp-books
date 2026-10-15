@@ -8,8 +8,8 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 14 4:40 PM PT. Cases 10–11 colour reposted to YouTube + TikTok (~4:27–4:39 PM). Cases 14–15 copied earlier this run.
-Case 16 still rendering on streambox (~60 min/case); 17–19 queued. Next live reposts: Cases 12–15 (copied, awaiting upload; max 2/run).
+Updated Oct 14 6:16 PM PT. Cases 16–17 colour copied (md5 + Part 1 frames OK). Case 18 rendering on streambox; 19 queued.
+Skipped browser reposts this run (within 15 min of 6:39 PM go-public). Next live reposts: Cases 12–15 (copied, awaiting upload; max 2/run).
 Cases 25–30 remain swapped for go-public.
 
 | Case | Built (redrawn + stills OK) | Queued | Rendered | Copied | Uploaded | ETA (PT) |
@@ -31,9 +31,9 @@ Cases 25–30 remain swapped for go-public.
 | 13 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
 | 14 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 | 15 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
-| 16 | yes | yes | rendering | no | no | ~4:50 PM |
-| 17 | yes | yes | no | no | no | ~5:50 PM |
-| 18 | yes | yes | no | no | no | ~6:50 PM |
-| 19 | yes | yes | no | no | no | ~7:50 PM |
+| 16 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
+| 17 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
+| 18 | yes | yes | rendering | no | no | ~7:00 PM |
+| 19 | yes | yes | no | no | no | ~8:00 PM |
 
 Case 3 B&W copy: skipped (Case 3 already has a colour version).
