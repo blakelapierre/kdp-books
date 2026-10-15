@@ -234,3 +234,11 @@ Public: P1 nmYsUPuWU-k (Related→P2 gGWqd5trLOo), P2 gGWqd5trLOo, wide XrApPXOo
 - Case 14 P2 https://www.tiktok.com/@shortmysterycases/video/7696763617408011550
 - Case 15 P1 https://www.tiktok.com/@shortmysterycases/video/7696763739307068703 (under review / Only me at post time)
 - Case 15 P2 https://www.tiktok.com/@shortmysterycases/video/7696763803131743519 (under review / Only me at post time)
+
+## Case 28 YouTube (2026-10-15 ~12:50 AM PT, colour render)
+Public: P1 NkIxYwwISTk (Related→P2 b60uQR9xgTY), P2 b60uQR9xgTY, wide Ae5pNnYEagU. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. Case 27 P2 (GskdJJNXISU) + wide (zun1qAwCLT8) desc updated to "Next case is live: Case 28 Truth and Fib Night — https://www.youtube.com/watch?v=Ae5pNnYEagU". P2 + wide end with "Next case: Case 29, The Sugar Bowl, goes live Thursday at 6:39 AM PT". Case 29 colour MP4s already local.
+
+## Case 28 TikTok (2026-10-15 ~12:56 AM PT)
+AI label on, comments on, Disclose off, Everyone:
+- P1 https://www.tiktok.com/@shortmysterycases/video/7696800043461905695 (Everyone)
+- P2 https://www.tiktok.com/@shortmysterycases/video/7696800292775464222 (under review / Only me at post time)
