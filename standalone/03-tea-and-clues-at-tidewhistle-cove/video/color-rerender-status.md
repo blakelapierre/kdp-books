@@ -8,7 +8,7 @@ case appended to `/home/tidewhistle/color-queue.txt`; unit `tw-color-queue` enco
 `/usr/local/sbin/tw-render --case NN-color --format all --skip-art`. Log: `/home/tidewhistle/color-queue.log`.
 Outputs: `<slug>-color-vertical.mp4`, `<slug>-color-wide.mp4`, `shorts/<slug>-color-short-part1/2.mp4` (B&W kept).
 
-Updated Oct 14 6:16 PM PT. Cases 16–17 colour copied (md5 + Part 1 frames OK). Case 18 rendering on streambox; 19 queued.
+Updated Oct 14 ~8:30 PM PT. Cases 18–19 colour copied (md5 + Part 1 frames OK). Colour queue finished through 19. Cases 12–13 colour reposted on YouTube + TikTok (3 TikToks under review at post time). Next live reposts: Cases 14–17 (copied, awaiting upload; max 2/run). Cases 25–30 remain swapped for go-public.
 Skipped browser reposts this run (within 15 min of 6:39 PM go-public). Next live reposts: Cases 12–15 (copied, awaiting upload; max 2/run).
 Cases 25–30 remain swapped for go-public.
 
@@ -27,13 +27,13 @@ Cases 25–30 remain swapped for go-public.
 | 24 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~2:35–2:38 PM PT (YT b5Z33OGpaKM/oPhkRhzLQWA/LctGelufh0o + TikTok) | done |
 | 10 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~4:27–4:39 PM PT (YT EABoS8W4ddE/eBBpN-kFdMU/1v1ftsj2mho + TikTok) | done |
 | 11 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~4:37–4:39 PM PT (YT qjMVA44o0Dw/rsm-UrSkQ7o/ksYSBQo6A40 + TikTok) | done |
-| 12 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
-| 13 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | no | next runs |
+| 12 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~8:30–8:34 PM PT (YT Oh6n9i7MWfc/CuKkUJGL4bI/jiIthz9c1eY + TikTok) | done |
+| 13 | yes | yes | yes | yes (-color names, size + Part 1 frames OK) | reposted Oct 14 ~8:30–8:34 PM PT (YT jj8YSq97bCU/dklADA7h1Jo/ldJRYcHfXS0 + TikTok) | done |
 | 14 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 | 15 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 | 16 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 | 17 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
-| 18 | yes | yes | rendering | no | no | ~7:00 PM |
-| 19 | yes | yes | no | no | no | ~8:00 PM |
+| 18 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
+| 19 | yes | yes | yes | yes (-color names, md5 + Part 1 frames OK) | no | next runs |
 
 Case 3 B&W copy: skipped (Case 3 already has a colour version).

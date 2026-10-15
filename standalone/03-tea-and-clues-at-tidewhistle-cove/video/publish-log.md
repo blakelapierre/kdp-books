@@ -207,3 +207,18 @@ Public: P1 qjMVA44o0Dw (Related→P2 rsm-UrSkQ7o), P2 rsm-UrSkQ7o, wide ksYSBQo6
 
 ### Colour copy Cases 16–17 (2026-10-14 ~6:16 PM PT)
 Cases 16 (The Lighthouse Path) and 17 (The Talking Parrot) detailed colour renders copied from streambox (md5 match, Part 1 frames OK: hook opening, colour characters, question bar). Case 18 rendering; 19 queued. Browser reposts skipped this run (within 15 min of 6:39 PM go-public). Next live colour reposts still Cases 12–15.
+
+### Colour copy Cases 18–19 (2026-10-14 ~8:10 PM PT)
+Cases 18 (The Moonlit Walk) and 19 (The Ship's Bell) detailed colour renders copied from streambox (md5 match, Part 1 frames OK: hook opening, colour characters, question bar). Colour queue on streambox finished through Case 19 (all queued colour2 cases done). Cases 25–30 remain swapped for go-public.
+
+### Case 12 (Colour) YouTube (2026-10-14 ~8:30 PM PT)
+Public: P1 Oh6n9i7MWfc (Related→P2 CuKkUJGL4bI), P2 CuKkUJGL4bI, wide jiIthz9c1eY. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (rbYMNsiKvc8 / ow8kRZE6uUc / FCddxILBAgA).
+
+### Case 13 (Colour) YouTube (2026-10-14 ~8:30 PM PT)
+Public: P1 jj8YSq97bCU (Related→P2 dklADA7h1Jo), P2 dklADA7h1Jo, wide ldJRYcHfXS0. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. B&W originals left up (akstLV-kkks / iEH9g6QA3aE / EUKfvNe2yc4).
+
+### Cases 12–13 (Colour) TikTok (2026-10-14 ~8:34 PM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + description:
+- Case 12 P1 https://www.tiktok.com/@shortmysterycases/video/7696732469004946718
+- Case 12 P2 https://www.tiktok.com/@shortmysterycases/video/7696732635040615711 (under review / Only me at post time)
+- Case 13 P1 https://www.tiktok.com/@shortmysterycases/video/7696732714057108767 (under review / Only me at post time)
+- Case 13 P2 https://www.tiktok.com/@shortmysterycases/video/7696732809498594590 (under review / Only me at post time)
