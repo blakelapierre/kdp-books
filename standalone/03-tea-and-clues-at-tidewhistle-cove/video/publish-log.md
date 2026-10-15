@@ -277,3 +277,11 @@ Public: P1 vQt0FWlVtZ4 (Related→P2 uXW8iJn5B3M), P2 uXW8iJn5B3M, wide mqj84Fkt
 AI label on, comments on, Disclose off, Everyone:
 - P1 https://www.tiktok.com/@shortmysterycases/video/7696892834900659487 (Everyone)
 - P2 https://www.tiktok.com/@shortmysterycases/video/7696893109476609310 (under review / Only me at post time)
+
+## Case 30 YouTube (2026-10-15 ~12:55 PM PT, colour render, finale)
+Public: P1 chiHRYzNL-o (Related→P2 qejduGBx6CM), P2 qejduGBx6CM, wide QBx5xRBDCv8. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, tags. Case 29 P2 (uXW8iJn5B3M) + wide (mqj84FktFsA) desc updated to "Next case is live: Case 30 The Missing Sign — https://www.youtube.com/watch?v=QBx5xRBDCv8". No next-case teaser (last case in the book). All 30 Tidewhistle Cove cases now public on YouTube.
+
+## Case 30 TikTok (2026-10-15 ~12:57 PM PT)
+AI label on, comments on, Disclose off, Everyone selected (both showed Only me / under review at post time):
+- P1 https://www.tiktok.com/@shortmysterycases/video/7696985913221467423 (under review / Only me at post time)
+- P2 https://www.tiktok.com/@shortmysterycases/video/7696986029412125982 (under review / Only me at post time)
