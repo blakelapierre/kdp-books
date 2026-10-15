@@ -222,3 +222,15 @@ Public: P1 jj8YSq97bCU (Related→P2 dklADA7h1Jo), P2 dklADA7h1Jo, wide ldJRYcHf
 - Case 12 P2 https://www.tiktok.com/@shortmysterycases/video/7696732635040615711 (under review / Only me at post time)
 - Case 13 P1 https://www.tiktok.com/@shortmysterycases/video/7696732714057108767 (under review / Only me at post time)
 - Case 13 P2 https://www.tiktok.com/@shortmysterycases/video/7696732809498594590 (under review / Only me at post time)
+
+### Case 14 (Colour) YouTube (2026-10-14 ~10:25 PM PT)
+Public: P1 UA5h4OHXwr0 (Related→P2 -s3fyXDcNCI), P2 -s3fyXDcNCI, wide WUlGa5xEHHw. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, same tags. B&W originals left up (bsBB1Y2A5Wc / hQAQVdPmxHg / ie5UT4iW3Bg).
+
+### Case 15 (Colour) YouTube (2026-10-14 ~10:30 PM PT)
+Public: P1 nmYsUPuWU-k (Related→P2 gGWqd5trLOo), P2 gGWqd5trLOo, wide XrApPXOole4. Same descriptions, titles + " (Colour)". AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries, same tags. B&W originals left up (CN5zab5E45o / 0z1vHstDNXs / IzLVGBap1C8).
+
+### Cases 14–15 (Colour) TikTok (2026-10-14 ~10:33 PM PT), AI label on, comments on, Everyone; caption = title + " (Colour)" + short description:
+- Case 14 P1 https://www.tiktok.com/@shortmysterycases/video/7696763525271719199
+- Case 14 P2 https://www.tiktok.com/@shortmysterycases/video/7696763617408011550
+- Case 15 P1 https://www.tiktok.com/@shortmysterycases/video/7696763739307068703 (under review / Only me at post time)
+- Case 15 P2 https://www.tiktok.com/@shortmysterycases/video/7696763803131743519 (under review / Only me at post time)
