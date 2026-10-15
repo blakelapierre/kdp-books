@@ -310,3 +310,11 @@ Part 2 / Part 1 (public views, meaningful P1): C1 116/112 = 104%; C2 98/105 = 93
 
 Notes: nearly all TikTok views sit in Cases 1–4 plus two early “mystery case” test posts (~1003 of 1130). Cases 5+ barely moved. Tomorrow’s check can start day-over-day deltas from this baseline.
 
+
+### Case 21 tight-opening A/B check (2026-10-15 ~9:30 AM PT, YouTube Studio lifetime)
+
+- C19 P1 xzMwNiFgrMA (standard opening): 0 views, no retention/stayed-to-watch data.
+- C20 P1 WaCenh2KSDs (standard opening): 13 views, 3 engaged, stayed to watch 18.8% / swiped 81.2%, avg view duration 0:53, Shorts feed 92.3%; retention curve "not enough information".
+- C21 P1 tyaWON7zG98 (tight opening): 0 views, no retention data.
+- Part 1 to Part 2 clicks: Studio shows not enough traffic data for all three. TikTok P1s for C19–C21 all at 0 public views.
+- Result: inconclusive. YouTube never served the tight-opening Part 1, so there's nothing to compare.
