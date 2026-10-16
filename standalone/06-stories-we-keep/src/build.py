@@ -28,8 +28,11 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 ILL = os.path.join(ROOT, "illustrations")
 OUT = os.path.join(ROOT, "standalone-06-stories-we-keep-interior.pdf")
 W, H = 6 * inch, 9 * inch
-# mirrored margins: inside 0.75, outside 0.55, top 0.70, bottom 0.75
-MI, MO, MT, MB = 0.75 * inch, 0.55 * inch, 0.70 * inch, 0.75 * inch
+# mirrored margins (KDP safe >= 0.5in everywhere): inside 0.75, outside 0.60,
+# top 0.85, bottom 0.95; running header/folio sit inside the 0.5in safe area.
+MI, MO, MT, MB = 0.75 * inch, 0.60 * inch, 0.85 * inch, 0.95 * inch
+HEADER_Y = 9 * inch - 0.64 * inch
+FOLIO_Y = 0.62 * inch
 
 def margins(page_num):
     """Odd pages = right-hand = outside on the right."""
@@ -65,16 +68,16 @@ class Book:
     def folio(s):
         s.c.setFillColor(colors.HexColor("#666666"))
         s.c.setFont("Plex", 8)
-        s.c.drawCentredString(W / 2, 0.40 * inch, str(s.page))
+        s.c.drawCentredString(W / 2, FOLIO_Y, str(s.page))
 
     def header(s, text):
         s.c.setFillColor(colors.HexColor("#888888"))
         s.c.setFont("PlayfairSC", 7)
         left, right = margins(s.page)
         if s.page % 2 == 1:
-            s.c.drawRightString(W - right, H - 0.42 * inch, text.upper())
+            s.c.drawRightString(W - right, HEADER_Y, text.upper())
         else:
-            s.c.drawString(left, H - 0.42 * inch, text.upper())
+            s.c.drawString(left, HEADER_Y, text.upper())
 
     def content_box(s):
         left, right = margins(s.page)
@@ -266,9 +269,18 @@ class Book:
         s.new(); s.folio(); s.header(sec["name"])
         left, _, tw, _ = s.content_box()
         y = H - MT - 6
-        s.c.setFont("PlayfairSC-B", 14); s.c.setFillColor(colors.black)
-        s.c.drawString(left, y, title)
-        y -= 18
+        s.c.setFillColor(colors.black)
+        fs = 14
+        while fs > 11 and s.c.stringWidth(title, "PlayfairSC-B", fs) > tw:
+            fs -= 0.5
+        if s.c.stringWidth(title, "PlayfairSC-B", fs) <= tw:
+            s.c.setFont("PlayfairSC-B", fs)
+            s.c.drawString(left, y, title)
+            y -= 18
+        else:
+            # wrap long titles inside the text block
+            st = ParagraphStyle("pt", fontName="PlayfairSC-B", fontSize=fs, leading=fs + 3)
+            y = s.para(title, st, left, y + fs, tw) - 6
         y = s.para(hint, s.prompt_h, left, y, tw) - 14
         # writing lines fill remaining space
         line_bottom = MB + 0.35 * inch

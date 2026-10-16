@@ -35,6 +35,7 @@ The repo is private, so be signed in to GitHub in your phone's browser. Tap *dow
 2. Fill in **Hardcover Details** with the copy-paste blocks in section 3.
 3. **Hardcover Content**: ISBN → **Get a free KDP ISBN**; Publication date → leave blank; Print options → **Black & white interior with white paper**, trim **6 × 9 in**, **No bleed**, cover finish **Matte**.
 4. **Manuscript** → upload `interior-standalone-06-stories-we-keep.pdf`.
+   - Interior margins (fixed after KDP rejection): inside 0.75 in (mirrored), outside 0.60 in, top 0.85 in, bottom 0.95 in; running headers and page numbers sit inside the 0.5 in safe area. Checked with pdftoppm: nothing within 0.5 in of any edge on all 102 pages.
 5. **Book cover** → **Upload a cover you already have** → upload `cover-standalone-06-stories-we-keep.pdf` (this is the **hardcover** wrap with hinge and wrap margin — not a paperback cover).
 6. Answer the **AI-generated content** questions (section 4).
 7. **Launch Previewer** → check every item in section 5 → **Approve** → **Save and Continue**.
