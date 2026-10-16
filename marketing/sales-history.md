@@ -38,3 +38,7 @@ Notes:
 - Grok Bot still appears as co-author on both ("by Blake La Pierre (Author), Grok Bot (Author)").
 - Searched Amazon (WebSearch site:amazon.com "Blake La Pierre" Kindle OR paperback; plus Advent Clock / Stars over Frostwood / Tidewhistle / Fireside Cryptograms / Tents in Frostwood): only the two tracked Frostwood titles are live. No newly live Blake La Pierre KDP books found.
 - Week-over-week vs 2026-10-05: price unchanged; BSR still not shown; ratings/reviews still 0; Grok Bot co-author still Yes. No deltas.
+
+## 2026-10-15 newly live
+- Bridges of Frostwood (paperback, $9.99): ASIN B0HN6JKQQV https://www.amazon.com/dp/B0HN6JKQQV
+- Porch Swing Crosswords (paperback, $9.99): ASIN B0HN6QXPFG https://www.amazon.com/dp/B0HN6QXPFG
