@@ -25,6 +25,24 @@ These only use facts that are true for every book. **Don't add credentials, awar
 
 ---
 
+## Quick add: 3 new books (Oct 2026)
+
+Do this on your phone in a couple of minutes:
+
+1. Go to **author.amazon.com** and sign in.
+2. Tap **Books** → **Add more books**.
+3. Search each ASIN, tap the cover, and confirm **This is my book**:
+   - [ ] Bridges of Frostwood (paperback): **B0HN6JKQQV**
+   - [ ] Porch Swing Crosswords (paperback): **B0HN6QXPFG**
+   - [ ] Stories We Keep (hardcover): **B0HN6TSN7T**
+4. A newly live book can take 1–3 days to show up in search. If it doesn't appear yet, try again tomorrow.
+5. Optional: swap in the refreshed bio below.
+
+### Refreshed bio (about 80 words)
+> Blake La Pierre is an independent puzzle maker who creates cozy, gentle books for adults and teens. The Frostwood Puzzle Books are set in a snowy mountain village, most recently *Bridges of Frostwood*. *Porch Swing Crosswords* brings relaxed, front-porch crosswords, and *Stories We Keep* is a guided keepsake journal for capturing a loved one's stories. Every puzzle is checked by a computer program to have exactly one solution. Just a pencil, a warm drink and a fair challenge.
+
+---
+
 ## Claim the books in Author Central
 
 Source: KDP Help, *Author Central*, https://kdp.amazon.com/en_US/help/topic/G200644310
