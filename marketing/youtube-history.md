@@ -318,3 +318,115 @@ Notes: nearly all TikTok views sit in Cases 1–4 plus two early “mystery case
 - C21 P1 tyaWON7zG98 (tight opening): 0 views, no retention data.
 - Part 1 to Part 2 clicks: Studio shows not enough traffic data for all three. TikTok P1s for C19–C21 all at 0 public views.
 - Result: inconclusive. YouTube never served the tight-opening Part 1, so there's nothing to compare.
+
+## 2026-10-15, ~6:45 PM PT (YouTube Studio content lists + public yt-dlp; Analytics broken)
+
+Studio login was active on channel "Blake La Pierre" (UC_csfIopFgOBHuwSoCx41tg, Tidewhistle uploads). Subscribers: **30** (+1 in last 28 days per Studio). Studio Analytics overview errored ("Oops, something went wrong") — no retention, AVD, traffic sources, or Part1→Part2 end-screen data. Comments inbox: no new Tidewhistle comments (only older personal-channel comments). All Tidewhistle Shorts and wides are Public; none private/scheduled/processing. Dashboard last 28 days: 810 views, 10.2 watch hours. Last 48h top: Case 25 answer 32, Case 24 answer 18, "Which way did it blow?" 14. Tidewhistle Shorts: 94 items, **729** total views (**+37** vs Oct 14's 692). Wide Tidewhistle: 42 items, **32** total views.
+
+| Short | ID | Views (change since Oct 14) |
+|---|---|---|
+| C1 original P1 | QWxklwPFnZ4 | 82 (0) |
+| C1 original P2 | HQ2L3e8GbbQ | 61 (0) |
+| C1 colour hook P1 | DUNfvE7Zipg | 4 (0) |
+| C1 colour P2 | wIpgU5xI1mg | 1 (0) |
+| C2 P1 | 6K6CEsxISc0 | 45 (0) |
+| C2 P2 | st_ReMOQIII | 4 (0) |
+| C3 colour P1 | EwiaRrvmCL0 | 4 (0) |
+| C3 colour P2 | tj9uhfQU-S0 | 72 (0) |
+| C3 B&W P1 | wNL8OlpAFFs | 6 (0) |
+| C3 B&W P2 | 4TjYI9ExL_Y | 3 (0) |
+| C4 P1 | 0Kb7UGUHprg | 2 (0) |
+| C4 P2 | Ac8j-2hRtxs | 4 (0) |
+| C5 P1 | 5zHVdIagzU4 | 33 (+1) |
+| C5 P2 | 49zUT21OQ98 | 6 (0) |
+| C6 P1 / P2 | SEDoTk2qjcw / xlILuwuq5oY | not shown / 2 (0) |
+| C7 P1 / P2 | -E-YL5j-424 / 3ZB_lLqt52s | not shown / 1 (0) |
+| C8 P1 | l_ey2zmsF1U | 34 (0) |
+| C8 P2 | Jj77n8Mx0Ks | 73 (0) |
+| C9 P1 | bh_ER-hsVjI | 87 (0) |
+| C9 P2 | VIYaiul5XwA | 23 (0) |
+| C10 P1 / P2 | -i46lR20EXE / SNAQ_HOcVgY | not shown / 15 (0) |
+| C11 P1 / P2 | 4D1AYtOymL0 / S-avVUkGUdQ | not shown / 1 (0) |
+| C12 P1 / P2 | rbYMNsiKvc8 / ow8kRZE6uUc | 1 (0) / 5 (0) |
+| C13 P1 / P2 | akstLV-kkks / iEH9g6QA3aE | 1 (0) / not shown |
+| C14 P1 / P2 | bsBB1Y2A5Wc / hQAQVdPmxHg | not shown / 3 (0) |
+| C15 P1 / P2 | CN5zab5E45o / 0z1vHstDNXs | not shown / 1 (0) |
+| C16 P1 / P2 | Vja8T3-8JJQ / O_I_3_ngaZE | not shown / 2 (0) |
+| C17 P1 / P2 | kS6yl9nDOv0 / WBvUKGILi3Q | not shown / 3 (0) |
+| C18 P1 / P2 | oeebtkfrFf4 / SGAA-aAbx4M | not shown / not shown |
+| C19 P1 / P2 | xzMwNiFgrMA / TrteDGGDlvE | not shown / not shown |
+| C20 P1 | WaCenh2KSDs | 13 (0) |
+| C20 P2 | xm-fwRzABA4 | 20 (0) |
+| C21 P1 / P2 | tyaWON7zG98 / kANb06o0iuA | not shown / 7 (+1) |
+| C22 P1 / P2 | 71KtE2mZmp8 / hwQ8Q_2xIQI | not shown / not shown |
+| C23 P1 / P2 | 9uSsF4kz1Vs / MQVfBu970QI | not shown / not shown |
+| C24 P1 | EOy1h6LwwiM | 14 (-1) |
+| C24 P2 | dejOGXMfMJ8 | 18 (0) |
+| C25 P1 (colour) | g483plcavio | 5 (+1) |
+| C25 P2 (colour) | oyoGJFzz8rg | 32 (0) |
+| C26 P1 / P2 (colour) | ebd9l8-luGM / zTs28hoBsfE | 1 (+1) / 1 (+1) |
+| C27 P1 | M0G8Ze1nBkA | 5 (+5) |
+| C27 P2 | GskdJJNXISU | 12 (+11) |
+| C28 P1 / P2 | NkIxYwwISTk / b60uQR9xgTY | not shown / not shown (new) |
+| C29 P1 / P2 | vQt0FWlVtZ4 / uXW8iJn5B3M | not shown / not shown (new) |
+| C30 P1 / P2 | chiHRYzNL-o / qejduGBx6CM | not shown / not shown (new) |
+| C10 (Colour) P1 / P2 | EABoS8W4ddE / eBBpN-kFdMU | 1 (+1) / not shown |
+| C11 (Colour) P1 / P2 | qjMVA44o0Dw / rsm-UrSkQ7o | not shown / not shown |
+| C12 (Colour) P1 / P2 | Oh6n9i7MWfc / CuKkUJGL4bI | not shown / 13 (new) |
+| C13 (Colour) P1 / P2 | jj8YSq97bCU / dklADA7h1Jo | not shown / not shown (new) |
+| C14 (Colour) P1 / P2 | UA5h4OHXwr0 / -s3fyXDcNCI | not shown / not shown (new) |
+| C15 (Colour) P1 / P2 | nmYsUPuWU-k / gGWqd5trLOo | 1 / not shown (new) |
+| C16 (Colour) P1 / P2 | OI1zMmTZ9_Y / 90zpFDk3jFE | not shown / not shown (new) |
+| C17 (Colour) P1 / P2 | -EbcZ0Qilf4 / Vzlt3LfcW7w | not shown / not shown (new) |
+| C18 (Colour) P1 / P2 | mkAZj3vS_Bg / npl8dk_E9HI | not shown / not shown (new) |
+| C19 (Colour) P1 / P2 | ps2FBD_XYMA / P8iwV94oDR0 | not shown / 1 (new) |
+| C20 (Colour) P1 / P2 | 2HzQbhzdJ9w / Sn3a6eijSms | not shown / 1 (+1) |
+| C21 (Colour) P1 / P2 | fwFwjG50pNU / 5BeGitjjtD0 | not shown / not shown |
+| C22 (Colour) P1 / P2 | v0WwIe3-TyU / FxOGkwy4t7c | not shown / not shown |
+| C23 (Colour) P1 / P2 | S1j-Ii2bHug / fD1kWZTGrsE | not shown / not shown |
+| C24 (Colour) P1 / P2 | b5Z33OGpaKM / oPhkRhzLQWA | 4 (0) / 1 (0) |
+
+"Not shown" means the content list gave no count (usually 0 views). Cases 28–30 went public Oct 15 (day 1, all 0). Colour remakes of Cases 12–19 went public since the Oct 14 check (C12 colour P2 CuKkUJGL4bI 13; C15 colour P1 and C19 colour P2 1 each; rest not shown). Per-video numbers from Studio Shorts TSV (matched public yt-dlp total 729).
+
+Wide videos: movers — C4 10A3rbVc1o8 1 (+1), C13 colour ldJRYcHfXS0 2 (new), C16 colour LR2fk0blt6w 1 (new), C17 colour hsTfW-Q20cQ 1 (new), C27 zun1qAwCLT8 2 (new); C28 Ae5pNnYEagU / C29 mqj84FktFsA / C30 QBx5xRBDCv8 0 each (new). Unchanged with views: C5 2, C6 1, C7 6, C8 6, C11 B&W 1, C20 B&W 4, C21 B&W 2, C24 B&W 1, C25 2; other colour/B&W wides still 0. Total wide views: 32 across 42 uploads.
+
+Part 2 / Part 1 (views, P1 ≥ 10 where noted): C1 original 61/82 = 74%; C2 4/45 = 9%; C5 6/33 = 18%; C8 73/34 = 215%; C9 23/87 = 26%; C20 20/13 = 154%, C24 18/14 = 129%, C25 32/5 (Part 2 ahead in C8/C20/C24/C25, so the feed is serving Part 2 directly).
+
+Notes: total across all Tidewhistle Shorts went from 692 to 729 (+37). Most of that is Case 12 colour P2 (+13, new) and Case 27 (+16 across P1/P2). Cases 28–30 are at 0 on day 1. Case 25 P2 is still the standout at 32. Colour remakes are mostly flat except C12 P2. All 30 cases are now public.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+Signed in as @shortmysterycases. Studio shows **92** posts, 0 drafts. Profile: **1** follower, **4** likes, 41 following.
+
+**Last 7 days (Overview; chart Oct 8–14, today's partial day not included):** video views **654** (+152, +30.3% vs prior period), profile views **19** (+10, +111.1%), likes **6** (+3), comments 0, shares **1** (+1). Traffic: For You 97.1%, Personal profile 1.6%, Search 1.3%. Daily peak ~500 views on Oct 12. Followers last 7 days: net +1 (gain Oct 13–14); all-time still 1.
+
+**Public day-over-day (yt-dlp vs Oct 14 baseline):** total views across all posts **1135** (**+5** vs 1130). Posts with any views: 23 / 92. Still dominated by Cases 1–4 + two early test posts (~1000 of 1135).
+
+| Post | ID | Views (change since Oct 14) |
+|---|---|---|
+| C1 colour P1 | 7693842926996163870 | 112 (0) |
+| C1 colour P2 | 7693843071456398623 | 116 (0) |
+| Early test A | 7693892503820422430 | 131 (0) |
+| Early test B | 7693892659894635806 | 168 (0) |
+| C2 P1 | 7695688107861052703 | 105 (0) |
+| C2 P2 | 7695688429962595615 | 99 (+1) |
+| C3 P1 | 7695697376438127902 | 103 (0) |
+| C3 P2 | 7695698068401900830 | 79 (0) |
+| C4 P1 | 7695698066954898718 | 100 (0) |
+| C4 P2 | 7695698379589913887 | 91 (+1) |
+| C17 colour P1 | 7696824281434426654 | 1 (+1) |
+| C21 colour P2 | 7696456448301223198 | 6 (0) |
+| C22 colour P2 | 7696483505609411870 | 1 (0) |
+| C24 colour P2 | 7696640922754354462 | 2 (0) |
+| C26 P2 | 7696524218678136095 | 1 (0) |
+| C29 P2 | 7696893109476609310 | 1 (+1) |
+| C25–C28 / C30 (all parts) | see publish-log | 0 each |
+| Colour remakes C10–C16, C18–C20, C23 (all parts) | see publish-log | 0 each (C17 P1 1 above) |
+
+Newest Studio Content counts (Everyone; views/likes/comments): C30 P1/P2 0/0; C29 P1 0, P2 1; C28 P1/P2 0; C27–C25 all 0 except C26 P2 1. Colour remakes C10–C24: mostly 0; C17 P1 1, C21 P2 6, C22 P2 1, C24 P2 2.
+
+**Review / Only me:** **0** stuck. Every post checked (≈90 of 92, Oct 15 back to Oct 7) shows Everyone; no under-review labels. C28–C30 P2s and earlier colour P2s that were Only me / under review at post time have cleared.
+
+Part 2 / Part 1 (public views, P1 ≥ 10): C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 91/100 = 91%. Carry-through on early TikTok cases stays strong vs YouTube.
+
+Notes: TikTok day-over-day nearly flat (+5 public views) despite +24 videos since Oct 14 and a strong last-7-day Studio window (+152 views, almost all from the Oct 12 spike). Cases 5+ and colour remakes still barely distribute. All 30 cases are now on TikTok; Case 30 was the finale (no further 6h go-public posts).
