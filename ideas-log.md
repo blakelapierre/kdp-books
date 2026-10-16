@@ -27,9 +27,14 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-13 | Hashi / Bridges (Hashiwokakero) logic puzzles, Frostwood book 7, **paperback** format slot (chosen for its Frostwood fit: footbridges across frozen ponds; dedicated Hashi books have few reviews) | *Bridges of Frostwood*, 180 puzzles (40 Easy 7×7 / 40 Medium 9×9 / 50 Hard 11×11 / 50 Expert 13×15), 188 pages, paperback, [folder](series/frostwood/07-bridges-of-frostwood/) |
 | 2026-10-15 | Slitherlink (Loop the Loop / Fences) logic puzzles, Frostwood book 8, **hardcover** format slot (Format: hardcover; chosen for its Frostwood fit: lot fences buried by snow with only the numbered posts showing; previously evaluated 2026-09-30 for book 3 and passed over, no dedicated Slitherlink book on Amazon is themed, illustrated or hardcover) | *Fences of Frostwood*, 100 puzzles (20 Easy 6×6 / 30 Medium 7×7 / 30 Hard 8×8 / 20 Expert 10×10), 88 pages, Format: hardcover, $17.99, [folder](series/frostwood/08-fences-of-frostwood/) |
 
+| 2026-10-16 | Adult/cozy three-clue What-Am-I Kindle ebook (candlelit cottage framing, audio-first) | *Three Clues by Candlelight*, 150 riddles (10 rounds × 15), 14,669 words, Format: Kindle ebook / audio-first, [folder](standalone/07-three-clues-by-candlelight/) |
+
 ## Evaluated, not chosen
 | Date | Idea |
 |------|------|
+| 2026-10-16 | Another seaside/tea-room mini-mystery ebook (too close to Tidewhistle; ideas-log already says that would be a sequel) |
+| 2026-10-16 | Generic audio trivia rounds (previously rejected 2026-10-03; still thin) |
+| 2026-10-16 | Lateral-thinking situation puzzles (previously rejected 2026-10-03; classic forms often involve deaths) |
 | 2026-09-30 | Large-print winter word search for seniors |
 | 2026-09-30 | Large-print murder mystery for seniors (also conflicts with the no-violence preference) |
 | 2026-09-30 | Dry January journal |
@@ -88,6 +93,8 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 *Porch Swing Crosswords* is a full dedicated crossword book: 80 freeform (criss-cross) themed crosswords, 20 per season (Spring and Summer Easy, Autumn and Winter Medium), plain clues, a word bank per puzzle, and no answer repeated in the book. *The Advent Clock*'s fill-in door is a different puzzle. Another themed crossword book would be a sequel (e.g. a different setting or Medium-to-Hard), not a new idea.
 
 *Stories We Keep* is a guided memory keepsake journal (hardcover): eight life-story chapters with writing prompts, family tree, timeline, letter pages and extra lined pages — not a puzzle book. Another life-story journal aimed at a single role (Mom-only / Grandma-only) would be a sequel, not a new idea.
+
+*Three Clues by Candlelight* (standalone 07) is an audio-first three-clue What-Am-I riddle ebook: 10 cozy cottage themes × 15 riddles, answer after every pause. Different from Frostwood 05 (mixed Frostwood-branded riddles + text logic) and from Tidewhistle (mini-mysteries). Another three-clue What-Am-I with the same cottage framing would be a sequel, not a new idea.
 
 ## How to add entries
 Append a new row with the date whenever an idea is built or evaluated. When a book is built, also add it to the table in README.md. If it is part of a series, add it to that series' README too.

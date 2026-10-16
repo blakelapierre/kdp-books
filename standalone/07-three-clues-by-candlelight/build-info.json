@@ -1,0 +1,23 @@
+{
+  "title": "Three Clues by Candlelight",
+  "subtitle": "150 Cozy What-Am-I Riddles in Three Clues Each: Kitchen, Garden, Bookstore and Fireside Guessing for Adults and Families, with the Answer After Every Pause",
+  "author": "Blake La Pierre",
+  "format": "Kindle ebook (EPUB 3, reflowable, text only) + DOCX for Kindle Create",
+  "audio_first": true,
+  "riddles": 150,
+  "rounds": 10,
+  "words": 14669,
+  "epub_bytes": 161391,
+  "docx_bytes": 63003,
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "delivery_fee_usd_est": 0.02,
+  "royalty_usd_est": 2.77,
+  "royalty_math": "0.70 x 3.99 - 0.02 = 2.77",
+  "files": {
+    "epub": "standalone-07-three-clues-by-candlelight.epub",
+    "docx": "standalone-07-three-clues-by-candlelight.docx",
+    "cover": "standalone-07-three-clues-by-candlelight-cover.jpg"
+  }
+}

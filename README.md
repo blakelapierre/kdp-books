@@ -23,6 +23,7 @@ standalone/                  # books that are not part of a series (one folder e
   04-logic-on-lantern-lane/
   05-porch-swing-crosswords/
   06-stories-we-keep/
+  07-three-clues-by-candlelight/
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
@@ -58,6 +59,7 @@ Current books:
 4. `04-logic-on-lantern-lane`: built, not published
 5. `05-porch-swing-crosswords`: built paperback, not published
 6. `06-stories-we-keep`: built hardcover, not published
+7. `07-three-clues-by-candlelight`: built Kindle ebook (audio-first), not published
 
 ## Books
 
@@ -83,6 +85,7 @@ Current books:
 | *Logic on Lantern Lane*: 120 Cozy Logic Grid Puzzles for Adults (Easy to Expert) | Logic grid (Einstein / zebra) puzzles with story clues | Draft, print-ready. Not yet published or submitted to KDP | 194 | $9.99 | $2.67 | [04-logic-on-lantern-lane/README.md](standalone/04-logic-on-lantern-lane/README.md) |
 | *Porch Swing Crosswords*: 80 Cozy Themed Crossword Puzzles for Adults (Easy to Medium) | Freeform themed crosswords with plain clues and word banks | Draft, print-ready paperback. Not yet published or submitted to KDP | 196 | $9.99 | $2.64 | [05-porch-swing-crosswords/README.md](standalone/05-porch-swing-crosswords/README.md) |
 | *Stories We Keep*: A Guided Memory Keepsake for the Ones We Love (hardcover) | Guided life-story prompts + family tree, timeline, letters | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 102 | $17.99 | $3.99 | [06-stories-we-keep/README.md](standalone/06-stories-we-keep/README.md) |
+| *Three Clues by Candlelight*: 150 Cozy What-Am-I Riddles in Three Clues Each (Kindle, audio-first) | Three-clue What-Am-I riddles (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 14,669 words) | $3.99 | $2.77† | [07-three-clues-by-candlelight/README.md](standalone/07-three-clues-by-candlelight/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
