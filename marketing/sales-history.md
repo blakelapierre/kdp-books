@@ -42,3 +42,4 @@ Notes:
 ## 2026-10-15 newly live
 - Bridges of Frostwood (paperback, $9.99): ASIN B0HN6JKQQV https://www.amazon.com/dp/B0HN6JKQQV
 - Porch Swing Crosswords (paperback, $9.99): ASIN B0HN6QXPFG https://www.amazon.com/dp/B0HN6QXPFG
+- Stories We Keep (hardcover, $17.99): ASIN B0HN6TSN7T https://www.amazon.com/dp/B0HN6TSN7T
