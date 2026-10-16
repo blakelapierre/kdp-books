@@ -2,6 +2,8 @@
 
 Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinterest/). They're 1000 × 1500 px (2:3) and rebuilt with `marketing/src/build_pins.py`.
 
+> **New (Oct 2026):** pins for Bridges of Frostwood, Porch Swing Crosswords and Stories We Keep are in [pinterest/pins.md](pinterest/pins.md).
+
 **Links**
 - **Pin 1** (cover pin) links to the book's **Amazon page**.
 - **Pin 2** (puzzle pin) links to the **free printable sample**.
