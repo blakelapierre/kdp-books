@@ -430,3 +430,50 @@ Newest Studio Content counts (Everyone; views/likes/comments): C30 P1/P2 0/0; C2
 Part 2 / Part 1 (public views, P1 ≥ 10): C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 91/100 = 91%. Carry-through on early TikTok cases stays strong vs YouTube.
 
 Notes: TikTok day-over-day nearly flat (+5 public views) despite +24 videos since Oct 14 and a strong last-7-day Studio window (+152 views, almost all from the Oct 12 spike). Cases 5+ and colour remakes still barely distribute. All 30 cases are now on TikTok; Case 30 was the finale (no further 6h go-public posts).
+
+## 2026-10-16, ~6:45 PM PT (YouTube Studio Analytics + content lists, public yt-dlp)
+
+Studio Analytics loaded this time (no "Oops" error). Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 18 – Oct 15): 862 views, 11.5 watch hours. Realtime last 48h: 86 views; top: Case 12 colour answer (CuKkUJGL4bI) 15, "Programming Music" 11, Case 27 answer (GskdJJNXISU) 11.
+
+Shorts (last 28 days, channel-wide Shorts filter): 754 views, 163 engaged views, **stayed to watch 18.5%** / swiped away 81.5%. Traffic: Shorts feed 81.6%, YouTube search 7.0%, channel pages 5.6%, other YouTube features 3.2%, browse 1.2%, other 1.5%. Part 1 → Part 2 link-click data: not shown. Per-video avg view duration (28-day top list): C9 P1 0:28 (24.3%), C1 P1 0:54 (35.9%), C8 P2 0:28 (34.2%), C3 colour P2 0:17 (19.7%), C1 P2 0:09 (12.3%), C2 P1 0:35 (27.3%), C8 P1 0:36 (34.8%), C5 P1 0:15 (13.9%), C25 P2 0:24 (27.5%).
+
+Comments: no new comments on any Tidewhistle upload (all show 0). All 112 Shorts on the channel are Public.
+
+**Tidewhistle Shorts (same 94 IDs as Oct 15): 738 total views (+9 vs 729).** Movers since Oct 15:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C22 P1 | 71KtE2mZmp8 | 2 (+2) |
+| C12 colour P2 | CuKkUJGL4bI | 14 (+1) |
+| C24 P2 | dejOGXMfMJ8 | 19 (+1) |
+| C24 colour P2 | oPhkRhzLQWA | 2 (+1) |
+| C27 P1 | M0G8Ze1nBkA | 6 (+1) |
+| C23 P2 | MQVfBu970QI | 1 (+1) |
+| C11 colour P2 | rsm-UrSkQ7o | 1 (+1) |
+| C16 colour P1 | OI1zMmTZ9_Y | 1 (+1) |
+| C17 colour P2 | Vzlt3LfcW7w | 1 (+1) |
+| C26 P2 | zTs28hoBsfE | 0 (−1, public count) |
+
+Everything else unchanged from the Oct 15 table. Biggest Shorts still: C9 P1 87, C1 P1 82, C8 P2 73, C3 colour P2 72, C1 P2 61, C2 P1 45, C8 P1 34, C5 P1 33, C25 P2 32.
+
+New book promo Shorts (posted Oct 15–16): Bridges of Frostwood "Can you connect every island?" p2eXldl7RL4 **6**; Advent Clock "24 doors" ATac1OtVZfU 4; "Who took the cocoa tin?" QnSerK4PriI 2; Porch Swing Crosswords XZ-AnE6LYfw 0; Stories We Keep uqukExep5TQ 0 (first 18h).
+
+Wide Tidewhistle videos: **37** total (+5). Movers: C16 colour LR2fk0blt6w 3 (+2), C9 7vq9piSj-ew 2 (+2), C13 colour ldJRYcHfXS0 3 (+1).
+
+Part 2 / Part 1 (views): C1 61/82 = 74%; C2 4/45 = 9%; C5 6/33 = 18%; C9 23/87 = 26%; Part 2 ahead in C8 73/34, C20 20/13, C24 19/14, C25 32/5, C27 12/6 (feed serving answers directly).
+
+Notes: daily growth slowed to +9 on the Tidewhistle Shorts. Case 12 colour answer and Case 27 answer are carrying the last 48 hours.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**97** posts (92 + 5 book promo posts on Oct 15–16), 0 drafts. Followers **1** (net +1 in 7 days).
+
+**Last 7 days (chart Oct 9–15):** video views **621** (+82, +15.2%), profile views **12** (−4), likes **4** (−1), comments 0, shares **1** (+1). Traffic: For You 96.4%, Search 1.9%, Personal profile 1.6%. Search queries: "whodunit puzzle" 25%, "Theif finder mystery" 8.3%, "whostolemycake1" 8.3%, "pick 30 cases" 8.3%, "6" 8.3%.
+
+**Public day-over-day (yt-dlp):** total views across all posts **1139** (**+4** vs 1135). Changes: C4 P1 101 (+1), C4 P2 92 (+1), C16 colour P1 7696823840214617375 1 (+1), Bridges promo 7697165146703088927 1 (new). Other book promos (Stories 7697166564273016094, Crosswords 7697165965825477918, cocoa tin 7697136656213675294, Advent 7697136435052252446) 0. All other posts unchanged.
+
+**Review / Only me:** **0** stuck in the newest 40 posts (all Everyone); older posts were all Everyone as of Oct 15.
+
+Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
+
+Notes: TikTok is nearly flat day to day; the 7-day window is still riding the Oct 12 spike. "whodunit puzzle" is the top search term bringing people in, so it's worth working into captions.
