@@ -1,0 +1,35 @@
+{
+  "title": "The Lockboxes of Frostwood",
+  "slug": "09-the-lockboxes-of-frostwood",
+  "format": "Kindle ebook (EPUB 3)",
+  "author": "Blake La Pierre",
+  "series": "A Frostwood Puzzle Book",
+  "series_number": 9,
+  "seed": 20261017,
+  "pythonhashseed": 0,
+  "total_puzzles": 120,
+  "counts": {
+    "Easy": 30,
+    "Medium": 35,
+    "Hard": 35,
+    "Expert": 20
+  },
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "epub_bytes": 929372,
+  "epub_mb_rounded_kb": 0.8867,
+  "delivery_fee_usd": 0.13,
+  "royalty_usd": 2.66,
+  "royalty_math": "0.70 \u00d7 3.99 \u2212 0.13 = 2.66",
+  "cover_px": [
+    1600,
+    2560
+  ],
+  "cover_bytes": 181212,
+  "files": {
+    "epub": "frostwood-09-the-lockboxes-of-frostwood.epub",
+    "cover": "frostwood-09-the-lockboxes-of-frostwood-cover.jpg"
+  },
+  "rebuild": "cd src && PYTHONHASHSEED=0 python3 master.py"
+}

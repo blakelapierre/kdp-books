@@ -74,6 +74,8 @@ Current books:
 | 5 | *Riddles by the Frostwood Fire*: 140 Cozy Winter Riddles & Text Logic Puzzles (Kindle) | Riddles + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [05-riddles-by-the-frostwood-fire/README.md](series/frostwood/05-riddles-by-the-frostwood-fire/README.md) |
 | 6 | *The Frostwood Sketchbook*: 140 Nonogram Picture Logic Puzzles (Easy to Expert) | Nonograms (hanjie picture logic) | Draft, print-ready paperback. Not yet published or submitted to KDP | 156 | $9.99 | $3.12 | [06-the-frostwood-sketchbook/README.md](series/frostwood/06-the-frostwood-sketchbook/README.md) |
 | 7 | *Bridges of Frostwood*: 180 Hashi Bridges Logic Puzzles (Easy to Expert) | Hashi / Bridges (Hashiwokakero) | Draft, print-ready paperback. Not yet published or submitted to KDP | 188 | $9.99 | $2.74 | [07-bridges-of-frostwood/README.md](series/frostwood/07-bridges-of-frostwood/README.md) |
+| 8 | *Fences of Frostwood*: 100 Slitherlink Logic Puzzles (Easy to Expert) | Slitherlink / Loop the Loop (hardcover) | Draft, print-ready hardcover. Not yet published or submitted to KDP | 88 | $17.99 | $3.99 | [08-fences-of-frostwood/README.md](series/frostwood/08-fences-of-frostwood/README.md) |
+| 9 | *The Lockboxes of Frostwood*: 120 Crack-the-Code Logic Puzzles (Kindle) | Crack the code / number-lock deduction (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [09-the-lockboxes-of-frostwood/README.md](series/frostwood/09-the-lockboxes-of-frostwood/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -170,6 +172,11 @@ python3 verify.py     # independent SAT + backtracking (hashi_bt.py) uniqueness 
 python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
 python3 build.py      # -> ../frostwood-07-bridges-of-frostwood-interior.pdf and ../build-info.json (worked-example text is in build.py)
 python3 cover.py      # -> ../frostwood-07-bridges-of-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-07-bridges-of-frostwood-cover-guides.pdf
+cd ../../../..
+
+# Book 9: The Lockboxes of Frostwood (Kindle ebook)
+cd series/frostwood/09-the-lockboxes-of-frostwood/src
+PYTHONHASHSEED=0 python3 master.py   # gen.py (lockgen.py brute force) -> verify.py (independent DFS solver.py + exhaustive check) -> illustrations -> cover JPG -> EPUB (~2 min)
 cd ../../../..
 
 # Standalone: The Advent Clock

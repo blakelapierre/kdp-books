@@ -1,0 +1,4938 @@
+{
+ "title": "The Lockboxes of Frostwood",
+ "subtitle": "120 Crack-the-Code Logic Puzzles for Kindle: Cozy Winter Brain Teasers, Easy to Expert, with Tap-to-Jump Hints and Answers",
+ "seed": 20261017,
+ "bands": {
+  "Easy": {
+   "count": 30,
+   "digits": 3,
+   "clues": [
+    4,
+    5
+   ],
+   "nothing_rule": "require",
+   "solver_nodes": [
+    1,
+    18
+   ]
+  },
+  "Medium": {
+   "count": 35,
+   "digits": 3,
+   "clues": [
+    5,
+    6
+   ],
+   "nothing_rule": "forbid",
+   "solver_nodes": [
+    19,
+    40
+   ]
+  },
+  "Hard": {
+   "count": 35,
+   "digits": 4,
+   "clues": [
+    5,
+    7
+   ],
+   "nothing_rule": "any",
+   "solver_nodes": [
+    41,
+    90
+   ]
+  },
+  "Expert": {
+   "count": 20,
+   "digits": 5,
+   "clues": [
+    7,
+    9
+   ],
+   "nothing_rule": "forbid",
+   "solver_nodes": [
+    91,
+    1000000000
+   ]
+  }
+ },
+ "counts": {
+  "Easy": 30,
+  "Medium": 35,
+  "Hard": 35,
+  "Expert": 20
+ },
+ "total": 120,
+ "puzzles": [
+  {
+   "num": 1,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the boot-room bench",
+   "treat": "a star chart",
+   "code": "671",
+   "clues": [
+    [
+     "752",
+     0,
+     1
+    ],
+    [
+     "251",
+     1,
+     0
+    ],
+    [
+     "061",
+     1,
+     1
+    ],
+    [
+     "284",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 16,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 2,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the pantry's top shelf",
+   "treat": "a jar of maple butter",
+   "code": "760",
+   "clues": [
+    [
+     "921",
+     0,
+     0
+    ],
+    [
+     "807",
+     0,
+     2
+    ],
+    [
+     "738",
+     1,
+     0
+    ],
+    [
+     "679",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 10,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 3,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the library writing desk",
+   "treat": "a jar of plum jam",
+   "code": "576",
+   "clues": [
+    [
+     "438",
+     0,
+     0
+    ],
+    [
+     "186",
+     1,
+     0
+    ],
+    [
+     "512",
+     1,
+     0
+    ],
+    [
+     "741",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 0,
+   "hint_digit": "5"
+  },
+  {
+   "num": 4,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the hearth mantel",
+   "treat": "a tin whistle",
+   "code": "657",
+   "clues": [
+    [
+     "563",
+     0,
+     2
+    ],
+    [
+     "473",
+     0,
+     1
+    ],
+    [
+     "780",
+     0,
+     1
+    ],
+    [
+     "081",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 18,
+   "hint_pos": 1,
+   "hint_digit": "5"
+  },
+  {
+   "num": 5,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the cloakroom hooks",
+   "treat": "a carved wooden owl",
+   "code": "086",
+   "clues": [
+    [
+     "960",
+     0,
+     2
+    ],
+    [
+     "034",
+     1,
+     0
+    ],
+    [
+     "159",
+     0,
+     0
+    ],
+    [
+     "518",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 14,
+   "hint_pos": 2,
+   "hint_digit": "6"
+  },
+  {
+   "num": 6,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the guest-book stand",
+   "treat": "a pocket notebook",
+   "code": "694",
+   "clues": [
+    [
+     "172",
+     0,
+     0
+    ],
+    [
+     "095",
+     1,
+     0
+    ],
+    [
+     "546",
+     0,
+     2
+    ],
+    [
+     "942",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 0,
+   "hint_digit": "6"
+  },
+  {
+   "num": 7,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the window seat in the sitting room",
+   "treat": "a pair of thick socks",
+   "code": "785",
+   "clues": [
+    [
+     "761",
+     1,
+     0
+    ],
+    [
+     "158",
+     0,
+     2
+    ],
+    [
+     "702",
+     1,
+     0
+    ],
+    [
+     "209",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 17,
+   "hint_pos": 1,
+   "hint_digit": "8"
+  },
+  {
+   "num": 8,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the linen cupboard",
+   "treat": "a tiny brass key on a ribbon",
+   "code": "918",
+   "clues": [
+    [
+     "867",
+     0,
+     1
+    ],
+    [
+     "038",
+     1,
+     0
+    ],
+    [
+     "591",
+     0,
+     2
+    ],
+    [
+     "450",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 17,
+   "hint_pos": 2,
+   "hint_digit": "8"
+  },
+  {
+   "num": 9,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the stair landing",
+   "treat": "a tin of cinnamon cocoa",
+   "code": "974",
+   "clues": [
+    [
+     "463",
+     0,
+     1
+    ],
+    [
+     "019",
+     0,
+     1
+    ],
+    [
+     "906",
+     1,
+     0
+    ],
+    [
+     "213",
+     0,
+     0
+    ],
+    [
+     "570",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 0,
+   "hint_digit": "9"
+  },
+  {
+   "num": 10,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the game-room cabinet",
+   "treat": "a slab of toffee",
+   "code": "354",
+   "clues": [
+    [
+     "234",
+     1,
+     1
+    ],
+    [
+     "179",
+     0,
+     0
+    ],
+    [
+     "438",
+     0,
+     2
+    ],
+    [
+     "549",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 8,
+   "hint_pos": 1,
+   "hint_digit": "5"
+  },
+  {
+   "num": 11,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the kitchen dresser",
+   "treat": "a pine-scented soap",
+   "code": "827",
+   "clues": [
+    [
+     "034",
+     0,
+     0
+    ],
+    [
+     "269",
+     0,
+     1
+    ],
+    [
+     "347",
+     1,
+     0
+    ],
+    [
+     "542",
+     0,
+     1
+    ],
+    [
+     "846",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 14,
+   "hint_pos": 2,
+   "hint_digit": "7"
+  },
+  {
+   "num": 12,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the cocoa cart",
+   "treat": "a pouch of marbles",
+   "code": "752",
+   "clues": [
+    [
+     "592",
+     1,
+     1
+    ],
+    [
+     "526",
+     0,
+     2
+    ],
+    [
+     "904",
+     0,
+     0
+    ],
+    [
+     "798",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 14,
+   "hint_pos": 0,
+   "hint_digit": "7"
+  },
+  {
+   "num": 13,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the reading nook",
+   "treat": "a bookmark of pressed ferns",
+   "code": "942",
+   "clues": [
+    [
+     "087",
+     0,
+     0
+    ],
+    [
+     "451",
+     0,
+     1
+    ],
+    [
+     "843",
+     1,
+     0
+    ],
+    [
+     "210",
+     0,
+     1
+    ],
+    [
+     "590",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 11,
+   "hint_pos": 1,
+   "hint_digit": "4"
+  },
+  {
+   "num": 14,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the map room",
+   "treat": "a set of postcards of the lodge",
+   "code": "609",
+   "clues": [
+    [
+     "843",
+     0,
+     0
+    ],
+    [
+     "859",
+     1,
+     0
+    ],
+    [
+     "108",
+     1,
+     0
+    ],
+    [
+     "046",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 15,
+   "hint_pos": 2,
+   "hint_digit": "9"
+  },
+  {
+   "num": 15,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the porch woodbox",
+   "treat": "a wind-up mouse",
+   "code": "610",
+   "clues": [
+    [
+     "721",
+     0,
+     1
+    ],
+    [
+     "370",
+     1,
+     0
+    ],
+    [
+     "418",
+     1,
+     0
+    ],
+    [
+     "982",
+     0,
+     0
+    ],
+    [
+     "580",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 15,
+   "hint_pos": 0,
+   "hint_digit": "6"
+  },
+  {
+   "num": 16,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the music-room bench",
+   "treat": "a felt pinecone",
+   "code": "103",
+   "clues": [
+    [
+     "714",
+     0,
+     1
+    ],
+    [
+     "490",
+     0,
+     1
+    ],
+    [
+     "593",
+     1,
+     0
+    ],
+    [
+     "549",
+     0,
+     0
+    ],
+    [
+     "621",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 17,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 17,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the attic trunk",
+   "treat": "a little brass bell",
+   "code": "879",
+   "clues": [
+    [
+     "923",
+     0,
+     1
+    ],
+    [
+     "752",
+     0,
+     1
+    ],
+    [
+     "021",
+     0,
+     0
+    ],
+    [
+     "856",
+     1,
+     0
+    ],
+    [
+     "467",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 10,
+   "hint_pos": 2,
+   "hint_digit": "9"
+  },
+  {
+   "num": 18,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the front desk",
+   "treat": "a pocket kaleidoscope",
+   "code": "405",
+   "clues": [
+    [
+     "630",
+     0,
+     1
+    ],
+    [
+     "145",
+     1,
+     1
+    ],
+    [
+     "487",
+     1,
+     0
+    ],
+    [
+     "261",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 15,
+   "hint_pos": 0,
+   "hint_digit": "4"
+  },
+  {
+   "num": 19,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the sunroom",
+   "treat": "a jar of honey drops",
+   "code": "180",
+   "clues": [
+    [
+     "703",
+     0,
+     1
+    ],
+    [
+     "960",
+     1,
+     0
+    ],
+    [
+     "284",
+     1,
+     0
+    ],
+    [
+     "905",
+     0,
+     1
+    ],
+    [
+     "257",
+     0,
+     0
+    ]
+   ],
+   "solver_nodes": 10,
+   "hint_pos": 1,
+   "hint_digit": "8"
+  },
+  {
+   "num": 20,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the drying room",
+   "treat": "a wooden yo-yo",
+   "code": "015",
+   "clues": [
+    [
+     "372",
+     0,
+     0
+    ],
+    [
+     "125",
+     1,
+     1
+    ],
+    [
+     "123",
+     0,
+     1
+    ],
+    [
+     "094",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 15,
+   "hint_pos": 2,
+   "hint_digit": "5"
+  },
+  {
+   "num": 21,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the tea alcove",
+   "treat": "a jar of shortbread",
+   "code": "159",
+   "clues": [
+    [
+     "257",
+     1,
+     0
+    ],
+    [
+     "076",
+     0,
+     0
+    ],
+    [
+     "359",
+     2,
+     0
+    ],
+    [
+     "180",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 11,
+   "hint_pos": 0,
+   "hint_digit": "1"
+  },
+  {
+   "num": 22,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the corner bookcase",
+   "treat": "a magnifying glass",
+   "code": "341",
+   "clues": [
+    [
+     "352",
+     1,
+     0
+    ],
+    [
+     "921",
+     1,
+     0
+    ],
+    [
+     "265",
+     0,
+     0
+    ],
+    [
+     "479",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 18,
+   "hint_pos": 1,
+   "hint_digit": "4"
+  },
+  {
+   "num": 23,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the bell tower stairs",
+   "treat": "a pair of red wool mittens",
+   "code": "054",
+   "clues": [
+    [
+     "031",
+     1,
+     0
+    ],
+    [
+     "618",
+     0,
+     0
+    ],
+    [
+     "956",
+     1,
+     0
+    ],
+    [
+     "235",
+     0,
+     1
+    ],
+    [
+     "703",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 14,
+   "hint_pos": 2,
+   "hint_digit": "4"
+  },
+  {
+   "num": 24,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the scullery",
+   "treat": "a deck of cards",
+   "code": "485",
+   "clues": [
+    [
+     "752",
+     0,
+     1
+    ],
+    [
+     "683",
+     1,
+     0
+    ],
+    [
+     "396",
+     0,
+     0
+    ],
+    [
+     "539",
+     0,
+     1
+    ],
+    [
+     "015",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 16,
+   "hint_pos": 0,
+   "hint_digit": "4"
+  },
+  {
+   "num": 25,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the mitten basket",
+   "treat": "a sketchbook and pencil",
+   "code": "079",
+   "clues": [
+    [
+     "759",
+     1,
+     1
+    ],
+    [
+     "873",
+     1,
+     0
+    ],
+    [
+     "162",
+     0,
+     0
+    ],
+    [
+     "810",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 17,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 26,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the snowshoe rack",
+   "treat": "a puzzle ring",
+   "code": "791",
+   "clues": [
+    [
+     "356",
+     0,
+     0
+    ],
+    [
+     "742",
+     1,
+     0
+    ],
+    [
+     "178",
+     0,
+     2
+    ],
+    [
+     "195",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 2,
+   "hint_digit": "1"
+  },
+  {
+   "num": 27,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the upstairs hallway",
+   "treat": "a packet of seed cards",
+   "code": "052",
+   "clues": [
+    [
+     "374",
+     0,
+     0
+    ],
+    [
+     "583",
+     0,
+     1
+    ],
+    [
+     "924",
+     0,
+     1
+    ],
+    [
+     "190",
+     0,
+     1
+    ],
+    [
+     "508",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 28,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the card-table drawer",
+   "treat": "a bag of roasted chestnuts",
+   "code": "865",
+   "clues": [
+    [
+     "345",
+     1,
+     0
+    ],
+    [
+     "562",
+     1,
+     1
+    ],
+    [
+     "024",
+     0,
+     0
+    ],
+    [
+     "608",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 1,
+   "hint_digit": "6"
+  },
+  {
+   "num": 29,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the conservatory",
+   "treat": "a pair of ear warmers",
+   "code": "821",
+   "clues": [
+    [
+     "047",
+     0,
+     0
+    ],
+    [
+     "652",
+     0,
+     1
+    ],
+    [
+     "268",
+     0,
+     2
+    ],
+    [
+     "051",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 12,
+   "hint_pos": 2,
+   "hint_digit": "1"
+  },
+  {
+   "num": 30,
+   "band": "Easy",
+   "digits": 3,
+   "place": "The Lodge",
+   "spot": "the observatory hatch",
+   "treat": "a box of oat biscuits",
+   "code": "946",
+   "clues": [
+    [
+     "674",
+     0,
+     2
+    ],
+    [
+     "072",
+     0,
+     0
+    ],
+    [
+     "289",
+     0,
+     1
+    ],
+    [
+     "935",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 15,
+   "hint_pos": 0,
+   "hint_digit": "9"
+  },
+  {
+   "num": 31,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the bakery counter",
+   "treat": "a snow globe of the lodge",
+   "code": "105",
+   "clues": [
+    [
+     "607",
+     1,
+     0
+    ],
+    [
+     "980",
+     0,
+     1
+    ],
+    [
+     "781",
+     0,
+     1
+    ],
+    [
+     "146",
+     1,
+     0
+    ],
+    [
+     "452",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 24,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 32,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the post office",
+   "treat": "a bundle of beeswax candles",
+   "code": "954",
+   "clues": [
+    [
+     "790",
+     0,
+     1
+    ],
+    [
+     "758",
+     1,
+     0
+    ],
+    [
+     "427",
+     0,
+     1
+    ],
+    [
+     "520",
+     0,
+     1
+    ],
+    [
+     "430",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 27,
+   "hint_pos": 2,
+   "hint_digit": "4"
+  },
+  {
+   "num": 33,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the village green bandstand",
+   "treat": "a tiny pewter train",
+   "code": "012",
+   "clues": [
+    [
+     "174",
+     0,
+     1
+    ],
+    [
+     "891",
+     0,
+     1
+    ],
+    [
+     "382",
+     1,
+     0
+    ],
+    [
+     "185",
+     0,
+     1
+    ],
+    [
+     "298",
+     0,
+     1
+    ],
+    [
+     "716",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 24,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 34,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the bookshop window",
+   "treat": "a hand-knitted scarf",
+   "code": "192",
+   "clues": [
+    [
+     "203",
+     0,
+     1
+    ],
+    [
+     "918",
+     0,
+     2
+    ],
+    [
+     "824",
+     0,
+     1
+    ],
+    [
+     "509",
+     0,
+     1
+    ],
+    [
+     "953",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 21,
+   "hint_pos": 1,
+   "hint_digit": "9"
+  },
+  {
+   "num": 35,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the toy-mender's shelf",
+   "treat": "a packet of spiced tea",
+   "code": "710",
+   "clues": [
+    [
+     "621",
+     0,
+     1
+    ],
+    [
+     "031",
+     0,
+     2
+    ],
+    [
+     "679",
+     0,
+     1
+    ],
+    [
+     "136",
+     0,
+     1
+    ],
+    [
+     "278",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 23,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 36,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the skating-pond hut",
+   "treat": "a spool of ribbon",
+   "code": "032",
+   "clues": [
+    [
+     "906",
+     0,
+     1
+    ],
+    [
+     "273",
+     0,
+     2
+    ],
+    [
+     "251",
+     0,
+     1
+    ],
+    [
+     "316",
+     0,
+     1
+    ],
+    [
+     "943",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 21,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 37,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the clock tower",
+   "treat": "a mug with a fox on it",
+   "code": "801",
+   "clues": [
+    [
+     "073",
+     0,
+     1
+    ],
+    [
+     "603",
+     1,
+     0
+    ],
+    [
+     "571",
+     1,
+     0
+    ],
+    [
+     "240",
+     0,
+     1
+    ],
+    [
+     "059",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 19,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 38,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the cheese shop",
+   "treat": "a pocket compass",
+   "code": "561",
+   "clues": [
+    [
+     "193",
+     0,
+     1
+    ],
+    [
+     "679",
+     0,
+     1
+    ],
+    [
+     "570",
+     1,
+     0
+    ],
+    [
+     "026",
+     0,
+     1
+    ],
+    [
+     "975",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 27,
+   "hint_pos": 2,
+   "hint_digit": "1"
+  },
+  {
+   "num": 39,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the wool shop",
+   "treat": "a tea-light lantern",
+   "code": "358",
+   "clues": [
+    [
+     "805",
+     0,
+     2
+    ],
+    [
+     "574",
+     0,
+     1
+    ],
+    [
+     "891",
+     0,
+     1
+    ],
+    [
+     "925",
+     0,
+     1
+    ],
+    [
+     "137",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 0,
+   "hint_digit": "3"
+  },
+  {
+   "num": 40,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the schoolhouse cloakroom",
+   "treat": "a skate-lace repair kit",
+   "code": "276",
+   "clues": [
+    [
+     "280",
+     1,
+     0
+    ],
+    [
+     "342",
+     0,
+     1
+    ],
+    [
+     "347",
+     0,
+     1
+    ],
+    [
+     "052",
+     0,
+     1
+    ],
+    [
+     "016",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 25,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 41,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the library returns box",
+   "treat": "a wooden yo-yo",
+   "code": "472",
+   "clues": [
+    [
+     "543",
+     0,
+     1
+    ],
+    [
+     "132",
+     1,
+     0
+    ],
+    [
+     "329",
+     0,
+     1
+    ],
+    [
+     "857",
+     0,
+     1
+    ],
+    [
+     "307",
+     0,
+     1
+    ],
+    [
+     "790",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 2,
+   "hint_digit": "2"
+  },
+  {
+   "num": 42,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the market-cross well",
+   "treat": "a pouch of marbles",
+   "code": "397",
+   "clues": [
+    [
+     "170",
+     0,
+     1
+    ],
+    [
+     "035",
+     0,
+     1
+    ],
+    [
+     "705",
+     0,
+     1
+    ],
+    [
+     "076",
+     0,
+     1
+    ],
+    [
+     "890",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 38,
+   "hint_pos": 0,
+   "hint_digit": "3"
+  },
+  {
+   "num": 43,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the blacksmith's bench",
+   "treat": "a tin whistle",
+   "code": "871",
+   "clues": [
+    [
+     "568",
+     0,
+     1
+    ],
+    [
+     "216",
+     0,
+     1
+    ],
+    [
+     "479",
+     1,
+     0
+    ],
+    [
+     "724",
+     0,
+     1
+    ],
+    [
+     "401",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 19,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 44,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the candle shop",
+   "treat": "a carved wooden owl",
+   "code": "647",
+   "clues": [
+    [
+     "720",
+     0,
+     1
+    ],
+    [
+     "745",
+     1,
+     1
+    ],
+    [
+     "037",
+     1,
+     0
+    ],
+    [
+     "814",
+     0,
+     1
+    ],
+    [
+     "904",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 21,
+   "hint_pos": 2,
+   "hint_digit": "7"
+  },
+  {
+   "num": 45,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the mill wheel house",
+   "treat": "a skate-lace repair kit",
+   "code": "498",
+   "clues": [
+    [
+     "964",
+     0,
+     2
+    ],
+    [
+     "546",
+     0,
+     1
+    ],
+    [
+     "913",
+     0,
+     1
+    ],
+    [
+     "904",
+     0,
+     2
+    ],
+    [
+     "581",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 19,
+   "hint_pos": 0,
+   "hint_digit": "4"
+  },
+  {
+   "num": 46,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the tea room",
+   "treat": "a pocket notebook",
+   "code": "753",
+   "clues": [
+    [
+     "576",
+     0,
+     2
+    ],
+    [
+     "895",
+     0,
+     1
+    ],
+    [
+     "274",
+     0,
+     1
+    ],
+    [
+     "947",
+     0,
+     1
+    ],
+    [
+     "230",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 26,
+   "hint_pos": 1,
+   "hint_digit": "5"
+  },
+  {
+   "num": 47,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the village hall stage",
+   "treat": "a jar of shortbread",
+   "code": "571",
+   "clues": [
+    [
+     "985",
+     0,
+     1
+    ],
+    [
+     "143",
+     0,
+     1
+    ],
+    [
+     "473",
+     1,
+     0
+    ],
+    [
+     "186",
+     0,
+     1
+    ],
+    [
+     "592",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 23,
+   "hint_pos": 2,
+   "hint_digit": "1"
+  },
+  {
+   "num": 48,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the apothecary",
+   "treat": "a spool of ribbon",
+   "code": "908",
+   "clues": [
+    [
+     "591",
+     0,
+     1
+    ],
+    [
+     "056",
+     0,
+     1
+    ],
+    [
+     "097",
+     0,
+     2
+    ],
+    [
+     "238",
+     1,
+     0
+    ],
+    [
+     "458",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 23,
+   "hint_pos": 0,
+   "hint_digit": "9"
+  },
+  {
+   "num": 49,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the sled-hire shed",
+   "treat": "a sketchbook and pencil",
+   "code": "391",
+   "clues": [
+    [
+     "985",
+     0,
+     1
+    ],
+    [
+     "813",
+     0,
+     2
+    ],
+    [
+     "186",
+     0,
+     1
+    ],
+    [
+     "671",
+     1,
+     0
+    ],
+    [
+     "962",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 19,
+   "hint_pos": 1,
+   "hint_digit": "9"
+  },
+  {
+   "num": 50,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the haberdashery",
+   "treat": "a pocket compass",
+   "code": "275",
+   "clues": [
+    [
+     "719",
+     0,
+     1
+    ],
+    [
+     "617",
+     0,
+     1
+    ],
+    [
+     "426",
+     0,
+     1
+    ],
+    [
+     "593",
+     0,
+     1
+    ],
+    [
+     "231",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 26,
+   "hint_pos": 2,
+   "hint_digit": "5"
+  },
+  {
+   "num": 51,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the chapel lane noticeboard",
+   "treat": "a pair of red wool mittens",
+   "code": "970",
+   "clues": [
+    [
+     "751",
+     0,
+     1
+    ],
+    [
+     "278",
+     1,
+     0
+    ],
+    [
+     "596",
+     0,
+     1
+    ],
+    [
+     "943",
+     1,
+     0
+    ],
+    [
+     "405",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 0,
+   "hint_digit": "9"
+  },
+  {
+   "num": 52,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the bridge tollbox",
+   "treat": "a box of oat biscuits",
+   "code": "549",
+   "clues": [
+    [
+     "410",
+     0,
+     1
+    ],
+    [
+     "056",
+     0,
+     1
+    ],
+    [
+     "892",
+     0,
+     1
+    ],
+    [
+     "518",
+     1,
+     0
+    ],
+    [
+     "279",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 1,
+   "hint_digit": "4"
+  },
+  {
+   "num": 53,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the greengrocer's crates",
+   "treat": "a pocket kaleidoscope",
+   "code": "762",
+   "clues": [
+    [
+     "574",
+     0,
+     1
+    ],
+    [
+     "978",
+     0,
+     1
+    ],
+    [
+     "526",
+     0,
+     2
+    ],
+    [
+     "923",
+     0,
+     1
+    ],
+    [
+     "281",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 25,
+   "hint_pos": 2,
+   "hint_digit": "2"
+  },
+  {
+   "num": 54,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the cobbler's workbench",
+   "treat": "a packet of spiced tea",
+   "code": "042",
+   "clues": [
+    [
+     "180",
+     0,
+     1
+    ],
+    [
+     "451",
+     0,
+     1
+    ],
+    [
+     "384",
+     0,
+     1
+    ],
+    [
+     "286",
+     0,
+     1
+    ],
+    [
+     "293",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 35,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 55,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the fire-watch hut",
+   "treat": "a set of postcards of the lodge",
+   "code": "021",
+   "clues": [
+    [
+     "430",
+     0,
+     1
+    ],
+    [
+     "723",
+     1,
+     0
+    ],
+    [
+     "942",
+     0,
+     1
+    ],
+    [
+     "918",
+     0,
+     1
+    ],
+    [
+     "183",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 27,
+   "hint_pos": 1,
+   "hint_digit": "2"
+  },
+  {
+   "num": 56,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the lantern shop",
+   "treat": "a pair of thick socks",
+   "code": "208",
+   "clues": [
+    [
+     "069",
+     0,
+     1
+    ],
+    [
+     "692",
+     0,
+     1
+    ],
+    [
+     "438",
+     1,
+     0
+    ],
+    [
+     "412",
+     0,
+     1
+    ],
+    [
+     "450",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 21,
+   "hint_pos": 2,
+   "hint_digit": "8"
+  },
+  {
+   "num": 57,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the inn's cellar door",
+   "treat": "a snow globe of the lodge",
+   "code": "136",
+   "clues": [
+    [
+     "154",
+     1,
+     0
+    ],
+    [
+     "180",
+     1,
+     0
+    ],
+    [
+     "390",
+     0,
+     1
+    ],
+    [
+     "091",
+     0,
+     1
+    ],
+    [
+     "723",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 0,
+   "hint_digit": "1"
+  },
+  {
+   "num": 58,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the barber's chair",
+   "treat": "a star chart",
+   "code": "547",
+   "clues": [
+    [
+     "723",
+     0,
+     1
+    ],
+    [
+     "340",
+     1,
+     0
+    ],
+    [
+     "179",
+     0,
+     1
+    ],
+    [
+     "456",
+     0,
+     2
+    ],
+    [
+     "952",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 1,
+   "hint_digit": "4"
+  },
+  {
+   "num": 59,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the bee shed",
+   "treat": "a tin of cinnamon cocoa",
+   "code": "138",
+   "clues": [
+    [
+     "015",
+     0,
+     1
+    ],
+    [
+     "873",
+     0,
+     2
+    ],
+    [
+     "859",
+     0,
+     1
+    ],
+    [
+     "807",
+     0,
+     1
+    ],
+    [
+     "698",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 21,
+   "hint_pos": 2,
+   "hint_digit": "8"
+  },
+  {
+   "num": 60,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the pottery kiln room",
+   "treat": "a magnifying glass",
+   "code": "386",
+   "clues": [
+    [
+     "460",
+     0,
+     1
+    ],
+    [
+     "743",
+     0,
+     1
+    ],
+    [
+     "610",
+     0,
+     1
+    ],
+    [
+     "980",
+     1,
+     0
+    ],
+    [
+     "854",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 22,
+   "hint_pos": 0,
+   "hint_digit": "3"
+  },
+  {
+   "num": 61,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the hat shop",
+   "treat": "a jar of maple butter",
+   "code": "504",
+   "clues": [
+    [
+     "603",
+     1,
+     0
+    ],
+    [
+     "489",
+     0,
+     1
+    ],
+    [
+     "201",
+     1,
+     0
+    ],
+    [
+     "624",
+     1,
+     0
+    ],
+    [
+     "247",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 22,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 62,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the map maker's loft",
+   "treat": "a pine-scented soap",
+   "code": "369",
+   "clues": [
+    [
+     "246",
+     0,
+     1
+    ],
+    [
+     "625",
+     0,
+     1
+    ],
+    [
+     "016",
+     0,
+     1
+    ],
+    [
+     "413",
+     0,
+     1
+    ],
+    [
+     "759",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 20,
+   "hint_pos": 2,
+   "hint_digit": "9"
+  },
+  {
+   "num": 63,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the village museum",
+   "treat": "a felt pinecone",
+   "code": "204",
+   "clues": [
+    [
+     "930",
+     0,
+     1
+    ],
+    [
+     "018",
+     0,
+     1
+    ],
+    [
+     "532",
+     0,
+     1
+    ],
+    [
+     "829",
+     0,
+     1
+    ],
+    [
+     "326",
+     0,
+     1
+    ],
+    [
+     "073",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 28,
+   "hint_pos": 0,
+   "hint_digit": "2"
+  },
+  {
+   "num": 64,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the plant nursery",
+   "treat": "a mug with a fox on it",
+   "code": "719",
+   "clues": [
+    [
+     "590",
+     0,
+     1
+    ],
+    [
+     "128",
+     0,
+     1
+    ],
+    [
+     "180",
+     0,
+     1
+    ],
+    [
+     "275",
+     0,
+     1
+    ],
+    [
+     "394",
+     0,
+     1
+    ],
+    [
+     "956",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 25,
+   "hint_pos": 1,
+   "hint_digit": "1"
+  },
+  {
+   "num": 65,
+   "band": "Medium",
+   "digits": 3,
+   "place": "The Village",
+   "spot": "the sweet shop jars",
+   "treat": "a jar of plum jam",
+   "code": "120",
+   "clues": [
+    [
+     "918",
+     0,
+     1
+    ],
+    [
+     "452",
+     0,
+     1
+    ],
+    [
+     "168",
+     1,
+     0
+    ],
+    [
+     "269",
+     0,
+     1
+    ],
+    [
+     "085",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 24,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 66,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the valley station ticket office",
+   "treat": "a puzzle ring",
+   "code": "9056",
+   "clues": [
+    [
+     "5623",
+     0,
+     2
+    ],
+    [
+     "1602",
+     0,
+     2
+    ],
+    [
+     "9421",
+     1,
+     0
+    ],
+    [
+     "5024",
+     1,
+     1
+    ],
+    [
+     "2864",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 47,
+   "hint_pos": 2,
+   "hint_digit": "5"
+  },
+  {
+   "num": 67,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the waiting room stove",
+   "treat": "a tiny brass key on a ribbon",
+   "code": "1069",
+   "clues": [
+    [
+     "6278",
+     0,
+     1
+    ],
+    [
+     "3928",
+     0,
+     1
+    ],
+    [
+     "6025",
+     1,
+     1
+    ],
+    [
+     "9185",
+     0,
+     2
+    ],
+    [
+     "0156",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 57,
+   "hint_pos": 3,
+   "hint_digit": "9"
+  },
+  {
+   "num": 68,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the signal box",
+   "treat": "a deck of cards",
+   "code": "6247",
+   "clues": [
+    [
+     "5168",
+     0,
+     1
+    ],
+    [
+     "5412",
+     0,
+     2
+    ],
+    [
+     "5436",
+     0,
+     2
+    ],
+    [
+     "9712",
+     0,
+     2
+    ],
+    [
+     "2983",
+     0,
+     1
+    ],
+    [
+     "0724",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 47,
+   "hint_pos": 0,
+   "hint_digit": "6"
+  },
+  {
+   "num": 69,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the water tower ladder",
+   "treat": "a tiny pewter train",
+   "code": "1025",
+   "clues": [
+    [
+     "7031",
+     1,
+     1
+    ],
+    [
+     "3962",
+     0,
+     1
+    ],
+    [
+     "7538",
+     0,
+     1
+    ],
+    [
+     "5830",
+     0,
+     2
+    ],
+    [
+     "1693",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 60,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 70,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the parcels office",
+   "treat": "a slab of toffee",
+   "code": "3604",
+   "clues": [
+    [
+     "8567",
+     0,
+     1
+    ],
+    [
+     "8726",
+     0,
+     1
+    ],
+    [
+     "2640",
+     1,
+     2
+    ],
+    [
+     "0324",
+     1,
+     2
+    ],
+    [
+     "0915",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 57,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 71,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the dining car pantry",
+   "treat": "a bookmark of pressed ferns",
+   "code": "0268",
+   "clues": [
+    [
+     "2598",
+     1,
+     1
+    ],
+    [
+     "9875",
+     0,
+     1
+    ],
+    [
+     "0839",
+     1,
+     1
+    ],
+    [
+     "9624",
+     0,
+     2
+    ],
+    [
+     "5086",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 42,
+   "hint_pos": 3,
+   "hint_digit": "8"
+  },
+  {
+   "num": 72,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the sleeper car berth",
+   "treat": "a packet of seed cards",
+   "code": "8927",
+   "clues": [
+    [
+     "2084",
+     0,
+     2
+    ],
+    [
+     "7940",
+     1,
+     1
+    ],
+    [
+     "0358",
+     0,
+     1
+    ],
+    [
+     "7954",
+     1,
+     1
+    ],
+    [
+     "5302",
+     0,
+     1
+    ],
+    [
+     "6849",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 78,
+   "hint_pos": 0,
+   "hint_digit": "8"
+  },
+  {
+   "num": 73,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the guard's van",
+   "treat": "a bundle of beeswax candles",
+   "code": "1295",
+   "clues": [
+    [
+     "3978",
+     0,
+     1
+    ],
+    [
+     "3209",
+     1,
+     1
+    ],
+    [
+     "9627",
+     0,
+     2
+    ],
+    [
+     "4752",
+     0,
+     2
+    ],
+    [
+     "1642",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 72,
+   "hint_pos": 1,
+   "hint_digit": "2"
+  },
+  {
+   "num": 74,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the engine shed",
+   "treat": "a little brass bell",
+   "code": "1936",
+   "clues": [
+    [
+     "1354",
+     1,
+     1
+    ],
+    [
+     "5914",
+     1,
+     1
+    ],
+    [
+     "8372",
+     0,
+     1
+    ],
+    [
+     "9083",
+     0,
+     2
+    ],
+    [
+     "5018",
+     0,
+     1
+    ],
+    [
+     "0753",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 51,
+   "hint_pos": 2,
+   "hint_digit": "3"
+  },
+  {
+   "num": 75,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the turntable hut",
+   "treat": "a bag of roasted chestnuts",
+   "code": "8417",
+   "clues": [
+    [
+     "1094",
+     0,
+     2
+    ],
+    [
+     "5347",
+     1,
+     1
+    ],
+    [
+     "2918",
+     1,
+     1
+    ],
+    [
+     "0845",
+     0,
+     2
+    ],
+    [
+     "5460",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 46,
+   "hint_pos": 3,
+   "hint_digit": "7"
+  },
+  {
+   "num": 76,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the luggage rack",
+   "treat": "a hand-knitted scarf",
+   "code": "0782",
+   "clues": [
+    [
+     "5380",
+     1,
+     1
+    ],
+    [
+     "5894",
+     0,
+     1
+    ],
+    [
+     "9264",
+     0,
+     1
+    ],
+    [
+     "3810",
+     0,
+     2
+    ],
+    [
+     "4675",
+     0,
+     1
+    ],
+    [
+     "0239",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 60,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 77,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the coal bunker",
+   "treat": "a wind-up mouse",
+   "code": "5763",
+   "clues": [
+    [
+     "8473",
+     1,
+     1
+    ],
+    [
+     "4685",
+     0,
+     2
+    ],
+    [
+     "7014",
+     0,
+     1
+    ],
+    [
+     "5304",
+     1,
+     1
+    ],
+    [
+     "0582",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 81,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 78,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the lamp room",
+   "treat": "a tea-light lantern",
+   "code": "7426",
+   "clues": [
+    [
+     "3475",
+     1,
+     1
+    ],
+    [
+     "9127",
+     1,
+     1
+    ],
+    [
+     "2135",
+     0,
+     1
+    ],
+    [
+     "3857",
+     0,
+     1
+    ],
+    [
+     "4708",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 80,
+   "hint_pos": 2,
+   "hint_digit": "2"
+  },
+  {
+   "num": 79,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the halfway halt",
+   "treat": "a jar of honey drops",
+   "code": "0482",
+   "clues": [
+    [
+     "6045",
+     0,
+     2
+    ],
+    [
+     "1470",
+     1,
+     1
+    ],
+    [
+     "5849",
+     0,
+     2
+    ],
+    [
+     "3807",
+     0,
+     2
+    ],
+    [
+     "8942",
+     1,
+     2
+    ]
+   ],
+   "solver_nodes": 67,
+   "hint_pos": 3,
+   "hint_digit": "2"
+  },
+  {
+   "num": 80,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the pine-cutting platform",
+   "treat": "a pair of ear warmers",
+   "code": "7018",
+   "clues": [
+    [
+     "6582",
+     0,
+     1
+    ],
+    [
+     "0351",
+     0,
+     2
+    ],
+    [
+     "5380",
+     0,
+     2
+    ],
+    [
+     "8713",
+     1,
+     2
+    ],
+    [
+     "2705",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 54,
+   "hint_pos": 0,
+   "hint_digit": "7"
+  },
+  {
+   "num": 81,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the trestle watch hut",
+   "treat": "a pouch of marbles",
+   "code": "3614",
+   "clues": [
+    [
+     "2347",
+     0,
+     2
+    ],
+    [
+     "1876",
+     0,
+     2
+    ],
+    [
+     "7320",
+     0,
+     1
+    ],
+    [
+     "8942",
+     0,
+     1
+    ],
+    [
+     "8193",
+     0,
+     2
+    ],
+    [
+     "1704",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 42,
+   "hint_pos": 1,
+   "hint_digit": "6"
+  },
+  {
+   "num": 82,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the tunnel mouth shelter",
+   "treat": "a sketchbook and pencil",
+   "code": "5640",
+   "clues": [
+    [
+     "5609",
+     2,
+     1
+    ],
+    [
+     "9463",
+     0,
+     2
+    ],
+    [
+     "9752",
+     0,
+     1
+    ],
+    [
+     "8570",
+     1,
+     1
+    ],
+    [
+     "8263",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 43,
+   "hint_pos": 2,
+   "hint_digit": "4"
+  },
+  {
+   "num": 83,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the snowplough shed",
+   "treat": "a felt pinecone",
+   "code": "7386",
+   "clues": [
+    [
+     "2793",
+     0,
+     2
+    ],
+    [
+     "5108",
+     0,
+     1
+    ],
+    [
+     "8730",
+     0,
+     3
+    ],
+    [
+     "4937",
+     0,
+     2
+    ],
+    [
+     "8970",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 59,
+   "hint_pos": 3,
+   "hint_digit": "6"
+  },
+  {
+   "num": 84,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the brake van",
+   "treat": "a jar of honey drops",
+   "code": "5014",
+   "clues": [
+    [
+     "9156",
+     0,
+     2
+    ],
+    [
+     "7640",
+     0,
+     2
+    ],
+    [
+     "0396",
+     0,
+     1
+    ],
+    [
+     "8495",
+     0,
+     2
+    ],
+    [
+     "9816",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 45,
+   "hint_pos": 0,
+   "hint_digit": "5"
+  },
+  {
+   "num": 85,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the timetable board",
+   "treat": "a pocket notebook",
+   "code": "7316",
+   "clues": [
+    [
+     "5360",
+     1,
+     1
+    ],
+    [
+     "7851",
+     1,
+     1
+    ],
+    [
+     "0157",
+     0,
+     2
+    ],
+    [
+     "6297",
+     0,
+     2
+    ],
+    [
+     "2531",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 83,
+   "hint_pos": 1,
+   "hint_digit": "3"
+  },
+  {
+   "num": 86,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the stationmaster's office",
+   "treat": "a pair of ear warmers",
+   "code": "8025",
+   "clues": [
+    [
+     "0869",
+     0,
+     2
+    ],
+    [
+     "6485",
+     1,
+     1
+    ],
+    [
+     "5167",
+     0,
+     1
+    ],
+    [
+     "2674",
+     0,
+     1
+    ],
+    [
+     "0234",
+     0,
+     2
+    ],
+    [
+     "4857",
+     0,
+     2
+    ],
+    [
+     "7841",
+     0,
+     1
+    ]
+   ],
+   "solver_nodes": 41,
+   "hint_pos": 2,
+   "hint_digit": "2"
+  },
+  {
+   "num": 87,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the observation car",
+   "treat": "a packet of spiced tea",
+   "code": "9632",
+   "clues": [
+    [
+     "1426",
+     0,
+     2
+    ],
+    [
+     "9183",
+     1,
+     1
+    ],
+    [
+     "7152",
+     1,
+     0
+    ],
+    [
+     "7368",
+     0,
+     2
+    ],
+    [
+     "5603",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 55,
+   "hint_pos": 3,
+   "hint_digit": "2"
+  },
+  {
+   "num": 88,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the mail car sorting bench",
+   "treat": "a puzzle ring",
+   "code": "5197",
+   "clues": [
+    [
+     "4205",
+     0,
+     1
+    ],
+    [
+     "9261",
+     0,
+     2
+    ],
+    [
+     "7568",
+     0,
+     2
+    ],
+    [
+     "8176",
+     1,
+     1
+    ],
+    [
+     "8904",
+     0,
+     1
+    ],
+    [
+     "7421",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 61,
+   "hint_pos": 0,
+   "hint_digit": "5"
+  },
+  {
+   "num": 89,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the tea urn trolley",
+   "treat": "a bundle of beeswax candles",
+   "code": "8613",
+   "clues": [
+    [
+     "3927",
+     0,
+     1
+    ],
+    [
+     "8457",
+     1,
+     0
+    ],
+    [
+     "3642",
+     1,
+     1
+    ],
+    [
+     "5139",
+     0,
+     2
+    ],
+    [
+     "0931",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 47,
+   "hint_pos": 1,
+   "hint_digit": "6"
+  },
+  {
+   "num": 90,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the crossing keeper's cottage",
+   "treat": "a tin of cinnamon cocoa",
+   "code": "3901",
+   "clues": [
+    [
+     "0237",
+     0,
+     2
+    ],
+    [
+     "1483",
+     0,
+     2
+    ],
+    [
+     "1256",
+     0,
+     1
+    ],
+    [
+     "5197",
+     0,
+     2
+    ],
+    [
+     "9371",
+     1,
+     2
+    ]
+   ],
+   "solver_nodes": 61,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 91,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the lost property cupboard",
+   "treat": "a pair of red wool mittens",
+   "code": "1097",
+   "clues": [
+    [
+     "7853",
+     0,
+     1
+    ],
+    [
+     "2674",
+     0,
+     1
+    ],
+    [
+     "7864",
+     0,
+     1
+    ],
+    [
+     "3816",
+     0,
+     1
+    ],
+    [
+     "4150",
+     0,
+     2
+    ],
+    [
+     "0593",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 58,
+   "hint_pos": 3,
+   "hint_digit": "7"
+  },
+  {
+   "num": 92,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the platform clock",
+   "treat": "a tin whistle",
+   "code": "3587",
+   "clues": [
+    [
+     "5290",
+     0,
+     1
+    ],
+    [
+     "2635",
+     0,
+     2
+    ],
+    [
+     "4251",
+     0,
+     1
+    ],
+    [
+     "4523",
+     1,
+     1
+    ],
+    [
+     "1298",
+     0,
+     1
+    ],
+    [
+     "7652",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 72,
+   "hint_pos": 0,
+   "hint_digit": "3"
+  },
+  {
+   "num": 93,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the footbridge",
+   "treat": "a jar of plum jam",
+   "code": "9307",
+   "clues": [
+    [
+     "1936",
+     0,
+     2
+    ],
+    [
+     "6473",
+     0,
+     2
+    ],
+    [
+     "3182",
+     0,
+     1
+    ],
+    [
+     "3598",
+     0,
+     2
+    ],
+    [
+     "2590",
+     0,
+     2
+    ],
+    [
+     "7289",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 52,
+   "hint_pos": 1,
+   "hint_digit": "3"
+  },
+  {
+   "num": 94,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the upper station canopy",
+   "treat": "a slab of toffee",
+   "code": "5496",
+   "clues": [
+    [
+     "9763",
+     0,
+     2
+    ],
+    [
+     "8279",
+     0,
+     1
+    ],
+    [
+     "8615",
+     0,
+     2
+    ],
+    [
+     "8425",
+     1,
+     1
+    ],
+    [
+     "8164",
+     0,
+     2
+    ],
+    [
+     "0539",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 63,
+   "hint_pos": 2,
+   "hint_digit": "9"
+  },
+  {
+   "num": 95,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the token cabinet",
+   "treat": "a pocket kaleidoscope",
+   "code": "1502",
+   "clues": [
+    [
+     "0246",
+     0,
+     2
+    ],
+    [
+     "8124",
+     0,
+     2
+    ],
+    [
+     "2908",
+     1,
+     1
+    ],
+    [
+     "2719",
+     0,
+     2
+    ],
+    [
+     "8925",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 70,
+   "hint_pos": 3,
+   "hint_digit": "2"
+  },
+  {
+   "num": 96,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the goods yard crane",
+   "treat": "a bookmark of pressed ferns",
+   "code": "5914",
+   "clues": [
+    [
+     "7931",
+     1,
+     1
+    ],
+    [
+     "3748",
+     0,
+     1
+    ],
+    [
+     "8123",
+     0,
+     1
+    ],
+    [
+     "1785",
+     0,
+     2
+    ],
+    [
+     "7392",
+     0,
+     1
+    ],
+    [
+     "9568",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 50,
+   "hint_pos": 0,
+   "hint_digit": "5"
+  },
+  {
+   "num": 97,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the carriage works",
+   "treat": "a box of oat biscuits",
+   "code": "4153",
+   "clues": [
+    [
+     "0238",
+     0,
+     1
+    ],
+    [
+     "1806",
+     0,
+     1
+    ],
+    [
+     "6472",
+     0,
+     1
+    ],
+    [
+     "7543",
+     1,
+     2
+    ],
+    [
+     "1873",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 49,
+   "hint_pos": 1,
+   "hint_digit": "1"
+  },
+  {
+   "num": 98,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the ice-cutting siding",
+   "treat": "a star chart",
+   "code": "1709",
+   "clues": [
+    [
+     "8796",
+     1,
+     1
+    ],
+    [
+     "7561",
+     0,
+     2
+    ],
+    [
+     "7652",
+     0,
+     1
+    ],
+    [
+     "6847",
+     0,
+     1
+    ],
+    [
+     "7210",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 60,
+   "hint_pos": 2,
+   "hint_digit": "0"
+  },
+  {
+   "num": 99,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the switchback halt",
+   "treat": "a pair of thick socks",
+   "code": "0924",
+   "clues": [
+    [
+     "8152",
+     0,
+     1
+    ],
+    [
+     "0278",
+     1,
+     1
+    ],
+    [
+     "2418",
+     0,
+     2
+    ],
+    [
+     "5491",
+     0,
+     2
+    ],
+    [
+     "8725",
+     1,
+     0
+    ]
+   ],
+   "solver_nodes": 68,
+   "hint_pos": 3,
+   "hint_digit": "4"
+  },
+  {
+   "num": 100,
+   "band": "Hard",
+   "digits": 4,
+   "place": "The Railway",
+   "spot": "the summit station porch",
+   "treat": "a wind-up mouse",
+   "code": "7382",
+   "clues": [
+    [
+     "8672",
+     1,
+     2
+    ],
+    [
+     "6548",
+     0,
+     1
+    ],
+    [
+     "3567",
+     0,
+     2
+    ],
+    [
+     "7528",
+     1,
+     2
+    ],
+    [
+     "0864",
+     0,
+     1
+    ],
+    [
+     "7158",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 53,
+   "hint_pos": 0,
+   "hint_digit": "7"
+  },
+  {
+   "num": 101,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the summit hut",
+   "treat": "a snow globe of the lodge",
+   "code": "79610",
+   "clues": [
+    [
+     "96485",
+     0,
+     2
+    ],
+    [
+     "21647",
+     1,
+     2
+    ],
+    [
+     "57496",
+     0,
+     3
+    ],
+    [
+     "41375",
+     0,
+     2
+    ],
+    [
+     "71538",
+     1,
+     1
+    ],
+    [
+     "34150",
+     1,
+     1
+    ],
+    [
+     "87356",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 165,
+   "hint_pos": 1,
+   "hint_digit": "9"
+  },
+  {
+   "num": 102,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the ridge shelter",
+   "treat": "a wooden yo-yo",
+   "code": "07132",
+   "clues": [
+    [
+     "04673",
+     1,
+     2
+    ],
+    [
+     "95420",
+     0,
+     2
+    ],
+    [
+     "13065",
+     0,
+     3
+    ],
+    [
+     "75982",
+     1,
+     1
+    ],
+    [
+     "21398",
+     0,
+     3
+    ],
+    [
+     "61704",
+     0,
+     3
+    ],
+    [
+     "45276",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 120,
+   "hint_pos": 2,
+   "hint_digit": "1"
+  },
+  {
+   "num": 103,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the weather station",
+   "treat": "a magnifying glass",
+   "code": "95824",
+   "clues": [
+    [
+     "07485",
+     0,
+     3
+    ],
+    [
+     "80129",
+     1,
+     2
+    ],
+    [
+     "16208",
+     0,
+     2
+    ],
+    [
+     "06152",
+     0,
+     2
+    ],
+    [
+     "27580",
+     0,
+     3
+    ],
+    [
+     "23146",
+     0,
+     2
+    ],
+    [
+     "45369",
+     1,
+     2
+    ]
+   ],
+   "solver_nodes": 270,
+   "hint_pos": 3,
+   "hint_digit": "2"
+  },
+  {
+   "num": 104,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the ski-patrol cabin",
+   "treat": "a jar of maple butter",
+   "code": "82490",
+   "clues": [
+    [
+     "51624",
+     0,
+     2
+    ],
+    [
+     "69847",
+     0,
+     3
+    ],
+    [
+     "97031",
+     0,
+     2
+    ],
+    [
+     "93276",
+     0,
+     2
+    ],
+    [
+     "95168",
+     0,
+     2
+    ],
+    [
+     "59270",
+     1,
+     2
+    ],
+    [
+     "42351",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 114,
+   "hint_pos": 4,
+   "hint_digit": "0"
+  },
+  {
+   "num": 105,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the old sawmill",
+   "treat": "a tiny brass key on a ribbon",
+   "code": "67139",
+   "clues": [
+    [
+     "32019",
+     1,
+     2
+    ],
+    [
+     "76809",
+     1,
+     2
+    ],
+    [
+     "04521",
+     0,
+     1
+    ],
+    [
+     "10574",
+     0,
+     2
+    ],
+    [
+     "02596",
+     0,
+     2
+    ],
+    [
+     "85016",
+     0,
+     2
+    ],
+    [
+     "89741",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 153,
+   "hint_pos": 0,
+   "hint_digit": "6"
+  },
+  {
+   "num": 106,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the frozen waterfall ledge",
+   "treat": "a little brass bell",
+   "code": "12758",
+   "clues": [
+    [
+     "94087",
+     0,
+     2
+    ],
+    [
+     "74865",
+     0,
+     3
+    ],
+    [
+     "54082",
+     0,
+     3
+    ],
+    [
+     "43672",
+     0,
+     2
+    ],
+    [
+     "65794",
+     1,
+     1
+    ],
+    [
+     "41375",
+     0,
+     3
+    ],
+    [
+     "93071",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 186,
+   "hint_pos": 1,
+   "hint_digit": "2"
+  },
+  {
+   "num": 107,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the fire lookout tower",
+   "treat": "a mug with a fox on it",
+   "code": "86425",
+   "clues": [
+    [
+     "84096",
+     1,
+     2
+    ],
+    [
+     "03158",
+     0,
+     2
+    ],
+    [
+     "23547",
+     0,
+     3
+    ],
+    [
+     "12480",
+     1,
+     2
+    ],
+    [
+     "09214",
+     0,
+     2
+    ],
+    [
+     "02963",
+     0,
+     2
+    ],
+    [
+     "58016",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 156,
+   "hint_pos": 2,
+   "hint_digit": "4"
+  },
+  {
+   "num": 108,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the snow-hare hide",
+   "treat": "a bag of roasted chestnuts",
+   "code": "45179",
+   "clues": [
+    [
+     "19762",
+     0,
+     3
+    ],
+    [
+     "01327",
+     0,
+     2
+    ],
+    [
+     "14523",
+     0,
+     3
+    ],
+    [
+     "02671",
+     1,
+     1
+    ],
+    [
+     "98140",
+     1,
+     2
+    ],
+    [
+     "52073",
+     1,
+     1
+    ],
+    [
+     "51902",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 105,
+   "hint_pos": 3,
+   "hint_digit": "7"
+  },
+  {
+   "num": 109,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the high pasture barn",
+   "treat": "a set of postcards of the lodge",
+   "code": "10963",
+   "clues": [
+    [
+     "91654",
+     0,
+     3
+    ],
+    [
+     "48697",
+     0,
+     2
+    ],
+    [
+     "04185",
+     0,
+     2
+    ],
+    [
+     "60524",
+     1,
+     1
+    ],
+    [
+     "98351",
+     0,
+     3
+    ],
+    [
+     "89043",
+     1,
+     2
+    ],
+    [
+     "93718",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 124,
+   "hint_pos": 4,
+   "hint_digit": "3"
+  },
+  {
+   "num": 110,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the ice cave mouth",
+   "treat": "a tea-light lantern",
+   "code": "03687",
+   "clues": [
+    [
+     "73546",
+     1,
+     2
+    ],
+    [
+     "62845",
+     0,
+     2
+    ],
+    [
+     "69135",
+     0,
+     2
+    ],
+    [
+     "20578",
+     0,
+     3
+    ],
+    [
+     "17496",
+     0,
+     2
+    ],
+    [
+     "65403",
+     0,
+     3
+    ],
+    [
+     "81305",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 103,
+   "hint_pos": 0,
+   "hint_digit": "0"
+  },
+  {
+   "num": 111,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the cairn on Lantern Peak",
+   "treat": "a deck of cards",
+   "code": "90618",
+   "clues": [
+    [
+     "65304",
+     0,
+     2
+    ],
+    [
+     "87640",
+     1,
+     2
+    ],
+    [
+     "27680",
+     1,
+     2
+    ],
+    [
+     "87219",
+     1,
+     2
+    ],
+    [
+     "74053",
+     0,
+     1
+    ],
+    [
+     "40956",
+     1,
+     2
+    ],
+    [
+     "31072",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 190,
+   "hint_pos": 1,
+   "hint_digit": "0"
+  },
+  {
+   "num": 112,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the mountain chapel bell",
+   "treat": "a packet of seed cards",
+   "code": "12836",
+   "clues": [
+    [
+     "48153",
+     0,
+     3
+    ],
+    [
+     "67184",
+     0,
+     3
+    ],
+    [
+     "83964",
+     0,
+     3
+    ],
+    [
+     "98534",
+     1,
+     1
+    ],
+    [
+     "85294",
+     0,
+     2
+    ],
+    [
+     "24385",
+     0,
+     3
+    ],
+    [
+     "52398",
+     1,
+     2
+    ]
+   ],
+   "solver_nodes": 91,
+   "hint_pos": 2,
+   "hint_digit": "8"
+  },
+  {
+   "num": 113,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the shepherd's bothy",
+   "treat": "a spool of ribbon",
+   "code": "30597",
+   "clues": [
+    [
+     "97268",
+     0,
+     2
+    ],
+    [
+     "16908",
+     0,
+     2
+    ],
+    [
+     "16395",
+     1,
+     2
+    ],
+    [
+     "73296",
+     1,
+     2
+    ],
+    [
+     "79483",
+     0,
+     3
+    ],
+    [
+     "15209",
+     0,
+     3
+    ],
+    [
+     "49610",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 149,
+   "hint_pos": 3,
+   "hint_digit": "9"
+  },
+  {
+   "num": 114,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the glacier viewpoint",
+   "treat": "a skate-lace repair kit",
+   "code": "09721",
+   "clues": [
+    [
+     "16403",
+     0,
+     2
+    ],
+    [
+     "28753",
+     1,
+     1
+    ],
+    [
+     "96273",
+     0,
+     3
+    ],
+    [
+     "51240",
+     0,
+     3
+    ],
+    [
+     "58270",
+     0,
+     3
+    ],
+    [
+     "89573",
+     1,
+     1
+    ],
+    [
+     "37816",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 137,
+   "hint_pos": 4,
+   "hint_digit": "1"
+  },
+  {
+   "num": 115,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the star-watch platform",
+   "treat": "a carved wooden owl",
+   "code": "14605",
+   "clues": [
+    [
+     "83157",
+     0,
+     2
+    ],
+    [
+     "38590",
+     0,
+     2
+    ],
+    [
+     "25743",
+     0,
+     2
+    ],
+    [
+     "65231",
+     0,
+     3
+    ],
+    [
+     "87103",
+     1,
+     1
+    ],
+    [
+     "61790",
+     0,
+     3
+    ],
+    [
+     "86490",
+     0,
+     3
+    ]
+   ],
+   "solver_nodes": 109,
+   "hint_pos": 0,
+   "hint_digit": "1"
+  },
+  {
+   "num": 116,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the pine-cone gully",
+   "treat": "a tiny pewter train",
+   "code": "07894",
+   "clues": [
+    [
+     "90153",
+     0,
+     2
+    ],
+    [
+     "39018",
+     0,
+     3
+    ],
+    [
+     "51378",
+     0,
+     2
+    ],
+    [
+     "01542",
+     1,
+     1
+    ],
+    [
+     "54639",
+     0,
+     2
+    ],
+    [
+     "53801",
+     1,
+     1
+    ],
+    [
+     "19537",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 151,
+   "hint_pos": 1,
+   "hint_digit": "7"
+  },
+  {
+   "num": 117,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the pass toll hut",
+   "treat": "a pocket compass",
+   "code": "83941",
+   "clues": [
+    [
+     "52317",
+     0,
+     2
+    ],
+    [
+     "16054",
+     0,
+     2
+    ],
+    [
+     "02496",
+     0,
+     2
+    ],
+    [
+     "93785",
+     1,
+     2
+    ],
+    [
+     "74501",
+     1,
+     1
+    ],
+    [
+     "54817",
+     0,
+     3
+    ],
+    [
+     "51398",
+     0,
+     4
+    ]
+   ],
+   "solver_nodes": 118,
+   "hint_pos": 2,
+   "hint_digit": "9"
+  },
+  {
+   "num": 118,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the hot-spring bathhouse",
+   "treat": "a jar of shortbread",
+   "code": "07831",
+   "clues": [
+    [
+     "60324",
+     0,
+     2
+    ],
+    [
+     "08165",
+     1,
+     2
+    ],
+    [
+     "32618",
+     0,
+     3
+    ],
+    [
+     "29043",
+     0,
+     2
+    ],
+    [
+     "15720",
+     0,
+     3
+    ],
+    [
+     "85671",
+     1,
+     2
+    ],
+    [
+     "89042",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 137,
+   "hint_pos": 3,
+   "hint_digit": "3"
+  },
+  {
+   "num": 119,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the trail-map cabin",
+   "treat": "a hand-knitted scarf",
+   "code": "37601",
+   "clues": [
+    [
+     "26934",
+     0,
+     2
+    ],
+    [
+     "49765",
+     0,
+     2
+    ],
+    [
+     "35487",
+     1,
+     1
+    ],
+    [
+     "65803",
+     1,
+     2
+    ],
+    [
+     "73840",
+     0,
+     3
+    ],
+    [
+     "58061",
+     1,
+     2
+    ],
+    [
+     "32415",
+     1,
+     1
+    ]
+   ],
+   "solver_nodes": 148,
+   "hint_pos": 4,
+   "hint_digit": "1"
+  },
+  {
+   "num": 120,
+   "band": "Expert",
+   "digits": 5,
+   "place": "The Mountain",
+   "spot": "the highest bench in Frostwood",
+   "treat": "a pine-scented soap",
+   "code": "70418",
+   "clues": [
+    [
+     "27198",
+     1,
+     2
+    ],
+    [
+     "52809",
+     0,
+     2
+    ],
+    [
+     "49013",
+     1,
+     2
+    ],
+    [
+     "04165",
+     0,
+     3
+    ],
+    [
+     "12497",
+     1,
+     2
+    ],
+    [
+     "57624",
+     0,
+     2
+    ],
+    [
+     "49260",
+     0,
+     2
+    ]
+   ],
+   "solver_nodes": 193,
+   "hint_pos": 0,
+   "hint_digit": "7"
+  }
+ ]
+}

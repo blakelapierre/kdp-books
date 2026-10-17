@@ -7,7 +7,7 @@ This log lists every KDP book idea that has already been **built** or **evaluate
 - Author name: Blake La Pierre. Default price: $9.99, the lowest price that earns the 60% paperback royalty.
 
 ## Puzzle types already used in the Frostwood series
-Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), cozy riddles + text logic for Kindle (book 5), nonograms / hanjie (book 6), Hashi / Bridges (book 7) and Slitherlink / Loop the Loop / Fences (book 8, hardcover). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
+Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch (book 3), Tents / Tents and Trees (book 4), cozy riddles + text logic for Kindle (book 5), nonograms / hanjie (book 6), Hashi / Bridges (book 7), Slitherlink / Loop the Loop / Fences (book 8, hardcover) and crack-the-code number locks (book 9, Kindle ebook). Every new Frostwood book should use a different type. See [series/frostwood/README.md](series/frostwood/README.md).
 
 ## Built
 | Date | Idea | Result |
@@ -28,6 +28,7 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 | 2026-10-15 | Slitherlink (Loop the Loop / Fences) logic puzzles, Frostwood book 8, **hardcover** format slot (Format: hardcover; chosen for its Frostwood fit: lot fences buried by snow with only the numbered posts showing; previously evaluated 2026-09-30 for book 3 and passed over, no dedicated Slitherlink book on Amazon is themed, illustrated or hardcover) | *Fences of Frostwood*, 100 puzzles (20 Easy 6×6 / 30 Medium 7×7 / 30 Hard 8×8 / 20 Expert 10×10), 88 pages, Format: hardcover, $17.99, [folder](series/frostwood/08-fences-of-frostwood/) |
 
 | 2026-10-16 | Adult/cozy three-clue What-Am-I Kindle ebook (candlelit cottage framing, audio-first) | *Three Clues by Candlelight*, 150 riddles (10 rounds × 15), 14,669 words, Format: Kindle ebook / audio-first, [folder](standalone/07-three-clues-by-candlelight/) |
+| 2026-10-17 | Crack-the-code (number-lock deduction) logic puzzles, Frostwood book 9, **Kindle ebook** format slot (Format: Kindle ebook; text-only clues work on a phone with nothing to write in; tap-to-jump hint and answer links). Not used in any earlier book (book 5 has Caesar ciphers and anagrams, not code-breaking). Public evidence seen 2026-10-17: Puzzleship publishes six Crack the Code puzzles a day and notes printable booklets of 120 locks are sold; the one dedicated Amazon book found, *Crack the Code: Logical Brain Teaser Puzzle for Adults* (B0882JGRPY), shows 1 review. Thin dedicated competition, so demand is unproven; chosen as a low-cost ebook test | *The Lockboxes of Frostwood*, 120 puzzles (30 Easy 3-digit / 35 Medium 3-digit / 35 Hard 4-digit / 20 Expert 5-digit), Format: Kindle ebook, $3.99, est. royalty $2.66, [folder](series/frostwood/09-the-lockboxes-of-frostwood/) |
 
 ## Evaluated, not chosen
 | Date | Idea |
@@ -95,6 +96,8 @@ Elimination mystery (book 1), Train Tracks (book 2), Star Battle / Two Not Touch
 *Stories We Keep* is a guided memory keepsake journal (hardcover): eight life-story chapters with writing prompts, family tree, timeline, letter pages and extra lined pages — not a puzzle book. Another life-story journal aimed at a single role (Mom-only / Grandma-only) would be a sequel, not a new idea.
 
 *Three Clues by Candlelight* (standalone 07) is an audio-first three-clue What-Am-I riddle ebook: 10 cozy cottage themes × 15 riddles, answer after every pause. Different from Frostwood 05 (mixed Frostwood-branded riddles + text logic) and from Tidewhistle (mini-mysteries). Another three-clue What-Am-I with the same cottage framing would be a sequel, not a new idea.
+
+*The Lockboxes of Frostwood* (Frostwood book 9, Kindle ebook) is a full dedicated crack-the-code book: 120 number locks (3 to 5 distinct digits) with exact right-place / wrong-place / nothing-is-right notes. Another crack-the-code book would be a sequel (e.g. letter or colour locks), not a new idea.
 
 ## How to add entries
 Append a new row with the date whenever an idea is built or evaluated. When a book is built, also add it to the table in README.md. If it is part of a series, add it to that series' README too.
