@@ -477,3 +477,51 @@ Notes: daily growth slowed to +9 on the Tidewhistle Shorts. Case 12 colour answe
 Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
 
 Notes: TikTok is nearly flat day to day; the 7-day window is still riding the Oct 12 spike. "whodunit puzzle" is the top search term bringing people in, so it's worth working into captions.
+
+## 2026-10-17, ~6:45 PM PT (public yt-dlp; YouTube Studio Analytics errored)
+
+YouTube Studio Analytics showed "Oops, something went wrong" on both Overview and Content after a reload, so this check uses public counts. Subscribers, stayed-to-watch, average view duration, traffic sources and Part 1 → Part 2 link clicks were not readable tonight. Comments inbox (Unresponded filter): nothing from the last 2 days; newest is 2 months old on a non-Tidewhistle video.
+
+Context: today 42 zero-view Tidewhistle Shorts and 27 zero-view wide videos were deleted on YouTube (see `video/tw-requeue/yt_deleted.txt`) for the colour-only repost queue. Totals below are on the surviving posts.
+
+**Tidewhistle Shorts: 742 views on 53 posts (+4 vs 738).** Movers since Oct 16:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C30 P1 | chiHRYzNL-o | 1 (+1) |
+| C12 colour P1 | Oh6n9i7MWfc | 1 (+1) |
+| C12 colour P2 | CuKkUJGL4bI | 15 (+1) |
+| C11 colour P2 | rsm-UrSkQ7o | 2 (+1) |
+| C6 P1 repost ("puffin blanket", new) | mBhkl4X7ZSA | 1 (new) |
+| C17 colour P2 | Vzlt3LfcW7w | deleted (had 1 view on Oct 16) |
+
+Biggest Shorts unchanged: C9 P1 87, C1 P1 82, C8 P2 73, C3 colour P2 72, C1 P2 61, C2 P1 45, C8 P1 34, C5 P1 33, C25 P2 32.
+
+Book promo Shorts: Bridges of Frostwood p2eXldl7RL4 **11 (+5)**; Advent Clock ATac1OtVZfU 6 (+2); cocoa tin QnSerK4PriI 2 (0); Stories We Keep uqukExep5TQ 1 (+1); Porch Swing Crosswords XZ-AnE6LYfw 0.
+
+Wide Tidewhistle videos: **38** on 15 surviving videos (+1): C20 HfkXscb2rFM 5 (+1).
+
+Part 2 / Part 1 (views): C1 61/82 = 74%; C2 4/45 = 9%; C5 6/33 = 18%; C9 23/87 = 26%; Part 2 ahead in C8 73/34, C20 20/13, C24 19/14, C25 32/5, C27 12/6. No change from yesterday.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**31** posts (67 zero-view posts deleted today for the repost queue; 2 new posts at 4:36–4:37 PM), 0 drafts. Followers **1** (net +1 in 7 days).
+
+**Last 7 days (chart Oct 10–16):** video views **625** (+86, +16.0%), profile views **12** (−5), likes **4** (−1), comments 0, shares **1** (+1). Traffic: For You 96.6%, Search 2.3%, Personal profile 1.1%. Search queries: "whodunit puzzle" 21.4%, "p4perback trying to solve puzzles" 7.1%, "puzzlit mystery achievement answers" 7.1%, "pick 30 cases" 7.1%, "whostolemycake1" 7.1%.
+
+**Public day-over-day (yt-dlp):** total views **1155** (**+16** vs 1139); Tidewhistle posts 1144 (+6), book promos 11 (+10).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| Stories We Keep promo repost (Oct 17, 4:36 PM) | 7697784754141154590 | **10** (new; the Oct 15 original had 0 and is gone) |
+| C5 P2 "prize marrow" repost (Oct 17, 4:37 PM) | 7697785097939979550 | 4–5 (new) |
+| C26 P2 | 7696524218678136095 | 2 (+1) |
+| C10 P2 | 7695719045026401567 | 2 (+1) |
+
+Everything else unchanged (C1 112/116, C2 105/99, C3 103/79, C4 101/92, early tests 131/168).
+
+**Review / Only me:** **0**. All 31 posts show Everyone, no under-review or restriction labels.
+
+Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
+
+Notes: the two fresh TikTok reposts picked up 10 and 5 views within about two hours, far more than their zero-view originals, so reposting is giving posts a second shot at the For You feed.
