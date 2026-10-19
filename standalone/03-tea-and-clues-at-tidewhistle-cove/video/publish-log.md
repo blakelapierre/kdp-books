@@ -289,3 +289,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-18 ~8:30 PM PT)
 - YouTube seq 2: Case 7 P1 (colour) Public, HfFl1R6B0d0 https://youtube.com/shorts/HfFl1R6B0d0 (Related→P2 3ZB_lLqt52s). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries.
 - TikTok promo 1: Porch Swing Crosswords promo reposted https://www.tiktok.com/@shortmysterycases/video/7698217236149914910 (AI label on, Everyone; under review / Only me at post time). 0-view original 7697165965825477918 deleted.
+
+## Colour repost queue (2026-10-19 ~3:35 AM PT)
+- YouTube seq 3: Case 10 wide (colour) Public, UvFcMuZBwgQ https://youtu.be/UvFcMuZBwgQ. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
+- TikTok promo 2: Frostwood cocoa tin promo reposted https://www.tiktok.com/@shortmysterycases/video/7698325531594411294 (AI label on, Everyone; under review / Only me at post time). 0-view original 7697136656213675294 deleted.
