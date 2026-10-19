@@ -285,3 +285,7 @@ Public: P1 chiHRYzNL-o (Related→P2 qejduGBx6CM), P2 qejduGBx6CM, wide QBx5xRBD
 AI label on, comments on, Disclose off, Everyone selected (both showed Only me / under review at post time):
 - P1 https://www.tiktok.com/@shortmysterycases/video/7696985913221467423 (under review / Only me at post time)
 - P2 https://www.tiktok.com/@shortmysterycases/video/7696986029412125982 (under review / Only me at post time)
+
+## Colour repost queue (2026-10-18 ~8:30 PM PT)
+- YouTube seq 2: Case 7 P1 (colour) Public, HfFl1R6B0d0 https://youtube.com/shorts/HfFl1R6B0d0 (Related→P2 3ZB_lLqt52s). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries.
+- TikTok promo 1: Porch Swing Crosswords promo reposted https://www.tiktok.com/@shortmysterycases/video/7698217236149914910 (AI label on, Everyone; under review / Only me at post time). 0-view original 7697165965825477918 deleted.
