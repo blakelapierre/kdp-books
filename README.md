@@ -24,6 +24,7 @@ standalone/                  # books that are not part of a series (one folder e
   05-porch-swing-crosswords/
   06-stories-we-keep/
   07-three-clues-by-candlelight/
+  08-window-seat-codewords/
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
@@ -60,6 +61,7 @@ Current books:
 5. `05-porch-swing-crosswords`: built paperback, not published
 6. `06-stories-we-keep`: built hardcover, not published
 7. `07-three-clues-by-candlelight`: built Kindle ebook (audio-first), not published
+8. `08-window-seat-codewords`: built paperback, not published
 
 ## Books
 
@@ -88,6 +90,7 @@ Current books:
 | *Porch Swing Crosswords*: 80 Cozy Themed Crossword Puzzles for Adults (Easy to Medium) | Freeform themed crosswords with plain clues and word banks | Draft, print-ready paperback. Not yet published or submitted to KDP | 196 | $9.99 | $2.64 | [05-porch-swing-crosswords/README.md](standalone/05-porch-swing-crosswords/README.md) |
 | *Stories We Keep*: A Guided Memory Keepsake for the Ones We Love (hardcover) | Guided life-story prompts + family tree, timeline, letters | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 102 | $17.99 | $3.99 | [06-stories-we-keep/README.md](standalone/06-stories-we-keep/README.md) |
 | *Three Clues by Candlelight*: 150 Cozy What-Am-I Riddles in Three Clues Each (Kindle, audio-first) | Three-clue What-Am-I riddles (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 14,669 words) | $3.99 | $2.77† | [07-three-clues-by-candlelight/README.md](standalone/07-three-clues-by-candlelight/README.md) |
+| *Window Seat Codewords*: 120 Cozy Codeword Puzzles for Adults (Easy, Medium & Hard) | Codewords (number-coded crosswords with no clues, American English) | Draft, print-ready paperback. Not yet published or submitted to KDP | 154 | $9.99 | $3.15 | [08-window-seat-codewords/README.md](standalone/08-window-seat-codewords/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -229,6 +232,17 @@ python3 build.py           # -> ../standalone-06-stories-we-keep-interior.pdf an
 python3 cover.py           # hardcover wrap -> ../standalone-06-stories-we-keep-cover.pdf and ../cover-info.json
 cp ../standalone-06-stories-we-keep-interior.pdf ../interior-standalone-06-stories-we-keep.pdf
 cp ../standalone-06-stories-we-keep-cover.pdf ../cover-standalone-06-stories-we-keep.pdf
+cd ../../..
+
+# Standalone: Window Seat Codewords (paperback)
+cd standalone/08-window-seat-codewords/src
+python3 words.py      # word lists: enable1.txt + wordfreq + en_US.dic (proper-noun filter) -> fill.txt
+python3 master.py     # generate the 120 codewords -> ../data.json (~1 min; gen.py fills the grids and picks starters with its own solver)
+python3 verify.py     # independent SAT check over the full ENABLE list (one key per puzzle), plus word/coverage/A-Z checks -> ../verification.md (~5 min)
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../standalone-08-window-seat-codewords-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../standalone-08-window-seat-codewords-cover.pdf and ../tmp/standalone-08-window-seat-codewords-cover-guides.pdf
+cp ../standalone-08-window-seat-codewords-interior.pdf ../interior-standalone-08-window-seat-codewords.pdf; cp ../standalone-08-window-seat-codewords-cover.pdf ../cover-standalone-08-window-seat-codewords.pdf   # phone-friendly copies
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

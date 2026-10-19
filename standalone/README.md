@@ -17,3 +17,4 @@ Folders are numbered `NN-<book-slug>` in creation order; a new book gets the nex
 | *Porch Swing Crosswords*: 80 Cozy Themed Crossword Puzzles for Adults (paperback) | 196 | $9.99 | $2.64 | [05-porch-swing-crosswords/](05-porch-swing-crosswords/) · [README](05-porch-swing-crosswords/README.md) |
 | *Stories We Keep*: A Guided Memory Keepsake (hardcover) | 102 | $17.99 | $3.99 | [06-stories-we-keep/](06-stories-we-keep/) · [README](06-stories-we-keep/README.md) |
 | *Three Clues by Candlelight*: 150 Cozy What-Am-I Riddles in Three Clues Each (Kindle ebook, audio-first) | — (14,669 words) | $3.99 | $2.77 | [07-three-clues-by-candlelight/](07-three-clues-by-candlelight/) · [README](07-three-clues-by-candlelight/README.md) |
+| *Window Seat Codewords*: 120 Cozy Codeword Puzzles for Adults (paperback) | 154 | $9.99 | $3.15 | [08-window-seat-codewords/](08-window-seat-codewords/) · [README](08-window-seat-codewords/README.md) |

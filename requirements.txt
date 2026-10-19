@@ -3,3 +3,4 @@ python-sat
 numpy
 python-docx
 Pillow
+wordfreq
