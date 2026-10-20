@@ -502,3 +502,10 @@ All public pages were checked Sep 30 2026.
 4. KDP Community, *Accessing your Amazon Advertising console* (Bookshelf "…" → Promote and Advertise): https://www.kdpcommunity.com/s/article/Accessing-your-Amazon-Advertising-console
 5. Amazon Ads, *Getting started guide for authors* (PDF): https://m.media-amazon.com/images/G/01/ams/AMS_getting_started_authors_10.pdf
 6. KDP Help, *Timelines* (metrics up to 14 days; price changes 72 hours–5 business days): https://kdp.amazon.com/en_US/help/topic/G202173620
+
+## 2026-10-20 — Adspirer check (profile 427992898389565)
+Found existing ENABLED SP AUTO campaigns (created 2026-10-18 in console), so no new campaigns were created (avoid duplicates):
+- 277628141714115 "Campaign - 10/18/2026 09:16:48.387" — $5/day — ASINs B0HN6JKQQV, B0HLMB966Q, B0HN6QXPFG, B0HN6TSN7T, B0HNFZGV6T, B0HMW1MR5T, B0HLMMS675
+- 47473767889736 "Campaign - 10/18/2026 11:18:25.513" — $5/day — B0HMW1MR5T (Advent Clock)
+Current total $10/day vs Blake's $7/day target — pending Blake's decision on budget changes.
+Archived: 417712908601950, 403035995477604, 458946608404356, 421817525050169.
