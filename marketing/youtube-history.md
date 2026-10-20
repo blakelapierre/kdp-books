@@ -525,3 +525,58 @@ Everything else unchanged (C1 112/116, C2 105/99, C3 103/79, C4 101/92, early te
 Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
 
 Notes: the two fresh TikTok reposts picked up 10 and 5 views within about two hours, far more than their zero-view originals, so reposting is giving posts a second shot at the For You feed.
+
+## 2026-10-19, ~6:45 PM PT (YouTube Studio Analytics + content, public yt-dlp)
+
+No entry on Oct 18 (that night's check failed), so changes below are vs the Oct 17 check (two days). Raw public pulls in `/workspace/tidewhistle-stats/2026-10-19/` on the box.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 21 – Oct 18): 911 views, 13.4 watch hours. Realtime last 48h: 29 views; top: C7 P1 repost "Sir Reginald the gnome" (HfFl1R6B0d0) 10, C11 colour P1 repost "Who sat by the window?" (F-GO1gkQRpc) 3, Porch Swing Crosswords promo 3.
+
+Shorts (last 28 days): 786 views, 169 engaged views, 1 like, **stayed to watch 18.5%** / swiped away 81.5% (unchanged). Traffic: Shorts feed 80.5%, YouTube search 8.3%, channel pages 5.6%, other YouTube features 3.1%, browse 1.2%, other 1.4%. Part 1 → Part 2 link-click data: not shown. Avg view duration (28-day top list) unchanged: C9 P1 0:28 (24.3%), C1 P1 0:54 (35.9%), C8 P2 0:28 (34.2%), C3 colour P2 0:17 (19.7%), C1 P2 0:09 (12.3%), C2 P1 0:35 (27.3%), C8 P1 0:36 (34.8%), C5 P1 0:15 (13.9%), C25 P2 0:24 (27.5%).
+
+Comments: no new comments in the last 2 days (Unresponded inbox; newest is 2 months old on a non-Tidewhistle video).
+
+**Tidewhistle Shorts: 758 views on 55 posts (+16 vs 742 on Oct 17).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C7 P1 repost "Sir Reginald the gnome" (Oct 18) | HfFl1R6B0d0 | **8** (new) |
+| C11 colour P1 repost "Who sat by the window?" (Oct 19) | F-GO1gkQRpc | 3 (new) |
+| C6 P1 repost "puffin blanket" | mBhkl4X7ZSA | 3 (+2) |
+| C16 colour P1 | OI1zMmTZ9_Y | 3 (+2) |
+| Prize cake P2 | wIpgU5xI1mg | 2 (+1) |
+
+Biggest Shorts unchanged: C9 P1 87, C1 P1 82, C8 P2 73, C3 colour P2 72, C1 P2 61, C2 P1 45, C8 P1 34, C5 P1 33, C25 P2 32.
+
+Book promo Shorts: Bridges of Frostwood p2eXldl7RL4 **12 (+1)**; Advent Clock ATac1OtVZfU 6 (0); Porch Swing Crosswords XZ-AnE6LYfw **3 (+3)**; cocoa tin QnSerK4PriI 2 (0); Stories We Keep uqukExep5TQ 1 (0).
+
+Wide Tidewhistle videos: **39** on 17 videos (+1): C13 colour ldJRYcHfXS0 4 (+1); new reposts C10 colour UvFcMuZBwgQ 0, C12 colour 98nk4zywl8o 0 (posted this evening).
+
+Part 2 / Part 1 (views): C1 61/82 = 74%; C2 4/45 = 9%; C5 6/33 = 18%; C9 23/87 = 26%; Part 2 ahead in C8 73/34, C20 20/13, C24 19/14, C25 32/5, C27 12/6. No change. Reposted P1s (C6, C7, C11) don't have their P2 reposted yet.
+
+Notes: YouTube is slow (+16 in two days), and nearly all of it is the colour-repost queue. The C7 gnome repost is the best fresh post on YouTube this week.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**32** posts, 0 drafts. Followers **1** (net +1 in 7 days).
+
+**Last 7 days (chart from Oct 12):** video views **747** (+200, +36.6%), profile views **14** (−3), likes **4** (−1), comments 0, shares **1** (+1). Traffic: For You 93.1%, Search 5.7%, Personal profile 1.2%. Search queries: "whodunit puzzle" 20%, a "lakeside slaughter cold case" decode query 13.3%, "lifeboat airlines dc-10" 6.7%, "compass clue" 6.7%, "mystery solved" 6.7%.
+
+**Public day-over-day (yt-dlp):** total views **1321** (**+166** vs 1155 on Oct 17); Tidewhistle posts 1239 (+95), book promos 82 (+71).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C5 P2 "prize marrow" repost (Oct 17) | 7697785097939979550 | **85** (+81) |
+| Stories We Keep promo repost (Oct 17) | 7697784754141154590 | **42** (+32) |
+| Cocoa tin promo repost (Oct 19, 3:35 AM) | 7698325531594411294 | **32** (new; original 0, deleted) |
+| C6 P1 "puffin blanket" repost (Oct 19, 5:40 PM) | 7698543401926479135 | 14 (new, ~1 hour old) |
+| Advent Clock promo repost (Oct 19, 10:41 AM) | 7698435468718820638 | 7 (new; original 0, deleted) |
+| Porch Swing Crosswords promo repost (Oct 18, 8:34 PM) | 7698217236149914910 | 0 (new; original 0, deleted) |
+
+Everything else unchanged (C1 112/116, C2 105/99, C3 103/79, C4 101/92, early tests 131/168, Bridges promo 1).
+
+**Review / Only me:** **0**. Every post read (31 of 32; list is virtualized) shows Everyone, no review or violation labels.
+
+Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
+
+Notes: reposting keeps working on TikTok. Fresh copies of zero-view posts picked up 85, 42 and 32 views where the originals got 0. Crosswords is the only repost that stalled. "whodunit puzzle" is still the top search term.
