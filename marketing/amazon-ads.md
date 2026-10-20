@@ -509,3 +509,14 @@ Found existing ENABLED SP AUTO campaigns (created 2026-10-18 in console), so no 
 - 47473767889736 "Campaign - 10/18/2026 11:18:25.513" — $5/day — B0HMW1MR5T (Advent Clock)
 Current total $10/day vs Blake's $7/day target — pending Blake's decision on budget changes.
 Archived: 417712908601950, 403035995477604, 458946608404356, 421817525050169.
+
+## 2026-10-20 — Per-book AUTO SP campaigns (via Adspirer), total $10/day
+| Campaign | ID | Ad group | ASIN | Budget | Default bid | State |
+|---|---|---|---|---|---|---|
+| Auto - Advent Clock HC | 161403826749231 | 510587886419930 | B0HMW1MR5T | $4 | $0.40 | ENABLED |
+| Auto - Bridges of Frostwood PB | 112094854265272 | 281526585158354 | B0HN6JKQQV | $2 | $0.40 | ENABLED |
+| Auto - Porch Swing Crosswords PB | 153725246462664 | 515521541065983 | B0HN6QXPFG | $2 | $0.40 | ENABLED |
+| Auto - Stories We Keep HC | 278315951110803 | 352356397158880 | B0HN6TSN7T | $2 | $0.40 | ENABLED |
+Paused old campaigns 277628141714115 and 47473767889736 (pause returned "Updated: 2").
+Note: B0HLMB966Q, B0HNFZGV6T, B0HLMMS675 were only in 277628141714115 and are now unadvertised.
+First review: Oct 26.
