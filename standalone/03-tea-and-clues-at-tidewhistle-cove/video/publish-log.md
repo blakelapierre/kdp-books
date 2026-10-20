@@ -305,3 +305,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-20 ~12:35 AM PT)
 - YouTube seq 6: Case 13 P2 (colour) Public, -3ZmVdoVvog https://youtube.com/shorts/-3ZmVdoVvog. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean. Surviving Case 13 P1 akstLV-kkks Related → -3ZmVdoVvog (old P2 iEH9g6QA3aE was deleted).
 - TikTok seq 3: Case 6 P2 (colour) https://www.tiktok.com/@shortmysterycases/video/7698650736481062175 (AI label on, Everyone; under review / Only me at post time).
+
+## Colour repost queue (2026-10-20 ~7:40 AM PT)
+- YouTube seq 7: Case 14 P1 (colour) Public, OXmlQOZ0nFs https://youtube.com/shorts/OXmlQOZ0nFs (Related→Case 14 P2, picker's only "Case 14" answer result; surviving copy hQAQVdPmxHg, colour -s3fyXDcNCI was deleted). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
+- TikTok seq 4: Case 7 P1 (colour) https://www.tiktok.com/@shortmysterycases/video/7698760778140192030 (AI label on, Everyone; under review / Only me at post time).
