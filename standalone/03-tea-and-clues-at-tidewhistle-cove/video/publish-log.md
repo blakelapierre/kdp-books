@@ -297,3 +297,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-19 ~10:40 AM PT)
 - YouTube seq 4: Case 11 P1 (colour) Public, F-GO1gkQRpc https://youtube.com/shorts/F-GO1gkQRpc (Related→P2 rsm-UrSkQ7o). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
 - TikTok promo 3: Advent Clock promo reposted https://www.tiktok.com/@shortmysterycases/video/7698435468718820638 (AI label on, Everyone; under review / Only me at post time). 0-view original 7697136435052252446 deleted. All three TikTok promos done; TikTok queue rows resume next run.
+
+## Colour repost queue (2026-10-19 ~5:40 PM PT)
+- YouTube seq 5: Case 12 wide (colour) Public, 98nk4zywl8o https://youtu.be/98nk4zywl8o. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
+- TikTok seq 2: Case 6 P1 (colour) https://www.tiktok.com/@shortmysterycases/video/7698543401926479135 (AI label on, Everyone; under review / Only me at post time). First TikTok queue row after the three promos.
