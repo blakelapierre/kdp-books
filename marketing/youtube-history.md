@@ -580,3 +580,50 @@ Everything else unchanged (C1 112/116, C2 105/99, C3 103/79, C4 101/92, early te
 Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%.
 
 Notes: reposting keeps working on TikTok. Fresh copies of zero-view posts picked up 85, 42 and 32 views where the originals got 0. Crosswords is the only repost that stalled. "whodunit puzzle" is still the top search term.
+
+## 2026-10-20, ~6:40 PM PT (YouTube Studio Analytics + content, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-20/` on the box. Changes vs the Oct 19 check.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 22 – Oct 19): 927 views, 13.5 watch hours. Realtime last 48h: 36 views; top: C7 P1 repost "Sir Reginald the gnome" 11, C13 colour P2 "The Misspelled Note" 10, Airgas video 3. Newest upload C14 colour wide (jBZadphdGrc) 0 views in first 4 hours.
+
+Shorts (last 28 days): 801 views, 172 engaged views, 1 like, **stayed to watch 18.5%** / swiped away 81.5% (unchanged). Traffic: Shorts feed 80.3%, YouTube search 8.7%, channel pages 5.5%, other YouTube features 3.0%, browse 1.1%, other 1.4%. Part 1 → Part 2 link-click data: not shown. Avg view duration top list unchanged (C9 P1 0:28, C1 P1 0:54, C8 P2 0:28, C3 colour P2 0:17, C1 P2 0:09, C2 P1 0:35, C8 P1 0:36, C5 P1 0:15, C25 P2 0:24).
+
+Comments: none in the last 24 hours seen (Unresponded inbox, newest 2+ months old on non-Tidewhistle videos).
+
+**Tidewhistle Shorts: 776 views on 57 posts (+18 vs 758).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C13 colour P2 "The Misspelled Note" (new) | -3ZmVdoVvog | **10** (new) |
+| C14 colour P1 "Who knew the secret?" (new) | OXmlQOZ0nFs | 5 (new) |
+| C7 P1 repost "Sir Reginald the gnome" | HfFl1R6B0d0 | 11 (+3) |
+
+Book promo Shorts unchanged (Bridges 12, Advent 6, Crosswords 3, cocoa tin 2, Stories We Keep 1).
+
+Wide Tidewhistle videos: **40** on 18 videos (+1): C13 colour ldJRYcHfXS0 5 (+1); new C14 colour jBZadphdGrc 0.
+
+Part 2 / Part 1 (views): unchanged from Oct 19 (C1 74%, C2 9%, C5 18%, C9 26%; P2 ahead in C8, C20, C24, C25, C27).
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**35** posts, 0 drafts. Followers **1**.
+
+**Last 7 days (Studio):** video views **275** (−772, −73.7%), profile views **4** (−23), likes **2** (−5), comments 0, shares 0 (−1). Traffic: For You 92.6%, Search 6.3%, Personal profile 1.1%. Search queries: "lakeside slaughter cold case" decode query 18.2%, "whodunit puzzle" 9.1%, "mystery solved" 9.1%, "p4perback trying to solve puzzles" 9.1%, "24" 9.1%. (The Studio 7-day window has rolled past the big Oct 12–13 batch, and it lags the public counts.)
+
+**Public day-over-day (yt-dlp):** total views **1579** (**+258** vs 1321); Tidewhistle posts 1432 (+193), book promos 147 (+65).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C6 P1 "puffin blanket" repost (Oct 19, 5:40 PM) | 7698543401926479135 | **105** (+91) |
+| C7 P1 "Sir Reginald" repost (Oct 20, 7:44 AM) | 7698760778140192030 | **73** (new) |
+| Cocoa tin promo repost | 7698325531594411294 | **82** (+50) |
+| C7 P2 "Sir Reginald" repost (Oct 20, 2:39 PM) | 7698867850752036127 | 26 (new) |
+| Advent Clock promo repost | 7698435468718820638 | 22 (+15) |
+| C6 P2 "puffin blanket" repost (Oct 20, 12:37 AM) | 7698650736481062175 | 1 (new) |
+
+**Review / Only me:** **0**. All 35 posts show Everyone, no review or violation labels.
+
+Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%; C6 repost 1/105 = 1%; C7 repost 26/73 = 36% (P2 only 4 hours old).
+
+Notes: TikTok reposts keep landing (puffin P1 105, gnome P1 73 in under a day), but the C6 puffin P2 repost stalled at 1 view. YouTube growth is now mostly new colour posts.
