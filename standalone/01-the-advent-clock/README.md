@@ -1,6 +1,6 @@
 # The Advent Clock: KDP publishing checklist
 
-**Status: print-ready, not yet published.** Nothing has been submitted to KDP.
+**Status: ✅ Live on Amazon as a hardcover, $17.99.** ASIN [B0HMW1MR5T](https://www.amazon.com/dp/B0HMW1MR5T), ISBN 979-8162104520, publication date Oct 13, 2026 (confirmed on Amazon Oct 22, 2026). The checklist below was written for the original $9.99 paperback plan.
 
 | | |
 |---|---|

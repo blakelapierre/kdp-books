@@ -6,7 +6,7 @@ Back to the [marketing kit](../README.md).
 - Replace `[SAMPLE-PDF-LINK]` with a public link to the PDF in [samples/](samples/). The repo is private, so upload the file somewhere public first.
 - Always **lead with the free puzzle**, and mention the book once, at the end.
 - Say plainly that you made it. Never ask for reviews in groups. See [reviews.md](../reviews.md).
-- Only post about *Stars over Frostwood* and *The Advent Clock* **after they're live**.
+- Only post about *Stars over Frostwood* **after it's live**. *The Advent Clock* is live: https://www.amazon.com/dp/B0HMW1MR5T
 
 ---
 

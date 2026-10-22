@@ -7,7 +7,7 @@ A copy-paste marketing kit for four cozy, non-violent KDP paperbacks. All four a
 | *The Thief Stayed the Night* (Frostwood 1) | ✅ Live | [B0HLMMS675](https://www.amazon.com/dp/B0HLMMS675) | $3.39 | 33.9% |
 | *Frostwood Express* (Frostwood 2) | ✅ Live (at **$11.99**) | [B0HLMB966Q](https://www.amazon.com/dp/B0HLMB966Q) | $2.69 at $9.99 · $3.89 at $11.99 | 26.9% · 32.4% |
 | *Stars over Frostwood* (Frostwood 3) | ⏳ Not yet live | none yet | $2.81 | 28.1% |
-| *The Advent Clock* (standalone) | ⏳ Must be live Nov 1–8 | none yet | $3.69 | 36.9% |
+| *The Advent Clock* (standalone) | ✅ Live (hardcover, **$17.99**) | [B0HMW1MR5T](https://www.amazon.com/dp/B0HMW1MR5T) | ~$2.90 at $17.99 HC | ~29% |
 
 ---
 

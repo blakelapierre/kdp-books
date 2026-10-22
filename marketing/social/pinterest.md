@@ -66,12 +66,12 @@ Back to the [marketing kit](../README.md) · Images are in [pinterest/](pinteres
 
 ---
 
-## The Advent Clock (pin after it's live, ideally Nov 1–8)
+## The Advent Clock (live since Oct 13, 2026; pin Nov 1–8)
 
 ### Pin 1: `the-advent-clock-pin-1.png`
 - **Title:** Advent Calendar Puzzle Book for Adults: 24 Days of Puzzles
 - **Description:** Open one door a day from December 1 to 24. Behind each is a cozy story scene and a puzzle: codes, mazes, word grids, logic, and more. Every answer gives a key letter for the Christmas Eve finale. Three hint levels, and just a pencil needed. A thoughtful stocking stuffer. #adventcalendar #christmaspuzzles #puzzlebook #stockingstuffer #adventcalendarforadults
-- **Link:** https://www.amazon.com/dp/[ADVENT-ASIN]
+- **Link:** https://www.amazon.com/dp/B0HMW1MR5T
 - **Board:** Puzzle Gifts & Stocking Stuffers
 
 ### Pin 2: `the-advent-clock-pin-2.png`
