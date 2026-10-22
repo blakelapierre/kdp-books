@@ -627,3 +627,49 @@ Part 2 / Part 1 (views): unchanged from Oct 19 (C1 74%, C2 9%, C5 18%, C9 26%; P
 Part 2 / Part 1: C1 116/112 = 104%; C2 99/105 = 94%; C3 79/103 = 77%; C4 92/101 = 91%; C6 repost 1/105 = 1%; C7 repost 26/73 = 36% (P2 only 4 hours old).
 
 Notes: TikTok reposts keep landing (puffin P1 105, gnome P1 73 in under a day), but the C6 puffin P2 repost stalled at 1 view. YouTube growth is now mostly new colour posts.
+
+## 2026-10-21, ~6:45 PM PT (YouTube Studio Analytics + content, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-21/` on the box. Changes vs the Oct 20 check.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 23 – Oct 20): 945 views, 13.5 watch hours. Realtime last 48h: 35 views; top: C17 colour P1 "Whose story doesn't fit?" 13, C13 colour P2 "The Misspelled Note" 10, Airgas video 3. Newest upload C18 colour P2 "The Moonlit Walk" 0 views in first minutes.
+
+Shorts (last 28 days): 815 views (86.3% of channel), 174 engaged views, 1 like, **stayed to watch 18.3%** / swiped away 81.7%. Traffic: Shorts feed 80.5%, YouTube search 8.6%, channel pages 5.5%, other YouTube features 2.9%, browse 1.1%, other 1.4%. Part 1 → Part 2 link-click data: not shown. Top Shorts (avg view duration): C9 P1 87 (0:28), C1 P1 82 (0:54), C8 P2 73 (0:28), C3 colour P2 72 (0:17), C1 P2 61 (0:09).
+
+Comments: first screen of the Unresponded inbox showed nothing from the last 24 hours (newest 2+ months old, non-Tidewhistle). Not fully confirmed since the inbox wasn't re-sorted.
+
+**Tidewhistle Shorts: ~791 views on 60 posts (+15 vs 776).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C17 colour P1 "Whose story doesn't fit?" (new) | X3sEAxemdp4 | **12** (new) |
+| C16 colour P1 "Who taught the parrot?" (new) | gCx0Si8N-pg | 2 (new) |
+| C18 colour P2 "The Moonlit Walk" (new) | uxXZIlrTNZQ | 0 (new) |
+| "Who sat by the window?" colour P1 | F-GO1gkQRpc | 4 (+1) |
+
+Wide Tidewhistle videos: **41** on 19 videos (+1): new C15 colour PgEwfHXMU0A 1.
+
+Part 2 / Part 1 (views): unchanged (C1 74%, C2 9%, C5 18%, C9 26%; P2 ahead in C8, C20, C24, C25, C27).
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**39** posts, 0 drafts. Followers **1**.
+
+**Last 7 days (Studio):** video views **445** (−701, −61.2%), profile views **7** (−21), likes **2** (−7), comments 0, shares 0 (−1). Traffic: For You 97.2%, Search 2.1%, Personal profile 0.7%. Search queries: none shown (low traffic).
+
+**Public day-over-day (yt-dlp):** total views **1627** (**+48** vs 1579).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C7 P1 "Sir Reginald" repost | 7698760778140192030 | **99** (+26) |
+| C7 P2 "Sir Reginald" repost | 7698867850752036127 | **48** (+22) |
+| C8 P1 "cinnamon buns" repost (Oct 21 AM) | 7698975679265738014 | 0 (new, 12+ h) |
+| C8 P2 "cinnamon buns" repost | 7699083863724772639 | 0 (new, 12+ h) |
+| C9 P1 "What's wrong with his story?" repost | 7699190945811533087 | 0 (new) |
+| C9 P2 "Sunset over the Sea" repost | 7699299729942809887 | 0 (new) |
+
+**Review / Only me:** **0**. Newest 8 posts all show Everyone, no review, restricted or violation labels. But the four newest reposts (C8, C9) are stuck at 0 views despite being public.
+
+Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 91%; C6 repost 1/105 = 1%; C7 repost 48/99 = 48%.
+
+Notes: TikTok momentum stalled today; only the gnome pair moved. The four newest reposts got no distribution at all, the same pattern as the old zero-view posts that later recovered when reposted.
