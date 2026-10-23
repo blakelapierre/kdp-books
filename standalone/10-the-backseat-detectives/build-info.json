@@ -1,0 +1,22 @@
+{
+  "title": "The Backseat Detectives",
+  "subtitle": "24 Road Trip Mysteries to Solve Out Loud: Cozy Read-Aloud Puzzle Stories for Kids, Families and Car Rides, with the Answer After Every Pause",
+  "author": "Blake La Pierre",
+  "format": "Kindle ebook (EPUB 3, reflowable, text only) + DOCX for Kindle Create",
+  "audio_first": true,
+  "cases": 24,
+  "words": 11409,
+  "epub_bytes": 276168,
+  "docx_bytes": 58406,
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "delivery_fee_usd_est": 0.04,
+  "royalty_usd_est": 2.75,
+  "royalty_math": "0.70 x 3.99 - 0.04 = 2.75",
+  "files": {
+    "epub": "standalone-10-the-backseat-detectives.epub",
+    "docx": "standalone-10-the-backseat-detectives.docx",
+    "cover": "standalone-10-the-backseat-detectives-cover.jpg"
+  }
+}

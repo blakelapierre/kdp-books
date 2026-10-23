@@ -92,6 +92,7 @@ Current books:
 | *Three Clues by Candlelight*: 150 Cozy What-Am-I Riddles in Three Clues Each (Kindle, audio-first) | Three-clue What-Am-I riddles (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 14,669 words) | $3.99 | $2.77† | [07-three-clues-by-candlelight/README.md](standalone/07-three-clues-by-candlelight/README.md) |
 | *Window Seat Codewords*: 120 Cozy Codeword Puzzles for Adults (Easy, Medium & Hard) | Codewords (number-coded crosswords with no clues, American English) | Draft, print-ready paperback. Not yet published or submitted to KDP | 154 | $9.99 | $3.15 | [08-window-seat-codewords/README.md](standalone/08-window-seat-codewords/README.md) |
 | *Two Cups of Tea*: A Couple's Question Journal (hardcover) | Couples question journal: 52 weekly spreads, 156 questions, an answer space for each partner | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 138 | $19.99 | $4.69 | [09-two-cups-of-tea/README.md](standalone/09-two-cups-of-tea/README.md) |
+| *The Backseat Detectives*: 24 Road Trip Mysteries to Solve Out Loud (Kindle, audio-first) | Solve-it-yourself road-trip mini-mysteries for kids and families (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 11,409 words) | $3.99 | $2.75† | [10-the-backseat-detectives/README.md](standalone/10-the-backseat-detectives/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -253,6 +254,13 @@ python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.pn
 python3 build.py           # -> ../standalone-09-two-cups-of-tea-interior.pdf and ../build-info.json
 python3 cover.py           # hardcover wrap -> ../standalone-09-two-cups-of-tea-cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
 cd .. && python3 src/check_margins.py standalone-09-two-cups-of-tea-interior.pdf
+
+# Standalone: The Backseat Detectives (Kindle ebook, audio-first)
+cd standalone/10-the-backseat-detectives/src
+python3 verify.py   # clue placement, audio-first and content checks -> ../verification.md
+python3 cover.py    # -> ../standalone-10-the-backseat-detectives-cover.jpg
+python3 build.py    # -> ../standalone-10-the-backseat-detectives.epub, .docx, ../build-info.json
+cd ../../..
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.
