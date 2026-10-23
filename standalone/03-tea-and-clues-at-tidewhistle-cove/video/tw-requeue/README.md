@@ -20,3 +20,7 @@ Tidewhistle videos Blake approved for deletion (promos kept). Nothing in here ha
   `parse.py && slots.py && build.py` with those files in place of the delete lists.
 
 Counts: YouTube 30 entries (~8.75 days), TikTok 39 entries (~11.4 days).
+
+2026-10-22: Blake approved fresh TikTok copies of the stalled (0–2 view) Case 8 P1/P2, Case 9 P1/P2 and Case 10 P1 posts.
+Old posts are NOT deleted. New rows use the same files with fresh hooks, spread through the pending queue (pending rows renumbered):
+seq 17 Case 8 P1, 22 Case 8 P2, 27 Case 9 P1, 32 Case 9 P2, 37 Case 10 P1. TikTok queue is now 44 entries.
