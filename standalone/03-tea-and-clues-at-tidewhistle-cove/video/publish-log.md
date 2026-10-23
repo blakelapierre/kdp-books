@@ -341,3 +341,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-22 ~3:35 PM PT)
 - YouTube seq 15: Case 19 wide (colour) Public, FA6ExVpRDf8 https://youtu.be/FA6ExVpRDf8. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
 - TikTok seq 12: Case 11 P2 https://www.tiktok.com/@shortmysterycases/video/7699624354656570654 (AI label on, Everyone; under review / Only me at post time).
+
+## Colour repost queue (2026-10-22 ~10:40 PM PT)
+- YouTube seq 16: Case 21 P1 (colour) Public, PMeuHyjjvh4 https://youtube.com/shorts/PMeuHyjjvh4 (Related→Case 21 P2 "The answer: 🪙 Case 21 The Spanish Coin", the only Case 21 Part 2 on channel, non-colour). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
+- TikTok seq 13: Case 12 P2 posted (AI label on, Everyone; under review / Only me at post time; URL not yet shown in Studio).
