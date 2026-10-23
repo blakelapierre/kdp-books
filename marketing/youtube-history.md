@@ -673,3 +673,51 @@ Part 2 / Part 1 (views): unchanged (C1 74%, C2 9%, C5 18%, C9 26%; P2 ahead in C
 Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 91%; C6 repost 1/105 = 1%; C7 repost 48/99 = 48%.
 
 Notes: TikTok momentum stalled today; only the gnome pair moved. The four newest reposts got no distribution at all, the same pattern as the old zero-view posts that later recovered when reposted.
+
+## 2026-10-22, ~6:50 PM PT (YouTube Studio Analytics + content, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-22/` on the box. Changes vs the Oct 21 check.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days; total from the realtime card). Last 28 days (Sep 24 – Oct 21): 967 views, 13.5 watch hours. Realtime last 48h: 30 views; top: C18 colour P1 "Whose story doesn't fit?" 15, C14 colour P1 "Who knew the secret?" 4, C18 colour P2 "The Moonlit Walk" 3. Newest upload C19 colour wide "Who Could Reach the Bell?" (FA6ExVpRDf8) 0 views in first 3 hours.
+
+Shorts (last 28 days): 837 views (86.6% of channel), 177 engaged views, 1 like, **stayed to watch 18.1%** / swiped away 81.9%. Traffic: Shorts feed 81.0%, YouTube search 8.4%, channel pages 5.4%, other YouTube features 2.9%, browse 1.1%, other 1.3%. 7.6K impressions, 1.1% CTR, 124 new Shorts viewers. Part 1 → Part 2 link-click data: not shown. Top Shorts (avg view duration) unchanged: C9 P1 87 (0:28), C1 P1 82 (0:54), C8 P2 73 (0:28), C3 colour P2 72 (0:17), C1 P2 61 (0:09), C2 P1 45 (0:35), C8 P1 34 (0:36), C5 P1 33 (0:15), C25 P2 32 (0:24).
+
+Comments: **not read**. The Studio comments inbox redirected to a Google "unusual traffic" check.
+
+**Tidewhistle Shorts: ~801 views on 61 posts (+10 vs ~791).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| "Whose story doesn't fit?" colour P1 | X3sEAxemdp4 | **15** (+3) |
+| C18 colour P2 "The Moonlit Walk" | uxXZIlrTNZQ | 4 (+4) |
+| "Who knew the secret?" colour P1 | OXmlQOZ0nFs | 7 (+2) |
+| C19 colour P1 "Who could reach the bell?" (new) | Ypz7NSC2ZX4 | 2 (new) |
+| C13 colour P2 "The Misspelled Note" | -3ZmVdoVvog | 9 (−1, public count wobble) |
+
+Book promo Shorts unchanged.
+
+Wide Tidewhistle videos: **41** on 21 videos (+2 new: C18 colour _4Z72DzzxdQ and C19 colour FA6ExVpRDf8, no public count yet).
+
+Part 2 / Part 1 (views): new "Whose story doesn't fit?" pair 4/15 = 27%; older pairs unchanged (C1 74%, C2 9%, C5 18%, C9 26%; P2 ahead in C8, C20, C24, C25, C27).
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**42** posts, 0 drafts. Followers **1** (net 0 in 7 days).
+
+**Last 7 days (Studio):** video views **507** (−147, −22.5%), profile views **9** (−10), likes **2** (−4), comments 0, shares 0 (−1). Traffic: For You 97.4%, Personal profile 1.4%, Search 1.2%. Search queries: "a parrot solved a case" 28.6%, the "lakeside slaughter cold case" decode query 28.6%, "compass clue" 14.3%, "p4perback trying to solve puzzles" 14.3%.
+
+**Public day-over-day (yt-dlp):** total views **1734** (**+107** vs 1627).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C11 colour P1 "Who sat by the window?" repost (Oct 22, 11:40 AM) | 7699517590120566046 | **102** (new) |
+| C10 colour P1 "Who took the lifeboat box?" (Oct 22, 4:32 AM) | 7699407272723615007 | 2 (new) |
+| C11 colour P2 "The Window Table" (Oct 22, 6:35 PM) | 7699624354656570654 | 0 (new, minutes old) |
+| C9 P1 / P2 reposts | 7699190945811533087 / 7699299729942809887 | 1 / 1 (+1 each) |
+| C8 P1 / P2 reposts | 7698975679265738014 / 7699083863724772639 | 0 / 1 |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 91%; C6 repost 1%; C7 repost 48/99 = 48%; C8, C9 reposts ~0 both parts; C11 colour P2 just posted.
+
+Notes: the C11 window-table P1 hit 102 views in seven hours, the best fresh TikTok post since the gnome. The C8/C9 reposts and the C10 lifeboat P1 are still getting almost no distribution. YouTube stays slow (+10), all from the new colour posts.
