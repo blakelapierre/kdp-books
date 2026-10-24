@@ -721,3 +721,51 @@ Part 2 / Part 1 (views): new "Whose story doesn't fit?" pair 4/15 = 27%; older p
 Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 91%; C6 repost 1%; C7 repost 48/99 = 48%; C8, C9 reposts ~0 both parts; C11 colour P2 just posted.
 
 Notes: the C11 window-table P1 hit 102 views in seven hours, the best fresh TikTok post since the gnome. The C8/C9 reposts and the C10 lifeboat P1 are still getting almost no distribution. YouTube stays slow (+10), all from the new colour posts.
+
+## 2026-10-23, ~6:45 PM PT (YouTube Studio Analytics + content, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-23/` on the box. Changes vs the Oct 22 check.
+
+Studio loaded fine (no traffic check). Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 25 – Oct 22): 974 views, 14.2 watch hours. Realtime last 48h: 39 views; top: C22 colour P1 "Follow the money!" 13, C22 colour P2 "The Honest Fishermen" 5, Programming Music 5.
+
+Shorts (last 28 days): 843 views (86.6% of channel), 179 engaged views, 1 like, +1 subscriber, **stayed to watch 18.2%** / swiped away 81.8%. Traffic: Shorts feed 81.0%, YouTube search 8.4%, channel pages 5.3%, other YouTube features 2.9%, browse 1.1%, other 1.3%. Part 1 → Part 2 link-click data: not shown. Top Shorts (avg view duration) unchanged: C9 P1 87 (0:28), C1 P1 82 (0:54), C8 P2 73 (0:28), C3 colour P2 72 (0:17), C1 P2 61 (0:09), C2 P1 45 (0:35), C8 P1 34 (0:36), C5 P1 33 (0:15), C25 P2 32 (0:24).
+
+Comments: none in the last 2 days.
+
+**Tidewhistle Shorts: ~820 views on 63 posts (+19 vs ~801).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C22 colour P1 "Follow the money!" (new, Oct 23) | PMeuHyjjvh4 | **13** (new) |
+| C22 colour P2 "The Honest Fishermen" (new, Oct 23) | 0XbaP73TE7c | 5 (new) |
+| C25 P2 "The Teaspoon Thief" | oyoGJFzz8rg | 33 (+1) |
+| "Who took the prize marrow?" P2 | 49zUT21OQ98 | 7 (+1) |
+| C18 colour P2 "The Moonlit Walk" | uxXZIlrTNZQ | 3 (−1, public count wobble) |
+
+Wide Tidewhistle videos: **42** on 22 videos (+1): "The Dog That Stayed Quiet" JR8bOE0_KbU 7 (+1); new C22 colour wide a8gkejqIHcs 0. Colour wides C10, C12, C14, C18, C19 now show 0 publicly.
+
+Part 2 / Part 1 (views): new C22 colour pair 5/13 = 38%; "Whose story doesn't fit?" 3/15 = 20%; older pairs unchanged (C1 74%, C2 9%, C5 18%, C9 26%; P2 ahead in C8, C20, C24, C25, C27).
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**45** posts, 0 drafts. Followers **1** (net 0 in 7 days).
+
+**Last 7 days (Studio):** video views **607** (−14, −2.3%), profile views **14** (+2), likes **3** (−1), comments 0, shares 0 (−1). Traffic: For You 97.5%, Personal profile 1.8%, Search 0.7%. Search queries: "a parrot solved a case" 50%, the "lakeside slaughter cold case" decode query 50%.
+
+**Public day-over-day (yt-dlp):** total views **2060** (**+326** vs 1734).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C13 colour P1 "Who wrote the note?" (Oct 23, 8:44 AM) | 7699843237795695903 | **300** (new), 7 likes |
+| C11 colour P1 "Who sat by the window?" | 7699517590120566046 | 119 (+17) |
+| C11 colour P2 "The Window Table" | 7699624354656570654 | 3 (+3) |
+| C12 colour P2 "The Stopped Clock" (Oct 23, 1:42 AM) | 7699734426246270238 | 2 (new) |
+| C13 colour P2 "The Misspelled Note" (Oct 23, 3:33 PM) | 7699948696984735006 | 0 (new, 3 h) |
+| C10 colour P1 "Who took the lifeboat box?" | 7699407272723615007 | 3 (+1) |
+| C4 P1 / P2 "brass compass" | 7695698066954898718 / 7695698379589913887 | 103 / 93 (+2 / +1) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 90%; C7 repost 48%; C11 colour 3/119 = 3%; C13 colour P2 just posted; C8, C9 reposts ~0 both parts.
+
+Notes: "Who wrote the note?" hit 300 views and 7 likes in ten hours, the best fresh TikTok post yet, and drove the +326 day. Colour P1s keep getting pushed but their Part 2s barely move on TikTok (C11 3%), unlike the old C1–C4 pairs. YouTube stays slow (+19), all from the new C22 colour pair.
