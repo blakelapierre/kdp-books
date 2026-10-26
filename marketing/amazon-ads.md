@@ -520,3 +520,17 @@ Archived: 417712908601950, 403035995477604, 458946608404356, 421817525050169.
 Paused old campaigns 277628141714115 and 47473767889736 (pause returned "Updated: 2").
 Note: B0HLMB966Q, B0HNFZGV6T, B0HLMMS675 were only in 277628141714115 and are now unadvertised.
 First review: Oct 26.
+
+## 2026-10-26 — First review (Adspirer, read-only, 2026-10-18 → 10-26)
+Blake re-enabled both Oct 18 campaigns, so all six are running (~$20/day budget). No changes were made.
+| Campaign | ID | Impr | Clicks | Spend | Orders | Sales | ACoS |
+|---|---|---|---|---|---|---|---|
+| Oct 18 auto – Advent only | 47473767889736 | 9,756 | 13 | $12.51 | 2 | $35.98 | 34.8% |
+| Oct 18 auto – 7 ASINs | 277628141714115 | 703 | 1 | $0.15 | 0 | $0 | — |
+| Auto - Advent Clock HC | 161403826749231 | 71 | 0 | $0 | 0 | $0 | — |
+| Auto - Stories We Keep HC | 278315951110803 | 49 | 0 | $0 | 0 | $0 | — |
+| Auto - Porch Swing Crosswords PB | 153725246462664 | 13 | 0 | $0 | 0 | $0 | — |
+| Auto - Bridges of Frostwood PB | 112094854265272 | 11 | 0 | $0 | 0 | $0 | — |
+| **Total** | | 10,603 | 14 | $12.66 | 2 | $35.98 | 35.2% |
+Notes: Advent HC is $17.99 (2 orders = $35.98); break-even ACoS about 16%, so the ads are losing about $6.80 so far (royalty about $5.76 vs $12.51 spend). CPC is about $0.96 in the old Advent campaign. The new $0.40 campaigns barely serve. The data is under 2 weeks old and attribution takes up to 14 days.
+Recommendations (not applied): lower the bid on 47473767889736 by 20%; pause the duplicate new Advent auto 161403826749231 (it competes with the old one); raise the bids on the three non-Advent new autos by 20% ($0.40→$0.48). The search-term report wasn't pulled because Adspirer calls are limited.
