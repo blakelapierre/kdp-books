@@ -368,3 +368,8 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-26 ~3:40 AM PT)
 - YouTube seq 21: Case 26 P2 (colour) Public, -knssFEM7VI https://youtube.com/shorts/-knssFEM7VI. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Copyright check clean; Community Guidelines check was still running after ~8 min, published anyway. Case 26 P1 (ebd9l8-luGM) Related video updated to this Part 2 (its old Related was no longer available).
 - TikTok seq 18: Case 15 P1 posted (AI label on, Everyone; under review / Only me at post time; URL not yet shown). Caption in Studio is missing its first line "Can you solve it? 🐈 Which car moved? (Colour)"; fix via Edit once review finishes.
+
+## Colour repost queue (2026-10-26 ~10:40 AM PT)
+- YouTube seq 22: Case 26 wide (colour) Public, oZvwGpdVm9c https://youtu.be/oZvwGpdVm9c. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
+- TikTok seq 19: Case 15 P2 https://www.tiktok.com/@shortmysterycases/video/7701033477457710366 (AI label on, Everyone; briefly under review, then Everyone).
+- TikTok seq 18 (Case 15 P1) URL now known: https://www.tiktok.com/@shortmysterycases/video/7700924570307464478; missing first caption line added via Edit (live on public page).
