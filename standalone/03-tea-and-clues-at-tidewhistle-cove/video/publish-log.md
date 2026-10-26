@@ -364,3 +364,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - YouTube seq 20: Case 23 wide (colour) Public, ARTEUea5IIA https://youtu.be/ARTEUea5IIA. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries.
 - TikTok seq 17: Case 14 P2 posted (AI label on, Everyone; showing Everyone with 1 view in Studio shortly after posting; URL not captured).
 - Note: runs between 2026-10-24 and 2026-10-25 1:32 PM PT failed, so nothing posted in that gap.
+
+## Colour repost queue (2026-10-26 ~3:40 AM PT)
+- YouTube seq 21: Case 26 P2 (colour) Public, -knssFEM7VI https://youtube.com/shorts/-knssFEM7VI. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Copyright check clean; Community Guidelines check was still running after ~8 min, published anyway. Case 26 P1 (ebd9l8-luGM) Related video updated to this Part 2 (its old Related was no longer available).
+- TikTok seq 18: Case 15 P1 posted (AI label on, Everyone; under review / Only me at post time; URL not yet shown). Caption in Studio is missing its first line "Can you solve it? 🐈 Which car moved? (Colour)"; fix via Edit once review finishes.
