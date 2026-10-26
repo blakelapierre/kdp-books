@@ -359,3 +359,8 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - YouTube seq 19: Case 23 P1 (colour) Public, 40Fv-cXd46g https://youtube.com/shorts/40Fv-cXd46g (Related→"The answer: 🧤 Case 23 The Odd Glove", the only Case 23 Part 2 on channel, B&W MQVfBu970QI). AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
 - TikTok seq 16: Case 14 P1 posted (AI label on, Everyone; under review / Only me at post time; URL not yet shown in Studio).
 - TikTok seq 15 (Case 13 P2) URL now known: https://www.tiktok.com/@shortmysterycases/video/7700058446942457119.
+
+## Colour repost queue (2026-10-25 ~8:50 PM PT)
+- YouTube seq 20: Case 23 wide (colour) Public, ARTEUea5IIA https://youtu.be/ARTEUea5IIA. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries.
+- TikTok seq 17: Case 14 P2 posted (AI label on, Everyone; showing Everyone with 1 view in Studio shortly after posting; URL not captured).
+- Note: runs between 2026-10-24 and 2026-10-25 1:32 PM PT failed, so nothing posted in that gap.
