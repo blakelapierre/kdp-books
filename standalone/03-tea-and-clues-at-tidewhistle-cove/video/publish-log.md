@@ -385,3 +385,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-27 ~7:35 AM PT)
 - YouTube seq 25: Case 28 wide (colour) Public, XrdpGByw8zs https://youtu.be/XrdpGByw8zs. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean.
 - TikTok seq 22: Case 18 P2 posted, AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. Likely URL https://www.tiktok.com/@shortmysterycases/video/7701356783578713374 (not confirmed). Caption has two extra blank lines before the hashtags.
+
+## Colour repost queue (2026-10-27 ~2:30 PM PT)
+- YouTube seq 26: Case 29 P1 (colour) Public, QTZBK84h86E https://youtube.com/shorts/QTZBK84h86E. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean. Related not set yet (set to Case 29 P2 when seq 27 posts).
+- TikTok seq 23: Case 19 P1 posted, AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. Likely URL https://www.tiktok.com/@shortmysterycases/video/7701463984871918879 (not confirmed).
