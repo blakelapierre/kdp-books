@@ -769,3 +769,52 @@ Part 2 / Part 1 (views): new C22 colour pair 5/13 = 38%; "Whose story doesn't fi
 Part 2 / Part 1: C1 104%; C2 94%; C3 77%; C4 90%; C7 repost 48%; C11 colour 3/119 = 3%; C13 colour P2 just posted; C8, C9 reposts ~0 both parts.
 
 Notes: "Who wrote the note?" hit 300 views and 7 likes in ten hours, the best fresh TikTok post yet, and drove the +326 day. Colour P1s keep getting pushed but their Part 2s barely move on TikTok (C11 3%), unlike the old C1–C4 pairs. YouTube stays slow (+19), all from the new C22 colour pair.
+
+## 2026-10-26, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+The Oct 24 and Oct 25 runs failed, so the changes below are against the Oct 23 check (three days). Raw public pulls are in `/workspace/tidewhistle-stats/2026-10-26/` on the box.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 28 – Oct 25): 1,033 views, 14.4 watch hours. Realtime last 48h: 10 views; top: C22 colour P2 "The Honest Fishermen" 5, Programming Music 2, C23 colour P1 "Whose glove is it?" 1. Newest Short "One truth, one fib" had 0 views in its first hour.
+
+Shorts (last 28 days): 891 views (86.3% of channel), 185 engaged views, 1 like, +1 subscriber, **stayed to watch 18.0%** / swiped away 82.0%. Traffic: Shorts feed 80.6%, YouTube search 9.0%, channel pages 5.3%, other YouTube features 2.9%, browse 1.0%, other 1.2%. Part 1 → Part 2 link-click data: not shown. Top Shorts unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17, C1 P2 61 at 0:09).
+
+Comments: none in the last 3 days (Studio list was filtered to Unresponded / Most relevant, newest shown is 2 months old).
+
+**Tidewhistle Shorts: 849 public views on 66 posts (+29 vs 820 on Oct 23).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C23 colour P1 "Whose glove is it?" (new) | 40Fv-cXd46g | **11** (new) |
+| C22 colour P2 "The Honest Fishermen" | 0XbaP73TE7c | 12 (+7) |
+| C22 colour P1 "Follow the money!" | PMeuHyjjvh4 | 17 (+4) |
+| "Who takes the spoons?" P1 | g483plcavio | 7 (+2) |
+| "One truth, one fib" P1 (new) / C26 P2 "The Winning Ticket" (new) | ivCs9y7jwew / -knssFEM7VI | 0 / 0 |
+
+Wide Tidewhistle videos: **43** (+1): C13 colour wide ldJRYcHfXS0 6 (+1); new C23 colour wide ARTEUea5IIA 0 and C26 wide oZvwGpdVm9c 0.
+
+Part 2 / Part 1 (views): C22 colour 12/17 = 71% (up from 38%); older pairs unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**50** posts (+5), 0 drafts. Followers **1** (net 0 in 7 days).
+
+**Last 7 days (Studio):** video views **~1K** (+284, +38%), profile views **37** (+23), likes **13** (+9), comments 0, shares 0 (−1). Traffic: For You 95.7%, Personal profile 3.9%, Search 0.4%. Search queries: "a parrot solved a case" 40%, "empires and puzzles" 20%, "whodunit solved" 20%, "kodla buyu 19 cevabi" 20%.
+
+**Public (yt-dlp):** total views **2393** (**+333** vs 2060 on Oct 23).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C14 colour P1 "Who knew the secret?" (Oct 23) | 7700058446942457119 | **187** (new), 1 like |
+| C14 colour P2 "The Blue Ribbon Key" (Oct 25) | 7700817653434223903 | **68** (new) |
+| C13 colour P1 "Who wrote the note?" | 7699843237795695903 | 336 (+36), 8 likes |
+| C16 colour P2 "The Lighthouse Path" (Oct 26) | 7701141016027335967 | 19 (new) |
+| C15 colour P2 "The Warm Bonnet" (Oct 26) | 7701033477457710366 | 11 (new) |
+| C15 colour P1 "Which car moved?" (Oct 26) | 7700924570307464478 | 1 (new) |
+| C13 colour P2 "The Misspelled Note" | 7699948696984735006 | 5 (+5) |
+| C11 colour P1 / P2 | 7699517590120566046 / 7699624354656570654 | 123 / 5 (+4 / +2) |
+
+**Review / Only me:** **0**. The newest posts all show Everyone, with no review, restricted or violation labels (the Oct 26 repost log had C16 P2 in review; it has cleared). No C16 colour P1 appears on TikTok yet.
+
+Part 2 / Part 1: C14 colour 68/187 = **36%** (best colour carry-through so far); C13 colour 5/336 = 1.5%; C11 colour 4%; C15 colour P2 is ahead of a P1 that got only 1 view. Old pairs unchanged (C1 104%, C2 94%, C3 77%, C4 90%).
+
+Notes: TikTok had its best week (+38% views, profile views and likes way up), led by C13 and C14 colour P1s. C15 P1 "Which car moved?" got almost no distribution (1 view in 12 h). YouTube stays slow (+29 in three days), mostly from the C22 and C23 colour Shorts.
