@@ -18,3 +18,4 @@ Folders are numbered `NN-<book-slug>` in creation order; a new book gets the nex
 | *Stories We Keep*: A Guided Memory Keepsake (hardcover) | 102 | $17.99 | $3.99 | [06-stories-we-keep/](06-stories-we-keep/) · [README](06-stories-we-keep/README.md) |
 | *Three Clues by Candlelight*: 150 Cozy What-Am-I Riddles in Three Clues Each (Kindle ebook, audio-first) | — (14,669 words) | $3.99 | $2.77 | [07-three-clues-by-candlelight/](07-three-clues-by-candlelight/) · [README](07-three-clues-by-candlelight/README.md) |
 | *Window Seat Codewords*: 120 Cozy Codeword Puzzles for Adults (paperback) | 154 | $9.99 | $3.15 | [08-window-seat-codewords/](08-window-seat-codewords/) · [README](08-window-seat-codewords/README.md) |
+| *Twenty-Five Christmases*: A Family Christmas Memory Book to Fill In Year by Year (hardcover) | 132 | $19.99 | $4.76 | [12-twenty-five-christmases/](12-twenty-five-christmases/) · [README](12-twenty-five-christmases/README.md) |

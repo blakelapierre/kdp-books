@@ -100,6 +100,7 @@ Current books:
 | *Window Seat Codewords*: 120 Cozy Codeword Puzzles for Adults (Easy, Medium & Hard) | Codewords (number-coded crosswords with no clues, American English) | Draft, print-ready paperback. Not yet published or submitted to KDP | 154 | $9.99 | $3.15 | [08-window-seat-codewords/README.md](standalone/08-window-seat-codewords/README.md) |
 | *Two Cups of Tea*: A Couple's Question Journal (hardcover) | Couples question journal: 52 weekly spreads, 156 questions, an answer space for each partner | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 138 | $19.99 | $4.69 | [09-two-cups-of-tea/README.md](standalone/09-two-cups-of-tea/README.md) |
 | *The Backseat Detectives*: 24 Road Trip Mysteries to Solve Out Loud (Kindle, audio-first) | Solve-it-yourself road-trip mini-mysteries for kids and families (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 11,409 words) | $3.99 | $2.75† | [10-the-backseat-detectives/README.md](standalone/10-the-backseat-detectives/README.md) |
+| *Twenty-Five Christmases*: A Family Christmas Memory Book to Fill In Year by Year (hardcover) | Fill-in family Christmas memory book: 25 years × 4 pages (photo, guests, tree, Eve and morning, table, gifts, best moment, wish), traditions, recipes | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 132 | $19.99 | $4.76 | [12-twenty-five-christmases/README.md](standalone/12-twenty-five-christmases/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -277,6 +278,15 @@ python3 verify.py   # clue placement, audio-first and content checks -> ../verif
 python3 cover.py    # -> ../standalone-10-the-backseat-detectives-cover.jpg
 python3 build.py    # -> ../standalone-10-the-backseat-detectives.epub, .docx, ../build-info.json
 cd ../../..
+
+# Standalone: Twenty-Five Christmases (hardcover)
+cd standalone/12-twenty-five-christmases/src
+python3 content.py         # checks 25 unique yearly questions and the traditions list
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py           # -> ../standalone-12-twenty-five-christmases-interior.pdf and ../build-info.json
+python3 cover.py           # hardcover wrap -> ../standalone-12-twenty-five-christmases-cover.pdf, ../cover-info.json and ../tmp/cover-guides.pdf
+cd .. && python3 src/check_margins.py standalone-12-twenty-five-christmases-interior.pdf
+cd ../..
 ```
 
 The fonts come from system paths: `/usr/share/fonts/truetype/sand-box/google/` (Crimson Text, Playfair Display SC, IBM Plex Sans Condensed) and DejaVu Sans. Change `G` in `build.py` if your fonts are somewhere else.

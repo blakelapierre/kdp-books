@@ -1,0 +1,24 @@
+{
+ "pages": 132,
+ "spine_in": 0.4862,
+ "width_in": 14.061,
+ "height_in": 10.4173,
+ "wrap_in": 0.5906,
+ "board_in": [
+  6.1969,
+  9.2362
+ ],
+ "hinge_in": 0.3937,
+ "safe_in": 0.6299,
+ "barcode_box_in": [
+  4.1437,
+  1.3506,
+  2.0,
+  1.2
+ ],
+ "spine_text_pt": 10.0,
+ "kind": "hardcover case laminate",
+ "paper": "white",
+ "interior": "black ink",
+ "formula": "width = 2*15mm wrap + 2*(6in+5mm) board + spine; spine = pages*0.002252in + 4.8mm; height = 2*15mm + 9in + 6mm"
+}
