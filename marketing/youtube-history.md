@@ -818,3 +818,49 @@ Part 2 / Part 1 (views): C22 colour 12/17 = 71% (up from 38%); older pairs uncha
 Part 2 / Part 1: C14 colour 68/187 = **36%** (best colour carry-through so far); C13 colour 5/336 = 1.5%; C11 colour 4%; C15 colour P2 is ahead of a P1 that got only 1 view. Old pairs unchanged (C1 104%, C2 94%, C3 77%, C4 90%).
 
 Notes: TikTok had its best week (+38% views, profile views and likes way up), led by C13 and C14 colour P1s. C15 P1 "Which car moved?" got almost no distribution (1 view in 12 h). YouTube stays slow (+29 in three days), mostly from the C22 and C23 colour Shorts.
+
+## 2026-10-27, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-27/` on the box. Changes vs the Oct 26 check.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 29 – Oct 26): 1,032 views, 14.4 watch hours. Realtime last 48h: 10 views; top: Programming Music 4, C24 P2 "The Kite Festival" 2, Airgas video 1. Newest Short C29 P1 "Who drank this tea?" had 1 view in its first 4 hours.
+
+Shorts (last 28 days): 892 views (86.5% of channel), 185 engaged views, 1 like, +1 subscriber, **stayed to watch 18.0%** / swiped away 82.0%. Traffic: Shorts feed 80.4%, YouTube search 9.1%, channel pages 5.3%, other YouTube features 2.9%, browse 1.0%, other 1.4%. Thumbnail impressions 8.2K at 1.1% CTR. Part 1 → Part 2 link-click data: not shown. Top Shorts unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17, C1 P2 61 at 0:09).
+
+Comments: none in the last 2 days (default Unresponded / Most relevant filter; newest shown is 2 months old, not Tidewhistle).
+
+**Tidewhistle Shorts: 854 public views on 68 posts (+5 vs 849).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C29 P1 "Who drank this tea?" (new, Oct 27) | QTZBK84h86E | 1 (new) |
+| C28 P2 "Truth and Fib Night" (new) | 5Z5yx-Lciuw | 0 (new) |
+| C24 P2 "The Kite Festival" | dejOGXMfMJ8 | 21 (+2) |
+| "What's wrong with his night?" P1 | M0G8Ze1nBkA | 7 (+1) |
+| C11 P2 "The Window Table" | S-avVUkGUdQ | 2 (+1) |
+
+Wide Tidewhistle videos: **43** on 25 videos (+0); new C28 wide XrdpGByw8zs 0.
+
+Part 2 / Part 1 (views): no pair moved; C22 colour 71%, older pairs unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**53** posts (+3), 0 drafts. Followers **1** (net 0 in 7 days).
+
+**Last 7 days (Studio):** still the Oct 19–25 window (TikTok hasn't refreshed since yesterday): video views **~1K** (+284, +38%), profile views **37** (+23), likes **13** (+9), comments 0, shares 0 (−1). Traffic: For You 94.4%, Personal profile 5.2%, Search 0.4%. Search queries unchanged.
+
+**Public (yt-dlp):** total views **2612** (**+219** vs 2393).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C19 colour P1 "Who could reach the bell?" (Oct 27, 5:33 PM) | 7701463984871918879 | **116** (new, ~1 h) |
+| C16 colour P2 "The Lighthouse Path" | 7701141016027335967 | **99** (+80) |
+| C18 colour P2 "The Moonlit Walk" (Oct 27, 10:38 AM) | 7701356783578713374 | 18 (new) |
+| C15 colour P2 "The Warm Bonnet" | 7701033477457710366 | 15 (+4), 1 like |
+| C18 colour P1 "Whose story doesn't fit?" (Oct 27, 3:36 AM) | 7701248124009843998 | 1 (new) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C18 and C15 colour P2s are well ahead of P1s that got 1 view each; C14 colour 68/187 = 36%; C13 colour 5/336 = 1.5%. Old pairs unchanged (C1 104%, C2 94%, C3 77%, C4 90%).
+
+Notes: C19 colour P1 "Who could reach the bell?" hit 116 views in about an hour, the fastest start yet. C16 P2 kept climbing (+80). Early-morning (~3–7 AM) P1 posts (C15, C18) keep getting about 1 view. YouTube is nearly flat (+5).
