@@ -17,6 +17,7 @@ series/
     07-bridges-of-frostwood/
     08-fences-of-frostwood/
     09-the-lockboxes-of-frostwood/
+    10-snow-paths-of-frostwood/
     11-chimneys-of-frostwood/
 standalone/                  # books that are not part of a series (one folder each)
   README.md
@@ -57,6 +58,7 @@ Current books:
 7. `07-bridges-of-frostwood`: built paperback, not published
 8. `08-fences-of-frostwood`: built hardcover, not published
 9. `09-the-lockboxes-of-frostwood`: built Kindle ebook, not published
+10. `10-snow-paths-of-frostwood`: built paperback, not published
 11. `11-chimneys-of-frostwood`: built hardcover, not published
 
 `standalone/`
@@ -84,6 +86,7 @@ Current books:
 | 7 | *Bridges of Frostwood*: 180 Hashi Bridges Logic Puzzles (Easy to Expert) | Hashi / Bridges (Hashiwokakero) | Draft, print-ready paperback. Not yet published or submitted to KDP | 188 | $9.99 | $2.74 | [07-bridges-of-frostwood/README.md](series/frostwood/07-bridges-of-frostwood/README.md) |
 | 8 | *Fences of Frostwood*: 100 Slitherlink Logic Puzzles (Easy to Expert) | Slitherlink / Loop the Loop (hardcover) | Draft, print-ready hardcover. Not yet published or submitted to KDP | 88 | $17.99 | $3.99 | [08-fences-of-frostwood/README.md](series/frostwood/08-fences-of-frostwood/README.md) |
 | 9 | *The Lockboxes of Frostwood*: 120 Crack-the-Code Logic Puzzles (Kindle) | Crack the code / number-lock deduction (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.66† | [09-the-lockboxes-of-frostwood/README.md](series/frostwood/09-the-lockboxes-of-frostwood/README.md) |
+| 10 | *Snow Paths of Frostwood*: 160 Nurikabe Logic Puzzles (Easy to Expert) | Nurikabe (paperback) | Draft, print-ready paperback. Not yet published or submitted to KDP | 160 | $9.99 | $3.07 | [10-snow-paths-of-frostwood/README.md](series/frostwood/10-snow-paths-of-frostwood/README.md) |
 | 11 | *Chimneys of Frostwood*: 100 Skyscrapers Logic Puzzles (Easy to Expert) | Skyscrapers / Towers (hardcover) | Draft, print-ready hardcover. Not yet published or submitted to KDP | 88 | $17.99 | $3.99 | [11-chimneys-of-frostwood/README.md](series/frostwood/11-chimneys-of-frostwood/README.md) |
 
 ### Standalone ([standalone/](standalone/))
@@ -190,6 +193,17 @@ cd ../../../..
 # Book 9: The Lockboxes of Frostwood (Kindle ebook)
 cd series/frostwood/09-the-lockboxes-of-frostwood/src
 PYTHONHASHSEED=0 python3 master.py   # gen.py (lockgen.py brute force) -> verify.py (independent DFS solver.py + exhaustive check) -> illustrations -> cover JPG -> EPUB (~2 min)
+cd ../../../..
+
+# Book 10: Snow Paths of Frostwood (paperback)
+cd series/frostwood/10-snow-paths-of-frostwood/src
+PYTHONHASHSEED=0 python3 master.py   # generate and grade the 160 Nurikabe puzzles -> ../data.json (nurikabe.py is the SAT counter + logic grader, gen.py sets the bands)
+python3 verify.py     # independent SAT + backtracking (nk_bt.py) uniqueness check + band fit -> ../verification.md
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-10-snow-paths-of-frostwood-interior.pdf and ../build-info.json (worked-example text is in build.py)
+python3 cover.py      # -> ../frostwood-10-snow-paths-of-frostwood-cover.pdf, ../cover-info.json and ../tmp/frostwood-10-snow-paths-of-frostwood-cover-guides.pdf
+python3 check_margins.py   # no ink outside the text area / near the trim
+python3 docs.py       # -> ../README.md and ../listing.md
 cd ../../../..
 
 # Book 11: Chimneys of Frostwood (hardcover)
