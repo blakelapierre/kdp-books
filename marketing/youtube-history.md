@@ -864,3 +864,48 @@ Part 2 / Part 1 (views): no pair moved; C22 colour 71%, older pairs unchanged.
 Part 2 / Part 1: C18 and C15 colour P2s are well ahead of P1s that got 1 view each; C14 colour 68/187 = 36%; C13 colour 5/336 = 1.5%. Old pairs unchanged (C1 104%, C2 94%, C3 77%, C4 90%).
 
 Notes: C19 colour P1 "Who could reach the bell?" hit 116 views in about an hour, the fastest start yet. C16 P2 kept climbing (+80). Early-morning (~3–7 AM) P1 posts (C15, C18) keep getting about 1 view. YouTube is nearly flat (+5).
+
+## 2026-10-28, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-28/` on the box. Changes vs the Oct 27 check.
+
+Studio loaded fine. Subscribers: **30** (+1 in last 28 days). Last 28 days (Sep 30 – Oct 27): 1,041 views, 14.4 watch hours. Realtime last 48h: 19 views; top: Programming Music 8, C30 P2 "The Missing Sign" 2, C24 P2 "The Kite Festival" 2. Newest upload, C30 wide (Finale), had 0 views in its first 7 minutes.
+
+Shorts (last 28 days): 895 views (86.1% of channel), 187 engaged views, 1 like, +1 subscriber, **stayed to watch 18.1%** / swiped away 81.9%. Traffic: Shorts feed 80.1%, YouTube search 9.5%, channel pages 5.3%, other YouTube features 2.9%, browse 1.0%, other 1.2%. Part 1 → Part 2 link-click data: not shown. Top Shorts unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17, C1 P2 61 at 0:09).
+
+Comments: none in the last 2 days (default Unresponded / Most relevant filter).
+
+**Tidewhistle Shorts: 857 public views on 70 posts (+3 vs 854).** Movers:
+
+| Short | ID | Views (change) |
+|---|---|---|
+| C30 P2 "The Missing Sign" (new) | 3fbEtkPjd-U | 2 (new) |
+| C29 P2 "The Sugar Bowl" (new) | ALTxD9_F5eI | 0 / hidden (new) |
+| C15 P2 "The Warm Bonnet" | 0z1vHstDNXs | 2 (+1) |
+
+Wide Tidewhistle videos: **45** on 27 videos (+2); new C29 wide MhT8jFrl5T0 0, C30 wide (Finale) 4R_U4uZOumM 0; C26 wide +1, C13 colour wide +1.
+
+Part 2 / Part 1 (views): no pair moved meaningfully; C22 colour 71%, older pairs unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**55** posts (+2), 0 drafts. Followers **1** (net 0 in 7 days).
+
+**Last 7 days (Studio, window refreshed; dates not shown):** video views **~1K** (+599, +134.6% vs prior 7 days), profile views **40**, likes **12**, comments 0, shares 0. Traffic: For You 95.7%, Personal profile 3.8%, Search 0.5%. Search queries include "temu whodunit mystery" and "whodunit solved".
+
+**Public (yt-dlp):** total views **2684** (**+72** vs 2612).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C19 colour P1 "Who could reach the bell?" | 7701463984871918879 | **172** (+56), 1 like |
+| C18 colour P2 "The Moonlit Walk" | 7701356783578713374 | 23 (+5) |
+| C15 colour P2 "The Warm Bonnet" | 7701033477457710366 | 17 (+2), 1 like |
+| C20 colour P1 "Follow the scent!" (Oct 28, 12:40 AM) | 7701574022387059998 | 5 (new) |
+| C21 colour P1 "Follow the money!" (newest) | 7701898644689145118 | 0 (new) |
+| C16 colour P2 "The Lighthouse Path" | 7701141016027335967 | 100 (+1) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C14 colour 69/188 = 37%; C18 and C15 colour P2s still ahead of P1s stuck at 1 view; C19 colour P2 not posted yet. Old pairs unchanged.
+
+Notes: Quiet day after yesterday's jump (+72 TikTok, +3 YouTube Shorts). C19 colour P1 is now the #2 colour post. The overnight post (C20 P1, 12:40 AM) again got almost nothing; daytime/evening P1s do far better.
