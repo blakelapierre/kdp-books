@@ -399,3 +399,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-10-28 ~11:40 AM PT)
 - YouTube seq 29: Case 30 P2 (colour) Public, 3fbEtkPjd-U https://youtube.com/shorts/3fbEtkPjd-U. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean. Case 30 P1 (chiHRYzNL-o) Related video set to this P2 (was None, old P2 gone).
 - TikTok skipped this run (11:37 AM PT is outside the 3-10 PM Part 1 window; next pending is Case 21 P1 and no Part 2 with a posted Part 1 is pending).
+
+## Colour repost queue (2026-10-28 ~6:40 PM PT)
+- YouTube seq 30: Case 30 wide (colour) Public, 4R_U4uZOumM https://youtu.be/4R_U4uZOumM. AI Yes, not made for kids, playlist Tidewhistle Cove Mysteries. Checks clean. YouTube queue now complete.
+- TikTok seq 25: Case 21 P1 posted, AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. Likely URL https://www.tiktok.com/@shortmysterycases/video/7701898644689145118 (not confirmed).
