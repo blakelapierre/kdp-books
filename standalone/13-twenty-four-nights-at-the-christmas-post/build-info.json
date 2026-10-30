@@ -1,0 +1,22 @@
+{
+  "title": "Twenty-Four Nights at the Christmas Post",
+  "subtitle": "Cozy Read-Aloud Christmas Mysteries for Kids and Families, One to Solve Every Night of December, with the Answer After Every Pause",
+  "author": "Blake La Pierre",
+  "format": "Kindle ebook (EPUB 3, reflowable, text only) + DOCX for Kindle Create",
+  "audio_first": true,
+  "cases": 24,
+  "words": 12562,
+  "epub_bytes": 319016,
+  "docx_bytes": 59920,
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "delivery_fee_usd_est": 0.05,
+  "royalty_usd_est": 2.74,
+  "royalty_math": "0.70 x 3.99 - 0.05 = 2.74",
+  "files": {
+    "epub": "standalone-13-twenty-four-nights-at-the-christmas-post.epub",
+    "docx": "standalone-13-twenty-four-nights-at-the-christmas-post.docx",
+    "cover": "standalone-13-twenty-four-nights-at-the-christmas-post-cover.jpg"
+  }
+}
