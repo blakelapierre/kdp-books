@@ -909,3 +909,42 @@ Part 2 / Part 1 (views): no pair moved meaningfully; C22 colour 71%, older pairs
 Part 2 / Part 1: C14 colour 69/188 = 37%; C18 and C15 colour P2s still ahead of P1s stuck at 1 view; C19 colour P2 not posted yet. Old pairs unchanged.
 
 Notes: Quiet day after yesterday's jump (+72 TikTok, +3 YouTube Shorts). C19 colour P1 is now the #2 colour post. The overnight post (C20 P1, 12:40 AM) again got almost nothing; daytime/evening P1s do far better.
+
+## 2026-10-29, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-29/` on the box. Changes vs the Oct 28 check. (yt-dlp hit one HTTP 429 on the Shorts tab but retried and returned the full list.)
+
+Studio loaded fine. Subscribers: total not shown today (was 30; +1 in last 28 days). Last 28 days (Oct 1–28): 1,048 views, 14.4 watch hours. Realtime last 48h: 17 views; top: C30 P2 "The Missing Sign" 3, Programming Music 3, C15 P2 "The Warm Bonnet" 2. C30 wide (Finale) still 0 views after its first day.
+
+Shorts (last 28 days): 899 views (85.9% of channel), 189 engaged views, 1 like, +1 subscriber, **stayed to watch 18.3%** / swiped away 81.7%. Traffic: Shorts feed 80.0%, YouTube search 9.7%, channel pages 5.2%, other YouTube features 2.9%, browse 1.0%, other 1.2%. 138 new viewers from Shorts. Part 1 → Part 2 link-click data: not shown. Top Shorts unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17, C1 P2 61 at 0:09).
+
+Comments: none in the last 2 days (default Unresponded / Most relevant filter).
+
+**Tidewhistle Shorts: 863 public views on 70 posts (+6 vs 857).** Movers, all +1: C11 colour P1 "Who sat by the window?" (F-GO1gkQRpc) 5, "Who took the lifeboat box?" colour P1 (EABoS8W4ddE) 2, "Who took the prize marrow?" P1 (5zHVdIagzU4) 34, C15 P2 "The Warm Bonnet" (0z1vHstDNXs) 3. No new YouTube uploads today.
+
+Wide Tidewhistle videos: **46** on 27 videos (+1); C29 wide MhT8jFrl5T0 1 (+1).
+
+Part 2 / Part 1 (views): no pair moved meaningfully; unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**56** posts (+1), 0 drafts. Followers: not shown in Studio overview (was 1).
+
+**Last 7 days (Studio, chart Oct 22–28):** video views **1.1K** (+553, +109.1%), profile views **45** (+36), likes **13** (+11), comments 0, shares 0. Traffic: For You 94.3%, Personal profile 5.1%, Search 0.5%. Search queries include "whodunit solved" and "whodunit".
+
+**Public (yt-dlp):** total views **2822** (**+138** vs 2684).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C22 colour P1 "Who's fibbing?" (new, this evening) | 7702221175967010078 | **133** (new, ~1 h), 1 like |
+| C19 colour P1 "Who could reach the bell?" | 7701463984871918879 | 173 (+1) |
+| C18 colour P2 "The Moonlit Walk" | 7701356783578713374 | 24 (+1) |
+| C15 colour P2 "The Warm Bonnet" | 7701033477457710366 | 18 (+1) |
+| C20 colour P1 "Follow the scent!" (overnight post) | 7701574022387059998 | 6 (+1) |
+| C21 colour P1 "Follow the money!" (late evening post) | 7701898644689145118 | 1 (+1) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C14 colour 69/~188 = 37%; C19 colour P2 still not posted (173-view P1 waiting on it). Old pairs unchanged.
+
+Notes: Second evening (~5–6 PM) P1 in a row to pop on TikTok (C22 133 views in about an hour, like C19's 116). Late-night/overnight P1s (C20, C21, C18, C15) sit at 1–6 views. YouTube nearly flat (+6 Shorts, +1 wide).
