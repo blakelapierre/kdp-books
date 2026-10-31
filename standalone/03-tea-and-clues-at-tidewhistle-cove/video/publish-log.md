@@ -408,3 +408,5 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - YouTube: queue complete, nothing to post.
 - TikTok seq 26: Case 22 P1 posted, AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. Likely URL https://www.tiktok.com/@shortmysterycases/video/7702221175967010078 (not confirmed).
 - 2026-10-30 7:39 PM PT: TikTok repost (colour requeue seq 27) Case 23 The Odd Glove Part 1, "Can you solve it? 🧤 Whose glove is it? (Colour)", id 7702656064650546462 (https://www.tiktok.com/@shortmysterycases/video/7702656064650546462), under review at post time.
+
+- 2026-10-31 2:39 AM PT — TikTok (requeue seq 28): Case 23 The Odd Glove Part 2 (Colour) — https://www.tiktok.com/@shortmysterycases/video/7702763974227397919 — under review at posting, AI label on.
