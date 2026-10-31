@@ -1,0 +1,36 @@
+{
+  "title": "The Fibbers of Frostwood",
+  "slug": "13-the-fibbers-of-frostwood",
+  "format": "Kindle ebook (EPUB 3)",
+  "author": "Blake La Pierre",
+  "series": "A Frostwood Puzzle Book",
+  "series_number": 13,
+  "seed": 20261031,
+  "pythonhashseed": 0,
+  "total_puzzles": 120,
+  "counts": {
+    "Easy": 30,
+    "Medium": 35,
+    "Hard": 35,
+    "Expert": 20
+  },
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "epub_bytes": 1000523,
+  "epub_mb_rounded_kb": 0.9551,
+  "delivery_fee_usd": 0.14,
+  "royalty_usd": 2.65,
+  "royalty_math": "0.70 \u00d7 3.99 \u2212 0.14 = 2.65",
+  "cover_px": [
+    1600,
+    2560
+  ],
+  "cover_bytes": 222313,
+  "files": {
+    "epub": "frostwood-13-the-fibbers-of-frostwood.epub",
+    "cover": "frostwood-13-the-fibbers-of-frostwood-cover.jpg"
+  },
+  "epubcheck": "PASS Messages: 0 fatals / 0 errors / 0 warnings / 0 infos",
+  "rebuild": "cd src && PYTHONHASHSEED=0 python3 master.py  (optional: EPUBCHECK_JAR=/path/epubcheck.jar JAVA=/path/java)"
+}

@@ -1,0 +1,8098 @@
+{
+ "title": "The Fibbers of Frostwood",
+ "subtitle": "120 Truth-Teller and Fibber Logic Puzzles for Kindle: Cozy Winter Knights and Knaves Brain Teasers, Easy to Expert, with Tap-to-Jump Hints and Answers",
+ "seed": 20261031,
+ "bands": {
+  "Easy": {
+   "count": 30,
+   "players": 3,
+   "statement_types": [
+    "is",
+    "same",
+    "diff",
+    "both",
+    "either"
+   ],
+   "step_depth": 0,
+   "hypotheses": [
+    0,
+    0
+   ]
+  },
+  "Medium": {
+   "count": 35,
+   "players": 4,
+   "statement_types": [
+    "is",
+    "same",
+    "diff",
+    "both",
+    "either",
+    "count",
+    "if"
+   ],
+   "step_depth": 1,
+   "hypotheses": [
+    1,
+    1
+   ]
+  },
+  "Hard": {
+   "count": 35,
+   "players": 5,
+   "statement_types": [
+    "is",
+    "same",
+    "diff",
+    "both",
+    "either",
+    "count",
+    "if"
+   ],
+   "step_depth": 1,
+   "hypotheses": [
+    2,
+    3
+   ]
+  },
+  "Expert": {
+   "count": 20,
+   "players": 6,
+   "statement_types": [
+    "either",
+    "count",
+    "if",
+    "same",
+    "diff",
+    "both"
+   ],
+   "step_depth": 2,
+   "hypotheses": [
+    1,
+    4
+   ]
+  }
+ },
+ "counts": {
+  "Easy": 30,
+  "Medium": 35,
+  "Hard": 35,
+  "Expert": 20
+ },
+ "total": 120,
+ "generator_tries": {
+  "Easy": 299,
+  "Medium": 1156,
+  "Hard": 2181,
+  "Expert": 40737
+ },
+ "puzzles": [
+  {
+   "num": 1,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "by the great hearth",
+   "names": [
+    "Clara",
+    "Greta",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Viggo and Greta are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Clara is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Clara and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "truth-teller",
+    "Greta": "fibber",
+    "Viggo": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Viggo. Whichever kind Viggo is, that statement alone shows that Clara is a truth-teller."
+  },
+  {
+   "num": 2,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the boot room",
+   "names": [
+    "Dov",
+    "Sam",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Either I am a truth-teller, or Sam is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Yara and I are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Sam and I are both truth-tellers.",
+     "form": [
+      "both",
+      1,
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "truth-teller",
+    "Sam": "truth-teller",
+    "Yara": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Sam. Whichever kind Sam is, that statement alone shows that Yara is a truth-teller."
+  },
+  {
+   "num": 3,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "at the library writing desk",
+   "names": [
+    "Elsie",
+    "Otto",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Uma and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Elsie is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Elsie and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "truth-teller",
+    "Otto": "truth-teller",
+    "Uma": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Elsie. Whichever kind Elsie is, that statement alone shows that Uma is a fibber."
+  },
+  {
+   "num": 4,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "on the window seat in the sitting room",
+   "names": [
+    "Bram",
+    "Milo",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Milo is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Bram and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      0
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Either I am a truth-teller, or Milo is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Milo": "truth-teller",
+    "Uma": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Milo. Whichever kind Milo is, that statement alone shows that Bram is a fibber."
+  },
+  {
+   "num": 5,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "around the card table",
+   "names": [
+    "Ada",
+    "Lena",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Yara is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Either Yara is a truth-teller, or Ada is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Ada and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Lena": "truth-teller",
+    "Yara": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Yara. Whichever kind Yara is, that statement alone shows that Ada is a truth-teller."
+  },
+  {
+   "num": 6,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "on the stair landing",
+   "names": [
+    "Hugo",
+    "Ivy",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Either I am a truth-teller, or Wren is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Wren and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Ivy and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "truth-teller",
+    "Ivy": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Ivy. Whichever kind Ivy is, that statement alone shows that Wren is a truth-teller."
+  },
+  {
+   "num": 7,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the game room",
+   "names": [
+    "Milo",
+    "Sam",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Milo",
+     "text": "Viggo and Sam are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Milo is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Sam and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Milo": "truth-teller",
+    "Sam": "fibber",
+    "Viggo": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Viggo. Whichever kind Viggo is, that statement alone shows that Sam is a fibber."
+  },
+  {
+   "num": 8,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "beside the cocoa cart",
+   "names": [
+    "Pippa",
+    "Tessa",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Pippa",
+     "text": "Uma and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Pippa is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Either I am a truth-teller, or Tessa is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Pippa": "fibber",
+    "Tessa": "fibber",
+    "Uma": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Pippa. Whichever kind Pippa is, that statement alone shows that Uma is a fibber."
+  },
+  {
+   "num": 9,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the reading nook",
+   "names": [
+    "Jonah",
+    "Otto",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Jonah",
+     "text": "Otto and Sam are both fibbers.",
+     "form": [
+      "both",
+      1,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Sam and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Jonah is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Jonah": "truth-teller",
+    "Otto": "fibber",
+    "Sam": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Otto. Whichever kind Otto is, that statement alone shows that Sam is a fibber."
+  },
+  {
+   "num": 10,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the map room",
+   "names": [
+    "Jonah",
+    "Pippa",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Jonah",
+     "text": "Either I am a truth-teller, or Pippa is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Quinn and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Pippa and I are both truth-tellers.",
+     "form": [
+      "both",
+      1,
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Jonah": "truth-teller",
+    "Pippa": "truth-teller",
+    "Quinn": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Pippa. Whichever kind Pippa is, that statement alone shows that Quinn is a truth-teller."
+  },
+  {
+   "num": 11,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "on the front porch",
+   "names": [
+    "Milo",
+    "Nell",
+    "Pippa"
+   ],
+   "statements": [
+    {
+     "speaker": "Milo",
+     "text": "Pippa and Nell are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Milo and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Milo is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Milo": "truth-teller",
+    "Nell": "truth-teller",
+    "Pippa": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Nell. Whichever kind Nell is, that statement alone shows that Milo is a truth-teller."
+  },
+  {
+   "num": 12,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the music room",
+   "names": [
+    "Elsie",
+    "Sam",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Viggo and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Either Viggo is a truth-teller, or Elsie is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Sam and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "truth-teller",
+    "Sam": "truth-teller",
+    "Viggo": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Elsie. Whichever kind Elsie is, that statement alone shows that Viggo is a fibber."
+  },
+  {
+   "num": 13,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "up in the attic",
+   "names": [
+    "Bram",
+    "Greta",
+    "Otto"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Either Greta is a fibber, or Otto is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Otto is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Greta and I are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Greta": "truth-teller",
+    "Otto": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Otto. Whichever kind Otto is, that statement alone shows that Greta is a truth-teller."
+  },
+  {
+   "num": 14,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "at the front desk",
+   "names": [
+    "Otto",
+    "Sam",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Otto",
+     "text": "Yara and Sam are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Yara and Otto are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Sam and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Otto": "fibber",
+    "Sam": "fibber",
+    "Yara": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Yara. Whichever kind Yara is, that statement alone shows that Sam is a fibber."
+  },
+  {
+   "num": 15,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the sunroom",
+   "names": [
+    "Elsie",
+    "Ivy",
+    "Jonah"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Elsie and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      0
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Either Ivy is a truth-teller, or Elsie is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Ivy": "truth-teller",
+    "Jonah": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Ivy. Whichever kind Ivy is, that statement alone shows that Elsie is a fibber."
+  },
+  {
+   "num": 16,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the drying room",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Uma and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Either Uma is a fibber, or Elsie is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Elsie is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Finn": "truth-teller",
+    "Uma": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Elsie. Whichever kind Elsie is, that statement alone shows that Uma is a fibber."
+  },
+  {
+   "num": 17,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the tea alcove",
+   "names": [
+    "Ada",
+    "Greta",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Greta and Rosa are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Ada and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Ada is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Greta": "truth-teller",
+    "Rosa": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Greta. Whichever kind Greta is, that statement alone shows that Ada is a fibber."
+  },
+  {
+   "num": 18,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "by the corner bookcase",
+   "names": [
+    "Greta",
+    "Sam",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Sam is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Yara and Greta are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Greta and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Sam": "truth-teller",
+    "Yara": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Yara. Whichever kind Yara is, that statement alone shows that Greta is a truth-teller."
+  },
+  {
+   "num": 19,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "on the bell tower stairs",
+   "names": [
+    "Bram",
+    "Ivy",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Ivy and I are both truth-tellers.",
+     "form": [
+      "both",
+      1,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Wren and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Ivy": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Ivy. Whichever kind Ivy is, that statement alone shows that Wren is a truth-teller."
+  },
+  {
+   "num": 20,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the kitchen",
+   "names": [
+    "Dov",
+    "Hugo",
+    "Otto"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Hugo is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Otto and I are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Hugo and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Hugo": "fibber",
+    "Otto": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Hugo. Whichever kind Hugo is, that statement alone shows that Otto is a truth-teller."
+  },
+  {
+   "num": 21,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "by the mitten basket",
+   "names": [
+    "Finn",
+    "Kit",
+    "Pippa"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "Kit is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Pippa and Finn are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Kit and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "truth-teller",
+    "Kit": "fibber",
+    "Pippa": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Pippa. Whichever kind Pippa is, that statement alone shows that Kit is a fibber."
+  },
+  {
+   "num": 22,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "at the snowshoe rack",
+   "names": [
+    "Finn",
+    "Greta",
+    "Ivy"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "Greta and I are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Ivy and I are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Greta is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "fibber",
+    "Greta": "fibber",
+    "Ivy": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Greta. Whichever kind Greta is, that statement alone shows that Ivy is a truth-teller."
+  },
+  {
+   "num": 23,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the upstairs hallway",
+   "names": [
+    "Hugo",
+    "Tessa",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Zeke is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Hugo and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Tessa and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "truth-teller",
+    "Tessa": "fibber",
+    "Zeke": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Tessa. Whichever kind Tessa is, that statement alone shows that Hugo is a truth-teller."
+  },
+  {
+   "num": 24,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the conservatory",
+   "names": [
+    "Kit",
+    "Uma",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Kit",
+     "text": "Wren and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Kit and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Uma is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Kit": "fibber",
+    "Uma": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Kit. Whichever kind Kit is, that statement alone shows that Wren is a truth-teller."
+  },
+  {
+   "num": 25,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "under the observatory hatch",
+   "names": [
+    "Clara",
+    "Pippa",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Pippa is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Rosa and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Pippa and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "truth-teller",
+    "Pippa": "truth-teller",
+    "Rosa": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Pippa. Whichever kind Pippa is, that statement alone shows that Rosa is a fibber."
+  },
+  {
+   "num": 26,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the long dining room",
+   "names": [
+    "Jonah",
+    "Uma",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Jonah",
+     "text": "Uma is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Jonah and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Either Uma is a fibber, or Jonah is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Jonah": "truth-teller",
+    "Uma": "truth-teller",
+    "Wren": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Uma. Whichever kind Uma is, that statement alone shows that Jonah is a truth-teller."
+  },
+  {
+   "num": 27,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "beside the woodbox",
+   "names": [
+    "Milo",
+    "Quinn",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Milo",
+     "text": "Quinn is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Rosa and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Milo and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Milo": "truth-teller",
+    "Quinn": "fibber",
+    "Rosa": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Quinn. Whichever kind Quinn is, that statement alone shows that Rosa is a fibber."
+  },
+  {
+   "num": 28,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the linen room",
+   "names": [
+    "Finn",
+    "Hugo",
+    "Ivy"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "Either Ivy is a truth-teller, or Hugo is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Ivy and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Finn is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "fibber",
+    "Hugo": "fibber",
+    "Ivy": "fibber"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Hugo. Whichever kind Hugo is, that statement alone shows that Ivy is a fibber."
+  },
+  {
+   "num": 29,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "by the grandfather clock",
+   "names": [
+    "Rosa",
+    "Viggo",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Rosa",
+     "text": "Either I am a truth-teller, or Zeke is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Zeke is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Viggo and I are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Rosa": "truth-teller",
+    "Viggo": "fibber",
+    "Zeke": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Zeke. Whichever kind Zeke is, that statement alone shows that Viggo is a fibber."
+  },
+  {
+   "num": 30,
+   "band": "Easy",
+   "players": 3,
+   "place": "The Lodge",
+   "spot": "in the puzzle parlour",
+   "names": [
+    "Kit",
+    "Uma",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Kit",
+     "text": "Zeke and I are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Kit and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Uma and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Kit": "truth-teller",
+    "Uma": "fibber",
+    "Zeke": "truth-teller"
+   },
+   "step_depth": 0,
+   "hypotheses": 0,
+   "hint": "Start with Uma. Whichever kind Uma is, that statement alone shows that Kit is a truth-teller."
+  },
+  {
+   "num": 31,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the bakery counter",
+   "names": [
+    "Bram",
+    "Clara",
+    "Pippa",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Yara and Pippa are both fibbers.",
+     "form": [
+      "both",
+      3,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Clara",
+     "text": "Yara and I are different kinds.",
+     "form": [
+      "diff",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Exactly three of us four are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Exactly two of us four are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Clara": "fibber",
+    "Pippa": "truth-teller",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 32,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the post office",
+   "names": [
+    "Jonah",
+    "Lena",
+    "Milo",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Jonah",
+     "text": "Milo and Yara are different kinds.",
+     "form": [
+      "diff",
+      2,
+      3
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "If Jonah is a truth-teller, then Yara is a fibber.",
+     "form": [
+      "if",
+      0,
+      true,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Yara is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Lena is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Jonah": "fibber",
+    "Lena": "truth-teller",
+    "Milo": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Lena is a fibber and follow where it leads. Something breaks, so Lena must be a truth-teller."
+  },
+  {
+   "num": 33,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "under the bandstand on the green",
+   "names": [
+    "Kit",
+    "Milo",
+    "Sam",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Kit",
+     "text": "Sam and Yara are different kinds.",
+     "form": [
+      "diff",
+      2,
+      3
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Kit is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Either I am a truth-teller, or Kit is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Exactly two of us four are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Kit": "fibber",
+    "Milo": "truth-teller",
+    "Sam": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Kit is a truth-teller and follow where it leads. Something breaks, so Kit must be a fibber."
+  },
+  {
+   "num": 34,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the bookshop window",
+   "names": [
+    "Hugo",
+    "Sam",
+    "Tessa",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Wren and I are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Hugo is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Sam is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "If Hugo is a truth-teller, then Sam is a truth-teller.",
+     "form": [
+      "if",
+      0,
+      true,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "fibber",
+    "Sam": "truth-teller",
+    "Tessa": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Hugo is a truth-teller and follow where it leads. Something breaks, so Hugo must be a fibber."
+  },
+  {
+   "num": 35,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the toy-mender's shelf",
+   "names": [
+    "Bram",
+    "Dov",
+    "Finn",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Either I am a truth-teller, or Dov is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Dov",
+     "text": "If Bram is a fibber, then Quinn is a fibber.",
+     "form": [
+      "if",
+      0,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Exactly two of us four are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Bram and Finn are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Dov": "fibber",
+    "Finn": "fibber",
+    "Quinn": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 36,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the skating-pond hut",
+   "names": [
+    "Ada",
+    "Greta",
+    "Milo",
+    "Nell"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Nell and Milo are the same kind.",
+     "form": [
+      "same",
+      3,
+      2
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "At most two of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Either Greta is a fibber, or Nell is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Either Milo is a truth-teller, or Greta is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Greta": "truth-teller",
+    "Milo": "fibber",
+    "Nell": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 37,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the foot of the clock tower",
+   "names": [
+    "Dov",
+    "Kit",
+    "Lena",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "If Lena is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      2,
+      false,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Exactly three of us four are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Uma is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Kit and Dov are different kinds.",
+     "form": [
+      "diff",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Kit": "fibber",
+    "Lena": "fibber",
+    "Uma": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Lena is a truth-teller and follow where it leads. Something breaks, so Lena must be a fibber."
+  },
+  {
+   "num": 38,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the cheese shop",
+   "names": [
+    "Bram",
+    "Elsie",
+    "Rosa",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Elsie and Yara are different kinds.",
+     "form": [
+      "diff",
+      1,
+      3
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Either Bram is a fibber, or Rosa is a fibber, or both.",
+     "form": [
+      "either",
+      0,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Yara and Elsie are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "If Bram is a fibber, then Rosa is a truth-teller.",
+     "form": [
+      "if",
+      0,
+      false,
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Elsie": "truth-teller",
+    "Rosa": "truth-teller",
+    "Yara": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 39,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the wool shop",
+   "names": [
+    "Greta",
+    "Milo",
+    "Rosa",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Rosa is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Either Rosa is a fibber, or Viggo is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Exactly one of us four is a truth-teller.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Rosa and Greta are both fibbers.",
+     "form": [
+      "both",
+      2,
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Milo": "truth-teller",
+    "Rosa": "fibber",
+    "Viggo": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 40,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the schoolhouse cloakroom",
+   "names": [
+    "Lena",
+    "Pippa",
+    "Sam",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Lena",
+     "text": "Pippa and Tessa are the same kind.",
+     "form": [
+      "same",
+      1,
+      3
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Sam and I are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Tessa is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Pippa is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Lena": "fibber",
+    "Pippa": "fibber",
+    "Sam": "truth-teller",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Pippa is a truth-teller and follow where it leads. Something breaks, so Pippa must be a fibber."
+  },
+  {
+   "num": 41,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the library returns desk",
+   "names": [
+    "Ada",
+    "Milo",
+    "Otto",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "If Milo is a truth-teller, then Uma is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      true,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Uma is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Ada is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Milo and Ada are the same kind.",
+     "form": [
+      "same",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Milo": "truth-teller",
+    "Otto": "fibber",
+    "Uma": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Milo is a fibber and follow where it leads. Something breaks, so Milo must be a truth-teller."
+  },
+  {
+   "num": 42,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "by the market-cross well",
+   "names": [
+    "Clara",
+    "Jonah",
+    "Otto",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "If Otto is a fibber, then Sam is a fibber.",
+     "form": [
+      "if",
+      2,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "If Clara is a fibber, then Otto is a truth-teller.",
+     "form": [
+      "if",
+      0,
+      false,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Clara is a truth-teller, or Jonah is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Clara and Jonah are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "truth-teller",
+    "Jonah": "truth-teller",
+    "Otto": "truth-teller",
+    "Sam": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Clara is a fibber and follow where it leads. Something breaks, so Clara must be a truth-teller."
+  },
+  {
+   "num": 43,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "beside the blacksmith's forge",
+   "names": [
+    "Ada",
+    "Dov",
+    "Kit",
+    "Lena"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Kit and Lena are both fibbers.",
+     "form": [
+      "both",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Dov",
+     "text": "If Lena is a truth-teller, then Ada is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      true,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Either Dov is a truth-teller, or Lena is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Either Ada is a fibber, or Dov is a fibber, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Dov": "fibber",
+    "Kit": "truth-teller",
+    "Lena": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 44,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the candle shop",
+   "names": [
+    "Ada",
+    "Quinn",
+    "Uma",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Quinn and I are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Either Zeke is a fibber, or Ada is a fibber, or both.",
+     "form": [
+      "either",
+      3,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "If Quinn is a truth-teller, then Zeke is a fibber.",
+     "form": [
+      "if",
+      1,
+      true,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "If Ada is a fibber, then Quinn is a fibber.",
+     "form": [
+      "if",
+      0,
+      false,
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Quinn": "truth-teller",
+    "Uma": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 45,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the mill wheel house",
+   "names": [
+    "Clara",
+    "Ivy",
+    "Otto",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "At most two of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Clara and Viggo are the same kind.",
+     "form": [
+      "same",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Clara and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Ivy": "truth-teller",
+    "Otto": "fibber",
+    "Viggo": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ivy is a fibber and follow where it leads. Something breaks, so Ivy must be a truth-teller."
+  },
+  {
+   "num": 46,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the tea room",
+   "names": [
+    "Clara",
+    "Ivy",
+    "Pippa",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Pippa is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Clara and Uma are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Clara and Uma are the same kind.",
+     "form": [
+      "same",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Pippa is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Ivy": "truth-teller",
+    "Pippa": "fibber",
+    "Uma": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 47,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "on the village hall stage",
+   "names": [
+    "Clara",
+    "Ivy",
+    "Lena",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Lena and Ivy are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "At most three of us four are truth-tellers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Rosa and Clara are different kinds.",
+     "form": [
+      "diff",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Clara is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "truth-teller",
+    "Ivy": "truth-teller",
+    "Lena": "truth-teller",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Clara is a fibber and follow where it leads. Something breaks, so Clara must be a truth-teller."
+  },
+  {
+   "num": 48,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the apothecary",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Pippa",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Pippa is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Pippa and Elsie are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "If Viggo is a truth-teller, then Finn is a fibber.",
+     "form": [
+      "if",
+      3,
+      true,
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Finn is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Finn": "fibber",
+    "Pippa": "truth-teller",
+    "Viggo": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 49,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the sled-hire shed",
+   "names": [
+    "Ada",
+    "Clara",
+    "Otto",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Clara and Otto are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Clara",
+     "text": "If Ada is a truth-teller, then Zeke is a fibber.",
+     "form": [
+      "if",
+      0,
+      true,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Ada is a fibber, or Zeke is a fibber, or both.",
+     "form": [
+      "either",
+      0,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Ada is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Clara": "fibber",
+    "Otto": "fibber",
+    "Zeke": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 50,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the haberdashery",
+   "names": [
+    "Bram",
+    "Finn",
+    "Tessa",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "If Zeke is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      3,
+      false,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "At least one of us four is a fibber.",
+     "form": [
+      "count",
+      "ge",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "If Finn is a fibber, then Zeke is a fibber.",
+     "form": [
+      "if",
+      1,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Tessa and Bram are different kinds.",
+     "form": [
+      "diff",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Finn": "truth-teller",
+    "Tessa": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 51,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "by the chapel lane noticeboard",
+   "names": [
+    "Greta",
+    "Ivy",
+    "Lena",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Either Lena is a fibber, or Sam is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Lena and Greta are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "At most three of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Lena is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Ivy": "truth-teller",
+    "Lena": "truth-teller",
+    "Sam": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 52,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "on the old stone bridge",
+   "names": [
+    "Ada",
+    "Ivy",
+    "Milo",
+    "Pippa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Milo and Ivy are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "If Milo is a truth-teller, then I am a truth-teller.",
+     "form": [
+      "if",
+      2,
+      true,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Ivy is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Ivy and Milo are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Ivy": "truth-teller",
+    "Milo": "truth-teller",
+    "Pippa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ivy is a fibber and follow where it leads. Something breaks, so Ivy must be a truth-teller."
+  },
+  {
+   "num": 53,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "among the greengrocer's crates",
+   "names": [
+    "Clara",
+    "Ivy",
+    "Jonah",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "At least three of us four are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "At least one of us four is a fibber.",
+     "form": [
+      "count",
+      "ge",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Either Ivy is a fibber, or Clara is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Ivy": "truth-teller",
+    "Jonah": "truth-teller",
+    "Sam": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 54,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the cobbler's bench",
+   "names": [
+    "Nell",
+    "Pippa",
+    "Sam",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Nell",
+     "text": "Wren and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Sam and Nell are different kinds.",
+     "form": [
+      "diff",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Exactly two of us four are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Nell and Sam are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Nell": "fibber",
+    "Pippa": "truth-teller",
+    "Sam": "truth-teller",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Nell is a truth-teller and follow where it leads. Something breaks, so Nell must be a fibber."
+  },
+  {
+   "num": 55,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the fire-watch hut",
+   "names": [
+    "Ivy",
+    "Milo",
+    "Viggo",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Ivy",
+     "text": "Either I am a truth-teller, or Milo is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Ivy and Milo are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "At least three of us four are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ivy": "truth-teller",
+    "Milo": "fibber",
+    "Viggo": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ivy is a fibber and follow where it leads. Something breaks, so Ivy must be a truth-teller."
+  },
+  {
+   "num": 56,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the lantern shop",
+   "names": [
+    "Ada",
+    "Elsie",
+    "Lena",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Either I am a truth-teller, or Elsie is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Ada is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Rosa and Elsie are both truth-tellers.",
+     "form": [
+      "both",
+      3,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Lena is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Elsie": "fibber",
+    "Lena": "fibber",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 57,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "by the inn's cellar door",
+   "names": [
+    "Clara",
+    "Greta",
+    "Viggo",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Viggo and Zeke are different kinds.",
+     "form": [
+      "diff",
+      2,
+      3
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Viggo is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Greta and I are both truth-tellers.",
+     "form": [
+      "both",
+      1,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Clara and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Greta": "truth-teller",
+    "Viggo": "fibber",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 58,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the barber's chair",
+   "names": [
+    "Greta",
+    "Sam",
+    "Viggo",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "At most three of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "If Viggo is a fibber, then Greta is a truth-teller.",
+     "form": [
+      "if",
+      2,
+      false,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Greta and Sam are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Sam and Greta are the same kind.",
+     "form": [
+      "same",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Sam": "truth-teller",
+    "Viggo": "fibber",
+    "Zeke": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 59,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the bee shed",
+   "names": [
+    "Hugo",
+    "Quinn",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Tessa and I are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Hugo is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Hugo and Tessa are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Rosa and I are the same kind.",
+     "form": [
+      "same",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "fibber",
+    "Quinn": "fibber",
+    "Rosa": "truth-teller",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Hugo is a truth-teller and follow where it leads. Something breaks, so Hugo must be a fibber."
+  },
+  {
+   "num": 60,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the pottery",
+   "names": [
+    "Ada",
+    "Bram",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Tessa is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Tessa is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Either Bram is a fibber, or Tessa is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "If Rosa is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      2,
+      false,
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Bram": "truth-teller",
+    "Rosa": "fibber",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 61,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the hat shop",
+   "names": [
+    "Ivy",
+    "Milo",
+    "Quinn",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ivy",
+     "text": "Either I am a truth-teller, or Milo is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Rosa and Ivy are the same kind.",
+     "form": [
+      "same",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Quinn and Ivy are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Ivy": "truth-teller",
+    "Milo": "fibber",
+    "Quinn": "fibber",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Ivy is a fibber and follow where it leads. Something breaks, so Ivy must be a truth-teller."
+  },
+  {
+   "num": 62,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "up in the map maker's loft",
+   "names": [
+    "Kit",
+    "Otto",
+    "Yara",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Kit",
+     "text": "At most two of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Kit is a fibber, or Yara is a fibber, or both.",
+     "form": [
+      "either",
+      0,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Kit is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Kit is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Kit": "truth-teller",
+    "Otto": "fibber",
+    "Yara": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Kit is a fibber and follow where it leads. Something breaks, so Kit must be a truth-teller."
+  },
+  {
+   "num": 63,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the village museum",
+   "names": [
+    "Dov",
+    "Finn",
+    "Otto",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Exactly three of us four are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "At most one of us four is a fibber.",
+     "form": [
+      "count",
+      "le",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Dov and Finn are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Finn is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Finn": "fibber",
+    "Otto": "fibber",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Finn is a truth-teller and follow where it leads. Something breaks, so Finn must be a fibber."
+  },
+  {
+   "num": 64,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "in the plant nursery",
+   "names": [
+    "Nell",
+    "Quinn",
+    "Rosa",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Nell",
+     "text": "Quinn is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "At most three of us four are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Nell and Viggo are both fibbers.",
+     "form": [
+      "both",
+      0,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Rosa and Quinn are both fibbers.",
+     "form": [
+      "both",
+      2,
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Nell": "fibber",
+    "Quinn": "truth-teller",
+    "Rosa": "truth-teller",
+    "Viggo": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Nell is a truth-teller and follow where it leads. Something breaks, so Nell must be a fibber."
+  },
+  {
+   "num": 65,
+   "band": "Medium",
+   "players": 4,
+   "place": "The Village",
+   "spot": "at the sweet shop",
+   "names": [
+    "Greta",
+    "Lena",
+    "Otto",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Otto is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Greta is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "If Lena is a truth-teller, then Greta is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      true,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Either Otto is a fibber, or Lena is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Lena": "truth-teller",
+    "Otto": "truth-teller",
+    "Uma": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 1,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 66,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the valley station ticket office",
+   "names": [
+    "Bram",
+    "Ivy",
+    "Lena",
+    "Otto",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "If I am a fibber, then Quinn is a fibber.",
+     "form": [
+      "if",
+      0,
+      false,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Lena is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Quinn and Bram are the same kind.",
+     "form": [
+      "same",
+      4,
+      0
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Lena and I are both truth-tellers.",
+     "form": [
+      "both",
+      3,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Ivy": "fibber",
+    "Lena": "fibber",
+    "Otto": "fibber",
+    "Quinn": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 67,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "around the waiting room stove",
+   "names": [
+    "Ada",
+    "Milo",
+    "Otto",
+    "Rosa",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Otto and Rosa are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "At least three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Sam is a truth-teller.",
+     "form": [
+      "is",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Exactly two of us five are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Milo": "fibber",
+    "Otto": "fibber",
+    "Rosa": "fibber",
+    "Sam": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 3,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 68,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "up in the signal box",
+   "names": [
+    "Greta",
+    "Ivy",
+    "Kit",
+    "Otto",
+    "Pippa"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Either Otto is a fibber, or Pippa is a fibber, or both.",
+     "form": [
+      "either",
+      3,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Either Otto is a fibber, or Greta is a fibber, or both.",
+     "form": [
+      "either",
+      3,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "If Otto is a truth-teller, then Greta is a fibber.",
+     "form": [
+      "if",
+      3,
+      true,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either I am a truth-teller, or Kit is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Ivy and Greta are the same kind.",
+     "form": [
+      "same",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Ivy": "fibber",
+    "Kit": "fibber",
+    "Otto": "truth-teller",
+    "Pippa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 69,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "by the water tower",
+   "names": [
+    "Ada",
+    "Clara",
+    "Dov",
+    "Elsie",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Dov and Clara are the same kind.",
+     "form": [
+      "same",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Clara",
+     "text": "Rosa and Ada are different kinds.",
+     "form": [
+      "diff",
+      4,
+      0
+     ]
+    },
+    {
+     "speaker": "Dov",
+     "text": "Either I am a truth-teller, or Rosa is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Clara is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Dov and Clara are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Clara": "truth-teller",
+    "Dov": "truth-teller",
+    "Elsie": "fibber",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a fibber and follow where it leads. Something breaks, so Dov must be a truth-teller."
+  },
+  {
+   "num": 70,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the parcels office",
+   "names": [
+    "Greta",
+    "Jonah",
+    "Nell",
+    "Wren",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Exactly two of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Nell and I are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Jonah and Greta are the same kind.",
+     "form": [
+      "same",
+      1,
+      0
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "If Greta is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      0,
+      false,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Greta is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "fibber",
+    "Jonah": "fibber",
+    "Nell": "truth-teller",
+    "Wren": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Greta is a truth-teller and follow where it leads. Something breaks, so Greta must be a fibber."
+  },
+  {
+   "num": 71,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the dining car",
+   "names": [
+    "Elsie",
+    "Hugo",
+    "Kit",
+    "Uma",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Either Kit is a truth-teller, or Wren is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Elsie and Uma are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Uma and Elsie are different kinds.",
+     "form": [
+      "diff",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "At most three of us five are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Elsie and Kit are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Hugo": "fibber",
+    "Kit": "fibber",
+    "Uma": "fibber",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Hugo is a truth-teller and follow where it leads. Something breaks, so Hugo must be a fibber."
+  },
+  {
+   "num": 72,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the sleeper car",
+   "names": [
+    "Ada",
+    "Bram",
+    "Elsie",
+    "Quinn",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "At most one of us five is a truth-teller.",
+     "form": [
+      "count",
+      "le",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Ada and Elsie are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Either Quinn is a truth-teller, or Tessa is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Either I am a truth-teller, or Ada is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Elsie and Ada are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Bram": "fibber",
+    "Elsie": "truth-teller",
+    "Quinn": "truth-teller",
+    "Tessa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 73,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the guard's van",
+   "names": [
+    "Bram",
+    "Ivy",
+    "Kit",
+    "Otto",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "If Otto is a fibber, then Ivy is a fibber.",
+     "form": [
+      "if",
+      3,
+      false,
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Either Kit is a truth-teller, or Rosa is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Bram and Otto are the same kind.",
+     "form": [
+      "same",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either I am a truth-teller, or Kit is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Otto is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Ivy": "truth-teller",
+    "Kit": "truth-teller",
+    "Otto": "truth-teller",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 74,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the engine shed",
+   "names": [
+    "Dov",
+    "Hugo",
+    "Lena",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "If Rosa is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      3,
+      false,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Rosa and Dov are both truth-tellers.",
+     "form": [
+      "both",
+      3,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Rosa and Hugo are different kinds.",
+     "form": [
+      "diff",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Either Tessa is a fibber, or Lena is a fibber, or both.",
+     "form": [
+      "either",
+      4,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Dov is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "truth-teller",
+    "Hugo": "truth-teller",
+    "Lena": "fibber",
+    "Rosa": "truth-teller",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a fibber and follow where it leads. Something breaks, so Dov must be a truth-teller."
+  },
+  {
+   "num": 75,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "beside the turntable",
+   "names": [
+    "Ada",
+    "Ivy",
+    "Jonah",
+    "Viggo",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "At least one of us five is a truth-teller.",
+     "form": [
+      "count",
+      "ge",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Ada and Jonah are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Viggo and Ivy are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Ivy is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Jonah is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Ivy": "fibber",
+    "Jonah": "fibber",
+    "Viggo": "truth-teller",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 76,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "under the luggage racks",
+   "names": [
+    "Bram",
+    "Kit",
+    "Otto",
+    "Pippa",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Otto and Pippa are the same kind.",
+     "form": [
+      "same",
+      2,
+      3
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Either Pippa is a truth-teller, or Bram is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Exactly four of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Quinn and Otto are both truth-tellers.",
+     "form": [
+      "both",
+      4,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "If Kit is a fibber, then Bram is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      false,
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Kit": "truth-teller",
+    "Otto": "fibber",
+    "Pippa": "fibber",
+    "Quinn": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Kit is a fibber and follow where it leads. Something breaks, so Kit must be a truth-teller."
+  },
+  {
+   "num": 77,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "by the coal bunker",
+   "names": [
+    "Elsie",
+    "Greta",
+    "Jonah",
+    "Otto",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Wren and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      4
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Exactly two of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Greta is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Jonah and Greta are both fibbers.",
+     "form": [
+      "both",
+      2,
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Otto is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Greta": "truth-teller",
+    "Jonah": "truth-teller",
+    "Otto": "fibber",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 78,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the lamp room",
+   "names": [
+    "Bram",
+    "Dov",
+    "Hugo",
+    "Kit",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Hugo and I are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Dov",
+     "text": "Rosa is a fibber.",
+     "form": [
+      "is",
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "If Kit is a fibber, then Bram is a fibber.",
+     "form": [
+      "if",
+      3,
+      false,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Hugo and Rosa are different kinds.",
+     "form": [
+      "diff",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Kit and Dov are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Dov": "fibber",
+    "Hugo": "truth-teller",
+    "Kit": "fibber",
+    "Rosa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 79,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "at the halfway halt",
+   "names": [
+    "Ivy",
+    "Sam",
+    "Tessa",
+    "Yara",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Ivy",
+     "text": "If Sam is a truth-teller, then Zeke is a fibber.",
+     "form": [
+      "if",
+      1,
+      true,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Tessa is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Exactly four of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "If I am a fibber, then Sam is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      false,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Yara and Ivy are both fibbers.",
+     "form": [
+      "both",
+      3,
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ivy": "truth-teller",
+    "Sam": "truth-teller",
+    "Tessa": "fibber",
+    "Yara": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ivy is a fibber and follow where it leads. Something breaks, so Ivy must be a truth-teller."
+  },
+  {
+   "num": 80,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "on the pine-cutting platform",
+   "names": [
+    "Bram",
+    "Ivy",
+    "Pippa",
+    "Tessa",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Either I am a truth-teller, or Tessa is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Pippa and Uma are different kinds.",
+     "form": [
+      "diff",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "If Uma is a fibber, then Ivy is a truth-teller.",
+     "form": [
+      "if",
+      4,
+      false,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Uma is a truth-teller.",
+     "form": [
+      "is",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "If Bram is a truth-teller, then Ivy is a truth-teller.",
+     "form": [
+      "if",
+      0,
+      true,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Ivy": "fibber",
+    "Pippa": "fibber",
+    "Tessa": "fibber",
+    "Uma": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 81,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the trestle watch hut",
+   "names": [
+    "Kit",
+    "Lena",
+    "Otto",
+    "Tessa",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Kit",
+     "text": "Either Lena is a truth-teller, or Wren is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Wren and Tessa are both truth-tellers.",
+     "form": [
+      "both",
+      4,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Tessa and Lena are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Otto and Wren are the same kind.",
+     "form": [
+      "same",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Tessa is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Kit": "fibber",
+    "Lena": "fibber",
+    "Otto": "fibber",
+    "Tessa": "truth-teller",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Lena is a truth-teller and follow where it leads. Something breaks, so Lena must be a fibber."
+  },
+  {
+   "num": 82,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the tunnel mouth shelter",
+   "names": [
+    "Jonah",
+    "Rosa",
+    "Sam",
+    "Yara",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Jonah",
+     "text": "If Rosa is a fibber, then Yara is a fibber.",
+     "form": [
+      "if",
+      1,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "If Yara is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      3,
+      false,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Yara is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Either Rosa is a truth-teller, or Sam is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Exactly one of us five is a truth-teller.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Jonah": "truth-teller",
+    "Rosa": "truth-teller",
+    "Sam": "truth-teller",
+    "Yara": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Jonah is a fibber and follow where it leads. Something breaks, so Jonah must be a truth-teller."
+  },
+  {
+   "num": 83,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the snowplough shed",
+   "names": [
+    "Greta",
+    "Ivy",
+    "Kit",
+    "Otto",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "Rosa and Ivy are the same kind.",
+     "form": [
+      "same",
+      4,
+      1
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Kit and Otto are both fibbers.",
+     "form": [
+      "both",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "If Ivy is a fibber, then Otto is a fibber.",
+     "form": [
+      "if",
+      1,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "At least one of us five is a truth-teller.",
+     "form": [
+      "count",
+      "ge",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "If Ivy is a fibber, then Kit is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      false,
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Ivy": "fibber",
+    "Kit": "fibber",
+    "Otto": "truth-teller",
+    "Rosa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ivy is a truth-teller and follow where it leads. Something breaks, so Ivy must be a fibber."
+  },
+  {
+   "num": 84,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the brake van",
+   "names": [
+    "Elsie",
+    "Ivy",
+    "Quinn",
+    "Tessa",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Yara and I are both truth-tellers.",
+     "form": [
+      "both",
+      4,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Yara and Tessa are the same kind.",
+     "form": [
+      "same",
+      4,
+      3
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Tessa and Ivy are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Elsie is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Exactly two of us five are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Ivy": "truth-teller",
+    "Quinn": "fibber",
+    "Tessa": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 85,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "under the timetable board",
+   "names": [
+    "Ada",
+    "Bram",
+    "Kit",
+    "Sam",
+    "Uma"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Uma is a fibber.",
+     "form": [
+      "is",
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Either Uma is a truth-teller, or Sam is a truth-teller, or both.",
+     "form": [
+      "either",
+      4,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Bram and Uma are different kinds.",
+     "form": [
+      "diff",
+      1,
+      4
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "If Kit is a truth-teller, then Bram is a truth-teller.",
+     "form": [
+      "if",
+      2,
+      true,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Exactly three of us five are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Bram": "truth-teller",
+    "Kit": "truth-teller",
+    "Sam": "truth-teller",
+    "Uma": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 86,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the stationmaster's office",
+   "names": [
+    "Elsie",
+    "Greta",
+    "Jonah",
+    "Kit",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Kit is a truth-teller.",
+     "form": [
+      "is",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "If Jonah is a fibber, then Quinn is a fibber.",
+     "form": [
+      "if",
+      2,
+      false,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "If Elsie is a truth-teller, then Greta is a fibber.",
+     "form": [
+      "if",
+      0,
+      true,
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Greta and Kit are different kinds.",
+     "form": [
+      "diff",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "truth-teller",
+    "Greta": "truth-teller",
+    "Jonah": "fibber",
+    "Kit": "truth-teller",
+    "Quinn": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a fibber and follow where it leads. Something breaks, so Elsie must be a truth-teller."
+  },
+  {
+   "num": 87,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the observation car",
+   "names": [
+    "Elsie",
+    "Hugo",
+    "Milo",
+    "Otto",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Otto is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "If Elsie is a truth-teller, then Zeke is a fibber.",
+     "form": [
+      "if",
+      0,
+      true,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Exactly four of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Milo is a fibber, or Zeke is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Exactly one of us five is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Hugo": "truth-teller",
+    "Milo": "fibber",
+    "Otto": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 88,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "at the mail car sorting bench",
+   "names": [
+    "Bram",
+    "Clara",
+    "Otto",
+    "Pippa",
+    "Rosa"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Rosa is a fibber.",
+     "form": [
+      "is",
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Clara",
+     "text": "Otto and Bram are different kinds.",
+     "form": [
+      "diff",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Clara and Pippa are the same kind.",
+     "form": [
+      "same",
+      1,
+      3
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Either I am a truth-teller, or Clara is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Pippa and Otto are different kinds.",
+     "form": [
+      "diff",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Clara": "fibber",
+    "Otto": "fibber",
+    "Pippa": "truth-teller",
+    "Rosa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 89,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "beside the tea urn trolley",
+   "names": [
+    "Dov",
+    "Finn",
+    "Otto",
+    "Viggo",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "If Viggo is a truth-teller, then Wren is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      true,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "If I am a fibber, then Dov is a fibber.",
+     "form": [
+      "if",
+      1,
+      false,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "At least two of us five are fibbers.",
+     "form": [
+      "count",
+      "ge",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Either Finn is a fibber, or Dov is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Finn and Viggo are the same kind.",
+     "form": [
+      "same",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "truth-teller",
+    "Finn": "truth-teller",
+    "Otto": "truth-teller",
+    "Viggo": "fibber",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a fibber and follow where it leads. Something breaks, so Dov must be a truth-teller."
+  },
+  {
+   "num": 90,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "at the crossing keeper's cottage",
+   "names": [
+    "Ada",
+    "Dov",
+    "Ivy",
+    "Otto",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Exactly two of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Dov",
+     "text": "Ivy and Otto are both fibbers.",
+     "form": [
+      "both",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Ada and Dov are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Dov and Otto are both fibbers.",
+     "form": [
+      "both",
+      1,
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Dov": "truth-teller",
+    "Ivy": "fibber",
+    "Otto": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Ivy is a truth-teller and follow where it leads. Something breaks, so Ivy must be a fibber."
+  },
+  {
+   "num": 91,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the lost property office",
+   "names": [
+    "Elsie",
+    "Greta",
+    "Nell",
+    "Pippa",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Nell and Elsie are different kinds.",
+     "form": [
+      "diff",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "If Pippa is a truth-teller, then Yara is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      true,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "If Greta is a truth-teller, then Yara is a fibber.",
+     "form": [
+      "if",
+      1,
+      true,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Elsie and I are different kinds.",
+     "form": [
+      "diff",
+      0,
+      4
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Greta": "fibber",
+    "Nell": "fibber",
+    "Pippa": "truth-teller",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Pippa is a fibber and follow where it leads. Something breaks, so Pippa must be a truth-teller."
+  },
+  {
+   "num": 92,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "under the platform clock",
+   "names": [
+    "Finn",
+    "Kit",
+    "Milo",
+    "Otto",
+    "Pippa"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "At most one of us five is a truth-teller.",
+     "form": [
+      "count",
+      "le",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Exactly two of us five are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "If Kit is a truth-teller, then Otto is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      true,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Kit is a truth-teller, or Milo is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Milo and Kit are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "fibber",
+    "Kit": "truth-teller",
+    "Milo": "truth-teller",
+    "Otto": "truth-teller",
+    "Pippa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Finn is a truth-teller and follow where it leads. Something breaks, so Finn must be a fibber."
+  },
+  {
+   "num": 93,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "on the footbridge",
+   "names": [
+    "Greta",
+    "Kit",
+    "Otto",
+    "Pippa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Greta",
+     "text": "If Kit is a fibber, then Pippa is a fibber.",
+     "form": [
+      "if",
+      1,
+      false,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "At most three of us five are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Tessa is a fibber.",
+     "form": [
+      "is",
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Kit is a truth-teller.",
+     "form": [
+      "is",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "At most two of us five are truth-tellers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Greta": "truth-teller",
+    "Kit": "truth-teller",
+    "Otto": "truth-teller",
+    "Pippa": "truth-teller",
+    "Tessa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Greta is a fibber and follow where it leads. Something breaks, so Greta must be a truth-teller."
+  },
+  {
+   "num": 94,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "beneath the upper station canopy",
+   "names": [
+    "Finn",
+    "Kit",
+    "Rosa",
+    "Viggo",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "If Viggo is a truth-teller, then Rosa is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      true,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Wren is a fibber.",
+     "form": [
+      "is",
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Exactly one of us five is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Wren and Kit are the same kind.",
+     "form": [
+      "same",
+      4,
+      1
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Viggo is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "truth-teller",
+    "Kit": "fibber",
+    "Rosa": "fibber",
+    "Viggo": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Finn is a fibber and follow where it leads. Something breaks, so Finn must be a truth-teller."
+  },
+  {
+   "num": 95,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "beside the token cabinet",
+   "names": [
+    "Finn",
+    "Kit",
+    "Milo",
+    "Pippa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "Kit and Tessa are the same kind.",
+     "form": [
+      "same",
+      1,
+      4
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "If Finn is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      0,
+      false,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Tessa and Kit are the same kind.",
+     "form": [
+      "same",
+      4,
+      1
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Milo is a fibber.",
+     "form": [
+      "is",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Finn and Milo are both fibbers.",
+     "form": [
+      "both",
+      0,
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "fibber",
+    "Kit": "fibber",
+    "Milo": "fibber",
+    "Pippa": "truth-teller",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Finn is a truth-teller and follow where it leads. Something breaks, so Finn must be a fibber."
+  },
+  {
+   "num": 96,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "by the goods yard crane",
+   "names": [
+    "Hugo",
+    "Jonah",
+    "Quinn",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Rosa and Quinn are the same kind.",
+     "form": [
+      "same",
+      3,
+      2
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Either I am a truth-teller, or Quinn is a truth-teller, or both.",
+     "form": [
+      "either",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Jonah is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Tessa and Quinn are the same kind.",
+     "form": [
+      "same",
+      4,
+      2
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Exactly one of us five is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "fibber",
+    "Jonah": "truth-teller",
+    "Quinn": "fibber",
+    "Rosa": "truth-teller",
+    "Tessa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Jonah is a fibber and follow where it leads. Something breaks, so Jonah must be a truth-teller."
+  },
+  {
+   "num": 97,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "in the carriage works",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Kit",
+    "Otto",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Kit and Elsie are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "If Dov is a truth-teller, then I am a truth-teller.",
+     "form": [
+      "if",
+      0,
+      true,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Yara and Otto are both fibbers.",
+     "form": [
+      "both",
+      4,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Kit and Yara are the same kind.",
+     "form": [
+      "same",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "At most two of us five are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Elsie": "truth-teller",
+    "Kit": "fibber",
+    "Otto": "truth-teller",
+    "Yara": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a truth-teller and follow where it leads. Something breaks, so Dov must be a fibber."
+  },
+  {
+   "num": 98,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "on the ice-cutting siding",
+   "names": [
+    "Bram",
+    "Greta",
+    "Kit",
+    "Sam",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Greta and Kit are both fibbers.",
+     "form": [
+      "both",
+      1,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Either I am a truth-teller, or Zeke is a truth-teller, or both.",
+     "form": [
+      "either",
+      4,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Either Zeke is a truth-teller, or Sam is a truth-teller, or both.",
+     "form": [
+      "either",
+      4,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Bram and Greta are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Greta is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Greta": "truth-teller",
+    "Kit": "truth-teller",
+    "Sam": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 99,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "at the switchback halt",
+   "names": [
+    "Dov",
+    "Milo",
+    "Tessa",
+    "Viggo",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Either Tessa is a fibber, or Viggo is a fibber, or both.",
+     "form": [
+      "either",
+      2,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Dov is a truth-teller.",
+     "form": [
+      "is",
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Viggo is a fibber.",
+     "form": [
+      "is",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "If Tessa is a fibber, then I am a truth-teller.",
+     "form": [
+      "if",
+      2,
+      false,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Milo is a fibber.",
+     "form": [
+      "is",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "truth-teller",
+    "Milo": "truth-teller",
+    "Tessa": "fibber",
+    "Viggo": "truth-teller",
+    "Wren": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a fibber and follow where it leads. Something breaks, so Dov must be a truth-teller."
+  },
+  {
+   "num": 100,
+   "band": "Hard",
+   "players": 5,
+   "place": "The Railway",
+   "spot": "on the summit station porch",
+   "names": [
+    "Clara",
+    "Nell",
+    "Otto",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "At least four of us five are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Clara is a fibber.",
+     "form": [
+      "is",
+      0,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Exactly three of us five are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "If Tessa is a truth-teller, then Otto is a truth-teller.",
+     "form": [
+      "if",
+      4,
+      true,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Otto is a truth-teller.",
+     "form": [
+      "is",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Nell": "truth-teller",
+    "Otto": "fibber",
+    "Rosa": "truth-teller",
+    "Tessa": "fibber"
+   },
+   "step_depth": 1,
+   "hypotheses": 2,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 101,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the summit hut",
+   "names": [
+    "Finn",
+    "Greta",
+    "Jonah",
+    "Lena",
+    "Quinn",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Finn",
+     "text": "Greta and Sam are the same kind.",
+     "form": [
+      "same",
+      1,
+      5
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Quinn and I are different kinds.",
+     "form": [
+      "diff",
+      1,
+      4
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Finn and Jonah are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Lena and Quinn are the same kind.",
+     "form": [
+      "same",
+      3,
+      4
+     ]
+    }
+   ],
+   "answer": {
+    "Finn": "fibber",
+    "Greta": "truth-teller",
+    "Jonah": "fibber",
+    "Lena": "truth-teller",
+    "Quinn": "fibber",
+    "Sam": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Finn is a truth-teller and follow where it leads. Something breaks, so Finn must be a fibber."
+  },
+  {
+   "num": 102,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the ridge shelter",
+   "names": [
+    "Ada",
+    "Bram",
+    "Finn",
+    "Hugo",
+    "Lena",
+    "Otto"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Finn and I are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Hugo and Otto are the same kind.",
+     "form": [
+      "same",
+      3,
+      5
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Exactly three of us six are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "At most three of us six are fibbers.",
+     "form": [
+      "count",
+      "le",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Ada and Finn are the same kind.",
+     "form": [
+      "same",
+      0,
+      2
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "If Lena is a truth-teller, then Ada is a truth-teller.",
+     "form": [
+      "if",
+      4,
+      true,
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Bram": "truth-teller",
+    "Finn": "fibber",
+    "Hugo": "fibber",
+    "Lena": "truth-teller",
+    "Otto": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 3,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 103,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "at the weather station",
+   "names": [
+    "Clara",
+    "Greta",
+    "Jonah",
+    "Lena",
+    "Tessa",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Greta and Lena are the same kind.",
+     "form": [
+      "same",
+      1,
+      3
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Clara and Lena are the same kind.",
+     "form": [
+      "same",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Tessa and I are both truth-tellers.",
+     "form": [
+      "both",
+      4,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Clara and Greta are different kinds.",
+     "form": [
+      "diff",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Either I am a truth-teller, or Greta is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      5,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "truth-teller",
+    "Greta": "fibber",
+    "Jonah": "fibber",
+    "Lena": "fibber",
+    "Tessa": "truth-teller",
+    "Yara": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Clara is a fibber and follow where it leads. Something breaks, so Clara must be a truth-teller."
+  },
+  {
+   "num": 104,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the ski-patrol cabin",
+   "names": [
+    "Elsie",
+    "Lena",
+    "Otto",
+    "Sam",
+    "Uma",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Elsie and Sam are the same kind.",
+     "form": [
+      "same",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "At most two of us six are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Elsie and Viggo are different kinds.",
+     "form": [
+      "diff",
+      0,
+      5
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "If Sam is a fibber, then Elsie is a truth-teller.",
+     "form": [
+      "if",
+      3,
+      false,
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Lena": "truth-teller",
+    "Otto": "fibber",
+    "Sam": "fibber",
+    "Uma": "fibber",
+    "Viggo": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 105,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "at the old sawmill",
+   "names": [
+    "Ada",
+    "Jonah",
+    "Kit",
+    "Pippa",
+    "Quinn",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "If I am a fibber, then Kit is a fibber.",
+     "form": [
+      "if",
+      0,
+      false,
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "At most one of us six is a fibber.",
+     "form": [
+      "count",
+      "le",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Exactly four of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Jonah and Kit are the same kind.",
+     "form": [
+      "same",
+      1,
+      2
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Ada and Jonah are the same kind.",
+     "form": [
+      "same",
+      0,
+      1
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Ada and Quinn are different kinds.",
+     "form": [
+      "diff",
+      0,
+      4
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "truth-teller",
+    "Jonah": "fibber",
+    "Kit": "fibber",
+    "Pippa": "truth-teller",
+    "Quinn": "fibber",
+    "Tessa": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 3,
+   "hint": "Suppose Ada is a fibber and follow where it leads. Something breaks, so Ada must be a truth-teller."
+  },
+  {
+   "num": 106,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "below the frozen waterfall",
+   "names": [
+    "Bram",
+    "Kit",
+    "Milo",
+    "Uma",
+    "Viggo",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Uma and Milo are the same kind.",
+     "form": [
+      "same",
+      3,
+      2
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Wren and Milo are different kinds.",
+     "form": [
+      "diff",
+      5,
+      2
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Wren and Bram are the same kind.",
+     "form": [
+      "same",
+      5,
+      0
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Kit and I are both truth-tellers.",
+     "form": [
+      "both",
+      3,
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Uma and Bram are the same kind.",
+     "form": [
+      "same",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Kit and Bram are different kinds.",
+     "form": [
+      "diff",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "fibber",
+    "Kit": "truth-teller",
+    "Milo": "fibber",
+    "Uma": "truth-teller",
+    "Viggo": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a truth-teller and follow where it leads. Something breaks, so Bram must be a fibber."
+  },
+  {
+   "num": 107,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "up the fire lookout tower",
+   "names": [
+    "Bram",
+    "Finn",
+    "Kit",
+    "Milo",
+    "Pippa",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "Milo and Finn are different kinds.",
+     "form": [
+      "diff",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Milo and Viggo are different kinds.",
+     "form": [
+      "diff",
+      3,
+      5
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Either Milo is a truth-teller, or Pippa is a truth-teller, or both.",
+     "form": [
+      "either",
+      3,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Kit and Bram are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Finn": "fibber",
+    "Kit": "truth-teller",
+    "Milo": "truth-teller",
+    "Pippa": "truth-teller",
+    "Viggo": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 108,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the snow-hare hide",
+   "names": [
+    "Clara",
+    "Hugo",
+    "Kit",
+    "Rosa",
+    "Wren",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Clara",
+     "text": "Exactly five of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      5,
+      true
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Rosa and Clara are different kinds.",
+     "form": [
+      "diff",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Rosa and I are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "If Hugo is a fibber, then Zeke is a truth-teller.",
+     "form": [
+      "if",
+      1,
+      false,
+      5,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Clara and Kit are different kinds.",
+     "form": [
+      "diff",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Clara": "fibber",
+    "Hugo": "fibber",
+    "Kit": "fibber",
+    "Rosa": "fibber",
+    "Wren": "fibber",
+    "Zeke": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 109,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the high pasture barn",
+   "names": [
+    "Ada",
+    "Finn",
+    "Greta",
+    "Ivy",
+    "Otto",
+    "Viggo"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Exactly four of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "If Viggo is a fibber, then Otto is a fibber.",
+     "form": [
+      "if",
+      5,
+      false,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Ivy and Finn are the same kind.",
+     "form": [
+      "same",
+      3,
+      1
+     ]
+    },
+    {
+     "speaker": "Ivy",
+     "text": "Greta and I are both truth-tellers.",
+     "form": [
+      "both",
+      2,
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Greta and Ada are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Viggo",
+     "text": "Ada and Finn are both truth-tellers.",
+     "form": [
+      "both",
+      0,
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Finn": "truth-teller",
+    "Greta": "truth-teller",
+    "Ivy": "truth-teller",
+    "Otto": "fibber",
+    "Viggo": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 110,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "at the ice cave mouth",
+   "names": [
+    "Ada",
+    "Bram",
+    "Nell",
+    "Quinn",
+    "Rosa",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Quinn and Wren are the same kind.",
+     "form": [
+      "same",
+      3,
+      5
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Ada and Wren are the same kind.",
+     "form": [
+      "same",
+      0,
+      5
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Either I am a truth-teller, or Ada is a truth-teller, or both.",
+     "form": [
+      "either",
+      0,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Wren and Rosa are different kinds.",
+     "form": [
+      "diff",
+      5,
+      4
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Ada and Quinn are different kinds.",
+     "form": [
+      "diff",
+      0,
+      3
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Bram and Nell are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Bram": "truth-teller",
+    "Nell": "truth-teller",
+    "Quinn": "truth-teller",
+    "Rosa": "truth-teller",
+    "Wren": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 111,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "by the cairn on Lantern Peak",
+   "names": [
+    "Ada",
+    "Bram",
+    "Elsie",
+    "Jonah",
+    "Uma",
+    "Yara"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Exactly two of us six are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Bram",
+     "text": "Exactly two of us six are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      2,
+      false
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Exactly five of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      5,
+      true
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "Elsie and Uma are different kinds.",
+     "form": [
+      "diff",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Bram and I are both truth-tellers.",
+     "form": [
+      "both",
+      1,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Yara",
+     "text": "Uma and Elsie are different kinds.",
+     "form": [
+      "diff",
+      4,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Bram": "fibber",
+    "Elsie": "fibber",
+    "Jonah": "fibber",
+    "Uma": "fibber",
+    "Yara": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 3,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 112,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "under the mountain chapel bell",
+   "names": [
+    "Bram",
+    "Elsie",
+    "Nell",
+    "Rosa",
+    "Tessa",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Bram",
+     "text": "At most two of us six are truth-tellers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Elsie",
+     "text": "Exactly five of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      5,
+      true
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Elsie and Tessa are different kinds.",
+     "form": [
+      "diff",
+      1,
+      4
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Wren and Elsie are the same kind.",
+     "form": [
+      "same",
+      5,
+      1
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Bram and Wren are different kinds.",
+     "form": [
+      "diff",
+      0,
+      5
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Rosa and Bram are different kinds.",
+     "form": [
+      "diff",
+      3,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Bram": "truth-teller",
+    "Elsie": "fibber",
+    "Nell": "fibber",
+    "Rosa": "fibber",
+    "Tessa": "fibber",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 3,
+   "hint": "Suppose Bram is a fibber and follow where it leads. Something breaks, so Bram must be a truth-teller."
+  },
+  {
+   "num": 113,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the shepherd's bothy",
+   "names": [
+    "Elsie",
+    "Nell",
+    "Otto",
+    "Pippa",
+    "Quinn",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Elsie",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Sam and Elsie are the same kind.",
+     "form": [
+      "same",
+      5,
+      0
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Nell is a fibber, or Pippa is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Pippa",
+     "text": "At least one of us six is a truth-teller.",
+     "form": [
+      "count",
+      "ge",
+      1,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Exactly four of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Elsie": "fibber",
+    "Nell": "truth-teller",
+    "Otto": "fibber",
+    "Pippa": "truth-teller",
+    "Quinn": "fibber",
+    "Sam": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Elsie is a truth-teller and follow where it leads. Something breaks, so Elsie must be a fibber."
+  },
+  {
+   "num": 114,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "at the glacier viewpoint",
+   "names": [
+    "Ada",
+    "Clara",
+    "Greta",
+    "Kit",
+    "Lena",
+    "Quinn"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "Either I am a truth-teller, or Clara is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      0,
+      true
+     ]
+    },
+    {
+     "speaker": "Clara",
+     "text": "Greta and Lena are different kinds.",
+     "form": [
+      "diff",
+      2,
+      4
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Kit and Lena are different kinds.",
+     "form": [
+      "diff",
+      3,
+      4
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Clara and Ada are different kinds.",
+     "form": [
+      "diff",
+      1,
+      0
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "If Ada is a truth-teller, then I am a truth-teller.",
+     "form": [
+      "if",
+      0,
+      true,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Ada and I are both truth-tellers.",
+     "form": [
+      "both",
+      5,
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Clara": "fibber",
+    "Greta": "truth-teller",
+    "Kit": "fibber",
+    "Lena": "truth-teller",
+    "Quinn": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Clara is a truth-teller and follow where it leads. Something breaks, so Clara must be a fibber."
+  },
+  {
+   "num": 115,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "on the star-watch platform",
+   "names": [
+    "Dov",
+    "Lena",
+    "Quinn",
+    "Sam",
+    "Wren",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Lena and Zeke are the same kind.",
+     "form": [
+      "same",
+      1,
+      5
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Sam and Dov are different kinds.",
+     "form": [
+      "diff",
+      3,
+      0
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Wren and Sam are the same kind.",
+     "form": [
+      "same",
+      4,
+      3
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "If Quinn is a truth-teller, then Wren is a truth-teller.",
+     "form": [
+      "if",
+      2,
+      true,
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Zeke and Lena are the same kind.",
+     "form": [
+      "same",
+      5,
+      1
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "Lena and Quinn are different kinds.",
+     "form": [
+      "diff",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Lena": "fibber",
+    "Quinn": "truth-teller",
+    "Sam": "fibber",
+    "Wren": "fibber",
+    "Zeke": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a truth-teller and follow where it leads. Something breaks, so Dov must be a fibber."
+  },
+  {
+   "num": 116,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the pine-cone gully",
+   "names": [
+    "Hugo",
+    "Jonah",
+    "Kit",
+    "Otto",
+    "Rosa",
+    "Tessa"
+   ],
+   "statements": [
+    {
+     "speaker": "Hugo",
+     "text": "Tessa and Rosa are the same kind.",
+     "form": [
+      "same",
+      5,
+      4
+     ]
+    },
+    {
+     "speaker": "Jonah",
+     "text": "At least three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Jonah and Rosa are the same kind.",
+     "form": [
+      "same",
+      1,
+      4
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Jonah and I are different kinds.",
+     "form": [
+      "diff",
+      4,
+      1
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Kit and Rosa are different kinds.",
+     "form": [
+      "diff",
+      2,
+      4
+     ]
+    }
+   ],
+   "answer": {
+    "Hugo": "truth-teller",
+    "Jonah": "fibber",
+    "Kit": "fibber",
+    "Otto": "truth-teller",
+    "Rosa": "fibber",
+    "Tessa": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 3,
+   "hint": "Suppose Hugo is a fibber and follow where it leads. Something breaks, so Hugo must be a truth-teller."
+  },
+  {
+   "num": 117,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "at the pass toll hut",
+   "names": [
+    "Ivy",
+    "Otto",
+    "Rosa",
+    "Sam",
+    "Uma",
+    "Wren"
+   ],
+   "statements": [
+    {
+     "speaker": "Ivy",
+     "text": "Rosa and Otto are different kinds.",
+     "form": [
+      "diff",
+      2,
+      1
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "At least three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "ge",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Exactly three of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      true
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Uma and Otto are the same kind.",
+     "form": [
+      "same",
+      4,
+      1
+     ]
+    },
+    {
+     "speaker": "Uma",
+     "text": "Rosa and Ivy are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Wren",
+     "text": "Uma and Ivy are different kinds.",
+     "form": [
+      "diff",
+      4,
+      0
+     ]
+    }
+   ],
+   "answer": {
+    "Ivy": "fibber",
+    "Otto": "fibber",
+    "Rosa": "fibber",
+    "Sam": "fibber",
+    "Uma": "truth-teller",
+    "Wren": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Ivy is a truth-teller and follow where it leads. Something breaks, so Ivy must be a fibber."
+  },
+  {
+   "num": 118,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the hot-spring bathhouse",
+   "names": [
+    "Dov",
+    "Greta",
+    "Hugo",
+    "Lena",
+    "Tessa",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "If Lena is a fibber, then Tessa is a fibber.",
+     "form": [
+      "if",
+      3,
+      false,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Greta",
+     "text": "Zeke and Tessa are the same kind.",
+     "form": [
+      "same",
+      5,
+      4
+     ]
+    },
+    {
+     "speaker": "Hugo",
+     "text": "Exactly five of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      5,
+      true
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Tessa and I are the same kind.",
+     "form": [
+      "same",
+      3,
+      4
+     ]
+    },
+    {
+     "speaker": "Tessa",
+     "text": "Hugo and Dov are the same kind.",
+     "form": [
+      "same",
+      2,
+      0
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "At most one of us six is a fibber.",
+     "form": [
+      "count",
+      "le",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "fibber",
+    "Greta": "fibber",
+    "Hugo": "fibber",
+    "Lena": "fibber",
+    "Tessa": "truth-teller",
+    "Zeke": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 1,
+   "hint": "Suppose Dov is a truth-teller and follow where it leads. Something breaks, so Dov must be a fibber."
+  },
+  {
+   "num": 119,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "in the trail-map cabin",
+   "names": [
+    "Ada",
+    "Finn",
+    "Milo",
+    "Nell",
+    "Rosa",
+    "Sam"
+   ],
+   "statements": [
+    {
+     "speaker": "Ada",
+     "text": "At most one of us six is a fibber.",
+     "form": [
+      "count",
+      "le",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Finn",
+     "text": "Milo and Rosa are both fibbers.",
+     "form": [
+      "both",
+      2,
+      4,
+      false
+     ]
+    },
+    {
+     "speaker": "Milo",
+     "text": "Exactly three of us six are fibbers.",
+     "form": [
+      "count",
+      "eq",
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Nell",
+     "text": "Exactly one of us six is a fibber.",
+     "form": [
+      "count",
+      "eq",
+      1,
+      false
+     ]
+    },
+    {
+     "speaker": "Rosa",
+     "text": "Milo and Nell are different kinds.",
+     "form": [
+      "diff",
+      2,
+      3
+     ]
+    },
+    {
+     "speaker": "Sam",
+     "text": "Finn and Nell are different kinds.",
+     "form": [
+      "diff",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": {
+    "Ada": "fibber",
+    "Finn": "truth-teller",
+    "Milo": "fibber",
+    "Nell": "fibber",
+    "Rosa": "fibber",
+    "Sam": "truth-teller"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Ada is a truth-teller and follow where it leads. Something breaks, so Ada must be a fibber."
+  },
+  {
+   "num": 120,
+   "band": "Expert",
+   "players": 6,
+   "place": "The Mountain",
+   "spot": "on the highest bench in Frostwood",
+   "names": [
+    "Dov",
+    "Kit",
+    "Lena",
+    "Otto",
+    "Quinn",
+    "Zeke"
+   ],
+   "statements": [
+    {
+     "speaker": "Dov",
+     "text": "Quinn and Zeke are the same kind.",
+     "form": [
+      "same",
+      4,
+      5
+     ]
+    },
+    {
+     "speaker": "Kit",
+     "text": "Quinn and Dov are the same kind.",
+     "form": [
+      "same",
+      4,
+      0
+     ]
+    },
+    {
+     "speaker": "Lena",
+     "text": "Either Kit is a fibber, or Otto is a fibber, or both.",
+     "form": [
+      "either",
+      1,
+      3,
+      false
+     ]
+    },
+    {
+     "speaker": "Otto",
+     "text": "Either Kit is a truth-teller, or Lena is a truth-teller, or both.",
+     "form": [
+      "either",
+      1,
+      2,
+      true
+     ]
+    },
+    {
+     "speaker": "Quinn",
+     "text": "Exactly four of us six are truth-tellers.",
+     "form": [
+      "count",
+      "eq",
+      4,
+      true
+     ]
+    },
+    {
+     "speaker": "Zeke",
+     "text": "At most two of us six are fibbers.",
+     "form": [
+      "count",
+      "le",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": {
+    "Dov": "truth-teller",
+    "Kit": "fibber",
+    "Lena": "truth-teller",
+    "Otto": "truth-teller",
+    "Quinn": "fibber",
+    "Zeke": "fibber"
+   },
+   "step_depth": 2,
+   "hypotheses": 2,
+   "hint": "Suppose Dov is a fibber and follow where it leads. Something breaks, so Dov must be a truth-teller."
+  }
+ ]
+}
