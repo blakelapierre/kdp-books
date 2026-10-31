@@ -948,3 +948,36 @@ Part 2 / Part 1 (views): no pair moved meaningfully; unchanged.
 Part 2 / Part 1: C14 colour 69/~188 = 37%; C19 colour P2 still not posted (173-view P1 waiting on it). Old pairs unchanged.
 
 Notes: Second evening (~5–6 PM) P1 in a row to pop on TikTok (C22 133 views in about an hour, like C19's 116). Late-night/overnight P1s (C20, C21, C18, C15) sit at 1–6 views. YouTube nearly flat (+6 Shorts, +1 wide).
+
+## 2026-10-30, ~6:47 PM PT (YouTube Studio Overview, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-10-30/` on the box. Changes vs the Oct 29 check.
+
+Studio Overview loaded, but the Content tab (Shorts analytics) and Comments page showed YouTube's "unusual traffic from your computer network" block on two tries, so no Shorts stayed-to-watch, traffic sources, link clicks or comments today. Subscribers: realtime card shows 30 (+1 in last 28 days). Last 28 days (Oct 2–29): 1,059 views, 14.9 watch hours. Realtime last 48h: 15 views; top: C30 P2 "The Missing Sign" 3, C29 P2 "The Sugar Bowl" 2, Programming Music 2. Top content unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, Programming Music 75, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17).
+
+**Tidewhistle Shorts: 868 public views on 70 posts (+5 vs 863).** Movers: C30 P2 "The Missing Sign" (3fbEtkPjd-U) 5 (+3), "Who took the lifeboat box?" colour P1 (EABoS8W4ddE) 3 (+1), C23 P2 "The Odd Glove" (MQVfBu970QI) 2 (+1). No new YouTube uploads.
+
+Wide Tidewhistle videos: **46** on 27 videos (+0).
+
+Part 2 / Part 1 (views): no pair moved meaningfully; unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**56** posts (+0, nothing new posted since C22 P1 on Oct 29 5:32 PM), 0 drafts. Followers **1** (net 0).
+
+**Last 7 days (Studio; dates not shown):** video views **1.1K** (+482, +79.4%), profile views **45** (+31), likes **12** (+9), comments 0, shares 0. Traffic: For You 93.6%, Personal profile 5.7%, Search 0.7%. Search queries include "temu whodunit mystery", "whodunit solved", "whodunit".
+
+**Public (yt-dlp):** total views **2977** (**+155** vs 2822).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C22 colour P1 "Who's fibbing?" (Oct 29, 5:32 PM) | 7702221175967010078 | **286** (+153), 6 likes |
+| C21 colour P1 "Follow the money!" | 7701898644689145118 | 2 (+1) |
+| C20 colour P1 "Follow the scent!" | 7701574022387059998 | 7 (+1) |
+| C19 colour P1 "Who could reach the bell?" | 7701463984871918879 | 173 (+0) |
+
+**Review / Only me:** **0**. Newest 9 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C22 colour P1 is now the top colour post (286) but its P2 isn't on TikTok yet; C19 colour P2 also still unposted (173-view P1). C14 colour 69/~188 = 37%.
+
+Notes: C22 P1 confirms the evening (~5 PM) slot works on TikTok; almost all of today's +155 came from it. No TikTok post went up in the last ~25 hours. YouTube nearly flat (+5 Shorts, +0 wide).
