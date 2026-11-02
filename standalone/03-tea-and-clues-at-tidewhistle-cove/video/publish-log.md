@@ -412,3 +412,5 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - 2026-10-31 2:39 AM PT — TikTok (requeue seq 28): Case 23 The Odd Glove Part 2 (Colour) — https://www.tiktok.com/@shortmysterycases/video/7702763974227397919 — under review at posting, AI label on.
 
 - 2026-10-31 4:35 PM PT: TikTok (requeue seq 29): Case 24 The Kite Festival Part 1 (Colour), "Can you solve it? 🪁 Which way did it blow? (Colour)", AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. Likely URL https://www.tiktok.com/@shortmysterycases/video/7702979633024601375 (not confirmed). YouTube queue complete, nothing to post.
+
+- 2026-11-01 7:35 PM PT: TikTok (requeue seq 30): Case 25 The Teaspoon Thief Part 1 (Colour), "Can you solve it? 🥄 Who takes the spoons?", AI label on, Everyone; "Content under review" (Only me) at post time. https://www.tiktok.com/@shortmysterycases/video/7703412514175978782
