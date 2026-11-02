@@ -1020,3 +1020,41 @@ Part 2 / Part 1 (views): unchanged.
 Part 2 / Part 1: C23 colour 28/116 = 24% (P2 posted at 4:39 AM). C22 and C19 colour P2s still not on TikTok (289- and 173-view P1s waiting). C14 colour 69/~188 = 37%.
 
 Notes: C23 P1 (9:39 PM) did well (116), so mid-evening works too; the 4:39 AM P2 got modest carry-through. YouTube flat for a third day. TikTok 7-day views dipped slightly as the Oct 22–23 spike rolled off.
+
+## 2026-11-01, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-11-01/` on the box. Changes vs the Oct 31 check. No "unusual traffic" blocks today.
+
+Subscribers: realtime card 30 (+1 in last 28 days). Last 28 days (Oct 4–31): 1,053 views, 12.0 watch hours. Realtime last 48h: 4 views (Advent "24 doors" Short 1, C6 full case 1, C18 colour wide 1). C30 wide (Finale) still 0 views after 4 days. Top content unchanged (C9 P1 87 at 0:28, C1 P1 82 at 0:54, C8 P2 73 at 0:28, C3 colour P2 72 at 0:17, C1 P2 61 at 0:09).
+
+Shorts (last 28 days): 911 views (86.6% of channel), 189 engaged views, 1 like, +1 subscriber, **stayed to watch 18.3%** / swiped away 81.7%. Traffic: Shorts feed 78.9%, YouTube search 10.9%, channel pages 5.2%, other YouTube features 2.9%, browse 1.0%, other 1.2%. Part 1 → Part 2 link-click data: not shown.
+
+Comments: none in the last 2 days (Unresponded list only has old comments).
+
+**Tidewhistle Shorts: 869 public views on 70 posts (+1).** Only mover: C28 P1 "One truth, one fib" (ivCs9y7jwew) 1 (was hidden). No new YouTube uploads.
+
+Wide Tidewhistle videos: **48** on 27 videos (+1); C18 colour wide (_4Z72DzzxdQ) 1 (+1).
+
+Part 2 / Part 1 (views): unchanged.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**59** posts (+0), 0 drafts. Followers **1** (net 0).
+
+**Last 7 days (Studio, Oct 25–31):** video views **888** (-235, -20.9%), profile views **42** (+5), likes **14** (+3), comments 0, shares 0. Traffic: For You 95.1%, Personal profile 4%, Search 0.9%. Search queries include "whodunit", "temu whodunit mystery", "a rare orchid plant vanished on a windy night".
+
+**Public (yt-dlp):** total views **3257** (**+113** vs 3144).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| C24 colour P1 "Which way did it blow?" (Oct 31 evening) | 7702979633024601375 | **122** (+106), 1 like |
+| C23 colour P2 "The Odd Glove" | 7702763974227397919 | 33 (+5) |
+| C23 colour P1 "Whose glove is it?" | 7702656064650546462 | 117 (+1) |
+| C4 P2 "Who took the brass compass?" | 7695698379589913887 | 94 (+1) |
+| C22 colour P1 "Who's fibbing?" | 7702221175967010078 | 289 (+0) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels. Low-view posts (C21 P1 2, C20 P1 7, C18 P1 1) look like weak distribution, not a hold.
+
+Part 2 / Part 1: C23 colour 33/117 = 28%. C24, C22 and C19 colour P2s not on TikTok yet (122-, 289- and 173-view P1s waiting). C14 colour 69/~188 = 37%.
+
+Notes: No new TikTok posts in the last ~24 hours (the 7h repost routine failed today), so the 7-day views slid 21%. C24 P1 became the third evening P1 in a row to clear 100. YouTube flat for a fourth day.
