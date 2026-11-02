@@ -1,0 +1,11847 @@
+{
+ "size": 12,
+ "cases": [
+  {
+   "title": "The Blue Ribbon Jam",
+   "level": 1,
+   "level_name": "Gentle",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 1000001,
+     "grid": [
+      "DRUMMERTHERM",
+      "JBBASUNSHINE",
+      "UAURITOMBOLA",
+      "DNTMPARASOLD",
+      "GDTABKITEBWO",
+      "ESELOBCONVIW",
+      "STRAWBERRYNA",
+      "NACDTICSHEND",
+      "ANUEITRUMPET",
+      "TDPRESERVERN",
+      "CLIPBOARDOON",
+      "RAFFLEMSPOON"
+     ],
+     "clue": "THE RIBBON VANISHED AT NOON",
+     "words": [
+      "BANDSTAND",
+      "BOWTIE",
+      "BUTTERCUP",
+      "CLIPBOARD",
+      "DRUMMER",
+      "ICECREAM",
+      "JUDGES",
+      "KITE",
+      "MARMALADE",
+      "MEADOW",
+      "PARASOL",
+      "PRESERVE",
+      "RAFFLE",
+      "SPOON",
+      "STRAWBERRY",
+      "SUNSHINE",
+      "TOMBOLA",
+      "TRUMPET",
+      "WINNER"
+     ],
+     "placements": [
+      {
+       "word": "BANDSTAND",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STRAWBERRY",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ICECREAM",
+       "r": 4,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARMALADE",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PRESERVE",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNSHINE",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DRUMMER",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRUMPET",
+       "r": 8,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOMBOLA",
+       "r": 2,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUTTERCUP",
+       "r": 1,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLIPBOARD",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARASOL",
+       "r": 3,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RAFFLE",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MEADOW",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINNER",
+       "r": 4,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPOON",
+       "r": 11,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "JUDGES",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOWTIE",
+       "r": 4,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KITE",
+       "r": 4,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 1
+    },
+    {
+     "seed": 1030005,
+     "grid": [
+      "HONEYTWHETRC",
+      "HTGINGHAMIAR",
+      "BRSUMMERFEFE",
+      "UAPRICOTFFFA",
+      "NCLWELLIESLM",
+      "TTWLBEEHIVEE",
+      "IOOROMRIBBON",
+      "NRCAROUSELEN",
+      "GAPRONNOJARS",
+      "GLSTRAWBERRY",
+      "OPONYDSCONES",
+      "RASPBERRYVES"
+     ],
+     "clue": "THE THIEF WORE NO GLOVES",
+     "words": [
+      "APRICOT",
+      "APRON",
+      "BALLOON",
+      "BEEHIVE",
+      "BUNTING",
+      "CAROUSEL",
+      "CREAM",
+      "GINGHAM",
+      "HONEY",
+      "JARS",
+      "LEMONADE",
+      "PONY",
+      "RAFFLE",
+      "RASPBERRY",
+      "RIBBON",
+      "SCONES",
+      "STRAWBERRY",
+      "SUMMER",
+      "TRACTOR",
+      "WAFFLE",
+      "WELLIES"
+     ],
+     "placements": [
+      {
+       "word": "RASPBERRY",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LEMONADE",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STRAWBERRY",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CAROUSEL",
+       "r": 7,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BALLOON",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "WELLIES",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APRICOT",
+       "r": 3,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRACTOR",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WAFFLE",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BUNTING",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BEEHIVE",
+       "r": 5,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCONES",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUMMER",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GINGHAM",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RIBBON",
+       "r": 6,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HONEY",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CREAM",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APRON",
+       "r": 8,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RAFFLE",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "JARS",
+       "r": 8,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PONY",
+       "r": 10,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 2
+    },
+    {
+     "seed": 1060001,
+     "grid": [
+      "BLANKETNMOWF",
+      "DAISYMRJARSL",
+      "HTPKEAOCRETA",
+      "LRRABRSLMRRG",
+      "IAETUQEIAAAS",
+      "GCSETUTPLSWG",
+      "ITESTETBAPBA",
+      "NORCEEEODBER",
+      "GRVTRRAAEERL",
+      "HCEKCESRIRRA",
+      "ANTHUEADMRYN",
+      "MTEAPOTMUYDD"
+     ],
+     "clue": "NO WHEEL TRACKS IN THE MUD",
+     "words": [
+      "BLANKET",
+      "BUTTERCUP",
+      "CLIPBOARD",
+      "DAISY",
+      "FLAGS",
+      "GARLAND",
+      "GINGHAM",
+      "ICECREAM",
+      "JARS",
+      "MARMALADE",
+      "MARQUEE",
+      "PRESERVE",
+      "RASPBERRY",
+      "ROSETTE",
+      "SKATES",
+      "STRAWBERRY",
+      "TEAPOT",
+      "TRACTOR"
+     ],
+     "placements": [
+      {
+       "word": "BUTTERCUP",
+       "r": 3,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RASPBERRY",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLIPBOARD",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARMALADE",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STRAWBERRY",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ICECREAM",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ROSETTE",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GARLAND",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAPOT",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BLANKET",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PRESERVE",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARQUEE",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GINGHAM",
+       "r": 5,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SKATES",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRACTOR",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FLAGS",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DAISY",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "JARS",
+       "r": 1,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 3
+    },
+    {
+     "seed": 1090004,
+     "grid": [
+      "RMCLIPBOARDU",
+      "BANDSTANDPER",
+      "PRIZERPICNIC",
+      "GMTWAURBSORP",
+      "LABELMIUTNAR",
+      "SLROTPCTOBSE",
+      "AAALOEOTMUPS",
+      "GDSEATTEBNBE",
+      "AESTNNHROTER",
+      "MEADOWDCLIRV",
+      "BALLOONUANRE",
+      "OTOFFEEPOGYN"
+     ],
+     "clue": "RUPERT WAS ON STAGE AT NOON",
+     "words": [
+      "APRICOT",
+      "BALLOON",
+      "BANDSTAND",
+      "BOOTH",
+      "BRASS",
+      "BUNTING",
+      "BUTTERCUP",
+      "CLIPBOARD",
+      "GARLAND",
+      "LABEL",
+      "MARMALADE",
+      "MEADOW",
+      "PICNIC",
+      "PRESERVE",
+      "PRIZE",
+      "RASPBERRY",
+      "TOFFEE",
+      "TOMBOLA",
+      "TRUMPET"
+     ],
+     "placements": [
+      {
+       "word": "BANDSTAND",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MARMALADE",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUTTERCUP",
+       "r": 3,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLIPBOARD",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUNTING",
+       "r": 5,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APRICOT",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GARLAND",
+       "r": 3,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PICNIC",
+       "r": 2,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOMBOLA",
+       "r": 4,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LABEL",
+       "r": 4,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOFFEE",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RASPBERRY",
+       "r": 3,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRUMPET",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PRESERVE",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BALLOON",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MEADOW",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BOOTH",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PRIZE",
+       "r": 2,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BRASS",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 4
+    },
+    {
+     "seed": 1120002,
+     "grid": [
+      "THRASPBERRYE",
+      "PLEMONADERIN",
+      "CRATCAWNINGS",
+      "AOGPIUTEAPOT",
+      "RSATROPHYSWR",
+      "OERPIOUCNKIA",
+      "UTLFASNNASNW",
+      "STALLTCKDKNB",
+      "EENASUHOIAEE",
+      "LWDGEBETNTRR",
+      "JARSWAFFLEER",
+      "BANDSTANDSSY"
+     ],
+     "clue": "THE PRINT IS PINK AND SWEET",
+     "words": [
+      "APRON",
+      "AWNING",
+      "BANDSTAND",
+      "CAROUSEL",
+      "CUPCAKE",
+      "FLAGS",
+      "GARLAND",
+      "JARS",
+      "KITE",
+      "LEMONADE",
+      "PUNCH",
+      "RASPBERRY",
+      "ROSETTE",
+      "SCONES",
+      "SKATES",
+      "STALL",
+      "STRAWBERRY",
+      "TEAPOT",
+      "TROPHY",
+      "TUBA",
+      "WAFFLE",
+      "WINNER"
+     ],
+     "placements": [
+      {
+       "word": "CUPCAKE",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STRAWBERRY",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CAROUSEL",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PUNCH",
+       "r": 4,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TROPHY",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STALL",
+       "r": 7,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCONES",
+       "r": 6,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TEAPOT",
+       "r": 3,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RASPBERRY",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WAFFLE",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SKATES",
+       "r": 6,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROSETTE",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINNER",
+       "r": 4,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LEMONADE",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GARLAND",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BANDSTAND",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "AWNING",
+       "r": 2,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TUBA",
+       "r": 7,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FLAGS",
+       "r": 6,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APRON",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "KITE",
+       "r": 7,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "JARS",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 5
+    },
+    {
+     "seed": 1150003,
+     "grid": [
+      "ITCBALLOONST",
+      "MKUETPRIZESO",
+      "SIPLHRLSOHUM",
+      "TTCFPAOSTONB",
+      "AEAEISYPRNSO",
+      "LAKACDUBHEHL",
+      "LWEBNRJMAYIA",
+      "BNTOIUEUMLNB",
+      "OIUWCMWADEER",
+      "ONBTBMERMGRA",
+      "TGAIBEEHIVES",
+      "HRYETRACTORS"
+     ],
+     "clue": "IT SMELLS OF STRAWBERRY",
+     "words": [
+      "AWNING",
+      "BALLOON",
+      "BEEHIVE",
+      "BOOTH",
+      "BOWTIE",
+      "BRASS",
+      "CUPCAKE",
+      "DRUMMER",
+      "HAYBALE",
+      "HONEY",
+      "ICECREAM",
+      "JUDGES",
+      "KITE",
+      "PICNIC",
+      "PRIZE",
+      "STALL",
+      "SUMMER",
+      "SUNSHINE",
+      "TOMBOLA",
+      "TRACTOR",
+      "TROPHY",
+      "TUBA"
+     ],
+     "placements": [
+      {
+       "word": "SUNSHINE",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DRUMMER",
+       "r": 5,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HAYBALE",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ICECREAM",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CUPCAKE",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BEEHIVE",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PICNIC",
+       "r": 3,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TROPHY",
+       "r": 1,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "AWNING",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOMBOLA",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "JUDGES",
+       "r": 6,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STALL",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BALLOON",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BOWTIE",
+       "r": 6,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SUMMER",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PRIZE",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRACTOR",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BRASS",
+       "r": 7,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HONEY",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TUBA",
+       "r": 7,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOOTH",
+       "r": 7,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KITE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 6
+    }
+   ]
+  },
+  {
+   "title": "The Missing First Edition",
+   "level": 1,
+   "level_name": "Gentle",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 2000001,
+     "grid": [
+      "BCIWHISPERTW",
+      "OAARNSIATAKD",
+      "OTEEOHGRNISI",
+      "KALATENCNLOC",
+      "MLADEDAHEINT",
+      "AODIBGTMNBNI",
+      "RGDNOEUEVREO",
+      "KSEGORRNEATN",
+      "TORRKOETLRCA",
+      "FABLEWYHOIAR",
+      "BORROWMAPARY",
+      "VOLUMEOUENDR"
+     ],
+     "clue": "IT WAS TAKEN IN STORY HOUR",
+     "words": [
+      "BOOKMARK",
+      "BORROW",
+      "CARD",
+      "CATALOG",
+      "DICTIONARY",
+      "ENVELOPE",
+      "FABLE",
+      "HEDGEROW",
+      "LADDER",
+      "LIBRARIAN",
+      "MAP",
+      "NOTEBOOK",
+      "PARCHMENT",
+      "READING",
+      "SIGNATURE",
+      "SONNET",
+      "VOLUME",
+      "WHISPER"
+     ],
+     "placements": [
+      {
+       "word": "DICTIONARY",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SIGNATURE",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ENVELOPE",
+       "r": 4,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LIBRARIAN",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NOTEBOOK",
+       "r": 1,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOOKMARK",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CATALOG",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHISPER",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SONNET",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LADDER",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGEROW",
+       "r": 2,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BORROW",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "READING",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARCHMENT",
+       "r": 0,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VOLUME",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FABLE",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CARD",
+       "r": 8,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MAP",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 7
+    },
+    {
+     "seed": 2030003,
+     "grid": [
+      "MDISPBESCPLA",
+      "FRITOIDRASIE",
+      "OILCENIEBIBI",
+      "UBRQTDTAIGRN",
+      "NBPURIIDNNAK",
+      "TORIYNOIEARW",
+      "ANELEGNNTTIE",
+      "IAFLAMPGAUAL",
+      "NDAUTHORPRNL",
+      "JACKETALLEYH",
+      "OHEDGEROWUNR",
+      "SCHOLARETURN"
+     ],
+     "clue": "MISS PATEL READ ALL HOUR",
+     "words": [
+      "AUTHOR",
+      "BINDING",
+      "CABINET",
+      "DICTIONARY",
+      "EDITION",
+      "FOUNTAIN",
+      "HEDGEROW",
+      "INKWELL",
+      "JACKET",
+      "LAMP",
+      "LIBRARIAN",
+      "PEN",
+      "POETRY",
+      "PREFACE",
+      "QUILL",
+      "READING",
+      "RETURN",
+      "RIBBON",
+      "SCHOLAR",
+      "SIGNATURE"
+     ],
+     "placements": [
+      {
+       "word": "DICTIONARY",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PREFACE",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGEROW",
+       "r": 10,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BINDING",
+       "r": 0,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SIGNATURE",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "AUTHOR",
+       "r": 8,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "EDITION",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RETURN",
+       "r": 11,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "INKWELL",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCHOLAR",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "JACKET",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FOUNTAIN",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LIBRARIAN",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CABINET",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "READING",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "QUILL",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POETRY",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAMP",
+       "r": 7,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PEN",
+       "r": 8,
+       "c": 8,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 8
+    },
+    {
+     "seed": 2060001,
+     "grid": [
+      "PLIBRARIANPN",
+      "AAELDCATALOG",
+      "RMSPINELSCEW",
+      "CPENCILGIHMH",
+      "HSDOTNWLGAAI",
+      "MHITIKCONPCS",
+      "EETEOWUBATOP",
+      "NLIBNESETEVE",
+      "TVOOALHSURER",
+      "AENORLIBRARY",
+      "TSTKYNOVELSH",
+      "EDESWINDOWEK"
+     ],
+     "clue": "NELL WAS AT THE DESK",
+     "words": [
+      "CATALOG",
+      "CHAPTER",
+      "COVER",
+      "CUSHION",
+      "DICTIONARY",
+      "EDITION",
+      "GLOBE",
+      "INKWELL",
+      "LAMP",
+      "LIBRARIAN",
+      "LIBRARY",
+      "NOTEBOOK",
+      "NOVEL",
+      "PARCHMENT",
+      "PENCIL",
+      "POEM",
+      "SHELVES",
+      "SIGNATURE",
+      "SPINE",
+      "VERSE",
+      "WHISPER",
+      "WINDOW"
+     ],
+     "placements": [
+      {
+       "word": "LIBRARY",
+       "r": 9,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CUSHION",
+       "r": 5,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "INKWELL",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARCHMENT",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LIBRARIAN",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GLOBE",
+       "r": 3,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PENCIL",
+       "r": 3,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SIGNATURE",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "COVER",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHAPTER",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NOTEBOOK",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINDOW",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CATALOG",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SHELVES",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHISPER",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "EDITION",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPINE",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DICTIONARY",
+       "r": 1,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NOVEL",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "POEM",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAMP",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VERSE",
+       "r": 7,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 9
+    },
+    {
+     "seed": 2090002,
+     "grid": [
+      "APNLSHELVESO",
+      "CRASIGNATURE",
+      "PAEPTBETWSAN",
+      "LETTERRLSTSO",
+      "LTNAURLAEOCT",
+      "ARICLRESRRHE",
+      "DICTIONARYOB",
+      "DBFTLLGIDNLO",
+      "EBENVELOPEAO",
+      "ROSCABINETRK",
+      "INDPARCHMENT",
+      "INDEXVELVETE"
+     ],
+     "clue": "A NOTE WAS LEFT INSIDE",
+     "words": [
+      "ATLAS",
+      "CABINET",
+      "CATALOG",
+      "DICTIONARY",
+      "ENVELOPE",
+      "INDEX",
+      "LADDER",
+      "LETTER",
+      "LIBRARY",
+      "NOTEBOOK",
+      "PAPER",
+      "PARCHMENT",
+      "PENCIL",
+      "READER",
+      "RETURN",
+      "RIBBON",
+      "SCHOLAR",
+      "SHELVES",
+      "SIGNATURE",
+      "STORY",
+      "TITLE",
+      "VELVET"
+     ],
+     "placements": [
+      {
+       "word": "READER",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ENVELOPE",
+       "r": 8,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DICTIONARY",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARCHMENT",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NOTEBOOK",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PENCIL",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STORY",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LIBRARY",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ATLAS",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CABINET",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCHOLAR",
+       "r": 3,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VELVET",
+       "r": 11,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADDER",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SIGNATURE",
+       "r": 1,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LETTER",
+       "r": 3,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SHELVES",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RETURN",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CATALOG",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PAPER",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "INDEX",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TITLE",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 10
+    },
+    {
+     "seed": 2120002,
+     "grid": [
+      "ITPARCHMENTL",
+      "ISNOGLASSEAE",
+      "TCLYEHJACKET",
+      "PAGESMANHDWT",
+      "LBRBOOKMARKE",
+      "IIVOLUMEPENR",
+      "BNITFOUNTAIN",
+      "RENVELOPEDNS",
+      "ATSCHOLAREDT",
+      "RHEDGEROWREA",
+      "YTENWINDOWXM",
+      "VELVETATLASP"
+     ],
+     "clue": "IT IS NEATLY HANDWRITTEN",
+     "words": [
+      "ATLAS",
+      "BOOKMARK",
+      "CABINET",
+      "CHAPTER",
+      "ENVELOPE",
+      "FOUNTAIN",
+      "GLASS",
+      "HEDGEROW",
+      "INDEX",
+      "JACKET",
+      "LETTER",
+      "LIBRARY",
+      "PAGES",
+      "PARCHMENT",
+      "PEN",
+      "POEM",
+      "READER",
+      "SCHOLAR",
+      "STAMP",
+      "VELVET",
+      "VOLUME",
+      "WINDOW"
+     ],
+     "placements": [
+      {
+       "word": "FOUNTAIN",
+       "r": 6,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEDGEROW",
+       "r": 9,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHAPTER",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ENVELOPE",
+       "r": 7,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "READER",
+       "r": 4,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARCHMENT",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VELVET",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CABINET",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "JACKET",
+       "r": 2,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAGES",
+       "r": 3,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STAMP",
+       "r": 7,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINDOW",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LETTER",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GLASS",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VOLUME",
+       "r": 5,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LIBRARY",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ATLAS",
+       "r": 11,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BOOKMARK",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCHOLAR",
+       "r": 8,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "INDEX",
+       "r": 6,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POEM",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PEN",
+       "r": 5,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 11
+    },
+    {
+     "seed": 2150029,
+     "grid": [
+      "PASTAMPPTHLV",
+      "OTSEIFNEKBIO",
+      "ELAOQOQNIOBL",
+      "TAUSNUUCFRRU",
+      "RSTHCNIIARAM",
+      "YRHEOTELBORE",
+      "PHOLVATTLWID",
+      "AYRVEIPOEMAE",
+      "PMSERNOVELNS",
+      "EEGSNOTEBOOK",
+      "RPREFACEREEN",
+      "SPINECUSHION"
+     ],
+     "clue": "THE INK IS GREEN",
+     "words": [
+      "ATLAS",
+      "AUTHOR",
+      "BORROW",
+      "COVER",
+      "CUSHION",
+      "DESK",
+      "FABLE",
+      "FOUNTAIN",
+      "LIBRARIAN",
+      "NOTEBOOK",
+      "NOVEL",
+      "PAPER",
+      "PENCIL",
+      "POEM",
+      "POETRY",
+      "PREFACE",
+      "QUIET",
+      "QUILL",
+      "RHYME",
+      "SHELVES",
+      "SONNET",
+      "SPINE",
+      "STAMP",
+      "VOLUME"
+     ],
+     "placements": [
+      {
+       "word": "QUIET",
+       "r": 2,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SONNET",
+       "r": 1,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "AUTHOR",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FOUNTAIN",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PREFACE",
+       "r": 10,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "QUILL",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "LIBRARIAN",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RHYME",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SHELVES",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUSHION",
+       "r": 11,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NOTEBOOK",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAPER",
+       "r": 6,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VOLUME",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FABLE",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BORROW",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAMP",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DESK",
+       "r": 6,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POETRY",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ATLAS",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PENCIL",
+       "r": 0,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPINE",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "COVER",
+       "r": 4,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NOVEL",
+       "r": 8,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "POEM",
+       "r": 7,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 12
+    }
+   ]
+  },
+  {
+   "title": "The Cherry Pie on the Sill",
+   "level": 1,
+   "level_name": "Gentle",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 3000001,
+     "grid": [
+      "RTROLLINGHSB",
+      "OCEPAECROWPA",
+      "SIKETTLEOIOK",
+      "ENIFTTGSRNOE",
+      "SNELIEAUCDNR",
+      "PAMOCRRGHOCY",
+      "RMTUEWDAAWRP",
+      "IOERFAERRSUA",
+      "NNASTFNHDIMT",
+      "KEPICNICRLBH",
+      "LEOATVANILLA",
+      "ETTPASTRYEEN"
+     ],
+     "clue": "THE PIE WAS THERE AT TEN",
+     "words": [
+      "BAKERY",
+      "CINNAMON",
+      "CROW",
+      "CRUMBLE",
+      "FLOUR",
+      "GARDEN",
+      "KETTLE",
+      "LATTICE",
+      "LETTER",
+      "MUFFIN",
+      "ORCHARD",
+      "PASTRY",
+      "PATH",
+      "PICNIC",
+      "ROLLING",
+      "ROSES",
+      "SPOON",
+      "SPRINKLE",
+      "SUGAR",
+      "TEAPOT",
+      "VANILLA",
+      "WINDOWSILL"
+     ],
+     "placements": [
+      {
+       "word": "WINDOWSILL",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ORCHARD",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VANILLA",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KETTLE",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MUFFIN",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SPRINKLE",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LATTICE",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GARDEN",
+       "r": 3,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BAKERY",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PICNIC",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LETTER",
+       "r": 0,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CRUMBLE",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CINNAMON",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PASTRY",
+       "r": 11,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROLLING",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPOON",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SUGAR",
+       "r": 3,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROSES",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FLOUR",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAPOT",
+       "r": 6,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATH",
+       "r": 6,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CROW",
+       "r": 1,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 13
+    },
+    {
+     "seed": 3030001,
+     "grid": [
+      "JDTGHEWGATEB",
+      "SUISASIAPINR",
+      "ILDSPRNWPLLE",
+      "ISIGHODVHREA",
+      "PARCELOERIOD",
+      "YFHPESWNNISN",
+      "CEPOCUSTARDK",
+      "RAISSKITCHEN",
+      "UTCTTGLHEDGE",
+      "SHNMAILBAGHU",
+      "TEIAMCRUMBLE",
+      "PRCNPBLOSSOM"
+     ],
+     "clue": "THE SILL IS VERY HIGH UP",
+     "words": [
+      "APRON",
+      "BLOSSOM",
+      "BREAD",
+      "CRUMBLE",
+      "CRUST",
+      "CUSTARD",
+      "DISH",
+      "FEATHER",
+      "GARDEN",
+      "GATE",
+      "HEDGE",
+      "JUDGES",
+      "KITCHEN",
+      "MAILBAG",
+      "PARCEL",
+      "PICNIC",
+      "PIN",
+      "POSTMAN",
+      "SLICE",
+      "SPOON",
+      "STAMP",
+      "WHISK",
+      "WINDOWSILL"
+     ],
+     "placements": [
+      {
+       "word": "WINDOWSILL",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUSTARD",
+       "r": 6,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MAILBAG",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KITCHEN",
+       "r": 7,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "POSTMAN",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARCEL",
+       "r": 4,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FEATHER",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "JUDGES",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BLOSSOM",
+       "r": 11,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APRON",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CRUMBLE",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WHISK",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CRUST",
+       "r": 6,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SLICE",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PICNIC",
+       "r": 6,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAMP",
+       "r": 7,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGE",
+       "r": 8,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BREAD",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPOON",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GARDEN",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "DISH",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GATE",
+       "r": 0,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PIN",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 14
+    },
+    {
+     "seed": 3060007,
+     "grid": [
+      "RWSTOBSAPWPA",
+      "SILRCINNAMON",
+      "BNIABSMCSASA",
+      "LDCYUCARTPTT",
+      "OOEOTUIURRMT",
+      "SWHDTILSYOAF",
+      "SSNOETBTENNE",
+      "OIDURPARCELA",
+      "MLEGTDGGNCET",
+      "PLTHIMIXERMH",
+      "SIPRIZESTOOE",
+      "VANILLAGHWNR"
+     ],
+     "clue": "ROSA WAS AT THE DENTIST",
+     "words": [
+      "APRON",
+      "BISCUIT",
+      "BLOSSOM",
+      "BUTTER",
+      "CINNAMON",
+      "COTTAGE",
+      "CROW",
+      "CRUST",
+      "DISH",
+      "DOUGH",
+      "FEATHER",
+      "LEMON",
+      "MAILBAG",
+      "MIXER",
+      "NUTMEG",
+      "PARCEL",
+      "PASTRY",
+      "PIN",
+      "POSTMAN",
+      "PRIZE",
+      "SLICE",
+      "TRAY",
+      "VANILLA",
+      "WINDOWSILL"
+     ],
+     "placements": [
+      {
+       "word": "CINNAMON",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BISCUIT",
+       "r": 0,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "COTTAGE",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BUTTER",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VANILLA",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WINDOWSILL",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MIXER",
+       "r": 9,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARCEL",
+       "r": 7,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NUTMEG",
+       "r": 6,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "DOUGH",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PRIZE",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FEATHER",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BLOSSOM",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PASTRY",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POSTMAN",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MAILBAG",
+       "r": 2,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CRUST",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LEMON",
+       "r": 7,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APRON",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SLICE",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRAY",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DISH",
+       "r": 8,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CROW",
+       "r": 8,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PIN",
+       "r": 9,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 15
+    },
+    {
+     "seed": 3090001,
+     "grid": [
+      "SCONEBUTTERL",
+      "WGORCHARDGRE",
+      "IEAGKITCHENT",
+      "NESTFLOUROUT",
+      "DRCNEKEPLATE",
+      "OVHMIXERERMR",
+      "WLEECOTTAGEB",
+      "SPRINKLETFGR",
+      "ICRUMBLEALTE",
+      "LHYJUDGESPEA",
+      "LVANILLAISOD",
+      "SHOPLATTICET"
+     ],
+     "clue": "GREGOR NEVER LEFT HIS SHOP",
+     "words": [
+      "BREAD",
+      "BUTTER",
+      "CHERRY",
+      "COTTAGE",
+      "CRUMBLE",
+      "FLOUR",
+      "GATE",
+      "JUDGES",
+      "KETTLE",
+      "KITCHEN",
+      "LATTICE",
+      "LETTER",
+      "MIXER",
+      "NEST",
+      "NUTMEG",
+      "ORCHARD",
+      "PLATE",
+      "SCONE",
+      "SPRINKLE",
+      "TEAPOT",
+      "VANILLA",
+      "WINDOWSILL"
+     ],
+     "placements": [
+      {
+       "word": "COTTAGE",
+       "r": 6,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPRINKLE",
+       "r": 7,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WINDOWSILL",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHERRY",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NUTMEG",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAPOT",
+       "r": 6,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CRUMBLE",
+       "r": 8,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LATTICE",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NEST",
+       "r": 3,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VANILLA",
+       "r": 10,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ORCHARD",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KITCHEN",
+       "r": 2,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PLATE",
+       "r": 4,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KETTLE",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "LETTER",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUTTER",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "JUDGES",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MIXER",
+       "r": 5,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FLOUR",
+       "r": 3,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCONE",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GATE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BREAD",
+       "r": 6,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 16
+    },
+    {
+     "seed": 3120001,
+     "grid": [
+      "JUROSESBREAD",
+      "KFLOUROLLING",
+      "IOISCINNAMON",
+      "TCVNPGARDENE",
+      "CCHERRYSUGAR",
+      "HUDSNRIDISHF",
+      "EISTAMPNOPEE",
+      "NPETARTRKUDA",
+      "ORCHARDDILGT",
+      "OPASTRYNAZEH",
+      "BUTTERDMAIEE",
+      "LLATTICEBAGR"
+     ],
+     "clue": "JUICE DRIPPED ON A MAILBAG",
+     "words": [
+      "BREAD",
+      "BUTTER",
+      "CHERRY",
+      "CINNAMON",
+      "CUSTARD",
+      "DISH",
+      "DOUGH",
+      "FEATHER",
+      "FLOUR",
+      "GARDEN",
+      "HEDGE",
+      "KITCHEN",
+      "LATTICE",
+      "NEST",
+      "ORCHARD",
+      "OVEN",
+      "PASTRY",
+      "PRIZE",
+      "ROLLING",
+      "ROSES",
+      "SPRINKLE",
+      "STAMP",
+      "SUGAR",
+      "TART"
+     ],
+     "placements": [
+      {
+       "word": "SPRINKLE",
+       "r": 2,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CHERRY",
+       "r": 4,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CUSTARD",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "OVEN",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ORCHARD",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LATTICE",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STAMP",
+       "r": 6,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KITCHEN",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PASTRY",
+       "r": 9,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PRIZE",
+       "r": 6,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TART",
+       "r": 7,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROLLING",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROSES",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CINNAMON",
+       "r": 2,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FEATHER",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GARDEN",
+       "r": 3,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUTTER",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NEST",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGE",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BREAD",
+       "r": 0,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DOUGH",
+       "r": 5,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SUGAR",
+       "r": 4,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FLOUR",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DISH",
+       "r": 5,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 17
+    },
+    {
+     "seed": 3150008,
+     "grid": [
+      "BLOSSOMSLICE",
+      "ROSESPRINKLE",
+      "AVANILLABBIR",
+      "GCWTRAYAROOO",
+      "CWHKCRUSTWWL",
+      "AUIEAJUDGESL",
+      "POSTMANSONCI",
+      "RTKTCINNAMON",
+      "OHELAMUFFING",
+      "NSIELRNUTMEG",
+      "TEAPOTDPRIZE",
+      "LEMONBAKERYL"
+     ],
+     "clue": "A BIG CROW WAS ON THE SILL",
+     "words": [
+      "APRON",
+      "BAKERY",
+      "BLOSSOM",
+      "BOWL",
+      "CINNAMON",
+      "CRUST",
+      "CUSTARD",
+      "JUDGES",
+      "KETTLE",
+      "LEMON",
+      "MUFFIN",
+      "NUTMEG",
+      "PLATE",
+      "POSTMAN",
+      "PRIZE",
+      "ROLLING",
+      "ROSES",
+      "SCONE",
+      "SLICE",
+      "SPRINKLE",
+      "TEAPOT",
+      "TRAY",
+      "VANILLA",
+      "WHISK"
+     ],
+     "placements": [
+      {
+       "word": "MUFFIN",
+       "r": 8,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CUSTARD",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BOWL",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "POSTMAN",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WHISK",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROLLING",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CINNAMON",
+       "r": 7,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BAKERY",
+       "r": 11,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPRINKLE",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PLATE",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "KETTLE",
+       "r": 4,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BLOSSOM",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "JUDGES",
+       "r": 5,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TEAPOT",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LEMON",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VANILLA",
+       "r": 2,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NUTMEG",
+       "r": 9,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCONE",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRAY",
+       "r": 3,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APRON",
+       "r": 5,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROSES",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PRIZE",
+       "r": 10,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SLICE",
+       "r": 0,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CRUST",
+       "r": 4,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 18
+    }
+   ]
+  },
+  {
+   "title": "The Gnome Who Walked Away",
+   "level": 2,
+   "level_name": "Curious",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 4000005,
+     "grid": [
+      "PPAINTBRUSHT",
+      "RBUTTERFLYLH",
+      "IELAVENDERAG",
+      "ZNHTRELLISTO",
+      "EMEHOLLYHOCK",
+      "GREENHOUSEHW",
+      "FLOWERBEDTAS",
+      "GWHEELBARROW",
+      "RAKEFOXGLOVE",
+      "OPALETTENWDE",
+      "MUSHROOMBEYT",
+      "TOADSTOOLLWO"
+     ],
+     "clue": "THE GNOME WAS GONE BY TWO",
+     "words": [
+      "BUTTERFLY",
+      "FLOWERBED",
+      "FOXGLOVE",
+      "GREENHOUSE",
+      "HAT",
+      "HOLLYHOCK",
+      "LATCH",
+      "LAVENDER",
+      "MUSHROOM",
+      "PAINTBRUSH",
+      "PALETTE",
+      "PRIZE",
+      "RAKE",
+      "ROD",
+      "TOADSTOOL",
+      "TRELLIS",
+      "TROWEL",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "WHEELBARROW",
+       "r": 7,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAINTBRUSH",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 5,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HOLLYHOCK",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOADSTOOL",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MUSHROOM",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FLOWERBED",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LAVENDER",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUTTERFLY",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PALETTE",
+       "r": 9,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRELLIS",
+       "r": 3,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FOXGLOVE",
+       "r": 8,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PRIZE",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TROWEL",
+       "r": 6,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RAKE",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LATCH",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROD",
+       "r": 7,
+       "c": 8,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "HAT",
+       "r": 3,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 19
+    },
+    {
+     "seed": 4030001,
+     "grid": [
+      "PATHWAYROBIN",
+      "SBUTTERFLYJF",
+      "UFLOWERBEDKO",
+      "NLADYBIRDCSU",
+      "DAFFODILOAPN",
+      "IFLUPINHSPAT",
+      "AIERCAYMECDA",
+      "LSUNFLOWEREI",
+      "WHEELBARROWN",
+      "AITOWATERING",
+      "TNHSEEDLINGH",
+      "RGROSEMARYEE"
+     ],
+     "clue": "JASPER CAME AT THREE",
+     "words": [
+      "BUTTERFLY",
+      "CAN",
+      "DAFFODIL",
+      "FISHING",
+      "FLOWERBED",
+      "FOUNTAIN",
+      "HOLLYHOCK",
+      "LADYBIRD",
+      "LUPIN",
+      "PATHWAY",
+      "ROBIN",
+      "ROSEMARY",
+      "SEEDLING",
+      "SPADE",
+      "SUNDIAL",
+      "SUNFLOWER",
+      "WATERING",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "SUNFLOWER",
+       "r": 7,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROSEMARY",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HOLLYHOCK",
+       "r": 10,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "FOUNTAIN",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FLOWERBED",
+       "r": 2,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNDIAL",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATHWAY",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SEEDLING",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WATERING",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DAFFODIL",
+       "r": 4,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADYBIRD",
+       "r": 3,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FISHING",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUTTERFLY",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROBIN",
+       "r": 0,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPADE",
+       "r": 3,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LUPIN",
+       "r": 5,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CAN",
+       "r": 6,
+       "c": 9,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 20
+    },
+    {
+     "seed": 4060002,
+     "grid": [
+      "SGNOMEGARDEN",
+      "USBBPEBBLEHP",
+      "NLUEUEIMWAOA",
+      "FPPNPAROORSI",
+      "LAACDIDWRCEN",
+      "OTLHNIBEMHTT",
+      "WHEELBARROWB",
+      "EWTONTTLAWNR",
+      "RATMUSHROOMU",
+      "BYECOMPOSTHS",
+      "EEGFOXGLOVEH",
+      "DATEDAFFODIL"
+     ],
+     "clue": "BLUE PAINT ON THE GATE",
+     "words": [
+      "ARCH",
+      "BENCH",
+      "BIRDBATH",
+      "COMPOST",
+      "DAFFODIL",
+      "FLOWERBED",
+      "FOXGLOVE",
+      "GARDEN",
+      "GNOME",
+      "HOSE",
+      "LAWN",
+      "MOWER",
+      "MUSHROOM",
+      "PAINTBRUSH",
+      "PALETTE",
+      "PATHWAY",
+      "PEBBLE",
+      "SUNDIAL",
+      "SUNFLOWER",
+      "WHEELBARROW",
+      "WORM"
+     ],
+     "placements": [
+      {
+       "word": "PAINTBRUSH",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BIRDBATH",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "COMPOST",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNFLOWER",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DAFFODIL",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MUSHROOM",
+       "r": 8,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FOXGLOVE",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GARDEN",
+       "r": 0,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNDIAL",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PALETTE",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PEBBLE",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PATHWAY",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GNOME",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MOWER",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FLOWERBED",
+       "r": 3,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ARCH",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HOSE",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WORM",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BENCH",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAWN",
+       "r": 7,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 21
+    },
+    {
+     "seed": 4090001,
+     "grid": [
+      "ENOHTRELLISE",
+      "AEPAINTBRUSH",
+      "SFLGPORTRAIT",
+      "EOBRPOTTINGM",
+      "LXFEAAJUDGEH",
+      "AGOEAKRLGKSE",
+      "DLUNIREINATD",
+      "YONHHEDPSOTG",
+      "BVTOADSTOOLE",
+      "IEAUWATERING",
+      "RIISROSEMARY",
+      "DLNEBIRDBATH"
+     ],
+     "clue": "NO HEEL MARKS IN THE SOIL",
+     "words": [
+      "BEARD",
+      "BIRDBATH",
+      "EASEL",
+      "FOUNTAIN",
+      "FOXGLOVE",
+      "GATE",
+      "GREENHOUSE",
+      "HEDGE",
+      "JUDGE",
+      "LADYBIRD",
+      "PAINTBRUSH",
+      "PORTRAIT",
+      "POTTING",
+      "RAKE",
+      "ROSEMARY",
+      "TOADSTOOL",
+      "TRELLIS",
+      "TULIP",
+      "WATERING"
+     ],
+     "placements": [
+      {
+       "word": "TOADSTOOL",
+       "r": 8,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FOUNTAIN",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 2,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WATERING",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "POTTING",
+       "r": 3,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRELLIS",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAINTBRUSH",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PORTRAIT",
+       "r": 2,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADYBIRD",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TULIP",
+       "r": 3,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FOXGLOVE",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROSEMARY",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BIRDBATH",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEDGE",
+       "r": 4,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BEARD",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "JUDGE",
+       "r": 4,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GATE",
+       "r": 5,
+       "c": 8,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "RAKE",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "EASEL",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 22
+    },
+    {
+     "seed": 4120002,
+     "grid": [
+      "FOUNTAINSHUD",
+      "GOROBINWNBBA",
+      "TAMOWERSAUIF",
+      "RAPORTRAITRF",
+      "EBENCHWALTDO",
+      "LYCANVASAEBD",
+      "LTLAVENDERAI",
+      "IPATHWAYSFTL",
+      "SUNFLOWERLHU",
+      "HMROSEMARYME",
+      "ERPAINTBRUSH",
+      "DCAMPPALETTE"
+     ],
+     "clue": "HUGO WAS AWAY AT SUMMER CAMP",
+     "words": [
+      "BENCH",
+      "BIRDBATH",
+      "BUTTERFLY",
+      "CANVAS",
+      "DAFFODIL",
+      "FOUNTAIN",
+      "LAVENDER",
+      "MOWER",
+      "PAINTBRUSH",
+      "PALETTE",
+      "PATHWAY",
+      "PORTRAIT",
+      "ROBIN",
+      "ROSEMARY",
+      "SHED",
+      "SNAIL",
+      "SUNFLOWER",
+      "TRELLIS"
+     ],
+     "placements": [
+      {
+       "word": "BUTTERFLY",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAVENDER",
+       "r": 6,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAINTBRUSH",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROSEMARY",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PORTRAIT",
+       "r": 3,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNFLOWER",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SNAIL",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BIRDBATH",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRELLIS",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DAFFODIL",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATHWAY",
+       "r": 7,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FOUNTAIN",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CANVAS",
+       "r": 5,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PALETTE",
+       "r": 11,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROBIN",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BENCH",
+       "r": 4,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MOWER",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SHED",
+       "r": 8,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 23
+    },
+    {
+     "seed": 4150001,
+     "grid": [
+      "TBHMEGHEDGEA",
+      "WLETULIPNSFR",
+      "CHAAOSMEUHEC",
+      "OIEVRSHOGENH",
+      "MFSEEDHRNDCO",
+      "PLIELNTROWEL",
+      "OAISEBDNMOAL",
+      "SWPEHDAEERMY",
+      "TNRAIILRRMNH",
+      "TGATECNIRINO",
+      "SUNDIALGNOGC",
+      "GARDENIVYGWK"
+     ],
+     "clue": "THE GNOME IS IN A PAINTING",
+     "words": [
+      "ARCH",
+      "BEARD",
+      "CAN",
+      "COMPOST",
+      "FENCE",
+      "FISHING",
+      "GARDEN",
+      "GATE",
+      "GNOME",
+      "GREENHOUSE",
+      "HEDGE",
+      "HOLLYHOCK",
+      "IVY",
+      "LAVENDER",
+      "LAWN",
+      "MUSHROOM",
+      "SEEDLING",
+      "SHED",
+      "SUNDIAL",
+      "TROWEL",
+      "TULIP",
+      "WHEELBARROW",
+      "WORM"
+     ],
+     "placements": [
+      {
+       "word": "COMPOST",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MUSHROOM",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "LAVENDER",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SEEDLING",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GARDEN",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FISHING",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TROWEL",
+       "r": 5,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 9,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HOLLYHOCK",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGE",
+       "r": 0,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FENCE",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SUNDIAL",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GNOME",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BEARD",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GATE",
+       "r": 9,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TULIP",
+       "r": 1,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LAWN",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SHED",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "IVY",
+       "r": 11,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WORM",
+       "r": 5,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ARCH",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CAN",
+       "r": 9,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 24
+    }
+   ]
+  },
+  {
+   "title": "The Quilt Square",
+   "level": 2,
+   "level_name": "Curious",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 5000002,
+     "grid": [
+      "CARETAKERSIT",
+      "QMAPWBEMOAAN",
+      "UBPISITBOTPT",
+      "IIANASRRFIPF",
+      "LNTCUCIOSNLA",
+      "TDCUCUAICVIB",
+      "HIHSEINDIIQR",
+      "INWHRTGESLUI",
+      "MGOIOSLRSLEC",
+      "BAROFOEYOATE",
+      "LRKNTHPERGTE",
+      "EABUTTONSEAM"
+     ],
+     "clue": "IT WENT AFTER THE TEA",
+     "words": [
+      "APPLIQUE",
+      "BINDING",
+      "BISCUITS",
+      "BUTTON",
+      "CARETAKER",
+      "EMBROIDERY",
+      "FABRIC",
+      "HOOP",
+      "MAP",
+      "PATCHWORK",
+      "PINCUSHION",
+      "QUILT",
+      "ROOF",
+      "SATIN",
+      "SAUCER",
+      "SCISSORS",
+      "SEAM",
+      "THIMBLE",
+      "TRIANGLE",
+      "VILLAGE"
+     ],
+     "placements": [
+      {
+       "word": "PINCUSHION",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "EMBROIDERY",
+       "r": 0,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CARETAKER",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRIANGLE",
+       "r": 2,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATCHWORK",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VILLAGE",
+       "r": 5,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BISCUITS",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCISSORS",
+       "r": 4,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BINDING",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SAUCER",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "THIMBLE",
+       "r": 5,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUTTON",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APPLIQUE",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FABRIC",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROOF",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SEAM",
+       "r": 11,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HOOP",
+       "r": 7,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "QUILT",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SATIN",
+       "r": 0,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MAP",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 25
+    },
+    {
+     "seed": 5030005,
+     "grid": [
+      "HEFLANNELAPZ",
+      "EMDIAMONDLIS",
+      "LBCSTARPETNC",
+      "FRARMCHAIRCI",
+      "TORPNBRTHIUS",
+      "MIEAEAICUASS",
+      "EDTTETBHNNHO",
+      "AEATDTBWDGIR",
+      "SRKELIOORLOS",
+      "UYERENNREENA",
+      "RTRNTGHKDMAP",
+      "EBIRTHDAYREE"
+     ],
+     "clue": "HAZEL LEFT AT THREE",
+     "words": [
+      "ARMCHAIR",
+      "BATTING",
+      "BIRTHDAY",
+      "CARETAKER",
+      "DIAMOND",
+      "EMBROIDERY",
+      "FLANNEL",
+      "HUNDRED",
+      "MAP",
+      "MEASURE",
+      "NEEDLE",
+      "PATCHWORK",
+      "PATTERN",
+      "PINCUSHION",
+      "RIBBON",
+      "SCISSORS",
+      "STAR",
+      "TRIANGLE"
+     ],
+     "placements": [
+      {
+       "word": "BIRTHDAY",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PINCUSHION",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATCHWORK",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ARMCHAIR",
+       "r": 3,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CARETAKER",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MEASURE",
+       "r": 5,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "EMBROIDERY",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCISSORS",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PATTERN",
+       "r": 4,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRIANGLE",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 4,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FLANNEL",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NEEDLE",
+       "r": 4,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HUNDRED",
+       "r": 4,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DIAMOND",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BATTING",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAR",
+       "r": 2,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MAP",
+       "r": 10,
+       "c": 9,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 26
+    },
+    {
+     "seed": 5060001,
+     "grid": [
+      "AEGGINGHAMOL",
+      "TMDBIRTHDAYT",
+      "HBHBUCKETREA",
+      "IRBDSEWINGWO",
+      "MOSCISSORSCA",
+      "BISCUITSNISR",
+      "LDPASTLOLRQM",
+      "EEOMOLGAEOUC",
+      "NROCAACCDTAH",
+      "HYLHXPUEFDRA",
+      "CARETAKERLEI",
+      "OOHMSTITCHRR"
+     ],
+     "clue": "A GOLD THREAD WAS ON THE FLOOR",
+     "words": [
+      "ARMCHAIR",
+      "BIRTHDAY",
+      "BISCUITS",
+      "BOBBIN",
+      "BUCKET",
+      "CALICO",
+      "CARETAKER",
+      "COTTON",
+      "EMBROIDERY",
+      "GINGHAM",
+      "HALL",
+      "HEM",
+      "HEXAGON",
+      "LADDER",
+      "MAP",
+      "SAUCER",
+      "SCISSORS",
+      "SEWING",
+      "SPOOL",
+      "SQUARE",
+      "STITCH",
+      "THIMBLE"
+     ],
+     "placements": [
+      {
+       "word": "GINGHAM",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BOBBIN",
+       "r": 5,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "LADDER",
+       "r": 6,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STITCH",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BISCUITS",
+       "r": 5,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "COTTON",
+       "r": 8,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "ARMCHAIR",
+       "r": 4,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUARE",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BIRTHDAY",
+       "r": 1,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SEWING",
+       "r": 3,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEXAGON",
+       "r": 11,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "EMBROIDERY",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUCKET",
+       "r": 2,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CARETAKER",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPOOL",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SAUCER",
+       "r": 11,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "THIMBLE",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CALICO",
+       "r": 8,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SCISSORS",
+       "r": 4,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEM",
+       "r": 9,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HALL",
+       "r": 9,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "MAP",
+       "r": 7,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 27
+    },
+    {
+     "seed": 5090001,
+     "grid": [
+      "VILLAGEAPGSN",
+      "MTEACUPHIEPS",
+      "APPLIQUENNOT",
+      "PGINGHAMCTOH",
+      "BAEVEREBURLR",
+      "RUTLEPLRSIEE",
+      "SFTTANTOHAVA",
+      "HETTEDEIINED",
+      "RUADORDDOGLL",
+      "GCLMHNNENLVA",
+      "AOBORDERREEC",
+      "GNEEDLEYIRTE"
+     ],
+     "clue": "AGNES NEVER LEFT HER CHAIR",
+     "words": [
+      "APPLIQUE",
+      "BORDER",
+      "BUTTON",
+      "EMBROIDERY",
+      "GINGHAM",
+      "GOLDEN",
+      "GUTTER",
+      "HEM",
+      "LACE",
+      "LADDER",
+      "MAP",
+      "NEEDLE",
+      "PATTERN",
+      "PINCUSHION",
+      "SEAM",
+      "SPOOL",
+      "TAPE",
+      "TEACUP",
+      "THREAD",
+      "TRIANGLE",
+      "VELVET",
+      "VILLAGE"
+     ],
+     "placements": [
+      {
+       "word": "PINCUSHION",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GUTTER",
+       "r": 9,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "PATTERN",
+       "r": 3,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "EMBROIDERY",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BORDER",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APPLIQUE",
+       "r": 2,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "THREAD",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GINGHAM",
+       "r": 3,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VELVET",
+       "r": 6,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GOLDEN",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "LADDER",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "VILLAGE",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRIANGLE",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEACUP",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUTTON",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SPOOL",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NEEDLE",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SEAM",
+       "r": 6,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "LACE",
+       "r": 8,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TAPE",
+       "r": 7,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HEM",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MAP",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 28
+    },
+    {
+     "seed": 5120007,
+     "grid": [
+      "BBGOLDENSTAR",
+      "AGAFEROGLACE",
+      "SULTUTNEEDLE",
+      "KTISTIFABRIC",
+      "ETAODIAMONDA",
+      "TECNXWNARSPR",
+      "MRIHOOPGDNAE",
+      "UBSHUNDREDTT",
+      "PTEACUPNROTA",
+      "NTAPPLIQUEEK",
+      "HEMVELVETRRE",
+      "VILLAGEOOFNR"
+     ],
+     "clue": "FELIX WAS UP ON THE ROOF",
+     "words": [
+      "APPLIQUE",
+      "BASKET",
+      "BATTING",
+      "BINDING",
+      "BORDER",
+      "CARETAKER",
+      "COTTON",
+      "DIAMOND",
+      "FABRIC",
+      "GOLDEN",
+      "GUTTER",
+      "HOOP",
+      "HUNDRED",
+      "LACE",
+      "LINEN",
+      "MEASURE",
+      "NEEDLE",
+      "PATTERN",
+      "SEAM",
+      "STAR",
+      "TEACUP",
+      "VELVET",
+      "VILLAGE"
+     ],
+     "placements": [
+      {
+       "word": "DIAMOND",
+       "r": 4,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BINDING",
+       "r": 7,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "BORDER",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LINEN",
+       "r": 10,
+       "c": 5,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "FABRIC",
+       "r": 3,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TEACUP",
+       "r": 8,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MEASURE",
+       "r": 6,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "COTTON",
+       "r": 5,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "APPLIQUE",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CARETAKER",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "VELVET",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HUNDRED",
+       "r": 7,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VILLAGE",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PATTERN",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BATTING",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BASKET",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GOLDEN",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NEEDLE",
+       "r": 2,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GUTTER",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HOOP",
+       "r": 6,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LACE",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STAR",
+       "r": 0,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SEAM",
+       "r": 7,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 29
+    },
+    {
+     "seed": 5150003,
+     "grid": [
+      "AIBOBBINGRIL",
+      "TRSBISCUITSI",
+      "HGMWRAMBNNPN",
+      "IHOCTETOGSIE",
+      "MTELHAERHQNN",
+      "BHSXDAPDAUCC",
+      "LRTDAEIEMAUA",
+      "EEITYGNRORSL",
+      "PATCHWORKEHI",
+      "ADCFLANNELIC",
+      "DDHDIAMONDOO",
+      "ASTASEWINGNR"
+     ],
+     "clue": "IRIS WANTED TO ADD A STAR",
+     "words": [
+      "ARMCHAIR",
+      "BIRTHDAY",
+      "BISCUITS",
+      "BOBBIN",
+      "BORDER",
+      "CALICO",
+      "DIAMOND",
+      "FLANNEL",
+      "GINGHAM",
+      "GOLDEN",
+      "HEM",
+      "HEXAGON",
+      "LINEN",
+      "PATCHWORK",
+      "PINCUSHION",
+      "SEWING",
+      "SQUARE",
+      "STITCH",
+      "TAPE",
+      "THIMBLE",
+      "THREAD"
+     ],
+     "placements": [
+      {
+       "word": "PATCHWORK",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PINCUSHION",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUARE",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SEWING",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEXAGON",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STITCH",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BIRTHDAY",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "THREAD",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GINGHAM",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOBBIN",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CALICO",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BISCUITS",
+       "r": 1,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "THIMBLE",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ARMCHAIR",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "DIAMOND",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GOLDEN",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "FLANNEL",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LINEN",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BORDER",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TAPE",
+       "r": 3,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "HEM",
+       "r": 4,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 30
+    }
+   ]
+  },
+  {
+   "title": "The Clock That Stopped",
+   "level": 2,
+   "level_name": "Curious",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 6000003,
+     "grid": [
+      "BSTNHHSECBLO",
+      "ITSAUYCCSAKP",
+      "REELPMRRSNSE",
+      "TECAINETDNUN",
+      "HPORGZWRIEND",
+      "DLNMEODPARRU",
+      "AEDEOPRELLIL",
+      "YDWINDINGSSU",
+      "STAIRSVACTEM",
+      "TWEATHERVANE",
+      "SPRINGRDALKW",
+      "NPOLISHBELLE"
+     ],
+     "clue": "THE CLOCK STOPPED AT DAWN",
+     "words": [
+      "ALARM",
+      "BANNER",
+      "BELL",
+      "BIRTHDAY",
+      "CAKE",
+      "DIAL",
+      "HYMN",
+      "NUMERALS",
+      "PENDULUM",
+      "PIGEON",
+      "POLISH",
+      "SCREWDRIVER",
+      "SECOND",
+      "SPRING",
+      "STAIRS",
+      "STALL",
+      "STEEPLE",
+      "SUNRISE",
+      "TWEEZERS",
+      "WEATHERVANE",
+      "WINDING"
+     ],
+     "placements": [
+      {
+       "word": "SCREWDRIVER",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TWEEZERS",
+       "r": 8,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "WEATHERVANE",
+       "r": 9,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NUMERALS",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PENDULUM",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SUNRISE",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BIRTHDAY",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POLISH",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STEEPLE",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SECOND",
+       "r": 1,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINDING",
+       "r": 7,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BANNER",
+       "r": 0,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STALL",
+       "r": 7,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ALARM",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPRING",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PIGEON",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAIRS",
+       "r": 8,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CAKE",
+       "r": 8,
+       "c": 8,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "HYMN",
+       "r": 0,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BELL",
+       "r": 11,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DIAL",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 31
+    },
+    {
+     "seed": 6030001,
+     "grid": [
+      "WWEATHERVANE",
+      "CHURCHTOWERL",
+      "INMAYORBSNLL",
+      "PBSBIEGRRELR",
+      "EUUIWAAWBAES",
+      "NNNRAEWRHDSA",
+      "DTRTGYENDEAS",
+      "UIIHLNWALCEW",
+      "LNSDNOLSTALL",
+      "UGEATICKINGE",
+      "MEPYTWEEZERS",
+      "KSCREWDRIVER"
+     ],
+     "clue": "WINNIE WAS AWAY ALL WEEK",
+     "words": [
+      "BELL",
+      "BIRTHDAY",
+      "BRASS",
+      "BUNTING",
+      "CAN",
+      "CHURCH",
+      "COGWHEEL",
+      "GEARS",
+      "LADDER",
+      "MAYOR",
+      "PENDULUM",
+      "SCREWDRIVER",
+      "SPANNER",
+      "STALL",
+      "SUNRISE",
+      "TICKING",
+      "TOWER",
+      "TOWNHALL",
+      "TWEEZERS",
+      "WEATHERVANE"
+     ],
+     "placements": [
+      {
+       "word": "TOWNHALL",
+       "r": 9,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "COGWHEEL",
+       "r": 1,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SCREWDRIVER",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PENDULUM",
+       "r": 3,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPANNER",
+       "r": 11,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "WEATHERVANE",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BIRTHDAY",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TICKING",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MAYOR",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNRISE",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOWER",
+       "r": 1,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BUNTING",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TWEEZERS",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADDER",
+       "r": 8,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "GEARS",
+       "r": 6,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CHURCH",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STALL",
+       "r": 8,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BRASS",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BELL",
+       "r": 4,
+       "c": 8,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CAN",
+       "r": 7,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 32
+    },
+    {
+     "seed": 6060001,
+     "grid": [
+      "WEATHERVANEO",
+      "IDSLOSBRASSW",
+      "WATCHCICCNTI",
+      "HWENERPNOSTN",
+      "TNEUCEAMGMBD",
+      "IHPMEWROWIUI",
+      "CALENDARHNNN",
+      "KNERTRDNEUTG",
+      "IDHAUIEIETIE",
+      "NSOLRVYNLENA",
+      "GAUSYEIGRRGR",
+      "AIRLKRCHOIRS"
+     ],
+     "clue": "OIL ON THE STAIR RAIL",
+     "words": [
+      "BRASS",
+      "BUNTING",
+      "CALENDAR",
+      "CAN",
+      "CENTURY",
+      "CHOIR",
+      "COGWHEEL",
+      "DAWN",
+      "GEARS",
+      "HANDS",
+      "HOUR",
+      "KEY",
+      "MINUTE",
+      "MORNING",
+      "NUMERALS",
+      "PARADE",
+      "SCREWDRIVER",
+      "SINGING",
+      "STEEPLE",
+      "TICKING",
+      "WATCH",
+      "WEATHERVANE",
+      "WINDING"
+     ],
+     "placements": [
+      {
+       "word": "CALENDAR",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MORNING",
+       "r": 4,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCREWDRIVER",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WEATHERVANE",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SINGING",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "WINDING",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TICKING",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NUMERALS",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "COGWHEEL",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STEEPLE",
+       "r": 1,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HANDS",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUNTING",
+       "r": 4,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHOIR",
+       "r": 11,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARADE",
+       "r": 3,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MINUTE",
+       "r": 4,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CENTURY",
+       "r": 4,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HOUR",
+       "r": 8,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BRASS",
+       "r": 1,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GEARS",
+       "r": 7,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DAWN",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WATCH",
+       "r": 2,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "KEY",
+       "r": 11,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CAN",
+       "r": 2,
+       "c": 7,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 33
+    },
+    {
+     "seed": 6090004,
+     "grid": [
+      "OSLSUNDIALTT",
+      "MICENTURYWTO",
+      "OWSRILECCION",
+      "RPTIENLHHNWU",
+      "NOEBNWNOIDNM",
+      "ILEAIGDIMIHE",
+      "NIPOLRIRENAR",
+      "GSLFEATNIGLA",
+      "THENECRHGVLL",
+      "HANDSTAMDCES",
+      "LAICALENDARR",
+      "BMBCHURCHUYP"
+     ],
+     "clue": "OTTO WILL NOT CLIMB UP",
+     "words": [
+      "ALARM",
+      "BANNER",
+      "BIRTHDAY",
+      "CALENDAR",
+      "CAN",
+      "CENTURY",
+      "CHIME",
+      "CHOIR",
+      "CHURCH",
+      "FETE",
+      "HANDS",
+      "MORNING",
+      "NUMERALS",
+      "OIL",
+      "POLISH",
+      "SCREWDRIVER",
+      "SINGING",
+      "SPANNER",
+      "STEEPLE",
+      "SUNDIAL",
+      "TOWNHALL",
+      "WINDING"
+     ],
+     "placements": [
+      {
+       "word": "SCREWDRIVER",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TOWNHALL",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CENTURY",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPANNER",
+       "r": 7,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SINGING",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BIRTHDAY",
+       "r": 4,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "POLISH",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHURCH",
+       "r": 11,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MORNING",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CALENDAR",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ALARM",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SUNDIAL",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "NUMERALS",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WINDING",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BANNER",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CHOIR",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HANDS",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STEEPLE",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHIME",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "OIL",
+       "r": 2,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "FETE",
+       "r": 7,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CAN",
+       "r": 8,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 34
+    },
+    {
+     "seed": 6120001,
+     "grid": [
+      "DAKOMTICKING",
+      "TLGEARSCWAFS",
+      "SASIYNOAGSET",
+      "URCLOTHLSETO",
+      "NMOIRWCEICEW",
+      "DNGPMELNNOGN",
+      "IPWOIEODGNCH",
+      "AAHLNZCAIDHA",
+      "LREIUEKRNGIL",
+      "AAESTRPTGDML",
+      "ADLHESQUAREW",
+      "WEATHERVANEN"
+     ],
+     "clue": "DOT WAS SINGING AT DAWN",
+     "words": [
+      "ALARM",
+      "CALENDAR",
+      "CHIME",
+      "CLOCK",
+      "CLOTH",
+      "COGWHEEL",
+      "FETE",
+      "GEARS",
+      "KEY",
+      "MAYOR",
+      "MINUTE",
+      "PARADE",
+      "POLISH",
+      "SECOND",
+      "SINGING",
+      "SPRING",
+      "SQUARE",
+      "SUNDIAL",
+      "TICKING",
+      "TOCK",
+      "TOWNHALL",
+      "TWEEZERS",
+      "WEATHERVANE"
+     ],
+     "placements": [
+      {
+       "word": "WEATHERVANE",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TWEEZERS",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUARE",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNDIAL",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPRING",
+       "r": 10,
+       "c": 5,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SINGING",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SECOND",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARADE",
+       "r": 6,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CALENDAR",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLOTH",
+       "r": 3,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "COGWHEEL",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOWNHALL",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TICKING",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MAYOR",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "POLISH",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOCK",
+       "r": 3,
+       "c": 5,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "MINUTE",
+       "r": 5,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHIME",
+       "r": 6,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ALARM",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLOCK",
+       "r": 4,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GEARS",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FETE",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KEY",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      }
+     ],
+     "id": 35
+    },
+    {
+     "seed": 6150001,
+     "grid": [
+      "STSCLHDIALBC",
+      "UOILASTALLAA",
+      "NENODPMKTHNL",
+      "RBGCDAIEWONE",
+      "IUIKENNGEOEN",
+      "SNNCRNUYEKRD",
+      "ETGHWETAZOSA",
+      "BIAOEREUEINR",
+      "DNNINUMERALS",
+      "AGGRRPOLSYIS",
+      "WATCHSCHURCH",
+      "NTOWNHALLHED"
+     ],
+     "clue": "THE KEY WAS BEING POLISHED",
+     "words": [
+      "BANNER",
+      "BUNTING",
+      "CALENDAR",
+      "CENTURY",
+      "CHOIR",
+      "CHURCH",
+      "CLOCK",
+      "DAWN",
+      "DIAL",
+      "HOOK",
+      "LADDER",
+      "MINUTE",
+      "NUMERALS",
+      "OIL",
+      "PIGEON",
+      "SINGING",
+      "SPANNER",
+      "STAIRS",
+      "STALL",
+      "SUNRISE",
+      "TOWNHALL",
+      "TWEEZERS",
+      "WATCH"
+     ],
+     "placements": [
+      {
+       "word": "LADDER",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BUNTING",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CENTURY",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "STAIRS",
+       "r": 5,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SPANNER",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WATCH",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PIGEON",
+       "r": 2,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "NUMERALS",
+       "r": 8,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOWNHALL",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CALENDAR",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHURCH",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TWEEZERS",
+       "r": 2,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SINGING",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DIAL",
+       "r": 0,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNRISE",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MINUTE",
+       "r": 2,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHOIR",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BANNER",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HOOK",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STALL",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CLOCK",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DAWN",
+       "r": 8,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "OIL",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 36
+    }
+   ]
+  },
+  {
+   "title": "The Swapped Seeds",
+   "level": 2,
+   "level_name": "Curious",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 7000001,
+     "grid": [
+      "HAYLOFTRTHNE",
+      "SQSCARECROWL",
+      "GUWAPBPHIOES",
+      "AEAPMIRNRWPE",
+      "RUEUNOOROCNE",
+      "LECSTCARROTD",
+      "IURCEBTDARTL",
+      "CAALLOTMENTI",
+      "PRBEANSTALKN",
+      "TLEUPLANTING",
+      "NHCSUNFLOWER",
+      "WHGREENHOUSE"
+     ],
+     "clue": "THE SWAP HAPPENED AT LUNCH",
+     "words": [
+      "ALLOTMENT",
+      "BEANSTALK",
+      "CARROT",
+      "CORN",
+      "CUCUMBER",
+      "GARLIC",
+      "GREENHOUSE",
+      "HAYLOFT",
+      "ONION",
+      "PARSNIP",
+      "PLANTING",
+      "QUEUE",
+      "SCARECROW",
+      "SEEDLING",
+      "SUNFLOWER",
+      "TRACTOR",
+      "TROWEL",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "ALLOTMENT",
+       "r": 7,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SEEDLING",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUCUMBER",
+       "r": 7,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "BEANSTALK",
+       "r": 8,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HAYLOFT",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PLANTING",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNFLOWER",
+       "r": 10,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARSNIP",
+       "r": 8,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CARROT",
+       "r": 5,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SCARECROW",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TROWEL",
+       "r": 6,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "TRACTOR",
+       "r": 9,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "GARLIC",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "QUEUE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ONION",
+       "r": 4,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CORN",
+       "r": 4,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 37
+    },
+    {
+     "seed": 7030002,
+     "grid": [
+      "WWHEELBARROW",
+      "BASKETTROWEL",
+      "SPCAHARVESTL",
+      "PUTHWPSQUASH",
+      "RMNAIGEOSSDD",
+      "OPCFGCHARDLM",
+      "UKOELNKEPELA",
+      "TIOREOSEIOAR",
+      "INPEVTWFNIDR",
+      "NNROOSTERSLO",
+      "GGSOWINGRSEW",
+      "OUBBEETROOTP"
+     ],
+     "clue": "WALT WAS SERVING SOUP",
+     "words": [
+      "BASKET",
+      "BEETROOT",
+      "BOOTS",
+      "BREAD",
+      "CHARD",
+      "CHICKENS",
+      "COOP",
+      "EGGS",
+      "FIELD",
+      "GREENHOUSE",
+      "HARVEST",
+      "LADLE",
+      "MARROW",
+      "PEAPOD",
+      "PUMPKIN",
+      "ROOSTER",
+      "SOWING",
+      "SPROUT",
+      "SQUASH",
+      "SUNFLOWER",
+      "TIN",
+      "TROWEL",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "CHICKENS",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "ROOSTER",
+       "r": 9,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNFLOWER",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 10,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HARVEST",
+       "r": 2,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SQUASH",
+       "r": 3,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BASKET",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PEAPOD",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BEETROOT",
+       "r": 11,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MARROW",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPROUT",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PUMPKIN",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHARD",
+       "r": 5,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SOWING",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BREAD",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "FIELD",
+       "r": 8,
+       "c": 7,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "BOOTS",
+       "r": 11,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "COOP",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TROWEL",
+       "r": 1,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "EGGS",
+       "r": 6,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "LADLE",
+       "r": 6,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TIN",
+       "r": 7,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 38
+    },
+    {
+     "seed": 7060003,
+     "grid": [
+      "FTSHCUCUMBER",
+      "AGWCPLANTING",
+      "RRAHACABBAGE",
+      "MEPIERTOMATO",
+      "EENCKMEEWOSL",
+      "RNMKARACOEEE",
+      "WHEELBARROWT",
+      "OOANEDTDROST",
+      "NUDSAEREIOWU",
+      "ISOSETRIPSWC",
+      "OEWBSQUASHHE",
+      "NALLOTMENTED"
+     ],
+     "clue": "THE NEW SEEDS ARE STRIPED",
+     "words": [
+      "ALLOTMENT",
+      "BEETROOT",
+      "CABBAGE",
+      "CHICKENS",
+      "CUCUMBER",
+      "FARMER",
+      "GREENHOUSE",
+      "KALE",
+      "LETTUCE",
+      "MARROW",
+      "MEADOW",
+      "ONION",
+      "PLANTING",
+      "RADISH",
+      "SCARECROW",
+      "SQUASH",
+      "SWAP",
+      "TOMATO",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "GREENHOUSE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCARECROW",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 6,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ALLOTMENT",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RADISH",
+       "r": 5,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "MEADOW",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUCUMBER",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LETTUCE",
+       "r": 4,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PLANTING",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHICKENS",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BEETROOT",
+       "r": 10,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SQUASH",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CABBAGE",
+       "r": 2,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SWAP",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KALE",
+       "r": 4,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FARMER",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARROW",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TOMATO",
+       "r": 3,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ONION",
+       "r": 7,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 39
+    },
+    {
+     "seed": 7090002,
+     "grid": [
+      "PTURNIPOPPGW",
+      "BQYSTPAYENSH",
+      "GEUSWAPDITHE",
+      "RHAEOCMLOSEE",
+      "EPSNUKDOECNL",
+      "EUPWSEBDEASB",
+      "NMRIETLGTRPA",
+      "HPISFEATHERR",
+      "OKNHIBALCCOR",
+      "UIGFBARNKRUO",
+      "SNHAYLOFTOTW",
+      "EOCRAFFLEWLD"
+     ],
+     "clue": "POPPY STAYED HOME WITH A COLD",
+     "words": [
+      "BARN",
+      "BEANSTALK",
+      "BOOTS",
+      "CABBAGE",
+      "FEATHER",
+      "FIELD",
+      "GREENHOUSE",
+      "HAYLOFT",
+      "HENS",
+      "PACKET",
+      "PUMPKIN",
+      "QUEUE",
+      "RAFFLE",
+      "SCARECROW",
+      "SEEDLING",
+      "SPRING",
+      "SPROUT",
+      "SWAP",
+      "TURNIP",
+      "WHEELBARROW"
+     ],
+     "placements": [
+      {
+       "word": "FEATHER",
+       "r": 7,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SEEDLING",
+       "r": 7,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CABBAGE",
+       "r": 11,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "TURNIP",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BEANSTALK",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "GREENHOUSE",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PUMPKIN",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HAYLOFT",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PACKET",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHEELBARROW",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCARECROW",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPROUT",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HENS",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RAFFLE",
+       "r": 11,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "QUEUE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BARN",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPRING",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOOTS",
+       "r": 5,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SWAP",
+       "r": 2,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FIELD",
+       "r": 9,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 40
+    },
+    {
+     "seed": 7120006,
+     "grid": [
+      "RSFARMERPNOH",
+      "COMBSOBREADA",
+      "UWOAUONDABMR",
+      "CISSOTUIPEEV",
+      "UNEKTFRPOAAE",
+      "MGEENETADNDS",
+      "BGDTTARHCSOT",
+      "EALLOTMENTWE",
+      "RRIKMHENSAOF",
+      "LLNAAELADLER",
+      "OIGLTRPACKET",
+      "TCOEORRAFFLE"
+     ],
+     "clue": "NO MUD ON THE FLOOR",
+     "words": [
+      "ALLOTMENT",
+      "BASKET",
+      "BEANSTALK",
+      "BREAD",
+      "CUCUMBER",
+      "FARMER",
+      "FEATHER",
+      "GARLIC",
+      "HARVEST",
+      "HENS",
+      "KALE",
+      "LADLE",
+      "MEADOW",
+      "ONION",
+      "PACKET",
+      "PEAPOD",
+      "RAFFLE",
+      "ROOSTER",
+      "SEEDLING",
+      "SOUP",
+      "SOWING",
+      "TIN",
+      "TOMATO",
+      "TRACTOR"
+     ],
+     "placements": [
+      {
+       "word": "BEANSTALK",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ALLOTMENT",
+       "r": 7,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRACTOR",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "FEATHER",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUCUMBER",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SEEDLING",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "FARMER",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HARVEST",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ROOSTER",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "RAFFLE",
+       "r": 11,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BASKET",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BREAD",
+       "r": 1,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GARLIC",
+       "r": 6,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MEADOW",
+       "r": 2,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PACKET",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TOMATO",
+       "r": 6,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SOUP",
+       "r": 1,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SOWING",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PEAPOD",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KALE",
+       "r": 8,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HENS",
+       "r": 8,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADLE",
+       "r": 9,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ONION",
+       "r": 1,
+       "c": 5,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "TIN",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 41
+    },
+    {
+     "seed": 7150003,
+     "grid": [
+      "AFETRACTORAB",
+      "TSOUPLETTUCE",
+      "TCFEATHERHEE",
+      "UASUNFLOWERT",
+      "RRRRCUCUMBER",
+      "NEOWMEADOWOO",
+      "ICCHICKENSNO",
+      "PRCESEEDSAIT",
+      "SOHGINMARROW",
+      "TWAGHLADLENE",
+      "PARSNIPEAPOD",
+      "TIDNPLANTING"
+     ],
+     "clue": "A FEATHER WAS IN THE TIN",
+     "words": [
+      "BEETROOT",
+      "CHARD",
+      "CHICKENS",
+      "CORN",
+      "CUCUMBER",
+      "EGGS",
+      "FEATHER",
+      "LADLE",
+      "LETTUCE",
+      "MARROW",
+      "MEADOW",
+      "ONION",
+      "PARSNIP",
+      "PEAPOD",
+      "PLANTING",
+      "SCARECROW",
+      "SEEDS",
+      "SOUP",
+      "SUNFLOWER",
+      "TRACTOR",
+      "TURNIP"
+     ],
+     "placements": [
+      {
+       "word": "SUNFLOWER",
+       "r": 3,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRACTOR",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PLANTING",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHICKENS",
+       "r": 6,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LETTUCE",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BEETROOT",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCARECROW",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MEADOW",
+       "r": 5,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PARSNIP",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TURNIP",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CUCUMBER",
+       "r": 4,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FEATHER",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "LADLE",
+       "r": 9,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MARROW",
+       "r": 8,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHARD",
+       "r": 7,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SEEDS",
+       "r": 7,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PEAPOD",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ONION",
+       "r": 5,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SOUP",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "EGGS",
+       "r": 7,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CORN",
+       "r": 6,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 42
+    }
+   ]
+  },
+  {
+   "title": "The Doves on the Cake",
+   "level": 3,
+   "level_name": "Sharp-Eyed",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     -1
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 8000001,
+     "grid": [
+      "CLOTTEDMTGTC",
+      "HHCHINAMNSOI",
+      "AHPEDROIINCO",
+      "MNVAZODNFIEP",
+      "PSIIRDAENFSE",
+      "ALPAEGTGEWPO",
+      "GAEWRTOOFFON",
+      "NTNOITATIVNI",
+      "ENIALECROPGE",
+      "AREDNEVALHES",
+      "TNGNITTINKPI",
+      "GHTKOOBTSEUG"
+     ],
+     "clue": "THE DOVES FLEW OFF AT NIGHT",
+     "words": [
+      "CHAMPAGNE",
+      "CHINA",
+      "CLOTTED",
+      "CONFETTI",
+      "GUESTBOOK",
+      "ICING",
+      "INVITATION",
+      "KNITTING",
+      "LAVENDER",
+      "MARZIPAN",
+      "ORGANIST",
+      "PEONIES",
+      "PHOTOGRAPH",
+      "PORCELAIN",
+      "SPONGE",
+      "TEAROOM",
+      "TRAIN",
+      "WEDDING"
+     ],
+     "placements": [
+      {
+       "word": "PHOTOGRAPH",
+       "r": 10,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "INVITATION",
+       "r": 7,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PORCELAIN",
+       "r": 8,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GUESTBOOK",
+       "r": 11,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CONFETTI",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "LAVENDER",
+       "r": 9,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "MARZIPAN",
+       "r": 0,
+       "c": 7,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "KNITTING",
+       "r": 10,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CLOTTED",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHAMPAGNE",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ORGANIST",
+       "r": 7,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "WEDDING",
+       "r": 6,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "PEONIES",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAROOM",
+       "r": 7,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "SPONGE",
+       "r": 4,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "ICING",
+       "r": 1,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "CHINA",
+       "r": 1,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRAIN",
+       "r": 7,
+       "c": 5,
+       "dr": -1,
+       "dc": -1
+      }
+     ],
+     "id": 43
+    },
+    {
+     "seed": 8030003,
+     "grid": [
+      "TLPHOTOGRAPH",
+      "ICHAMPAGNEEO",
+      "CWNOITATIVNI",
+      "KTIARAASSIAS",
+      "EOLDOMEOASMC",
+      "TPONDLTLRETO",
+      "CPIBDEEHISSN",
+      "REVETCTEBOEE",
+      "ERELRSATBRBS",
+      "ANOOMYENOHTE",
+      "MTPREHSUNLRA",
+      "BOUQUETAGICN"
+     ],
+     "clue": "LEO WAS ON THE LATE TRAIN",
+     "words": [
+      "AUNT",
+      "BESTMAN",
+      "BOUQUET",
+      "CHAMPAGNE",
+      "CLOTTED",
+      "CREAM",
+      "DOME",
+      "GUESTBOOK",
+      "HONEYMOON",
+      "INVITATION",
+      "NEEDLES",
+      "PHOTOGRAPH",
+      "PORCELAIN",
+      "RIBBON",
+      "ROSES",
+      "SCONES",
+      "TIARA",
+      "TICKET",
+      "TOPPER",
+      "USHER",
+      "VIOLIN"
+     ],
+     "placements": [
+      {
+       "word": "PORCELAIN",
+       "r": 10,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HONEYMOON",
+       "r": 9,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "NEEDLES",
+       "r": 9,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "GUESTBOOK",
+       "r": 11,
+       "c": 8,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "CHAMPAGNE",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RIBBON",
+       "r": 5,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "INVITATION",
+       "r": 2,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PHOTOGRAPH",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VIOLIN",
+       "r": 7,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CLOTTED",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "TOPPER",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCONES",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOUQUET",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BESTMAN",
+       "r": 8,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CREAM",
+       "r": 6,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TIARA",
+       "r": 3,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROSES",
+       "r": 8,
+       "c": 9,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TICKET",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "USHER",
+       "r": 10,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "DOME",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "AUNT",
+       "r": 11,
+       "c": 7,
+       "dr": -1,
+       "dc": 0
+      }
+     ],
+     "id": 44
+    },
+    {
+     "seed": 8060004,
+     "grid": [
+      "TGHBESTMANEO",
+      "CRUGNITTINKR",
+      "SHLEPAHCOOMG",
+      "IEANSSPMELNA",
+      "STLMOTSILEEN",
+      "TEEDPOBSZDDI",
+      "EUVAEAMOARRS",
+      "RQOOPEGYOLAT",
+      "FULADONNEKGM",
+      "CONFETTIENVE",
+      "NBINVITATION",
+      "DREDNEVALERH"
+     ],
+     "clue": "THE ROOM SMELLED OF LAVENDER",
+     "words": [
+      "BESTMAN",
+      "BOUQUET",
+      "CHAMPAGNE",
+      "CHAPEL",
+      "CONFETTI",
+      "DOVES",
+      "GARDEN",
+      "GLASS",
+      "GUESTBOOK",
+      "HONEYMOON",
+      "INVITATION",
+      "KNITTING",
+      "LAVENDER",
+      "MARZIPAN",
+      "NEEDLES",
+      "ORGANIST",
+      "SISTER",
+      "TEAPOT"
+     ],
+     "placements": [
+      {
+       "word": "HONEYMOON",
+       "r": 11,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "MARZIPAN",
+       "r": 8,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "KNITTING",
+       "r": 1,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GARDEN",
+       "r": 8,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "NEEDLES",
+       "r": 8,
+       "c": 6,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "CHAMPAGNE",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "LAVENDER",
+       "r": 11,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "SISTER",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GLASS",
+       "r": 8,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "BESTMAN",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GUESTBOOK",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "INVITATION",
+       "r": 10,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CONFETTI",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ORGANIST",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BOUQUET",
+       "r": 10,
+       "c": 1,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TEAPOT",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CHAPEL",
+       "r": 2,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "DOVES",
+       "r": 8,
+       "c": 4,
+       "dr": -1,
+       "dc": -1
+      }
+     ],
+     "id": 45
+    },
+    {
+     "seed": 8090003,
+     "grid": [
+      "GUESTBOOKIMA",
+      "ZTLAWEDDINGI",
+      "SIESREDNEVAL",
+      "ESEINOEPMIRM",
+      "NIALECROPTDA",
+      "GCSUACOLRAER",
+      "ALRKCRNEETNZ",
+      "POEPAEPATIAI",
+      "MTIETPRHDOEP",
+      "ATTROSISTNEA",
+      "HERTSSPONGEN",
+      "CDPHOTOGRAPH"
+     ],
+     "clue": "MAISIE SLEPT AT HER SISTERS",
+     "words": [
+      "CAKE",
+      "CHAMPAGNE",
+      "CLOTTED",
+      "DANCE",
+      "GARDEN",
+      "GUESTBOOK",
+      "INVITATION",
+      "LAVENDER",
+      "MARZIPAN",
+      "PEONIES",
+      "PHOTOGRAPH",
+      "PORCELAIN",
+      "SAUCER",
+      "SPONGE",
+      "TEAROOM",
+      "TIERS",
+      "TOPPER",
+      "WALTZ",
+      "WEDDING"
+     ],
+     "placements": [
+      {
+       "word": "PORCELAIN",
+       "r": 4,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "SAUCER",
+       "r": 3,
+       "c": 1,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "INVITATION",
+       "r": 0,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAROOM",
+       "r": 9,
+       "c": 2,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "PEONIES",
+       "r": 3,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "WEDDING",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DANCE",
+       "r": 8,
+       "c": 8,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "LAVENDER",
+       "r": 2,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "TOPPER",
+       "r": 10,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CHAMPAGNE",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "PHOTOGRAPH",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SPONGE",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GUESTBOOK",
+       "r": 0,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GARDEN",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARZIPAN",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLOTTED",
+       "r": 5,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WALTZ",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "TIERS",
+       "r": 9,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CAKE",
+       "r": 4,
+       "c": 5,
+       "dr": 1,
+       "dc": -1
+      }
+     ],
+     "id": 46
+    },
+    {
+     "seed": 8120015,
+     "grid": [
+      "NSHAWLCDBAST",
+      "IHOTSAOTRLPG",
+      "ARNEPMNDIBON",
+      "LIEVEKFODUNI",
+      "EBYSRNEMEMGR",
+      "CBMEFITSARES",
+      "ROOLUTTCOEAM",
+      "ONODMTIOEURI",
+      "PSNEEIMNCVAC",
+      "ERYEHNTEKCIT",
+      "ICINGGRSEATV",
+      "YORGANISTNUA"
+     ],
+     "clue": "THE DOME IS VERY HEAVY",
+     "words": [
+      "ALBUM",
+      "AUNT",
+      "BRIDE",
+      "CONFETTI",
+      "CREAM",
+      "DOME",
+      "GROOM",
+      "HONEYMOON",
+      "ICING",
+      "KNITTING",
+      "NEEDLES",
+      "ORGANIST",
+      "PERFUME",
+      "PORCELAIN",
+      "RIBBON",
+      "RING",
+      "SAUCER",
+      "SCONES",
+      "SHAWL",
+      "SPONGE",
+      "TIARA",
+      "TICKET",
+      "TOAST",
+      "VEIL"
+     ],
+     "placements": [
+      {
+       "word": "PERFUME",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "KNITTING",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCONES",
+       "r": 5,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CONFETTI",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOAST",
+       "r": 1,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GROOM",
+       "r": 4,
+       "c": 10,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "SAUCER",
+       "r": 5,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "ORGANIST",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PORCELAIN",
+       "r": 8,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "VEIL",
+       "r": 3,
+       "c": 3,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "HONEYMOON",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NEEDLES",
+       "r": 10,
+       "c": 3,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "ALBUM",
+       "r": 0,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TICKET",
+       "r": 9,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BRIDE",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SPONGE",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CREAM",
+       "r": 8,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "RING",
+       "r": 4,
+       "c": 11,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TIARA",
+       "r": 10,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "ICING",
+       "r": 10,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DOME",
+       "r": 0,
+       "c": 7,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "SHAWL",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "AUNT",
+       "r": 11,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      }
+     ],
+     "id": 47
+    },
+    {
+     "seed": 8150003,
+     "grid": [
+      "WSESORGANIST",
+      "APTBESTMANHE",
+      "LHDOSVICINGE",
+      "TONSCTEAROOM",
+      "ZTOMOORGWRUS",
+      "TOORNTSEEBSI",
+      "OGMRECSCLEES",
+      "PRYOSHUANHIT",
+      "AAEGLASSOENE",
+      "EPNRSPAUNTOR",
+      "THOOPERFUMEW",
+      "NCHAYLIODKPE"
+     ],
+     "clue": "THE DOVES WERE ON HER OWN CAKE",
+     "words": [
+      "ALBUM",
+      "AUNT",
+      "BESTMAN",
+      "CHAPEL",
+      "DOILY",
+      "GLASS",
+      "GROOM",
+      "HONEYMOON",
+      "ICING",
+      "ORGANIST",
+      "PEONIES",
+      "PERFUME",
+      "PHOTOGRAPH",
+      "ROSES",
+      "SAUCER",
+      "SCONES",
+      "SISTER",
+      "TEAPOT",
+      "TEAROOM",
+      "TIERS",
+      "TOAST",
+      "TRAIN",
+      "USHER",
+      "WALTZ"
+     ],
+     "placements": [
+      {
+       "word": "PERFUME",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CHAPEL",
+       "r": 6,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DOILY",
+       "r": 11,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GROOM",
+       "r": 4,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GLASS",
+       "r": 8,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TIERS",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRAIN",
+       "r": 5,
+       "c": 5,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HONEYMOON",
+       "r": 11,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "ORGANIST",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "USHER",
+       "r": 9,
+       "c": 7,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "PHOTOGRAPH",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOAST",
+       "r": 9,
+       "c": 9,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "ALBUM",
+       "r": 7,
+       "c": 7,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "PEONIES",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SCONES",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SAUCER",
+       "r": 9,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "TEAPOT",
+       "r": 10,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SISTER",
+       "r": 4,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WALTZ",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEAROOM",
+       "r": 3,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ROSES",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BESTMAN",
+       "r": 1,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ICING",
+       "r": 2,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "AUNT",
+       "r": 9,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 48
+    }
+   ]
+  },
+  {
+   "title": "The Harvest Song",
+   "level": 3,
+   "level_name": "Sharp-Eyed",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     -1
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 9000002,
+     "grid": [
+      "NEDLOGSPETSP",
+      "IODNECSERCTE",
+      "LASRAEHERLHP",
+      "OERMYNOMRAHP",
+      "ISAOUSCICNTE",
+      "VSPOTLIGHTER",
+      "AAPTECSVAENM",
+      "NBLIPNUISRII",
+      "TAACMHMDENRN",
+      "HTUKUSTANDAT",
+      "EOSERDATSOLI",
+      "MNETTRECNOCX"
+     ],
+     "clue": "THE MUSIC VANISHED AT SIX",
+     "words": [
+      "ANTHEM",
+      "APPLAUSE",
+      "BASS",
+      "BATON",
+      "CLARINET",
+      "CONCERT",
+      "CONDUCTOR",
+      "CRESCENDO",
+      "GOLDEN",
+      "HARMONY",
+      "LANTERN",
+      "MUSIC",
+      "PEPPERMINT",
+      "REHEARSAL",
+      "SPOTLIGHT",
+      "STAND",
+      "STEPS",
+      "TICKET",
+      "TRUMPET",
+      "VIOLIN"
+     ],
+     "placements": [
+      {
+       "word": "CONDUCTOR",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "SPOTLIGHT",
+       "r": 5,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CLARINET",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "APPLAUSE",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "REHEARSAL",
+       "r": 2,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PEPPERMINT",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRUMPET",
+       "r": 11,
+       "c": 4,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "VIOLIN",
+       "r": 5,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "GOLDEN",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CRESCENDO",
+       "r": 1,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LANTERN",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HARMONY",
+       "r": 3,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BATON",
+       "r": 7,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CONCERT",
+       "r": 11,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "ANTHEM",
+       "r": 6,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TICKET",
+       "r": 6,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAND",
+       "r": 9,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MUSIC",
+       "r": 8,
+       "c": 6,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "STEPS",
+       "r": 0,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BASS",
+       "r": 7,
+       "c": 1,
+       "dr": -1,
+       "dc": 0
+      }
+     ],
+     "id": 49
+    },
+    {
+     "seed": 9030001,
+     "grid": [
+      "PERREPPARWCE",
+      "MHTYHRYSETON",
+      "PTSODNECSERC",
+      "IRWPUMPKINAO",
+      "AUSCONDUCTOR",
+      "NMWCTTEKSABE",
+      "OPUHUYLFAEHS",
+      "PEPPERMINTES",
+      "NTILNATGGLHH",
+      "HARVESTAPHIE",
+      "LABMYCSPITTE",
+      "BUBACLARINET"
+     ],
+     "clue": "PERCY WAS TUNING HIS TUBA",
+     "words": [
+      "APPLES",
+      "BARLEY",
+      "BASKET",
+      "CLARINET",
+      "CONDUCTOR",
+      "CRESCENDO",
+      "CURTAIN",
+      "CYMBAL",
+      "ENCORE",
+      "HARVEST",
+      "NOTES",
+      "PEPPERMINT",
+      "PIANO",
+      "PUMPKIN",
+      "RHYTHM",
+      "SHEAF",
+      "SHEET",
+      "SPOTLIGHT",
+      "TRUMPET",
+      "WHEAT",
+      "WRAPPER"
+     ],
+     "placements": [
+      {
+       "word": "SPOTLIGHT",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CRESCENDO",
+       "r": 2,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CONDUCTOR",
+       "r": 4,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BASKET",
+       "r": 5,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PEPPERMINT",
+       "r": 7,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "ENCORE",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TRUMPET",
+       "r": 2,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CURTAIN",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CLARINET",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "RHYTHM",
+       "r": 1,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "APPLES",
+       "r": 11,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HARVEST",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PUMPKIN",
+       "r": 3,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "WRAPPER",
+       "r": 0,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PIANO",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SHEAF",
+       "r": 6,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CYMBAL",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "SHEET",
+       "r": 7,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "NOTES",
+       "r": 1,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "WHEAT",
+       "r": 5,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "BARLEY",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 50
+    },
+    {
+     "seed": 9060001,
+     "grid": [
+      "TWRAPPERONET",
+      "NATRECNOCGPE",
+      "IFLUTEPPALER",
+      "MMELBERTGACC",
+      "RINYSSSTNSYR",
+      "ECONDUCTORME",
+      "PVNOLASWSABS",
+      "PIAMELODYEAC",
+      "EORRIPLRAHLE",
+      "PLPAFPOBAEPN",
+      "RIOHCAUPFRED",
+      "RNSPOTLIGHTO"
+     ],
+     "clue": "A PEPPERMINT WRAPPER",
+     "words": [
+      "APPLAUSE",
+      "CHOIR",
+      "CLEF",
+      "CONCERT",
+      "CONDUCTOR",
+      "CRESCENDO",
+      "CYMBAL",
+      "FIELDS",
+      "FLUTE",
+      "HARMONY",
+      "MELODY",
+      "PEPPERMINT",
+      "REHEARSAL",
+      "SOLO",
+      "SONG",
+      "SOPRANO",
+      "SPOTLIGHT",
+      "STAGE",
+      "TENOR",
+      "TREBLE",
+      "TUBA",
+      "VIOLIN",
+      "WRAPPER"
+     ],
+     "placements": [
+      {
+       "word": "PEPPERMINT",
+       "r": 9,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "REHEARSAL",
+       "r": 10,
+       "c": 9,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CONDUCTOR",
+       "r": 5,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APPLAUSE",
+       "r": 10,
+       "c": 5,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TREBLE",
+       "r": 3,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "SOPRANO",
+       "r": 11,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CHOIR",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "MELODY",
+       "r": 7,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STAGE",
+       "r": 4,
+       "c": 6,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "HARMONY",
+       "r": 10,
+       "c": 3,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SPOTLIGHT",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CRESCENDO",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WRAPPER",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "VIOLIN",
+       "r": 6,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CYMBAL",
+       "r": 3,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TUBA",
+       "r": 11,
+       "c": 5,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "TENOR",
+       "r": 0,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CONCERT",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "FLUTE",
+       "r": 2,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SONG",
+       "r": 6,
+       "c": 8,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "FIELDS",
+       "r": 9,
+       "c": 4,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SOLO",
+       "r": 6,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLEF",
+       "r": 7,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      }
+     ],
+     "id": 51
+    },
+    {
+     "seed": 9090001,
+     "grid": [
+      "SETONMOORBTN",
+      "EBETENCORESD",
+      "LASRAEHERWEO",
+      "PRYEASONOSVP",
+      "PLNBWERETERM",
+      "AEOLTEUDCBAE",
+      "YYMETPSLUAHT",
+      "DIRNNGTODSHU",
+      "ONARPOSGNKEL",
+      "LLHSTANDOESF",
+      "ETNIATRUCTEP",
+      "MSPEPPERMINT"
+     ],
+     "clue": "NED WAS SWEEPING THE STEPS",
+     "words": [
+      "APPLES",
+      "BARLEY",
+      "BASKET",
+      "BROOM",
+      "CHORUS",
+      "CONDUCTOR",
+      "CURTAIN",
+      "DUET",
+      "ENCORE",
+      "FLUTE",
+      "GOLDEN",
+      "HARMONY",
+      "HARVEST",
+      "LANTERN",
+      "MELODY",
+      "NOTES",
+      "PEPPERMINT",
+      "REHEARSAL",
+      "SOPRANO",
+      "STAND",
+      "TEMPO",
+      "TREBLE"
+     ],
+     "placements": [
+      {
+       "word": "LANTERN",
+       "r": 9,
+       "c": 1,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CHORUS",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SOPRANO",
+       "r": 8,
+       "c": 6,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "REHEARSAL",
+       "r": 2,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CONDUCTOR",
+       "r": 10,
+       "c": 8,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "APPLES",
+       "r": 5,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "HARMONY",
+       "r": 9,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BASKET",
+       "r": 5,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CURTAIN",
+       "r": 10,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "MELODY",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "GOLDEN",
+       "r": 8,
+       "c": 7,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "NOTES",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "TEMPO",
+       "r": 6,
+       "c": 11,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "HARVEST",
+       "r": 6,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "PEPPERMINT",
+       "r": 11,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TREBLE",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BROOM",
+       "r": 0,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "ENCORE",
+       "r": 1,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "FLUTE",
+       "r": 9,
+       "c": 11,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "STAND",
+       "r": 9,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BARLEY",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DUET",
+       "r": 5,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      }
+     ],
+     "id": 52
+    },
+    {
+     "seed": 9120001,
+     "grid": [
+      "CWIFIELDSLMA",
+      "PODNECSERCEW",
+      "UANCSMAVERSE",
+      "MYACHOCMFSUB",
+      "PETSEOUTPEAT",
+      "KLSHHRROETLE",
+      "IREEDBTUOMPC",
+      "NAVARLANSSPI",
+      "NBRFIGITINAO",
+      "GLAGSONGEESS",
+      "OSHEETEPMURT",
+      "STAGEROCNEDN"
+     ],
+     "clue": "WILMA WAS AT HER SINGING LESSON",
+     "words": [
+      "APPLAUSE",
+      "BARLEY",
+      "BATON",
+      "BROOM",
+      "CHORUS",
+      "CLEF",
+      "CONCERT",
+      "CRESCENDO",
+      "CURTAIN",
+      "DRUM",
+      "DUET",
+      "ENCORE",
+      "FIELDS",
+      "HARVEST",
+      "PUMPKIN",
+      "SHEAF",
+      "SHEET",
+      "SONG",
+      "SPOTLIGHT",
+      "STAGE",
+      "STAND",
+      "TEMPO",
+      "TRUMPET",
+      "VERSE"
+     ],
+     "placements": [
+      {
+       "word": "CRESCENDO",
+       "r": 1,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CONCERT",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SPOTLIGHT",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "HARVEST",
+       "r": 10,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BROOM",
+       "r": 6,
+       "c": 5,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CURTAIN",
+       "r": 3,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APPLAUSE",
+       "r": 8,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BATON",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "SHEET",
+       "r": 10,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DRUM",
+       "r": 6,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CHORUS",
+       "r": 2,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PUMPKIN",
+       "r": 1,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BARLEY",
+       "r": 8,
+       "c": 1,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "ENCORE",
+       "r": 11,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CLEF",
+       "r": 6,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "FIELDS",
+       "r": 0,
+       "c": 3,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TRUMPET",
+       "r": 10,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "VERSE",
+       "r": 2,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SHEAF",
+       "r": 4,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TEMPO",
+       "r": 4,
+       "c": 7,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "SONG",
+       "r": 9,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "STAGE",
+       "r": 11,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "DUET",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "STAND",
+       "r": 5,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      }
+     ],
+     "id": 53
+    },
+    {
+     "seed": 9150020,
+     "grid": [
+      "HCLARINETSGR",
+      "AATNIKPMUPRE",
+      "RPTEAWUOBEEC",
+      "MPLANSLSATPE",
+      "OLMAIOBASSPL",
+      "NAHCSPRNCOAL",
+      "YUTYERPTYNRO",
+      "RSYMLAAHTIWN",
+      "IEHBPNNEDLOG",
+      "OGRAPORMHTHE",
+      "HOTLANELBERT",
+      "CMUSFLUTEIRC"
+     ],
+     "clue": "GRETA WAS COPYING THE MUSIC",
+     "words": [
+      "ALTO",
+      "ANTHEM",
+      "APPLAUSE",
+      "APPLES",
+      "BASS",
+      "CELLO",
+      "CHOIR",
+      "CLARINET",
+      "CYMBAL",
+      "FLUTE",
+      "GOLDEN",
+      "HARMONY",
+      "LANTERN",
+      "MUSIC",
+      "PUMPKIN",
+      "REHEARSAL",
+      "RHYTHM",
+      "SOLO",
+      "SOPRANO",
+      "STEPS",
+      "TENOR",
+      "TREBLE",
+      "TUBA",
+      "WRAPPER"
+     ],
+     "placements": [
+      {
+       "word": "RHYTHM",
+       "r": 9,
+       "c": 2,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CELLO",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LANTERN",
+       "r": 4,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "REHEARSAL",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "ANTHEM",
+       "r": 4,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SOPRANO",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MUSIC",
+       "r": 1,
+       "c": 7,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "APPLES",
+       "r": 10,
+       "c": 4,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "WRAPPER",
+       "r": 7,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CLARINET",
+       "r": 0,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CYMBAL",
+       "r": 5,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SOLO",
+       "r": 5,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "BASS",
+       "r": 4,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GOLDEN",
+       "r": 8,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "APPLAUSE",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TENOR",
+       "r": 1,
+       "c": 2,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "CHOIR",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "FLUTE",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HARMONY",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TUBA",
+       "r": 0,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PUMPKIN",
+       "r": 1,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "ALTO",
+       "r": 10,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "TREBLE",
+       "r": 10,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "STEPS",
+       "r": 4,
+       "c": 9,
+       "dr": -1,
+       "dc": 0
+      }
+     ],
+     "id": 54
+    }
+   ]
+  },
+  {
+   "title": "The Lantern Parade Star",
+   "level": 3,
+   "level_name": "Sharp-Eyed",
+   "directions": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     -1,
+     -1
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "puzzles": [
+    {
+     "seed": 10000001,
+     "grid": [
+      "TCPROCESSION",
+      "CHESTNUTDUSK",
+      "MILAMPPOSTHS",
+      "ILMOORSSALCQ",
+      "TDGGOHEGDEHU",
+      "TRLENSGTARWI",
+      "EEIALNSGONNR",
+      "NNTNIRPWAPOR",
+      "SETTGAPPLEYE",
+      "BRETHGILPMAL",
+      "YERDTLANTERN",
+      "MUSTEKNALBCK"
+     ],
+     "clue": "THE STAR WAS GONE BY DUSK",
+     "words": [
+      "APPLE",
+      "BLANKET",
+      "CHESTNUT",
+      "CHILDREN",
+      "CLASSROOM",
+      "CRAYON",
+      "DUSK",
+      "GLITTER",
+      "HEDGEHOG",
+      "LAMPLIGHTER",
+      "LAMPPOST",
+      "LANTERN",
+      "MEETING",
+      "MITTENS",
+      "MOONLIGHT",
+      "PAWPRINT",
+      "PROCESSION",
+      "SQUIRREL"
+     ],
+     "placements": [
+      {
+       "word": "MOONLIGHT",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLASSROOM",
+       "r": 3,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LAMPLIGHTER",
+       "r": 9,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PROCESSION",
+       "r": 0,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "HEDGEHOG",
+       "r": 4,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CHESTNUT",
+       "r": 1,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "PAWPRINT",
+       "r": 7,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CHILDREN",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUIRREL",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MEETING",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "BLANKET",
+       "r": 11,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LAMPPOST",
+       "r": 2,
+       "c": 2,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MITTENS",
+       "r": 2,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CRAYON",
+       "r": 11,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "LANTERN",
+       "r": 10,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "APPLE",
+       "r": 8,
+       "c": 5,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "GLITTER",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "DUSK",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      }
+     ],
+     "id": 55
+    },
+    {
+     "seed": 10030003,
+     "grid": [
+      "ATRTMTLOWPTA",
+      "SELEOOSILRWG",
+      "ERCSOFQCAOIH",
+      "LRHNNFULMCLP",
+      "TIIULEIAPEIA",
+      "SELSIERSLSGW",
+      "IRDNGCRSISHP",
+      "HTRIHNERGITR",
+      "WAEITGLOHOTI",
+      "BONFIREOTNHN",
+      "EGNIRTSMELAT",
+      "SROSSICSRMPS"
+     ],
+     "clue": "ARLO WAS LIGHTING THE LAMPS",
+     "words": [
+      "BARN",
+      "BONFIRE",
+      "CHILDREN",
+      "CLASSROOM",
+      "LAMPLIGHTER",
+      "MARCHING",
+      "MOONLIGHT",
+      "PAWPRINT",
+      "PROCESSION",
+      "SCISSORS",
+      "SQUIRREL",
+      "STRING",
+      "SUNSET",
+      "TERRIER",
+      "TOFFEE",
+      "TWILIGHT",
+      "WHISTLE"
+     ],
+     "placements": [
+      {
+       "word": "CLASSROOM",
+       "r": 2,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MARCHING",
+       "r": 3,
+       "c": 8,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "MOONLIGHT",
+       "r": 0,
+       "c": 4,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAMPLIGHTER",
+       "r": 1,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCISSORS",
+       "r": 11,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PAWPRINT",
+       "r": 3,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUIRREL",
+       "r": 1,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHILDREN",
+       "r": 2,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BONFIRE",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "SUNSET",
+       "r": 5,
+       "c": 3,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TWILIGHT",
+       "r": 0,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHISTLE",
+       "r": 8,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "PROCESSION",
+       "r": 0,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TERRIER",
+       "r": 0,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TOFFEE",
+       "r": 0,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STRING",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BARN",
+       "r": 9,
+       "c": 0,
+       "dr": -1,
+       "dc": 1
+      }
+     ],
+     "id": 56
+    },
+    {
+     "seed": 10060002,
+     "grid": [
+      "EEFFOTPAPERL",
+      "MOORSSALCCYA",
+      "RILCCFRACSWM",
+      "STOOBAAGSCIP",
+      "CNAUATDOMIEL",
+      "OTUNTSEHCSUI",
+      "CETCFOWEOSSG",
+      "OSUIAPOGNOSH",
+      "ATMLRPLDKRIT",
+      "LANECMGEESTE",
+      "NRETNALHRETR",
+      "IMOONLIGHTNG"
+     ],
+     "clue": "CYRIL WAS IN A MEETING",
+     "words": [
+      "AUTUMN",
+      "BOOTS",
+      "CHESTNUT",
+      "CLASSROOM",
+      "COAT",
+      "COCOA",
+      "CONKER",
+      "COUNCIL",
+      "CRAFT",
+      "GLOW",
+      "HEDGEHOG",
+      "LAMPLIGHTER",
+      "LAMPPOST",
+      "LANE",
+      "LANTERN",
+      "MOONLIGHT",
+      "PAPER",
+      "PARADE",
+      "SCARF",
+      "SCISSORS",
+      "STAR",
+      "TISSUE",
+      "TOFFEE"
+     ],
+     "placements": [
+      {
+       "word": "CHESTNUT",
+       "r": 5,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PARADE",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LAMPPOST",
+       "r": 11,
+       "c": 5,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "COUNCIL",
+       "r": 2,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "MOONLIGHT",
+       "r": 11,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CONKER",
+       "r": 5,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HEDGEHOG",
+       "r": 10,
+       "c": 7,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SCARF",
+       "r": 2,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LANTERN",
+       "r": 10,
+       "c": 6,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CLASSROOM",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LAMPLIGHTER",
+       "r": 0,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCISSORS",
+       "r": 2,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TISSUE",
+       "r": 9,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TOFFEE",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BOOTS",
+       "r": 3,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "STAR",
+       "r": 7,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "COCOA",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GLOW",
+       "r": 9,
+       "c": 6,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "AUTUMN",
+       "r": 4,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PAPER",
+       "r": 0,
+       "c": 6,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CRAFT",
+       "r": 9,
+       "c": 4,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "LANE",
+       "r": 9,
+       "c": 0,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "COAT",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": -1
+      }
+     ],
+     "id": 57
+    },
+    {
+     "seed": 10090001,
+     "grid": [
+      "BEPMSQUIRREL",
+      "SSRCIRETTILG",
+      "NWOAATEKNALB",
+      "OACNEUTLSTIA",
+      "BPEDGRTEDECR",
+      "BASLANIUNDNN",
+      "IWSETCIFMSUW",
+      "RPIKVSEHNNOP",
+      "EROHEAIUCOCI",
+      "DINNGTEHLRBA",
+      "INRETNALWGAC",
+      "CTLASSYHDRUM"
+     ],
+     "clue": "BESS WAS TEACHING A CLASS",
+     "words": [
+      "AUTUMN",
+      "BARN",
+      "BASKET",
+      "BLANKET",
+      "BONFIRE",
+      "CANDLE",
+      "CIDER",
+      "COUNCIL",
+      "DRUM",
+      "GLITTER",
+      "GLUE",
+      "HAT",
+      "LANTERN",
+      "LEAVES",
+      "MARCHING",
+      "MITTENS",
+      "PAWPRINT",
+      "PROCESSION",
+      "PUDDLE",
+      "RIBBON",
+      "SQUIRREL",
+      "WHISTLE",
+      "WOOLLY"
+     ],
+     "placements": [
+      {
+       "word": "BASKET",
+       "r": 4,
+       "c": 0,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PROCESSION",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "LEAVES",
+       "r": 10,
+       "c": 7,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "WHISTLE",
+       "r": 10,
+       "c": 8,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "WOOLLY",
+       "r": 6,
+       "c": 11,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "BONFIRE",
+       "r": 9,
+       "c": 10,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "CANDLE",
+       "r": 1,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 7,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "COUNCIL",
+       "r": 8,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BLANKET",
+       "r": 2,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "MITTENS",
+       "r": 0,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PAWPRINT",
+       "r": 4,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SQUIRREL",
+       "r": 0,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "MARCHING",
+       "r": 11,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "GLITTER",
+       "r": 1,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LANTERN",
+       "r": 10,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "GLUE",
+       "r": 10,
+       "c": 9,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "AUTUMN",
+       "r": 2,
+       "c": 4,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "PUDDLE",
+       "r": 7,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "DRUM",
+       "r": 11,
+       "c": 8,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CIDER",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BARN",
+       "r": 2,
+       "c": 11,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "HAT",
+       "r": 11,
+       "c": 7,
+       "dr": -1,
+       "dc": -1
+      }
+     ],
+     "id": 58
+    },
+    {
+     "seed": 10120002,
+     "grid": [
+      "SMMUDDTBOOTS",
+      "QLAMPLIGHTER",
+      "UARTEKSABYKE",
+      "IMCSPCSALCNI",
+      "RPHWCLUCIRAR",
+      "RPIHYAERCALR",
+      "EONILSRANYBE",
+      "LSGSLSIFUOWT",
+      "DTLTORFTONPR",
+      "DAULOONACORN",
+      "UREEWOOREDIC",
+      "PINTSMBAOCOC"
+     ],
+     "clue": "MUDDY PAW PRINTS",
+     "words": [
+      "ACORN",
+      "BASKET",
+      "BLANKET",
+      "BONFIRE",
+      "BOOTS",
+      "CIDER",
+      "CLASSROOM",
+      "COCOA",
+      "COUNCIL",
+      "CRAFT",
+      "CRAYON",
+      "GLUE",
+      "LAMPLIGHTER",
+      "LAMPPOST",
+      "MARCHING",
+      "PUDDLE",
+      "SCARF",
+      "SQUIRREL",
+      "STAR",
+      "TERRIER",
+      "TISSUE",
+      "WHISTLE",
+      "WOOLLY"
+     ],
+     "placements": [
+      {
+       "word": "LAMPLIGHTER",
+       "r": 1,
+       "c": 1,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "TISSUE",
+       "r": 0,
+       "c": 6,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WOOLLY",
+       "r": 10,
+       "c": 4,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "BLANKET",
+       "r": 6,
+       "c": 10,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "MARCHING",
+       "r": 0,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "BASKET",
+       "r": 2,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BONFIRE",
+       "r": 11,
+       "c": 6,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "LAMPPOST",
+       "r": 1,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CLASSROOM",
+       "r": 3,
+       "c": 5,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "TERRIER",
+       "r": 7,
+       "c": 11,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "SQUIRREL",
+       "r": 0,
+       "c": 0,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "SCARF",
+       "r": 3,
+       "c": 3,
+       "dr": 1,
+       "dc": 1
+      },
+      {
+       "word": "COUNCIL",
+       "r": 9,
+       "c": 8,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CRAYON",
+       "r": 3,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "WHISTLE",
+       "r": 4,
+       "c": 3,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PUDDLE",
+       "r": 11,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CIDER",
+       "r": 10,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "BOOTS",
+       "r": 0,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "COCOA",
+       "r": 11,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "ACORN",
+       "r": 9,
+       "c": 7,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "CRAFT",
+       "r": 4,
+       "c": 7,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "GLUE",
+       "r": 7,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "STAR",
+       "r": 7,
+       "c": 1,
+       "dr": 1,
+       "dc": 0
+      }
+     ],
+     "id": 59
+    },
+    {
+     "seed": 10150001,
+     "grid": [
+      "GNIRTSOPPMAL",
+      "TTUNTSEHCLMN",
+      "HHTNIRPWAPEO",
+      "EGCTSTMNNREI",
+      "TIORHUEODRTS",
+      "ELUERGYLLRIS",
+      "KINDIAIAEINE",
+      "NWCIRHPLNBGC",
+      "ATICCPGLNBEO",
+      "LDLHLEEFFOTR",
+      "BOREKNOCMNOP",
+      "REPAPARADEEM"
+     ],
+     "clue": "THE STRING LED HOME",
+     "words": [
+      "APPLE",
+      "BLANKET",
+      "CANDLE",
+      "CHESTNUT",
+      "CHILDREN",
+      "CIDER",
+      "CONKER",
+      "COUNCIL",
+      "CRAYON",
+      "DRUM",
+      "LAMPPOST",
+      "LANE",
+      "MEETING",
+      "MOONLIGHT",
+      "PAPER",
+      "PARADE",
+      "PAWPRINT",
+      "PROCESSION",
+      "RIBBON",
+      "STRING",
+      "TOFFEE",
+      "TWILIGHT"
+     ],
+     "placements": [
+      {
+       "word": "CHESTNUT",
+       "r": 1,
+       "c": 8,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "TWILIGHT",
+       "r": 8,
+       "c": 1,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "CONKER",
+       "r": 10,
+       "c": 7,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CANDLE",
+       "r": 1,
+       "c": 8,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "CHILDREN",
+       "r": 8,
+       "c": 4,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "MOONLIGHT",
+       "r": 11,
+       "c": 11,
+       "dr": -1,
+       "dc": -1
+      },
+      {
+       "word": "PAWPRINT",
+       "r": 2,
+       "c": 9,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "LAMPPOST",
+       "r": 0,
+       "c": 11,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "STRING",
+       "r": 0,
+       "c": 5,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "CRAYON",
+       "r": 8,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "MEETING",
+       "r": 1,
+       "c": 10,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "RIBBON",
+       "r": 5,
+       "c": 9,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "PARADE",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": 1
+      },
+      {
+       "word": "BLANKET",
+       "r": 10,
+       "c": 0,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "COUNCIL",
+       "r": 3,
+       "c": 2,
+       "dr": 1,
+       "dc": 0
+      },
+      {
+       "word": "APPLE",
+       "r": 6,
+       "c": 7,
+       "dr": 1,
+       "dc": -1
+      },
+      {
+       "word": "PROCESSION",
+       "r": 10,
+       "c": 11,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "TOFFEE",
+       "r": 9,
+       "c": 10,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "PAPER",
+       "r": 11,
+       "c": 4,
+       "dr": 0,
+       "dc": -1
+      },
+      {
+       "word": "DRUM",
+       "r": 6,
+       "c": 3,
+       "dr": -1,
+       "dc": 1
+      },
+      {
+       "word": "CIDER",
+       "r": 8,
+       "c": 3,
+       "dr": -1,
+       "dc": 0
+      },
+      {
+       "word": "LANE",
+       "r": 1,
+       "c": 9,
+       "dr": 1,
+       "dc": -1
+      }
+     ],
+     "id": 60
+    }
+   ]
+  }
+ ]
+}

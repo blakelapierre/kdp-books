@@ -29,6 +29,7 @@ standalone/                  # books that are not part of a series (one folder e
   06-stories-we-keep/
   07-three-clues-by-candlelight/
   08-window-seat-codewords/
+  11-thimble-hill-word-search-mysteries/
 marketing/                   # marketing kit: ads, reviews, A+ Content, social, holiday plan
 README.md                    # this file
 ideas-log.md                 # every idea built or evaluated (check before choosing a new one)
@@ -72,6 +73,7 @@ Current books:
 6. `06-stories-we-keep`: built hardcover, not published
 7. `07-three-clues-by-candlelight`: built Kindle ebook (audio-first), not published
 8. `08-window-seat-codewords`: built paperback, not published
+11. `11-thimble-hill-word-search-mysteries`: built paperback, not published
 
 ## Books
 
@@ -108,6 +110,7 @@ Current books:
 | *The Backseat Detectives*: 24 Road Trip Mysteries to Solve Out Loud (Kindle, audio-first) | Solve-it-yourself road-trip mini-mysteries for kids and families (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 11,409 words) | $3.99 | $2.75† | [10-the-backseat-detectives/README.md](standalone/10-the-backseat-detectives/README.md) |
 | *Twenty-Five Christmases*: A Family Christmas Memory Book to Fill In Year by Year (hardcover) | Fill-in family Christmas memory book: 25 years × 4 pages (photo, guests, tree, Eve and morning, table, gifts, best moment, wish), traditions, recipes | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 132 | $19.99 | $4.76 | [12-twenty-five-christmases/README.md](standalone/12-twenty-five-christmases/README.md) |
 | *Twenty-Four Nights at the Christmas Post*: Cozy Christmas Mysteries to Solve Out Loud (Kindle, audio-first) | Solve-it-yourself Christmas countdown mini-mysteries for kids and families, one per December night (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 12,562 words) | $3.99 | $2.74† | [13-twenty-four-nights-at-the-christmas-post/README.md](standalone/13-twenty-four-nights-at-the-christmas-post/README.md) |
+| *The Thimble Hill Word Search Mysteries*: 60 Cozy Word Search Puzzles with a Hidden Clue in Every Grid | Story-led hidden-message word searches (10 gentle village mysteries) | Draft, print-ready paperback. Not yet published or submitted to KDP | 118 | $9.99 | $3.58 | [11-thimble-hill-word-search-mysteries/README.md](standalone/11-thimble-hill-word-search-mysteries/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -285,6 +288,16 @@ python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.pn
 python3 build.py      # -> ../standalone-08-window-seat-codewords-interior.pdf and ../build-info.json
 python3 cover.py      # -> ../standalone-08-window-seat-codewords-cover.pdf and ../tmp/standalone-08-window-seat-codewords-cover-guides.pdf
 cp ../standalone-08-window-seat-codewords-interior.pdf ../interior-standalone-08-window-seat-codewords.pdf; cp ../standalone-08-window-seat-codewords-cover.pdf ../cover-standalone-08-window-seat-codewords.pdf   # phone-friendly copies
+cd ../../..
+
+# Standalone: The Thimble Hill Word Search Mysteries (paperback)
+cd standalone/11-thimble-hill-word-search-mysteries/src
+python3 gen.py        # build the 60 hidden-message grids -> ../data.json (cached per case in ../tmp/)
+python3 verify.py     # independent re-solve of every grid -> ../verification.md
+python3 illustrations.py   # ink illustrations -> ../illustrations/*.png
+python3 build.py      # -> ../standalone-11-thimble-hill-word-search-mysteries-interior.pdf and ../build-info.json
+python3 cover.py      # -> ../standalone-11-thimble-hill-word-search-mysteries-cover.pdf
+cp ../standalone-11-thimble-hill-word-search-mysteries-interior.pdf ../interior-standalone-11-thimble-hill-word-search-mysteries.pdf; cp ../standalone-11-thimble-hill-word-search-mysteries-cover.pdf ../cover-standalone-11-thimble-hill-word-search-mysteries.pdf   # phone-friendly copies
 cd ../../..
 
 # Standalone: Two Cups of Tea (hardcover)
