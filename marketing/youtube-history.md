@@ -1058,3 +1058,46 @@ Part 2 / Part 1 (views): unchanged.
 Part 2 / Part 1: C23 colour 33/117 = 28%. C24, C22 and C19 colour P2s not on TikTok yet (122-, 289- and 173-view P1s waiting). C14 colour 69/~188 = 37%.
 
 Notes: No new TikTok posts in the last ~24 hours (the 7h repost routine failed today), so the 7-day views slid 21%. C24 P1 became the third evening P1 in a row to clear 100. YouTube flat for a fourth day.
+
+## 2026-11-02, ~6:45 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-11-02/` on the box. Changes vs the Nov 1 check. No "unusual traffic" blocks today.
+
+Subscribers: 30 (+1 in last 28 days). Last 28 days (Oct 5–Nov 1): 832 views, 11.3 watch hours. Realtime last 48h: **44 views**, mostly the new book-promo Shorts: Advent Clock "Door 1 answer" (Part 2) 31, cocoa tin thief (Part 2) 4, crossword clues Short 3. Newest upload "Who took the cocoa tin?" 0 in its first hour. Top content: C9 P1 87 (0:28), C8 P2 73 (0:28), C3 colour P2 36, C25 P2 33 (0:24, 27.5%), Advent Door 1 P2 25 (0:12, **53.7%** viewed).
+
+Shorts (last 28 days): 705 views, 144 engaged views, 2 likes, +1 subscriber, **stayed to watch 18.3%** / swiped away 81.7%. Traffic: Shorts feed 78.0%, YouTube search 14.0%, channel pages 3.0%, other YouTube features 2.7%, browse 1.3%, other 1.0%. Part 1 → Part 2 link-click data: not shown.
+
+Comments: none seen from the last 2 days (Unresponded filter, Most relevant sort only shows old comments).
+
+**Tidewhistle Shorts: ~871 public views on 70 posts (+2).** Movers: C11 colour P2 4 (+1), C14 P2 4 (+1). No new Tidewhistle YouTube uploads.
+
+Wide Tidewhistle videos: **49** on 27 videos (+1); C13 colour wide (ldJRYcHfXS0) 8 (+1).
+
+Book-promo Shorts (new): Advent Door 1 P2 (uZ4_xp544qE) 26, Advent Door 1 P1 (RhjW9Z-PSVQ) 0 public, cocoa tin P2 (GwwT2qMGjYw) 2, cocoa tin P1 (9gm15mpmZmg) 0, crossword clues (XZ-AnE6LYfw) 6 (+3).
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**66** posts (+7), 0 drafts. Followers **1** (net 0).
+
+**Last 7 days (Studio):** video views **983** (-48, -4.7%; up from 888 yesterday), profile views **43** (+6), likes **13** (0), comments 0, shares 0. Traffic: For You 95.2%, Personal profile 4.2%, Search 0.7%. Search queries: "whodunit mystery puzzles", "a rare orchid plant vanished on a windy night", one Japanese spy-game query.
+
+**Public (yt-dlp):** total views **3635** (**+378** vs 3257).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| Frostwood 1 cocoa tin P1 (Nov 2 evening) | 7703754989637733662 | 0 (new, minutes old) |
+| Frostwood 1 cocoa tin P2 (Nov 2 evening) | 7703754795194060062 | 0 (new) |
+| C26 P1 "Who was behind her?" (Nov 2, 6:30 PM) | 7703736063277239583 | 37 (new) |
+| C25 P2 "The Teaspoon Thief" (Nov 2, 4:38 AM) | 7703521362039573790 | 28 (new) |
+| Advent Clock Door 1 P1 (Nov 1, 10:31 PM) | 7703426988073176351 | **99** (new) |
+| Advent Clock Door 1 P2 (Nov 1, 10:30 PM) | 7703426720782716191 | 3 (new) |
+| C25 P1 "Who takes the spoons?" (Nov 1, 9:35 PM) | 7703412514175978782 | **178** (new), 5 likes |
+| C24 colour P1 "Which way did it blow?" | 7702979633024601375 | 128 (+6) |
+| C23 colour P1 / P2 | 7702656064650546462 / 7702763974227397919 | 120 (+3) / 37 (+4) |
+| C22 colour P1 "Who's fibbing?" | 7702221175967010078 | 291 (+2) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C25 28/178 = 16% (P2 at 4:38 AM), C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/99 = 3% (P2 posted a minute *before* P1). On YouTube the Advent Door 1 P2 got 26–31 views while its P1 shows 0 public.
+
+Notes: Posting resumed (7 new TikToks), and C25 P1 at 9:35 PM became the fourth evening P1 in a row to clear 100. The Advent Door 1 pair went up in the wrong order on both platforms, so viewers see the answer first.
