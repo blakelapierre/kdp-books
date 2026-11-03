@@ -93,6 +93,7 @@ Current books:
 | 10 | *Snow Paths of Frostwood*: 160 Nurikabe Logic Puzzles (Easy to Expert) | Nurikabe (paperback) | Draft, print-ready paperback. Not yet published or submitted to KDP | 160 | $9.99 | $3.07 | [10-snow-paths-of-frostwood/README.md](series/frostwood/10-snow-paths-of-frostwood/README.md) |
 | 11 | *Chimneys of Frostwood*: 100 Skyscrapers Logic Puzzles (Easy to Expert) | Skyscrapers / Towers (hardcover) | Draft, print-ready hardcover. Not yet published or submitted to KDP | 88 | $17.99 | $3.99 | [11-chimneys-of-frostwood/README.md](series/frostwood/11-chimneys-of-frostwood/README.md) |
 | 13 | *The Fibbers of Frostwood*: 120 Truth-Teller and Fibber Logic Puzzles (Kindle) | Truth-tellers and fibbers / knights and knaves (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook) | $3.99 | $2.65† | [13-the-fibbers-of-frostwood/README.md](series/frostwood/13-the-fibbers-of-frostwood/README.md) |
+| 14 | *The Icicles of Frostwood*: 160 Futoshiki Logic Puzzles (Easy to Expert) | Futoshiki / More or Less (paperback) | Draft, print-ready paperback. Not yet published or submitted to KDP | 160 | $9.99 | $3.07 | [14-icicles-of-frostwood/README.md](series/frostwood/14-icicles-of-frostwood/README.md) |
 
 ### Standalone ([standalone/](standalone/))
 
@@ -225,6 +226,17 @@ cd ../../../..
 # Book 13: The Fibbers of Frostwood (Kindle ebook)
 cd series/frostwood/13-the-fibbers-of-frostwood/src
 PYTHONHASHSEED=0 python3 master.py   # gen.py (fibgen.py model + step solver) -> verify.py (independent: parses the printed English, brute force, own deduction ladder) -> illustrations -> cover JPG -> EPUB (~15 s; optional EPUBCHECK_JAR/JAVA env vars run EPUBCheck)
+cd ../../../..
+
+# Book 14: The Icicles of Frostwood (paperback)
+cd series/frostwood/14-icicles-of-frostwood/src
+PYTHONHASHSEED=0 python3 master.py   # generate and grade the 160 Futoshiki puzzles -> ../data.json (~3 min on 8 cores; futoshiki.py is the logic grader, gen.py sets the bands)
+python3 verify.py     # independent SAT + backtracking (fut_bt.py) uniqueness check + band fit -> ../verification.md
+python3 illustrations.py   # draw the ink illustrations -> ../illustrations/*.png (deterministic)
+python3 build.py      # -> ../frostwood-14-icicles-of-frostwood-interior.pdf and ../build-info.json (worked-example text is in build.py)
+python3 cover.py      # -> ../frostwood-14-icicles-of-frostwood-cover.pdf, ../cover-info.json and ../tmp/ guides PDF
+python3 check_margins.py   # no ink outside the text area / near the trim
+python3 docs.py       # -> ../README.md and ../listing.md
 cd ../../../..
 
 # Standalone: The Advent Clock
