@@ -1,8 +1,8 @@
 seq	name	book	asin	amazon_url	part	related_part2	file	yt_status	tt_status	yt_url	tt_url
-1	advent-clock	The Advent Clock	B0HMW1MR5T	https://www.amazon.com/dp/B0HMW1MR5T	P1	advent-clock-p2	promo-advent-clock.mp4	queued	queued		
-2	advent-clock-p2	The Advent Clock	B0HMW1MR5T	https://www.amazon.com/dp/B0HMW1MR5T	P2		promo-advent-clock-p2.mp4	queued	queued		
-3	frostwood-cocoa-tin	The Thief Stayed the Night (Frostwood 1)	B0HLMMS675	https://www.amazon.com/dp/B0HLMMS675	P1	frostwood-cocoa-tin-p2	promo-frostwood-cocoa-tin.mp4	queued	queued		
-4	frostwood-cocoa-tin-p2	The Thief Stayed the Night (Frostwood 1)	B0HLMMS675	https://www.amazon.com/dp/B0HLMMS675	P2		promo-frostwood-cocoa-tin-p2.mp4	queued	queued		
+1	advent-clock	The Advent Clock	B0HMW1MR5T	https://www.amazon.com/dp/B0HMW1MR5T	P1	advent-clock-p2	promo-advent-clock.mp4	posted	posted	https://youtube.com/shorts/RhjW9Z-PSVQ	https://www.tiktok.com/@shortmysterycases/video/7703426988073176351
+2	advent-clock-p2	The Advent Clock	B0HMW1MR5T	https://www.amazon.com/dp/B0HMW1MR5T	P2		promo-advent-clock-p2.mp4	posted	posted	https://youtube.com/shorts/uZ4_xp544qE	https://www.tiktok.com/@shortmysterycases/video/7703426720782716191
+3	frostwood-cocoa-tin	The Thief Stayed the Night (Frostwood 1)	B0HLMMS675	https://www.amazon.com/dp/B0HLMMS675	P1	frostwood-cocoa-tin-p2	promo-frostwood-cocoa-tin.mp4	posted	posted	https://youtube.com/shorts/9gm15mpmZmg	https://www.tiktok.com/@shortmysterycases/video/7703754989637733662
+4	frostwood-cocoa-tin-p2	The Thief Stayed the Night (Frostwood 1)	B0HLMMS675	https://www.amazon.com/dp/B0HLMMS675	P2		promo-frostwood-cocoa-tin-p2.mp4	posted	posted	https://youtube.com/shorts/GwwT2qMGjYw	https://www.tiktok.com/@shortmysterycases/video/7703754795194060062
 5	frostwood-express	Frostwood Express (Frostwood 2)	B0HLMB966Q	https://www.amazon.com/dp/B0HLMB966Q	P1	frostwood-express-p2	promo-frostwood-express.mp4	queued	queued		
 6	frostwood-express-p2	Frostwood Express (Frostwood 2)	B0HLMB966Q	https://www.amazon.com/dp/B0HLMB966Q	P2		promo-frostwood-express-p2.mp4	queued	queued		
 7	bridges-of-frostwood	Bridges of Frostwood	B0HN6JKQQV	https://www.amazon.com/dp/B0HN6JKQQV	single		promo-bridges-of-frostwood.mp4	queued	queued		
