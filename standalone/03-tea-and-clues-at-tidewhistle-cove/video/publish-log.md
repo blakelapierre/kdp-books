@@ -418,3 +418,7 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - 2026-11-02 2:38 AM PT: TikTok (requeue seq 31): Case 25 The Teaspoon Thief Part 2 (Colour), "The answer: 🥄 Case 25 The Teaspoon Thief", AI label on, Everyone; "Content under review" (Only me) at post time. https://www.tiktok.com/@shortmysterycases/video/7703521362039573790
 
 - 2026-11-02 4:30 PM PT: TikTok (requeue seq 32): Case 26 The Winning Ticket Part 1 (Colour), "Can you solve it? 🎟 Who was behind her?", AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. https://www.tiktok.com/@shortmysterycases/video/7703736063277239583
+
+## Colour repost queue (2026-11-03 ~1:30 PM PT)
+- YouTube: queue complete, nothing to post.
+- TikTok skipped this run (1:28 PM PT is outside the 3-10 PM Part 1 window; next pending is Case 27 P1 and no Part 2 with a posted Part 1 is pending).
