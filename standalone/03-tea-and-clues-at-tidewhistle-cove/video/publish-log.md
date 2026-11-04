@@ -422,3 +422,5 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-11-03 ~1:30 PM PT)
 - YouTube: queue complete, nothing to post.
 - TikTok skipped this run (1:28 PM PT is outside the 3-10 PM Part 1 window; next pending is Case 27 P1 and no Part 2 with a posted Part 1 is pending).
+
+- 2026-11-03 8:31 PM PT: TikTok repost Case 27 Part 1 (Colour) "Can you solve it? 🌫 What's wrong with his night?" posted, ID 7704169300042763551 (under review at post time) https://www.tiktok.com/@shortmysterycases/video/7704169300042763551
