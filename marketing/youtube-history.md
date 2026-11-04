@@ -1101,3 +1101,46 @@ Book-promo Shorts (new): Advent Door 1 P2 (uZ4_xp544qE) 26, Advent Door 1 P1 (Rh
 Part 2 / Part 1: C25 28/178 = 16% (P2 at 4:38 AM), C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/99 = 3% (P2 posted a minute *before* P1). On YouTube the Advent Door 1 P2 got 26–31 views while its P1 shows 0 public.
 
 Notes: Posting resumed (7 new TikToks), and C25 P1 at 9:35 PM became the fourth evening P1 in a row to clear 100. The Advent Door 1 pair went up in the wrong order on both platforms, so viewers see the answer first.
+
+## 2026-11-03, ~6:47 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-11-03/` on the box. Changes vs the Nov 2 check. No "unusual traffic" blocks today.
+
+Subscribers: 30 (+1 in last 28 days). Last 28 days (Oct 6–Nov 2): 857 views, 10.4 watch hours. Realtime last 48h: **329 views** (up from 44): Advent Clock "Door 1 answer" (Part 2) 265, Frostwood train-track 10-second puzzle 38, cocoa tin thief (Part 2) 16. Top content: C9 P1 87 (0:28), Advent Door 1 P2 84 in Studio (0:11, **51.6%** viewed), C8 P2 73 (0:28), C8 P1 34, C2 P1 34, C25 P2 33.
+
+Shorts (last 28 days): 728 views, 164 engaged views, 2 likes, +1 subscriber, **stayed to watch 20.0%** (up from 18.3%) / swiped away 80.0%. Traffic: Shorts feed 79.5%, YouTube search 13.3%, channel pages 2.9%, other YouTube features 2.1%, browse 1.2%, other 1.0%. Part 1 → Part 2 link-click data: not shown.
+
+Comments: none from the last 2 days (Unresponded filter only shows old comments on non-mystery videos).
+
+**Tidewhistle Shorts: ~872 public views on 70 posts (+1).** Only mover: C2 P2 "Who took the prize marrow?" (49zUT21OQ98) 8 (+1). No new Tidewhistle YouTube uploads.
+
+Wide Tidewhistle videos: **50** on 27 videos (+1); C26 wide (oZvwGpdVm9c) 2 (+1).
+
+Book-promo Shorts: **Advent Door 1 P2 (uZ4_xp544qE) 216 public (+190)**, Advent Door 1 P1 (RhjW9Z-PSVQ) still 0 public, cocoa tin P2 (GwwT2qMGjYw) 14 (+12), cocoa tin P1 (9gm15mpmZmg) 0, Frostwood train-track puzzle (F92ZAi4ii6M) 39 (new). Whole channel Shorts list public total 2734 (+242).
+
+Part 2 / Part 1 (views): Tidewhistle unchanged. Advent Door 1 is inverted (P2 216 vs P1 0 public), because the answer Short went up first and is the one the feed is pushing.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**67** posts (+1), 0 drafts. Followers **1** (net 0).
+
+**Last 7 days (Studio):** video views **1.3K** (+160, +14.6%), profile views **56** (+18), likes **19** (+6), comments 0, shares 0. Traffic: For You 91.8%, Personal profile 7.5%, Search 0.7%. Search queries: "whodunit mystery puzzles", "a rare orchid plant vanished on a windy night", "AR test answers", one Japanese spy-game query.
+
+**Public (yt-dlp):** total views **3656** (**+21** vs 3635).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| Frostwood 2 Train Tracks puzzle (Nov 3, Studio stamp 7:38 PM) | 7704124653006064927 | 3 (new) |
+| Frostwood 1 cocoa tin P1 / P2 (Nov 2 evening) | 7703754989637733662 / 7703754795194060062 | 0 / 0 (still 0 after a day) |
+| C26 P1 "Who was behind her?" | 7703736063277239583 | 38 (+1) |
+| C25 P2 "The Teaspoon Thief" | 7703521362039573790 | 33 (+5) |
+| Advent Clock Door 1 P1 / P2 | 7703426988073176351 / 7703426720782716191 | 100 (+1) / 3 (0) |
+| C25 P1 "Who takes the spoons?" | 7703412514175978782 | 182 (+4) |
+| C15 colour P2 "The Warm Bonnet" | 7701033477457710366 | 27 (+7) |
+| C24 colour P1 | 7702979633024601375 | 128 (0) |
+
+**Review / Only me:** **0**. Newest 10 posts all show Everyone, no review, restricted or violation labels.
+
+Part 2 / Part 1: C25 33/182 = 18%, C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/100 = 3%. C26 P1 only 38 after a day, the first evening P1 in five to miss 100.
+
+Notes: Quiet day on public TikTok counts (+21), though Studio's 7-day window is up 15%. The two Frostwood cocoa tin TikToks sit at 0 after 24 hours, which looks like no distribution rather than a hold. On YouTube the Advent Door 1 answer Short broke out (265 realtime views in 48h) while its Part 1 has none.
