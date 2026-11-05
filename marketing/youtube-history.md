@@ -1144,3 +1144,46 @@ Part 2 / Part 1 (views): Tidewhistle unchanged. Advent Door 1 is inverted (P2 21
 Part 2 / Part 1: C25 33/182 = 18%, C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/100 = 3%. C26 P1 only 38 after a day, the first evening P1 in five to miss 100.
 
 Notes: Quiet day on public TikTok counts (+21), though Studio's 7-day window is up 15%. The two Frostwood cocoa tin TikToks sit at 0 after 24 hours, which looks like no distribution rather than a hold. On YouTube the Advent Door 1 answer Short broke out (265 realtime views in 48h) while its Part 1 has none.
+
+## 2026-11-04, ~6:40 PM PT (YouTube Studio Analytics, TikTok Studio, public yt-dlp)
+
+Raw public pulls in `/workspace/tidewhistle-stats/2026-11-04/` on the box. Changes vs the Nov 3 check. No "unusual traffic" blocks. User's computer was offline; browsing went over the box network.
+
+Subscribers: 30 (+1 in last 28 days). Last 28 days (Oct 7–Nov 3): 1,058 views, 10.4 watch hours. Realtime last 48h: **352 views**: Advent Door 1 answer (P2) 245, cocoa tin thief (P2) 54, train-track puzzle 43. Newest upload "Can you connect all 10 islands? Bridges puzzle" 0 views at 54 min. Top content: Advent Door 1 P2 282 (0:10, 47.3%), C9 P1 87 (0:28), C8 P2 70 (0:15), train track 42 (0:15, 47.0%), C25 P2 33, C2 P1 31, cocoa tin P2 24 (0:11, 40.8%).
+
+Shorts (last 28 days): 931 views (+179%), 232 engaged views, 2 likes, +1 subscriber, **stayed to watch 21.8%** (up from 20.0%) / swiped away 78.2%. Traffic: Shorts feed 84.5%, YouTube search 10.5%, channel pages 2.0%, other YouTube features 1.8%, browse 0.5%, other 0.5%. Part 1 → Part 2 link-click data: not shown.
+
+Comments: none from the last 2 days.
+
+**Tidewhistle Shorts: ~873 public views on 70 posts (+1).** Only mover: C24 P2 (dejOGXMfMJ8) 22 (+1). No new Tidewhistle YouTube uploads.
+
+Wide Tidewhistle videos: **50** on 27 videos (0). Whole wide list 8020 (0).
+
+Book-promo Shorts: Advent Door 1 P2 (uZ4_xp544qE) **279** (+63), P1 (RhjW9Z-PSVQ) still 0 public; cocoa tin P2 (GwwT2qMGjYw) **50** (+36), P1 still 0; train track P1 (F92ZAi4ii6M) 43 (+4), train track answer P2 (_HK237l2OWE) 2 (new); Bridges islands puzzle (jqxbkrGBChU) new, no public count yet. Whole channel Shorts list 2840 (+106) on 95.
+
+### TikTok (@shortmysterycases) — Studio Analytics + Content
+
+**72** posts (+5), 0 drafts. Followers **2** all-time (Followers tab), net 0 this week.
+
+**Last 7 days (Studio):** video views **1.1K** (+61, +5.8%), profile views **50** (+10), likes **18** (+6), comments 0, shares 0. Traffic: For You 92.9%, Personal profile 5.8%, Search 1.3%. Search queries: "tide of window shorts 15" 30%, "Tide Of Window - shorts 15" 20%, "mystery ticket" 10%, Japanese spy-game query 10%, "whodunit mystery puzzles" 10%.
+
+**Public (yt-dlp):** total views **4064** (**+408** vs 3656).
+
+| Post | ID | Views (change) |
+|---|---|---|
+| Tidewhistle "One truth, one fib" P1 (Studio stamp Nov 4, 8:08 PM) | 7704503571001183518 | 0 (new) |
+| Bridges of Frostwood puzzle (Nov 4, 7:46 PM) | 7704497872410086686 | 5 (new) |
+| Frostwood Express train-track solution (Nov 4, 7:43 PM) | 7704497060124364062 | 1 (new) |
+| C27 P2 "The Silent Foghorn" (Nov 4, 5:33 AM) | 7704277855705877791 | **92** (new) |
+| C27 P1 "What's wrong with his night?" (Nov 3, 10:31 PM) | 7704169300042763551 | **198** (new), 2 likes |
+| Frostwood 2 Train Tracks puzzle | 7704124653006064927 | **107** (+104) |
+| Frostwood 1 cocoa tin P1 / P2 | 7703754989637733662 / 7703754795194060062 | 1 (+1) / 0 |
+| Advent Door 1 P1 | 7703426988073176351 | 101 (+1) |
+| C15 colour P2 | 7701033477457710366 | 30 (+3) |
+| C17 P2 | 7696824199834258718 | 5 (+3) |
+
+**Review / Only me:** **0**. Newest 10 all Everyone, 0 comments.
+
+Part 2 / Part 1: **C27 92/198 = 46%** (best yet; P2 at 5:33 AM), C25 33/182 = 18%, C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/101 = 3%.
+
+Notes: C27 P1 at 10:31 PM cleared 100 again (198), and its answer post carried nearly half. The Frostwood Train Tracks TikTok woke up overnight (3 to 107). On YouTube the book-promo answer Shorts keep growing (Advent P2 279, cocoa tin P2 50) while their Part 1s still show 0 public views. Two TikTok searches look for "Tide Of Window shorts 15", likely Case 15.
