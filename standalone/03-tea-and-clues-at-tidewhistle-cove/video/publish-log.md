@@ -426,3 +426,5 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 - 2026-11-03 8:31 PM PT: TikTok repost Case 27 Part 1 (Colour) "Can you solve it? 🌫 What's wrong with his night?" posted, ID 7704169300042763551 (under review at post time) https://www.tiktok.com/@shortmysterycases/video/7704169300042763551
 
 - 2026-11-04 3:33 AM PT: TikTok (requeue seq 34): Case 27 The Silent Foghorn Part 2 (Colour), "The answer: 🌫 Case 27 The Silent Foghorn", AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. https://www.tiktok.com/@shortmysterycases/video/7704277855705877791
+
+- 2026-11-04 6:08 PM PT: TikTok (requeue seq 35): Case 28 Truth and Fib Night Part 1 (Colour), "Can you solve it? 🍰 One truth, one fib", AI label on, Everyone; "Content under review" (Only me, 0 views) at post time. https://www.tiktok.com/@shortmysterycases/video/7704503571001183518 YouTube queue complete, nothing to post.
