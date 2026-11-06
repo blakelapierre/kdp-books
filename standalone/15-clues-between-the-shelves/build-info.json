@@ -1,0 +1,22 @@
+{
+  "title": "Clues Between the Shelves",
+  "subtitle": "Twenty-Eight Cozy Bookshop Mini-Mysteries to Solve by Ear: Gentle Solve-It-Yourself Cases from an Independent Bookshop, with the Answer After Every Pause",
+  "author": "Blake La Pierre",
+  "format": "Kindle ebook (EPUB 3, reflowable, text only) + DOCX for Kindle Create",
+  "audio_first": true,
+  "cases": 28,
+  "words": 11768,
+  "epub_bytes": 276892,
+  "docx_bytes": 59153,
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "delivery_fee_usd_est": 0.04,
+  "royalty_usd_est": 2.75,
+  "royalty_math": "0.70 x 3.99 - 0.04 = 2.75",
+  "files": {
+    "epub": "standalone-15-clues-between-the-shelves.epub",
+    "docx": "standalone-15-clues-between-the-shelves.docx",
+    "cover": "standalone-15-clues-between-the-shelves-cover.jpg"
+  }
+}

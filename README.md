@@ -73,7 +73,13 @@ Current books:
 6. `06-stories-we-keep`: built hardcover, not published
 7. `07-three-clues-by-candlelight`: built Kindle ebook (audio-first), not published
 8. `08-window-seat-codewords`: built paperback, not published
+9. `09-two-cups-of-tea`: built hardcover, not published
+10. `10-the-backseat-detectives`: built Kindle ebook (audio-first), not published
 11. `11-thimble-hill-word-search-mysteries`: built paperback, not published
+12. `12-twenty-five-christmases`: built hardcover, not published
+13. `13-twenty-four-nights-at-the-christmas-post`: built Kindle ebook (audio-first), not published
+14. `14-overheard-at-our-house`: built hardcover, not published
+15. `15-clues-between-the-shelves`: built Kindle ebook (audio-first), not published
 
 ## Books
 
@@ -113,6 +119,7 @@ Current books:
 | *Twenty-Four Nights at the Christmas Post*: Cozy Christmas Mysteries to Solve Out Loud (Kindle, audio-first) | Solve-it-yourself Christmas countdown mini-mysteries for kids and families, one per December night (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 12,562 words) | $3.99 | $2.74† | [13-twenty-four-nights-at-the-christmas-post/README.md](standalone/13-twenty-four-nights-at-the-christmas-post/README.md) |
 | *The Thimble Hill Word Search Mysteries*: 60 Cozy Word Search Puzzles with a Hidden Clue in Every Grid | Story-led hidden-message word searches (10 gentle village mysteries) | Draft, print-ready paperback. Not yet published or submitted to KDP | 118 | $9.99 | $3.58 | [11-thimble-hill-word-search-mysteries/README.md](standalone/11-thimble-hill-word-search-mysteries/README.md) |
 | *Overheard at Our House*: A Keepsake Journal of the Funny, Sweet and Surprising Things Our Kids Say (hardcover) | Kids'-quotes keepsake journal: 144 quote spaces (36 big story pages + 108 quick entries), 6 speaker cards, family dictionary, big questions, jokes, letter | Draft, print-ready **hardcover**. Not yet published or submitted to KDP | 108 | $16.99 | $3.39 | [14-overheard-at-our-house/README.md](standalone/14-overheard-at-our-house/README.md) |
+| *Clues Between the Shelves*: 28 Cozy Bookshop Mysteries to Solve by Ear (Kindle, audio-first) | Solve-it-yourself bookshop mini-mysteries + text logic (no grids) | Draft, ebook-ready. Not yet published or submitted to KDP | — (ebook, 11,768 words) | $3.99 | $2.75† | [15-clues-between-the-shelves/README.md](standalone/15-clues-between-the-shelves/README.md) |
 
 All books are by Blake La Pierre and are 6 × 9 in (paperback or hardcover) with black ink on white paper. Every interior is illustrated with black-and-white ink drawings (frontispiece, title art, section openers and small vignettes).
 
@@ -334,6 +341,13 @@ python3 verify.py   # clue placement, snowflake message, Secret Santa logic, aud
 python3 cover.py    # -> ../standalone-13-twenty-four-nights-at-the-christmas-post-cover.jpg
 python3 build.py    # -> ../standalone-13-twenty-four-nights-at-the-christmas-post.epub, .docx, ../build-info.json
 cd ../../..
+
+
+# Standalone: Clues Between the Shelves (Kindle ebook, audio-first)
+cd standalone/15-clues-between-the-shelves/src
+python3 verify.py   # -> ../verification.md
+python3 cover.py    # -> ../standalone-15-clues-between-the-shelves-cover.jpg
+python3 build.py    # -> ../standalone-15-clues-between-the-shelves.epub, .docx and ../build-info.json
 
 # Standalone: Overheard at Our House (hardcover)
 cd standalone/14-overheard-at-our-house/src
