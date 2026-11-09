@@ -1187,3 +1187,13 @@ Book-promo Shorts: Advent Door 1 P2 (uZ4_xp544qE) **279** (+63), P1 (RhjW9Z-PSVQ
 Part 2 / Part 1: **C27 92/198 = 46%** (best yet; P2 at 5:33 AM), C25 33/182 = 18%, C23 colour 37/120 = 31%, Advent Door 1 TikTok 3/101 = 3%.
 
 Notes: C27 P1 at 10:31 PM cleared 100 again (198), and its answer post carried nearly half. The Frostwood Train Tracks TikTok woke up overnight (3 to 107). On YouTube the book-promo answer Shorts keep growing (Advent P2 279, cocoa tin P2 50) while their Part 1s still show 0 public views. Two TikTok searches look for "Tide Of Window shorts 15", likely Case 15.
+
+## 2026-11-08, ~6:45 PM PT (public counts only)
+
+Studio/TikTok Studio were not opened (the last several automated runs failed); numbers below are public yt-dlp pulls in `/workspace/tidewhistle-stats/2026-11-08/`, compared with the Nov 4 check (4 days earlier, no checks in between).
+
+### YouTube
+Channel Shorts list: **2872** views (+32 vs 2840) on 95 posts. Wide videos: **8023** (+3). Book-promo: Advent Door 1 P2 279 (0), train-track answer 5 (+3), train-track P1 47 (+4), Bridges islands puzzle 2. Subscribers, traffic sources, retention and comments: not available without Studio.
+
+### TikTok (@shortmysterycases)
+Public total **4531** views (**+467** vs 4064) on 72 posts. Newest: C28 answer 113, C28 P1 "One truth, one fib" 164 (was 0), Bridges puzzle 72 (was 5), train-track solution 93, C27 P2 96 / P1 205. Top overall: C? "Who wrote the note?" (colour) 336, "Who's fibbing?" (colour) 291. Case 28 P2/P1 = 113/164 = 69%; C27 96/205 = 47%. Review / Only me status not checked.
