@@ -15,6 +15,8 @@ Amazon only shows a Best Sellers Rank after a book's first sale.
 | Porch Swing Crosswords | [B0HN6QXPFG](https://www.amazon.com/dp/B0HN6QXPFG) | Paperback | 2026-10-16 |
 | Stories We Keep (standalone 06) | [B0HN6TSN7T](https://www.amazon.com/dp/B0HN6TSN7T) | Hardcover | 2026-10-16 |
 | Tea and Clues at Tidewhistle Cove (standalone 03) | [B0HNFZGV6T](https://www.amazon.com/dp/B0HNFZGV6T) | Kindle ebook | 2026-10-18 |
+| Stars over Frostwood (Frostwood 03) | [B0HQK44N59](https://www.amazon.com/dp/B0HQK44N59) | Paperback | 2026-11-05 |
+| Tents in Frostwood (Frostwood 04) | [B0HQK3S7WN](https://www.amazon.com/dp/B0HQK3S7WN) | Paperback | 2026-11-05 |
 
 ## 2026-10-05 (first check)
 
@@ -114,3 +116,28 @@ Notes:
 - Bridges of Frostwood still isn't linked to the "A Frostwood Puzzle Book" series (series still 2 books). The Advent Clock description still says "6 × 9 inch paperback" though it's a hardcover.
 - Amazon search for "Blake La Pierre" (newest first): no newly live books this week; same 7 titles plus the older "I Asked an AI" books.
 - Week-over-week vs 2026-10-26: prices unchanged; Advent Clock BSR worse (#363,825 to #1,402,979, no new sale); no new BSRs, ratings or reviews; Grok Bot co-author unchanged (two original Frostwood books only).
+
+## 2026-11-09
+
+| Book | Price | Overall BSR | Category ranks | Ratings | Stars | Reviews | Grok Bot co-author? |
+|---|---|---|---|---|---|---|---|
+| The Thief Stayed the Night | $9.99 | — (not shown) | — (not shown) | — (no review section in fetch) | — | none visible | Yes, "Grok Bot (Author)" |
+| Frostwood Express | $11.99 | — (not shown) | — (not shown) | — | — | none visible | Yes, "Grok Bot (Author)" |
+| The Advent Clock (hardcover) | $17.99 | #1,987,667 in Books | #7,807 Logic & Brain Teasers; #12,213 Puzzles | — | — | none visible | No, Blake only |
+| Bridges of Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Porch Swing Crosswords | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Stories We Keep (hardcover) | $17.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Tea and Clues at Tidewhistle Cove (Kindle, B0HNFZGV6T) | Search shows "$0.00, or $3.99 to buy"; product page shows $3.99 | — (not shown) | — | — | — | none visible | No, Blake only |
+| Stars over Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No; listed as "Blake Michael La Pierre" |
+| Tents in Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No; listed as "Blake Michael La Pierre" |
+
+Notes:
+- All nine product pages loaded (a few needed retries or the slugged URL). Paperbacks are In Stock; both hardcovers say "Usually ships within 8 days".
+- Newly live this week: *Stars over Frostwood* (paperback, $9.99, ASIN [B0HQK44N59](https://www.amazon.com/dp/B0HQK44N59), published November 5, 2026, 184 pages, ISBN 979-8140186852) and *Tents in Frostwood* (paperback, $9.99, ASIN [B0HQK3S7WN](https://www.amazon.com/dp/B0HQK3S7WN), published November 5, 2026, 184 pages, ISBN 979-8140191320). Both are listed as by Blake Michael La Pierre (not "Blake La Pierre") and do not show Grok Bot as a co-author. Neither page shows a Best Sellers Rank.
+- The Frostwood series went from 2 books last week to 5: *The Thief Stayed the Night* is Book 1 of 5, *Frostwood Express* Book 2 of 5, *Bridges of Frostwood* is now linked as Book 3 of 5 (it was not in the series last week), *Stars over Frostwood* Book 4 of 5, and *Tents in Frostwood* Book 5 of 5. The blurbs still call Stars "Book three" and Tents "Book four", which matches the original Frostwood numbering rather than Amazon's series order.
+- The Advent Clock's rank slid from #1,402,979 (Nov 2) to #1,987,667; category ranks went from #5,877 Logic & Brain Teasers / #9,025 Puzzles to #7,807 / #12,213. The daily BSR log shows the same slide (1,494,900 on Nov 3, 1,577,774 on Nov 4, 1,740,111 on Nov 6). No rank improvement that would suggest a new sale, so still just the one sale from about Oct 25.
+- No other book shows a BSR, so no other sales are visible. No ratings or reviews were visible on any page.
+- Tidewhistle's product page now shows $3.99 (last week it showed no price). Search still shows "$0.00, or $3.99 to buy", so it still looks enrolled in Kindle Unlimited (the plan was Select off).
+- The Advent Clock description still says "6 × 9 inch paperback" though it's a hardcover.
+- Amazon search for "Blake La Pierre" (Books, newest first) showed Tidewhistle, Stories We Keep, Porch Swing Crosswords, Bridges of Frostwood, The Advent Clock, and the older "I Asked an AI" books (plus a couple of unrelated authors). It did not list Stars or Tents, because those two use the author name "Blake Michael La Pierre". Title searches found them. A search for *Riddles by the Frostwood Fire* returned no matching book.
+- Week-over-week vs 2026-11-02: prices unchanged on the seven previously tracked books; Advent Clock BSR worse (#1,402,979 to #1,987,667, no new sale); two new live paperbacks added (no BSR yet); Bridges now linked into the series; Grok Bot co-author unchanged (still on the two original Frostwood books only).
