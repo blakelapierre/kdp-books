@@ -1197,3 +1197,13 @@ Channel Shorts list: **2872** views (+32 vs 2840) on 95 posts. Wide videos: **80
 
 ### TikTok (@shortmysterycases)
 Public total **4531** views (**+467** vs 4064) on 72 posts. Newest: C28 answer 113, C28 P1 "One truth, one fib" 164 (was 0), Bridges puzzle 72 (was 5), train-track solution 93, C27 P2 96 / P1 205. Top overall: C? "Who wrote the note?" (colour) 336, "Who's fibbing?" (colour) 291. Case 28 P2/P1 = 113/164 = 69%; C27 96/205 = 47%. Review / Only me status not checked.
+
+## 2026-11-09, ~6:50 PM PT (public counts only)
+
+Studio/TikTok Studio not opened (usage-saving, public yt-dlp pulls; compared with the Nov 8 check).
+
+### YouTube
+Channel Shorts list: **2874** views (+2 vs 2872) on 91 listed posts. Book-promo: Advent Door 1 P2 279 (0), cocoa tin P2 64 (+14 vs 50 on Nov 4), train-track P1 47 (0), answer 5 (0), Bridges islands puzzle 2 (0). Subscribers, traffic, retention, comments: not available without Studio. Note: the Porch Swing Crosswords Short posted today was not in the pulled list yet.
+
+### TikTok (@shortmysterycases)
+Public total **4732** views (**+201** vs 4531) on 75 posts. Newest: Porch Swing Crosswords Short 89 (new), C29 P1 "Who drank this tea?" 109 (new), C28 answer 113 (0), C28 P1 164 (0), Bridges puzzle 72, train-track solution 93, C27 P2 96 / P1 206. Review / Only me not checked.
