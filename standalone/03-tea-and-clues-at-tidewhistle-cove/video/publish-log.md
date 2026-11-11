@@ -434,3 +434,4 @@ AI label on, comments on, Disclose off, Everyone selected (both showed Only me /
 ## Colour repost queue (2026-11-05 ~7:30 AM PT)
 - YouTube: queue complete, nothing to post.
 - TikTok skipped this run (7:29 AM PT is outside the 3-10 PM Part 1 window; next pending is Case 29 P1 and no Part 2 with a posted Part 1 is pending).
+- 2026-11-10 3:54 PM PT: TikTok (requeue seq 38): Case 30 Part 1 (Colour) posted, AI label on, Everyone (link not captured; see @shortmysterycases). Seqs 16, 20, 25 still pending but their colour files are missing.
