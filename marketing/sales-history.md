@@ -17,6 +17,7 @@ Amazon only shows a Best Sellers Rank after a book's first sale.
 | Tea and Clues at Tidewhistle Cove (standalone 03) | [B0HNFZGV6T](https://www.amazon.com/dp/B0HNFZGV6T) | Kindle ebook | 2026-10-18 |
 | Stars over Frostwood (Frostwood 03) | [B0HQK44N59](https://www.amazon.com/dp/B0HQK44N59) | Paperback | 2026-11-05 |
 | Tents in Frostwood (Frostwood 04) | [B0HQK3S7WN](https://www.amazon.com/dp/B0HQK3S7WN) | Paperback | 2026-11-05 |
+| Fences of Frostwood (Frostwood 08) | [B0HQK22FVN](https://www.amazon.com/dp/B0HQK22FVN) | Hardcover | 2026-11-05 |
 
 ## 2026-10-05 (first check)
 
@@ -141,3 +142,29 @@ Notes:
 - The Advent Clock description still says "6 × 9 inch paperback" though it's a hardcover.
 - Amazon search for "Blake La Pierre" (Books, newest first) showed Tidewhistle, Stories We Keep, Porch Swing Crosswords, Bridges of Frostwood, The Advent Clock, and the older "I Asked an AI" books (plus a couple of unrelated authors). It did not list Stars or Tents, because those two use the author name "Blake Michael La Pierre". Title searches found them. A search for *Riddles by the Frostwood Fire* returned no matching book.
 - Week-over-week vs 2026-11-02: prices unchanged on the seven previously tracked books; Advent Clock BSR worse (#1,402,979 to #1,987,667, no new sale); two new live paperbacks added (no BSR yet); Bridges now linked into the series; Grok Bot co-author unchanged (still on the two original Frostwood books only).
+
+## 2026-11-16
+
+| Book | Price | Overall BSR | Category ranks | Ratings | Stars | Reviews | Grok Bot co-author? |
+|---|---|---|---|---|---|---|---|
+| The Thief Stayed the Night | $9.99 | — (not shown) | — (not shown) | — (no review section in fetch) | — | none visible | Yes, "Grok Bot (Author)" |
+| Frostwood Express | $11.99 | — (not shown) | — (not shown) | — | — | none visible | Yes, "Grok Bot (Author)" |
+| The Advent Clock (hardcover) | $17.99 | #2,449,937 in Books | #9,550 Logic & Brain Teasers; #15,233 Puzzles | — | — | none visible | No, Blake only |
+| Bridges of Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Porch Swing Crosswords | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Stories We Keep (hardcover) | $17.99 | — (not shown) | — (not shown) | — | — | none visible | No, Blake only |
+| Tea and Clues at Tidewhistle Cove (Kindle, B0HNFZGV6T) | Search shows "$0.00, or $3.99 to buy"; product page shows $3.99 | — (not shown) | — | — | — | none visible | No, Blake only |
+| Stars over Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No; listed as "Blake Michael La Pierre" |
+| Tents in Frostwood | $9.99 | — (not shown) | — (not shown) | — | — | none visible | No; listed as "Blake Michael La Pierre" |
+| Fences of Frostwood (hardcover) | $17.99 | — (not shown) | — (not shown) | — | — | none visible | No; listed as "Blake Michael La Pierre" |
+
+Notes:
+- All ten product pages loaded (Fences was found via an author search for "Blake Michael La Pierre", then fetched at its slugged URL). Paperbacks are In Stock; *The Advent Clock* and *Stories We Keep* now say "Usually ships within 9 days" (it was 8 days last week); *Fences of Frostwood* says "Usually ships within 8 days".
+- Newly found this week: *Fences of Frostwood* (hardcover, $17.99, ASIN [B0HQK22FVN](https://www.amazon.com/dp/B0HQK22FVN), published November 5, 2026, 88 pages, ISBN 979-8140189419). It is listed as by Blake Michael La Pierre (not "Blake La Pierre") and does not show Grok Bot as a co-author. The page does not show a Best Sellers Rank. The blurb calls it "Book eight" of the Frostwood Puzzle Books, but it is not linked into the Amazon series (product details have no "Book X of Y" line). Publication date is the same day as *Stars over Frostwood* and *Tents in Frostwood*; it was not in last week's tracked list, likely because last week's "Blake La Pierre" search missed the "Blake Michael La Pierre" listings and only title-searched Stars and Tents.
+- The Frostwood series on Amazon is still 5 books, in the same order as last week: *The Thief Stayed the Night* Book 1 of 5, *Frostwood Express* Book 2 of 5, *Bridges of Frostwood* Book 3 of 5, *Stars over Frostwood* Book 4 of 5, and *Tents in Frostwood* Book 5 of 5. The Stars and Tents blurbs still say "Book three" and "Book four".
+- The Advent Clock's rank slid from #1,987,667 (Nov 9) to #2,449,937; category ranks went from #7,807 Logic & Brain Teasers / #12,213 Puzzles to #9,550 / #15,233. No rank improvement that would suggest a new sale, so still just the one sale from about Oct 25. The daily BSR log was paused after Nov 9, so there are no mid-week public ranks to compare.
+- No other book shows a BSR, so no other sales are visible. No ratings or reviews were visible on any page (review sections did not come through in the public fetch; treat ratings as unknown, not as zero).
+- Tidewhistle's product page still shows $3.99. Search still shows "$0.00, or $3.99 to buy", so it still looks enrolled in Kindle Unlimited (the plan was Select off).
+- The Advent Clock description still says "6 × 9 inch paperback" though it's a hardcover.
+- Amazon search for "Blake La Pierre" (Books, newest first) and "Blake Michael La Pierre" turned up the nine already-tracked titles plus *Fences of Frostwood*, along with the older "I Asked an AI" books and some unrelated authors. Title searches for *Riddles by the Frostwood Fire*, *Twenty-Four Nights at the Christmas Post*, *The Thimble Hill Word Search Mysteries*, *Overheard at Our House*, *The Icicles of Frostwood*, *The Fibbers of Frostwood*, *Quiet Hour Acrostics*, *The Frostwood Sketchbook*, *The Lockboxes of Frostwood*, *Snow Paths of Frostwood*, *Chimneys of Frostwood*, and *The Frostwood Ledger* returned no matching Blake book.
+- Week-over-week vs 2026-11-09: prices unchanged on the nine previously tracked books; Advent Clock BSR worse (#1,987,667 to #2,449,937, no new sale); one previously untracked live hardcover added (Fences, no BSR); series still 5 books; Grok Bot co-author unchanged (still on the two original Frostwood books only).
