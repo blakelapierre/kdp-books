@@ -168,3 +168,7 @@ Notes:
 - The Advent Clock description still says "6 × 9 inch paperback" though it's a hardcover.
 - Amazon search for "Blake La Pierre" (Books, newest first) and "Blake Michael La Pierre" turned up the nine already-tracked titles plus *Fences of Frostwood*, along with the older "I Asked an AI" books and some unrelated authors. Title searches for *Riddles by the Frostwood Fire*, *Twenty-Four Nights at the Christmas Post*, *The Thimble Hill Word Search Mysteries*, *Overheard at Our House*, *The Icicles of Frostwood*, *The Fibbers of Frostwood*, *Quiet Hour Acrostics*, *The Frostwood Sketchbook*, *The Lockboxes of Frostwood*, *Snow Paths of Frostwood*, *Chimneys of Frostwood*, and *The Frostwood Ledger* returned no matching Blake book.
 - Week-over-week vs 2026-11-09: prices unchanged on the nine previously tracked books; Advent Clock BSR worse (#1,987,667 to #2,449,937, no new sale); one previously untracked live hardcover added (Fences, no BSR); series still 5 books; Grok Bot co-author unchanged (still on the two original Frostwood books only).
+
+## 2026-11-16 (from Blake)
+
+Blake reports The Advent Clock has two sales total, both attributed to Amazon Ads.
