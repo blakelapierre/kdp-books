@@ -93,3 +93,43 @@ Do not raise the Advent daily budget. A 35.2% ACOS on a 22.2% break-even offer w
 6. **Confirm delivery.** Because spend has been flat since the Oct 26 review, check in the Amazon Ads console that the kept campaigns are still enabled, that billing is in good standing, and that they are eligible to serve before December demand picks up.
 
 If Blake approves, apply this list and nothing else.
+
+## Changes applied 2026-11-17
+
+Blake approved all proposed changes ("Yes, make all the ad changes"). Applied via Adspirer (`profile_id` 427992898389565) starting about 1:03 AM PT. No budgets were raised. Nothing new was enabled. Amazon Ads console was not signed into.
+
+**Adspirer quota:** started this apply at **10 / 15** used (5 remaining). Ended at **15 / 15** (0 remaining). Resets **2026-11-19**. This apply used 5 successful quota calls (4 writes + 1 list) plus one write that was refused at the cap. `list_tools` and `get_usage_status` are free and were not counted.
+
+### Succeeded
+
+1. **Negative exact keyword on Oct 18 Advent-only auto (`47473767889736`), campaign level:**
+   - `brain games for adults` — keyword ID `252174178167038`, state ENABLED (the negative is on; the campaign was not newly enabled).
+2. **Negative product targets on the same campaign, campaign level:**
+   - `B0HLSLPDTG` (*Who Stole the Advent Calendar?*, kids 8–12) — target ID `90163849354708`
+   - `B0HJZJFCV9` (*Family Games Advent Calendar*, ages 5+) — target ID `36445487422042`
+3. **Paused two campaigns** (`pause_amazon_campaigns` returned "Updated: 2"):
+   - Oct 18 7-ASIN auto `277628141714115`
+   - Auto - Advent Clock HC `161403826749231`
+4. **Created new manual Exact-match campaign, left PAUSED:**
+   - Name: `Exact - Advent Clock HC`
+   - Campaign ID: `49035542833902`
+   - Ad group ID: `162109319537166`
+   - ASIN: `B0HMW1MR5T`
+   - Daily budget: $5 (not enabled)
+   - Bidding: Dynamic bids – down only
+   - Keywords (3): `advent calendar` Exact $0.80; `advent calendar for adults` Exact $0.50; `book advent calendar` Exact $0.50
+   - State: **PAUSED**. Do not resume until Blake says to launch it. If it is resumed later, also confirm the ad group and product ad are enabled or it will not serve.
+5. **Negative exact keyword `advent calendar` on Oct 18 Advent-only auto (`47473767889736`), campaign level** — keyword ID `209752362864803`, so the auto campaign will not bid against the new Exact campaign once that campaign is launched.
+
+### Failed / not applied (quota exhausted)
+
+6. **Default bid changes were not applied.** `list_amazon_ad_groups` succeeded and confirmed current bids, but `update_amazon_ad_groups` was refused with "You've used all 15 tool calls this billing period." The refusal means the write did not run; nothing was retried. Current values and the intended one-call update after the **2026-11-19** reset:
+
+| Campaign | Campaign ID | Ad group ID | Current default bid | Intended bid |
+|---|---|---|---|---|
+| Oct 18 auto – Advent only | `47473767889736` | `468958781138144` | **$0.75** (still ENABLED) | **$0.55** |
+| Auto - Stories We Keep HC | `278315951110803` | `352356397158880` | $0.40 | $0.50 |
+| Auto - Porch Swing Crosswords PB | `153725246462664` | `515521541065983` | $0.40 | $0.50 |
+| Auto - Bridges of Frostwood PB | `112094854265272` | `281526585158354` | $0.40 | $0.50 |
+
+The $0.55 cut on the winning Advent auto is the remaining priority-3 change. The three $0.40 → $0.50 raises are the optional priority-5 changes. Both can be done in a single `update_amazon_ad_groups` call after quota resets. Do not raise any budget. Do not enable the new Exact campaign until Blake confirms.
