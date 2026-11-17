@@ -171,4 +171,4 @@ Notes:
 
 ## 2026-11-16 (from Blake)
 
-Blake reports The Advent Clock has two sales total, both attributed to Amazon Ads.
+The Advent Clock has two sales total, both from Amazon Ads; ads overall about $12 spent vs $8 earned (net loss about $4).
