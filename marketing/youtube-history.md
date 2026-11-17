@@ -1207,3 +1207,13 @@ Channel Shorts list: **2874** views (+2 vs 2872) on 91 listed posts. Book-promo:
 
 ### TikTok (@shortmysterycases)
 Public total **4732** views (**+201** vs 4531) on 75 posts. Newest: Porch Swing Crosswords Short 89 (new), C29 P1 "Who drank this tea?" 109 (new), C28 answer 113 (0), C28 P1 164 (0), Bridges puzzle 72, train-track solution 93, C27 P2 96 / P1 206. Review / Only me not checked.
+
+## 2026-11-16, ~6:30 PM PT (public counts only)
+
+Studio/TikTok Studio not opened (usage-saving, public yt-dlp pulls in `/workspace/tidewhistle-stats/2026-11-16/`); compared with the Nov 9 check. YouTube channel is UC_csfIopFgOBHuwSoCx41tg (the @shortmysterycases handle 404s on YouTube).
+
+### YouTube
+Channel Shorts list: **2884** views (+10 vs 2874) on 97 posts. Wide videos: **8026** (+3) on 134. Book-promo: Advent Door 1 P2 279 (0), cocoa tin P2 64 (0), train-track P1 47 (0), answer 7 (+2), Bridges islands 2 (0), Porch Swing Crosswords Short 1, Stories We Keep Short 3 (new today). Tidewhistle Case 30 on YouTube: P1 1, answer 5. Subscribers, traffic, retention, comments: not available without Studio.
+
+### TikTok (@shortmysterycases)
+Public total **4977** views (**+245** vs 4732) on 78 posts. Newest: Stories We Keep Short 24 (new, posted today), C30 answer 75, C30 P1 "Where did the sign go?" 106, Porch Swing Crosswords 100 (+11), C29 P1 113 (+4), C28 answer 114 / P1 165, C27 P2 97 / P1 207. Part 2 / Part 1: C30 75/106 = 71%, C28 114/165 = 69%, C27 97/207 = 47%. Review / Only me not checked.
