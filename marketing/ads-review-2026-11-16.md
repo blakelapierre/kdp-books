@@ -133,3 +133,20 @@ Blake approved all proposed changes ("Yes, make all the ad changes"). Applied vi
 | Auto - Bridges of Frostwood PB | `112094854265272` | `281526585158354` | $0.40 | $0.50 |
 
 The $0.55 cut on the winning Advent auto is the remaining priority-3 change. The three $0.40 → $0.50 raises are the optional priority-5 changes. Both can be done in a single `update_amazon_ad_groups` call after quota resets. Do not raise any budget. Do not enable the new Exact campaign until Blake confirms.
+
+## Changes applied 2026-11-19
+
+The remaining default-bid changes from the 2026-11-17 approval were applied after the Adspirer free-plan quota reset (0 / 15 at the start of this run). Applied via Adspirer (`profile_id` 427992898389565) about 10:12 AM PT. No budgets were changed. No campaign was enabled or paused in this run. Amazon Ads console was not signed into.
+
+`list_amazon_ad_groups` confirmed the Nov 17 values were still in place (Advent auto $0.75, Stories / Porch Swing / Bridges $0.40). One batched `update_amazon_ad_groups` call then succeeded for all 4 ad groups:
+
+| Campaign | Campaign ID | Ad group ID | Previous default bid | New default bid | Ad group state |
+|---|---|---|---|---|---|
+| Oct 18 auto – Advent only | `47473767889736` | `468958781138144` | $0.75 | **$0.55** | ENABLED (unchanged) |
+| Auto - Stories We Keep HC | `278315951110803` | `352356397158880` | $0.40 | **$0.50** | ENABLED (unchanged) |
+| Auto - Porch Swing Crosswords PB | `153725246462664` | `515521541065983` | $0.40 | **$0.50** | ENABLED (unchanged) |
+| Auto - Bridges of Frostwood PB | `112094854265272` | `281526585158354` | $0.40 | **$0.50** | ENABLED (unchanged) |
+
+**Exact campaign check:** `Exact - Advent Clock HC` (`49035542833902`) is already **ENABLED** (daily budget $5, MANUAL targeting). It was left paused on 2026-11-17 and was not changed in this run. Because it is on, the term "advent calendar" is being bid on there, and it remains a negative exact on the Oct 18 Advent auto.
+
+**Adspirer quota:** started this apply at **0 / 15**. This apply used 3 quota calls (2 lists + 1 write). `list_tools`, `get_tool_schema`, and `get_usage_status` are free. Ended at **3 / 15** (12 remaining). Resets **2026-12-19**.
