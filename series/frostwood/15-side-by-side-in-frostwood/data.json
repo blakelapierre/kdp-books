@@ -1,0 +1,9787 @@
+{
+ "title": "Side by Side in Frostwood",
+ "subtitle": "120 Cozy Line-Up Logic Puzzles for Kindle: Who Sits Where? Winter Seating and Ordering Brain Teasers, Easy to Expert, with Tap-to-Jump Hints and Answers",
+ "seed": 20261119,
+ "total": 120,
+ "counts": {
+  "Easy": 30,
+  "Medium": 30,
+  "Hard": 30,
+  "Expert": 30
+ },
+ "bands": {
+  "Easy": {
+   "people": 4,
+   "kinds": [
+    "at",
+    "notat",
+    "end",
+    "notend",
+    "even",
+    "adj",
+    "left1",
+    "before"
+   ],
+   "max_at": 1,
+   "depth": 0,
+   "suppositions": [
+    0,
+    0
+   ],
+   "max_clues": 6
+  },
+  "Medium": {
+   "people": 5,
+   "kinds": [
+    "at",
+    "notat",
+    "end",
+    "notend",
+    "even",
+    "adj",
+    "notadj",
+    "left1",
+    "before",
+    "gap",
+    "between"
+   ],
+   "max_at": 1,
+   "depth": 0,
+   "suppositions": [
+    0,
+    0
+   ],
+   "max_clues": 7
+  },
+  "Hard": {
+   "people": 6,
+   "kinds": [
+    "notat",
+    "end",
+    "notend",
+    "even",
+    "adj",
+    "notadj",
+    "left1",
+    "before",
+    "gap",
+    "between"
+   ],
+   "max_at": 0,
+   "depth": 1,
+   "suppositions": [
+    1,
+    2
+   ],
+   "max_clues": 9
+  },
+  "Expert": {
+   "people": 7,
+   "kinds": [
+    "notat",
+    "end",
+    "notend",
+    "even",
+    "adj",
+    "notadj",
+    "left1",
+    "before",
+    "gap",
+    "between"
+   ],
+   "max_at": 0,
+   "depth": 1,
+   "suppositions": [
+    3,
+    6
+   ],
+   "max_clues": 10
+  }
+ },
+ "puzzles": [
+  {
+   "num": 1,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have rooms along the upstairs hall",
+   "noun": "room",
+   "plural": "rooms",
+   "names": [
+    "Ada",
+    "Bram",
+    "Sam",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Uma has room 2.",
+     "form": [
+      "at",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Ada is not at either end of the row.",
+     "form": [
+      "notend",
+      0
+     ]
+    },
+    {
+     "text": "Sam is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Sam",
+    "Uma",
+    "Ada",
+    "Bram"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Ada is not at either end of the row” and what you already know, Ada can only have room 3.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    3
+   ]
+  },
+  {
+   "num": 2,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their coats on the pegs in the boot room",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Bram",
+    "Clara",
+    "Elsie",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Bram has an odd-numbered peg.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Elsie is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Zeke is somewhere to the left of Clara.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Elsie is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Zeke",
+    "Bram",
+    "Clara"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Elsie is somewhere to the left of Bram” and what you already know, Bram can only have peg 3.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    3
+   ]
+  },
+  {
+   "num": 3,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "sit on the long bench by the great hearth",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Greta",
+    "Pippa",
+    "Rosa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Pippa has seat 4.",
+     "form": [
+      "at",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Wren is directly to the left of Greta.",
+     "form": [
+      "left1",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Rosa is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Greta",
+    "Rosa",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Greta. With the clue “Rosa is not at either end of the row” and what you already know, Greta can only have seat 2.",
+   "hint_key": [
+    "pin",
+    "Greta",
+    2
+   ]
+  },
+  {
+   "num": 4,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "take chairs down one side of the long dining table",
+   "noun": "chair",
+   "plural": "chairs",
+   "names": [
+    "Ada",
+    "Finn",
+    "Lena",
+    "Milo"
+   ],
+   "clues": [
+    {
+     "text": "Finn has an even-numbered chair.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere to the left of Finn.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Ada is directly to the left of Milo.",
+     "form": [
+      "left1",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Lena does not have chair 3.",
+     "form": [
+      "notat",
+      2,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Lena",
+    "Ada",
+    "Milo",
+    "Finn"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Finn. With the clue “Ada is directly to the left of Milo” and what you already know, Finn can only have chair 4.",
+   "hint_key": [
+    "pin",
+    "Finn",
+    4
+   ]
+  },
+  {
+   "num": 5,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have bunks in a row in the attic",
+   "noun": "bunk",
+   "plural": "bunks",
+   "names": [
+    "Elsie",
+    "Lena",
+    "Uma",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Elsie is directly to the left of Lena.",
+     "form": [
+      "left1",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Uma is somewhere to the left of Elsie.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Viggo has bunk 4.",
+     "form": [
+      "at",
+      3,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Elsie",
+    "Lena",
+    "Viggo"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Uma. With the clue “Viggo has bunk 4” and what you already know, Uma can only have bunk 1.",
+   "hint_key": [
+    "pin",
+    "Uma",
+    1
+   ]
+  },
+  {
+   "num": 6,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their scarves on the hooks in the drying room",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Elsie",
+    "Nell",
+    "Sam",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Elsie has an even-numbered hook.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Tessa does not have hook 2.",
+     "form": [
+      "notat",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Sam is somewhere to the left of Nell.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Sam is right next to Tessa.",
+     "form": [
+      "adj",
+      2,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Tessa",
+    "Sam",
+    "Nell",
+    "Elsie"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Elsie. With the clue “Sam is right next to Tessa” and what you already know, Elsie can only have hook 4.",
+   "hint_key": [
+    "pin",
+    "Elsie",
+    4
+   ]
+  },
+  {
+   "num": 7,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have cubbies in the mitten cupboard",
+   "noun": "cubby",
+   "plural": "cubbies",
+   "names": [
+    "Elsie",
+    "Ivy",
+    "Otto",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Ivy is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Otto is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Ivy is right next to Elsie.",
+     "form": [
+      "adj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Ivy is right next to Tessa.",
+     "form": [
+      "adj",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Elsie",
+    "Ivy",
+    "Tessa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Otto. With the clue “Ivy is right next to Elsie” and what you already know, Otto can only have cubby 1.",
+   "hint_key": [
+    "pin",
+    "Otto",
+    1
+   ]
+  },
+  {
+   "num": 8,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "keep their snowshoes in the snowshoe rack",
+   "noun": "slot",
+   "plural": "slots",
+   "names": [
+    "Quinn",
+    "Tessa",
+    "Viggo",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Tessa is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Yara is right next to Viggo.",
+     "form": [
+      "adj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Quinn has an even-numbered slot.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Viggo is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Yara",
+    "Viggo",
+    "Tessa",
+    "Quinn"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Quinn. With the clue “Quinn has an even-numbered slot” and what you already know, Quinn can only have slot 4.",
+   "hint_key": [
+    "pin",
+    "Quinn",
+    4
+   ]
+  },
+  {
+   "num": 9,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "sit in the armchairs facing the big window",
+   "noun": "armchair",
+   "plural": "armchairs",
+   "names": [
+    "Finn",
+    "Ivy",
+    "Kit",
+    "Milo"
+   ],
+   "clues": [
+    {
+     "text": "Milo is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Kit has an odd-numbered armchair.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    },
+    {
+     "text": "Finn does not have armchair 2.",
+     "form": [
+      "notat",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Finn is not at either end of the row.",
+     "form": [
+      "notend",
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Milo",
+    "Finn",
+    "Ivy"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Finn. With the clue “Finn is not at either end of the row” and what you already know, Finn can only have armchair 3.",
+   "hint_key": [
+    "pin",
+    "Finn",
+    3
+   ]
+  },
+  {
+   "num": 10,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "take seats at the long table in the puzzle parlour",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Clara",
+    "Nell",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Clara has an odd-numbered seat.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    },
+    {
+     "text": "Clara is right next to Bram.",
+     "form": [
+      "adj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Uma has seat 4.",
+     "form": [
+      "at",
+      3,
+      3
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Bram",
+    "Clara",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Uma has seat 4” and what you already know, Bram can only have seat 2.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    2
+   ]
+  },
+  {
+   "num": 11,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their lanterns on the porch hooks",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Ada",
+    "Pippa",
+    "Tessa",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Ada has hook 3.",
+     "form": [
+      "at",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Tessa does not have hook 2.",
+     "form": [
+      "notat",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Viggo has an even-numbered hook.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Pippa",
+    "Viggo",
+    "Ada",
+    "Tessa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Tessa. With the clue “Tessa does not have hook 2” and what you already know, Tessa can only have hook 4.",
+   "hint_key": [
+    "pin",
+    "Tessa",
+    4
+   ]
+  },
+  {
+   "num": 12,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have cushions on the window seat in the sitting room",
+   "noun": "cushion",
+   "plural": "cushions",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Pippa",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Elsie has cushion 4.",
+     "form": [
+      "at",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Dov is not at either end of the row.",
+     "form": [
+      "notend",
+      0
+     ]
+    },
+    {
+     "text": "Quinn is right next to Pippa.",
+     "form": [
+      "adj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Quinn is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Pippa",
+    "Quinn",
+    "Dov",
+    "Elsie"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Dov. With the clue “Quinn is right next to Pippa” and what you already know, Dov can only have cushion 3.",
+   "hint_key": [
+    "pin",
+    "Dov",
+    3
+   ]
+  },
+  {
+   "num": 13,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have shelves in the library book cupboard",
+   "noun": "shelf",
+   "plural": "shelves",
+   "names": [
+    "Ada",
+    "Dov",
+    "Pippa",
+    "Rosa"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Dov is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Pippa is right next to Rosa.",
+     "form": [
+      "adj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Pippa",
+    "Rosa",
+    "Ada",
+    "Dov"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Dov. With the clue “Pippa is somewhere to the left of Ada” and what you already know, Dov can only have shelf 4.",
+   "hint_key": [
+    "pin",
+    "Dov",
+    4
+   ]
+  },
+  {
+   "num": 14,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "leave their mugs on the hooks above the cocoa cart",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Greta",
+    "Quinn",
+    "Rosa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Rosa is right next to Uma.",
+     "form": [
+      "adj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Rosa is directly to the left of Quinn.",
+     "form": [
+      "left1",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Rosa is somewhere to the left of Greta.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Rosa",
+    "Quinn",
+    "Greta"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Greta. With the clue “Rosa is directly to the left of Quinn” and what you already know, Greta can only have hook 4.",
+   "hint_key": [
+    "pin",
+    "Greta",
+    4
+   ]
+  },
+  {
+   "num": 15,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have easels in a row in the sunroom",
+   "noun": "easel",
+   "plural": "easels",
+   "names": [
+    "Ada",
+    "Greta",
+    "Milo",
+    "Pippa"
+   ],
+   "clues": [
+    {
+     "text": "Milo is somewhere to the left of Greta.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Milo is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Ada has an odd-numbered easel.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Pippa is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Milo",
+    "Greta",
+    "Ada",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Milo. With the clue “Milo is at one end of the row” and what you already know, Milo can only have easel 1.",
+   "hint_key": [
+    "pin",
+    "Milo",
+    1
+   ]
+  },
+  {
+   "num": 16,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have rooms along the upstairs hall",
+   "noun": "room",
+   "plural": "rooms",
+   "names": [
+    "Ivy",
+    "Kit",
+    "Milo",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Quinn has room 1.",
+     "form": [
+      "at",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Ivy is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Kit is directly to the left of Milo.",
+     "form": [
+      "left1",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Kit",
+    "Milo",
+    "Ivy"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ivy. With the clue “Ivy is at one end of the row” and what you already know, Ivy can only have room 4.",
+   "hint_key": [
+    "pin",
+    "Ivy",
+    4
+   ]
+  },
+  {
+   "num": 17,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their coats on the pegs in the boot room",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Greta",
+    "Milo",
+    "Otto",
+    "Sam"
+   ],
+   "clues": [
+    {
+     "text": "Greta is directly to the left of Otto.",
+     "form": [
+      "left1",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Milo is directly to the left of Sam.",
+     "form": [
+      "left1",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Otto is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Otto",
+    "Milo",
+    "Sam"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Otto. With the clue “Otto is not at either end of the row” and what you already know, Otto can only have peg 2.",
+   "hint_key": [
+    "pin",
+    "Otto",
+    2
+   ]
+  },
+  {
+   "num": 18,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "sit on the long bench by the great hearth",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Elsie",
+    "Jonah",
+    "Lena"
+   ],
+   "clues": [
+    {
+     "text": "Elsie is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Lena does not have seat 3.",
+     "form": [
+      "notat",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Jonah is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Bram is right next to Jonah.",
+     "form": [
+      "adj",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Lena",
+    "Bram",
+    "Jonah"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Jonah is at one end of the row” and what you already know, Bram can only have seat 3.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    3
+   ]
+  },
+  {
+   "num": 19,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "take chairs down one side of the long dining table",
+   "noun": "chair",
+   "plural": "chairs",
+   "names": [
+    "Ada",
+    "Jonah",
+    "Sam",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Ada does not have chair 1.",
+     "form": [
+      "notat",
+      0,
+      0
+     ]
+    },
+    {
+     "text": "Ada does not have chair 4.",
+     "form": [
+      "notat",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Sam is somewhere to the left of Jonah.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Wren is directly to the left of Sam.",
+     "form": [
+      "left1",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Sam",
+    "Ada",
+    "Jonah"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Wren is directly to the left of Sam” and what you already know, Ada can only have chair 3.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    3
+   ]
+  },
+  {
+   "num": 20,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have bunks in a row in the attic",
+   "noun": "bunk",
+   "plural": "bunks",
+   "names": [
+    "Bram",
+    "Jonah",
+    "Otto",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Uma is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Otto is right next to Jonah.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Jonah is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Jonah is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Otto does not have bunk 1.",
+     "form": [
+      "notat",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Jonah",
+    "Otto",
+    "Bram",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Uma. With the clue “Jonah is somewhere to the left of Uma” and what you already know, Uma can only have bunk 4.",
+   "hint_key": [
+    "pin",
+    "Uma",
+    4
+   ]
+  },
+  {
+   "num": 21,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their scarves on the hooks in the drying room",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Hugo",
+    "Otto",
+    "Wren",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Otto is right next to Wren.",
+     "form": [
+      "adj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Hugo does not have hook 4.",
+     "form": [
+      "notat",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Wren has an even-numbered hook.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Yara has an odd-numbered hook.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Yara",
+    "Hugo",
+    "Otto",
+    "Wren"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Hugo. With the clue “Otto is right next to Wren” and what you already know, Hugo can only have hook 2.",
+   "hint_key": [
+    "pin",
+    "Hugo",
+    2
+   ]
+  },
+  {
+   "num": 22,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have cubbies in the mitten cupboard",
+   "noun": "cubby",
+   "plural": "cubbies",
+   "names": [
+    "Quinn",
+    "Tessa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Wren is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Viggo is somewhere to the left of Quinn.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Wren has an even-numbered cubby.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      0,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Viggo",
+    "Quinn",
+    "Tessa",
+    "Wren"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Wren. With the clue “Wren has an even-numbered cubby” and what you already know, Wren can only have cubby 4.",
+   "hint_key": [
+    "pin",
+    "Wren",
+    4
+   ]
+  },
+  {
+   "num": 23,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "keep their snowshoes in the snowshoe rack",
+   "noun": "slot",
+   "plural": "slots",
+   "names": [
+    "Finn",
+    "Greta",
+    "Jonah",
+    "Kit"
+   ],
+   "clues": [
+    {
+     "text": "Kit has slot 1.",
+     "form": [
+      "at",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Greta has an even-numbered slot.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Finn is right next to Greta.",
+     "form": [
+      "adj",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Greta is somewhere to the left of Jonah.",
+     "form": [
+      "before",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Greta",
+    "Finn",
+    "Jonah"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Finn. With the clue “Finn is right next to Greta” and what you already know, Finn can only have slot 3.",
+   "hint_key": [
+    "pin",
+    "Finn",
+    3
+   ]
+  },
+  {
+   "num": 24,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "sit in the armchairs facing the big window",
+   "noun": "armchair",
+   "plural": "armchairs",
+   "names": [
+    "Ada",
+    "Hugo",
+    "Sam",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Uma is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "Hugo is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Sam is right next to Hugo.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Ada has an even-numbered armchair.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Hugo",
+    "Sam",
+    "Uma",
+    "Ada"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Ada has an even-numbered armchair” and what you already know, Ada can only have armchair 4.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    4
+   ]
+  },
+  {
+   "num": 25,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "take seats at the long table in the puzzle parlour",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Lena",
+    "Nell",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Bram is directly to the left of Lena.",
+     "form": [
+      "left1",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Yara is right next to Nell.",
+     "form": [
+      "adj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Nell is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Yara does not have seat 3.",
+     "form": [
+      "notat",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Yara",
+    "Bram",
+    "Lena"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Yara does not have seat 3” and what you already know, Bram can only have seat 3.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    3
+   ]
+  },
+  {
+   "num": 26,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "hang their lanterns on the porch hooks",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Lena",
+    "Pippa",
+    "Sam",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Sam is somewhere to the left of Lena.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Uma does not have hook 4.",
+     "form": [
+      "notat",
+      3,
+      3
+     ]
+    },
+    {
+     "text": "Uma is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Sam",
+    "Lena",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Pippa. With the clue “Uma is at one end of the row” and what you already know, Pippa can only have hook 4.",
+   "hint_key": [
+    "pin",
+    "Pippa",
+    4
+   ]
+  },
+  {
+   "num": 27,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have cushions on the window seat in the sitting room",
+   "noun": "cushion",
+   "plural": "cushions",
+   "names": [
+    "Elsie",
+    "Kit",
+    "Lena",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Wren is directly to the left of Elsie.",
+     "form": [
+      "left1",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Kit is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Lena is right next to Kit.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Wren does not have cushion 1.",
+     "form": [
+      "notat",
+      3,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Lena",
+    "Wren",
+    "Elsie"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Elsie. With the clue “Wren does not have cushion 1” and what you already know, Elsie can only have cushion 4.",
+   "hint_key": [
+    "pin",
+    "Elsie",
+    4
+   ]
+  },
+  {
+   "num": 28,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have shelves in the library book cupboard",
+   "noun": "shelf",
+   "plural": "shelves",
+   "names": [
+    "Bram",
+    "Nell",
+    "Pippa",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Quinn has shelf 2.",
+     "form": [
+      "at",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Bram is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Nell has an even-numbered shelf.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Bram",
+    "Quinn",
+    "Pippa",
+    "Nell"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Nell has an even-numbered shelf” and what you already know, Bram can only have shelf 1.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    1
+   ]
+  },
+  {
+   "num": 29,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "leave their mugs on the hooks above the cocoa cart",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Lena",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Elsie has an odd-numbered hook.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Finn does not have hook 1.",
+     "form": [
+      "notat",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Tessa has an even-numbered hook.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Elsie is right next to Lena.",
+     "form": [
+      "adj",
+      0,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Lena",
+    "Finn",
+    "Tessa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Elsie. With the clue “Elsie is right next to Lena” and what you already know, Elsie can only have hook 1.",
+   "hint_key": [
+    "pin",
+    "Elsie",
+    1
+   ]
+  },
+  {
+   "num": 30,
+   "band": "Easy",
+   "place": "The Lodge",
+   "people": 4,
+   "setting": "have easels in a row in the sunroom",
+   "noun": "easel",
+   "plural": "easels",
+   "names": [
+    "Lena",
+    "Milo",
+    "Rosa",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Lena is directly to the left of Zeke.",
+     "form": [
+      "left1",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Rosa has an even-numbered easel.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Lena does not have easel 2.",
+     "form": [
+      "notat",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Milo does not have easel 3.",
+     "form": [
+      "notat",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Milo",
+    "Rosa",
+    "Lena",
+    "Zeke"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Lena. With the clue “Lena is directly to the left of Zeke” and what you already know, Lena can only have easel 3.",
+   "hint_key": [
+    "pin",
+    "Lena",
+    3
+   ]
+  },
+  {
+   "num": 31,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "run stalls along the winter market",
+   "noun": "stall",
+   "plural": "stalls",
+   "names": [
+    "Elsie",
+    "Hugo",
+    "Milo",
+    "Rosa",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Milo has an even-numbered stall.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere to the left of Viggo.",
+     "form": [
+      "before",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Hugo is right next to Milo.",
+     "form": [
+      "adj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Viggo has an odd-numbered stall.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Elsie is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Rosa does not have stall 4.",
+     "form": [
+      "notat",
+      3,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Rosa",
+    "Hugo",
+    "Milo",
+    "Viggo"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Milo. With the clue “Rosa does not have stall 4” and what you already know, Milo can only have stall 4.",
+   "hint_key": [
+    "pin",
+    "Milo",
+    4
+   ]
+  },
+  {
+   "num": 32,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "live in the cottages on Willow Row",
+   "noun": "cottage",
+   "plural": "cottages",
+   "names": [
+    "Ada",
+    "Bram",
+    "Quinn",
+    "Uma",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Bram is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Uma has cottage 5.",
+     "form": [
+      "at",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Yara is somewhere between Ada and Quinn.",
+     "form": [
+      "between",
+      4,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Ada is somewhere to the left of Yara.",
+     "form": [
+      "before",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Yara is not next to Bram.",
+     "form": [
+      "notadj",
+      4,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Ada",
+    "Yara",
+    "Quinn",
+    "Bram",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Ada is somewhere to the left of Yara” and what you already know, Ada can only have cottage 1.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    1
+   ]
+  },
+  {
+   "num": 33,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "rent huts beside the skating pond",
+   "noun": "hut",
+   "plural": "huts",
+   "names": [
+    "Finn",
+    "Jonah",
+    "Pippa",
+    "Quinn",
+    "Sam"
+   ],
+   "clues": [
+    {
+     "text": "Finn is somewhere between Quinn and Jonah.",
+     "form": [
+      "between",
+      0,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Sam is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    },
+    {
+     "text": "Pippa has hut 5.",
+     "form": [
+      "at",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Jonah does not have hut 2.",
+     "form": [
+      "notat",
+      1,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Sam",
+    "Quinn",
+    "Finn",
+    "Jonah",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Sam. With the clue “Pippa has hut 5” and what you already know, Sam can only have hut 1.",
+   "hint_key": [
+    "pin",
+    "Sam",
+    1
+   ]
+  },
+  {
+   "num": 34,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "keep shops along the high street",
+   "noun": "shop",
+   "plural": "shops",
+   "names": [
+    "Greta",
+    "Hugo",
+    "Lena",
+    "Quinn",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere to the left of Lena.",
+     "form": [
+      "before",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Hugo is right next to Lena.",
+     "form": [
+      "adj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Quinn is directly to the left of Tessa.",
+     "form": [
+      "left1",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Hugo has shop 3.",
+     "form": [
+      "at",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Lena",
+    "Hugo",
+    "Quinn",
+    "Tessa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Tessa. With the clue “Hugo is right next to Lena” and what you already know, Tessa can only have shop 5.",
+   "hint_key": [
+    "pin",
+    "Tessa",
+    5
+   ]
+  },
+  {
+   "num": 35,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit on the benches along the edge of the green",
+   "noun": "bench",
+   "plural": "benches",
+   "names": [
+    "Ada",
+    "Bram",
+    "Hugo",
+    "Ivy",
+    "Pippa"
+   ],
+   "clues": [
+    {
+     "text": "Ada is somewhere between Pippa and Ivy.",
+     "form": [
+      "between",
+      0,
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Ivy has bench 5.",
+     "form": [
+      "at",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Bram is directly to the left of Ada.",
+     "form": [
+      "left1",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Hugo has an odd-numbered bench.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Hugo",
+    "Pippa",
+    "Bram",
+    "Ada",
+    "Ivy"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Ada is somewhere between Pippa and Ivy” and what you already know, Ada can only have bench 4.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    4
+   ]
+  },
+  {
+   "num": 36,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have sheds on the Mill Lane allotments",
+   "noun": "shed",
+   "plural": "sheds",
+   "names": [
+    "Finn",
+    "Greta",
+    "Otto",
+    "Rosa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Greta is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Rosa is not next to Greta.",
+     "form": [
+      "notadj",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "There is exactly one shed between Finn and Rosa.",
+     "form": [
+      "gap",
+      0,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Rosa has shed 5.",
+     "form": [
+      "at",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Otto is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      2,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Greta",
+    "Finn",
+    "Uma",
+    "Rosa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Otto. With the clue “Otto is somewhere to the left of Uma” and what you already know, Otto can only have shed 1.",
+   "hint_key": [
+    "pin",
+    "Otto",
+    1
+   ]
+  },
+  {
+   "num": 37,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit in the front row of the village hall",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Lena",
+    "Nell",
+    "Uma",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Lena has an odd-numbered seat.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    },
+    {
+     "text": "Nell is not next to Viggo.",
+     "form": [
+      "notadj",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Uma has seat 5.",
+     "form": [
+      "at",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Nell is not next to Uma.",
+     "form": [
+      "notadj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Bram is not at either end of the row.",
+     "form": [
+      "notend",
+      0
+     ]
+    },
+    {
+     "text": "Nell is right next to Lena.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Lena",
+    "Nell",
+    "Bram",
+    "Viggo",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Nell. With the clue “Nell is right next to Lena” and what you already know, Nell can only have seat 2.",
+   "hint_key": [
+    "pin",
+    "Nell",
+    2
+   ]
+  },
+  {
+   "num": 38,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have pegs in the schoolhouse cloakroom",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Jonah",
+    "Tessa",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Tessa is somewhere between Dov and Jonah.",
+     "form": [
+      "between",
+      3,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Dov has an odd-numbered peg.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Elsie has peg 5.",
+     "form": [
+      "at",
+      1,
+      4
+     ]
+    },
+    {
+     "text": "Zeke has an odd-numbered peg.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Tessa",
+    "Zeke",
+    "Jonah",
+    "Elsie"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Dov. With the clue “Tessa is somewhere between Dov and Jonah” and what you already know, Dov can only have peg 1.",
+   "hint_key": [
+    "pin",
+    "Dov",
+    1
+   ]
+  },
+  {
+   "num": 39,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "set up easels in the village hall art room",
+   "noun": "easel",
+   "plural": "easels",
+   "names": [
+    "Ada",
+    "Dov",
+    "Elsie",
+    "Hugo",
+    "Lena"
+   ],
+   "clues": [
+    {
+     "text": "Hugo is somewhere between Dov and Elsie.",
+     "form": [
+      "between",
+      3,
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Lena has easel 5.",
+     "form": [
+      "at",
+      4,
+      4
+     ]
+    },
+    {
+     "text": "Ada has an odd-numbered easel.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Elsie is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Hugo",
+    "Ada",
+    "Dov",
+    "Lena"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Ada. With the clue “Elsie is somewhere to the left of Ada” and what you already know, Ada can only have easel 3.",
+   "hint_key": [
+    "pin",
+    "Ada",
+    3
+   ]
+  },
+  {
+   "num": 40,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have tables along the tea room window",
+   "noun": "table",
+   "plural": "tables",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Hugo",
+    "Ivy",
+    "Otto"
+   ],
+   "clues": [
+    {
+     "text": "Elsie is somewhere between Dov and Otto.",
+     "form": [
+      "between",
+      1,
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Otto is right next to Ivy.",
+     "form": [
+      "adj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Ivy has table 2.",
+     "form": [
+      "at",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Elsie is somewhere between Ivy and Hugo.",
+     "form": [
+      "between",
+      1,
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Dov is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Ivy",
+    "Elsie",
+    "Hugo",
+    "Dov"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Elsie. With the clue “Elsie is somewhere between Dov and Otto” and what you already know, Elsie can only have table 3.",
+   "hint_key": [
+    "pin",
+    "Elsie",
+    3
+   ]
+  },
+  {
+   "num": 41,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "keep beehives along the orchard wall",
+   "noun": "hive",
+   "plural": "hives",
+   "names": [
+    "Nell",
+    "Pippa",
+    "Quinn",
+    "Rosa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Quinn is somewhere between Uma and Nell.",
+     "form": [
+      "between",
+      2,
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Pippa is not next to Quinn.",
+     "form": [
+      "notadj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Uma has an odd-numbered hive.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "There are exactly two hives between Nell and Rosa.",
+     "form": [
+      "gap",
+      0,
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      0,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Quinn",
+    "Uma",
+    "Rosa",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Nell. With the clue “Quinn is somewhere between Uma and Nell” and what you already know, Nell can only have hive 1.",
+   "hint_key": [
+    "pin",
+    "Nell",
+    1
+   ]
+  },
+  {
+   "num": 42,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "put their cakes on the plates at the baking show",
+   "noun": "plate",
+   "plural": "plates",
+   "names": [
+    "Greta",
+    "Hugo",
+    "Jonah",
+    "Quinn",
+    "Sam"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere to the left of Sam.",
+     "form": [
+      "before",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Jonah is not next to Sam.",
+     "form": [
+      "notadj",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Jonah.",
+     "form": [
+      "before",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Sam has an odd-numbered plate.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "There are exactly two plates between Hugo and Jonah.",
+     "form": [
+      "gap",
+      1,
+      2,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Hugo",
+    "Sam",
+    "Quinn",
+    "Jonah"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Jonah. With the clue “Quinn is somewhere to the left of Jonah” and what you already know, Jonah can only have plate 5.",
+   "hint_key": [
+    "pin",
+    "Jonah",
+    5
+   ]
+  },
+  {
+   "num": 43,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "hang lanterns on the posts of the old stone bridge",
+   "noun": "post",
+   "plural": "posts",
+   "names": [
+    "Bram",
+    "Clara",
+    "Kit",
+    "Milo",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Viggo is somewhere between Milo and Bram.",
+     "form": [
+      "between",
+      4,
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Bram has an even-numbered post.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Kit and Clara.",
+     "form": [
+      "between",
+      3,
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Clara is not next to Bram.",
+     "form": [
+      "notadj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Clara is somewhere to the left of Kit.",
+     "form": [
+      "before",
+      1,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Milo",
+    "Viggo",
+    "Bram",
+    "Kit"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Clara. With the clue “Clara is somewhere to the left of Kit” and what you already know, Clara can only have post 1.",
+   "hint_key": [
+    "pin",
+    "Clara",
+    1
+   ]
+  },
+  {
+   "num": 44,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have boxes in the post office wall",
+   "noun": "box",
+   "plural": "boxes",
+   "names": [
+    "Finn",
+    "Greta",
+    "Otto",
+    "Pippa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Finn is somewhere to the left of Greta.",
+     "form": [
+      "before",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Uma has an even-numbered box.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Otto does not have box 3.",
+     "form": [
+      "notat",
+      2,
+      2
+     ]
+    },
+    {
+     "text": "Pippa has an even-numbered box.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Uma is not next to Greta.",
+     "form": [
+      "notadj",
+      4,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Uma",
+    "Finn",
+    "Pippa",
+    "Greta"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Finn. With the clue “Uma is not next to Greta” and what you already know, Finn can only have box 3.",
+   "hint_key": [
+    "pin",
+    "Finn",
+    3
+   ]
+  },
+  {
+   "num": 45,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit on the stools at the bakery counter",
+   "noun": "stool",
+   "plural": "stools",
+   "names": [
+    "Ada",
+    "Nell",
+    "Pippa",
+    "Uma",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Pippa has stool 5.",
+     "form": [
+      "at",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Uma is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Uma is directly to the left of Nell.",
+     "form": [
+      "left1",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Nell and Ada.",
+     "form": [
+      "between",
+      4,
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Nell",
+    "Viggo",
+    "Ada",
+    "Pippa"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Uma. With the clue “Uma is at one end of the row” and what you already know, Uma can only have stool 1.",
+   "hint_key": [
+    "pin",
+    "Uma",
+    1
+   ]
+  },
+  {
+   "num": 46,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "run stalls along the winter market",
+   "noun": "stall",
+   "plural": "stalls",
+   "names": [
+    "Ada",
+    "Finn",
+    "Hugo",
+    "Ivy",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Hugo has an even-numbered stall.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Ivy is directly to the left of Finn.",
+     "form": [
+      "left1",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Ivy is somewhere between Ada and Finn.",
+     "form": [
+      "between",
+      3,
+      0,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Hugo",
+    "Ada",
+    "Ivy",
+    "Finn"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Quinn. With the clue “Ivy is somewhere between Ada and Finn” and what you already know, Quinn can only have stall 1.",
+   "hint_key": [
+    "pin",
+    "Quinn",
+    1
+   ]
+  },
+  {
+   "num": 47,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "live in the cottages on Willow Row",
+   "noun": "cottage",
+   "plural": "cottages",
+   "names": [
+    "Bram",
+    "Dov",
+    "Kit",
+    "Lena",
+    "Otto"
+   ],
+   "clues": [
+    {
+     "text": "Dov is right next to Otto.",
+     "form": [
+      "adj",
+      1,
+      4
+     ]
+    },
+    {
+     "text": "Lena is somewhere to the left of Kit.",
+     "form": [
+      "before",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Lena is not next to Kit.",
+     "form": [
+      "notadj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Dov has cottage 2.",
+     "form": [
+      "at",
+      1,
+      1
+     ]
+    },
+    {
+     "text": "There is exactly one cottage between Bram and Otto.",
+     "form": [
+      "gap",
+      0,
+      4,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Lena",
+    "Dov",
+    "Otto",
+    "Kit",
+    "Bram"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Bram. With the clue “Lena is not next to Kit” and what you already know, Bram can only have cottage 5.",
+   "hint_key": [
+    "pin",
+    "Bram",
+    5
+   ]
+  },
+  {
+   "num": 48,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "rent huts beside the skating pond",
+   "noun": "hut",
+   "plural": "huts",
+   "names": [
+    "Bram",
+    "Kit",
+    "Nell",
+    "Pippa",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is not next to Bram.",
+     "form": [
+      "notadj",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Kit does not have hut 3.",
+     "form": [
+      "notat",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Kit has an odd-numbered hut.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    },
+    {
+     "text": "Nell is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Quinn.",
+     "form": [
+      "before",
+      2,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Bram",
+    "Quinn",
+    "Pippa",
+    "Kit"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Kit. With the clue “Nell is somewhere to the left of Quinn” and what you already know, Kit can only have hut 5.",
+   "hint_key": [
+    "pin",
+    "Kit",
+    5
+   ]
+  },
+  {
+   "num": 49,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "keep shops along the high street",
+   "noun": "shop",
+   "plural": "shops",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Kit",
+    "Lena",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Lena has shop 5.",
+     "form": [
+      "at",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Uma is somewhere between Elsie and Kit.",
+     "form": [
+      "between",
+      4,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Elsie does not have shop 4.",
+     "form": [
+      "notat",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Kit is right next to Finn.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Finn has an even-numbered shop.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Elsie",
+    "Uma",
+    "Kit",
+    "Finn",
+    "Lena"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Elsie. With the clue “Kit is right next to Finn” and what you already know, Elsie can only have shop 1.",
+   "hint_key": [
+    "pin",
+    "Elsie",
+    1
+   ]
+  },
+  {
+   "num": 50,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit on the benches along the edge of the green",
+   "noun": "bench",
+   "plural": "benches",
+   "names": [
+    "Greta",
+    "Jonah",
+    "Pippa",
+    "Sam",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Viggo has an odd-numbered bench.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Jonah is right next to Sam.",
+     "form": [
+      "adj",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Greta does not have bench 5.",
+     "form": [
+      "notat",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Viggo is not at either end of the row.",
+     "form": [
+      "notend",
+      4
+     ]
+    },
+    {
+     "text": "Pippa is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    },
+    {
+     "text": "Jonah has an even-numbered bench.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Pippa",
+    "Viggo",
+    "Jonah",
+    "Sam"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Viggo. With the clue “Viggo is not at either end of the row” and what you already know, Viggo can only have bench 3.",
+   "hint_key": [
+    "pin",
+    "Viggo",
+    3
+   ]
+  },
+  {
+   "num": 51,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have sheds on the Mill Lane allotments",
+   "noun": "shed",
+   "plural": "sheds",
+   "names": [
+    "Jonah",
+    "Otto",
+    "Quinn",
+    "Wren",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Quinn is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Zeke does not have shed 4.",
+     "form": [
+      "notat",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Otto.",
+     "form": [
+      "before",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Jonah is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Otto is directly to the left of Wren.",
+     "form": [
+      "left1",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Zeke",
+    "Otto",
+    "Wren",
+    "Jonah"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Quinn. With the clue “Quinn is somewhere to the left of Otto” and what you already know, Quinn can only have shed 1.",
+   "hint_key": [
+    "pin",
+    "Quinn",
+    1
+   ]
+  },
+  {
+   "num": 52,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit in the front row of the village hall",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Dov",
+    "Greta",
+    "Otto",
+    "Pippa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Uma has an odd-numbered seat.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Greta and Otto.",
+     "form": [
+      "between",
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "text": "There is exactly one seat between Greta and Dov.",
+     "form": [
+      "gap",
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Dov is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Uma and Otto.",
+     "form": [
+      "between",
+      0,
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Pippa is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Dov",
+    "Pippa",
+    "Greta",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Dov. With the clue “There is exactly one seat between Greta and Dov” and what you already know, Dov can only have seat 2.",
+   "hint_key": [
+    "pin",
+    "Dov",
+    2
+   ]
+  },
+  {
+   "num": 53,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have pegs in the schoolhouse cloakroom",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Dov",
+    "Kit",
+    "Nell",
+    "Pippa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Nell is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Kit.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Uma has peg 3.",
+     "form": [
+      "at",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Pippa is directly to the left of Dov.",
+     "form": [
+      "left1",
+      3,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Pippa",
+    "Dov",
+    "Uma",
+    "Kit",
+    "Nell"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Dov. With the clue “Pippa is somewhere to the left of Kit” and what you already know, Dov can only have peg 2.",
+   "hint_key": [
+    "pin",
+    "Dov",
+    2
+   ]
+  },
+  {
+   "num": 54,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "set up easels in the village hall art room",
+   "noun": "easel",
+   "plural": "easels",
+   "names": [
+    "Bram",
+    "Finn",
+    "Jonah",
+    "Tessa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Bram has easel 1.",
+     "form": [
+      "at",
+      0,
+      0
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Jonah is right next to Bram.",
+     "form": [
+      "adj",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Finn is not next to Wren.",
+     "form": [
+      "notadj",
+      1,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Bram",
+    "Jonah",
+    "Wren",
+    "Tessa",
+    "Finn"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Jonah. With the clue “Jonah is right next to Bram” and what you already know, Jonah can only have easel 2.",
+   "hint_key": [
+    "pin",
+    "Jonah",
+    2
+   ]
+  },
+  {
+   "num": 55,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have tables along the tea room window",
+   "noun": "table",
+   "plural": "tables",
+   "names": [
+    "Greta",
+    "Hugo",
+    "Lena",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Greta is right next to Lena.",
+     "form": [
+      "adj",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Lena has table 1.",
+     "form": [
+      "at",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "There are exactly three tables between Lena and Uma.",
+     "form": [
+      "gap",
+      2,
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Hugo is somewhere between Greta and Tessa.",
+     "form": [
+      "between",
+      1,
+      0,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Lena",
+    "Greta",
+    "Hugo",
+    "Tessa",
+    "Uma"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Uma. With the clue “There are exactly three tables between Lena and Uma” and what you already know, Uma can only have table 5.",
+   "hint_key": [
+    "pin",
+    "Uma",
+    5
+   ]
+  },
+  {
+   "num": 56,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "keep beehives along the orchard wall",
+   "noun": "hive",
+   "plural": "hives",
+   "names": [
+    "Lena",
+    "Milo",
+    "Otto",
+    "Quinn",
+    "Sam"
+   ],
+   "clues": [
+    {
+     "text": "Quinn is not next to Otto.",
+     "form": [
+      "notadj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Sam does not have hive 1.",
+     "form": [
+      "notat",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Lena and Quinn.",
+     "form": [
+      "between",
+      1,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Lena is right next to Milo.",
+     "form": [
+      "adj",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Sam is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    },
+    {
+     "text": "Quinn is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Milo",
+    "Lena",
+    "Otto",
+    "Sam"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Sam. With the clue “Sam is at one end of the row” and what you already know, Sam can only have hive 5.",
+   "hint_key": [
+    "pin",
+    "Sam",
+    5
+   ]
+  },
+  {
+   "num": 57,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "put their cakes on the plates at the baking show",
+   "noun": "plate",
+   "plural": "plates",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Hugo",
+    "Lena",
+    "Otto"
+   ],
+   "clues": [
+    {
+     "text": "Finn is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Lena is not next to Otto.",
+     "form": [
+      "notadj",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Hugo has plate 5.",
+     "form": [
+      "at",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Otto is somewhere to the left of Elsie.",
+     "form": [
+      "before",
+      4,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Finn",
+    "Otto",
+    "Elsie",
+    "Lena",
+    "Hugo"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Finn. With the clue “Hugo has plate 5” and what you already know, Finn can only have plate 1.",
+   "hint_key": [
+    "pin",
+    "Finn",
+    1
+   ]
+  },
+  {
+   "num": 58,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "hang lanterns on the posts of the old stone bridge",
+   "noun": "post",
+   "plural": "posts",
+   "names": [
+    "Finn",
+    "Ivy",
+    "Kit",
+    "Tessa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Tessa has post 2.",
+     "form": [
+      "at",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Wren has an even-numbered post.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Tessa is somewhere between Finn and Kit.",
+     "form": [
+      "between",
+      3,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Kit is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Ivy is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Tessa",
+    "Finn",
+    "Wren",
+    "Ivy"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Wren. With the clue “Wren has an even-numbered post” and what you already know, Wren can only have post 4.",
+   "hint_key": [
+    "pin",
+    "Wren",
+    4
+   ]
+  },
+  {
+   "num": 59,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "have boxes in the post office wall",
+   "noun": "box",
+   "plural": "boxes",
+   "names": [
+    "Ada",
+    "Jonah",
+    "Milo",
+    "Sam",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Ada has box 4.",
+     "form": [
+      "at",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Sam has an odd-numbered box.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    },
+    {
+     "text": "There is exactly one box between Jonah and Zeke.",
+     "form": [
+      "gap",
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Zeke is somewhere between Milo and Sam.",
+     "form": [
+      "between",
+      4,
+      2,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Jonah",
+    "Milo",
+    "Zeke",
+    "Ada",
+    "Sam"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Milo. With the clue “There is exactly one box between Jonah and Zeke” and what you already know, Milo can only have box 2.",
+   "hint_key": [
+    "pin",
+    "Milo",
+    2
+   ]
+  },
+  {
+   "num": 60,
+   "band": "Medium",
+   "place": "The Village",
+   "people": 5,
+   "setting": "sit on the stools at the bakery counter",
+   "noun": "stool",
+   "plural": "stools",
+   "names": [
+    "Jonah",
+    "Lena",
+    "Otto",
+    "Pippa",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Jonah is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Otto and Lena.",
+     "form": [
+      "between",
+      3,
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Yara has stool 5.",
+     "form": [
+      "at",
+      4,
+      4
+     ]
+    },
+    {
+     "text": "Jonah is somewhere between Yara and Otto.",
+     "form": [
+      "between",
+      0,
+      4,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Jonah",
+    "Pippa",
+    "Lena",
+    "Yara"
+   ],
+   "depth": 0,
+   "suppositions": 0,
+   "hint": "Work toward Jonah. With the clue “Pippa is somewhere between Otto and Lena” and what you already know, Jonah can only have stool 2.",
+   "hint_key": [
+    "pin",
+    "Jonah",
+    2
+   ]
+  },
+  {
+   "num": 61,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have seats in a row in the observation car",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Dov",
+    "Hugo",
+    "Kit",
+    "Lena",
+    "Pippa",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is somewhere between Kit and Yara.",
+     "form": [
+      "between",
+      4,
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Dov has an even-numbered seat.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Hugo does not have seat 3.",
+     "form": [
+      "notat",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Kit does not have seat 5.",
+     "form": [
+      "notat",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Lena is somewhere between Kit and Pippa.",
+     "form": [
+      "between",
+      3,
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Yara is not next to Hugo.",
+     "form": [
+      "notadj",
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Lena is not next to Kit.",
+     "form": [
+      "notadj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Hugo does not have seat 2.",
+     "form": [
+      "notat",
+      1,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Dov",
+    "Lena",
+    "Hugo",
+    "Pippa",
+    "Yara"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Dov has seat 4. Follow the clues one at a time and you reach a clash, so Dov does not have seat 4.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    4
+   ]
+  },
+  {
+   "num": 62,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have compartments in the sleeper car",
+   "noun": "compartment",
+   "plural": "compartments",
+   "names": [
+    "Finn",
+    "Kit",
+    "Pippa",
+    "Quinn",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Wren is not next to Finn.",
+     "form": [
+      "notadj",
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Viggo does not have compartment 3.",
+     "form": [
+      "notat",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Viggo has an odd-numbered compartment.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Viggo is not next to Kit.",
+     "form": [
+      "notadj",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Quinn is somewhere between Pippa and Wren.",
+     "form": [
+      "between",
+      3,
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Finn is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Kit has an even-numbered compartment.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Viggo is not next to Wren.",
+     "form": [
+      "notadj",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Finn is not next to Kit.",
+     "form": [
+      "notadj",
+      0,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Kit",
+    "Quinn",
+    "Pippa",
+    "Viggo",
+    "Finn"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Finn has compartment 1. Follow the clues one at a time and you reach a clash, so Finn does not have compartment 1.",
+   "hint_key": [
+    "suppose",
+    "Finn",
+    1
+   ]
+  },
+  {
+   "num": 63,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have lockers at the valley station",
+   "noun": "locker",
+   "plural": "lockers",
+   "names": [
+    "Ada",
+    "Bram",
+    "Greta",
+    "Sam",
+    "Uma",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Sam is right next to Greta.",
+     "form": [
+      "adj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Sam is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Greta is right next to Bram.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Uma has an even-numbered locker.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Zeke is somewhere to the left of Greta.",
+     "form": [
+      "before",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Ada does not have locker 1.",
+     "form": [
+      "notat",
+      0,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Zeke",
+    "Uma",
+    "Ada",
+    "Bram",
+    "Greta",
+    "Sam"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Ada has locker 2. Follow the clues one at a time and you reach a clash, so Ada does not have locker 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 64,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit on the long bench in the waiting room",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Ivy",
+    "Pippa",
+    "Quinn",
+    "Rosa",
+    "Viggo",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is directly to the left of Ivy.",
+     "form": [
+      "left1",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Yara does not have seat 3.",
+     "form": [
+      "notat",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Quinn and Rosa.",
+     "form": [
+      "between",
+      4,
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Yara is not at either end of the row.",
+     "form": [
+      "notend",
+      5
+     ]
+    },
+    {
+     "text": "Yara is right next to Pippa.",
+     "form": [
+      "adj",
+      5,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Yara",
+    "Pippa",
+    "Ivy",
+    "Viggo",
+    "Rosa"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ivy has seat 2. Follow the clues one at a time and you reach a clash, so Ivy does not have seat 2.",
+   "hint_key": [
+    "suppose",
+    "Ivy",
+    2
+   ]
+  },
+  {
+   "num": 65,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have berths along the night carriage",
+   "noun": "berth",
+   "plural": "berths",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Greta",
+    "Kit",
+    "Otto",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Otto has an odd-numbered berth.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Elsie does not have berth 2.",
+     "form": [
+      "notat",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Greta is somewhere between Kit and Otto.",
+     "form": [
+      "between",
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Elsie is somewhere between Otto and Wren.",
+     "form": [
+      "between",
+      0,
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Otto is right next to Elsie.",
+     "form": [
+      "adj",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Otto is not next to Finn.",
+     "form": [
+      "notadj",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Finn is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Greta",
+    "Otto",
+    "Elsie",
+    "Wren",
+    "Finn"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Greta has berth 3. Follow the clues one at a time and you reach a clash, so Greta does not have berth 3.",
+   "hint_key": [
+    "suppose",
+    "Greta",
+    3
+   ]
+  },
+  {
+   "num": 66,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "hang their bags on the hooks in the guard's van",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Greta",
+    "Viggo",
+    "Yara",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Zeke is not next to Finn.",
+     "form": [
+      "notadj",
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Elsie is right next to Viggo.",
+     "form": [
+      "adj",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Zeke has an even-numbered hook.",
+     "form": [
+      "even",
+      5,
+      true
+     ]
+    },
+    {
+     "text": "Yara has an even-numbered hook.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Zeke is right next to Elsie.",
+     "form": [
+      "adj",
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Yara is somewhere between Greta and Viggo.",
+     "form": [
+      "between",
+      4,
+      2,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Yara",
+    "Finn",
+    "Viggo",
+    "Elsie",
+    "Zeke"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Elsie has hook 1. Follow the clues one at a time and you reach a clash, so Elsie does not have hook 1.",
+   "hint_key": [
+    "suppose",
+    "Elsie",
+    1
+   ]
+  },
+  {
+   "num": 67,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have pigeonholes in the parcels office",
+   "noun": "pigeonhole",
+   "plural": "pigeonholes",
+   "names": [
+    "Ada",
+    "Elsie",
+    "Ivy",
+    "Nell",
+    "Sam",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Ivy is right next to Zeke.",
+     "form": [
+      "adj",
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Ivy is directly to the left of Sam.",
+     "form": [
+      "left1",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Sam is not at either end of the row.",
+     "form": [
+      "notend",
+      4
+     ]
+    },
+    {
+     "text": "Ada has an odd-numbered pigeonhole.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Nell is somewhere between Elsie and Ada.",
+     "form": [
+      "between",
+      3,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Zeke has an even-numbered pigeonhole.",
+     "form": [
+      "even",
+      5,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Ada",
+    "Zeke",
+    "Ivy",
+    "Sam",
+    "Nell",
+    "Elsie"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has pigeonhole 3. Follow the clues one at a time and you reach a clash, so Ada does not have pigeonhole 3.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    3
+   ]
+  },
+  {
+   "num": 68,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have tables in the dining car",
+   "noun": "table",
+   "plural": "tables",
+   "names": [
+    "Ada",
+    "Clara",
+    "Hugo",
+    "Otto",
+    "Sam",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Otto has an odd-numbered table.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    },
+    {
+     "text": "Clara is not next to Otto.",
+     "form": [
+      "notadj",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Clara and Hugo.",
+     "form": [
+      "between",
+      5,
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Ada is not next to Otto.",
+     "form": [
+      "notadj",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Clara and Ada.",
+     "form": [
+      "between",
+      3,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Ada has an even-numbered table.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Hugo does not have table 4.",
+     "form": [
+      "notat",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Sam is not next to Clara.",
+     "form": [
+      "notadj",
+      4,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Viggo",
+    "Otto",
+    "Sam",
+    "Hugo",
+    "Ada"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has table 2. Follow the clues one at a time and you reach a clash, so Ada does not have table 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 69,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit on the stools at the tea urn counter",
+   "noun": "stool",
+   "plural": "stools",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Milo",
+    "Nell",
+    "Otto",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Otto has an even-numbered stool.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Nell is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Dov and Nell.",
+     "form": [
+      "between",
+      4,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Milo is right next to Quinn.",
+     "form": [
+      "adj",
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Nell is not next to Milo.",
+     "form": [
+      "notadj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Milo has an odd-numbered stool.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    },
+    {
+     "text": "Elsie has an odd-numbered stool.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Milo",
+    "Quinn",
+    "Nell",
+    "Otto",
+    "Elsie",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Dov has stool 2. Follow the clues one at a time and you reach a clash, so Dov does not have stool 2.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    2
+   ]
+  },
+  {
+   "num": 70,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "hang lamps on the hooks in the lamp room",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Dov",
+    "Greta",
+    "Milo",
+    "Pippa",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Greta has an even-numbered hook.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "There are exactly two hooks between Pippa and Uma.",
+     "form": [
+      "gap",
+      3,
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Uma has an even-numbered hook.",
+     "form": [
+      "even",
+      5,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Uma and Tessa.",
+     "form": [
+      "between",
+      2,
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Milo is not next to Dov.",
+     "form": [
+      "notadj",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Dov has an odd-numbered hook.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Greta is not next to Dov.",
+     "form": [
+      "notadj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      3,
+      5
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Tessa",
+    "Pippa",
+    "Greta",
+    "Milo",
+    "Uma"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Dov has hook 3. Follow the clues one at a time and you reach a clash, so Dov does not have hook 3.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    3
+   ]
+  },
+  {
+   "num": 71,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have workbenches in the carriage works",
+   "noun": "workbench",
+   "plural": "workbenches",
+   "names": [
+    "Ada",
+    "Clara",
+    "Finn",
+    "Greta",
+    "Ivy",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere between Ada and Ivy.",
+     "form": [
+      "between",
+      3,
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Greta has an even-numbered workbench.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Greta is somewhere to the left of Clara.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Tessa is not next to Ivy.",
+     "form": [
+      "notadj",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Greta is somewhere between Tessa and Clara.",
+     "form": [
+      "between",
+      3,
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Finn does not have workbench 2.",
+     "form": [
+      "notat",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Tessa is at one end of the row.",
+     "form": [
+      "end",
+      5
+     ]
+    },
+    {
+     "text": "Ivy is not at either end of the row.",
+     "form": [
+      "notend",
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Tessa",
+    "Ada",
+    "Finn",
+    "Greta",
+    "Ivy",
+    "Clara"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has workbench 1. Follow the clues one at a time and you reach a clash, so Ada does not have workbench 1.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    1
+   ]
+  },
+  {
+   "num": 72,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit in the chairs on the summit station porch",
+   "noun": "chair",
+   "plural": "chairs",
+   "names": [
+    "Clara",
+    "Greta",
+    "Hugo",
+    "Jonah",
+    "Milo",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere to the left of Jonah.",
+     "form": [
+      "before",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Jonah is directly to the left of Hugo.",
+     "form": [
+      "left1",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Tessa is directly to the left of Jonah.",
+     "form": [
+      "left1",
+      5,
+      3
+     ]
+    },
+    {
+     "text": "Greta is somewhere to the left of Clara.",
+     "form": [
+      "before",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Tessa is right next to Milo.",
+     "form": [
+      "adj",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Jonah has an odd-numbered chair.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Clara",
+    "Milo",
+    "Tessa",
+    "Jonah",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Clara has chair 4. Follow the clues one at a time and you reach a clash, so Clara does not have chair 4.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    4
+   ]
+  },
+  {
+   "num": 73,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have windows along the ticket office counter",
+   "noun": "window",
+   "plural": "windows",
+   "names": [
+    "Bram",
+    "Clara",
+    "Ivy",
+    "Kit",
+    "Sam",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Ivy is right next to Bram.",
+     "form": [
+      "adj",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Ivy is right next to Kit.",
+     "form": [
+      "adj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Bram is somewhere between Sam and Kit.",
+     "form": [
+      "between",
+      0,
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Wren is somewhere between Sam and Clara.",
+     "form": [
+      "between",
+      5,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Wren is directly to the left of Bram.",
+     "form": [
+      "left1",
+      5,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Sam",
+    "Wren",
+    "Bram",
+    "Ivy",
+    "Kit",
+    "Clara"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Bram has window 4. Follow the clues one at a time and you reach a clash, so Bram does not have window 4.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    4
+   ]
+  },
+  {
+   "num": 74,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "stand at the numbered marks on the platform",
+   "noun": "mark",
+   "plural": "marks",
+   "names": [
+    "Bram",
+    "Greta",
+    "Pippa",
+    "Uma",
+    "Wren",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Uma is right next to Wren.",
+     "form": [
+      "adj",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Uma is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Bram has an even-numbered mark.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Yara is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Bram is directly to the left of Uma.",
+     "form": [
+      "left1",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Greta is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      1,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Bram",
+    "Uma",
+    "Wren",
+    "Yara",
+    "Pippa"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Bram has mark 4. Follow the clues one at a time and you reach a clash, so Bram does not have mark 4.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    4
+   ]
+  },
+  {
+   "num": 75,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have shelves in the lost property office",
+   "noun": "shelf",
+   "plural": "shelves",
+   "names": [
+    "Clara",
+    "Elsie",
+    "Kit",
+    "Rosa",
+    "Wren",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Clara does not have shelf 2.",
+     "form": [
+      "notat",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Kit is right next to Clara.",
+     "form": [
+      "adj",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Clara is right next to Rosa.",
+     "form": [
+      "adj",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Zeke is somewhere between Kit and Wren.",
+     "form": [
+      "between",
+      5,
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Rosa has an odd-numbered shelf.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    },
+    {
+     "text": "Elsie is not next to Rosa.",
+     "form": [
+      "notadj",
+      1,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Zeke",
+    "Rosa",
+    "Clara",
+    "Kit",
+    "Elsie"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Clara has shelf 6. Follow the clues one at a time and you reach a clash, so Clara does not have shelf 6.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    6
+   ]
+  },
+  {
+   "num": 76,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have seats in a row in the observation car",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Dov",
+    "Milo",
+    "Otto",
+    "Pippa",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Dov is right next to Milo.",
+     "form": [
+      "adj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Otto is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Bram is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Milo and Otto.",
+     "form": [
+      "between",
+      5,
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Pippa and Bram.",
+     "form": [
+      "between",
+      1,
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Dov is directly to the left of Pippa.",
+     "form": [
+      "left1",
+      1,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Bram",
+    "Otto",
+    "Viggo",
+    "Milo",
+    "Dov",
+    "Pippa"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Bram has seat 6. Follow the clues one at a time and you reach a clash, so Bram does not have seat 6.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    6
+   ]
+  },
+  {
+   "num": 77,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have compartments in the sleeper car",
+   "noun": "compartment",
+   "plural": "compartments",
+   "names": [
+    "Jonah",
+    "Kit",
+    "Milo",
+    "Quinn",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Jonah is right next to Uma.",
+     "form": [
+      "adj",
+      0,
+      5
+     ]
+    },
+    {
+     "text": "Tessa is not next to Jonah.",
+     "form": [
+      "notadj",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Kit is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Uma is somewhere between Tessa and Milo.",
+     "form": [
+      "between",
+      5,
+      4,
+      2
+     ]
+    },
+    {
+     "text": "There is exactly one compartment between Jonah and Quinn.",
+     "form": [
+      "gap",
+      0,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Milo.",
+     "form": [
+      "before",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Quinn is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Tessa",
+    "Kit",
+    "Uma",
+    "Jonah",
+    "Milo",
+    "Quinn"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Jonah has compartment 3. Follow the clues one at a time and you reach a clash, so Jonah does not have compartment 3.",
+   "hint_key": [
+    "suppose",
+    "Jonah",
+    3
+   ]
+  },
+  {
+   "num": 78,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have lockers at the valley station",
+   "noun": "locker",
+   "plural": "lockers",
+   "names": [
+    "Ada",
+    "Dov",
+    "Finn",
+    "Ivy",
+    "Milo",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Tessa is right next to Ivy.",
+     "form": [
+      "adj",
+      5,
+      3
+     ]
+    },
+    {
+     "text": "Ivy is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "Dov is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Ada has an odd-numbered locker.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Tessa is somewhere between Ada and Ivy.",
+     "form": [
+      "between",
+      5,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Milo does not have locker 6.",
+     "form": [
+      "notat",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Finn has an even-numbered locker.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Tessa has an even-numbered locker.",
+     "form": [
+      "even",
+      5,
+      true
+     ]
+    },
+    {
+     "text": "Tessa is somewhere to the left of Milo.",
+     "form": [
+      "before",
+      5,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Ada",
+    "Tessa",
+    "Ivy",
+    "Finn",
+    "Milo",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Finn has locker 2. Follow the clues one at a time and you reach a clash, so Finn does not have locker 2.",
+   "hint_key": [
+    "suppose",
+    "Finn",
+    2
+   ]
+  },
+  {
+   "num": 79,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit on the long bench in the waiting room",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Ada",
+    "Milo",
+    "Nell",
+    "Rosa",
+    "Sam",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Nell has an even-numbered seat.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Milo is directly to the left of Rosa.",
+     "form": [
+      "left1",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Ada is somewhere between Sam and Rosa.",
+     "form": [
+      "between",
+      0,
+      4,
+      3
+     ]
+    },
+    {
+     "text": "There is exactly one seat between Rosa and Tessa.",
+     "form": [
+      "gap",
+      3,
+      5,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Sam",
+    "Nell",
+    "Ada",
+    "Tessa",
+    "Milo",
+    "Rosa"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has seat 5. Follow the clues one at a time and you reach a clash, so Ada does not have seat 5.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    5
+   ]
+  },
+  {
+   "num": 80,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have berths along the night carriage",
+   "noun": "berth",
+   "plural": "berths",
+   "names": [
+    "Finn",
+    "Hugo",
+    "Lena",
+    "Nell",
+    "Quinn",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Hugo is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Hugo is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      1,
+      5
+     ]
+    },
+    {
+     "text": "Lena is directly to the left of Tessa.",
+     "form": [
+      "left1",
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Finn is at one end of the row.",
+     "form": [
+      "end",
+      0
+     ]
+    },
+    {
+     "text": "Quinn is not next to Nell.",
+     "form": [
+      "notadj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Nell is right next to Lena.",
+     "form": [
+      "adj",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Hugo",
+    "Nell",
+    "Lena",
+    "Tessa",
+    "Quinn",
+    "Finn"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Lena has berth 2. Follow the clues one at a time and you reach a clash, so Lena does not have berth 2.",
+   "hint_key": [
+    "suppose",
+    "Lena",
+    2
+   ]
+  },
+  {
+   "num": 81,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "hang their bags on the hooks in the guard's van",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Ada",
+    "Clara",
+    "Kit",
+    "Quinn",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Quinn has an even-numbered hook.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Clara is somewhere to the left of Quinn.",
+     "form": [
+      "before",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Kit is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Kit is right next to Ada.",
+     "form": [
+      "adj",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Clara is not next to Tessa.",
+     "form": [
+      "notadj",
+      1,
+      4
+     ]
+    },
+    {
+     "text": "Ada is right next to Uma.",
+     "form": [
+      "adj",
+      0,
+      5
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Quinn",
+    "Tessa",
+    "Uma",
+    "Ada",
+    "Kit"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has hook 2. Follow the clues one at a time and you reach a clash, so Ada does not have hook 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 82,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have pigeonholes in the parcels office",
+   "noun": "pigeonhole",
+   "plural": "pigeonholes",
+   "names": [
+    "Elsie",
+    "Finn",
+    "Milo",
+    "Nell",
+    "Pippa",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Nell has an even-numbered pigeonhole.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Zeke is not at either end of the row.",
+     "form": [
+      "notend",
+      5
+     ]
+    },
+    {
+     "text": "Finn is directly to the left of Milo.",
+     "form": [
+      "left1",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Finn is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      1,
+      4
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Finn and Elsie.",
+     "form": [
+      "between",
+      4,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Pippa has an even-numbered pigeonhole.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Finn",
+    "Milo",
+    "Zeke",
+    "Pippa",
+    "Elsie",
+    "Nell"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Elsie has pigeonhole 1. Follow the clues one at a time and you reach a clash, so Elsie does not have pigeonhole 1.",
+   "hint_key": [
+    "suppose",
+    "Elsie",
+    1
+   ]
+  },
+  {
+   "num": 83,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have tables in the dining car",
+   "noun": "table",
+   "plural": "tables",
+   "names": [
+    "Dov",
+    "Ivy",
+    "Lena",
+    "Milo",
+    "Uma",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Uma is somewhere between Dov and Milo.",
+     "form": [
+      "between",
+      4,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Wren is right next to Lena.",
+     "form": [
+      "adj",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Dov is directly to the left of Ivy.",
+     "form": [
+      "left1",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Lena has an odd-numbered table.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    },
+    {
+     "text": "There is exactly one table between Milo and Wren.",
+     "form": [
+      "gap",
+      3,
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Milo is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Ivy",
+    "Uma",
+    "Milo",
+    "Lena",
+    "Wren"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Dov has table 5. Follow the clues one at a time and you reach a clash, so Dov does not have table 5.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    5
+   ]
+  },
+  {
+   "num": 84,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit on the stools at the tea urn counter",
+   "noun": "stool",
+   "plural": "stools",
+   "names": [
+    "Milo",
+    "Rosa",
+    "Tessa",
+    "Uma",
+    "Wren",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Wren is somewhere between Zeke and Tessa.",
+     "form": [
+      "between",
+      4,
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Rosa is right next to Tessa.",
+     "form": [
+      "adj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Uma has an even-numbered stool.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Rosa is somewhere to the left of Milo.",
+     "form": [
+      "before",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "There are exactly three stools between Wren and Tessa.",
+     "form": [
+      "gap",
+      4,
+      2,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Tessa",
+    "Rosa",
+    "Milo",
+    "Uma",
+    "Wren",
+    "Zeke"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Milo has stool 4. Follow the clues one at a time and you reach a clash, so Milo does not have stool 4.",
+   "hint_key": [
+    "suppose",
+    "Milo",
+    4
+   ]
+  },
+  {
+   "num": 85,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "hang lamps on the hooks in the lamp room",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Greta",
+    "Hugo",
+    "Nell",
+    "Otto",
+    "Wren",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Zeke is right next to Greta.",
+     "form": [
+      "adj",
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Nell is somewhere between Zeke and Otto.",
+     "form": [
+      "between",
+      2,
+      5,
+      3
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Zeke.",
+     "form": [
+      "before",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Zeke is right next to Hugo.",
+     "form": [
+      "adj",
+      5,
+      1
+     ]
+    },
+    {
+     "text": "There are exactly three hooks between Otto and Greta.",
+     "form": [
+      "gap",
+      3,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Greta does not have hook 2.",
+     "form": [
+      "notat",
+      0,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Otto",
+    "Nell",
+    "Hugo",
+    "Zeke",
+    "Greta"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Greta has hook 1. Follow the clues one at a time and you reach a clash, so Greta does not have hook 1.",
+   "hint_key": [
+    "suppose",
+    "Greta",
+    1
+   ]
+  },
+  {
+   "num": 86,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have workbenches in the carriage works",
+   "noun": "workbench",
+   "plural": "workbenches",
+   "names": [
+    "Clara",
+    "Finn",
+    "Hugo",
+    "Otto",
+    "Pippa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Clara has an even-numbered workbench.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Clara is right next to Otto.",
+     "form": [
+      "adj",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "There are exactly two workbenches between Pippa and Clara.",
+     "form": [
+      "gap",
+      4,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Otto is directly to the left of Finn.",
+     "form": [
+      "left1",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Uma is at one end of the row.",
+     "form": [
+      "end",
+      5
+     ]
+    },
+    {
+     "text": "Hugo is not next to Clara.",
+     "form": [
+      "notadj",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Clara",
+    "Otto",
+    "Finn",
+    "Pippa",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Clara has workbench 6. Follow the clues one at a time and you reach a clash, so Clara does not have workbench 6.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    6
+   ]
+  },
+  {
+   "num": 87,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "sit in the chairs on the summit station porch",
+   "noun": "chair",
+   "plural": "chairs",
+   "names": [
+    "Clara",
+    "Hugo",
+    "Kit",
+    "Nell",
+    "Pippa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Clara has an odd-numbered chair.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Kit is not next to Nell.",
+     "form": [
+      "notadj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Nell is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Clara and Nell.",
+     "form": [
+      "between",
+      4,
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Hugo has an even-numbered chair.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Wren is right next to Pippa.",
+     "form": [
+      "adj",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Wren and Nell.",
+     "form": [
+      "between",
+      4,
+      5,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Kit",
+    "Wren",
+    "Pippa",
+    "Nell",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Clara has chair 3. Follow the clues one at a time and you reach a clash, so Clara does not have chair 3.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    3
+   ]
+  },
+  {
+   "num": 88,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have windows along the ticket office counter",
+   "noun": "window",
+   "plural": "windows",
+   "names": [
+    "Ada",
+    "Jonah",
+    "Rosa",
+    "Tessa",
+    "Uma",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Uma is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Rosa is directly to the left of Jonah.",
+     "form": [
+      "left1",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Tessa is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "There is exactly one window between Ada and Uma.",
+     "form": [
+      "gap",
+      0,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Zeke has an even-numbered window.",
+     "form": [
+      "even",
+      5,
+      true
+     ]
+    },
+    {
+     "text": "Rosa is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Rosa",
+    "Jonah",
+    "Uma",
+    "Tessa",
+    "Ada",
+    "Zeke"
+   ],
+   "depth": 1,
+   "suppositions": 2,
+   "hint": "Try supposing Ada has window 2. Follow the clues one at a time and you reach a clash, so Ada does not have window 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 89,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "stand at the numbered marks on the platform",
+   "noun": "mark",
+   "plural": "marks",
+   "names": [
+    "Ada",
+    "Dov",
+    "Ivy",
+    "Kit",
+    "Otto",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Otto is right next to Ada.",
+     "form": [
+      "adj",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Dov is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Dov has an odd-numbered mark.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    },
+    {
+     "text": "Kit is right next to Ada.",
+     "form": [
+      "adj",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Ivy has an odd-numbered mark.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Yara.",
+     "form": [
+      "before",
+      3,
+      5
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Ada and Yara.",
+     "form": [
+      "between",
+      4,
+      0,
+      5
+     ]
+    }
+   ],
+   "answer": [
+    "Ivy",
+    "Kit",
+    "Ada",
+    "Otto",
+    "Dov",
+    "Yara"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Ada has mark 1. Follow the clues one at a time and you reach a clash, so Ada does not have mark 1.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    1
+   ]
+  },
+  {
+   "num": 90,
+   "band": "Hard",
+   "place": "The Railway",
+   "people": 6,
+   "setting": "have shelves in the lost property office",
+   "noun": "shelf",
+   "plural": "shelves",
+   "names": [
+    "Dov",
+    "Milo",
+    "Otto",
+    "Sam",
+    "Tessa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Tessa has an even-numbered shelf.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Dov and Otto.",
+     "form": [
+      "between",
+      1,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Wren and Dov.",
+     "form": [
+      "between",
+      2,
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Otto is right next to Milo.",
+     "form": [
+      "adj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Otto has an even-numbered shelf.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Sam has an odd-numbered shelf.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    },
+    {
+     "text": "Dov is right next to Tessa.",
+     "form": [
+      "adj",
+      0,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Tessa",
+    "Milo",
+    "Otto",
+    "Sam",
+    "Wren"
+   ],
+   "depth": 1,
+   "suppositions": 1,
+   "hint": "Try supposing Dov has shelf 5. Follow the clues one at a time and you reach a clash, so Dov does not have shelf 5.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    5
+   ]
+  },
+  {
+   "num": 91,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have huts along the ridge path",
+   "noun": "hut",
+   "plural": "huts",
+   "names": [
+    "Clara",
+    "Hugo",
+    "Ivy",
+    "Lena",
+    "Milo",
+    "Sam",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Lena has an odd-numbered hut.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    },
+    {
+     "text": "Zeke is directly to the left of Hugo.",
+     "form": [
+      "left1",
+      6,
+      1
+     ]
+    },
+    {
+     "text": "Ivy is somewhere between Hugo and Clara.",
+     "form": [
+      "between",
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Sam is not next to Zeke.",
+     "form": [
+      "notadj",
+      5,
+      6
+     ]
+    },
+    {
+     "text": "Lena is somewhere between Milo and Sam.",
+     "form": [
+      "between",
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Sam is somewhere between Zeke and Ivy.",
+     "form": [
+      "between",
+      5,
+      6,
+      2
+     ]
+    },
+    {
+     "text": "Milo is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Zeke",
+    "Hugo",
+    "Sam",
+    "Ivy",
+    "Lena",
+    "Clara",
+    "Milo"
+   ],
+   "depth": 1,
+   "suppositions": 6,
+   "hint": "Try supposing Clara has hut 1. Follow the clues one at a time and you reach a clash, so Clara does not have hut 1.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    1
+   ]
+  },
+  {
+   "num": 92,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "start from the sledge lanes at the top of Long Hill",
+   "noun": "lane",
+   "plural": "lanes",
+   "names": [
+    "Elsie",
+    "Milo",
+    "Nell",
+    "Otto",
+    "Quinn",
+    "Viggo",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Milo has an odd-numbered lane.",
+     "form": [
+      "even",
+      1,
+      false
+     ]
+    },
+    {
+     "text": "Otto is not next to Nell.",
+     "form": [
+      "notadj",
+      3,
+      2
+     ]
+    },
+    {
+     "text": "Elsie is somewhere between Quinn and Yara.",
+     "form": [
+      "between",
+      0,
+      4,
+      6
+     ]
+    },
+    {
+     "text": "Otto is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Quinn has an odd-numbered lane.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Yara.",
+     "form": [
+      "before",
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Nell is somewhere between Otto and Quinn.",
+     "form": [
+      "between",
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Elsie has an even-numbered lane.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Elsie.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Viggo is right next to Quinn.",
+     "form": [
+      "adj",
+      5,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Viggo",
+    "Nell",
+    "Elsie",
+    "Milo",
+    "Yara",
+    "Otto"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Elsie has lane 6. Follow the clues one at a time and you reach a clash, so Elsie does not have lane 6.",
+   "hint_key": [
+    "suppose",
+    "Elsie",
+    6
+   ]
+  },
+  {
+   "num": 93,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have bunks in the summit hut",
+   "noun": "bunk",
+   "plural": "bunks",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Hugo",
+    "Ivy",
+    "Tessa",
+    "Yara",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Yara is not at either end of the row.",
+     "form": [
+      "notend",
+      5
+     ]
+    },
+    {
+     "text": "Yara does not have bunk 6.",
+     "form": [
+      "notat",
+      5,
+      5
+     ]
+    },
+    {
+     "text": "Ivy does not have bunk 5.",
+     "form": [
+      "notat",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "Tessa is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Tessa is right next to Ivy.",
+     "form": [
+      "adj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Elsie is somewhere between Hugo and Yara.",
+     "form": [
+      "between",
+      1,
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Zeke has an odd-numbered bunk.",
+     "form": [
+      "even",
+      6,
+      false
+     ]
+    },
+    {
+     "text": "Hugo is somewhere between Ivy and Yara.",
+     "form": [
+      "between",
+      2,
+      3,
+      5
+     ]
+    },
+    {
+     "text": "Tessa has an even-numbered bunk.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Ivy",
+    "Tessa",
+    "Hugo",
+    "Elsie",
+    "Yara",
+    "Dov",
+    "Zeke"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Dov has bunk 3. Follow the clues one at a time and you reach a clash, so Dov does not have bunk 3.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    3
+   ]
+  },
+  {
+   "num": 94,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "keep their skis in the racks at the ski-patrol cabin",
+   "noun": "rack",
+   "plural": "racks",
+   "names": [
+    "Dov",
+    "Finn",
+    "Greta",
+    "Milo",
+    "Otto",
+    "Quinn",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere to the left of Milo.",
+     "form": [
+      "before",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Finn is not at either end of the row.",
+     "form": [
+      "notend",
+      1
+     ]
+    },
+    {
+     "text": "Otto has an even-numbered rack.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Quinn does not have rack 3.",
+     "form": [
+      "notat",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Wren and Dov.",
+     "form": [
+      "between",
+      3,
+      6,
+      0
+     ]
+    },
+    {
+     "text": "Greta is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Milo.",
+     "form": [
+      "before",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Otto and Finn.",
+     "form": [
+      "between",
+      3,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Finn is directly to the left of Quinn.",
+     "form": [
+      "left1",
+      1,
+      5
+     ]
+    },
+    {
+     "text": "Milo has an odd-numbered rack.",
+     "form": [
+      "even",
+      3,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Greta",
+    "Finn",
+    "Quinn",
+    "Milo",
+    "Otto",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Dov has rack 1. Follow the clues one at a time and you reach a clash, so Dov does not have rack 1.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    1
+   ]
+  },
+  {
+   "num": 95,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "take the cabins of the hot-spring bathhouse",
+   "noun": "cabin",
+   "plural": "cabins",
+   "names": [
+    "Bram",
+    "Dov",
+    "Elsie",
+    "Greta",
+    "Otto",
+    "Quinn",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Greta is somewhere between Elsie and Zeke.",
+     "form": [
+      "between",
+      3,
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Greta is right next to Dov.",
+     "form": [
+      "adj",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Elsie has an odd-numbered cabin.",
+     "form": [
+      "even",
+      2,
+      false
+     ]
+    },
+    {
+     "text": "Otto is not next to Greta.",
+     "form": [
+      "notadj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Otto.",
+     "form": [
+      "before",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Dov has an even-numbered cabin.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Zeke is directly to the left of Otto.",
+     "form": [
+      "left1",
+      6,
+      4
+     ]
+    },
+    {
+     "text": "Quinn is somewhere between Greta and Bram.",
+     "form": [
+      "between",
+      5,
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Bram has an odd-numbered cabin.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Bram",
+    "Quinn",
+    "Elsie",
+    "Dov",
+    "Greta",
+    "Zeke",
+    "Otto"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Bram has cabin 3. Follow the clues one at a time and you reach a clash, so Bram does not have cabin 3.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    3
+   ]
+  },
+  {
+   "num": 96,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "sit on the log bench at the glacier viewpoint",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Clara",
+    "Finn",
+    "Greta",
+    "Hugo",
+    "Nell",
+    "Rosa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Nell is directly to the left of Finn.",
+     "form": [
+      "left1",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Hugo is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      3,
+      5
+     ]
+    },
+    {
+     "text": "Nell is somewhere to the left of Hugo.",
+     "form": [
+      "before",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Hugo is right next to Wren.",
+     "form": [
+      "adj",
+      3,
+      6
+     ]
+    },
+    {
+     "text": "There is exactly one seat between Clara and Greta.",
+     "form": [
+      "gap",
+      0,
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Clara is somewhere between Finn and Greta.",
+     "form": [
+      "between",
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Hugo has an even-numbered seat.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Finn",
+    "Wren",
+    "Hugo",
+    "Clara",
+    "Rosa",
+    "Greta"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Clara has seat 2. Follow the clues one at a time and you reach a clash, so Clara does not have seat 2.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    2
+   ]
+  },
+  {
+   "num": 97,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "set up telescopes on the stands of the star-watch platform",
+   "noun": "stand",
+   "plural": "stands",
+   "names": [
+    "Bram",
+    "Dov",
+    "Greta",
+    "Jonah",
+    "Milo",
+    "Pippa",
+    "Quinn"
+   ],
+   "clues": [
+    {
+     "text": "Quinn is right next to Jonah.",
+     "form": [
+      "adj",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Milo is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    },
+    {
+     "text": "Milo is somewhere to the left of Greta.",
+     "form": [
+      "before",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Greta has an even-numbered stand.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    },
+    {
+     "text": "Bram does not have stand 3.",
+     "form": [
+      "notat",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Bram is somewhere to the left of Quinn.",
+     "form": [
+      "before",
+      0,
+      6
+     ]
+    },
+    {
+     "text": "Jonah is somewhere between Dov and Quinn.",
+     "form": [
+      "between",
+      3,
+      1,
+      6
+     ]
+    },
+    {
+     "text": "There are exactly two stands between Quinn and Pippa.",
+     "form": [
+      "gap",
+      6,
+      5,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Milo",
+    "Greta",
+    "Dov",
+    "Pippa",
+    "Bram",
+    "Jonah",
+    "Quinn"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Bram has stand 4. Follow the clues one at a time and you reach a clash, so Bram does not have stand 4.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    4
+   ]
+  },
+  {
+   "num": 98,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "hang their packs on the hooks in the shepherd's bothy",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Bram",
+    "Kit",
+    "Quinn",
+    "Rosa",
+    "Tessa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Quinn is not next to Kit.",
+     "form": [
+      "notadj",
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Wren is directly to the left of Tessa.",
+     "form": [
+      "left1",
+      6,
+      4
+     ]
+    },
+    {
+     "text": "Tessa does not have hook 3.",
+     "form": [
+      "notat",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Tessa is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Quinn is right next to Wren.",
+     "form": [
+      "adj",
+      2,
+      6
+     ]
+    },
+    {
+     "text": "There is exactly one hook between Wren and Viggo.",
+     "form": [
+      "gap",
+      6,
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Viggo is not at either end of the row.",
+     "form": [
+      "notend",
+      5
+     ]
+    },
+    {
+     "text": "Bram has an odd-numbered hook.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    }
+   ],
+   "answer": [
+    "Kit",
+    "Viggo",
+    "Quinn",
+    "Wren",
+    "Tessa",
+    "Rosa",
+    "Bram"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Bram has hook 3. Follow the clues one at a time and you reach a clash, so Bram does not have hook 3.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    3
+   ]
+  },
+  {
+   "num": 99,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have stalls in the high pasture barn",
+   "noun": "stall",
+   "plural": "stalls",
+   "names": [
+    "Hugo",
+    "Ivy",
+    "Lena",
+    "Pippa",
+    "Quinn",
+    "Sam",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "There is exactly one stall between Ivy and Quinn.",
+     "form": [
+      "gap",
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Zeke has an even-numbered stall.",
+     "form": [
+      "even",
+      6,
+      true
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Quinn and Hugo.",
+     "form": [
+      "between",
+      3,
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Zeke is somewhere between Hugo and Ivy.",
+     "form": [
+      "between",
+      6,
+      0,
+      1
+     ]
+    },
+    {
+     "text": "There is exactly one stall between Pippa and Sam.",
+     "form": [
+      "gap",
+      3,
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Sam is somewhere between Pippa and Ivy.",
+     "form": [
+      "between",
+      5,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Lena is directly to the left of Zeke.",
+     "form": [
+      "left1",
+      2,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "Ivy",
+    "Sam",
+    "Quinn",
+    "Pippa",
+    "Lena",
+    "Zeke",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 6,
+   "hint": "Try supposing Hugo has stall 1. Follow the clues one at a time and you reach a clash, so Hugo does not have stall 1.",
+   "hint_key": [
+    "suppose",
+    "Hugo",
+    1
+   ]
+  },
+  {
+   "num": 100,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "sit along the window ledge of the fire lookout",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Ada",
+    "Hugo",
+    "Milo",
+    "Rosa",
+    "Uma",
+    "Viggo",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Ada is somewhere between Uma and Hugo.",
+     "form": [
+      "between",
+      0,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Zeke is somewhere between Rosa and Hugo.",
+     "form": [
+      "between",
+      6,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Zeke is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      6,
+      0
+     ]
+    },
+    {
+     "text": "There is exactly one seat between Viggo and Rosa.",
+     "form": [
+      "gap",
+      5,
+      3,
+      1
+     ]
+    },
+    {
+     "text": "There are exactly two seats between Uma and Zeke.",
+     "form": [
+      "gap",
+      4,
+      6,
+      2
+     ]
+    },
+    {
+     "text": "Uma is not next to Ada.",
+     "form": [
+      "notadj",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Milo is right next to Uma.",
+     "form": [
+      "adj",
+      2,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Milo",
+    "Rosa",
+    "Zeke",
+    "Viggo",
+    "Ada",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Ada has seat 3. Follow the clues one at a time and you reach a clash, so Ada does not have seat 3.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    3
+   ]
+  },
+  {
+   "num": 101,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "hang their snowshoes on the pegs at the trail-map cabin",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Dov",
+    "Greta",
+    "Milo",
+    "Nell",
+    "Tessa",
+    "Wren",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Milo is directly to the left of Yara.",
+     "form": [
+      "left1",
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Milo is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Wren is right next to Yara.",
+     "form": [
+      "adj",
+      5,
+      6
+     ]
+    },
+    {
+     "text": "Tessa is directly to the left of Nell.",
+     "form": [
+      "left1",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Tessa has an even-numbered peg.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere between Nell and Greta.",
+     "form": [
+      "between",
+      2,
+      3,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Greta",
+    "Milo",
+    "Yara",
+    "Wren",
+    "Dov",
+    "Tessa",
+    "Nell"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Dov has peg 3. Follow the clues one at a time and you reach a clash, so Dov does not have peg 3.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    3
+   ]
+  },
+  {
+   "num": 102,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have cubbies at the weather station",
+   "noun": "cubby",
+   "plural": "cubbies",
+   "names": [
+    "Dov",
+    "Finn",
+    "Lena",
+    "Pippa",
+    "Rosa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Pippa is somewhere between Wren and Lena.",
+     "form": [
+      "between",
+      3,
+      6,
+      2
+     ]
+    },
+    {
+     "text": "Rosa is right next to Finn.",
+     "form": [
+      "adj",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Finn and Dov.",
+     "form": [
+      "between",
+      3,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "There is exactly one cubby between Pippa and Finn.",
+     "form": [
+      "gap",
+      3,
+      1,
+      1
+     ]
+    },
+    {
+     "text": "Wren is not at either end of the row.",
+     "form": [
+      "notend",
+      6
+     ]
+    },
+    {
+     "text": "There are exactly two cubbies between Finn and Viggo.",
+     "form": [
+      "gap",
+      1,
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Finn does not have cubby 6.",
+     "form": [
+      "notat",
+      1,
+      5
+     ]
+    },
+    {
+     "text": "Dov is not next to Viggo.",
+     "form": [
+      "notadj",
+      0,
+      5
+     ]
+    }
+   ],
+   "answer": [
+    "Rosa",
+    "Finn",
+    "Wren",
+    "Pippa",
+    "Viggo",
+    "Lena",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Dov has cubby 1. Follow the clues one at a time and you reach a clash, so Dov does not have cubby 1.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    1
+   ]
+  },
+  {
+   "num": 103,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have benches in the old sawmill workshop",
+   "noun": "bench",
+   "plural": "benches",
+   "names": [
+    "Dov",
+    "Elsie",
+    "Greta",
+    "Ivy",
+    "Tessa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Dov is right next to Elsie.",
+     "form": [
+      "adj",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Wren and Tessa.",
+     "form": [
+      "between",
+      0,
+      6,
+      4
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Greta and Viggo.",
+     "form": [
+      "between",
+      0,
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Greta does not have bench 6.",
+     "form": [
+      "notat",
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Wren and Dov.",
+     "form": [
+      "between",
+      5,
+      6,
+      0
+     ]
+    },
+    {
+     "text": "Viggo is somewhere between Wren and Ivy.",
+     "form": [
+      "between",
+      5,
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Elsie.",
+     "form": [
+      "before",
+      6,
+      1
+     ]
+    },
+    {
+     "text": "Tessa is right next to Dov.",
+     "form": [
+      "adj",
+      4,
+      0
+     ]
+    },
+    {
+     "text": "Ivy does not have bench 3.",
+     "form": [
+      "notat",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Viggo",
+    "Elsie",
+    "Dov",
+    "Tessa",
+    "Ivy",
+    "Greta"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Dov has bench 2. Follow the clues one at a time and you reach a clash, so Dov does not have bench 2.",
+   "hint_key": [
+    "suppose",
+    "Dov",
+    2
+   ]
+  },
+  {
+   "num": 104,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "take the window seats in the mountain chapel",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Ada",
+    "Dov",
+    "Elsie",
+    "Jonah",
+    "Kit",
+    "Pippa",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Ada has an even-numbered seat.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Jonah has an even-numbered seat.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Elsie.",
+     "form": [
+      "before",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      4,
+      6
+     ]
+    },
+    {
+     "text": "Kit is right next to Pippa.",
+     "form": [
+      "adj",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Kit is right next to Elsie.",
+     "form": [
+      "adj",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Dov is not next to Ada.",
+     "form": [
+      "notadj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Jonah is not next to Tessa.",
+     "form": [
+      "notadj",
+      3,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Jonah",
+    "Pippa",
+    "Kit",
+    "Elsie",
+    "Ada",
+    "Tessa"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Ada has seat 2. Follow the clues one at a time and you reach a clash, so Ada does not have seat 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 105,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have nooks along the ice cave path",
+   "noun": "nook",
+   "plural": "nooks",
+   "names": [
+    "Clara",
+    "Dov",
+    "Greta",
+    "Milo",
+    "Pippa",
+    "Quinn",
+    "Sam"
+   ],
+   "clues": [
+    {
+     "text": "Clara has an odd-numbered nook.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Clara is directly to the left of Milo.",
+     "form": [
+      "left1",
+      0,
+      3
+     ]
+    },
+    {
+     "text": "Dov is right next to Sam.",
+     "form": [
+      "adj",
+      1,
+      6
+     ]
+    },
+    {
+     "text": "Greta is not next to Pippa.",
+     "form": [
+      "notadj",
+      2,
+      4
+     ]
+    },
+    {
+     "text": "Greta is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Pippa and Quinn.",
+     "form": [
+      "between",
+      1,
+      4,
+      5
+     ]
+    },
+    {
+     "text": "There are exactly two nooks between Pippa and Sam.",
+     "form": [
+      "gap",
+      4,
+      6,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Greta",
+    "Dov",
+    "Sam",
+    "Clara",
+    "Milo",
+    "Pippa"
+   ],
+   "depth": 1,
+   "suppositions": 6,
+   "hint": "Try supposing Clara has nook 3. Follow the clues one at a time and you reach a clash, so Clara does not have nook 3.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    3
+   ]
+  },
+  {
+   "num": 106,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have huts along the ridge path",
+   "noun": "hut",
+   "plural": "huts",
+   "names": [
+    "Ada",
+    "Finn",
+    "Greta",
+    "Milo",
+    "Otto",
+    "Sam",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Tessa is somewhere between Otto and Finn.",
+     "form": [
+      "between",
+      6,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Finn has an even-numbered hut.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    },
+    {
+     "text": "Milo is somewhere to the left of Ada.",
+     "form": [
+      "before",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Sam is directly to the left of Otto.",
+     "form": [
+      "left1",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Sam is right next to Ada.",
+     "form": [
+      "adj",
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Greta is somewhere between Tessa and Finn.",
+     "form": [
+      "between",
+      2,
+      6,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Milo",
+    "Finn",
+    "Greta",
+    "Tessa",
+    "Ada",
+    "Sam",
+    "Otto"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Ada has hut 2. Follow the clues one at a time and you reach a clash, so Ada does not have hut 2.",
+   "hint_key": [
+    "suppose",
+    "Ada",
+    2
+   ]
+  },
+  {
+   "num": 107,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "start from the sledge lanes at the top of Long Hill",
+   "noun": "lane",
+   "plural": "lanes",
+   "names": [
+    "Ivy",
+    "Jonah",
+    "Lena",
+    "Quinn",
+    "Sam",
+    "Tessa",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "Sam is somewhere to the left of Quinn.",
+     "form": [
+      "before",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Ivy has an odd-numbered lane.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Zeke is right next to Jonah.",
+     "form": [
+      "adj",
+      6,
+      1
+     ]
+    },
+    {
+     "text": "Jonah is directly to the left of Tessa.",
+     "form": [
+      "left1",
+      1,
+      5
+     ]
+    },
+    {
+     "text": "Sam is not next to Quinn.",
+     "form": [
+      "notadj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Quinn is not next to Ivy.",
+     "form": [
+      "notadj",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Quinn does not have lane 7.",
+     "form": [
+      "notat",
+      3,
+      6
+     ]
+    },
+    {
+     "text": "Lena does not have lane 7.",
+     "form": [
+      "notat",
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Jonah has an even-numbered lane.",
+     "form": [
+      "even",
+      1,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Ivy",
+    "Sam",
+    "Lena",
+    "Quinn",
+    "Zeke",
+    "Jonah",
+    "Tessa"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Ivy has lane 3. Follow the clues one at a time and you reach a clash, so Ivy does not have lane 3.",
+   "hint_key": [
+    "suppose",
+    "Ivy",
+    3
+   ]
+  },
+  {
+   "num": 108,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have bunks in the summit hut",
+   "noun": "bunk",
+   "plural": "bunks",
+   "names": [
+    "Finn",
+    "Greta",
+    "Hugo",
+    "Otto",
+    "Quinn",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "There is exactly one bunk between Quinn and Hugo.",
+     "form": [
+      "gap",
+      4,
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Uma is somewhere between Hugo and Finn.",
+     "form": [
+      "between",
+      6,
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Otto is right next to Greta.",
+     "form": [
+      "adj",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Otto is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Finn is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      0,
+      6
+     ]
+    },
+    {
+     "text": "Greta is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      1,
+      5
+     ]
+    },
+    {
+     "text": "Uma is directly to the left of Quinn.",
+     "form": [
+      "left1",
+      6,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Greta",
+    "Finn",
+    "Uma",
+    "Quinn",
+    "Tessa",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Finn has bunk 1. Follow the clues one at a time and you reach a clash, so Finn does not have bunk 1.",
+   "hint_key": [
+    "suppose",
+    "Finn",
+    1
+   ]
+  },
+  {
+   "num": 109,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "keep their skis in the racks at the ski-patrol cabin",
+   "noun": "rack",
+   "plural": "racks",
+   "names": [
+    "Clara",
+    "Dov",
+    "Lena",
+    "Otto",
+    "Tessa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Lena is not next to Wren.",
+     "form": [
+      "notadj",
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Wren has an odd-numbered rack.",
+     "form": [
+      "even",
+      6,
+      false
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Dov and Wren.",
+     "form": [
+      "between",
+      3,
+      1,
+      6
+     ]
+    },
+    {
+     "text": "Otto is somewhere between Wren and Viggo.",
+     "form": [
+      "between",
+      3,
+      6,
+      5
+     ]
+    },
+    {
+     "text": "Tessa has an odd-numbered rack.",
+     "form": [
+      "even",
+      4,
+      false
+     ]
+    },
+    {
+     "text": "Viggo is somewhere to the left of Lena.",
+     "form": [
+      "before",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Dov is at one end of the row.",
+     "form": [
+      "end",
+      1
+     ]
+    },
+    {
+     "text": "Viggo is somewhere to the left of Tessa.",
+     "form": [
+      "before",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Wren is somewhere between Lena and Clara.",
+     "form": [
+      "between",
+      6,
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Dov",
+    "Viggo",
+    "Lena",
+    "Otto",
+    "Wren",
+    "Clara",
+    "Tessa"
+   ],
+   "depth": 1,
+   "suppositions": 4,
+   "hint": "Try supposing Clara has rack 1. Follow the clues one at a time and you reach a clash, so Clara does not have rack 1.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    1
+   ]
+  },
+  {
+   "num": 110,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "take the cabins of the hot-spring bathhouse",
+   "noun": "cabin",
+   "plural": "cabins",
+   "names": [
+    "Clara",
+    "Hugo",
+    "Ivy",
+    "Jonah",
+    "Lena",
+    "Pippa",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "There are exactly two cabins between Jonah and Hugo.",
+     "form": [
+      "gap",
+      3,
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Lena is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    },
+    {
+     "text": "Clara is somewhere to the left of Lena.",
+     "form": [
+      "before",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Clara is not next to Hugo.",
+     "form": [
+      "notadj",
+      0,
+      1
+     ]
+    },
+    {
+     "text": "Jonah is somewhere between Wren and Pippa.",
+     "form": [
+      "between",
+      3,
+      6,
+      5
+     ]
+    },
+    {
+     "text": "Hugo is somewhere between Clara and Pippa.",
+     "form": [
+      "between",
+      1,
+      0,
+      5
+     ]
+    },
+    {
+     "text": "Jonah is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      3,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Jonah",
+    "Clara",
+    "Ivy",
+    "Hugo",
+    "Pippa",
+    "Lena"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Clara has cabin 1. Follow the clues one at a time and you reach a clash, so Clara does not have cabin 1.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    1
+   ]
+  },
+  {
+   "num": 111,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "sit on the log bench at the glacier viewpoint",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Ivy",
+    "Kit",
+    "Otto",
+    "Rosa",
+    "Tessa",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Otto is at one end of the row.",
+     "form": [
+      "end",
+      3
+     ]
+    },
+    {
+     "text": "Rosa is right next to Otto.",
+     "form": [
+      "adj",
+      4,
+      3
+     ]
+    },
+    {
+     "text": "Tessa is not next to Bram.",
+     "form": [
+      "notadj",
+      5,
+      0
+     ]
+    },
+    {
+     "text": "Bram does not have seat 5.",
+     "form": [
+      "notat",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Uma has an even-numbered seat.",
+     "form": [
+      "even",
+      6,
+      true
+     ]
+    },
+    {
+     "text": "Rosa is directly to the left of Kit.",
+     "form": [
+      "left1",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Uma is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      6,
+      1
+     ]
+    }
+   ],
+   "answer": [
+    "Otto",
+    "Rosa",
+    "Kit",
+    "Uma",
+    "Tessa",
+    "Ivy",
+    "Bram"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Bram has seat 1. Follow the clues one at a time and you reach a clash, so Bram does not have seat 1.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    1
+   ]
+  },
+  {
+   "num": 112,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "set up telescopes on the stands of the star-watch platform",
+   "noun": "stand",
+   "plural": "stands",
+   "names": [
+    "Bram",
+    "Dov",
+    "Elsie",
+    "Finn",
+    "Hugo",
+    "Jonah",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Hugo is directly to the left of Elsie.",
+     "form": [
+      "left1",
+      4,
+      2
+     ]
+    },
+    {
+     "text": "Finn is somewhere between Bram and Elsie.",
+     "form": [
+      "between",
+      3,
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Wren is somewhere to the left of Bram.",
+     "form": [
+      "before",
+      6,
+      0
+     ]
+    },
+    {
+     "text": "Wren does not have stand 6.",
+     "form": [
+      "notat",
+      6,
+      5
+     ]
+    },
+    {
+     "text": "Jonah is somewhere between Elsie and Bram.",
+     "form": [
+      "between",
+      5,
+      2,
+      0
+     ]
+    },
+    {
+     "text": "Dov is somewhere between Hugo and Wren.",
+     "form": [
+      "between",
+      1,
+      4,
+      6
+     ]
+    },
+    {
+     "text": "Jonah is right next to Elsie.",
+     "form": [
+      "adj",
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Elsie does not have stand 4.",
+     "form": [
+      "notat",
+      2,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Hugo",
+    "Elsie",
+    "Jonah",
+    "Dov",
+    "Wren",
+    "Finn",
+    "Bram"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Bram has stand 2. Follow the clues one at a time and you reach a clash, so Bram does not have stand 2.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    2
+   ]
+  },
+  {
+   "num": 113,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "hang their packs on the hooks in the shepherd's bothy",
+   "noun": "hook",
+   "plural": "hooks",
+   "names": [
+    "Bram",
+    "Clara",
+    "Ivy",
+    "Jonah",
+    "Pippa",
+    "Rosa",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Rosa is directly to the left of Pippa.",
+     "form": [
+      "left1",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Viggo is somewhere to the left of Jonah.",
+     "form": [
+      "before",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Bram has an even-numbered hook.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Clara and Bram.",
+     "form": [
+      "between",
+      4,
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Viggo is not next to Ivy.",
+     "form": [
+      "notadj",
+      6,
+      2
+     ]
+    },
+    {
+     "text": "Ivy is not at either end of the row.",
+     "form": [
+      "notend",
+      2
+     ]
+    },
+    {
+     "text": "Clara is somewhere to the left of Viggo.",
+     "form": [
+      "before",
+      1,
+      6
+     ]
+    },
+    {
+     "text": "Rosa is not next to Viggo.",
+     "form": [
+      "notadj",
+      5,
+      6
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Ivy",
+    "Rosa",
+    "Pippa",
+    "Viggo",
+    "Bram",
+    "Jonah"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Bram has hook 2. Follow the clues one at a time and you reach a clash, so Bram does not have hook 2.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    2
+   ]
+  },
+  {
+   "num": 114,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have stalls in the high pasture barn",
+   "noun": "stall",
+   "plural": "stalls",
+   "names": [
+    "Bram",
+    "Clara",
+    "Dov",
+    "Ivy",
+    "Lena",
+    "Quinn",
+    "Uma"
+   ],
+   "clues": [
+    {
+     "text": "Ivy has an even-numbered stall.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Uma is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Clara is somewhere between Quinn and Dov.",
+     "form": [
+      "between",
+      1,
+      5,
+      2
+     ]
+    },
+    {
+     "text": "Ivy is somewhere to the left of Clara.",
+     "form": [
+      "before",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Bram is right next to Lena.",
+     "form": [
+      "adj",
+      0,
+      4
+     ]
+    },
+    {
+     "text": "Lena has an even-numbered stall.",
+     "form": [
+      "even",
+      4,
+      true
+     ]
+    },
+    {
+     "text": "Dov is at one end of the row.",
+     "form": [
+      "end",
+      2
+     ]
+    },
+    {
+     "text": "Ivy is not next to Quinn.",
+     "form": [
+      "notadj",
+      3,
+      5
+     ]
+    }
+   ],
+   "answer": [
+    "Uma",
+    "Ivy",
+    "Bram",
+    "Lena",
+    "Quinn",
+    "Clara",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Bram has stall 1. Follow the clues one at a time and you reach a clash, so Bram does not have stall 1.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    1
+   ]
+  },
+  {
+   "num": 115,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "sit along the window ledge of the fire lookout",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Elsie",
+    "Ivy",
+    "Jonah",
+    "Milo",
+    "Nell",
+    "Pippa",
+    "Tessa"
+   ],
+   "clues": [
+    {
+     "text": "Nell is somewhere to the left of Ivy.",
+     "form": [
+      "before",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Ivy is not next to Jonah.",
+     "form": [
+      "notadj",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Tessa has an even-numbered seat.",
+     "form": [
+      "even",
+      6,
+      true
+     ]
+    },
+    {
+     "text": "Tessa is not next to Elsie.",
+     "form": [
+      "notadj",
+      6,
+      0
+     ]
+    },
+    {
+     "text": "Nell is at one end of the row.",
+     "form": [
+      "end",
+      4
+     ]
+    },
+    {
+     "text": "Jonah is right next to Milo.",
+     "form": [
+      "adj",
+      2,
+      3
+     ]
+    },
+    {
+     "text": "Elsie has an odd-numbered seat.",
+     "form": [
+      "even",
+      0,
+      false
+     ]
+    },
+    {
+     "text": "Pippa is directly to the left of Milo.",
+     "form": [
+      "left1",
+      5,
+      3
+     ]
+    }
+   ],
+   "answer": [
+    "Nell",
+    "Tessa",
+    "Ivy",
+    "Pippa",
+    "Milo",
+    "Jonah",
+    "Elsie"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Elsie has seat 3. Follow the clues one at a time and you reach a clash, so Elsie does not have seat 3.",
+   "hint_key": [
+    "suppose",
+    "Elsie",
+    3
+   ]
+  },
+  {
+   "num": 116,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "hang their snowshoes on the pegs at the trail-map cabin",
+   "noun": "peg",
+   "plural": "pegs",
+   "names": [
+    "Elsie",
+    "Greta",
+    "Kit",
+    "Lena",
+    "Quinn",
+    "Rosa",
+    "Yara"
+   ],
+   "clues": [
+    {
+     "text": "Rosa is not next to Greta.",
+     "form": [
+      "notadj",
+      5,
+      1
+     ]
+    },
+    {
+     "text": "Elsie is directly to the left of Kit.",
+     "form": [
+      "left1",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Yara is right next to Lena.",
+     "form": [
+      "adj",
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Lena is not at either end of the row.",
+     "form": [
+      "notend",
+      3
+     ]
+    },
+    {
+     "text": "Quinn is right next to Yara.",
+     "form": [
+      "adj",
+      4,
+      6
+     ]
+    },
+    {
+     "text": "Rosa is not at either end of the row.",
+     "form": [
+      "notend",
+      5
+     ]
+    },
+    {
+     "text": "Rosa does not have peg 5.",
+     "form": [
+      "notat",
+      5,
+      4
+     ]
+    }
+   ],
+   "answer": [
+    "Quinn",
+    "Yara",
+    "Lena",
+    "Rosa",
+    "Elsie",
+    "Kit",
+    "Greta"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Elsie has peg 1. Follow the clues one at a time and you reach a clash, so Elsie does not have peg 1.",
+   "hint_key": [
+    "suppose",
+    "Elsie",
+    1
+   ]
+  },
+  {
+   "num": 117,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have cubbies at the weather station",
+   "noun": "cubby",
+   "plural": "cubbies",
+   "names": [
+    "Clara",
+    "Elsie",
+    "Hugo",
+    "Kit",
+    "Pippa",
+    "Quinn",
+    "Viggo"
+   ],
+   "clues": [
+    {
+     "text": "Hugo is somewhere between Elsie and Kit.",
+     "form": [
+      "between",
+      2,
+      1,
+      3
+     ]
+    },
+    {
+     "text": "There is exactly one cubby between Clara and Viggo.",
+     "form": [
+      "gap",
+      0,
+      6,
+      1
+     ]
+    },
+    {
+     "text": "Viggo is not at either end of the row.",
+     "form": [
+      "notend",
+      6
+     ]
+    },
+    {
+     "text": "Quinn is somewhere to the left of Pippa.",
+     "form": [
+      "before",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Kit is right next to Pippa.",
+     "form": [
+      "adj",
+      3,
+      4
+     ]
+    },
+    {
+     "text": "There is exactly one cubby between Hugo and Pippa.",
+     "form": [
+      "gap",
+      2,
+      4,
+      1
+     ]
+    },
+    {
+     "text": "There are exactly two cubbies between Pippa and Quinn.",
+     "form": [
+      "gap",
+      4,
+      5,
+      2
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Elsie",
+    "Viggo",
+    "Quinn",
+    "Hugo",
+    "Kit",
+    "Pippa"
+   ],
+   "depth": 1,
+   "suppositions": 6,
+   "hint": "Try supposing Clara has cubby 2. Follow the clues one at a time and you reach a clash, so Clara does not have cubby 2.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    2
+   ]
+  },
+  {
+   "num": 118,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have benches in the old sawmill workshop",
+   "noun": "bench",
+   "plural": "benches",
+   "names": [
+    "Clara",
+    "Dov",
+    "Kit",
+    "Pippa",
+    "Rosa",
+    "Uma",
+    "Zeke"
+   ],
+   "clues": [
+    {
+     "text": "There is exactly one bench between Clara and Zeke.",
+     "form": [
+      "gap",
+      0,
+      6,
+      1
+     ]
+    },
+    {
+     "text": "Clara is not next to Uma.",
+     "form": [
+      "notadj",
+      0,
+      5
+     ]
+    },
+    {
+     "text": "Pippa has an even-numbered bench.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Kit is somewhere to the left of Uma.",
+     "form": [
+      "before",
+      2,
+      5
+     ]
+    },
+    {
+     "text": "Dov does not have bench 5.",
+     "form": [
+      "notat",
+      1,
+      4
+     ]
+    },
+    {
+     "text": "Pippa is right next to Dov.",
+     "form": [
+      "adj",
+      3,
+      1
+     ]
+    },
+    {
+     "text": "Pippa is not next to Clara.",
+     "form": [
+      "notadj",
+      3,
+      0
+     ]
+    },
+    {
+     "text": "Uma is somewhere to the left of Rosa.",
+     "form": [
+      "before",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Kit has an even-numbered bench.",
+     "form": [
+      "even",
+      2,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Clara",
+    "Kit",
+    "Zeke",
+    "Uma",
+    "Rosa",
+    "Pippa",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Clara has bench 3. Follow the clues one at a time and you reach a clash, so Clara does not have bench 3.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    3
+   ]
+  },
+  {
+   "num": 119,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "take the window seats in the mountain chapel",
+   "noun": "seat",
+   "plural": "seats",
+   "names": [
+    "Bram",
+    "Dov",
+    "Hugo",
+    "Jonah",
+    "Nell",
+    "Uma",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Dov is not next to Jonah.",
+     "form": [
+      "notadj",
+      1,
+      3
+     ]
+    },
+    {
+     "text": "Uma is directly to the left of Nell.",
+     "form": [
+      "left1",
+      5,
+      4
+     ]
+    },
+    {
+     "text": "Dov is somewhere to the left of Hugo.",
+     "form": [
+      "before",
+      1,
+      2
+     ]
+    },
+    {
+     "text": "Jonah is somewhere between Hugo and Wren.",
+     "form": [
+      "between",
+      3,
+      2,
+      6
+     ]
+    },
+    {
+     "text": "Jonah has an even-numbered seat.",
+     "form": [
+      "even",
+      3,
+      true
+     ]
+    },
+    {
+     "text": "Bram is somewhere between Wren and Jonah.",
+     "form": [
+      "between",
+      0,
+      6,
+      3
+     ]
+    },
+    {
+     "text": "Bram has an even-numbered seat.",
+     "form": [
+      "even",
+      0,
+      true
+     ]
+    }
+   ],
+   "answer": [
+    "Wren",
+    "Bram",
+    "Dov",
+    "Uma",
+    "Nell",
+    "Jonah",
+    "Hugo"
+   ],
+   "depth": 1,
+   "suppositions": 3,
+   "hint": "Try supposing Bram has seat 6. Follow the clues one at a time and you reach a clash, so Bram does not have seat 6.",
+   "hint_key": [
+    "suppose",
+    "Bram",
+    6
+   ]
+  },
+  {
+   "num": 120,
+   "band": "Expert",
+   "place": "The Mountain",
+   "people": 7,
+   "setting": "have nooks along the ice cave path",
+   "noun": "nook",
+   "plural": "nooks",
+   "names": [
+    "Clara",
+    "Dov",
+    "Finn",
+    "Greta",
+    "Pippa",
+    "Viggo",
+    "Wren"
+   ],
+   "clues": [
+    {
+     "text": "Viggo has an odd-numbered nook.",
+     "form": [
+      "even",
+      5,
+      false
+     ]
+    },
+    {
+     "text": "There is exactly one nook between Wren and Finn.",
+     "form": [
+      "gap",
+      6,
+      2,
+      1
+     ]
+    },
+    {
+     "text": "Greta is somewhere between Dov and Wren.",
+     "form": [
+      "between",
+      3,
+      1,
+      6
+     ]
+    },
+    {
+     "text": "Pippa is not next to Viggo.",
+     "form": [
+      "notadj",
+      4,
+      5
+     ]
+    },
+    {
+     "text": "Pippa is somewhere between Viggo and Greta.",
+     "form": [
+      "between",
+      4,
+      5,
+      3
+     ]
+    },
+    {
+     "text": "Pippa is somewhere to the left of Dov.",
+     "form": [
+      "before",
+      4,
+      1
+     ]
+    },
+    {
+     "text": "Clara is not next to Finn.",
+     "form": [
+      "notadj",
+      0,
+      2
+     ]
+    },
+    {
+     "text": "Dov is not next to Clara.",
+     "form": [
+      "notadj",
+      1,
+      0
+     ]
+    },
+    {
+     "text": "Finn is somewhere to the left of Clara.",
+     "form": [
+      "before",
+      2,
+      0
+     ]
+    }
+   ],
+   "answer": [
+    "Viggo",
+    "Finn",
+    "Pippa",
+    "Wren",
+    "Clara",
+    "Greta",
+    "Dov"
+   ],
+   "depth": 1,
+   "suppositions": 5,
+   "hint": "Try supposing Clara has nook 2. Follow the clues one at a time and you reach a clash, so Clara does not have nook 2.",
+   "hint_key": [
+    "suppose",
+    "Clara",
+    2
+   ]
+  }
+ ]
+}

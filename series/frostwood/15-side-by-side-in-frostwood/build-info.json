@@ -1,0 +1,36 @@
+{
+  "title": "Side by Side in Frostwood",
+  "slug": "15-side-by-side-in-frostwood",
+  "format": "Kindle ebook (EPUB 3)",
+  "author": "Blake La Pierre",
+  "series": "A Frostwood Puzzle Book",
+  "series_number": 15,
+  "seed": 20261119,
+  "pythonhashseed": 0,
+  "total_puzzles": 120,
+  "counts": {
+    "Easy": 30,
+    "Medium": 30,
+    "Hard": 30,
+    "Expert": 30
+  },
+  "price_usd": 3.99,
+  "royalty_option": "70%",
+  "delivery_fee_usd_per_mb": 0.15,
+  "epub_bytes": 969199,
+  "epub_mb_rounded_kb": 0.9248,
+  "delivery_fee_usd": 0.14,
+  "royalty_usd": 2.65,
+  "royalty_math": "0.70 \u00d7 3.99 \u2212 0.14 = 2.65",
+  "cover_px": [
+    1600,
+    2560
+  ],
+  "cover_bytes": 226750,
+  "files": {
+    "epub": "frostwood-15-side-by-side-in-frostwood.epub",
+    "cover": "frostwood-15-side-by-side-in-frostwood-cover.jpg"
+  },
+  "epubcheck": "PASS Messages: 0 fatals / 0 errors / 0 warnings / 0 infos",
+  "rebuild": "cd src && PYTHONHASHSEED=0 python3 master.py  (optional: EPUBCHECK_JAR=/path/epubcheck.jar JAVA=/path/java)"
+}
