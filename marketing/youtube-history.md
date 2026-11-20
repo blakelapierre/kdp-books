@@ -1217,3 +1217,13 @@ Channel Shorts list: **2884** views (+10 vs 2874) on 97 posts. Wide videos: **80
 
 ### TikTok (@shortmysterycases)
 Public total **4977** views (**+245** vs 4732) on 78 posts. Newest: Stories We Keep Short 24 (new, posted today), C30 answer 75, C30 P1 "Where did the sign go?" 106, Porch Swing Crosswords 100 (+11), C29 P1 113 (+4), C28 answer 114 / P1 165, C27 P2 97 / P1 207. Part 2 / Part 1: C30 75/106 = 71%, C28 114/165 = 69%, C27 97/207 = 47%. Review / Only me not checked.
+
+## 2026-11-19, ~6:35 PM PT (public counts only)
+
+Studio/TikTok Studio not opened (usage-saving, public yt-dlp pulls in `/workspace/tidewhistle-stats/2026-11-19/`); compared with the Nov 16 check.
+
+### YouTube
+Channel Shorts list: **2927** views (+43 vs 2884) on 98 posts. Wide videos: **8026** (0) on 134. Book-promo: Stories We Keep Short 40 (+37), Advent Door 1 P2 279 (0), cocoa tin P2 64 (0), train-track P1 47 (0), answer 7 (0), Bridges islands 2 (0), Porch Swing Crosswords Short 1 (0). Subscribers, traffic, retention, comments: not available without Studio.
+
+### TikTok (@shortmysterycases)
+Public total **5050** views (**+73** vs 4977) on 79 posts. Newest: Tidewhistle book promo post 0 (new), Stories We Keep Short 90 (+66), C30 answer 79 (+4) / P1 106 (0), Porch Swing Crosswords 100 (0), C29 P1 113, C28 answer 114 / P1 165, C27 P2 97 / P1 207. Part 2 / Part 1: C30 79/106 = 75%, C28 69%, C27 47%. Review / Only me not checked.
