@@ -1236,3 +1236,13 @@ Channel Shorts list: **2960** views (+33 vs 2927) on 98 posts. Wide videos: **80
 
 ### TikTok (@shortmysterycases)
 Public total **5055** views (**+5** vs 5050) on 79 posts. Only +1 moves: Stories We Keep Short 91, Advent Door 1 P1 109, C27 P2 98, plus two older posts. Tidewhistle book promo post still 0. Part 2 / Part 1: C30 79/106 = 75%, C28 114/165 = 69%, C27 98/207 = 47%. Review / Only me not checked.
+
+## 2026-11-26, ~6:30 PM PT (public counts only)
+
+Studio/TikTok Studio not opened (usage-saving, public yt-dlp pulls in `/workspace/tidewhistle-stats/2026-11-26/`); compared with the Nov 23 check.
+
+### YouTube
+Channel Shorts list: **2963** views (+3 vs 2960) on 98 posts. Wide videos: **8027** (+1) on 134. Book-promo: Tidewhistle promo Short 38 (+1), Stories We Keep Short 40 (0), Porch Swing Crosswords 2 (0), Advent Door 1 P2 279 (0), cocoa tin P2 65 (+1). Subscribers, traffic, retention, comments: not available without Studio.
+
+### TikTok (@shortmysterycases)
+Public total **5058** views (**+3** vs 5055) on 79 posts. Newest: Tidewhistle book promo 0 (still), Stories We Keep Short 91 (0), C30 answer 79 / P1 106 (75%), C28 114/165 (69%), C27 98/207 (47%). No new posts since Nov 19. Review / Only me not checked.
